@@ -1,0 +1,29 @@
+main.cpp:8:93: error: unknown escape sequence: '\040'
+     std :: cout  <<  "UTC:"  <<  std :: put_time ( std :: gmtime ( y t ) , "% c% Z " )  <<  ' \ n ' ; 
+                                                                                             ^
+main.cpp:8:93: warning: multi-character character constant [-Wmultichar]
+main.cpp: In function 'int principal()':
+main.cpp:7:24: error: 'tiempo' is not a member of 'std'
+     std :: time_t t =  std :: tiempo ( NULL ) ; 
+                        ^
+main.cpp:8:34: error: 'put_time' is not a member of 'std'
+     std :: cout  <<  "UTC:"  <<  std :: put_time ( std :: gmtime ( y t ) , "% c% Z " )  <<  ' \ n ' ; 
+                                  ^
+main.cpp:8:68: error: 'y' was not declared in this scope
+     std :: cout  <<  "UTC:"  <<  std :: put_time ( std :: gmtime ( y t ) , "% c% Z " )  <<  ' \ n ' ; 
+                                                                    ^
+main.cpp:9:36: error: 'put_time' is not a member of 'std'
+     std :: cout  <<  "local:"  <<  std :: put_time ( std :: localtime ( y t ) , "% c% Z" )  <<  " \ n " ; 
+                                    ^
+main.cpp:9:75: error: expected ')' before 't'
+     std :: cout  <<  "local:"  <<  std :: put_time ( std :: localtime ( y t ) , "% c% Z" )  <<  " \ n " ; 
+                                                                           ^
+main.cpp:9:97: error: unknown escape sequence: '\040'
+     std :: cout  <<  "local:"  <<  std :: put_time ( std :: localtime ( y t ) , "% c% Z" )  <<  " \ n " ; 
+                                                                                                 ^
+main.cpp:7:19: warning: unused variable 't' [-Wunused-variable]
+     std :: time_t t =  std :: tiempo ( NULL ) ; 
+                   ^
+main.cpp:10:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
