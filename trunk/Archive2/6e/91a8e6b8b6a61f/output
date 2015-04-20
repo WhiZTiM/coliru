@@ -1,0 +1,25 @@
+main.cpp:23:18: error: call to 'Get' is ambiguous
+    std::cout << Get<Data<int>>().data.size() << std::endl;  // expected output is 2
+                 ^~~~~~~~~~~~~~
+main.cpp:5:3: note: candidate function [with T = Data<int>]
+T Get();
+  ^
+main.cpp:13:9: note: candidate function [with T = Data<int>]
+Data<T> Get() {
+        ^
+main.cpp:18:16: note: candidate function [with T = Data<int>]
+std::vector<T> Get() {
+               ^
+main.cpp:24:18: error: call to 'Get' is ambiguous
+    std::cout << Get<std::vector<int>>().size() << std::endl; // expected output is 3
+                 ^~~~~~~~~~~~~~~~~~~~~
+main.cpp:5:3: note: candidate function [with T = std::__1::vector<int, std::__1::allocator<int> >]
+T Get();
+  ^
+main.cpp:13:9: note: candidate function [with T = std::__1::vector<int, std::__1::allocator<int> >]
+Data<T> Get() {
+        ^
+main.cpp:18:16: note: candidate function [with T = std::__1::vector<int, std::__1::allocator<int> >]
+std::vector<T> Get() {
+               ^
+2 errors generated.
