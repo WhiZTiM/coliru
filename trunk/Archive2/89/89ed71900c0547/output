@@ -1,0 +1,7 @@
+xored_value: 3735928495 
+accum1 bits_count: 77495133, took: 48099
+cycle1 bits_count: 77495133, took: 45476
+accum2 bits_count: 77495133, took: 43094
+cycle2 bits_count: 77495133, took: 31468
+accum3 bits_count: 2499838, took: 347284
+cycle3 bits_count: 2499838, took: 365353
