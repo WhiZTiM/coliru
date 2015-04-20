@@ -1,0 +1,6 @@
+client added
+id invalid
+sth. went wrong: code '0'
+result: 0
+content
+bash: line 7:  2308 Segmentation fault      (core dumped) ./a.out
