@@ -1,0 +1,1 @@
+g++ -std=c++11 -O3 -g0 main.cpp && ./a.out
