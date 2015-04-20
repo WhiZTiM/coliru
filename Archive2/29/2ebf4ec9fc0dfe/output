@@ -1,0 +1,8 @@
+main.cpp:9:13: warning: empty parentheses interpreted as a function declaration [-Wvexing-parse]
+int cookBook();
+            ^~
+main.cpp:9:13: note: replace parentheses with an initializer to declare a variable
+int cookBook();
+            ^~
+             = 0
+1 warning generated.
