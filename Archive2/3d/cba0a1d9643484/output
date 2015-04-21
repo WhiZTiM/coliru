@@ -1,0 +1,13 @@
+main.cpp: In function 'int main()':
+main.cpp:39:31: error: no matching function for call to 'Arr<int, 3>::Arr(<brace-enclosed initializer list>)'
+main.cpp:39:31: note: candidates are:
+main.cpp:22:5: note: Arr<T, SZ>::Arr(Init ...) [with Init = {}; T = int; int SZ = 3]
+main.cpp:22:5: note:   candidate expects 0 arguments, 1 provided
+main.cpp:11:8: note: constexpr Arr<int, 3>::Arr(const Arr<int, 3>&)
+main.cpp:11:8: note:   no known conversion for argument 1 from '<brace-enclosed initializer list>' to 'const Arr<int, 3>&'
+main.cpp:11:8: note: constexpr Arr<int, 3>::Arr(Arr<int, 3>&&)
+main.cpp:11:8: note:   no known conversion for argument 1 from '<brace-enclosed initializer list>' to 'Arr<int, 3>&&'
+main.cpp: In instantiation of 'Arr<T, SZ>::Arr(Init ...) [with Init = {double, double, int}; T = int; int SZ = 3]':
+main.cpp:38:31:   required from here
+main.cpp:22:32: warning: narrowing conversion of 'l#0' from 'double' to 'int' inside { } [-Wnarrowing]
+main.cpp:22:32: warning: narrowing conversion of 'l#1' from 'double' to 'int' inside { } [-Wnarrowing]
