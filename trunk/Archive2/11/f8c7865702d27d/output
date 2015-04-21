@@ -1,0 +1,3 @@
+/tmp/ccsv4d8f.o: In function `main':
+main.cpp:(.text.startup+0x5): undefined reference to `T::value'
+collect2: error: ld returned 1 exit status
