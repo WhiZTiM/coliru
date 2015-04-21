@@ -1,0 +1,11 @@
+clang version 3.5.0 (tags/RELEASE_350/final 217394)
+main.cpp:31:9: error: static_assert failed "Provided type doesn't have foo member function"
+        static_assert(has_foo<T>::value, "Provided type doesn't have foo member function");
+        ^             ~~~~~~~~~~~~~~~~~
+main.cpp:36:25: note: in instantiation of template class 'details::example<int, false>' requested here
+struct example : public details::example<T> {};
+                        ^
+main.cpp:45:16: note: in instantiation of template class 'example<int>' requested here
+  example<int> test;
+               ^
+1 error generated.
