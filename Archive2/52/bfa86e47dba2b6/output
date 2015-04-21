@@ -1,0 +1,12 @@
+main.cpp:4:65: error: 'std::enable_if<std::is_enum::value, void>::type' is not a type
+ template<typename T, std::enable_if< std::is_enum<T>::value  >::type = 0>
+                                                                 ^
+main.cpp:16:65: error: 'std::enable_if<!(std::is_enum::value), void>::type' is not a type
+ template<typename T, std::enable_if< !std::is_enum<T>::value >::type = 0>
+                                                                 ^
+main.cpp:17:13: error: redefinition of 'template<class T, int <anonymous> > bool func(T&, int)'
+ inline bool func(T & t, int x)
+             ^
+main.cpp:5:13: note: 'template<class T, int <anonymous> > bool func(T&, int)' previously declared here
+ inline bool func(T & t, int x)
+             ^
