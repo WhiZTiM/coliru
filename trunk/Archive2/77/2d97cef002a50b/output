@@ -1,0 +1,5 @@
+main.cpp: In function 'int main()':
+main.cpp:68:9: warning: unused variable 'j' [-Wunused-variable]
+  int i, j;
+         ^
+h27c3gx03-10.data FILE OPEN ERROR
