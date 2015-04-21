@@ -1,0 +1,19 @@
++ clang++ -std=c++1y -stdlib=libc++ -Wall -pedantic main.cpp -pthread -lcxxrt -ldl
+main.cpp:7:9: warning: compound literals are a C99-specific feature [-Wc99-extensions]
+   A += (std::string){65, 66};
+        ^
+1 warning generated.
++ ./a.out
+AB+ clang++ -std=c++1y -Wall -pedantic main.cpp -pthread -lcxxrt -ldl
+main.cpp:7:9: warning: compound literals are a C99-specific feature [-Wc99-extensions]
+   A += (std::string){65, 66};
+        ^
+1 warning generated.
++ ./a.out
+AB+ g++ -std=c++1y -Wall -pedantic main.cpp -pthread
+main.cpp: In function 'int main()':
+main.cpp:7:29: warning: ISO C++ forbids compound-literals [-Wpedantic]
+    A += (std::string){65, 66};
+                             ^
++ ./a.out
+AB
