@@ -1,0 +1,13 @@
+main.cpp: In constructor 'Lana::Lana()':
+main.cpp:20:12: error: no matching function for call to 'Archer::Archer()'
+     Lana() {cout << "Lana default ctor" << endl;}
+            ^
+main.cpp:20:12: note: candidates are:
+main.cpp:14:5: note: Archer::Archer(int)
+     Archer(int glengoole_blue) : shots_taken(glengoole_blue) {}
+     ^
+main.cpp:14:5: note:   candidate expects 1 argument, 0 provided
+main.cpp:11:7: note: Archer::Archer(const Archer&)
+ class Archer : public FXX {
+       ^
+main.cpp:11:7: note:   candidate expects 1 argument, 0 provided
