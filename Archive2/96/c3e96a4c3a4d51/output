@@ -1,0 +1,7 @@
+main.cpp: In function 'int main()':
+main.cpp:7:15: error: could not convert 'g' from 'bar' to 'foo'
+     case bar::g:;
+               ^
+main.cpp:6:11: warning: enumeration value 'f' not handled in switch [-Wswitch]
+     switch(foo::f) {
+           ^
