@@ -1,0 +1,7 @@
+main.cpp:13:39: error: implicit instantiation of undefined template 'std::result_of<int (*)()>'
+    using result_type = typename std::result_of<decltype(&foo)>::type;
+                                      ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.9.2/../../../../include/c++/4.9.2/type_traits:2060:11: note: template is declared here
+    class result_of;
+          ^
+1 error generated.
