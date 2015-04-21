@@ -1,0 +1,10 @@
+main.cpp: In function 'int main()':
+main.cpp:28:9: warning: unused variable 'val' [-Wunused-variable]
+     int val = 42;
+         ^
+main.cpp: In instantiation of 'void send(ClientId, Func, std::size_t) [with Func = char*; ClientId = unsigned int; std::size_t = long unsigned int]':
+main.cpp:23:46:   required from 'void send(ClientId, Func, std::size_t) [with Func = main()::<lambda()>; ClientId = unsigned int; std::size_t = long unsigned int]'
+main.cpp:31:25:   required from here
+main.cpp:19:14: error: 'convFunc' cannot be used as a function
+     convFunc();
+              ^
