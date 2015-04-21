@@ -1,0 +1,9 @@
+main.cpp:4:19: error: expected unqualified-id before 'new'
+     static void*  new(std::size_t sz)
+                   ^
+main.cpp:4:16: error: expected ';' at end of member declaration
+     static void*  new(std::size_t sz)
+                ^
+main.cpp:4:19: error: expected unqualified-id before 'new'
+     static void*  new(std::size_t sz)
+                   ^
