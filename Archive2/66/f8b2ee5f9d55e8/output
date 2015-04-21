@@ -1,0 +1,16 @@
+clang:
+thread 1 says hi
+thread 2 says hi
+thread 1 says hi
+killing threads
+thread 1 dead
+thread 2 dead
+done
+gcc:
+thread 1 says hi
+thread 2 says hi
+thread 1 says hi
+killing threads
+thread 1 dead
+thread 2 dead
+done
