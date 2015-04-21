@@ -1,0 +1,1 @@
+g++ -std=c++14 -fopenmp -O2 -Wall -pedantic main.cpp && ./a.out
