@@ -1,0 +1,2 @@
+main.cpp: In function 'foo':
+main.cpp:10:10: error: expected expression before '{' token
