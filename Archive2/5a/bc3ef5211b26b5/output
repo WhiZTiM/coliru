@@ -1,0 +1,4 @@
+main.cpp:13:65: error: no type named 'type' in 'std::result_of<int ()>'
+    using result_type = typename std::result_of<decltype(foo)>::type;
+                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~
+1 error generated.
