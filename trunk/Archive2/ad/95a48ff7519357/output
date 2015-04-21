@@ -1,0 +1,3 @@
+main.cpp:8:10: error: initializer specified for non-virtual method 'void FXX::channel()'
+     void channel() = 0;
+          ^
