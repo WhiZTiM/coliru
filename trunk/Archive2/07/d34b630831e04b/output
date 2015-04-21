@@ -1,0 +1,4 @@
+main.cpp: In function 'int main()':
+main.cpp:13:66: error: 'type' in 'class std::result_of<int (*)()>' does not name a type
+     using result_type = typename std::result_of<decltype(&foo)>::type;
+                                                                  ^

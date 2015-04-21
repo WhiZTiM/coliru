@@ -1,0 +1,4 @@
+main.cpp: In function 'int main()':
+main.cpp:13:72: warning: typedef 'using result_type = std::__success_type<int>::type' locally defined but not used [-Wunused-local-typedefs]
+     using result_type = typename std::result_of<decltype(&foo)()>::type;
+                                                                        ^
