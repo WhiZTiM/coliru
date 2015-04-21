@@ -1,0 +1,16 @@
+main.cpp: In function 'int main()':
+main.cpp:20:7: error: no matching function for call to 'f(A<std::complex<double> >&)'
+   f(ca); // error                                                                                                               
+       ^
+main.cpp:20:7: note: candidates are:
+main.cpp:3:8: note: double f(double)
+ double f(double x) { return 1.; }
+        ^
+main.cpp:3:8: note:   no known conversion for argument 1 from 'A<std::complex<double> >' to 'double'
+main.cpp:6:17: note: template<class T> std::complex<_Tp> f(std::complex<_Tp>)
+ std::complex<T> f(std::complex<T> x) { return std::complex<T>(); }
+                 ^
+main.cpp:6:17: note:   template argument deduction/substitution failed:
+main.cpp:20:7: note:   'A<std::complex<double> >' is not derived from 'std::complex<_Tp>'
+   f(ca); // error                                                                                                               
+       ^
