@@ -1,0 +1,10 @@
+main.cpp: In function 'int main()':
+main.cpp:47:5: error: static assertion failed: A doesn't have method
+     static_assert(has_method<A>::value, "A doesn't have method");
+     ^
+main.cpp:48:5: error: static assertion failed: B doesn't have method
+     static_assert(has_method<B>::value, "B doesn't have method");
+     ^
+main.cpp:49:5: error: static assertion failed: C doesn't have method
+     static_assert(has_method<C>::value, "C doesn't have method");
+     ^
