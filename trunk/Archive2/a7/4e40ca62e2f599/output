@@ -1,0 +1,19 @@
+1 : "foo:abc:"
+	Field : foo
+	Value : abc
+2 : "bar:123:"
+	Field : bar
+	Value : 123
+3 : "baz:478:"
+	Field : baz
+	Value : 478
+4 : "test-err:df"
+	Invalid record
+5 : ""
+	Invalid record
+6 : ":yadda:yadda:yadda"
+	Invalid record
+
+real	0m0.005s
+user	0m0.000s
+sys	0m0.004s
