@@ -1,0 +1,3 @@
+main.cpp:1:13: error: 'Level' does not name a type
+             Level   Stats   DivLevel    Base    OverBase   Relative
+             ^
