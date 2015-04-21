@@ -1,0 +1,13 @@
+main.cpp:7:17: warning: unused parameter 'x' [-Wunused-parameter]
+    GuessMe(int x=0) 
+                ^
+1 warning generated.
+10
+*** glibc detected *** ./a.out: double free or corruption (fasttop): 0x0000000000afc010 ***
+======= Backtrace: =========
+/lib/x86_64-linux-gnu/libc.so.6(+0x7e846)[0x7ff13efd2846]
+./a.out[0x400e8d]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xed)[0x7ff13ef7576d]
+./a.out[0x400cf9]
+======= Memory map: ========
+bash: line 7: 32240 Aborted                 (core dumped) ./a.out
