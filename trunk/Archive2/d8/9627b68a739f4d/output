@@ -1,0 +1,8 @@
+main.cpp:4:58: warning: shift count >= width of type [-Wshift-count-overflow]
+    std::cout << "1<<63==1<<63: " << std::boolalpha << (1<<63 == 1<<63) << std::endl;
+                                                         ^ ~~
+main.cpp:4:67: warning: shift count >= width of type [-Wshift-count-overflow]
+    std::cout << "1<<63==1<<63: " << std::boolalpha << (1<<63 == 1<<63) << std::endl;
+                                                                  ^ ~~
+2 warnings generated.
+1<<63==1<<63: false
