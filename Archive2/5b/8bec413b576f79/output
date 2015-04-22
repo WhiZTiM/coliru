@@ -1,0 +1,18 @@
+ftp://127.0.0.1:8080/
+  submatch 0: ftp://127.0.0.1:8080/
+  submatch 1: ftp
+  submatch 2: 127.0.0.1
+  submatch 3: 8080
+  submatch 4: 
+ftp://127.0.0.1:8080/home/amit
+  submatch 0: ftp://127.0.0.1:8080/home/amit
+  submatch 1: ftp
+  submatch 2: 127.0.0.1
+  submatch 3: 8080
+  submatch 4: home/amit
+ftp://ftp-app-store.com:8080/home
+  submatch 0: ftp://ftp-app-store.com:8080/home
+  submatch 1: ftp
+  submatch 2: ftp-app-store.com
+  submatch 3: 8080
+  submatch 4: home
