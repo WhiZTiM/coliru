@@ -1,0 +1,1 @@
+gcc -x c -std=c11 -DNDEBUG -O3 -Wall -Wextra  -pthread main.cpp -o main && ./main main.cpp
