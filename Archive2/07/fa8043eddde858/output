@@ -1,0 +1,16 @@
+A Constructor
+B Constructor
+A Constructor
+B Constructor
+C Constructor
+
+B doNothing
+A Method Ran
+
+C doNothing
+A Method Ran
+B Destructor
+A Destructor
+C Destructor
+B Destructor
+A Destructor
