@@ -1,0 +1,8 @@
+main.cpp:19:1: warning: control may reach end of non-void function [-Wreturn-type]
+}
+^
+main.cpp:38:18: note: in instantiation of function template specialization 'activate<int, A, test_wrapper, int>' requested here
+    std::cout << activate<int>(type, *child, test_wrapper{}, 4) << std::endl;
+                 ^
+1 warning generated.
+4
