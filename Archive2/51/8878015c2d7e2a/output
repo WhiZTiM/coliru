@@ -1,0 +1,16 @@
++ clang++ -O2 -Wall -pedantic -DFAULTY main.cpp
++ ./a.out
+Executed
+
++ clang++ -O2 -Wall -std=c++11 -pedantic -DUSEDELETE main.cpp
+main.cpp:40:7: error: call to deleted constructor of 'B'
+    B bobj;  // Doesn't Compile 
+      ^
+main.cpp:31:9: note: 'B' has been explicitly marked deleted here
+        B()   = delete ;
+        ^
+1 error generated.
++ clang++ -O2 -Wall -pedantic -DCPLUSPLUS_03 main.cpp
+/tmp/main-adfd5c.o: In function `C::do_something()':
+main.cpp:(.text+0x6): undefined reference to `C::C()'
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
