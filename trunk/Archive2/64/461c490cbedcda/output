@@ -1,0 +1,72 @@
+ftp://127.0.0.1
+  submatch 0: ftp://127.0.0.1
+  submatch 1: ftp
+  submatch 2: 127.0.0.1
+  submatch 3: 
+  submatch 4: 
+ftp://127.0.0.1/
+  submatch 0: ftp://127.0.0.1/
+  submatch 1: ftp
+  submatch 2: 127.0.0.1
+  submatch 3: 
+  submatch 4: 
+ftp://ftp-aricent.com:8080/home
+  submatch 0: ftp://ftp-aricent.com:8080/home
+  submatch 1: ftp
+  submatch 2: ftp-aricent.com
+  submatch 3: 8080
+  submatch 4: home
+ftp://ftp-aricent.com/home
+  submatch 0: ftp://ftp-aricent.com/home
+  submatch 1: ftp
+  submatch 2: ftp-aricent.com
+  submatch 3: 
+  submatch 4: home
+http://127.0.0.1:8080/home
+  submatch 0: http://127.0.0.1:8080/home
+  submatch 1: http
+  submatch 2: 127.0.0.1
+  submatch 3: 8080
+  submatch 4: home
+http://127.0.0.1/home
+  submatch 0: http://127.0.0.1/home
+  submatch 1: http
+  submatch 2: 127.0.0.1
+  submatch 3: 
+  submatch 4: home
+ftp://127.0.0.1
+  submatch 0: ftp://127.0.0.1
+  submatch 1: ftp
+  submatch 2: 127.0.0.1
+  submatch 3: 
+  submatch 4: 
+ftp://127.0.0.1:8080
+  submatch 0: ftp://127.0.0.1:8080
+  submatch 1: ftp
+  submatch 2: 127.0.0.1
+  submatch 3: 8080
+  submatch 4: 
+ftp://ftp-aricent.com/
+  submatch 0: ftp://ftp-aricent.com/
+  submatch 1: ftp
+  submatch 2: ftp-aricent.com
+  submatch 3: 
+  submatch 4: 
+ftp://ftp-aricent.com:8080/
+  submatch 0: ftp://ftp-aricent.com:8080/
+  submatch 1: ftp
+  submatch 2: ftp-aricent.com
+  submatch 3: 8080
+  submatch 4: 
+ftp://127.0.0.1:8080/home/amit
+  submatch 0: ftp://127.0.0.1:8080/home/amit
+  submatch 1: ftp
+  submatch 2: 127.0.0.1
+  submatch 3: 8080
+  submatch 4: home/amit
+ftp://upload.cisco.com/home/amit
+  submatch 0: ftp://upload.cisco.com/home/amit
+  submatch 1: ftp
+  submatch 2: upload.cisco.com
+  submatch 3: 
+  submatch 4: home/amit
