@@ -1,0 +1,10 @@
+main.cpp:5:18: warning: unsequenced modification and access to 'x' [-Wunsequenced]
+    int y = x * x++;
+            ~    ^
+1 warning generated.
+9
+main.cpp: In function 'int main()':
+main.cpp:5:18: warning: operation on 'x' may be undefined [-Wsequence-point]
+     int y = x * x++;
+                  ^
+12
