@@ -1,0 +1,138 @@
++ clang++ -S -std=c++14 -O3 -Wall -Wextra -pedantic -Wno-unused-variable -Wno-unused-parameter -pthread -stdlib=libc++ main.cpp -lsupc++
+clang: warning: -lsupc++: 'linker' input unused
++ cat main.s
+	.text
+	.file	"main.cpp"
+	.globl	_Z11bitwise_andPcPKcS1_m
+	.align	16, 0x90
+	.type	_Z11bitwise_andPcPKcS1_m,@function
+_Z11bitwise_andPcPKcS1_m:               # @_Z11bitwise_andPcPKcS1_m
+	.cfi_startproc
+# BB#0:
+	testq	%rcx, %rcx
+	je	.LBB0_16
+# BB#1:                                 # %overflow.checked
+	movq	%rcx, %r11
+	andq	$-32, %r11
+	movq	%rcx, %r10
+	andq	$-32, %r10
+	je	.LBB0_2
+# BB#3:                                 # %vector.body.preheader
+	leaq	(%rdi,%r11), %r8
+	leaq	(%rdx,%r11), %r9
+	addq	%rsi, %r11
+	addq	$16, %rdi
+	addq	$16, %rdx
+	addq	$16, %rsi
+	movq	%r10, %rax
+	.align	16, 0x90
+.LBB0_4:                                # %vector.body
+                                        # =>This Inner Loop Header: Depth=1
+	movups	-16(%rsi), %xmm0
+	movups	(%rsi), %xmm1
+	movups	-16(%rdx), %xmm2
+	movups	(%rdx), %xmm3
+	andps	%xmm0, %xmm2
+	andps	%xmm1, %xmm3
+	movups	%xmm2, -16(%rdi)
+	movups	%xmm3, (%rdi)
+	addq	$32, %rdi
+	addq	$32, %rdx
+	addq	$32, %rsi
+	addq	$-32, %rax
+	jne	.LBB0_4
+	jmp	.LBB0_5
+.LBB0_2:
+	xorl	%r10d, %r10d
+	movq	%rdi, %r8
+	movq	%rdx, %r9
+	movq	%rsi, %r11
+.LBB0_5:                                # %middle.block
+	cmpq	%rcx, %r10
+	je	.LBB0_16
+# BB#6:                                 # %.lr.ph.preheader
+	movq	%rcx, %rax
+	subq	%r10, %rax
+	andq	$3, %rax
+	movq	%rcx, %rdx
+	subq	%r10, %rdx
+	je	.LBB0_8
+# BB#7:                                 # %.lr.ph.preheader
+	testq	%rax, %rax
+	je	.LBB0_13
+.LBB0_8:                                # %unr.cmp460
+	cmpq	$1, %rax
+	je	.LBB0_12
+# BB#9:                                 # %unr.cmp
+	cmpq	$2, %rax
+	je	.LBB0_11
+# BB#10:                                # %.lr.ph.unr
+	movb	(%r9), %al
+	incq	%r9
+	andb	(%r11), %al
+	incq	%r11
+	movb	%al, (%r8)
+	incq	%r8
+	incq	%r10
+.LBB0_11:                               # %.lr.ph.unr452
+	movb	(%r9), %al
+	incq	%r9
+	andb	(%r11), %al
+	incq	%r11
+	movb	%al, (%r8)
+	incq	%r8
+	incq	%r10
+.LBB0_12:                               # %.lr.ph.unr454
+	movb	(%r9), %al
+	incq	%r9
+	andb	(%r11), %al
+	incq	%r11
+	movb	%al, (%r8)
+	incq	%r8
+	incq	%r10
+.LBB0_13:                               # %.lr.ph.preheader.split
+	cmpq	$4, %rdx
+	jb	.LBB0_16
+# BB#14:                                # %.lr.ph.preheader.split.split
+	subq	%r10, %rcx
+	.align	16, 0x90
+.LBB0_15:                               # %.lr.ph
+                                        # =>This Inner Loop Header: Depth=1
+	movb	(%r9), %al
+	andb	(%r11), %al
+	movb	%al, (%r8)
+	movb	1(%r9), %al
+	andb	1(%r11), %al
+	movb	%al, 1(%r8)
+	movb	2(%r9), %al
+	andb	2(%r11), %al
+	movb	%al, 2(%r8)
+	movb	3(%r9), %al
+	andb	3(%r11), %al
+	movb	%al, 3(%r8)
+	addq	$4, %r11
+	addq	$4, %r9
+	addq	$4, %r8
+	addq	$-4, %rcx
+	jne	.LBB0_15
+.LBB0_16:                               # %._crit_edge
+	retq
+.Ltmp0:
+	.size	_Z11bitwise_andPcPKcS1_m, .Ltmp0-_Z11bitwise_andPcPKcS1_m
+	.cfi_endproc
+
+	.globl	main
+	.align	16, 0x90
+	.type	main,@function
+main:                                   # @main
+	.cfi_startproc
+# BB#0:
+	xorl	%eax, %eax
+	retq
+.Ltmp1:
+	.size	main, .Ltmp1-main
+	.cfi_endproc
+
+
+	.ident	"clang version 3.5.0 (tags/RELEASE_350/final 217394)"
+	.section	".note.GNU-stack","",@progbits
