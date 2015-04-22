@@ -1,0 +1,7 @@
+main.cpp:37:7: error: no member named 'flag' in 'row<column_id<int>, column_value<double> >'
+    x.flag = true;
+    ~ ^
+main.cpp:41:7: error: no member named 'value' in 'row<column_id<int>, column_flag<bool> >'
+    y.value = 0.11;
+    ~ ^
+2 errors generated.
