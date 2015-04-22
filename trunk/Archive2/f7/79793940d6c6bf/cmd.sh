@@ -1,0 +1,1 @@
+g++ -std=c++14 -Wall -Wextra -pedantic -O2 -pthread main.cpp && ./a.out
