@@ -229,3 +229,16 @@ YEAH !! An online compiler, WITH C++14 !!
 make a http api
 <script>document.write('wwwweeeeee')</script>
 好也
+pointing to object?
+cin & scanf doesn't work ? in C/C++
+poop
+LOL this feedback system is so FUN
+<script>alert("xss");</script>
+Nice app! Where's the about page?
+Verry useful! Thanks!!!
+fuck u
+oooooooh YEAH ! 
+Make an exe download link!
+This is awesome
+tet
+nice!but how to enter input for cin>> ?
