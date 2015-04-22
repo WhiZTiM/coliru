@@ -1,0 +1,25 @@
+main.cpp:106:1: error: static assertion failed: Instantiable?
+ static_assert(!is_instantiable<curriable_function, int>::value, "Instantiable?");
+ ^
+main.cpp: In instantiation of 'struct just<curriable_function, int>::impl<curriable_function, void>':
+main.cpp:55:47:   required from 'struct just<curriable_function, int>'
+main.cpp:59:54:   required by substitution of 'template<template<class ...> class Template, class ... Args> using just_t = typename just::type [with Template = curriable_function; Args = {int}]'
+main.cpp:107:57:   required from here
+main.cpp:52:32: error: wrong number of template arguments (1, should be 3)
+         using type = T<Args...>;
+                                ^
+main.cpp:62:8: error: provided for 'template<class, class, class> struct curriable_function'
+ struct curriable_function
+        ^
+main.cpp:107:66: error: template argument 1 is invalid
+ static_assert(std::is_same<just_t<curriable_function,int>,Nothing>::value, "Instantiable?");
+                                                                  ^
+main.cpp:113:50: error: template argument 1 is invalid
+ static_assert(!std::is_same<eval_mc<a, int>, void>::value, "a(int) was evaluated instead of curried?");
+                                                  ^
+main.cpp:115:60: error: template argument 1 is invalid
+ static_assert(std::is_same<eval_mc<eval_mc<a,int>, int, int>, void>::value, "a(int)(int,int) was not evaluated?");
+                                                            ^
+main.cpp:115:67: error: template argument 1 is invalid
+ static_assert(std::is_same<eval_mc<eval_mc<a,int>, int, int>, void>::value, "a(int)(int,int) was not evaluated?");
+                                                                   ^
