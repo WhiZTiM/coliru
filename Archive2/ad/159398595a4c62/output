@@ -1,0 +1,12 @@
+ftp://127.0.0.1:8080/
+  submatch 0: ftp://127.0.0.1:8080/
+  submatch 1: ftp
+  submatch 2: 127.0.0.1
+  submatch 3: 8080
+  submatch 4: 
+ftp://127.0.0.1:8080/home
+  submatch 0: ftp://127.0.0.1:8080/home
+  submatch 1: ftp
+  submatch 2: 127.0.0.1
+  submatch 3: 8080
+  submatch 4: home
