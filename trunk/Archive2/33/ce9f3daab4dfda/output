@@ -1,0 +1,58 @@
+:::1
+Called scoped_thread CTor
+:::2
+Made Thread : 0
+Called scoped_thread CTor
+Called scope_thread DTor
+:::3
+Made Thread : 1
+Called scoped_thread CTor
+Called scope_thread DTor
+Called scope_thread DTor
+:::4
+Made Thread : 2
+Called scoped_thread CTor
+:::5
+Made Thread : 3
+Made Thread : Called scoped_thread CTor4
+
+Called scope_thread DTor
+Called scope_thread DTor
+Called scope_thread DTor
+Called scope_thread DTor
+:::6
+Called scoped_thread CTor
+:::7
+Made Thread : 5
+Called scoped_thread CTor
+:::8
+Made Thread : 6
+Called scoped_thread CTor
+:::9
+Made Thread : 7
+Called scoped_thread CTor
+Called scope_thread DTor
+Called scope_thread DTor
+Called scope_thread DTor
+Called scope_thread DTor
+Called scope_thread DTor
+Called scope_thread DTor
+Called scope_thread DTor
+Called scope_thread DTor
+:::10
+Made Thread : 8
+Called scoped_thread CTor
+Made Thread : 9
+Called scope_thread DTor
+Called scope_thread DTor
+Called scope_thread DTor
+Called scope_thread DTor
+Called scope_thread DTor
+Called scope_thread DTor
+Called scope_thread DTor
+Called scope_thread DTor
+Called scope_thread DTor
+Called scope_thread DTor
+Number of CTors used: 10
+Number of move CTors used: 15
+Number of DTors used: 25
