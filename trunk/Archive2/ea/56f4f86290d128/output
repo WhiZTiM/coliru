@@ -1,0 +1,3 @@
+main.cpp:1:18: error: 'struct X' is not a valid type for a template non-type parameter
+ template <struct X> struct Y {};
+                  ^
