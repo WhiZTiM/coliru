@@ -1,0 +1,15 @@
+In deviates_normal_vector:
+ mean: not provided
+ stddev: not provided
+In deviates_normal_vector:
+ mean: 42
+ stddev: not provided
+In deviates_normal_vector:
+ mean: not provided
+ stddev: 1337
+In deviates_normal_vector:
+ mean: 42
+ stddev: 1337
+In deviates_normal_vector:
+ mean: 42
+ stddev: 1337
