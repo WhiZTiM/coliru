@@ -1,0 +1,12 @@
+Calling manually.
+Sleeping.
+5
+Done calling manually.
+Launching thread as temporary.
+Sleeping.
+5
+Done with temporary.
+Launching thread kept in scope.
+Done with main.
+Sleeping.
+5
