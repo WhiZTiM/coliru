@@ -1,0 +1,16 @@
+main.cpp:11:13: warning: using the result of an assignment as a condition without parentheses [-Wparentheses]
+     if ( i = 0 )
+          ~~^~~
+main.cpp:11:13: note: place parentheses around the assignment to silence this warning
+     if ( i = 0 )
+            ^
+          (    )
+main.cpp:11:13: note: use '==' to turn this assignment into an equality comparison
+     if ( i = 0 )
+            ^
+            ==
+main.cpp:18:15: error: expected ';' after return statement
+    return acc
+              ^
+              ;
+1 warning and 1 error generated.
