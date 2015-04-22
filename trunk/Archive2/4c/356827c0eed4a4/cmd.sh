@@ -1,0 +1,1 @@
+clang++ -std=c++11 -Os -Wall -pedantic main.cpp && ./a.out <<< "3 12867 1.0 2.0  1.0 5.0  4.0 5.0"
