@@ -236,6 +236,7 @@ LOL this feedback system is so FUN
 Nice app! Where's the about page?
 Verry useful! Thanks!!!
 oooooooh YEAH ! 
-Make an exe download link!
+Make an exe download link! NOTE: you could print the compressed binary in base64: `gzip - <a.out | base64`. Then you copy that string and unpack it on your Linux machine: `base64 -d | gunzip >a.out`
 This is awesome
 nice!but how to enter input for cin>> ?
+cpp
