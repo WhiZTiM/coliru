@@ -1,0 +1,6 @@
+main.cpp: In function 'int main()':
+main.cpp:13:22: warning: conversion to 'int' from 'double' may alter its value [-Wfloat-conversion]
+     int c = dmult(a,b);
+                      ^
+main.cpp:13:22: warning: conversion to 'int' from 'double' may alter its value [-Wfloat-conversion]
+12
