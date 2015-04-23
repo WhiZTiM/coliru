@@ -1,0 +1,18 @@
+graph G {
+0;
+5;
+American;
+Kevin;
+Leo;
+Martin;
+Ryan;
+S;
+USA;
+Y;
+0--5 ;
+Kevin--Martin ;
+Ryan--Leo ;
+Y--S ;
+Kevin--S ;
+American--USA ;
+}
