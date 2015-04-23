@@ -1,0 +1,36 @@
++ g++-4.9 -std=c++11 -O0 -Wall -pedantic -Wextra -pthread -Wno-unused-variable -Wno-unused-parameter -fno-elide-constructors main.cpp -pthread
++ ./a.out
+ctor with two arguments called. 0x7fff11d41c40
+&A 0x7fff11d41c40
+--------------------1
+ctor with two arguments called. 0x7fff11d41c20
+&B 0x7fff11d41c20
+--------------------2
+copy ctor called. 0x7fff11d41c00
+&C 0x7fff11d41c00
+--------------------3
+copy assignment called. 0x7fff11d41c00
+--------------------4
+ctor with two arguments called. 0x7fff11d41b80
+move ctor called. 0x7fff11d41c60
+dtor called. 0x7fff11d41b80
+move ctor called. 0x7fff11d41be0
+dtor called. 0x7fff11d41c60
+&D 0x7fff11d41be0
+--------------------5
+ctor with two arguments called. 0x7fff11d41c80
+move ctor called. 0x7fff11d41bc0
+dtor called. 0x7fff11d41c80
+&E 0x7fff11d41bc0
+--------------------6
+ctor with two arguments called. 0x7fff11d41b80
+move ctor called. 0x7fff11d41ca0
+dtor called. 0x7fff11d41b80
+move assignment called. 0x7fff11d41be0
+dtor called. 0x7fff11d41ca0
+--------------------7
+dtor called. 0x7fff11d41bc0
+dtor called. 0x7fff11d41be0
+dtor called. 0x7fff11d41c00
+dtor called. 0x7fff11d41c20
+dtor called. 0x7fff11d41c40
