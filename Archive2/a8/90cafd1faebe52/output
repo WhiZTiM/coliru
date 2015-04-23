@@ -1,0 +1,4 @@
++ g++ -O2 -std=c++14 -Wall -Wextra main.cpp -lcxxrt -ldl
++ ./a.out
+[12 34 ]
+[[1 2 ] [3 4 ] ]
