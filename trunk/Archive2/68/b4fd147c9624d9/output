@@ -1,0 +1,3 @@
+main.cpp:11:2: error: #error "NOT SUPPORTED ON GCC >= 4.9"
+ #error "NOT SUPPORTED ON GCC >= 4.9"
+  ^
