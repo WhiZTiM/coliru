@@ -1,0 +1,5 @@
+main.cpp: In instantiation of 'void fn2(T) [with T = int]':
+main.cpp:21:10:   required from here
+main.cpp:14:76: error: 'TheUseOfDlctOptionalPlacementNewIsNotAvailableInThisCompilerVersion<int> error' has incomplete type
+     TheUseOfDlctOptionalPlacementNewIsNotAvailableInThisCompilerVersion<T> error;
+                                                                            ^
