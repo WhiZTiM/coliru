@@ -1,0 +1,13 @@
+main.cpp:11:16: error: expected ')'
+    foo<bar<(I < 4)>> f;
+               ^
+main.cpp:11:13: note: to match this '('
+    foo<bar<(I < 4)>> f;
+            ^
+main.cpp:11:20: error: expected expression
+    foo<bar<(I < 4)>> f;
+                   ^
+main.cpp:11:24: error: expected a type
+    foo<bar<(I < 4)>> f;
+                       ^
+3 errors generated.
