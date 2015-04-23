@@ -1,0 +1,17 @@
+
+
+void test() [with With = std::vector<int>]
+Before: 1 2 3 
+After:  1 42 3 
+
+void test() [with With = std::array<int, 3ul>]
+Before: 1 2 3 
+After:  1 42 3 
+
+void test() [with With = shared_randomaccess_container<std::vector<int>, false>]
+Before: 1 2 3 
+After:  1 42 3 
+
+void test() [with With = shared_randomaccess_container<std::array<int, 3ul>, true>]
+Before: 1 2 3 
+After:  1 42 3 
