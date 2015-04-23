@@ -1,0 +1,7 @@
++ g++ -O2 -std=c++03 -Wall -Wextra main.cpp -lcxxrt -ldl
+main.cpp: In instantiation of 'void f() [with T = int; int a = 1]':
+main.cpp:13:13:   required from here
+main.cpp:8:5: error: cast from 'const char*' to 'int' loses precision [-fpermissive]
+     T("hello");
+     ^
+main.cpp:8:5: warning: statement has no effect [-Wunused-value]
