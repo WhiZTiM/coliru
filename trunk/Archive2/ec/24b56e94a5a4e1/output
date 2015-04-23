@@ -1,0 +1,13 @@
+main.cpp: In function 'void test()':
+main.cpp:11:14: error: 'I' is not a template
+     foo<bar<(I < 4)>> f;
+              ^
+main.cpp:11:19: error: template argument 1 is invalid
+     foo<bar<(I < 4)>> f;
+                   ^
+main.cpp:11:20: error: template argument 1 is invalid
+     foo<bar<(I < 4)>> f;
+                    ^
+main.cpp:11:24: error: invalid type in declaration before ';' token
+     foo<bar<(I < 4)>> f;
+                        ^
