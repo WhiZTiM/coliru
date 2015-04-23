@@ -1,0 +1,15 @@
+main.cpp: In function 'int main()':
+main.cpp:13:22: error: no matching function for call to 'std::vector<Foo>::push_back(<brace-enclosed initializer list>)'
+     v.push_back({1,2});
+                      ^
+main.cpp:13:22: note: candidates are:
+In file included from /usr/local/include/c++/4.9.2/vector:64:0,
+                 from main.cpp:2:
+/usr/local/include/c++/4.9.2/bits/stl_vector.h:913:7: note: void std::vector<_Tp, _Alloc>::push_back(const value_type&) [with _Tp = Foo; _Alloc = std::allocator<Foo>; std::vector<_Tp, _Alloc>::value_type = Foo]
+       push_back(const value_type& __x)
+       ^
+/usr/local/include/c++/4.9.2/bits/stl_vector.h:913:7: note:   no known conversion for argument 1 from '<brace-enclosed initializer list>' to 'const value_type& {aka const Foo&}'
+/usr/local/include/c++/4.9.2/bits/stl_vector.h:931:7: note: void std::vector<_Tp, _Alloc>::push_back(std::vector<_Tp, _Alloc>::value_type&&) [with _Tp = Foo; _Alloc = std::allocator<Foo>; std::vector<_Tp, _Alloc>::value_type = Foo]
+       push_back(value_type&& __x)
+       ^
+/usr/local/include/c++/4.9.2/bits/stl_vector.h:931:7: note:   no known conversion for argument 1 from '<brace-enclosed initializer list>' to 'std::vector<Foo>::value_type&& {aka Foo&&}'
