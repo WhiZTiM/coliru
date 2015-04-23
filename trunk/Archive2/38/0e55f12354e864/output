@@ -1,0 +1,65 @@
+In file included from /usr/local/include/boost/range/concepts.hpp:19:0,
+                 from /usr/local/include/boost/range/size_type.hpp:20,
+                 from /usr/local/include/boost/range/size.hpp:21,
+                 from /usr/local/include/boost/range/functions.hpp:20,
+                 from /usr/local/include/boost/range.hpp:18,
+                 from main.cpp:4:
+/usr/local/include/boost/concept_check.hpp: In instantiation of 'boost::Convertible<X, Y>::~Convertible() [with X = boost::iterators::single_pass_traversal_tag; Y = boost::iterators::forward_traversal_tag]':
+/usr/local/include/boost/concept/detail/general.hpp:38:28:   required from 'static void boost::concepts::requirement<boost::concepts::failed************ Model::************>::failed() [with Model = boost::Convertible<boost::iterators::single_pass_traversal_tag, boost::iterators::forward_traversal_tag>]'
+/usr/local/include/boost/range/concepts.hpp:189:13:   required from 'struct boost::range_detail::ForwardIteratorConcept<boost::filesystem::recursive_directory_iterator>'
+/usr/local/include/boost/concept/detail/has_constraints.hpp:32:62:   required by substitution of 'template<class Model> boost::concepts::detail::yes boost::concepts::detail::has_constraints_(Model*, boost::concepts::detail::wrap_constraints<Model, (& Model:: constraints)>*) [with Model = boost::range_detail::ForwardIteratorConcept<boost::filesystem::recursive_directory_iterator>]'
+/usr/local/include/boost/concept/detail/has_constraints.hpp:42:5:   required from 'const bool boost::concepts::not_satisfied<boost::range_detail::ForwardIteratorConcept<boost::filesystem::recursive_directory_iterator> >::value'
+/usr/local/include/boost/concept/detail/has_constraints.hpp:45:31:   required from 'struct boost::concepts::not_satisfied<boost::range_detail::ForwardIteratorConcept<boost::filesystem::recursive_directory_iterator> >'
+/usr/local/include/boost/mpl/if.hpp:67:11:   [ skipping 4 instantiation contexts, use -ftemplate-backtrace-limit=0 to disable ]
+/usr/local/include/boost/concept/detail/has_constraints.hpp:42:5:   required from 'const bool boost::concepts::not_satisfied<boost::ForwardRangeConcept<const boost::iterator_range<boost::filesystem::recursive_directory_iterator> > >::value'
+/usr/local/include/boost/concept/detail/has_constraints.hpp:45:31:   required from 'struct boost::concepts::not_satisfied<boost::ForwardRangeConcept<const boost::iterator_range<boost::filesystem::recursive_directory_iterator> > >'
+/usr/local/include/boost/mpl/if.hpp:67:11:   required from 'struct boost::mpl::if_<boost::concepts::not_satisfied<boost::ForwardRangeConcept<const boost::iterator_range<boost::filesystem::recursive_directory_iterator> > >, boost::concepts::constraint<boost::ForwardRangeConcept<const boost::iterator_range<boost::filesystem::recursive_directory_iterator> > >, boost::concepts::requirement<boost::concepts::failed************ boost::ForwardRangeConcept<const boost::iterator_range<boost::filesystem::recursive_directory_iterator> >::************> >'
+/usr/local/include/boost/concept/detail/general.hpp:50:8:   required from 'struct boost::concepts::requirement_<void (*)(boost::ForwardRangeConcept<const boost::iterator_range<boost::filesystem::recursive_directory_iterator> >)>'
+/usr/local/include/boost/range/algorithm/find_end.hpp:50:5:   required from 'boost::range_detail::filtered_range<Predicate, const ForwardRange> boost::range_detail::operator|(const ForwardRange&, const boost::range_detail::filter_holder<Predicate>&) [with ForwardRange = boost::iterator_range<boost::filesystem::recursive_directory_iterator>; Predicate = main()::<lambda(const boost::filesystem::path&)>]'
+main.cpp:19:68:   required from here
+/usr/local/include/boost/concept_check.hpp:210:13: error: conversion from 'boost::iterators::single_pass_traversal_tag' to non-scalar type 'boost::iterators::forward_traversal_tag' requested
+       Y y = x;
+             ^
+In file included from /usr/local/include/boost/range/size_type.hpp:20:0,
+                 from /usr/local/include/boost/range/size.hpp:21,
+                 from /usr/local/include/boost/range/functions.hpp:20,
+                 from /usr/local/include/boost/range.hpp:18,
+                 from main.cpp:4:
+/usr/local/include/boost/range/concepts.hpp: In instantiation of 'boost::range_detail::ForwardIteratorConcept<Iterator>::~ForwardIteratorConcept() [with Iterator = boost::filesystem::recursive_directory_iterator]':
+/usr/local/include/boost/concept/detail/general.hpp:38:28:   required from 'static void boost::concepts::requirement<boost::concepts::failed************ Model::************>::failed() [with Model = boost::range_detail::ForwardIteratorConcept<boost::filesystem::recursive_directory_iterator>]'
+/usr/local/include/boost/range/concepts.hpp:319:9:   required from 'struct boost::ForwardRangeConcept<const boost::iterator_range<boost::filesystem::recursive_directory_iterator> >'
+/usr/local/include/boost/concept/detail/has_constraints.hpp:32:62:   required by substitution of 'template<class Model> boost::concepts::detail::yes boost::concepts::detail::has_constraints_(Model*, boost::concepts::detail::wrap_constraints<Model, (& Model:: constraints)>*) [with Model = boost::ForwardRangeConcept<const boost::iterator_range<boost::filesystem::recursive_directory_iterator> >]'
+/usr/local/include/boost/concept/detail/has_constraints.hpp:42:5:   required from 'const bool boost::concepts::not_satisfied<boost::ForwardRangeConcept<const boost::iterator_range<boost::filesystem::recursive_directory_iterator> > >::value'
+/usr/local/include/boost/concept/detail/has_constraints.hpp:45:31:   required from 'struct boost::concepts::not_satisfied<boost::ForwardRangeConcept<const boost::iterator_range<boost::filesystem::recursive_directory_iterator> > >'
+/usr/local/include/boost/mpl/if.hpp:67:11:   required from 'struct boost::mpl::if_<boost::concepts::not_satisfied<boost::ForwardRangeConcept<const boost::iterator_range<boost::filesystem::recursive_directory_iterator> > >, boost::concepts::constraint<boost::ForwardRangeConcept<const boost::iterator_range<boost::filesystem::recursive_directory_iterator> > >, boost::concepts::requirement<boost::concepts::failed************ boost::ForwardRangeConcept<const boost::iterator_range<boost::filesystem::recursive_directory_iterator> >::************> >'
+/usr/local/include/boost/concept/detail/general.hpp:50:8:   required from 'struct boost::concepts::requirement_<void (*)(boost::ForwardRangeConcept<const boost::iterator_range<boost::filesystem::recursive_directory_iterator> >)>'
+/usr/local/include/boost/range/algorithm/find_end.hpp:50:5:   required from 'boost::range_detail::filtered_range<Predicate, const ForwardRange> boost::range_detail::operator|(const ForwardRange&, const boost::range_detail::filter_holder<Predicate>&) [with ForwardRange = boost::iterator_range<boost::filesystem::recursive_directory_iterator>; Predicate = main()::<lambda(const boost::filesystem::path&)>]'
+main.cpp:19:68:   required from here
+/usr/local/include/boost/range/concepts.hpp:201:32: error: no matching function for call to 'boost::filesystem::recursive_directory_iterator::recursive_directory_iterator(boost::mpl::eval_if<boost::mpl::and_<boost::is_convertible<boost::filesystem::directory_entry&, const boost::filesystem::directory_entry&>, boost::mpl::not_<boost::is_convertible<boost::iterators::single_pass_traversal_tag, boost::iterators::forward_traversal_tag> >, mpl_::bool_<true>, mpl_::bool_<true>, mpl_::bool_<true> >, boost::mpl::if_<boost::iterators::detail::is_non_proxy_reference<boost::filesystem::directory_entry&, boost::filesystem::directory_entry>, boost::iterators::detail::postfix_increment_proxy<boost::filesystem::recursive_directory_iterator>, boost::iterators::detail::writable_postfix_increment_proxy<boost::filesystem::recursive_directory_iterator> >, boost::mpl::identity<boost::filesystem::recursive_directory_iterator> >::type)'
+                 Iterator i2(i++);
+                                ^
+/usr/local/include/boost/range/concepts.hpp:201:32: note: candidates are:
+In file included from /usr/local/include/boost/filesystem.hpp:17:0,
+                 from main.cpp:3:
+/usr/local/include/boost/filesystem/operations.hpp:1066:5: note: boost::filesystem::recursive_directory_iterator::recursive_directory_iterator(const boost::filesystem::path&, boost::system::error_code&)
+     recursive_directory_iterator(const path& dir_path,
+     ^
+/usr/local/include/boost/filesystem/operations.hpp:1066:5: note:   candidate expects 2 arguments, 1 provided
+/usr/local/include/boost/filesystem/operations.hpp:1055:5: note: boost::filesystem::recursive_directory_iterator::recursive_directory_iterator(const boost::filesystem::path&, boost::filesystem::symlink_option, boost::system::error_code&)
+     recursive_directory_iterator(const path& dir_path,
+     ^
+/usr/local/include/boost/filesystem/operations.hpp:1055:5: note:   candidate expects 3 arguments, 1 provided
+/usr/local/include/boost/filesystem/operations.hpp:1045:14: note: boost::filesystem::recursive_directory_iterator::recursive_directory_iterator(const boost::filesystem::path&, boost::filesystem::symlink_option)
+     explicit recursive_directory_iterator(const path& dir_path,
+              ^
+/usr/local/include/boost/filesystem/operations.hpp:1045:14: note:   no known conversion for argument 1 from 'boost::mpl::eval_if<boost::mpl::and_<boost::is_convertible<boost::filesystem::directory_entry&, const boost::filesystem::directory_entry&>, boost::mpl::not_<boost::is_convertible<boost::iterators::single_pass_traversal_tag, boost::iterators::forward_traversal_tag> >, mpl_::bool_<true>, mpl_::bool_<true>, mpl_::bool_<true> >, boost::mpl::if_<boost::iterators::detail::is_non_proxy_reference<boost::filesystem::directory_entry&, boost::filesystem::directory_entry>, boost::iterators::detail::postfix_increment_proxy<boost::filesystem::recursive_directory_iterator>, boost::iterators::detail::writable_postfix_increment_proxy<boost::filesystem::recursive_directory_iterator> >, boost::mpl::identity<boost::filesystem::recursive_directory_iterator> >::type {aka boost::iterators::detail::postfix_increment_proxy<boost::filesystem::recursive_directory_iterator>}' to 'const boost::filesystem::path&'
+/usr/local/include/boost/filesystem/operations.hpp:1043:5: note: boost::filesystem::recursive_directory_iterator::recursive_directory_iterator()
+     recursive_directory_iterator(){}  // creates the "end" iterator
+     ^
+/usr/local/include/boost/filesystem/operations.hpp:1043:5: note:   candidate expects 0 arguments, 1 provided
+/usr/local/include/boost/filesystem/operations.hpp:1035:9: note: boost::filesystem::recursive_directory_iterator::recursive_directory_iterator(const boost::filesystem::recursive_directory_iterator&)
+   class recursive_directory_iterator
+         ^
+/usr/local/include/boost/filesystem/operations.hpp:1035:9: note:   no known conversion for argument 1 from 'boost::mpl::eval_if<boost::mpl::and_<boost::is_convertible<boost::filesystem::directory_entry&, const boost::filesystem::directory_entry&>, boost::mpl::not_<boost::is_convertible<boost::iterators::single_pass_traversal_tag, boost::iterators::forward_traversal_tag> >, mpl_::bool_<true>, mpl_::bool_<true>, mpl_::bool_<true> >, boost::mpl::if_<boost::iterators::detail::is_non_proxy_reference<boost::filesystem::directory_entry&, boost::filesystem::directory_entry>, boost::iterators::detail::postfix_increment_proxy<boost::filesystem::recursive_directory_iterator>, boost::iterators::detail::writable_postfix_increment_proxy<boost::filesystem::recursive_directory_iterator> >, boost::mpl::identity<boost::filesystem::recursive_directory_iterator> >::type {aka boost::iterators::detail::postfix_increment_proxy<boost::filesystem::recursive_directory_iterator>}' to 'const boost::filesystem::recursive_directory_iterator&'
+/usr/local/include/boost/filesystem/operations.hpp:1035:9: note: boost::filesystem::recursive_directory_iterator::recursive_directory_iterator(boost::filesystem::recursive_directory_iterator&&)
+/usr/local/include/boost/filesystem/operations.hpp:1035:9: note:   no known conversion for argument 1 from 'boost::mpl::eval_if<boost::mpl::and_<boost::is_convertible<boost::filesystem::directory_entry&, const boost::filesystem::directory_entry&>, boost::mpl::not_<boost::is_convertible<boost::iterators::single_pass_traversal_tag, boost::iterators::forward_traversal_tag> >, mpl_::bool_<true>, mpl_::bool_<true>, mpl_::bool_<true> >, boost::mpl::if_<boost::iterators::detail::is_non_proxy_reference<boost::filesystem::directory_entry&, boost::filesystem::directory_entry>, boost::iterators::detail::postfix_increment_proxy<boost::filesystem::recursive_directory_iterator>, boost::iterators::detail::writable_postfix_increment_proxy<boost::filesystem::recursive_directory_iterator> >, boost::mpl::identity<boost::filesystem::recursive_directory_iterator> >::type {aka boost::iterators::detail::postfix_increment_proxy<boost::filesystem::recursive_directory_iterator>}' to 'boost::filesystem::recursive_directory_iterator&&'
