@@ -1,0 +1,4 @@
+main.cpp:10:28: error: no member named 'remainder' in namespace 'std'
+        return size - std::remainder(size, align);
+                      ~~~~~^
+1 error generated.
