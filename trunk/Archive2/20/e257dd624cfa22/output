@@ -1,0 +1,4 @@
+main.cpp:12:5: error: static_assert failed
+    static_assert(std::is_same<decltype(Sales_data()), Sales_data&&>::value);
+    ^             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+1 error generated.
