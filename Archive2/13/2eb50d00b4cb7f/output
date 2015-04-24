@@ -1,0 +1,8 @@
+A::A
+A::B
+A::C
+D
+path 
+path A::path
+A::A
+A::operator=
