@@ -1,0 +1,2 @@
+static long long int (* A::B(A::f))(long long int)
+A::B(...)
