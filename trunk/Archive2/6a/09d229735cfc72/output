@@ -1,0 +1,3 @@
+B
+static B (* A::B(f))(B)
+B (...)
