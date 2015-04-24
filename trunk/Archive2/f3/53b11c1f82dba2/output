@@ -1,0 +1,8 @@
+main.cpp: In member function 'Element SafeArray<Element>::get(int) const':
+main.cpp:47:13: error: 'cout' was not declared in this scope
+             cout << "error";
+             ^
+main.cpp: In member function 'void SafeArray<Element>::set(int, Element)':
+main.cpp:57:13: error: 'cout' was not declared in this scope
+             cout << "error";
+             ^
