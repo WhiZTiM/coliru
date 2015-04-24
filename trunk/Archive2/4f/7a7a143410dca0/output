@@ -1,0 +1,4 @@
+main.cpp:14:5: error: static_assert failed
+    static_assert(test("zyx"));
+    ^             ~~~~~~~~~~~
+1 error generated.
