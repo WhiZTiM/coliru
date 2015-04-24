@@ -1,0 +1,10 @@
+main.cpp:12:107: error: ISO C++ forbids declaration of 'LinearMotionOfUniformAcceleration' with no type [-fpermissive]
+   LinearMotionOfUniformAcceleration(const Vector2D& _start_point, const Vector2D& _end_point, TimeType _dt)
+                                                                                                           ^
+main.cpp: In member function 'int LinearMotionOfUniformAcceleration2D<Vector2D, TimeType>::LinearMotionOfUniformAcceleration(const Vector2D&, const Vector2D&, TimeType)':
+main.cpp:13:5: error: only constructors take member initializers
+    :dpt(_start_point), dst(_end_point), term(_dt){}
+     ^
+main.cpp:13:51: warning: no return statement in function returning non-void [-Wreturn-type]
+    :dpt(_start_point), dst(_end_point), term(_dt){}
+                                                   ^
