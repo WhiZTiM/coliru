@@ -1,0 +1,10 @@
+main.cpp:3:12: error: expected ';' or '{' before 'f'
+ enum F:int f = F::x;
+            ^
+main.cpp:3:12: error: expected class-key before 'f'
+main.cpp:3:14: error: invalid type in declaration before '=' token
+ enum F:int f = F::x;
+              ^
+main.cpp:3:16: error: 'F' is not a class, namespace, or enumeration
+ enum F:int f = F::x;
+                ^
