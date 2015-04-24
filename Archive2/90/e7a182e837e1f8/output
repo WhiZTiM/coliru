@@ -1,0 +1,7 @@
+yay
+Traceback (most recent call last):
+  File "<stdin>", line 8, in <module>
+Boost.Python.ArgumentError: Python argument types in
+    Test.foo(Bar)
+did not match C++ signature:
+    foo(boost::shared_ptr<Base>)
