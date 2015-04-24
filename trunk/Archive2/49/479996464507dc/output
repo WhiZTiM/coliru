@@ -1,0 +1,10 @@
+main.cpp: In function 'int main()':
+main.cpp:9:9: warning: comparisons like 'X<=Y<=Z' do not have their mathematical meaning [-Wparentheses]
+   if(foo<1>(3))
+         ^
+main.cpp:10:14: warning: division by zero [-Wdiv-by-zero]
+     int c = 3/0;
+              ^
+main.cpp:10:9: warning: unused variable 'c' [-Wunused-variable]
+     int c = 3/0;
+         ^
