@@ -1,0 +1,10 @@
+main.cpp:31:30: error: no type named 'error_in_grammar_after' in 'Pipeline<Pipeline<Where, Select>, Select>'
+    using type = typename _::error_in_grammar_after;
+                 ~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+main.cpp:38:26: note: in instantiation of template class 'CheckGrammar<Pipeline<Pipeline<Pipeline<Pipeline<Pipeline<Where, Select>, Select>, Where>, Select>, Where> >' requested here
+    using run = typename CheckGrammar<decltype(result)>::type; // Run grammar check at compile-time
+                         ^
+main.cpp:46:27: note: in instantiation of function template specialization 'operator|<Pipeline<Pipeline<Pipeline<Pipeline<Where, Select>, Select>, Where>, Select>, Where>' requested here
+    auto q3 = q2 | select | where; // ERROR
+                          ^
+1 error generated.
