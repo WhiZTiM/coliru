@@ -1,0 +1,5 @@
+terminate called after throwing an instance of 'boost::interprocess::interprocess_exception'
+  what():  Function not implemented
+Look ma! I'm handling my exceptions
+
+bash: line 7: 28034 Aborted                 (core dumped) ./a.out
