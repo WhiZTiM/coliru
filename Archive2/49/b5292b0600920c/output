@@ -1,0 +1,49 @@
+-----------------------------
+String to match : 2012.12
+-----------------------------
+  submatch 1: 2012
+  submatch 2: 12
+  submatch 3: 
+  submatch 4: 
+-----------------------------
+String to match : 2012.12-1
+-----------------------------
+  submatch 1: 2012
+  submatch 2: 12
+  submatch 3: 
+  submatch 4: 1
+-----------------------------
+String to match : 2012.12-SP1
+-----------------------------
+  submatch 1: 2012
+  submatch 2: 12
+  submatch 3: SP1
+  submatch 4: 
+-----------------------------
+String to match : 2012.12-SP2-1
+-----------------------------
+  submatch 1: 2012
+  submatch 2: 12
+  submatch 3: SP2
+  submatch 4: 1
+-----------------------------
+String to match : I-2013.12-2
+-----------------------------
+  submatch 1: 2013
+  submatch 2: 12
+  submatch 3: 
+  submatch 4: 2
+-----------------------------
+String to match : J-2014.09
+-----------------------------
+  submatch 1: 2014
+  submatch 2: 09
+  submatch 3: 
+  submatch 4: 
+-----------------------------
+String to match : J-2014.09-SP2-1
+-----------------------------
+  submatch 1: 2014
+  submatch 2: 09
+  submatch 3: SP2
+  submatch 4: 1
