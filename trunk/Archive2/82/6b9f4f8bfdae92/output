@@ -1,0 +1,15 @@
+move disk 1 from peg A to peg B
+move disk 2 from peg A to peg C
+move disk 1 from peg B to peg C
+move disk 3 from peg A to peg B
+move disk 1 from peg C to peg A
+move disk 2 from peg C to peg B
+move disk 1 from peg A to peg B
+move disk 4 from peg A to peg C
+move disk 1 from peg B to peg C
+move disk 2 from peg B to peg A
+move disk 1 from peg C to peg A
+move disk 3 from peg B to peg C
+move disk 1 from peg A to peg B
+move disk 2 from peg A to peg C
+move disk 1 from peg B to peg C
