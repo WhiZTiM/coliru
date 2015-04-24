@@ -1,0 +1,1 @@
+clang++ -std=c++11 -Werror main.cpp && ./a.out

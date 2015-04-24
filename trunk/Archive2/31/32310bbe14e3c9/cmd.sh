@@ -1,0 +1,1 @@
+clang++ -std=c++1y -O3 -pedantic -Wno-all main.cpp && ./a.out
