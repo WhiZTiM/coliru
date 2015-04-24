@@ -1,0 +1,33 @@
+main.cpp: In function 'int send_data(char*)':
+main.cpp:4:14: error: 'sock' was not declared in this scope
+     if( send(sock , message , strlen(message) , 0) < 0)
+              ^
+main.cpp:4:45: error: 'strlen' was not declared in this scope
+     if( send(sock , message , strlen(message) , 0) < 0)
+                                             ^
+main.cpp:4:50: error: 'send' was not declared in this scope
+     if( send(sock , message , strlen(message) , 0) < 0)
+                                                  ^
+main.cpp:6:27: error: 'puts' was not declared in this scope
+         puts("Send failed");
+                           ^
+main.cpp:9:28: error: 'printf' was not declared in this scope
+     printf("Sent message [");
+                            ^
+main.cpp:10:23: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for (int i = 0; i < sizeof(message)/sizeof(char);i++)
+                       ^
+main.cpp: In function 'int handle_std_rec(char*, int)':
+main.cpp:19:35: error: 'printf' was not declared in this scope
+         printf("%.02hhx ",reply[i]);
+                                   ^
+main.cpp:22:16: error: 'printf' was not declared in this scope
+     printf("\n");
+                ^
+main.cpp:25:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+main.cpp: At global scope:
+main.cpp:27:1: error: expected unqualified-id before '--' token
+ -- output
+ ^
