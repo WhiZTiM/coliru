@@ -1,0 +1,18 @@
+
+g++ ##########################################
+
+void l3::report(const char*) at offset  0 ; data is at offset 16 ; naively to offset 48
+void l2::report(const char*) at offset  0 ; data is at offset  8 ; naively to offset 40
+void l1::report(const char*) at offset 32 ; data is at offset 40 ; naively to offset 56
+void l0::report(const char*) at offset 24 ; data is at offset 24 ; naively to offset 32
+the complete object occupies [0x7fff139cb320, 0x7fff139cb350)
+copying from [0x7fff139cb340, 0x7fff139cb370) to [0x7fff139cb350, 0x7fff139cb380)
+
+clang++ ##########################################
+
+void l3::report(const char *) at offset  0 ; data is at offset 16 ; naively to offset 48
+void l2::report(const char *) at offset  0 ; data is at offset  8 ; naively to offset 40
+void l1::report(const char *) at offset 32 ; data is at offset 40 ; naively to offset 56
+void l0::report(const char *) at offset 24 ; data is at offset 24 ; naively to offset 32
+the complete object occupies [0x7fff653cdea0, 0x7fff653cded0)
+copying from [0x7fff653cdec0, 0x7fff653cdef0) to [0x7fff653cde80, 0x7fff653cdeb0)
