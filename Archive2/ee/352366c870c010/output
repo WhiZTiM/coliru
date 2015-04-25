@@ -1,0 +1,21 @@
+	.file	"main.cpp"
+	.section	.text._Z29name_of_the_function_templateIXadL_Z29name_of_the_external_variableEEEvv,"axG",@progbits,_Z29name_of_the_function_templateIXadL_Z29name_of_the_external_variableEEEvv,comdat
+	.weak	_Z29name_of_the_function_templateIXadL_Z29name_of_the_external_variableEEEvv
+	.type	_Z29name_of_the_function_templateIXadL_Z29name_of_the_external_variableEEEvv, @function
+_Z29name_of_the_function_templateIXadL_Z29name_of_the_external_variableEEEvv:
+.LFB1:
+	.cfi_startproc
+	pushq	%rbp
+	.cfi_def_cfa_offset 16
+	.cfi_offset 6, -16
+	movq	%rsp, %rbp
+	.cfi_def_cfa_register 6
+	movl	$42, name_of_the_external_variable(%rip)
+	popq	%rbp
+	.cfi_def_cfa 7, 8
+	ret
+	.cfi_endproc
+.LFE1:
+	.size	_Z29name_of_the_function_templateIXadL_Z29name_of_the_external_variableEEEvv, .-_Z29name_of_the_function_templateIXadL_Z29name_of_the_external_variableEEEvv
+	.ident	"GCC: (GNU) 4.9.2"
+	.section	.note.GNU-stack,"",@progbits
