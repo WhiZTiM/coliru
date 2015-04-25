@@ -1,0 +1,7 @@
+main.cpp:15:5: error: no matching function for call to 'fn'
+    fn([x](abc&, def&) {});
+    ^~
+main.cpp:9:6: note: candidate template ignored: could not match 'void (*)(Args...)' against '(lambda at main.cpp:15:8)'
+void fn(void(*)(Args... fn)) {}
+     ^
+1 error generated.
