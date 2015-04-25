@@ -1,0 +1,32 @@
+main.cpp:13:12: error: unknown type name 'ostream'; did you mean 'std::ostream'?
+    friend ostream& operator<<(ostream& out, const T& obj); //HERE
+           ^~~~~~~
+           std::ostream
+/usr/include/c++/v1/iosfwd:147:38: note: 'std::ostream' declared here
+typedef basic_ostream<char>          ostream;
+                                     ^
+main.cpp:13:32: error: unknown type name 'ostream'; did you mean 'std::ostream'?
+    friend ostream& operator<<(ostream& out, const T& obj); //HERE
+                               ^~~~~~~
+                               std::ostream
+/usr/include/c++/v1/iosfwd:147:38: note: 'std::ostream' declared here
+typedef basic_ostream<char>          ostream;
+                                     ^
+main.cpp:9:53: error: expected ';' after expression
+    MyClass() : size(10), index(0) { vec = new T[10] };
+                                                    ^
+                                                    ;
+main.cpp:10:56: error: expected ';' after expression
+    MyClass(int i) : size(i), index(0) { vec = new T[i] };
+                                                       ^
+                                                       ;
+main.cpp:21:9: error: 'MyClass' is not a class, namespace, or scoped enumeration
+virtual MyClass::~MyClass()
+        ^
+main.cpp:6:7: note: 'MyClass' declared here
+class MyClass
+      ^
+main.cpp:21:19: error: expected the class name after '~' to name a destructor
+virtual MyClass::~MyClass()
+                  ^
+6 errors generated.
