@@ -1,0 +1,7 @@
+main.cpp:164:7: error: no matching member function for call to 'transform'
+    w.transform([](abc& a, ghc& b) {
+    ~~^~~~~~~~~
+main.cpp:109:14: note: candidate function [with Components = <>] not viable: no known conversion from '(lambda at main.cpp:164:17)' to 'block_deduction<std::function<void ()> >' (aka 'std::function<void ()>') for 1st argument
+        void transform(block_deduction<std::function<void(Components...)>> fn) {
+             ^
+1 error generated.
