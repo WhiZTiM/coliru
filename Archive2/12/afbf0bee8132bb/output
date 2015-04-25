@@ -1,0 +1,7 @@
+main.cpp:8:20: warning: implicit conversion changes signedness: 'int' to 'size_type' (aka 'unsigned long') [-Wsign-conversion]
+    { if(city_name[x] == 'a' || 'e')
+         ~~~~~~~~~ ^
+main.cpp:9:17: warning: implicit conversion changes signedness: 'int' to 'size_type' (aka 'unsigned long') [-Wsign-conversion]
+      city_name[x] = ' ';}   
+      ~~~~~~~~~ ^
+2 warnings generated.
