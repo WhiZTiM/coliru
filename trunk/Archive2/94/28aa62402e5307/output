@@ -1,0 +1,5 @@
+Snapshot::Snapshot: mFrames=1 mBytes=1
+Snapshot::update:   mFrames=2 mBytes=2
+Snapshot::update:   mFrames=3 mBytes=3
+Snapshot::update:   mFrames=4 mBytes=4
+Snapshot::update:   mFrames=5 mBytes=5
