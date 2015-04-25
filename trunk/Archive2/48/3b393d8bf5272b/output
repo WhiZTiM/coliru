@@ -1,0 +1,10 @@
+*** SizeCounter: mFrames=1 mBytes=1
+*** LatencyCounter: mMinimum=13 mMaximum=13
+SizeCounter: mFrames=2 mBytes=2
+SizeCounter: mFrames=3 mBytes=3
+SizeCounter: mFrames=4 mBytes=4
+SizeCounter: mFrames=5 mBytes=5
+LatencyCounter: mMinimum=13 mMaximum=16
+LatencyCounter: mMinimum=13 mMaximum=27
+LatencyCounter: mMinimum=13 mMaximum=27
+LatencyCounter: mMinimum=13 mMaximum=27
