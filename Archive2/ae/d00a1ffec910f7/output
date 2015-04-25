@@ -1,0 +1,7 @@
+main.cpp:159:7: error: no matching member function for call to 'transform'
+    w.transform<abc&, ghc&>([](abc& a, ghc& b) {
+    ~~^~~~~~~~~~~~~~~~~~~~~
+main.cpp:104:14: note: candidate template ignored: could not match 'function<void (abc &, ghc &, type-parameter-0-0...)>' against '(lambda at main.cpp:159:29)'
+        void transform(std::function<void(Components...)> fn) {
+             ^
+1 error generated.
