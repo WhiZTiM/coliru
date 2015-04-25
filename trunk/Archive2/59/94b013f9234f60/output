@@ -1,0 +1,7 @@
+main.cpp:20:5: error: no matching function for call to 'do_something'
+    do_something([](abc&, def&) {});
+    ^~~~~~~~~~~~
+main.cpp:13:6: note: candidate template ignored: could not match 'void (*)(Components...)' against '(lambda at main.cpp:20:18)'
+void do_something(void(*)(Components...)) {}
+     ^
+1 error generated.
