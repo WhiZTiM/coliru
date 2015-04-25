@@ -1,0 +1,14 @@
+main.cpp:12:25: error: cannot pass non-trivial object of type 'string' (aka 'basic_string<char, char_traits<char>, allocator<char> >') to variadic function; expected type from format string was 'char *' [-Wnon-pod-varargs]
+        printf("%s \n", s);
+                ~~      ^
+main.cpp:12:25: note: did you mean to call the c_str() method?
+        printf("%s \n", s);
+                        ^
+                         .c_str()
+main.cpp:6:15: warning: unused parameter 'argc' [-Wunused-parameter]
+int main( int argc, char ** argv )
+              ^
+main.cpp:6:29: warning: unused parameter 'argv' [-Wunused-parameter]
+int main( int argc, char ** argv )
+                            ^
+2 warnings and 1 error generated.
