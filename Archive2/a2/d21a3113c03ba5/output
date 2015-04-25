@@ -1,0 +1,86 @@
+main.cpp: In constructor 'SizeCounter::Snapshot::Snapshot(int32_t)':
+main.cpp:75:9: error: expected identifier before '{' token
+         {   
+         ^
+main.cpp: In constructor 'SizeCounter::SizeCounter()':
+main.cpp:96:35: error: no matching function for call to 'SizeCounter::Snapshot::Snapshot()'
+     SizeCounter() : Processor(this)
+                                   ^
+main.cpp:96:35: note: candidates are:
+main.cpp:74:18: note: SizeCounter::Snapshot::Snapshot(int32_t)
+         explicit Snapshot(std::int32_t initial_size) :
+                  ^
+main.cpp:74:18: note:   candidate expects 1 argument, 0 provided
+main.cpp:72:12: note: constexpr SizeCounter::Snapshot::Snapshot(const SizeCounter::Snapshot&)
+     struct Snapshot
+            ^
+main.cpp:72:12: note:   candidate expects 1 argument, 0 provided
+main.cpp:72:12: note: constexpr SizeCounter::Snapshot::Snapshot(SizeCounter::Snapshot&&)
+main.cpp:72:12: note:   candidate expects 1 argument, 0 provided
+main.cpp: In member function 'void SizeCounter::do_process(const Packet&)':
+main.cpp:102:33: error: 'const struct Packet' has no member named 'size'
+         mSnapshot.update(packet.size());
+                                 ^
+main.cpp: In member function 'void SizeCounter::do_process(const PacketGroup&)':
+main.cpp:107:36: error: 'const struct PacketGroup' has no member named 'minimumSize'
+         mSnapshot.mMinimum = group.minimumSize();
+                                    ^
+main.cpp:108:36: error: 'const struct PacketGroup' has no member named 'maximumSize'
+         mSnapshot.mMaximum = group.maximumSize();
+                                    ^
+main.cpp:109:34: error: 'const struct PacketGroup' has no member named 'mBytes'
+         mSnapshot.mBytes = group.mBytes();
+                                  ^
+main.cpp:110:35: error: 'const struct PacketGroup' has no member named 'size'
+         mSnapshot.mFrames = group.size();
+                                   ^
+main.cpp: In instantiation of 'Processor::Processor(Derived&) [with Derived = SizeCounter* const]':
+main.cpp:96:35:   required from here
+main.cpp:22:56: error: no matching function for call to 'std::unique_ptr<Processor::Base>::unique_ptr(Processor::BabyImpl<SizeCounter* const>*)'
+     Processor(Derived&) : mImpl(new BabyImpl<Derived>())
+                                                        ^
+main.cpp:22:56: note: candidates are:
+In file included from /usr/include/c++/4.8/memory:81:0,
+                 from main.cpp:4:
+/usr/include/c++/4.8/bits/unique_ptr.h:176:2: note: template<class _Up, class> std::unique_ptr<_Tp, _Dp>::unique_ptr(std::auto_ptr<_Up>&&)
+  unique_ptr(auto_ptr<_Up>&& __u) noexcept;
+  ^
+/usr/include/c++/4.8/bits/unique_ptr.h:176:2: note:   template argument deduction/substitution failed:
+main.cpp:22:56: note:   mismatched types 'std::auto_ptr<_Up>' and 'Processor::BabyImpl<SizeCounter* const>*'
+     Processor(Derived&) : mImpl(new BabyImpl<Derived>())
+                                                        ^
+In file included from /usr/include/c++/4.8/memory:81:0,
+                 from main.cpp:4:
+/usr/include/c++/4.8/bits/unique_ptr.h:169:2: note: template<class _Up, class _Ep, class> std::unique_ptr<_Tp, _Dp>::unique_ptr(std::unique_ptr<_Up, _Ep>&&)
+  unique_ptr(unique_ptr<_Up, _Ep>&& __u) noexcept
+  ^
+/usr/include/c++/4.8/bits/unique_ptr.h:169:2: note:   template argument deduction/substitution failed:
+main.cpp:22:56: note:   mismatched types 'std::unique_ptr<_Tp, _Dp>' and 'Processor::BabyImpl<SizeCounter* const>*'
+     Processor(Derived&) : mImpl(new BabyImpl<Derived>())
+                                                        ^
+In file included from /usr/include/c++/4.8/memory:81:0,
+                 from main.cpp:4:
+/usr/include/c++/4.8/bits/unique_ptr.h:160:7: note: std::unique_ptr<_Tp, _Dp>::unique_ptr(std::unique_ptr<_Tp, _Dp>&&) [with _Tp = Processor::Base; _Dp = std::default_delete<Processor::Base>]
+       unique_ptr(unique_ptr&& __u) noexcept
+       ^
+/usr/include/c++/4.8/bits/unique_ptr.h:160:7: note:   no known conversion for argument 1 from 'Processor::BabyImpl<SizeCounter* const>*' to 'std::unique_ptr<Processor::Base>&&'
+/usr/include/c++/4.8/bits/unique_ptr.h:157:17: note: constexpr std::unique_ptr<_Tp, _Dp>::unique_ptr(std::nullptr_t) [with _Tp = Processor::Base; _Dp = std::default_delete<Processor::Base>; std::nullptr_t = std::nullptr_t]
+       constexpr unique_ptr(nullptr_t) noexcept : unique_ptr() { }
+                 ^
+/usr/include/c++/4.8/bits/unique_ptr.h:157:17: note:   no known conversion for argument 1 from 'Processor::BabyImpl<SizeCounter* const>*' to 'std::nullptr_t'
+/usr/include/c++/4.8/bits/unique_ptr.h:151:7: note: std::unique_ptr<_Tp, _Dp>::unique_ptr(std::unique_ptr<_Tp, _Dp>::pointer, typename std::remove_reference<_To>::type&&) [with _Tp = Processor::Base; _Dp = std::default_delete<Processor::Base>; std::unique_ptr<_Tp, _Dp>::pointer = Processor::Base*; typename std::remove_reference<_To>::type = std::default_delete<Processor::Base>]
+       unique_ptr(pointer __p,
+       ^
+/usr/include/c++/4.8/bits/unique_ptr.h:151:7: note:   candidate expects 2 arguments, 1 provided
+/usr/include/c++/4.8/bits/unique_ptr.h:146:7: note: std::unique_ptr<_Tp, _Dp>::unique_ptr(std::unique_ptr<_Tp, _Dp>::pointer, typename std::conditional<std::is_reference<_Dp>::value, _Dp, const _Dp&>::type) [with _Tp = Processor::Base; _Dp = std::default_delete<Processor::Base>; std::unique_ptr<_Tp, _Dp>::pointer = Processor::Base*; typename std::conditional<std::is_reference<_Dp>::value, _Dp, const _Dp&>::type = const std::default_delete<Processor::Base>&]
+       unique_ptr(pointer __p,
+       ^
+/usr/include/c++/4.8/bits/unique_ptr.h:146:7: note:   candidate expects 2 arguments, 1 provided
+/usr/include/c++/4.8/bits/unique_ptr.h:141:7: note: std::unique_ptr<_Tp, _Dp>::unique_ptr(std::unique_ptr<_Tp, _Dp>::pointer) [with _Tp = Processor::Base; _Dp = std::default_delete<Processor::Base>; std::unique_ptr<_Tp, _Dp>::pointer = Processor::Base*]
+       unique_ptr(pointer __p) noexcept
+       ^
+/usr/include/c++/4.8/bits/unique_ptr.h:141:7: note:   no known conversion for argument 1 from 'Processor::BabyImpl<SizeCounter* const>*' to 'std::unique_ptr<Processor::Base>::pointer {aka Processor::Base*}'
+/usr/include/c++/4.8/bits/unique_ptr.h:135:17: note: constexpr std::unique_ptr<_Tp, _Dp>::unique_ptr() [with _Tp = Processor::Base; _Dp = std::default_delete<Processor::Base>]
+       constexpr unique_ptr() noexcept
+                 ^
+/usr/include/c++/4.8/bits/unique_ptr.h:135:17: note:   candidate expects 0 arguments, 1 provided
