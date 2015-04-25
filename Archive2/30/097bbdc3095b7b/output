@@ -1,0 +1,169 @@
+main.cpp:25:28: error: variable or field 'RPC_CreateRateCounter' declared void
+ void RPC_CreateRateCounter(BBPort& bbPort)
+                            ^
+main.cpp:25:28: error: 'BBPort' was not declared in this scope
+main.cpp:25:36: error: 'bbPort' was not declared in this scope
+ void RPC_CreateRateCounter(BBPort& bbPort)
+                                    ^
+main.cpp:38:32: error: 'PacketGroup' does not name a type
+     void do_processGroup(const PacketGroup& packetGroup)
+                                ^
+main.cpp:38:45: error: ISO C++ forbids declaration of 'packetGroup' with no type [-fpermissive]
+     void do_processGroup(const PacketGroup& packetGroup)
+                                             ^
+main.cpp:69:22: error: expected type-specifier before 'SizeCounterTraits'
+     using Snapshot = SizeCounterTraits::Snapshot;
+                      ^
+main.cpp:70:5: error: 'Snapshot' does not name a type
+     Snapshot mSnapshot;
+     ^
+main.cpp:74:5: error: 'mutex' in namespace 'std' does not name a type
+     std::mutex mMutex;
+     ^
+main.cpp: In member function 'virtual void SizeCounter::do_process(const ReceivedPacket&)':
+main.cpp:35:9: error: 'mSnapshot' was not declared in this scope
+         mSnapshot.update(packet.size());
+         ^
+main.cpp:35:33: error: 'const struct ReceivedPacket' has no member named 'size'
+         mSnapshot.update(packet.size());
+                                 ^
+main.cpp: In member function 'void SizeCounter::do_processGroup(const int&)':
+main.cpp:40:9: error: 'shared_ptr' is not a member of 'std'
+         std::shared_ptr<Buffer> buffer = obtainBuffer();
+         ^
+main.cpp:40:31: error: expected primary-expression before '>' token
+         std::shared_ptr<Buffer> buffer = obtainBuffer();
+                               ^
+main.cpp:40:33: error: 'buffer' was not declared in this scope
+         std::shared_ptr<Buffer> buffer = obtainBuffer();
+                                 ^
+main.cpp:40:55: error: 'obtainBuffer' was not declared in this scope
+         std::shared_ptr<Buffer> buffer = obtainBuffer();
+                                                       ^
+main.cpp:42:29: error: no matching function for call to 'begin(const int&)'
+         for (auto& packet : packetGroup)
+                             ^
+main.cpp:42:29: note: candidates are:
+In file included from /usr/include/c++/4.8/string:51:0,
+                 from /usr/include/c++/4.8/random:41,
+                 from /usr/include/c++/4.8/bits/stl_algo.h:65,
+                 from /usr/include/c++/4.8/algorithm:62,
+                 from main.cpp:1:
+/usr/include/c++/4.8/bits/range_access.h:87:5: note: template<class _Tp, long unsigned int _Nm> _Tp* std::begin(_Tp (&)[_Nm])
+     begin(_Tp (&__arr)[_Nm])
+     ^
+/usr/include/c++/4.8/bits/range_access.h:87:5: note:   template argument deduction/substitution failed:
+main.cpp:42:29: note:   mismatched types '_Tp [_Nm]' and 'const int'
+         for (auto& packet : packetGroup)
+                             ^
+In file included from /usr/include/c++/4.8/string:51:0,
+                 from /usr/include/c++/4.8/random:41,
+                 from /usr/include/c++/4.8/bits/stl_algo.h:65,
+                 from /usr/include/c++/4.8/algorithm:62,
+                 from main.cpp:1:
+/usr/include/c++/4.8/bits/range_access.h:58:5: note: template<class _Container> decltype (__cont.begin()) std::begin(const _Container&)
+     begin(const _Container& __cont) -> decltype(__cont.begin())
+     ^
+/usr/include/c++/4.8/bits/range_access.h:58:5: note:   template argument deduction/substitution failed:
+/usr/include/c++/4.8/bits/range_access.h: In substitution of 'template<class _Container> decltype (__cont.begin()) std::begin(const _Container&) [with _Container = int]':
+main.cpp:42:29:   required from here
+/usr/include/c++/4.8/bits/range_access.h:58:5: error: request for member 'begin' in '__cont', which is of non-class type 'const int'
+/usr/include/c++/4.8/bits/range_access.h:48:5: note: template<class _Container> decltype (__cont.begin()) std::begin(_Container&)
+     begin(_Container& __cont) -> decltype(__cont.begin())
+     ^
+/usr/include/c++/4.8/bits/range_access.h:48:5: note:   template argument deduction/substitution failed:
+/usr/include/c++/4.8/bits/range_access.h: In substitution of 'template<class _Container> decltype (__cont.begin()) std::begin(_Container&) [with _Container = const int]':
+main.cpp:42:29:   required from here
+/usr/include/c++/4.8/bits/range_access.h:48:5: error: request for member 'begin' in '__cont', which is of non-class type 'const int'
+In file included from /usr/include/c++/4.8/utility:74:0,
+                 from /usr/include/c++/4.8/algorithm:60,
+                 from main.cpp:1:
+/usr/include/c++/4.8/initializer_list:89:5: note: template<class _Tp> constexpr const _Tp* std::begin(std::initializer_list<_Tp>)
+     begin(initializer_list<_Tp> __ils) noexcept
+     ^
+/usr/include/c++/4.8/initializer_list:89:5: note:   template argument deduction/substitution failed:
+main.cpp:42:29: note:   mismatched types 'std::initializer_list<_Tp>' and 'int'
+         for (auto& packet : packetGroup)
+                             ^
+main.cpp:42:29: error: no matching function for call to 'end(const int&)'
+main.cpp:42:29: note: candidates are:
+In file included from /usr/include/c++/4.8/string:51:0,
+                 from /usr/include/c++/4.8/random:41,
+                 from /usr/include/c++/4.8/bits/stl_algo.h:65,
+                 from /usr/include/c++/4.8/algorithm:62,
+                 from main.cpp:1:
+/usr/include/c++/4.8/bits/range_access.h:97:5: note: template<class _Tp, long unsigned int _Nm> _Tp* std::end(_Tp (&)[_Nm])
+     end(_Tp (&__arr)[_Nm])
+     ^
+/usr/include/c++/4.8/bits/range_access.h:97:5: note:   template argument deduction/substitution failed:
+main.cpp:42:29: note:   mismatched types '_Tp [_Nm]' and 'const int'
+         for (auto& packet : packetGroup)
+                             ^
+In file included from /usr/include/c++/4.8/string:51:0,
+                 from /usr/include/c++/4.8/random:41,
+                 from /usr/include/c++/4.8/bits/stl_algo.h:65,
+                 from /usr/include/c++/4.8/algorithm:62,
+                 from main.cpp:1:
+/usr/include/c++/4.8/bits/range_access.h:78:5: note: template<class _Container> decltype (__cont.end()) std::end(const _Container&)
+     end(const _Container& __cont) -> decltype(__cont.end())
+     ^
+/usr/include/c++/4.8/bits/range_access.h:78:5: note:   template argument deduction/substitution failed:
+/usr/include/c++/4.8/bits/range_access.h: In substitution of 'template<class _Container> decltype (__cont.end()) std::end(const _Container&) [with _Container = int]':
+main.cpp:42:29:   required from here
+/usr/include/c++/4.8/bits/range_access.h:78:5: error: request for member 'end' in '__cont', which is of non-class type 'const int'
+/usr/include/c++/4.8/bits/range_access.h:68:5: note: template<class _Container> decltype (__cont.end()) std::end(_Container&)
+     end(_Container& __cont) -> decltype(__cont.end())
+     ^
+/usr/include/c++/4.8/bits/range_access.h:68:5: note:   template argument deduction/substitution failed:
+/usr/include/c++/4.8/bits/range_access.h: In substitution of 'template<class _Container> decltype (__cont.end()) std::end(_Container&) [with _Container = const int]':
+main.cpp:42:29:   required from here
+/usr/include/c++/4.8/bits/range_access.h:68:5: error: request for member 'end' in '__cont', which is of non-class type 'const int'
+In file included from /usr/include/c++/4.8/utility:74:0,
+                 from /usr/include/c++/4.8/algorithm:60,
+                 from main.cpp:1:
+/usr/include/c++/4.8/initializer_list:99:5: note: template<class _Tp> constexpr const _Tp* std::end(std::initializer_list<_Tp>)
+     end(initializer_list<_Tp> __ils) noexcept
+     ^
+/usr/include/c++/4.8/initializer_list:99:5: note:   template argument deduction/substitution failed:
+main.cpp:42:29: note:   mismatched types 'std::initializer_list<_Tp>' and 'int'
+         for (auto& packet : packetGroup)
+                             ^
+main.cpp:46:9: error: 'mQueue' was not declared in this scope
+         mQueue.push(buffer);
+         ^
+main.cpp: In member function 'void SizeCounter::process_buffers()':
+main.cpp:51:9: error: 'shared_ptr' is not a member of 'std'
+         std::shared_ptr<Buffer> buffer;
+         ^
+main.cpp:51:31: error: expected primary-expression before '>' token
+         std::shared_ptr<Buffer> buffer;
+                               ^
+main.cpp:51:33: error: 'buffer' was not declared in this scope
+         std::shared_ptr<Buffer> buffer;
+                                 ^
+main.cpp:53:9: error: 'mQueue' was not declared in this scope
+         mQueue.pop(buffer);
+         ^
+main.cpp:54:9: error: 'mSnapshot' was not declared in this scope
+         mSnapshot.initialize(buffer.pop_front());
+         ^
+main.cpp:59:17: error: 'mQuit' was not declared in this scope
+             if (mQuit) return;
+                 ^
+main.cpp: In member function 'void SizeCounterTraits::Snapshot::update(const Range&)':
+main.cpp:128:13: error: expected primary-expression before '/' token
+             / 
+             ^
+main.cpp:129:13: error: expected primary-expression before 'auto'
+             auto local_copy = mSnapshot;
+             ^
+main.cpp:129:13: error: expected ';' before 'auto'
+main.cpp:132:17: error: 'local_copy' was not declared in this scope
+                 local_copy.update(size);
+                 ^
+main.cpp:134:13: error: 'mSnapshot' was not declared in this scope
+             mSnapshot = local_copy;
+             ^
+main.cpp:134:25: error: 'local_copy' was not declared in this scope
+             mSnapshot = local_copy;
+                         ^
