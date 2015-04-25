@@ -1,0 +1,4 @@
+main.cpp:54:1: error: static_assert failed ""
+static_assert(is_metafunction_class<nullary_metafunction>::value,"");
+^             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+1 error generated.
