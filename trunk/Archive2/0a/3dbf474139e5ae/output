@@ -1,0 +1,7 @@
+main.cpp:12:5: error: no matching function for call to 'fn'
+    fn([](abc&) {});
+    ^~
+main.cpp:9:6: note: candidate template ignored: could not match 'function<void (type-parameter-0-0...)>' against '(lambda at main.cpp:12:8)'
+void fn(std::function<void(Args...)>) {}
+     ^
+1 error generated.
