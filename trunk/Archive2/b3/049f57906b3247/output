@@ -1,0 +1,4 @@
+main.cpp:26:2: error: static_assert failed "fail"
+        static_assert (a != b, "fail");
+        ^              ~~~~~~
+1 error generated.
