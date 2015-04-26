@@ -1,0 +1,2 @@
+(((3*2)*4)*5) = 120
+mul_op<mul_op<mul_op<leaf, leaf>, leaf>, leaf>
