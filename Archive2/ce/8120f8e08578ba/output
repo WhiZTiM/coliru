@@ -1,0 +1,4 @@
+main.cpp:12:10: warning: unused variable 'x' [-Wunused-variable]
+    auto x = SegmentActivityType::PreExecution;
+         ^
+1 warning generated.
