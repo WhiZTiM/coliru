@@ -1,0 +1,6 @@
+main.cpp: In function 'int main()':
+main.cpp:3:8: warning: unused variable 'y' [-Wunused-variable]
+ int x, y;
+        ^
+escreva um numero: 
+positivo
