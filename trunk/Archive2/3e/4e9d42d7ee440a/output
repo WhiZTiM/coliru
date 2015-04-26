@@ -1,0 +1,3 @@
+main.cpp:9:22: error: requested alignment is not an integer constant
+     alignas(g()) int j;
+                      ^
