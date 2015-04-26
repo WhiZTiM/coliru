@@ -1,0 +1,1 @@
+clang++ -std=c++11 -DTOUCH main.cpp 2>/dev/null && echo "TOUCH" && ./a.out; clang++ -std=c++11 main.cpp 2>/dev/null && echo "NO TOUCH" && ./a.out;
