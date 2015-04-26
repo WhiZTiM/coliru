@@ -1,0 +1,22 @@
+main.cpp:8:17: error: exception specification in declaration does not match previous declaration
+    friend void flag<>(std::integral_constant<int, i>) noexcept;
+                ^
+main.cpp:12:27: note: in instantiation of template class 'writer<0>' requested here
+struct dependent_writer : writer<i> {};
+                          ^
+main.cpp:16:14: note: in instantiation of template class 'dependent_writer<false, 0>' requested here
+  int    =   sizeof (dependent_writer<B>)
+             ^
+main.cpp:18:15: note: in instantiation of default argument for 'f<false>' required here
+constexpr int f () {
+              ^~~~~~
+main.cpp:23:20: note: while substituting deduced template arguments into function template 'f' [with B = (no value), $1 = (no value)]
+        constexpr int a = f ();
+                          ^
+main.cpp:8:17: note: previous declaration is here
+    friend void flag<>(std::integral_constant<int, i>) noexcept;
+                ^
+main.cpp:26:2: error: static_assert failed "fail"
+        static_assert (a != b, "fail");
+        ^              ~~~~~~
+2 errors generated.
