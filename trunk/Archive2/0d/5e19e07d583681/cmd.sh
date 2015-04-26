@@ -1,0 +1,1 @@
+g++ -std=c++03 -O3  main.cpp
