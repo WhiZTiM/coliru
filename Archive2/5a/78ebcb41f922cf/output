@@ -1,0 +1,7 @@
+main.cpp: In function 'int main()':
+main.cpp:10:16: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+         if (i=1) continue;
+                ^
+main.cpp:8:13: warning: unused variable 'y' [-Wunused-variable]
+         int y = 7;
+             ^
