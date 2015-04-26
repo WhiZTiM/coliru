@@ -1,0 +1,13 @@
+main.cpp:2:7: error: 'struct A' redeclared as different kind of symbol
+ class A{};
+       ^
+main.cpp:1:13: note: previous declaration 'namespace A { }'
+ namespace A {}
+             ^
+main.cpp:2:7: error: redefinition of 'A' as different kind of symbol
+class A{};
+      ^
+main.cpp:1:11: note: previous definition is here
+namespace A {}
+          ^
+1 error generated.
