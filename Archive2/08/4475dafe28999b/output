@@ -1,0 +1,7 @@
++ g++ -o test -std=c++14 -O3 -pedantic-errors main.cpp
++ echo 100 100
++ ./test
+
+real	0m0.007s
+user	0m0.004s
+sys	0m0.000s
