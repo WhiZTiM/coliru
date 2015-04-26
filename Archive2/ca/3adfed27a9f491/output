@@ -1,0 +1,4 @@
+bash: line 7: warning: here-document at line 7 delimited by end-of-file (wanted `1 2 3 4 5 6 7 8 9 10'\0'')
+main.cpp:1:1: error: expected unqualified-id before numeric constant
+ 1
+ ^
