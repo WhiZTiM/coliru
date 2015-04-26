@@ -1,0 +1,7 @@
+main.cpp:27:7: error: call to deleted constructor of 'B'
+    B b( B{} );
+      ^  ~~~
+main.cpp:21:5: note: 'B' has been explicitly marked deleted here
+    B(B && b) = delete;
+    ^
+1 error generated.
