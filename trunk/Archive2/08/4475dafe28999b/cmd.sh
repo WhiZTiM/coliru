@@ -1,0 +1,1 @@
+set -x; g++ -o test -std=c++14 -O3 -pedantic-errors main.cpp && time echo 100 100 | ./test > output
