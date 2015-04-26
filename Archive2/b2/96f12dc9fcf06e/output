@@ -1,0 +1,7 @@
+std::addressof(a): 0x7fff2b89c99d
+std::addressof(b): 0x7fff2b89c99e
+
+two => main::B::bar( 0x7fff2b89c99e, 456, B )
+four => non_member_fun( 789, 12.34, 56 )
+three => main::closure()
+one => main::A::foo( 0x6cb0a0, 123 )
