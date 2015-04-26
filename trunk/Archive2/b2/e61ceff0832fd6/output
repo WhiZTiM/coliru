@@ -1,0 +1,43 @@
+main.cpp:33:45: warning: friend declaration 'T MultAdd::* get(MultAdd_x_rob_tag<T>)' declares a non-template function [-Wnon-template-friend]
+   friend type get(CLASS##_##MEMBER##_rob_tag);          \
+                                             ^
+main.cpp:64:1: note: in expansion of macro 'ROB_PRIVATE_MEMBER_INST'
+ ROB_PRIVATE_MEMBER_INST(MultAdd, int, x);
+ ^
+main.cpp:33:45: note: (if this is not what you intended, make sure the function template has already been declared and add <> after the function name here) 
+   friend type get(CLASS##_##MEMBER##_rob_tag);          \
+                                             ^
+main.cpp:64:1: note: in expansion of macro 'ROB_PRIVATE_MEMBER_INST'
+ ROB_PRIVATE_MEMBER_INST(MultAdd, int, x);
+ ^
+main.cpp:64:41: warning: extra ';' [-Wpedantic]
+ ROB_PRIVATE_MEMBER_INST(MultAdd, int, x);
+                                         ^
+main.cpp:33:45: warning: friend declaration 'T MultAdd::* get(MultAdd_y_rob_tag<T>)' declares a non-template function [-Wnon-template-friend]
+   friend type get(CLASS##_##MEMBER##_rob_tag);          \
+                                             ^
+main.cpp:65:1: note: in expansion of macro 'ROB_PRIVATE_MEMBER_INST'
+ ROB_PRIVATE_MEMBER_INST(MultAdd, int, y);
+ ^
+main.cpp:65:41: warning: extra ';' [-Wpedantic]
+ ROB_PRIVATE_MEMBER_INST(MultAdd, int, y);
+                                         ^
+main.cpp:47:45: warning: friend declaration 'MultAdd_add_rob_tag<T>::type get(MultAdd_add_rob_tag<T>)' declares a non-template function [-Wnon-template-friend]
+   friend type get(CLASS##_##MEMBER##_rob_tag);          \
+                                             ^
+main.cpp:66:1: note: in expansion of macro 'ROB_PRIVATE_MEMBER_INST_FN'
+ ROB_PRIVATE_MEMBER_INST_FN(MultAdd, int(MultAdd::*)(), add);
+ ^
+main.cpp:66:60: warning: extra ';' [-Wpedantic]
+ ROB_PRIVATE_MEMBER_INST_FN(MultAdd, int(MultAdd::*)(), add);
+                                                            ^
+main.cpp:47:45: warning: friend declaration 'MultAdd_multiply_rob_tag<T>::type get(MultAdd_multiply_rob_tag<T>)' declares a non-template function [-Wnon-template-friend]
+   friend type get(CLASS##_##MEMBER##_rob_tag);          \
+                                             ^
+main.cpp:67:1: note: in expansion of macro 'ROB_PRIVATE_MEMBER_INST_FN'
+ ROB_PRIVATE_MEMBER_INST_FN(MultAdd, int(MultAdd::*)(), multiply);
+ ^
+main.cpp:67:65: warning: extra ';' [-Wpedantic]
+ ROB_PRIVATE_MEMBER_INST_FN(MultAdd, int(MultAdd::*)(), multiply);
+                                                                 ^
+2 10 12 200
