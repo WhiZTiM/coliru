@@ -1,0 +1,4 @@
+main.cpp:21:8: warning: unused variable 'b' [-Wunused-variable]
+  auto b = foo<IsPrime<234799>>::typen<1>(); // Syntax error if not prime
+       ^
+1 warning generated.
