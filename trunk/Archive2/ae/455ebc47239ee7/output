@@ -1,0 +1,4 @@
+main.cpp:9:19: error: expression 'A::f' is not a constant-expression
+     alignas(A::f()) char a[N];
+                   ^
+main.cpp:9: confused by earlier errors, bailing out
