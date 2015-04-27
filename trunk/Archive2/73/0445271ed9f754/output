@@ -1,0 +1,16 @@
+main.cpp:5:0: warning: ignoring #pragma STDC FENV_ACCESS [-Wunknown-pragmas]
+ #pragma STDC FENV_ACCESS ON
+ ^
+main.cpp: In function 'int main()':
+main.cpp:11:26: error: 'hexfloat' is not a member of 'std'
+               << " (" << std::hexfloat << in << std::defaultfloat << ")\n"
+                          ^
+main.cpp:11:49: error: 'defaultfloat' is not a member of 'std'
+               << " (" << std::hexfloat << in << std::defaultfloat << ")\n"
+                                                 ^
+main.cpp:19:18: error: 'hexfloat' is not a member of 'std'
+               << std::hexfloat << fma_result << std::defaultfloat << ")\n\n";
+                  ^
+main.cpp:19:49: error: 'defaultfloat' is not a member of 'std'
+               << std::hexfloat << fma_result << std::defaultfloat << ")\n\n";
+                                                 ^
