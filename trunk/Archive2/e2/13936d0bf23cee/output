@@ -1,0 +1,9 @@
+main.cpp:6:25: warning: adding 'int' to a string does not append to the string [-Wstring-plus-int]
+    return "abcdefghij" + rand() % 5;
+           ~~~~~~~~~~~~~^~~~~~~~~~~~
+main.cpp:6:25: note: use array indexing to silence this warning
+    return "abcdefghij" + rand() % 5;
+                        ^
+           &            [           ]
+1 warning generated.
+efghij
