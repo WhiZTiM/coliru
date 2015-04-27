@@ -1,0 +1,1 @@
+g++ -std=c++98 -O2 -Wall -pedantic -pthread -fpermissive main.cpp && ./a.out
