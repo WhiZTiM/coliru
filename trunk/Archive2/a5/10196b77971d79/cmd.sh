@@ -1,0 +1,1 @@
+g++ main.cpp -c -o main.o && touch x.cpp && g++ -c x.cpp -o x.o && g++ main.o x.o && ./a.out
