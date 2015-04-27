@@ -1,0 +1,7 @@
+main.cpp: In lambda function:
+main.cpp:20:26: error: invalid initialization of reference of type 'x&' from expression of type 'const x'
+         SomeFunc(x_by_ref);  
+                          ^
+main.cpp:10:6: note: in passing argument 1 of 'void SomeFunc(x&)'
+ void SomeFunc(x& x_by_ref)
+      ^
