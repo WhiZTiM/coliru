@@ -1,0 +1,5 @@
+main.cpp: In function 'int main()':
+main.cpp:11:34: warning: '*((void*)& arr_a +28)' is used uninitialized in this function [-Wuninitialized]
+     std::cout << extract(arr_a, 7) << std::endl;
+                                  ^
+0
