@@ -1,0 +1,7 @@
+main.cpp: In function 'int main(int, char**)':
+main.cpp:17:23: error: 'somestruct' is not a namespace
+     using somestruct::enum_name;
+                       ^
+main.cpp:19:20: error: 'STATE1' was not declared in this scope
+     if (s.state == STATE1) {
+                    ^
