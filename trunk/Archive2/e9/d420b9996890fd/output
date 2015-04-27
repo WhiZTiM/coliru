@@ -1,0 +1,53 @@
+	.file	"main.cpp"
+	.section	.text.unlikely._Z6mulu64mm,"axG",@progbits,_Z6mulu64mm,comdat
+.LCOLDB0:
+	.section	.text._Z6mulu64mm,"axG",@progbits,_Z6mulu64mm,comdat
+.LHOTB0:
+	.p2align 5,,31
+	.weak	_Z6mulu64mm
+	.type	_Z6mulu64mm, @function
+_Z6mulu64mm:
+.LFB50:
+	.cfi_startproc
+	movq	%rdi, %rax
+#APP
+# 9 "main.cpp" 1
+	mulq %rsi
+# 0 "" 2
+#NO_APP
+	movq	%rax, %rdi
+	movq	%rdx, %rax
+	movq	%rdi, %rdx
+	ret
+	.cfi_endproc
+.LFE50:
+	.size	_Z6mulu64mm, .-_Z6mulu64mm
+	.section	.text.unlikely._Z6mulu64mm,"axG",@progbits,_Z6mulu64mm,comdat
+.LCOLDE0:
+	.section	.text._Z6mulu64mm,"axG",@progbits,_Z6mulu64mm,comdat
+.LHOTE0:
+	.section	.text.unlikely._Z10mulu64_intmm,"axG",@progbits,_Z10mulu64_intmm,comdat
+.LCOLDB1:
+	.section	.text._Z10mulu64_intmm,"axG",@progbits,_Z10mulu64_intmm,comdat
+.LHOTB1:
+	.p2align 5,,31
+	.weak	_Z10mulu64_intmm
+	.type	_Z10mulu64_intmm, @function
+_Z10mulu64_intmm:
+.LFB56:
+	.cfi_startproc
+	movq	%rdi, %rax
+	mulq	%rsi
+	movq	%rdx, %rcx
+	movq	%rax, %rdx
+	movq	%rcx, %rax
+	ret
+	.cfi_endproc
+.LFE56:
+	.size	_Z10mulu64_intmm, .-_Z10mulu64_intmm
+	.section	.text.unlikely._Z10mulu64_intmm,"axG",@progbits,_Z10mulu64_intmm,comdat
+.LCOLDE1:
+	.section	.text._Z10mulu64_intmm,"axG",@progbits,_Z10mulu64_intmm,comdat
+.LHOTE1:
+	.ident	"GCC: (GNU) 4.9.2"
+	.section	.note.GNU-stack,"",@progbits
