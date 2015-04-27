@@ -1,0 +1,4 @@
+main.cpp:4:16: fatal error: QMap: No such file or directory
+ #include <QMap>
+                ^
+compilation terminated.
