@@ -1,0 +1,7 @@
+main.cpp: In function 'int checkForSimilar(int*, int*, int, int)':
+main.cpp:13:9: error: 'arrarya' was not declared in this scope
+     if (arrarya[index] != arraryb[index]) 
+         ^
+main.cpp:13:27: error: 'arraryb' was not declared in this scope
+     if (arrarya[index] != arraryb[index]) 
+                           ^
