@@ -1,0 +1,14 @@
+main.cpp: In function 'int main()':
+main.cpp:9:8: warning: comparisons like 'X<=Y<=Z' do not have their mathematical meaning [-Wparentheses]
+  if (86>=N<=100) {
+        ^
+main.cpp:11:14: warning: comparisons like 'X<=Y<=Z' do not have their mathematical meaning [-Wparentheses]
+  }else if (61>=N<=85) {
+              ^
+main.cpp:13:14: warning: comparisons like 'X<=Y<=Z' do not have their mathematical meaning [-Wparentheses]
+  }else if (36>=N<=60) {
+              ^
+main.cpp:15:13: warning: comparisons like 'X<=Y<=Z' do not have their mathematical meaning [-Wparentheses]
+  }else if (1>=N<=35) {
+             ^
+A
