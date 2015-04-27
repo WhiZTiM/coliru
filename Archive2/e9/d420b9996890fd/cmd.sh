@@ -1,0 +1,1 @@
+g++ -std=c++11 -O2 -m64 -march=native main.cpp -S && cat main.s
