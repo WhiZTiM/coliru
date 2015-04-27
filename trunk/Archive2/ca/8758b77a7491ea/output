@@ -1,0 +1,24 @@
+
+<----------Testy pre A* s pouzitim std::priority queue a boost::fibonacci_heap ---------->
+Pushed 1 with priority 9
+Pushed 2 with priority 7
+Pushed 4 with priority 7
+Pushed 3 with priority 28
+Increase(lower priority) for 3 from 28 to 20
+Pushed 6 with priority 7
+Dlzka cesty 7
+1. Spravna cesta fibonacci heap:'6,4,2,0'=='6,4,2,0' - OK
+Pushed 1 with priority 13
+Pushed 2 with priority 12
+Increase(lower priority) for 1 from 13 to 12
+Pushed 4 with priority 15
+Pushed 3 with priority 12
+Pushed 6 with priority 13
+Pushed 5 with priority 12
+Dlzka cesty 13
+2. Spravna cesta fibonacci heap:'6,1,2,0'=='6,1,2,0' - OK
+
+<----------Testy pre boost::fibonacci_heap ---------->
+1. Test fibonacci heap:'1,3,5,4,2'=='1,3,5,4,2' - OK
+<--- Testy pre boost::fibonacci_heap  (1:0) - OK
+
