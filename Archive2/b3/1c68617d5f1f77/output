@@ -1,0 +1,4 @@
+main.cpp: In function 'int main()':
+main.cpp:51:13: error: 'el' was not declared in this scope
+         fun(el);
+             ^
