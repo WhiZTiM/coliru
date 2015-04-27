@@ -1,0 +1,1 @@
+clang++ -std=c++14 -Wall -Wpedantic main.cpp
