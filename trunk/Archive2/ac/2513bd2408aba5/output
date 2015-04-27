@@ -1,0 +1,53 @@
+main.cpp:30:106: warning: base class 'Attendance' is uninitialized when used here to access 'Attendance::num_modules' [-Wuninitialized]
+   Staff(string n, string id, int mod, int contact, int attend, int hours, string t) : Attendance(n, id, num_modules, num_contact_hours, num_attended), lecture_hours(hours), type(t) { }
+                                                                                                         ^
+main.cpp:30:119: warning: base class 'Attendance' is uninitialized when used here to access 'Attendance::num_contact_hours' [-Wuninitialized]
+   Staff(string n, string id, int mod, int contact, int attend, int hours, string t) : Attendance(n, id, num_modules, num_contact_hours, num_attended), lecture_hours(hours), type(t) { }
+                                                                                                                      ^
+main.cpp:30:138: warning: base class 'Attendance' is uninitialized when used here to access 'Attendance::num_attended' [-Wuninitialized]
+   Staff(string n, string id, int mod, int contact, int attend, int hours, string t) : Attendance(n, id, num_modules, num_contact_hours, num_attended), lecture_hours(hours), type(t) { }
+                                                                                                                                         ^
+main.cpp:30:35: warning: unused parameter 'mod' [-Wunused-parameter]
+   Staff(string n, string id, int mod, int contact, int attend, int hours, string t) : Attendance(n, id, num_modules, num_contact_hours, num_attended), lecture_hours(hours), type(t) { }
+                                  ^
+main.cpp:30:44: warning: unused parameter 'contact' [-Wunused-parameter]
+   Staff(string n, string id, int mod, int contact, int attend, int hours, string t) : Attendance(n, id, num_modules, num_contact_hours, num_attended), lecture_hours(hours), type(t) { }
+                                           ^
+main.cpp:30:57: warning: unused parameter 'attend' [-Wunused-parameter]
+   Staff(string n, string id, int mod, int contact, int attend, int hours, string t) : Attendance(n, id, num_modules, num_contact_hours, num_attended), lecture_hours(hours), type(t) { }
+                                                        ^
+main.cpp:51:101: warning: base class 'Attendance' is uninitialized when used here to access 'Attendance::num_contact_hours' [-Wuninitialized]
+    Student(string n, string id, int mod, int attend, int hours, string t) : Attendance(n, id, mod, num_contact_hours, attend), type(t) {}
+                                                                                                    ^
+main.cpp:51:59: warning: unused parameter 'hours' [-Wunused-parameter]
+    Student(string n, string id, int mod, int attend, int hours, string t) : Attendance(n, id, mod, num_contact_hours, attend), type(t) {}
+                                                          ^
+main.cpp:60:30: warning: unused parameter 'hours' [-Wunused-parameter]
+    void setContactHours(int hours) {};
+                             ^
+main.cpp:72:87: warning: unused variable 'num_contact_hours' [-Wunused-variable]
+        int i=0, choice_task_menu=0, position=0, num_attend=0, num_modules=0, choice_search, num_contact_hours, lecture_hours;          //variables
+                                                                                             ^
+main.cpp:72:106: warning: unused variable 'lecture_hours' [-Wunused-variable]
+        int i=0, choice_task_menu=0, position=0, num_attend=0, num_modules=0, choice_search, num_contact_hours, lecture_hours;          //variables
+                                                                                                                ^
+main.cpp:72:43: warning: unused variable 'num_attend' [-Wunused-variable]
+        int i=0, choice_task_menu=0, position=0, num_attend=0, num_modules=0, choice_search, num_contact_hours, lecture_hours;          //variables
+                                                 ^
+main.cpp:72:57: warning: unused variable 'num_modules' [-Wunused-variable]
+        int i=0, choice_task_menu=0, position=0, num_attend=0, num_modules=0, choice_search, num_contact_hours, lecture_hours;          //variables
+                                                               ^
+main.cpp:70:14: warning: unused parameter 'argc' [-Wunused-parameter]
+int main(int argc, char** argv) 
+             ^
+main.cpp:70:27: warning: unused parameter 'argv' [-Wunused-parameter]
+int main(int argc, char** argv) 
+                          ^
+main.cpp:244:1: warning: control may reach end of non-void function [-Wreturn-type]
+}
+^
+main.cpp:252:1: warning: control may reach end of non-void function [-Wreturn-type]
+}
+^
+17 warnings generated.
+bash: line 7: 31179 Segmentation fault      (core dumped) ./a.out
