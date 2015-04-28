@@ -1,0 +1,3 @@
+main.cpp:5:36: error: 'constexpr' is not allowed in declaration of friend template specialization 'void f<>(int)'
+       friend constexpr void f<>(int);  // { dg-error "'constexpr' is not allowed" }
+                                    ^
