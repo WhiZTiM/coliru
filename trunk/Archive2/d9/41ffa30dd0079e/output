@@ -1,0 +1,19 @@
+main.cpp: In member function 'void Game::movePiece(int, int, int, int)':
+main.cpp:62:37: error: no matching function for call to 'std::vector<Piece>::erase(__gnu_cxx::__normal_iterator<std::vector<Piece>*, std::vector<std::vector<Piece> > >)'
+  board[xf].erase(board.begin()+yf -1);//erase the element at xf, yf
+                                     ^
+main.cpp:62:37: note: candidates are:
+In file included from /usr/local/include/c++/4.9.2/vector:64:0,
+                 from main.cpp:2:
+/usr/local/include/c++/4.9.2/bits/stl_vector.h:1146:7: note: std::vector<_Tp, _Alloc>::iterator std::vector<_Tp, _Alloc>::erase(std::vector<_Tp, _Alloc>::const_iterator) [with _Tp = Piece; _Alloc = std::allocator<Piece>; std::vector<_Tp, _Alloc>::iterator = __gnu_cxx::__normal_iterator<Piece*, std::vector<Piece> >; typename std::_Vector_base<_Tp, _Alloc>::pointer = Piece*; std::vector<_Tp, _Alloc>::const_iterator = __gnu_cxx::__normal_iterator<const Piece*, std::vector<Piece> >; typename __gnu_cxx::__alloc_traits<typename std::_Vector_base<_Tp, _Alloc>::_Tp_alloc_type>::const_pointer = const Piece*]
+       erase(const_iterator __position)
+       ^
+/usr/local/include/c++/4.9.2/bits/stl_vector.h:1146:7: note:   no known conversion for argument 1 from '__gnu_cxx::__normal_iterator<std::vector<Piece>*, std::vector<std::vector<Piece> > >' to 'std::vector<Piece>::const_iterator {aka __gnu_cxx::__normal_iterator<const Piece*, std::vector<Piece> >}'
+/usr/local/include/c++/4.9.2/bits/stl_vector.h:1173:7: note: std::vector<_Tp, _Alloc>::iterator std::vector<_Tp, _Alloc>::erase(std::vector<_Tp, _Alloc>::const_iterator, std::vector<_Tp, _Alloc>::const_iterator) [with _Tp = Piece; _Alloc = std::allocator<Piece>; std::vector<_Tp, _Alloc>::iterator = __gnu_cxx::__normal_iterator<Piece*, std::vector<Piece> >; typename std::_Vector_base<_Tp, _Alloc>::pointer = Piece*; std::vector<_Tp, _Alloc>::const_iterator = __gnu_cxx::__normal_iterator<const Piece*, std::vector<Piece> >; typename __gnu_cxx::__alloc_traits<typename std::_Vector_base<_Tp, _Alloc>::_Tp_alloc_type>::const_pointer = const Piece*]
+       erase(const_iterator __first, const_iterator __last)
+       ^
+/usr/local/include/c++/4.9.2/bits/stl_vector.h:1173:7: note:   candidate expects 2 arguments, 1 provided
+main.cpp: At global scope:
+main.cpp:67:1: error: expected declaration before '}' token
+ }
+ ^
