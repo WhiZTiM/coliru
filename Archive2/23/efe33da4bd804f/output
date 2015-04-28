@@ -1,0 +1,2 @@
+std::initializer_list<int>
+void print_with_macro() [with T = std::initializer_list<int>]
