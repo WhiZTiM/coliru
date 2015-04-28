@@ -1,0 +1,4 @@
+main.cpp: In function 'int main()':
+main.cpp:19:18: error: 'hexfloat' is not a member of 'std'
+     std::cout << std::hexfloat << d << " is " << std::hex << n
+                  ^
