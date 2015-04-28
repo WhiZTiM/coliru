@@ -1,0 +1,4 @@
+main.cpp:14:11: error: declaration type contains unexpanded parameter pack 'I'
+    using type = typename Concat<T,
+          ^
+1 error generated.
