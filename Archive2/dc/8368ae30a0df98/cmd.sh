@@ -1,0 +1,1 @@
+g++ -std=c++14 -O3 -Wall -Wextra -pedantic-errors main.cpp && ./a.out <<< '0 1 2 3 4 5 6 '
