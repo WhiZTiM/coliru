@@ -1,0 +1,3 @@
+read 0: name = 'James Hetfield', id = 123
+read 1: name = 'Lars Ulrich', id = 456
+read 2: name = 'Kirk Hammett', id = 789
