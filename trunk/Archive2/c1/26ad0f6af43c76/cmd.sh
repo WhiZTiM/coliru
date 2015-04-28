@@ -1,0 +1,1 @@
+clang++ -std=c++14 main.cpp -Wall -pedantic-errors -pedantic && ./a.out
