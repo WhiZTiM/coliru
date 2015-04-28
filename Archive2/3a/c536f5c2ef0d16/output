@@ -1,0 +1,2 @@
+Using line = var + var for 100000 iterations time is: 31964391
+Using line += var; line += var for 100000 iterations time is: 17681315
