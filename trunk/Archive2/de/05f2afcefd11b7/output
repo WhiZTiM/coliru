@@ -1,0 +1,70 @@
+In file included from /usr/include/c++/4.8/algorithm:62:0,
+                 from main.cpp:3:
+/usr/include/c++/4.8/bits/stl_algo.h: In instantiation of '_OIter std::copy_n(_IIter, _Size, _OIter) [with _IIter = std::array<unsigned char, 2ul>; _Size = long unsigned int; _OIter = unsigned char*]':
+main.cpp:99:61:   required from 'void marshal::bitfield<Bytes, Sections>::set(R) [with long unsigned int Index = 1ul; R = int; long unsigned int Bytes = 2ul; Sections = {marshal::bitsection<5ul, main()::CraftRanks>, marshal::bitsection<10ul, int>, marshal::bitsection<1ul, bool>}]'
+main.cpp:328:28:   required from here
+/usr/include/c++/4.8/bits/stl_algo.h:1045:39: error: no matching function for call to '__iterator_category(std::array<unsigned char, 2ul>&)'
+       std::__iterator_category(__first));
+                                       ^
+/usr/include/c++/4.8/bits/stl_algo.h:1045:39: note: candidate is:
+In file included from /usr/include/c++/4.8/bits/stl_algobase.h:65:0,
+                 from /usr/include/c++/4.8/algorithm:61,
+                 from main.cpp:3:
+/usr/include/c++/4.8/bits/stl_iterator_base_types.h:201:5: note: template<class _Iter> typename std::iterator_traits<_Iterator>::iterator_category std::__iterator_category(const _Iter&)
+     __iterator_category(const _Iter&)
+     ^
+/usr/include/c++/4.8/bits/stl_iterator_base_types.h:201:5: note:   template argument deduction/substitution failed:
+/usr/include/c++/4.8/bits/stl_iterator_base_types.h: In substitution of 'template<class _Iter> typename std::iterator_traits<_Iterator>::iterator_category std::__iterator_category(const _Iter&) [with _Iter = std::array<unsigned char, 2ul>]':
+/usr/include/c++/4.8/bits/stl_algo.h:1045:39:   required from '_OIter std::copy_n(_IIter, _Size, _OIter) [with _IIter = std::array<unsigned char, 2ul>; _Size = long unsigned int; _OIter = unsigned char*]'
+main.cpp:99:61:   required from 'void marshal::bitfield<Bytes, Sections>::set(R) [with long unsigned int Index = 1ul; R = int; long unsigned int Bytes = 2ul; Sections = {marshal::bitsection<5ul, main()::CraftRanks>, marshal::bitsection<10ul, int>, marshal::bitsection<1ul, bool>}]'
+main.cpp:328:28:   required from here
+/usr/include/c++/4.8/bits/stl_iterator_base_types.h:201:5: error: no type named 'iterator_category' in 'struct std::iterator_traits<std::array<unsigned char, 2ul> >'
+In file included from /usr/include/c++/4.8/algorithm:62:0,
+                 from main.cpp:3:
+/usr/include/c++/4.8/bits/stl_algo.h: In instantiation of '_OIter std::copy_n(_IIter, _Size, _OIter) [with _IIter = std::array<unsigned char, 1ul>; _Size = long unsigned int; _OIter = unsigned char*]':
+main.cpp:99:61:   required from 'void marshal::bitfield<Bytes, Sections>::set(R) [with long unsigned int Index = 2ul; R = bool; long unsigned int Bytes = 2ul; Sections = {marshal::bitsection<5ul, main()::CraftRanks>, marshal::bitsection<10ul, int>, marshal::bitsection<1ul, bool>}]'
+main.cpp:329:31:   required from here
+/usr/include/c++/4.8/bits/stl_algo.h:1045:39: error: no matching function for call to '__iterator_category(std::array<unsigned char, 1ul>&)'
+       std::__iterator_category(__first));
+                                       ^
+/usr/include/c++/4.8/bits/stl_algo.h:1045:39: note: candidate is:
+In file included from /usr/include/c++/4.8/bits/stl_algobase.h:65:0,
+                 from /usr/include/c++/4.8/algorithm:61,
+                 from main.cpp:3:
+/usr/include/c++/4.8/bits/stl_iterator_base_types.h:201:5: note: template<class _Iter> typename std::iterator_traits<_Iterator>::iterator_category std::__iterator_category(const _Iter&)
+     __iterator_category(const _Iter&)
+     ^
+/usr/include/c++/4.8/bits/stl_iterator_base_types.h:201:5: note:   template argument deduction/substitution failed:
+/usr/include/c++/4.8/bits/stl_iterator_base_types.h: In substitution of 'template<class _Iter> typename std::iterator_traits<_Iterator>::iterator_category std::__iterator_category(const _Iter&) [with _Iter = std::array<unsigned char, 1ul>]':
+/usr/include/c++/4.8/bits/stl_algo.h:1045:39:   required from '_OIter std::copy_n(_IIter, _Size, _OIter) [with _IIter = std::array<unsigned char, 1ul>; _Size = long unsigned int; _OIter = unsigned char*]'
+main.cpp:99:61:   required from 'void marshal::bitfield<Bytes, Sections>::set(R) [with long unsigned int Index = 2ul; R = bool; long unsigned int Bytes = 2ul; Sections = {marshal::bitsection<5ul, main()::CraftRanks>, marshal::bitsection<10ul, int>, marshal::bitsection<1ul, bool>}]'
+main.cpp:329:31:   required from here
+/usr/include/c++/4.8/bits/stl_iterator_base_types.h:201:5: error: no type named 'iterator_category' in 'struct std::iterator_traits<std::array<unsigned char, 1ul> >'
+In file included from /usr/include/c++/4.8/algorithm:61:0,
+                 from main.cpp:3:
+/usr/include/c++/4.8/bits/stl_algobase.h: In instantiation of '_OI std::__copy_move_a(_II, _II, _OI) [with bool _IsMove = false; _II = unsigned char*; _OI = std::array<unsigned char, 2ul>]':
+/usr/include/c++/4.8/bits/stl_algobase.h:428:38:   required from '_OI std::__copy_move_a2(_II, _II, _OI) [with bool _IsMove = false; _II = unsigned char*; _OI = std::array<unsigned char, 2ul>]'
+/usr/include/c++/4.8/bits/stl_algobase.h:460:17:   required from '_OI std::copy(_II, _II, _OI) [with _II = unsigned char*; _OI = std::array<unsigned char, 2ul>]'
+/usr/include/c++/4.8/bits/stl_algo.h:1020:56:   required from '_OutputIterator std::__copy_n(_RandomAccessIterator, _Size, _OutputIterator, std::random_access_iterator_tag) [with _RandomAccessIterator = unsigned char*; _Size = long unsigned int; _OutputIterator = std::array<unsigned char, 2ul>]'
+/usr/include/c++/4.8/bits/stl_algo.h:1045:40:   required from '_OIter std::copy_n(_IIter, _Size, _OIter) [with _IIter = unsigned char*; _Size = long unsigned int; _OIter = std::array<unsigned char, 2ul>]'
+main.cpp:96:61:   required from 'void marshal::bitfield<Bytes, Sections>::set(R) [with long unsigned int Index = 1ul; R = int; long unsigned int Bytes = 2ul; Sections = {marshal::bitsection<5ul, main()::CraftRanks>, marshal::bitsection<10ul, int>, marshal::bitsection<1ul, bool>}]'
+main.cpp:328:28:   required from here
+/usr/include/c++/4.8/bits/stl_algobase.h:382:57: error: no type named 'value_type' in 'struct std::iterator_traits<std::array<unsigned char, 2ul> >'
+       typedef typename iterator_traits<_OI>::value_type _ValueTypeO;
+                                                         ^
+/usr/include/c++/4.8/bits/stl_algobase.h:387:9: error: no type named 'value_type' in 'struct std::iterator_traits<std::array<unsigned char, 2ul> >'
+         && __are_same<_ValueTypeI, _ValueTypeO>::__value);
+         ^
+/usr/include/c++/4.8/bits/stl_algobase.h: In instantiation of '_OI std::__copy_move_a(_II, _II, _OI) [with bool _IsMove = false; _II = unsigned char*; _OI = std::array<unsigned char, 1ul>]':
+/usr/include/c++/4.8/bits/stl_algobase.h:428:38:   required from '_OI std::__copy_move_a2(_II, _II, _OI) [with bool _IsMove = false; _II = unsigned char*; _OI = std::array<unsigned char, 1ul>]'
+/usr/include/c++/4.8/bits/stl_algobase.h:460:17:   required from '_OI std::copy(_II, _II, _OI) [with _II = unsigned char*; _OI = std::array<unsigned char, 1ul>]'
+/usr/include/c++/4.8/bits/stl_algo.h:1020:56:   required from '_OutputIterator std::__copy_n(_RandomAccessIterator, _Size, _OutputIterator, std::random_access_iterator_tag) [with _RandomAccessIterator = unsigned char*; _Size = long unsigned int; _OutputIterator = std::array<unsigned char, 1ul>]'
+/usr/include/c++/4.8/bits/stl_algo.h:1045:40:   required from '_OIter std::copy_n(_IIter, _Size, _OIter) [with _IIter = unsigned char*; _Size = long unsigned int; _OIter = std::array<unsigned char, 1ul>]'
+main.cpp:96:61:   required from 'void marshal::bitfield<Bytes, Sections>::set(R) [with long unsigned int Index = 2ul; R = bool; long unsigned int Bytes = 2ul; Sections = {marshal::bitsection<5ul, main()::CraftRanks>, marshal::bitsection<10ul, int>, marshal::bitsection<1ul, bool>}]'
+main.cpp:329:31:   required from here
+/usr/include/c++/4.8/bits/stl_algobase.h:382:57: error: no type named 'value_type' in 'struct std::iterator_traits<std::array<unsigned char, 1ul> >'
+       typedef typename iterator_traits<_OI>::value_type _ValueTypeO;
+                                                         ^
+/usr/include/c++/4.8/bits/stl_algobase.h:387:9: error: no type named 'value_type' in 'struct std::iterator_traits<std::array<unsigned char, 1ul> >'
+         && __are_same<_ValueTypeI, _ValueTypeO>::__value);
+         ^
