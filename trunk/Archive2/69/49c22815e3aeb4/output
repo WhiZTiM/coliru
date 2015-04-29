@@ -1,0 +1,7 @@
+main.cpp: In function 'bool do_something_important(SimulatedQEventType)':
+main.cpp:18:12: warning: enumeration value 'eAnotherEvent' not handled in switch [-Wswitch]
+     switch (static_cast<CustomEnum>(x))
+            ^
+handled and valid enum:1
+unhandled but valid enum:0
+invalid enum:0
