@@ -1,0 +1,6 @@
+clang:
+other copy ctor
+dtor
+gcc:
+other copy ctor
+dtor
