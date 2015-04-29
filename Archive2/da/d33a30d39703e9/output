@@ -1,0 +1,21 @@
++ clang++ -std=c++1y -stdlib=libc++ -Wall -pedantic main.cpp -pthread -lcxxrt -ldl
+main.cpp:6:34: error: constexpr variable 'l' must be initialized by a constant expression
+    constexpr unsigned long long l = (unsigned long long) f;
+                                 ^   ~~~~~~~~~~~~~~~~~~~~~~
+main.cpp:6:59: note: value 1.8446744E+19 is outside the range of representable values of type 'unsigned long long'
+    constexpr unsigned long long l = (unsigned long long) f;
+                                                          ^
+1 error generated.
++ clang++ -std=c++1y -Wall -pedantic main.cpp -pthread -lcxxrt -ldl
+main.cpp:6:34: error: constexpr variable 'l' must be initialized by a constant expression
+    constexpr unsigned long long l = (unsigned long long) f;
+                                 ^   ~~~~~~~~~~~~~~~~~~~~~~
+main.cpp:6:59: note: value 1.8446744E+19 is outside the range of representable values of type 'unsigned long long'
+    constexpr unsigned long long l = (unsigned long long) f;
+                                                          ^
+1 error generated.
++ g++ -std=c++1y -Wall -pedantic main.cpp -pthread
+main.cpp: In function 'int main()':
+main.cpp:6:59: error: overflow in constant expression [-fpermissive]
+     constexpr unsigned long long l = (unsigned long long) f;
+                                                           ^
