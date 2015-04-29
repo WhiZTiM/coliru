@@ -1,0 +1,4 @@
+main.cpp: In function 'void f(int (*)[20])':
+main.cpp:7:5: error: static assertion failed: nope
+     static_assert( std::is_array<Param>(), "nope" );
+     ^
