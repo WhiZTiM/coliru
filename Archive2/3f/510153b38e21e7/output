@@ -1,0 +1,28 @@
+main.cpp:18:47: error: unknown type name 'MySweetPod'; did you mean 'MySweetPOD'?
+    shared_ptr<MySweetPOD> pod0 = make_shared<MySweetPod>(MySweetPod{ 1,2,3.0 });
+                                              ^~~~~~~~~~
+                                              MySweetPOD
+main.cpp:7:8: note: 'MySweetPOD' declared here
+struct MySweetPOD {
+       ^
+main.cpp:18:69: error: expected ')'
+    shared_ptr<MySweetPOD> pod0 = make_shared<MySweetPod>(MySweetPod{ 1,2,3.0 });
+                                                                    ^
+main.cpp:18:58: note: to match this '('
+    shared_ptr<MySweetPOD> pod0 = make_shared<MySweetPod>(MySweetPod{ 1,2,3.0 });
+                                                         ^
+main.cpp:21:16: error: unknown type name 'MySweetPod'; did you mean 'MySweetPOD'?
+    shared_ptr<MySweetPod> pod1(new MySweetPod{1,2,3.0});
+               ^~~~~~~~~~
+               MySweetPOD
+main.cpp:7:8: note: 'MySweetPOD' declared here
+struct MySweetPOD {
+       ^
+main.cpp:21:37: error: unknown type name 'MySweetPod'; did you mean 'MySweetPOD'?
+    shared_ptr<MySweetPod> pod1(new MySweetPod{1,2,3.0});
+                                    ^~~~~~~~~~
+                                    MySweetPOD
+main.cpp:7:8: note: 'MySweetPOD' declared here
+struct MySweetPOD {
+       ^
+4 errors generated.
