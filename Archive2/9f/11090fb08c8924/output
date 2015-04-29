@@ -1,0 +1,20 @@
+main.cpp:150:73: error: expected primary-expression before ')' token
+     auto set(bitfield<Bytes, Sections...> bf) -> decltype(bf.set<Index>())
+                                                                         ^
+main.cpp:156:73: error: expected primary-expression before ')' token
+     auto get(bitfield<Bytes, Sections...> bf) -> decltype(bf.get<Index>())
+                                                                         ^
+main.cpp: In lambda function:
+main.cpp:334:83: error: no matching function for call to 'get(marshal::bitfield<2ul, marshal::bitsection<15ul, int>, marshal::bitsection<1ul, bool> >&)'
+             << "level: " << get<Combat::Fields::Level>(sample.combat_skills[skill]) << ", "
+                                                                                   ^
+main.cpp:334:83: note: candidate is:
+main.cpp:156:10: note: template<long unsigned int Index, long unsigned int Bytes, class ... Sections> decltype (((bf.get < Index) > <expression error>)) marshal::get(marshal::bitfield<Bytes, Sections ...>)
+     auto get(bitfield<Bytes, Sections...> bf) -> decltype(bf.get<Index>())
+          ^
+main.cpp:156:10: note:   template argument deduction/substitution failed:
+main.cpp: In substitution of 'template<long unsigned int Index, long unsigned int Bytes, class ... Sections> decltype (((bf.get < Index) > <expression error>)) marshal::get(marshal::bitfield<Bytes, Sections ...>) [with long unsigned int Index = 0ul; long unsigned int Bytes = 2ul; Sections = {marshal::bitsection<15ul, int>, marshal::bitsection<1ul, bool>}]':
+main.cpp:334:83:   required from here
+main.cpp:156:65: error: invalid operands of types '<unresolved overloaded function type>' and 'long unsigned int' to binary 'operator<'
+     auto get(bitfield<Bytes, Sections...> bf) -> decltype(bf.get<Index>())
+                                                                 ^
