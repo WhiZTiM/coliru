@@ -1,0 +1,5 @@
+2. after foo, value is:
+  {COverrideDerived::foo(double value)}
+9
+one might have expected COverrideDerived::foo(int value) to be called
+typeid = d
