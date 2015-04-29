@@ -1,0 +1,25 @@
+main.cpp: In function 'int main()':
+main.cpp:6:5: error: 'map' was not declared in this scope
+     map< int, int > map1;
+     ^
+main.cpp:6:5: note: suggested alternative:
+In file included from /usr/local/include/c++/4.9.2/map:61:0,
+                 from main.cpp:2:
+/usr/local/include/c++/4.9.2/bits/stl_map.h:96:11: note:   'std::map'
+     class map
+           ^
+main.cpp:6:10: error: expected primary-expression before 'int'
+     map< int, int > map1;
+          ^
+main.cpp:8:5: error: 'map1' was not declared in this scope
+     map1.insert( map< int, int >::value_type(1, 35));
+     ^
+main.cpp:8:23: error: expected primary-expression before 'int'
+     map1.insert( map< int, int >::value_type(1, 35));
+                       ^
+main.cpp:8:28: error: expected primary-expression before 'int'
+     map1.insert( map< int, int >::value_type(1, 35));
+                            ^
+main.cpp:9:30: error: 'search' was not declared in this scope
+     std::cout << "Found " << search->second << '\n';
+                              ^
