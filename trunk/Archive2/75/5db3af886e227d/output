@@ -1,0 +1,56 @@
+main.cpp:16:5: error: no template named 'shared_ptr'; did you mean 'std::shared_ptr'?
+    shared_ptr<MySweetPOD> pod0 = make_shared<MySweetPod>(MySweetPod{ 1,2,3.0 });
+    ^~~~~~~~~~
+    std::shared_ptr
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.9.2/../../../../include/c++/4.9.2/bits/shared_ptr.h:93:11: note: 'std::shared_ptr' declared here
+    class shared_ptr : public __shared_ptr<_Tp>
+          ^
+main.cpp:16:35: error: no template named 'make_shared'; did you mean 'std::make_shared'?
+    shared_ptr<MySweetPOD> pod0 = make_shared<MySweetPod>(MySweetPod{ 1,2,3.0 });
+                                  ^~~~~~~~~~~
+                                  std::make_shared
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.9.2/../../../../include/c++/4.9.2/bits/shared_ptr.h:600:5: note: 'std::make_shared' declared here
+    make_shared(_Args&&... __args)
+    ^
+main.cpp:16:47: error: unknown type name 'MySweetPod'; did you mean 'MySweetPOD'?
+    shared_ptr<MySweetPOD> pod0 = make_shared<MySweetPod>(MySweetPod{ 1,2,3.0 });
+                                              ^~~~~~~~~~
+                                              MySweetPOD
+main.cpp:7:8: note: 'MySweetPOD' declared here
+struct MySweetPOD {
+       ^
+main.cpp:16:35: error: no template named 'make_shared'; did you mean 'std::make_shared'?
+    shared_ptr<MySweetPOD> pod0 = make_shared<MySweetPod>(MySweetPod{ 1,2,3.0 });
+                                  ^~~~~~~~~~~
+                                  std::make_shared
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.9.2/../../../../include/c++/4.9.2/bits/shared_ptr.h:600:5: note: 'std::make_shared' declared here
+    make_shared(_Args&&... __args)
+    ^
+main.cpp:16:69: error: expected ')'
+    shared_ptr<MySweetPOD> pod0 = make_shared<MySweetPod>(MySweetPod{ 1,2,3.0 });
+                                                                    ^
+main.cpp:16:58: note: to match this '('
+    shared_ptr<MySweetPOD> pod0 = make_shared<MySweetPod>(MySweetPod{ 1,2,3.0 });
+                                                         ^
+main.cpp:19:5: error: no template named 'shared_ptr'; did you mean 'std::shared_ptr'?
+    shared_ptr<MySweetPod> pod1(new MySweetPod{1,2,3.0});
+    ^~~~~~~~~~
+    std::shared_ptr
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.9.2/../../../../include/c++/4.9.2/bits/shared_ptr.h:93:11: note: 'std::shared_ptr' declared here
+    class shared_ptr : public __shared_ptr<_Tp>
+          ^
+main.cpp:19:16: error: unknown type name 'MySweetPod'; did you mean 'MySweetPOD'?
+    shared_ptr<MySweetPod> pod1(new MySweetPod{1,2,3.0});
+               ^~~~~~~~~~
+               MySweetPOD
+main.cpp:7:8: note: 'MySweetPOD' declared here
+struct MySweetPOD {
+       ^
+main.cpp:19:37: error: unknown type name 'MySweetPod'; did you mean 'MySweetPOD'?
+    shared_ptr<MySweetPod> pod1(new MySweetPod{1,2,3.0});
+                                    ^~~~~~~~~~
+                                    MySweetPOD
+main.cpp:7:8: note: 'MySweetPOD' declared here
+struct MySweetPOD {
+       ^
+8 errors generated.
