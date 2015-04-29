@@ -1,0 +1,32 @@
+main.cpp:7:38: error: template instantiation depth exceeds maximum of 900 (use -ftemplate-depth= to increase the maximum) substituting 'template<class T, class U, std::enable_if_t<(T:: N == U:: N)>* <anonymous> > auto operator==(const T&, const U&) [with T = <missing>; U = <missing>; std::enable_if_t<(T:: N == U:: N)>* <anonymous> = <missing>]'
+       typename std::enable_if_t<T::N == U::N>* = nullptr>
+                                      ^
+main.cpp:7:38:   recursively required by substitution of 'template<class T, class U, std::enable_if_t<(T:: N == U:: N)>* <anonymous> > auto operator==(const T&, const U&) [with T = Cls::<anonymous enum>; U = Cls::<anonymous enum>; std::enable_if_t<(T:: N == U:: N)>* <anonymous> = <missing>]'
+main.cpp:7:38:   required by substitution of 'template<class T, class U, std::enable_if_t<(T:: N == U:: N)>* <anonymous> > auto operator==(const T&, const U&) [with T = Cls; U = Cls; std::enable_if_t<(T:: N == U:: N)>* <anonymous> = <missing>]'
+main.cpp:16:15:   required from here
+
+main.cpp:7:50: error: template instantiation depth exceeds maximum of 900 (use -ftemplate-depth= to increase the maximum) substituting 'template<bool _Cond, class _Tp> using enable_if_t = typename std::enable_if::type [with bool _Cond = true; _Tp = void]'
+       typename std::enable_if_t<T::N == U::N>* = nullptr>
+                                                  ^
+main.cpp:7:38:   recursively required by substitution of 'template<class T, class U, std::enable_if_t<(T:: N == U:: N)>* <anonymous> > auto operator==(const T&, const U&) [with T = Cls::<anonymous enum>; U = Cls::<anonymous enum>; std::enable_if_t<(T:: N == U:: N)>* <anonymous> = <missing>]'
+main.cpp:7:38:   required by substitution of 'template<class T, class U, std::enable_if_t<(T:: N == U:: N)>* <anonymous> > auto operator==(const T&, const U&) [with T = Cls; U = Cls; std::enable_if_t<(T:: N == U:: N)>* <anonymous> = <missing>]'
+main.cpp:16:15:   required from here
+
+In file included from main.cpp:1:0:
+/usr/local/include/c++/4.9.2/type_traits:2234:61: error: template instantiation depth exceeds maximum of 900 (use -ftemplate-depth= to increase the maximum) instantiating 'struct std::enable_if<true, void>'
+     using enable_if_t = typename enable_if<_Cond, _Tp>::type;
+                                                             ^
+/usr/local/include/c++/4.9.2/type_traits:2234:61:   required by substitution of 'template<bool _Cond, class _Tp> using enable_if_t = typename std::enable_if::type [with bool _Cond = true; _Tp = void]'
+main.cpp:7:38:   recursively required by substitution of 'template<class T, class U, std::enable_if_t<(T:: N == U:: N)>* <anonymous> > auto operator==(const T&, const U&) [with T = Cls::<anonymous enum>; U = Cls::<anonymous enum>; std::enable_if_t<(T:: N == U:: N)>* <anonymous> = <missing>]'
+main.cpp:7:38:   required by substitution of 'template<class T, class U, std::enable_if_t<(T:: N == U:: N)>* <anonymous> > auto operator==(const T&, const U&) [with T = Cls; U = Cls; std::enable_if_t<(T:: N == U:: N)>* <anonymous> = <missing>]'
+main.cpp:16:15:   required from here
+
+main.cpp: In function 'int main()':
+main.cpp:16:12: error: no match for 'operator==' (operand types are 'Cls' and 'Cls')
+   return a == b;
+            ^
+main.cpp:16:12: note: candidate is:
+main.cpp:8:6: note: template<class T, class U, std::enable_if_t<(T:: N == U:: N)>* <anonymous> > auto operator==(const T&, const U&)
+ auto operator==(const T& a, const U& b)
+      ^
+main.cpp:8:6: note:   substitution of deduced template arguments resulted in errors seen above
