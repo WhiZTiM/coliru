@@ -1,0 +1,7 @@
+main.cpp: In function 'char* exec(const char*)':
+main.cpp:24:51: error: 'strlen' was not declared in this scope
+     result = (char*) realloc(result, strlen(result) + strlen(line) + 1);
+                                                   ^
+main.cpp:26:60: error: 'strncpy' was not declared in this scope
+     strncpy(result + strlen(result), line, strlen(line) + 1);
+                                                            ^
