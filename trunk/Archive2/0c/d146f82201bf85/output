@@ -1,0 +1,7 @@
+main.cpp:131:20: warning: range-based for loop is a C++11 extension [-Wc++11-extensions]
+    for (string yy : fichlines) {
+                   ^
+main.cpp:136:19: error: no member named 'emplace_back' in 'std::vector<boost::adjacency_list<boost::vecS, boost::vecS, boost::undirectedS, VertexProperties, EdgeProperties, GraphProperties, boost::listS>, std::allocator<boost::adjacency_list<boost::vecS, boost::vecS, boost::undirectedS, VertexProperties, EdgeProperties, GraphProperties, boost::listS> > >'
+            dataG.emplace_back(GraphProperties(gid, gid));
+            ~~~~~ ^
+1 warning and 1 error generated.
