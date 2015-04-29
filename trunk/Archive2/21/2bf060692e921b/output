@@ -1,0 +1,4 @@
+main.cpp: In function 'int main()':
+main.cpp:25:13: warning: unused variable 'a' [-Wunused-variable]
+     Entity* a = new Grass;
+             ^
