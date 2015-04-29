@@ -1,0 +1,7 @@
+main.cpp:16:38: error: redefinition of 'MyTFoo' as different kind of symbol
+        template <bool> friend class MyTFoo;
+                                     ^
+main.cpp:14:9: note: previous definition is here
+        using MyTFoo = typename tTRAIT::template TFoo<B>;
+        ^
+1 error generated.
