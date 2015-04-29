@@ -1,0 +1,6 @@
+main.cpp:150:73: error: expected primary-expression before ')' token
+     auto set(bitfield<Bytes, Sections...> bf) -> decltype(bf.set<Index>())
+                                                                         ^
+main.cpp:156:73: error: expected primary-expression before ')' token
+     auto get(bitfield<Bytes, Sections...> bf) -> decltype(bf.get<Index>())
+                                                                         ^
