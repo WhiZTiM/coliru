@@ -1,0 +1,6 @@
+***PS***
+ dataG[0] is a subgraph of dataG[1]
+ dataG[2] is the same as dataG[0]
+ dataG[3] is the same as dataG[0] but with other labels.
+
+equal(dataG[0], dataG[3],my_callback)=1
