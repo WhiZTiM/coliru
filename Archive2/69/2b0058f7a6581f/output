@@ -1,0 +1,31 @@
+clang:
+In file included from main.cpp:1:
+In file included from /usr/include/c++/v1/future:371:
+/usr/include/c++/v1/thread:332:5: error: attempt to use a deleted function
+    __invoke(_VSTD::move(_VSTD::get<0>(__t)), _VSTD::move(_VSTD::get<_Indices>(__t))...);
+    ^
+/usr/include/c++/v1/thread:342:5: note: in instantiation of function template specialization 'std::__1::__thread_execute<void (Solver::*)(Ftor &&), Ftor, 1>' requested here
+    __thread_execute(*__p, _Index());
+    ^
+/usr/include/c++/v1/thread:354:42: note: in instantiation of function template specialization 'std::__1::__thread_proxy<std::__1::tuple<void (Solver::*)(Ftor &&), Ftor> >' requested here
+    int __ec = pthread_create(&__t_, 0, &__thread_proxy<_Gp>, __p.get());
+                                         ^
+main.cpp:15:21: note: in instantiation of function template specialization 'std::__1::thread::thread<void (Solver::*)(Ftor &&), Ftor, void>' requested here
+        std::thread thread(&Solver::thread_function, std::move(task));
+                    ^
+/usr/include/c++/v1/type_traits:1027:5: note: '~__nat' has been explicitly marked deleted here
+    ~__nat() = delete;
+    ^
+1 error generated.
+gcc:
+In file included from /usr/local/include/c++/4.9.2/future:38:0,
+                 from main.cpp:1:
+/usr/local/include/c++/4.9.2/functional: In instantiation of 'struct std::_Bind_simple<std::_Mem_fn<void (Solver::*)(Ftor&&)>(Ftor)>':
+/usr/local/include/c++/4.9.2/thread:137:47:   required from 'std::thread::thread(_Callable&&, _Args&& ...) [with _Callable = void (Solver::*)(Ftor&&); _Args = {Ftor}]'
+main.cpp:15:69:   required from here
+/usr/local/include/c++/4.9.2/functional:1665:61: error: no type named 'type' in 'class std::result_of<std::_Mem_fn<void (Solver::*)(Ftor&&)>(Ftor)>'
+       typedef typename result_of<_Callable(_Args...)>::type result_type;
+                                                             ^
+/usr/local/include/c++/4.9.2/functional:1695:9: error: no type named 'type' in 'class std::result_of<std::_Mem_fn<void (Solver::*)(Ftor&&)>(Ftor)>'
+         _M_invoke(_Index_tuple<_Indices...>)
+         ^
