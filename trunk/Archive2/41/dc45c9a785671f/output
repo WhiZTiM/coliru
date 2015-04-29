@@ -1,0 +1,8 @@
+main.cpp: In lambda function:
+main.cpp:130:31: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+             for (int i = 0; i < PUSHS; ++i) {
+                               ^
+1
+25136179692 49999500000
+24863320308 49999500000
+536987 108441 44863 63578 463013
