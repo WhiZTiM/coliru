@@ -1,0 +1,2 @@
+Hello from GCC 4.9.2 ! 
+bash: line 7: 26509 Segmentation fault      (core dumped) ./a.out
