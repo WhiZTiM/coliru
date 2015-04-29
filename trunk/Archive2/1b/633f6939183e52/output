@@ -1,0 +1,4 @@
+main.cpp: In function 'int main()':
+main.cpp:3:18: warning: statement has no effect [-Wunused-value]
+ int main() {&A::i;}
+                  ^
