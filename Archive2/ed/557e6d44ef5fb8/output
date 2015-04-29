@@ -1,0 +1,33 @@
+main.cpp: In function 'void set(int)':
+main.cpp:15:21: warning: statement has no effect [-Wunused-value]
+     binhash[(k-1)/8]!=(1-(k%8-1));
+                     ^
+main.cpp: In function 'char* removedup(char*)':
+main.cpp:26:28: warning: array subscript has type 'char' [-Wchar-subscripts]
+         if(get(binhash[temp]) == 0)
+                            ^
+main.cpp:28:29: warning: array subscript has type 'char' [-Wchar-subscripts]
+             set(binhash[temp]);
+                             ^
+main.cpp:29:54: warning: array subscript has type 'char' [-Wchar-subscripts]
+             printf("\nget in set:%d",get(binhash[temp]));
+                                                      ^
+temp:103..0....0..
+get in set:0temp:101..0....0..
+get in set:0temp:101..0....0..
+get in set:0temp:107..0....0..
+get in set:0temp:115..0....0..
+get in set:0temp:102..0....0..
+get in set:0temp:111..0....0..
+get in set:0temp:114..0....0..
+get in set:0temp:103..0....0..
+get in set:0temp:101..0....0..
+get in set:0temp:101..0....0..
+get in set:0temp:107..0....0..
+get in set:0temp:115..0....0..
+get in set:0
+geeksforgeeksgcc (GCC) 4.9.2
+Copyright (C) 2014 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
