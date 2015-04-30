@@ -1,0 +1,82 @@
+<start>
+  <try>Fach: Physics\nDozent</try>
+  <klausur_>
+    <try>Fach: Physics\nDozent</try>
+    <subject>
+      <try>Fach: Physics\nDozent</try>
+      <success>Dozent: Wayne\nDatum:</success>
+      <attributes>[[P, h, y, s, i, c, s]]</attributes>
+    </subject>
+    <dozent>
+      <try>Dozent: Wayne\nDatum:</try>
+      <success>Datum: 20-10-2014\nAn</success>
+      <attributes>[[W, a, y, n, e]]</attributes>
+    </dozent>
+    <date>
+      <try>Datum: 20-10-2014\nAn</try>
+      <success>Anzahl: 2\n729.888 33</success>
+      <attributes>[[20, 10, 2014]]</attributes>
+    </date>
+    <count>
+      <try>Anzahl: 2\n729.888 33</try>
+      <success>729.888 33  5\n185.36</success>
+      <attributes>[2]</attributes>
+    </count>
+2 expected: 2
+    <student>
+      <try>729.888 33  5\n185.36</try>
+      <matnumber>
+        <try>729.888 33  5\n185.36</try>
+        <success> 33  5\n185.363 35  5</success>
+        <attributes>[[7, 2, 9, ., 8, 8, 8]]</attributes>
+      </matnumber>
+      <points>
+        <try> 33  5\n185.363 35  5</try>
+        <success>  5\n185.363 35  5</success>
+        <attributes>[33]</attributes>
+      </points>
+      <mark>
+        <try>  5\n185.363 35  5</try>
+        <success>\n185.363 35  5</success>
+        <attributes>[5]</attributes>
+      </mark>
+      <success>\n185.363 35  5</success>
+      <attributes>[[[7, 2, 9, ., 8, 8, 8], 33, 5]]</attributes>
+    </student>
+    <student>
+      <try>185.363 35  5</try>
+      <matnumber>
+        <try>185.363 35  5</try>
+        <success> 35  5</success>
+        <attributes>[[1, 8, 5, ., 3, 6, 3]]</attributes>
+      </matnumber>
+      <points>
+        <try> 35  5</try>
+        <success>  5</success>
+        <attributes>[35]</attributes>
+      </points>
+      <mark>
+        <try>  5</try>
+        <success></success>
+        <attributes>[5]</attributes>
+      </mark>
+      <success></success>
+      <attributes>[[[1, 8, 5, ., 3, 6, 3], 35, 5]]</attributes>
+    </student>
+    <success></success>
+    <attributes>[[[P, h, y, s, i, c, s], [W, a, y, n, e], [20, 10, 2014], 2, [[[7, 2, 9, ., 8, 8, 8], 33, 5], [[1, 8, 5, ., 3, 6, 3], 35, 5]]]]</attributes><locals>(2)</locals>
+  </klausur_>
+  <success></success>
+  <attributes>[[[P, h, y, s, i, c, s], [W, a, y, n, e], [20, 10, 2014], 2, [[[7, 2, 9, ., 8, 8, 8], 33, 5], [[1, 8, 5, ., 3, 6, 3], 35, 5]]]]</attributes>
+</start>
+Parse success
+Fach: Physics
+Dozent: Wayne
+Datum: 20-10-2014
+Anzahl: 2
+Mat_Nr: 729.888
+Punkte: 33
+Note: 5
+Mat_Nr: 185.363
+Punkte: 35
+Note: 5
