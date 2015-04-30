@@ -1,0 +1,10 @@
+main.cpp: In instantiation of 'void Deserialize(std::vector<unsigned char>, std::tuple<_Elements ...>&) [with Args = {int, unsigned char, std::basic_string<char, std::char_traits<char>, std::allocator<char> >}]':
+main.cpp:22:29:   required from here
+main.cpp:9:23: error: wrong number of template arguments (3, should be 1)
+     for (int i = 0; i < std::tuple_size<Args...>(output); i++)
+                       ^
+In file included from /usr/local/include/c++/4.9.2/tuple:38:0,
+                 from main.cpp:4:
+/usr/local/include/c++/4.9.2/utility:82:11: error: provided for 'template<class _Tp> struct std::tuple_size'
+     class tuple_size;
+           ^
