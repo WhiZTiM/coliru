@@ -1,0 +1,10 @@
+main.cpp:17:21: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+    add_edge(0, 1, {123,456}, g);
+                    ^~~~~~~
+                    {      }
+1 warning generated.
+digraph G {
+0;
+1;
+0->1 [label="{123,456}"];
+}
