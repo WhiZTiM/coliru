@@ -1,0 +1,9 @@
+main.cpp:11:26: warning: format specifies type 'char *' but the argument has type 'int' [-Wformat]
+        printf("%s, %s", a, b);
+                ~~       ^
+                %d
+main.cpp:11:29: warning: format specifies type 'char *' but the argument has type 'int' [-Wformat]
+        printf("%s, %s", a, b);
+                    ~~      ^
+                    %d
+2 warnings generated.
