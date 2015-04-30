@@ -1,0 +1,1 @@
+clang++ -DGOOD -lpthread -Wall -pedantic -std=c++14 main.cpp && ./a.out && clang++ -DBAD -lpthread -Wall -pedantic -std=c++14 main.cpp && ./a.out
