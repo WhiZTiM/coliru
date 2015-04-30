@@ -1,0 +1,404 @@
+In file included from /usr/local/include/boost/mpl/int.hpp:20:0,
+                 from /usr/local/include/boost/type_traits/detail/template_arity_spec.hpp:10,
+                 from /usr/local/include/boost/type_traits/detail/bool_trait_def.hpp:14,
+                 from /usr/local/include/boost/type_traits/is_lvalue_reference.hpp:28,
+                 from /usr/local/include/boost/type_traits/is_reference.hpp:16,
+                 from /usr/local/include/boost/type_traits/add_reference.hpp:12,
+                 from /usr/local/include/boost/fusion/adapted/struct/adapt_struct.hpp:15,
+                 from /usr/local/include/boost/fusion/include/adapt_struct.hpp:12,
+                 from main.cpp:10:
+/usr/local/include/boost/mpl/aux_/integral_wrapper.hpp:72:31: error: template instantiation depth exceeds maximum of 900 (use -ftemplate-depth= to increase the maximum) instantiating 'mpl_::int_<887>::value'
+     typedef AUX_WRAPPER_INST( BOOST_MPL_AUX_STATIC_CAST(AUX_WRAPPER_VALUE_TYPE, (value + 1)) ) next;
+                               ^
+/usr/local/include/boost/mpl/aux_/integral_wrapper.hpp:72:13:   required from 'struct mpl_::int_<887>'
+/usr/local/include/boost/mpl/aux_/preprocessed/gcc/equal_to.hpp:60:29:   required from 'struct boost::mpl::equal_to_tag<mpl_::int_<887> >'
+/usr/local/include/boost/mpl/aux_/preprocessed/gcc/equal_to.hpp:67:8:   required from 'struct boost::mpl::equal_to<mpl_::int_<887>, mpl_::int_<4> >'
+/usr/local/include/boost/mpl/aux_/nested_type_wknd.hpp:26:31:   required from 'struct boost::mpl::aux::nested_type_wknd<boost::mpl::equal_to<mpl_::int_<887>, mpl_::int_<4> > >'
+/usr/local/include/boost/mpl/aux_/preprocessed/gcc/and.hpp:23:8:   required from 'struct boost::mpl::aux::and_impl<true, boost::mpl::equal_to<mpl_::int_<887>, mpl_::int_<4> >, mpl_::bool_<true>, mpl_::bool_<true>, mpl_::bool_<true> >'
+/usr/local/include/boost/mpl/aux_/preprocessed/gcc/and.hpp:48:8:   [ skipping 4 instantiation contexts, use -ftemplate-backtrace-limit=0 to disable ]
+/usr/local/include/boost/fusion/iterator/equal_to.hpp:68:16:   required from 'struct boost::fusion::result_of::equal_to<boost::fusion::basic_iterator<boost::fusion::struct_iterator_tag, boost::fusion::random_access_traversal_tag, DeviceTable, 887>, boost::fusion::basic_iterator<boost::fusion::struct_iterator_tag, boost::fusion::random_access_traversal_tag, DeviceTable, 4> >'
+/usr/local/include/boost/fusion/iterator/equal_to.hpp:97:20:   required from 'typename boost::enable_if<boost::mpl::and_<boost::fusion::is_fusion_iterator<Iter1>, boost::fusion::is_fusion_iterator<Iter2> >, bool>::type boost::fusion::iterator_operators::operator!=(const Iter1&, const Iter2&) [with Iter1 = boost::fusion::basic_iterator<boost::fusion::struct_iterator_tag, boost::fusion::random_access_traversal_tag, DeviceTable, 887>; Iter2 = boost::fusion::basic_iterator<boost::fusion::struct_iterator_tag, boost::fusion::random_access_traversal_tag, DeviceTable, 4>; typename boost::enable_if<boost::mpl::and_<boost::fusion::is_fusion_iterator<Iter1>, boost::fusion::is_fusion_iterator<Iter2> >, bool>::type = bool]'
+main.cpp:69:27:   recursively required from 'void IterateVars(const T1&, const T2&) [with T1 = boost::fusion::basic_iterator<boost::fusion::struct_iterator_tag, boost::fusion::random_access_traversal_tag, DeviceTable, 1>; T2 = boost::fusion::basic_iterator<boost::fusion::struct_iterator_tag, boost::fusion::random_access_traversal_tag, DeviceTable, 4>]'
+main.cpp:69:27:   required from 'void IterateVars(const T1&, const T2&) [with T1 = boost::fusion::basic_iterator<boost::fusion::struct_iterator_tag, boost::fusion::random_access_traversal_tag, DeviceTable, 0>; T2 = boost::fusion::basic_iterator<boost::fusion::struct_iterator_tag, boost::fusion::random_access_traversal_tag, DeviceTable, 4>]'
+main.cpp:100:24:   required from 'void Deserialize(std::vector<unsigned char>, T&) [with T = DeviceTable]'
+main.cpp:136:54:   required from here
+
+/usr/local/include/boost/mpl/aux_/integral_wrapper.hpp:72:31: error: template instantiation depth exceeds maximum of 900 (use -ftemplate-depth= to increase the maximum) instantiating 'mpl_::int_<887>::value'
+/usr/local/include/boost/mpl/aux_/integral_wrapper.hpp:72:13:   required from 'struct mpl_::int_<887>'
+/usr/local/include/boost/mpl/aux_/preprocessed/gcc/equal_to.hpp:60:29:   required from 'struct boost::mpl::equal_to_tag<mpl_::int_<887> >'
+/usr/local/include/boost/mpl/aux_/preprocessed/gcc/equal_to.hpp:67:8:   required from 'struct boost::mpl::equal_to<mpl_::int_<887>, mpl_::int_<4> >'
+/usr/local/include/boost/mpl/aux_/nested_type_wknd.hpp:26:31:   required from 'struct boost::mpl::aux::nested_type_wknd<boost::mpl::equal_to<mpl_::int_<887>, mpl_::int_<4> > >'
+/usr/local/include/boost/mpl/aux_/preprocessed/gcc/and.hpp:23:8:   required from 'struct boost::mpl::aux::and_impl<true, boost::mpl::equal_to<mpl_::int_<887>, mpl_::int_<4> >, mpl_::bool_<true>, mpl_::bool_<true>, mpl_::bool_<true> >'
+/usr/local/include/boost/mpl/aux_/preprocessed/gcc/and.hpp:48:8:   [ skipping 4 instantiation contexts, use -ftemplate-backtrace-limit=0 to disable ]
+/usr/local/include/boost/fusion/iterator/equal_to.hpp:68:16:   required from 'struct boost::fusion::result_of::equal_to<boost::fusion::basic_iterator<boost::fusion::struct_iterator_tag, boost::fusion::random_access_traversal_tag, DeviceTable, 887>, boost::fusion::basic_iterator<boost::fusion::struct_iterator_tag, boost::fusion::random_access_traversal_tag, DeviceTable, 4> >'
+/usr/local/include/boost/fusion/iterator/equal_to.hpp:97:20:   required from 'typename boost::enable_if<boost::mpl::and_<boost::fusion::is_fusion_iterator<Iter1>, boost::fusion::is_fusion_iterator<Iter2> >, bool>::type boost::fusion::iterator_operators::operator!=(const Iter1&, const Iter2&) [with Iter1 = boost::fusion::basic_iterator<boost::fusion::struct_iterator_tag, boost::fusion::random_access_traversal_tag, DeviceTable, 887>; Iter2 = boost::fusion::basic_iterator<boost::fusion::struct_iterator_tag, boost::fusion::random_access_traversal_tag, DeviceTable, 4>; typename boost::enable_if<boost::mpl::and_<boost::fusion::is_fusion_iterator<Iter1>, boost::fusion::is_fusion_iterator<Iter2> >, bool>::type = bool]'
+main.cpp:69:27:   recursively required from 'void IterateVars(const T1&, const T2&) [with T1 = boost::fusion::basic_iterator<boost::fusion::struct_iterator_tag, boost::fusion::random_access_traversal_tag, DeviceTable, 1>; T2 = boost::fusion::basic_iterator<boost::fusion::struct_iterator_tag, boost::fusion::random_access_traversal_tag, DeviceTable, 4>]'
+main.cpp:69:27:   required from 'void IterateVars(const T1&, const T2&) [with T1 = boost::fusion::basic_iterator<boost::fusion::struct_iterator_tag, boost::fusion::random_access_traversal_tag, DeviceTable, 0>; T2 = boost::fusion::basic_iterator<boost::fusion::struct_iterator_tag, boost::fusion::random_access_traversal_tag, DeviceTable, 4>]'
+main.cpp:100:24:   required from 'void Deserialize(std::vector<unsigned char>, T&) [with T = DeviceTable]'
+main.cpp:136:54:   required from here
+
+/usr/local/include/boost/mpl/aux_/integral_wrapper.hpp:72:96: error: the value of 'mpl_::int_<887>::value' is not usable in a constant expression
+     typedef AUX_WRAPPER_INST( BOOST_MPL_AUX_STATIC_CAST(AUX_WRAPPER_VALUE_TYPE, (value + 1)) ) next;
+                                                                                                ^
+In file included from /usr/local/include/boost/config.hpp:61:0,
+                 from /usr/local/include/boost/fusion/support/config.hpp:10,
+                 from /usr/local/include/boost/fusion/include/adapt_struct.hpp:11,
+                 from main.cpp:10:
+/usr/local/include/boost/mpl/aux_/integral_wrapper.hpp:45:5: note: 'mpl_::int_<887>::value' was not initialized with a constant expression
+     BOOST_STATIC_CONSTANT(AUX_WRAPPER_VALUE_TYPE, value = N);
+     ^
+In file included from /usr/local/include/boost/mpl/int.hpp:20:0,
+                 from /usr/local/include/boost/type_traits/detail/template_arity_spec.hpp:10,
+                 from /usr/local/include/boost/type_traits/detail/bool_trait_def.hpp:14,
+                 from /usr/local/include/boost/type_traits/is_lvalue_reference.hpp:28,
+                 from /usr/local/include/boost/type_traits/is_reference.hpp:16,
+                 from /usr/local/include/boost/type_traits/add_reference.hpp:12,
+                 from /usr/local/include/boost/fusion/adapted/struct/adapt_struct.hpp:15,
+                 from /usr/local/include/boost/fusion/include/adapt_struct.hpp:12,
+                 from main.cpp:10:
+/usr/local/include/boost/mpl/aux_/integral_wrapper.hpp:72:96: note: in template argument for type 'int' 
+     typedef AUX_WRAPPER_INST( BOOST_MPL_AUX_STATIC_CAST(AUX_WRAPPER_VALUE_TYPE, (value + 1)) ) next;
+                                                                                                ^
+/usr/local/include/boost/mpl/aux_/integral_wrapper.hpp:73:96: error: the value of 'mpl_::int_<887>::value' is not usable in a constant expression
+     typedef AUX_WRAPPER_INST( BOOST_MPL_AUX_STATIC_CAST(AUX_WRAPPER_VALUE_TYPE, (value - 1)) ) prior;
+                                                                                                ^
+In file included from /usr/local/include/boost/config.hpp:61:0,
+                 from /usr/local/include/boost/fusion/support/config.hpp:10,
+                 from /usr/local/include/boost/fusion/include/adapt_struct.hpp:11,
+                 from main.cpp:10:
+/usr/local/include/boost/mpl/aux_/integral_wrapper.hpp:45:5: note: 'mpl_::int_<887>::value' was not initialized with a constant expression
+     BOOST_STATIC_CONSTANT(AUX_WRAPPER_VALUE_TYPE, value = N);
+     ^
+In file included from /usr/local/include/boost/mpl/int.hpp:20:0,
+                 from /usr/local/include/boost/type_traits/detail/template_arity_spec.hpp:10,
+                 from /usr/local/include/boost/type_traits/detail/bool_trait_def.hpp:14,
+                 from /usr/local/include/boost/type_traits/is_lvalue_reference.hpp:28,
+                 from /usr/local/include/boost/type_traits/is_reference.hpp:16,
+                 from /usr/local/include/boost/type_traits/add_reference.hpp:12,
+                 from /usr/local/include/boost/fusion/adapted/struct/adapt_struct.hpp:15,
+                 from /usr/local/include/boost/fusion/include/adapt_struct.hpp:12,
+                 from main.cpp:10:
+/usr/local/include/boost/mpl/aux_/integral_wrapper.hpp:73:96: note: in template argument for type 'int' 
+     typedef AUX_WRAPPER_INST( BOOST_MPL_AUX_STATIC_CAST(AUX_WRAPPER_VALUE_TYPE, (value - 1)) ) prior;
+                                                                                                ^
+In file included from /usr/local/include/boost/mpl/aux_/include_preprocessed.hpp:37:0,
+                 from /usr/local/include/boost/mpl/aux_/comparison_op.hpp:35,
+                 from /usr/local/include/boost/mpl/equal_to.hpp:19,
+                 from /usr/local/include/boost/fusion/iterator/basic_iterator.hpp:15,
+                 from /usr/local/include/boost/fusion/adapted/struct/detail/begin_impl.hpp:14,
+                 from /usr/local/include/boost/fusion/adapted/struct/adapt_struct.hpp:28,
+                 from /usr/local/include/boost/fusion/include/adapt_struct.hpp:12,
+                 from main.cpp:10:
+/usr/local/include/boost/mpl/aux_/preprocessed/gcc/equal_to.hpp: In instantiation of 'struct boost::mpl::equal_to_impl<mpl_::integral_c_tag, mpl_::integral_c_tag>::apply<mpl_::int_<887>, mpl_::int_<4> >':
+/usr/local/include/boost/mpl/aux_/preprocessed/gcc/equal_to.hpp:67:8:   required from 'struct boost::mpl::equal_to<mpl_::int_<887>, mpl_::int_<4> >'
+/usr/local/include/boost/mpl/aux_/nested_type_wknd.hpp:26:31:   required from 'struct boost::mpl::aux::nested_type_wknd<boost::mpl::equal_to<mpl_::int_<887>, mpl_::int_<4> > >'
+/usr/local/include/boost/mpl/aux_/preprocessed/gcc/and.hpp:23:8:   required from 'struct boost::mpl::aux::and_impl<true, boost::mpl::equal_to<mpl_::int_<887>, mpl_::int_<4> >, mpl_::bool_<true>, mpl_::bool_<true>, mpl_::bool_<true> >'
+/usr/local/include/boost/mpl/aux_/preprocessed/gcc/and.hpp:48:8:   required from 'struct boost::mpl::and_<boost::is_same<DeviceTable, DeviceTable>, boost::mpl::equal_to<mpl_::int_<887>, mpl_::int_<4> >, mpl_::bool_<true>, mpl_::bool_<true>, mpl_::bool_<true> >'
+/usr/local/include/boost/fusion/iterator/basic_iterator.hpp:113:16:   required from 'struct boost::fusion::basic_iterator<boost::fusion::struct_iterator_tag, boost::fusion::random_access_traversal_tag, DeviceTable, 887>::equal_to<boost::fusion::basic_iterator<boost::fusion::struct_iterator_tag, boost::fusion::random_access_traversal_tag, DeviceTable, 887>, boost::fusion::basic_iterator<boost::fusion::struct_iterator_tag, boost::fusion::random_access_traversal_tag, DeviceTable, 4> >'
+/usr/local/include/boost/fusion/iterator/equal_to.hpp:45:20:   [ skipping 2 instantiation contexts, use -ftemplate-backtrace-limit=0 to disable ]
+/usr/local/include/boost/fusion/iterator/equal_to.hpp:68:16:   required from 'struct boost::fusion::result_of::equal_to<boost::fusion::basic_iterator<boost::fusion::struct_iterator_tag, boost::fusion::random_access_traversal_tag, DeviceTable, 887>, boost::fusion::basic_iterator<boost::fusion::struct_iterator_tag, boost::fusion::random_access_traversal_tag, DeviceTable, 4> >'
+/usr/local/include/boost/fusion/iterator/equal_to.hpp:97:20:   required from 'typename boost::enable_if<boost::mpl::and_<boost::fusion::is_fusion_iterator<Iter1>, boost::fusion::is_fusion_iterator<Iter2> >, bool>::type boost::fusion::iterator_operators::operator!=(const Iter1&, const Iter2&) [with Iter1 = boost::fusion::basic_iterator<boost::fusion::struct_iterator_tag, boost::fusion::random_access_traversal_tag, DeviceTable, 887>; Iter2 = boost::fusion::basic_iterator<boost::fusion::struct_iterator_tag, boost::fusion::random_access_traversal_tag, DeviceTable, 4>; typename boost::enable_if<boost::mpl::and_<boost::fusion::is_fusion_iterator<Iter1>, boost::fusion::is_fusion_iterator<Iter2> >, bool>::type = bool]'
+main.cpp:69:27:   recursively required from 'void IterateVars(const T1&, const T2&) [with T1 = boost::fusion::basic_iterator<boost::fusion::struct_iterator_tag, boost::fusion::random_access_traversal_tag, DeviceTable, 1>; T2 = boost::fusion::basic_iterator<boost::fusion::struct_iterator_tag, boost::fusion::random_access_traversal_tag, DeviceTable, 4>]'
+main.cpp:69:27:   required from 'void IterateVars(const T1&, const T2&) [with T1 = boost::fusion::basic_iterator<boost::fusion::struct_iterator_tag, boost::fusion::random_access_traversal_tag, DeviceTable, 0>; T2 = boost::fusion::basic_iterator<boost::fusion::struct_iterator_tag, boost::fusion::random_access_traversal_tag, DeviceTable, 4>]'
+main.cpp:100:24:   required from 'void Deserialize(std::vector<unsigned char>, T&) [with T = DeviceTable]'
+main.cpp:136:54:   required from here
+/usr/local/include/boost/mpl/aux_/preprocessed/gcc/equal_to.hpp:87:49: error: the value of 'mpl_::int_<887>::value' is not usable in a constant expression
+     template< typename N1, typename N2 > struct apply
+                                                 ^
+In file included from /usr/local/include/boost/config.hpp:61:0,
+                 from /usr/local/include/boost/fusion/support/config.hpp:10,
+                 from /usr/local/include/boost/fusion/include/adapt_struct.hpp:11,
+                 from main.cpp:10:
+/usr/local/include/boost/mpl/aux_/integral_wrapper.hpp:45:5: note: 'mpl_::int_<887>::value' was not initialized with a constant expression
+     BOOST_STATIC_CONSTANT(AUX_WRAPPER_VALUE_TYPE, value = N);
+     ^
+In file included from /usr/local/include/boost/mpl/aux_/include_preprocessed.hpp:37:0,
+                 from /usr/local/include/boost/mpl/aux_/comparison_op.hpp:35,
+                 from /usr/local/include/boost/mpl/equal_to.hpp:19,
+                 from /usr/local/include/boost/fusion/iterator/basic_iterator.hpp:15,
+                 from /usr/local/include/boost/fusion/adapted/struct/detail/begin_impl.hpp:14,
+                 from /usr/local/include/boost/fusion/adapted/struct/adapt_struct.hpp:28,
+                 from /usr/local/include/boost/fusion/include/adapt_struct.hpp:12,
+                 from main.cpp:10:
+/usr/local/include/boost/mpl/aux_/preprocessed/gcc/equal_to.hpp:87:49: note: in template argument for type 'bool' 
+     template< typename N1, typename N2 > struct apply
+                                                 ^
+/usr/local/include/boost/mpl/aux_/preprocessed/gcc/equal_to.hpp: In instantiation of 'struct boost::mpl::equal_to<mpl_::int_<887>, mpl_::int_<4> >':
+/usr/local/include/boost/mpl/aux_/nested_type_wknd.hpp:26:31:   required from 'struct boost::mpl::aux::nested_type_wknd<boost::mpl::equal_to<mpl_::int_<887>, mpl_::int_<4> > >'
+/usr/local/include/boost/mpl/aux_/preprocessed/gcc/and.hpp:23:8:   required from 'struct boost::mpl::aux::and_impl<true, boost::mpl::equal_to<mpl_::int_<887>, mpl_::int_<4> >, mpl_::bool_<true>, mpl_::bool_<true>, mpl_::bool_<true> >'
+/usr/local/include/boost/mpl/aux_/preprocessed/gcc/and.hpp:48:8:   required from 'struct boost::mpl::and_<boost::is_same<DeviceTable, DeviceTable>, boost::mpl::equal_to<mpl_::int_<887>, mpl_::int_<4> >, mpl_::bool_<true>, mpl_::bool_<true>, mpl_::bool_<true> >'
+/usr/local/include/boost/fusion/iterator/basic_iterator.hpp:113:16:   required from 'struct boost::fusion::basic_iterator<boost::fusion::struct_iterator_tag, boost::fusion::random_access_traversal_tag, DeviceTable, 887>::equal_to<boost::fusion::basic_iterator<boost::fusion::struct_iterator_tag, boost::fusion::random_access_traversal_tag, DeviceTable, 887>, boost::fusion::basic_iterator<boost::fusion::struct_iterator_tag, boost::fusion::random_access_traversal_tag, DeviceTable, 4> >'
+/usr/local/include/boost/fusion/iterator/equal_to.hpp:45:20:   [ skipping 2 instantiation contexts, use -ftemplate-backtrace-limit=0 to disable ]
+/usr/local/include/boost/fusion/iterator/equal_to.hpp:68:16:   required from 'struct boost::fusion::result_of::equal_to<boost::fusion::basic_iterator<boost::fusion::struct_iterator_tag, boost::fusion::random_access_traversal_tag, DeviceTable, 887>, boost::fusion::basic_iterator<boost::fusion::struct_iterator_tag, boost::fusion::random_access_traversal_tag, DeviceTable, 4> >'
+/usr/local/include/boost/fusion/iterator/equal_to.hpp:97:20:   required from 'typename boost::enable_if<boost::mpl::and_<boost::fusion::is_fusion_iterator<Iter1>, boost::fusion::is_fusion_iterator<Iter2> >, bool>::type boost::fusion::iterator_operators::operator!=(const Iter1&, const Iter2&) [with Iter1 = boost::fusion::basic_iterator<boost::fusion::struct_iterator_tag, boost::fusion::random_access_traversal_tag, DeviceTable, 887>; Iter2 = boost::fusion::basic_iterator<boost::fusion::struct_iterator_tag, boost::fusion::random_access_traversal_tag, DeviceTable, 4>; typename boost::enable_if<boost::mpl::and_<boost::fusion::is_fusion_iterator<Iter1>, boost::fusion::is_fusion_iterator<Iter2> >, bool>::type = bool]'
+main.cpp:69:27:   recursively required from 'void IterateVars(const T1&, const T2&) [with T1 = boost::fusion::basic_iterator<boost::fusion::struct_iterator_tag, boost::fusion::random_access_traversal_tag, DeviceTable, 1>; T2 = boost::fusion::basic_iterator<boost::fusion::struct_iterator_tag, boost::fusion::random_access_traversal_tag, DeviceTable, 4>]'
+main.cpp:69:27:   required from 'void IterateVars(const T1&, const T2&) [with T1 = boost::fusion::basic_iterator<boost::fusion::struct_iterator_tag, boost::fusion::random_access_traversal_tag, DeviceTable, 0>; T2 = boost::fusion::basic_iterator<boost::fusion::struct_iterator_tag, boost::fusion::random_access_traversal_tag, DeviceTable, 4>]'
+main.cpp:100:24:   required from 'void Deserialize(std::vector<unsigned char>, T&) [with T = DeviceTable]'
+main.cpp:136:54:   required from here
+/usr/local/include/boost/mpl/aux_/preprocessed/gcc/equal_to.hpp:67:8: error: no type named 'type' in 'struct boost::mpl::equal_to_impl<mpl_::integral_c_tag, mpl_::integral_c_tag>::apply<mpl_::int_<887>, mpl_::int_<4> >'
+ struct equal_to
+        ^
+In file included from /usr/local/include/boost/mpl/not.hpp:19:0,
+                 from /usr/local/include/boost/mpl/is_sequence.hpp:17,
+                 from /usr/local/include/boost/fusion/support/detail/is_mpl_sequence.hpp:13,
+                 from /usr/local/include/boost/fusion/support/tag_of.hpp:14,
+                 from /usr/local/include/boost/fusion/support/category_of.hpp:12,
+                 from /usr/local/include/boost/fusion/adapted/struct/detail/extension.hpp:14,
+                 from /usr/local/include/boost/fusion/adapted/struct/adapt_struct.hpp:20,
+                 from /usr/local/include/boost/fusion/include/adapt_struct.hpp:12,
+                 from main.cpp:10:
+/usr/local/include/boost/mpl/aux_/nested_type_wknd.hpp: In instantiation of 'struct boost::mpl::aux::nested_type_wknd<boost::mpl::equal_to<mpl_::int_<887>, mpl_::int_<4> > >':
+/usr/local/include/boost/mpl/aux_/preprocessed/gcc/and.hpp:23:8:   required from 'struct boost::mpl::aux::and_impl<true, boost::mpl::equal_to<mpl_::int_<887>, mpl_::int_<4> >, mpl_::bool_<true>, mpl_::bool_<true>, mpl_::bool_<true> >'
+/usr/local/include/boost/mpl/aux_/preprocessed/gcc/and.hpp:48:8:   required from 'struct boost::mpl::and_<boost::is_same<DeviceTable, DeviceTable>, boost::mpl::equal_to<mpl_::int_<887>, mpl_::int_<4> >, mpl_::bool_<true>, mpl_::bool_<true>, mpl_::bool_<true> >'
+/usr/local/include/boost/fusion/iterator/basic_iterator.hpp:113:16:   required from 'struct boost::fusion::basic_iterator<boost::fusion::struct_iterator_tag, boost::fusion::random_access_traversal_tag, DeviceTable, 887>::equal_to<boost::fusion::basic_iterator<boost::fusion::struct_iterator_tag, boost::fusion::random_access_traversal_tag, DeviceTable, 887>, boost::fusion::basic_iterator<boost::fusion::struct_iterator_tag, boost::fusion::random_access_traversal_tag, DeviceTable, 4> >'
+/usr/local/include/boost/fusion/iterator/equal_to.hpp:45:20:   required from 'struct boost::fusion::extension::equal_to_impl<boost::fusion::iterator_facade_tag>::dispatch<boost::fusion::basic_iterator<boost::fusion::struct_iterator_tag, boost::fusion::random_access_traversal_tag, DeviceTable, 887>, boost::fusion::basic_iterator<boost::fusion::struct_iterator_tag, boost::fusion::random_access_traversal_tag, DeviceTable, 4>, boost::fusion::iterator_facade_tag, boost::fusion::iterator_facade_tag>'
+/usr/local/include/boost/fusion/iterator/equal_to.hpp:50:20:   required from 'struct boost::fusion::extension::equal_to_impl<boost::fusion::iterator_facade_tag>::apply<boost::fusion::basic_iterator<boost::fusion::struct_iterator_tag, boost::fusion::random_access_traversal_tag, DeviceTable, 887>, boost::fusion::basic_iterator<boost::fusion::struct_iterator_tag, boost::fusion::random_access_traversal_tag, DeviceTable, 4> >'
+/usr/local/include/boost/fusion/iterator/equal_to.hpp:68:16:   required from 'struct boost::fusion::result_of::equal_to<boost::fusion::basic_iterator<boost::fusion::struct_iterator_tag, boost::fusion::random_access_traversal_tag, DeviceTable, 887>, boost::fusion::basic_iterator<boost::fusion::struct_iterator_tag, boost::fusion::random_access_traversal_tag, DeviceTable, 4> >'
+/usr/local/include/boost/fusion/iterator/equal_to.hpp:97:20:   required from 'typename boost::enable_if<boost::mpl::and_<boost::fusion::is_fusion_iterator<Iter1>, boost::fusion::is_fusion_iterator<Iter2> >, bool>::type boost::fusion::iterator_operators::operator!=(const Iter1&, const Iter2&) [with Iter1 = boost::fusion::basic_iterator<boost::fusion::struct_iterator_tag, boost::fusion::random_access_traversal_tag, DeviceTable, 887>; Iter2 = boost::fusion::basic_iterator<boost::fusion::struct_iterator_tag, boost::fusion::random_access_traversal_tag, DeviceTable, 4>; typename boost::enable_if<boost::mpl::and_<boost::fusion::is_fusion_iterator<Iter1>, boost::fusion::is_fusion_iterator<Iter2> >, bool>::type = bool]'
+main.cpp:69:27:   recursively required from 'void IterateVars(const T1&, const T2&) [with T1 = boost::fusion::basic_iterator<boost::fusion::struct_iterator_tag, boost::fusion::random_access_traversal_tag, DeviceTable, 1>; T2 = boost::fusion::basic_iterator<boost::fusion::struct_iterator_tag, boost::fusion::random_access_traversal_tag, DeviceTable, 4>]'
+main.cpp:69:27:   required from 'void IterateVars(const T1&, const T2&) [with T1 = boost::fusion::basic_iterator<boost::fusion::struct_iterator_tag, boost::fusion::random_access_traversal_tag, DeviceTable, 0>; T2 = boost::fusion::basic_iterator<boost::fusion::struct_iterator_tag, boost::fusion::random_access_traversal_tag, DeviceTable, 4>]'
+main.cpp:100:24:   required from 'void Deserialize(std::vector<unsigned char>, T&) [with T = DeviceTable]'
+main.cpp:136:54:   required from here
+/usr/local/include/boost/mpl/aux_/nested_type_wknd.hpp:26:31: error: no type named 'type' in 'struct boost::mpl::equal_to<mpl_::int_<887>, mpl_::int_<4> >'
+ template< typename T > struct nested_type_wknd
+                               ^
+In file included from /usr/local/include/boost/mpl/aux_/include_preprocessed.hpp:37:0,
+                 from /usr/local/include/boost/mpl/and.hpp:42,
+                 from /usr/local/include/boost/mpl/is_sequence.hpp:18,
+                 from /usr/local/include/boost/fusion/support/detail/is_mpl_sequence.hpp:13,
+                 from /usr/local/include/boost/fusion/support/tag_of.hpp:14,
+                 from /usr/local/include/boost/fusion/support/category_of.hpp:12,
+                 from /usr/local/include/boost/fusion/adapted/struct/detail/extension.hpp:14,
+                 from /usr/local/include/boost/fusion/adapted/struct/adapt_struct.hpp:20,
+                 from /usr/local/include/boost/fusion/include/adapt_struct.hpp:12,
+                 from main.cpp:10:
+/usr/local/include/boost/mpl/aux_/preprocessed/gcc/and.hpp: In instantiation of 'struct boost::mpl::aux::and_impl<true, boost::mpl::equal_to<mpl_::int_<887>, mpl_::int_<4> >, mpl_::bool_<true>, mpl_::bool_<true>, mpl_::bool_<true> >':
+/usr/local/include/boost/mpl/aux_/preprocessed/gcc/and.hpp:48:8:   required from 'struct boost::mpl::and_<boost::is_same<DeviceTable, DeviceTable>, boost::mpl::equal_to<mpl_::int_<887>, mpl_::int_<4> >, mpl_::bool_<true>, mpl_::bool_<true>, mpl_::bool_<true> >'
+/usr/local/include/boost/fusion/iterator/basic_iterator.hpp:113:16:   required from 'struct boost::fusion::basic_iterator<boost::fusion::struct_iterator_tag, boost::fusion::random_access_traversal_tag, DeviceTable, 887>::equal_to<boost::fusion::basic_iterator<boost::fusion::struct_iterator_tag, boost::fusion::random_access_traversal_tag, DeviceTable, 887>, boost::fusion::basic_iterator<boost::fusion::struct_iterator_tag, boost::fusion::random_access_traversal_tag, DeviceTable, 4> >'
+/usr/local/include/boost/fusion/iterator/equal_to.hpp:45:20:   required from 'struct boost::fusion::extension::equal_to_impl<boost::fusion::iterator_facade_tag>::dispatch<boost::fusion::basic_iterator<boost::fusion::struct_iterator_tag, boost::fusion::random_access_traversal_tag, DeviceTable, 887>, boost::fusion::basic_iterator<boost::fusion::struct_iterator_tag, boost::fusion::random_access_traversal_tag, DeviceTable, 4>, boost::fusion::iterator_facade_tag, boost::fusion::iterator_facade_tag>'
+/usr/local/include/boost/fusion/iterator/equal_to.hpp:50:20:   required from 'struct boost::fusion::extension::equal_to_impl<boost::fusion::iterator_facade_tag>::apply<boost::fusion::basic_iterator<boost::fusion::struct_iterator_tag, boost::fusion::random_access_traversal_tag, DeviceTable, 887>, boost::fusion::basic_iterator<boost::fusion::struct_iterator_tag, boost::fusion::random_access_traversal_tag, DeviceTable, 4> >'
+/usr/local/include/boost/fusion/iterator/equal_to.hpp:68:16:   required from 'struct boost::fusion::result_of::equal_to<boost::fusion::basic_iterator<boost::fusion::struct_iterator_tag, boost::fusion::random_access_traversal_tag, DeviceTable, 887>, boost::fusion::basic_iterator<boost::fusion::struct_iterator_tag, boost::fusion::random_access_traversal_tag, DeviceTable, 4> >'
+/usr/local/include/boost/fusion/iterator/equal_to.hpp:97:20:   required from 'typename boost::enable_if<boost::mpl::and_<boost::fusion::is_fusion_iterator<Iter1>, boost::fusion::is_fusion_iterator<Iter2> >, bool>::type boost::fusion::iterator_operators::operator!=(const Iter1&, const Iter2&) [with Iter1 = boost::fusion::basic_iterator<boost::fusion::struct_iterator_tag, boost::fusion::random_access_traversal_tag, DeviceTable, 887>; Iter2 = boost::fusion::basic_iterator<boost::fusion::struct_iterator_tag, boost::fusion::random_access_traversal_tag, DeviceTable, 4>; typename boost::enable_if<boost::mpl::and_<boost::fusion::is_fusion_iterator<Iter1>, boost::fusion::is_fusion_iterator<Iter2> >, bool>::type = bool]'
+main.cpp:69:27:   recursively required from 'void IterateVars(const T1&, const T2&) [with T1 = boost::fusion::basic_iterator<boost::fusion::struct_iterator_tag, boost::fusion::random_access_traversal_tag, DeviceTable, 1>; T2 = boost::fusion::basic_iterator<boost::fusion::struct_iterator_tag, boost::fusion::random_access_traversal_tag, DeviceTable, 4>]'
+main.cpp:69:27:   required from 'void IterateVars(const T1&, const T2&) [with T1 = boost::fusion::basic_iterator<boost::fusion::struct_iterator_tag, boost::fusion::random_access_traversal_tag, DeviceTable, 0>; T2 = boost::fusion::basic_iterator<boost::fusion::struct_iterator_tag, boost::fusion::random_access_traversal_tag, DeviceTable, 4>]'
+main.cpp:100:24:   required from 'void Deserialize(std::vector<unsigned char>, T&) [with T = DeviceTable]'
+main.cpp:136:54:   required from here
+/usr/local/include/boost/mpl/aux_/preprocessed/gcc/and.hpp:23:8: error: 'value' is not a member of 'boost::mpl::aux::nested_type_wknd<boost::mpl::equal_to<mpl_::int_<887>, mpl_::int_<4> > >'
+ struct and_impl< true,T1,T2,T3,T4 >
+        ^
+In file included from /usr/local/include/boost/fusion/iterator/detail/distance.hpp:17:0,
+                 from /usr/local/include/boost/fusion/iterator/iterator_facade.hpp:13,
+                 from /usr/local/include/boost/fusion/iterator/basic_iterator.hpp:12,
+                 from /usr/local/include/boost/fusion/adapted/struct/detail/begin_impl.hpp:14,
+                 from /usr/local/include/boost/fusion/adapted/struct/adapt_struct.hpp:28,
+                 from /usr/local/include/boost/fusion/include/adapt_struct.hpp:12,
+                 from main.cpp:10:
+/usr/local/include/boost/fusion/iterator/equal_to.hpp: In instantiation of 'typename boost::enable_if<boost::mpl::and_<boost::fusion::is_fusion_iterator<Iter1>, boost::fusion::is_fusion_iterator<Iter2> >, bool>::type boost::fusion::iterator_operators::operator!=(const Iter1&, const Iter2&) [with Iter1 = boost::fusion::basic_iterator<boost::fusion::struct_iterator_tag, boost::fusion::random_access_traversal_tag, DeviceTable, 887>; Iter2 = boost::fusion::basic_iterator<boost::fusion::struct_iterator_tag, boost::fusion::random_access_traversal_tag, DeviceTable, 4>; typename boost::enable_if<boost::mpl::and_<boost::fusion::is_fusion_iterator<Iter1>, boost::fusion::is_fusion_iterator<Iter2> >, bool>::type = bool]':
+main.cpp:69:27:   recursively required from 'void IterateVars(const T1&, const T2&) [with T1 = boost::fusion::basic_iterator<boost::fusion::struct_iterator_tag, boost::fusion::random_access_traversal_tag, DeviceTable, 1>; T2 = boost::fusion::basic_iterator<boost::fusion::struct_iterator_tag, boost::fusion::random_access_traversal_tag, DeviceTable, 4>]'
+main.cpp:69:27:   required from 'void IterateVars(const T1&, const T2&) [with T1 = boost::fusion::basic_iterator<boost::fusion::struct_iterator_tag, boost::fusion::random_access_traversal_tag, DeviceTable, 0>; T2 = boost::fusion::basic_iterator<boost::fusion::struct_iterator_tag, boost::fusion::random_access_traversal_tag, DeviceTable, 4>]'
+main.cpp:100:24:   required from 'void Deserialize(std::vector<unsigned char>, T&) [with T = DeviceTable]'
+main.cpp:136:54:   required from here
+/usr/local/include/boost/fusion/iterator/equal_to.hpp:97:20: error: 'value' is not a member of 'boost::fusion::result_of::equal_to<boost::fusion::basic_iterator<boost::fusion::struct_iterator_tag, boost::fusion::random_access_traversal_tag, DeviceTable, 887>, boost::fusion::basic_iterator<boost::fusion::struct_iterator_tag, boost::fusion::random_access_traversal_tag, DeviceTable, 4> >'
+             return !result_of::equal_to<Iter1, Iter2>::value;
+                    ^
+In file included from /usr/local/include/boost/mpl/aux_/include_preprocessed.hpp:37:0,
+                 from /usr/local/include/boost/mpl/aux_/comparison_op.hpp:35,
+                 from /usr/local/include/boost/mpl/equal_to.hpp:19,
+                 from /usr/local/include/boost/fusion/iterator/basic_iterator.hpp:15,
+                 from /usr/local/include/boost/fusion/adapted/struct/detail/begin_impl.hpp:14,
+                 from /usr/local/include/boost/fusion/adapted/struct/adapt_struct.hpp:28,
+                 from /usr/local/include/boost/fusion/include/adapt_struct.hpp:12,
+                 from main.cpp:10:
+/usr/local/include/boost/mpl/aux_/preprocessed/gcc/equal_to.hpp:60:29: error: template instantiation depth exceeds maximum of 900 (use -ftemplate-depth= to increase the maximum) instantiating 'struct mpl_::int_<888>'
+     typedef typename T::tag type;
+                             ^
+/usr/local/include/boost/mpl/aux_/preprocessed/gcc/equal_to.hpp:60:29:   required from 'struct boost::mpl::equal_to_tag<mpl_::int_<888> >'
+/usr/local/include/boost/mpl/aux_/preprocessed/gcc/equal_to.hpp:67:8:   required from 'struct boost::mpl::equal_to<mpl_::int_<888>, mpl_::int_<4> >'
+/usr/local/include/boost/mpl/aux_/nested_type_wknd.hpp:26:31:   required from 'struct boost::mpl::aux::nested_type_wknd<boost::mpl::equal_to<mpl_::int_<888>, mpl_::int_<4> > >'
+/usr/local/include/boost/mpl/aux_/preprocessed/gcc/and.hpp:23:8:   required from 'struct boost::mpl::aux::and_impl<true, boost::mpl::equal_to<mpl_::int_<888>, mpl_::int_<4> >, mpl_::bool_<true>, mpl_::bool_<true>, mpl_::bool_<true> >'
+/usr/local/include/boost/mpl/aux_/preprocessed/gcc/and.hpp:48:8:   required from 'struct boost::mpl::and_<boost::is_same<DeviceTable, DeviceTable>, boost::mpl::equal_to<mpl_::int_<888>, mpl_::int_<4> >, mpl_::bool_<true>, mpl_::bool_<true>, mpl_::bool_<true> >'
+/usr/local/include/boost/fusion/iterator/basic_iterator.hpp:113:16:   [ skipping 3 instantiation contexts, use -ftemplate-backtrace-limit=0 to disable ]
+/usr/local/include/boost/fusion/iterator/equal_to.hpp:68:16:   required from 'struct boost::fusion::result_of::equal_to<boost::fusion::basic_iterator<boost::fusion::struct_iterator_tag, boost::fusion::random_access_traversal_tag, DeviceTable, 888>, boost::fusion::basic_iterator<boost::fusion::struct_iterator_tag, boost::fusion::random_access_traversal_tag, DeviceTable, 4> >'
+/usr/local/include/boost/fusion/iterator/equal_to.hpp:97:20:   required from 'typename boost::enable_if<boost::mpl::and_<boost::fusion::is_fusion_iterator<Iter1>, boost::fusion::is_fusion_iterator<Iter2> >, bool>::type boost::fusion::iterator_operators::operator!=(const Iter1&, const Iter2&) [with Iter1 = boost::fusion::basic_iterator<boost::fusion::struct_iterator_tag, boost::fusion::random_access_traversal_tag, DeviceTable, 888>; Iter2 = boost::fusion::basic_iterator<boost::fusion::struct_iterator_tag, boost::fusion::random_access_traversal_tag, DeviceTable, 4>; typename boost::enable_if<boost::mpl::and_<boost::fusion::is_fusion_iterator<Iter1>, boost::fusion::is_fusion_iterator<Iter2> >, bool>::type = bool]'
+main.cpp:69:27:   recursively required from 'void IterateVars(const T1&, const T2&) [with T1 = boost::fusion::basic_iterator<boost::fusion::struct_iterator_tag, boost::fusion::random_access_traversal_tag, DeviceTable, 1>; T2 = boost::fusion::basic_iterator<boost::fusion::struct_iterator_tag, boost::fusion::random_access_traversal_tag, DeviceTable, 4>]'
+main.cpp:69:27:   required from 'void IterateVars(const T1&, const T2&) [with T1 = boost::fusion::basic_iterator<boost::fusion::struct_iterator_tag, boost::fusion::random_access_traversal_tag, DeviceTable, 0>; T2 = boost::fusion::basic_iterator<boost::fusion::struct_iterator_tag, boost::fusion::random_access_traversal_tag, DeviceTable, 4>]'
+main.cpp:100:24:   required from 'void Deserialize(std::vector<unsigned char>, T&) [with T = DeviceTable]'
+main.cpp:136:54:   required from here
+
+/usr/local/include/boost/mpl/aux_/preprocessed/gcc/equal_to.hpp:60:29: error: invalid use of incomplete type 'struct mpl_::int_<888>'
+In file included from /usr/local/include/boost/fusion/adapted/struct/adapt_struct.hpp:13:0,
+                 from /usr/local/include/boost/fusion/include/adapt_struct.hpp:12,
+                 from main.cpp:10:
+/usr/local/include/boost/mpl/aux_/integral_wrapper.hpp:43:8: error: declaration of 'struct mpl_::int_<888>'
+ struct AUX_WRAPPER_NAME
+        ^
+In file included from /usr/local/include/boost/mpl/not.hpp:19:0,
+                 from /usr/local/include/boost/mpl/is_sequence.hpp:17,
+                 from /usr/local/include/boost/fusion/support/detail/is_mpl_sequence.hpp:13,
+                 from /usr/local/include/boost/fusion/support/tag_of.hpp:14,
+                 from /usr/local/include/boost/fusion/support/category_of.hpp:12,
+                 from /usr/local/include/boost/fusion/adapted/struct/detail/extension.hpp:14,
+                 from /usr/local/include/boost/fusion/adapted/struct/adapt_struct.hpp:20,
+                 from /usr/local/include/boost/fusion/include/adapt_struct.hpp:12,
+                 from main.cpp:10:
+/usr/local/include/boost/mpl/aux_/nested_type_wknd.hpp: In instantiation of 'struct boost::mpl::aux::nested_type_wknd<boost::mpl::equal_to<mpl_::int_<888>, mpl_::int_<4> > >':
+/usr/local/include/boost/mpl/aux_/preprocessed/gcc/and.hpp:23:8:   required from 'struct boost::mpl::aux::and_impl<true, boost::mpl::equal_to<mpl_::int_<888>, mpl_::int_<4> >, mpl_::bool_<true>, mpl_::bool_<true>, mpl_::bool_<true> >'
+/usr/local/include/boost/mpl/aux_/preprocessed/gcc/and.hpp:48:8:   required from 'struct boost::mpl::and_<boost::is_same<DeviceTable, DeviceTable>, boost::mpl::equal_to<mpl_::int_<888>, mpl_::int_<4> >, mpl_::bool_<true>, mpl_::bool_<true>, mpl_::bool_<true> >'
+/usr/local/include/boost/fusion/iterator/basic_iterator.hpp:113:16:   required from 'struct boost::fusion::basic_iterator<boost::fusion::struct_iterator_tag, boost::fusion::random_access_traversal_tag, DeviceTable, 888>::equal_to<boost::fusion::basic_iterator<boost::fusion::struct_iterator_tag, boost::fusion::random_access_traversal_tag, DeviceTable, 888>, boost::fusion::basic_iterator<boost::fusion::struct_iterator_tag, boost::fusion::random_access_traversal_tag, DeviceTable, 4> >'
+/usr/local/include/boost/fusion/iterator/equal_to.hpp:45:20:   required from 'struct boost::fusion::extension::equal_to_impl<boost::fusion::iterator_facade_tag>::dispatch<boost::fusion::basic_iterator<boost::fusion::struct_iterator_tag, boost::fusion::random_access_traversal_tag, DeviceTable, 888>, boost::fusion::basic_iterator<boost::fusion::struct_iterator_tag, boost::fusion::random_access_traversal_tag, DeviceTable, 4>, boost::fusion::iterator_facade_tag, boost::fusion::iterator_facade_tag>'
+/usr/local/include/boost/fusion/iterator/equal_to.hpp:50:20:   required from 'struct boost::fusion::extension::equal_to_impl<boost::fusion::iterator_facade_tag>::apply<boost::fusion::basic_iterator<boost::fusion::struct_iterator_tag, boost::fusion::random_access_traversal_tag, DeviceTable, 888>, boost::fusion::basic_iterator<boost::fusion::struct_iterator_tag, boost::fusion::random_access_traversal_tag, DeviceTable, 4> >'
+/usr/local/include/boost/fusion/iterator/equal_to.hpp:68:16:   required from 'struct boost::fusion::result_of::equal_to<boost::fusion::basic_iterator<boost::fusion::struct_iterator_tag, boost::fusion::random_access_traversal_tag, DeviceTable, 888>, boost::fusion::basic_iterator<boost::fusion::struct_iterator_tag, boost::fusion::random_access_traversal_tag, DeviceTable, 4> >'
+/usr/local/include/boost/fusion/iterator/equal_to.hpp:97:20:   required from 'typename boost::enable_if<boost::mpl::and_<boost::fusion::is_fusion_iterator<Iter1>, boost::fusion::is_fusion_iterator<Iter2> >, bool>::type boost::fusion::iterator_operators::operator!=(const Iter1&, const Iter2&) [with Iter1 = boost::fusion::basic_iterator<boost::fusion::struct_iterator_tag, boost::fusion::random_access_traversal_tag, DeviceTable, 888>; Iter2 = boost::fusion::basic_iterator<boost::fusion::struct_iterator_tag, boost::fusion::random_access_traversal_tag, DeviceTable, 4>; typename boost::enable_if<boost::mpl::and_<boost::fusion::is_fusion_iterator<Iter1>, boost::fusion::is_fusion_iterator<Iter2> >, bool>::type = bool]'
+main.cpp:69:27:   recursively required from 'void IterateVars(const T1&, const T2&) [with T1 = boost::fusion::basic_iterator<boost::fusion::struct_iterator_tag, boost::fusion::random_access_traversal_tag, DeviceTable, 1>; T2 = boost::fusion::basic_iterator<boost::fusion::struct_iterator_tag, boost::fusion::random_access_traversal_tag, DeviceTable, 4>]'
+main.cpp:69:27:   required from 'void IterateVars(const T1&, const T2&) [with T1 = boost::fusion::basic_iterator<boost::fusion::struct_iterator_tag, boost::fusion::random_access_traversal_tag, DeviceTable, 0>; T2 = boost::fusion::basic_iterator<boost::fusion::struct_iterator_tag, boost::fusion::random_access_traversal_tag, DeviceTable, 4>]'
+main.cpp:100:24:   required from 'void Deserialize(std::vector<unsigned char>, T&) [with T = DeviceTable]'
+main.cpp:136:54:   required from here
+/usr/local/include/boost/mpl/aux_/nested_type_wknd.hpp:26:31: error: no type named 'type' in 'struct boost::mpl::equal_to<mpl_::int_<888>, mpl_::int_<4> >'
+ template< typename T > struct nested_type_wknd
+                               ^
+In file included from /usr/local/include/boost/mpl/aux_/include_preprocessed.hpp:37:0,
+                 from /usr/local/include/boost/mpl/and.hpp:42,
+                 from /usr/local/include/boost/mpl/is_sequence.hpp:18,
+                 from /usr/local/include/boost/fusion/support/detail/is_mpl_sequence.hpp:13,
+                 from /usr/local/include/boost/fusion/support/tag_of.hpp:14,
+                 from /usr/local/include/boost/fusion/support/category_of.hpp:12,
+                 from /usr/local/include/boost/fusion/adapted/struct/detail/extension.hpp:14,
+                 from /usr/local/include/boost/fusion/adapted/struct/adapt_struct.hpp:20,
+                 from /usr/local/include/boost/fusion/include/adapt_struct.hpp:12,
+                 from main.cpp:10:
+/usr/local/include/boost/mpl/aux_/preprocessed/gcc/and.hpp: In instantiation of 'struct boost::mpl::aux::and_impl<true, boost::mpl::equal_to<mpl_::int_<888>, mpl_::int_<4> >, mpl_::bool_<true>, mpl_::bool_<true>, mpl_::bool_<true> >':
+/usr/local/include/boost/mpl/aux_/preprocessed/gcc/and.hpp:48:8:   required from 'struct boost::mpl::and_<boost::is_same<DeviceTable, DeviceTable>, boost::mpl::equal_to<mpl_::int_<888>, mpl_::int_<4> >, mpl_::bool_<true>, mpl_::bool_<true>, mpl_::bool_<true> >'
+/usr/local/include/boost/fusion/iterator/basic_iterator.hpp:113:16:   required from 'struct boost::fusion::basic_iterator<boost::fusion::struct_iterator_tag, boost::fusion::random_access_traversal_tag, DeviceTable, 888>::equal_to<boost::fusion::basic_iterator<boost::fusion::struct_iterator_tag, boost::fusion::random_access_traversal_tag, DeviceTable, 888>, boost::fusion::basic_iterator<boost::fusion::struct_iterator_tag, boost::fusion::random_access_traversal_tag, DeviceTable, 4> >'
+/usr/local/include/boost/fusion/iterator/equal_to.hpp:45:20:   required from 'struct boost::fusion::extension::equal_to_impl<boost::fusion::iterator_facade_tag>::dispatch<boost::fusion::basic_iterator<boost::fusion::struct_iterator_tag, boost::fusion::random_access_traversal_tag, DeviceTable, 888>, boost::fusion::basic_iterator<boost::fusion::struct_iterator_tag, boost::fusion::random_access_traversal_tag, DeviceTable, 4>, boost::fusion::iterator_facade_tag, boost::fusion::iterator_facade_tag>'
+/usr/local/include/boost/fusion/iterator/equal_to.hpp:50:20:   required from 'struct boost::fusion::extension::equal_to_impl<boost::fusion::iterator_facade_tag>::apply<boost::fusion::basic_iterator<boost::fusion::struct_iterator_tag, boost::fusion::random_access_traversal_tag, DeviceTable, 888>, boost::fusion::basic_iterator<boost::fusion::struct_iterator_tag, boost::fusion::random_access_traversal_tag, DeviceTable, 4> >'
+/usr/local/include/boost/fusion/iterator/equal_to.hpp:68:16:   required from 'struct boost::fusion::result_of::equal_to<boost::fusion::basic_iterator<boost::fusion::struct_iterator_tag, boost::fusion::random_access_traversal_tag, DeviceTable, 888>, boost::fusion::basic_iterator<boost::fusion::struct_iterator_tag, boost::fusion::random_access_traversal_tag, DeviceTable, 4> >'
+/usr/local/include/boost/fusion/iterator/equal_to.hpp:97:20:   required from 'typename boost::enable_if<boost::mpl::and_<boost::fusion::is_fusion_iterator<Iter1>, boost::fusion::is_fusion_iterator<Iter2> >, bool>::type boost::fusion::iterator_operators::operator!=(const Iter1&, const Iter2&) [with Iter1 = boost::fusion::basic_iterator<boost::fusion::struct_iterator_tag, boost::fusion::random_access_traversal_tag, DeviceTable, 888>; Iter2 = boost::fusion::basic_iterator<boost::fusion::struct_iterator_tag, boost::fusion::random_access_traversal_tag, DeviceTable, 4>; typename boost::enable_if<boost::mpl::and_<boost::fusion::is_fusion_iterator<Iter1>, boost::fusion::is_fusion_iterator<Iter2> >, bool>::type = bool]'
+main.cpp:69:27:   recursively required from 'void IterateVars(const T1&, const T2&) [with T1 = boost::fusion::basic_iterator<boost::fusion::struct_iterator_tag, boost::fusion::random_access_traversal_tag, DeviceTable, 1>; T2 = boost::fusion::basic_iterator<boost::fusion::struct_iterator_tag, boost::fusion::random_access_traversal_tag, DeviceTable, 4>]'
+main.cpp:69:27:   required from 'void IterateVars(const T1&, const T2&) [with T1 = boost::fusion::basic_iterator<boost::fusion::struct_iterator_tag, boost::fusion::random_access_traversal_tag, DeviceTable, 0>; T2 = boost::fusion::basic_iterator<boost::fusion::struct_iterator_tag, boost::fusion::random_access_traversal_tag, DeviceTable, 4>]'
+main.cpp:100:24:   required from 'void Deserialize(std::vector<unsigned char>, T&) [with T = DeviceTable]'
+main.cpp:136:54:   required from here
+/usr/local/include/boost/mpl/aux_/preprocessed/gcc/and.hpp:23:8: error: 'value' is not a member of 'boost::mpl::aux::nested_type_wknd<boost::mpl::equal_to<mpl_::int_<888>, mpl_::int_<4> > >'
+ struct and_impl< true,T1,T2,T3,T4 >
+        ^
+In file included from /usr/local/include/boost/fusion/iterator/detail/distance.hpp:17:0,
+                 from /usr/local/include/boost/fusion/iterator/iterator_facade.hpp:13,
+                 from /usr/local/include/boost/fusion/iterator/basic_iterator.hpp:12,
+                 from /usr/local/include/boost/fusion/adapted/struct/detail/begin_impl.hpp:14,
+                 from /usr/local/include/boost/fusion/adapted/struct/adapt_struct.hpp:28,
+                 from /usr/local/include/boost/fusion/include/adapt_struct.hpp:12,
+                 from main.cpp:10:
+/usr/local/include/boost/fusion/iterator/equal_to.hpp: In instantiation of 'typename boost::enable_if<boost::mpl::and_<boost::fusion::is_fusion_iterator<Iter1>, boost::fusion::is_fusion_iterator<Iter2> >, bool>::type boost::fusion::iterator_operators::operator!=(const Iter1&, const Iter2&) [with Iter1 = boost::fusion::basic_iterator<boost::fusion::struct_iterator_tag, boost::fusion::random_access_traversal_tag, DeviceTable, 888>; Iter2 = boost::fusion::basic_iterator<boost::fusion::struct_iterator_tag, boost::fusion::random_access_traversal_tag, DeviceTable, 4>; typename boost::enable_if<boost::mpl::and_<boost::fusion::is_fusion_iterator<Iter1>, boost::fusion::is_fusion_iterator<Iter2> >, bool>::type = bool]':
+main.cpp:69:27:   recursively required from 'void IterateVars(const T1&, const T2&) [with T1 = boost::fusion::basic_iterator<boost::fusion::struct_iterator_tag, boost::fusion::random_access_traversal_tag, DeviceTable, 1>; T2 = boost::fusion::basic_iterator<boost::fusion::struct_iterator_tag, boost::fusion::random_access_traversal_tag, DeviceTable, 4>]'
+main.cpp:69:27:   required from 'void IterateVars(const T1&, const T2&) [with T1 = boost::fusion::basic_iterator<boost::fusion::struct_iterator_tag, boost::fusion::random_access_traversal_tag, DeviceTable, 0>; T2 = boost::fusion::basic_iterator<boost::fusion::struct_iterator_tag, boost::fusion::random_access_traversal_tag, DeviceTable, 4>]'
+main.cpp:100:24:   required from 'void Deserialize(std::vector<unsigned char>, T&) [with T = DeviceTable]'
+main.cpp:136:54:   required from here
+/usr/local/include/boost/fusion/iterator/equal_to.hpp:97:20: error: 'value' is not a member of 'boost::fusion::result_of::equal_to<boost::fusion::basic_iterator<boost::fusion::struct_iterator_tag, boost::fusion::random_access_traversal_tag, DeviceTable, 888>, boost::fusion::basic_iterator<boost::fusion::struct_iterator_tag, boost::fusion::random_access_traversal_tag, DeviceTable, 4> >'
+             return !result_of::equal_to<Iter1, Iter2>::value;
+                    ^
+In file included from /usr/local/include/boost/type_traits/is_base_and_derived.hpp:21:0,
+                 from /usr/local/include/boost/type_traits/is_base_of.hpp:12,
+                 from /usr/local/include/boost/fusion/support/category_of.hpp:13,
+                 from /usr/local/include/boost/fusion/adapted/struct/detail/extension.hpp:14,
+                 from /usr/local/include/boost/fusion/adapted/struct/adapt_struct.hpp:20,
+                 from /usr/local/include/boost/fusion/include/adapt_struct.hpp:12,
+                 from main.cpp:10:
+/usr/local/include/boost/type_traits/remove_cv.hpp:31:106: error: template instantiation depth exceeds maximum of 900 (use -ftemplate-depth= to increase the maximum) instantiating 'struct boost::detail::cv_traits_imp<boost::fusion::basic_iterator<boost::fusion::struct_iterator_tag, boost::fusion::random_access_traversal_tag, DeviceTable, 889>*>'
+    typedef typename boost::detail::cv_traits_imp<BOOST_TT_AUX_CV_TRAITS_IMPL_PARAM(T)>::unqualified_type type;
+                                                                                                          ^
+/usr/local/include/boost/type_traits/remove_cv.hpp:31:106:   required from 'struct boost::detail::rvalue_ref_filter_rem_cv<boost::fusion::basic_iterator<boost::fusion::struct_iterator_tag, boost::fusion::random_access_traversal_tag, DeviceTable, 889> >'
+/usr/local/include/boost/type_traits/remove_cv.hpp:50:1:   required from 'struct boost::remove_cv<boost::fusion::basic_iterator<boost::fusion::struct_iterator_tag, boost::fusion::random_access_traversal_tag, DeviceTable, 889> >'
+/usr/local/include/boost/type_traits/is_base_of.hpp:28:47:   required from 'struct boost::detail::is_base_of_imp<boost::fusion::iterator_root, boost::fusion::basic_iterator<boost::fusion::struct_iterator_tag, boost::fusion::random_access_traversal_tag, DeviceTable, 889> >'
+/usr/local/include/boost/type_traits/is_base_of.hpp:35:1:   required from 'struct boost::is_base_of<boost::fusion::iterator_root, boost::fusion::basic_iterator<boost::fusion::struct_iterator_tag, boost::fusion::random_access_traversal_tag, DeviceTable, 889> >'
+/usr/local/include/boost/fusion/support/is_iterator.hpp:18:12:   required from 'struct boost::fusion::is_fusion_iterator<boost::fusion::basic_iterator<boost::fusion::struct_iterator_tag, boost::fusion::random_access_traversal_tag, DeviceTable, 889> >'
+/usr/local/include/boost/mpl/aux_/nested_type_wknd.hpp:26:31:   [ skipping 2 instantiation contexts, use -ftemplate-backtrace-limit=0 to disable ]
+/usr/local/include/boost/core/enable_if.hpp:36:10:   required from 'struct boost::enable_if<boost::mpl::and_<boost::fusion::is_fusion_iterator<boost::fusion::basic_iterator<boost::fusion::struct_iterator_tag, boost::fusion::random_access_traversal_tag, DeviceTable, 889> >, boost::fusion::is_fusion_iterator<boost::fusion::basic_iterator<boost::fusion::struct_iterator_tag, boost::fusion::random_access_traversal_tag, DeviceTable, 4> >, mpl_::bool_<true>, mpl_::bool_<true>, mpl_::bool_<true> >, bool>'
+/usr/local/include/boost/fusion/iterator/equal_to.hpp:95:9:   required by substitution of 'template<class Iter1, class Iter2> typename boost::enable_if<boost::mpl::and_<boost::fusion::is_fusion_iterator<Iter1>, boost::fusion::is_fusion_iterator<Iter2> >, bool>::type boost::fusion::iterator_operators::operator!=(const Iter1&, const Iter2&) [with Iter1 = boost::fusion::basic_iterator<boost::fusion::struct_iterator_tag, boost::fusion::random_access_traversal_tag, DeviceTable, 889>; Iter2 = boost::fusion::basic_iterator<boost::fusion::struct_iterator_tag, boost::fusion::random_access_traversal_tag, DeviceTable, 4>]'
+main.cpp:69:27:   recursively required from 'void IterateVars(const T1&, const T2&) [with T1 = boost::fusion::basic_iterator<boost::fusion::struct_iterator_tag, boost::fusion::random_access_traversal_tag, DeviceTable, 1>; T2 = boost::fusion::basic_iterator<boost::fusion::struct_iterator_tag, boost::fusion::random_access_traversal_tag, DeviceTable, 4>]'
+main.cpp:69:27:   required from 'void IterateVars(const T1&, const T2&) [with T1 = boost::fusion::basic_iterator<boost::fusion::struct_iterator_tag, boost::fusion::random_access_traversal_tag, DeviceTable, 0>; T2 = boost::fusion::basic_iterator<boost::fusion::struct_iterator_tag, boost::fusion::random_access_traversal_tag, DeviceTable, 4>]'
+main.cpp:100:24:   required from 'void Deserialize(std::vector<unsigned char>, T&) [with T = DeviceTable]'
+main.cpp:136:54:   required from here
+
+/usr/local/include/boost/type_traits/remove_cv.hpp:31:106: error: invalid use of incomplete type 'struct boost::detail::cv_traits_imp<boost::fusion::basic_iterator<boost::fusion::struct_iterator_tag, boost::fusion::random_access_traversal_tag, DeviceTable, 889>*>'
+In file included from /usr/local/include/boost/type_traits/is_const.hpp:27:0,
+                 from /usr/local/include/boost/fusion/adapted/struct/adapt_struct.hpp:16,
+                 from /usr/local/include/boost/fusion/include/adapt_struct.hpp:12,
+                 from main.cpp:10:
+/usr/local/include/boost/type_traits/detail/cv_traits_impl.hpp:101:30: error: declaration of 'struct boost::detail::cv_traits_imp<boost::fusion::basic_iterator<boost::fusion::struct_iterator_tag, boost::fusion::random_access_traversal_tag, DeviceTable, 889>*>'
+ template <typename T> struct cv_traits_imp {};
+                              ^
+In file included from /usr/local/include/boost/mpl/not.hpp:19:0,
+                 from /usr/local/include/boost/mpl/is_sequence.hpp:17,
+                 from /usr/local/include/boost/fusion/support/detail/is_mpl_sequence.hpp:13,
+                 from /usr/local/include/boost/fusion/support/tag_of.hpp:14,
+                 from /usr/local/include/boost/fusion/support/category_of.hpp:12,
+                 from /usr/local/include/boost/fusion/adapted/struct/detail/extension.hpp:14,
+                 from /usr/local/include/boost/fusion/adapted/struct/adapt_struct.hpp:20,
+                 from /usr/local/include/boost/fusion/include/adapt_struct.hpp:12,
+                 from main.cpp:10:
+/usr/local/include/boost/mpl/aux_/nested_type_wknd.hpp: In instantiation of 'struct boost::mpl::aux::nested_type_wknd<boost::fusion::is_fusion_iterator<boost::fusion::basic_iterator<boost::fusion::struct_iterator_tag, boost::fusion::random_access_traversal_tag, DeviceTable, 889> > >':
+/usr/local/include/boost/mpl/aux_/preprocessed/gcc/and.hpp:48:8:   required from 'struct boost::mpl::and_<boost::fusion::is_fusion_iterator<boost::fusion::basic_iterator<boost::fusion::struct_iterator_tag, boost::fusion::random_access_traversal_tag, DeviceTable, 889> >, boost::fusion::is_fusion_iterator<boost::fusion::basic_iterator<boost::fusion::struct_iterator_tag, boost::fusion::random_access_traversal_tag, DeviceTable, 4> >, mpl_::bool_<true>, mpl_::bool_<true>, mpl_::bool_<true> >'
+/usr/local/include/boost/core/enable_if.hpp:36:10:   required from 'struct boost::enable_if<boost::mpl::and_<boost::fusion::is_fusion_iterator<boost::fusion::basic_iterator<boost::fusion::struct_iterator_tag, boost::fusion::random_access_traversal_tag, DeviceTable, 889> >, boost::fusion::is_fusion_iterator<boost::fusion::basic_iterator<boost::fusion::struct_iterator_tag, boost::fusion::random_access_traversal_tag, DeviceTable, 4> >, mpl_::bool_<true>, mpl_::bool_<true>, mpl_::bool_<true> >, bool>'
+/usr/local/include/boost/fusion/iterator/equal_to.hpp:95:9:   required by substitution of 'template<class Iter1, class Iter2> typename boost::enable_if<boost::mpl::and_<boost::fusion::is_fusion_iterator<Iter1>, boost::fusion::is_fusion_iterator<Iter2> >, bool>::type boost::fusion::iterator_operators::operator!=(const Iter1&, const Iter2&) [with Iter1 = boost::fusion::basic_iterator<boost::fusion::struct_iterator_tag, boost::fusion::random_access_traversal_tag, DeviceTable, 889>; Iter2 = boost::fusion::basic_iterator<boost::fusion::struct_iterator_tag, boost::fusion::random_access_traversal_tag, DeviceTable, 4>]'
+main.cpp:69:27:   recursively required from 'void IterateVars(const T1&, const T2&) [with T1 = boost::fusion::basic_iterator<boost::fusion::struct_iterator_tag, boost::fusion::random_access_traversal_tag, DeviceTable, 1>; T2 = boost::fusion::basic_iterator<boost::fusion::struct_iterator_tag, boost::fusion::random_access_traversal_tag, DeviceTable, 4>]'
+main.cpp:69:27:   required from 'void IterateVars(const T1&, const T2&) [with T1 = boost::fusion::basic_iterator<boost::fusion::struct_iterator_tag, boost::fusion::random_access_traversal_tag, DeviceTable, 0>; T2 = boost::fusion::basic_iterator<boost::fusion::struct_iterator_tag, boost::fusion::random_access_traversal_tag, DeviceTable, 4>]'
+main.cpp:100:24:   required from 'void Deserialize(std::vector<unsigned char>, T&) [with T = DeviceTable]'
+main.cpp:136:54:   required from here
+/usr/local/include/boost/mpl/aux_/nested_type_wknd.hpp:26:31: error: no type named 'type' in 'struct boost::fusion::is_fusion_iterator<boost::fusion::basic_iterator<boost::fusion::struct_iterator_tag, boost::fusion::random_access_traversal_tag, DeviceTable, 889> >'
+ template< typename T > struct nested_type_wknd
+                               ^
+In file included from /usr/local/include/boost/mpl/aux_/include_preprocessed.hpp:37:0,
+                 from /usr/local/include/boost/mpl/and.hpp:42,
+                 from /usr/local/include/boost/mpl/is_sequence.hpp:18,
+                 from /usr/local/include/boost/fusion/support/detail/is_mpl_sequence.hpp:13,
+                 from /usr/local/include/boost/fusion/support/tag_of.hpp:14,
+                 from /usr/local/include/boost/fusion/support/category_of.hpp:12,
+                 from /usr/local/include/boost/fusion/adapted/struct/detail/extension.hpp:14,
+                 from /usr/local/include/boost/fusion/adapted/struct/adapt_struct.hpp:20,
+                 from /usr/local/include/boost/fusion/include/adapt_struct.hpp:12,
+                 from main.cpp:10:
+/usr/local/include/boost/mpl/aux_/preprocessed/gcc/and.hpp: In instantiation of 'struct boost::mpl::and_<boost::fusion::is_fusion_iterator<boost::fusion::basic_iterator<boost::fusion::struct_iterator_tag, boost::fusion::random_access_traversal_tag, DeviceTable, 889> >, boost::fusion::is_fusion_iterator<boost::fusion::basic_iterator<boost::fusion::struct_iterator_tag, boost::fusion::random_access_traversal_tag, DeviceTable, 4> >, mpl_::bool_<true>, mpl_::bool_<true>, mpl_::bool_<true> >':
+/usr/local/include/boost/core/enable_if.hpp:36:10:   required from 'struct boost::enable_if<boost::mpl::and_<boost::fusion::is_fusion_iterator<boost::fusion::basic_iterator<boost::fusion::struct_iterator_tag, boost::fusion::random_access_traversal_tag, DeviceTable, 889> >, boost::fusion::is_fusion_iterator<boost::fusion::basic_iterator<boost::fusion::struct_iterator_tag, boost::fusion::random_access_traversal_tag, DeviceTable, 4> >, mpl_::bool_<true>, mpl_::bool_<true>, mpl_::bool_<true> >, bool>'
+/usr/local/include/boost/fusion/iterator/equal_to.hpp:95:9:   required by substitution of 'template<class Iter1, class Iter2> typename boost::enable_if<boost::mpl::and_<boost::fusion::is_fusion_iterator<Iter1>, boost::fusion::is_fusion_iterator<Iter2> >, bool>::type boost::fusion::iterator_operators::operator!=(const Iter1&, const Iter2&) [with Iter1 = boost::fusion::basic_iterator<boost::fusion::struct_iterator_tag, boost::fusion::random_access_traversal_tag, DeviceTable, 889>; Iter2 = boost::fusion::basic_iterator<boost::fusion::struct_iterator_tag, boost::fusion::random_access_traversal_tag, DeviceTable, 4>]'
+main.cpp:69:27:   recursively required from 'void IterateVars(const T1&, const T2&) [with T1 = boost::fusion::basic_iterator<boost::fusion::struct_iterator_tag, boost::fusion::random_access_traversal_tag, DeviceTable, 1>; T2 = boost::fusion::basic_iterator<boost::fusion::struct_iterator_tag, boost::fusion::random_access_traversal_tag, DeviceTable, 4>]'
+main.cpp:69:27:   required from 'void IterateVars(const T1&, const T2&) [with T1 = boost::fusion::basic_iterator<boost::fusion::struct_iterator_tag, boost::fusion::random_access_traversal_tag, DeviceTable, 0>; T2 = boost::fusion::basic_iterator<boost::fusion::struct_iterator_tag, boost::fusion::random_access_traversal_tag, DeviceTable, 4>]'
+main.cpp:100:24:   required from 'void Deserialize(std::vector<unsigned char>, T&) [with T = DeviceTable]'
+main.cpp:136:54:   required from here
+/usr/local/include/boost/mpl/aux_/preprocessed/gcc/and.hpp:48:8: error: 'value' is not a member of 'boost::mpl::aux::nested_type_wknd<boost::fusion::is_fusion_iterator<boost::fusion::basic_iterator<boost::fusion::struct_iterator_tag, boost::fusion::random_access_traversal_tag, DeviceTable, 889> > >'
+ struct and_
+        ^
+In file included from /usr/local/include/boost/utility/enable_if.hpp:15:0,
+                 from /usr/local/include/boost/fusion/support/tag_of.hpp:11,
+                 from /usr/local/include/boost/fusion/support/category_of.hpp:12,
+                 from /usr/local/include/boost/fusion/adapted/struct/detail/extension.hpp:14,
+                 from /usr/local/include/boost/fusion/adapted/struct/adapt_struct.hpp:20,
+                 from /usr/local/include/boost/fusion/include/adapt_struct.hpp:12,
+                 from main.cpp:10:
+/usr/local/include/boost/core/enable_if.hpp: In instantiation of 'struct boost::enable_if<boost::mpl::and_<boost::fusion::is_fusion_iterator<boost::fusion::basic_iterator<boost::fusion::struct_iterator_tag, boost::fusion::random_access_traversal_tag, DeviceTable, 889> >, boost::fusion::is_fusion_iterator<boost::fusion::basic_iterator<boost::fusion::struct_iterator_tag, boost::fusion::random_access_traversal_tag, DeviceTable, 4> >, mpl_::bool_<true>, mpl_::bool_<true>, mpl_::bool_<true> >, bool>':
+/usr/local/include/boost/fusion/iterator/equal_to.hpp:95:9:   required by substitution of 'template<class Iter1, class Iter2> typename boost::enable_if<boost::mpl::and_<boost::fusion::is_fusion_iterator<Iter1>, boost::fusion::is_fusion_iterator<Iter2> >, bool>::type boost::fusion::iterator_operators::operator!=(const Iter1&, const Iter2&) [with Iter1 = boost::fusion::basic_iterator<boost::fusion::struct_iterator_tag, boost::fusion::random_access_traversal_tag, DeviceTable, 889>; Iter2 = boost::fusion::basic_iterator<boost::fusion::struct_iterator_tag, boost::fusion::random_access_traversal_tag, DeviceTable, 4>]'
+main.cpp:69:27:   recursively required from 'void IterateVars(const T1&, const T2&) [with T1 = boost::fusion::basic_iterator<boost::fusion::struct_iterator_tag, boost::fusion::random_access_traversal_tag, DeviceTable, 1>; T2 = boost::fusion::basic_iterator<boost::fusion::struct_iterator_tag, boost::fusion::random_access_traversal_tag, DeviceTable, 4>]'
+main.cpp:69:27:   required from 'void IterateVars(const T1&, const T2&) [with T1 = boost::fusion::basic_iterator<boost::fusion::struct_iterator_tag, boost::fusion::random_access_traversal_tag, DeviceTable, 0>; T2 = boost::fusion::basic_iterator<boost::fusion::struct_iterator_tag, boost::fusion::random_access_traversal_tag, DeviceTable, 4>]'
+main.cpp:100:24:   required from 'void Deserialize(std::vector<unsigned char>, T&) [with T = DeviceTable]'
+main.cpp:136:54:   required from here
+/usr/local/include/boost/core/enable_if.hpp:36:10: error: 'value' is not a member of 'boost::mpl::and_<boost::fusion::is_fusion_iterator<boost::fusion::basic_iterator<boost::fusion::struct_iterator_tag, boost::fusion::random_access_traversal_tag, DeviceTable, 889> >, boost::fusion::is_fusion_iterator<boost::fusion::basic_iterator<boost::fusion::struct_iterator_tag, boost::fusion::random_access_traversal_tag, DeviceTable, 4> >, mpl_::bool_<true>, mpl_::bool_<true>, mpl_::bool_<true> >'
+   struct enable_if : public enable_if_c<Cond::value, T> {};
+          ^
+main.cpp: In instantiation of 'void IterateVars(const T1&, const T2&) [with T1 = boost::fusion::basic_iterator<boost::fusion::struct_iterator_tag, boost::fusion::random_access_traversal_tag, DeviceTable, 889>; T2 = boost::fusion::basic_iterator<boost::fusion::struct_iterator_tag, boost::fusion::random_access_traversal_tag, DeviceTable, 4>]':
+main.cpp:69:27:   recursively required from 'void IterateVars(const T1&, const T2&) [with T1 = boost::fusion::basic_iterator<boost::fusion::struct_iterator_tag, boost::fusion::random_access_traversal_tag, DeviceTable, 1>; T2 = boost::fusion::basic_iterator<boost::fusion::struct_iterator_tag, boost::fusion::random_access_traversal_tag, DeviceTable, 4>]'
+main.cpp:69:27:   required from 'void IterateVars(const T1&, const T2&) [with T1 = boost::fusion::basic_iterator<boost::fusion::struct_iterator_tag, boost::fusion::random_access_traversal_tag, DeviceTable, 0>; T2 = boost::fusion::basic_iterator<boost::fusion::struct_iterator_tag, boost::fusion::random_access_traversal_tag, DeviceTable, 4>]'
+main.cpp:100:24:   required from 'void Deserialize(std::vector<unsigned char>, T&) [with T = DeviceTable]'
+main.cpp:136:54:   required from here
+main.cpp:63:17: error: no match for 'operator!=' (operand types are 'const boost::fusion::basic_iterator<boost::fusion::struct_iterator_tag, boost::fusion::random_access_traversal_tag, DeviceTable, 889>' and 'const boost::fusion::basic_iterator<boost::fusion::struct_iterator_tag, boost::fusion::random_access_traversal_tag, DeviceTable, 4>')
+     if (current != end)
+                 ^
+main.cpp:63:17: note: candidate is:
+In file included from /usr/local/include/boost/fusion/iterator/detail/distance.hpp:17:0,
+                 from /usr/local/include/boost/fusion/iterator/iterator_facade.hpp:13,
+                 from /usr/local/include/boost/fusion/iterator/basic_iterator.hpp:12,
+                 from /usr/local/include/boost/fusion/adapted/struct/detail/begin_impl.hpp:14,
+                 from /usr/local/include/boost/fusion/adapted/struct/adapt_struct.hpp:28,
+                 from /usr/local/include/boost/fusion/include/adapt_struct.hpp:12,
+                 from main.cpp:10:
+/usr/local/include/boost/fusion/iterator/equal_to.hpp:95:9: note: template<class Iter1, class Iter2> typename boost::enable_if<boost::mpl::and_<boost::fusion::is_fusion_iterator<Iter1>, boost::fusion::is_fusion_iterator<Iter2> >, bool>::type boost::fusion::iterator_operators::operator!=(const Iter1&, const Iter2&)
+         operator!=(Iter1 const&, Iter2 const&)
+         ^
+/usr/local/include/boost/fusion/iterator/equal_to.hpp:95:9: note:   substitution of deduced template arguments resulted in errors seen above
