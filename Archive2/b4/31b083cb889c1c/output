@@ -1,0 +1,8 @@
+main.cpp: In instantiation of 'void c(Enum, Args&& ...) [with Args = {int}]':
+main.cpp:20:17:   required from here
+main.cpp:13:39: error: too many arguments to function 'void a()'
+          a(std::forward<Args>(args)...);
+                                       ^
+main.cpp:5:6: note: declared here
+ void a() { std::cout<<"A"; }
+      ^
