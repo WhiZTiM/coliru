@@ -1,0 +1,11 @@
+main.cpp: In function 'int func3(std::vector<int>&)':
+main.cpp:35:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+IntV.size() - 5
+Element - 1
+Element - 2
+Element - 3
+Element - 4
+Element - 5
+19275776
