@@ -1,0 +1,4 @@
+Sajt
+Sajt::Sajt(fn)
+Sajt::~Sajt() [fn]
+Sajt::~Sajt() []
