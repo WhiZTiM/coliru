@@ -1,0 +1,9 @@
+main.cpp: In function 'float Q_rsqrt(float)':
+main.cpp:13:21: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+  i  = * ( long * ) &y;      // evil floating point bit level hacking
+                     ^
+main.cpp:15:22: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+  y  = * ( float * ) &i;
+                      ^
+0.519875	0.519874
+END
