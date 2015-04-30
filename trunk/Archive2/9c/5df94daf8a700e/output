@@ -1,0 +1,3 @@
+/tmp/cciXa8ME.o: In function `main':
+main.cpp:(.text.startup+0x14): undefined reference to `X::s_x'
+collect2: error: ld returned 1 exit status
