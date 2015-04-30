@@ -1,0 +1,4 @@
+main.cpp: In member function 'void Foo::CheckFoo()':
+main.cpp:6:75: warning: typedef 'using type = std::remove_reference<Foo&>::type' locally defined but not used [-Wunused-local-typedefs]
+         using type = typename std::remove_reference<decltype(*this)>::type;
+                                                                           ^
