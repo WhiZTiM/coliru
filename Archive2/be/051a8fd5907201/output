@@ -1,0 +1,82 @@
+main.cpp:6:21: error: invalid operands to binary expression ('std::unique_ptr<int>' and 'int')
+    std::cout << (i == false) << std::endl;
+                  ~ ^  ~~~~~
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.9.2/../../../../include/c++/4.9.2/bits/unique_ptr.h:630:5: note: candidate function [with _Tp = int, _Dp = std::default_delete<int>] not viable: no known conversion from 'bool' to 'nullptr_t' for 2nd argument
+    operator==(const unique_ptr<_Tp, _Dp>& __x, nullptr_t) noexcept
+    ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.9.2/../../../../include/c++/4.9.2/bits/stl_pair.h:214:5: note: candidate template ignored: could not match 'pair' against 'unique_ptr'
+    operator==(const pair<_T1, _T2>& __x, const pair<_T1, _T2>& __y)
+    ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.9.2/../../../../include/c++/4.9.2/bits/stl_iterator.h:292:5: note: candidate template ignored: could not match 'reverse_iterator' against 'unique_ptr'
+    operator==(const reverse_iterator<_Iterator>& __x,
+    ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.9.2/../../../../include/c++/4.9.2/bits/stl_iterator.h:342:5: note: candidate template ignored: could not match 'reverse_iterator' against 'unique_ptr'
+    operator==(const reverse_iterator<_IteratorL>& __x,
+    ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.9.2/../../../../include/c++/4.9.2/bits/stl_iterator.h:1048:5: note: candidate template ignored: could not match 'move_iterator' against 'unique_ptr'
+    operator==(const move_iterator<_IteratorL>& __x,
+    ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.9.2/../../../../include/c++/4.9.2/bits/stl_iterator.h:1054:5: note: candidate template ignored: could not match 'move_iterator' against 'unique_ptr'
+    operator==(const move_iterator<_Iterator>& __x,
+    ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.9.2/../../../../include/c++/4.9.2/bits/allocator.h:128:5: note: candidate template ignored: could not match 'allocator' against 'unique_ptr'
+    operator==(const allocator<_T1>&, const allocator<_T2>&)
+    ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.9.2/../../../../include/c++/4.9.2/bits/allocator.h:133:5: note: candidate template ignored: could not match 'allocator' against 'unique_ptr'
+    operator==(const allocator<_Tp>&, const allocator<_Tp>&)
+    ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.9.2/../../../../include/c++/4.9.2/bits/postypes.h:216:5: note: candidate template ignored: could not match 'fpos' against 'unique_ptr'
+    operator==(const fpos<_StateT>& __lhs, const fpos<_StateT>& __rhs)
+    ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.9.2/../../../../include/c++/4.9.2/bits/basic_string.h:2505:5: note: candidate template ignored: could not match 'basic_string' against 'unique_ptr'
+    operator==(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+    ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.9.2/../../../../include/c++/4.9.2/bits/basic_string.h:2512:5: note: candidate template ignored: could not match 'basic_string' against 'unique_ptr'
+    operator==(const basic_string<_CharT>& __lhs,
+    ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.9.2/../../../../include/c++/4.9.2/bits/basic_string.h:2526:5: note: candidate template ignored: could not match 'const _CharT *' against 'std::unique_ptr<int>'
+    operator==(const _CharT* __lhs,
+    ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.9.2/../../../../include/c++/4.9.2/bits/basic_string.h:2538:5: note: candidate template ignored: could not match 'basic_string' against 'unique_ptr'
+    operator==(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+    ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.9.2/../../../../include/c++/4.9.2/array:232:5: note: candidate template ignored: could not match 'array' against 'unique_ptr'
+    operator==(const array<_Tp, _Nm>& __one, const array<_Tp, _Nm>& __two)
+    ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.9.2/../../../../include/c++/4.9.2/tuple:846:5: note: candidate template ignored: could not match 'tuple' against 'unique_ptr'
+    operator==(const tuple<_TElements...>& __t,
+    ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.9.2/../../../../include/c++/4.9.2/functional:2505:5: note: candidate template ignored: could not match 'function' against 'unique_ptr'
+    operator==(const function<_Res(_Args...)>& __f, nullptr_t) noexcept
+    ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.9.2/../../../../include/c++/4.9.2/functional:2511:5: note: candidate template ignored: could not match 'function<type-parameter-0-0 (type-parameter-0-1...)>' against 'bool'
+    operator==(nullptr_t, const function<_Res(_Args...)>& __f) noexcept
+    ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.9.2/../../../../include/c++/4.9.2/bits/unique_ptr.h:624:5: note: candidate template ignored: could not match 'unique_ptr<type-parameter-0-2, type-parameter-0-3>' against 'bool'
+    operator==(const unique_ptr<_Tp, _Dp>& __x,
+    ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.9.2/../../../../include/c++/4.9.2/bits/unique_ptr.h:635:5: note: candidate template ignored: could not match 'unique_ptr<type-parameter-0-0, type-parameter-0-1>' against 'bool'
+    operator==(nullptr_t, const unique_ptr<_Tp, _Dp>& __x) noexcept
+    ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.9.2/../../../../include/c++/4.9.2/bits/shared_ptr_base.h:1182:5: note: candidate template ignored: could not match '__shared_ptr' against 'unique_ptr'
+    operator==(const __shared_ptr<_Tp1, _Lp>& __a,
+    ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.9.2/../../../../include/c++/4.9.2/bits/shared_ptr_base.h:1188:5: note: candidate template ignored: could not match '__shared_ptr' against 'unique_ptr'
+    operator==(const __shared_ptr<_Tp, _Lp>& __a, nullptr_t) noexcept
+    ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.9.2/../../../../include/c++/4.9.2/bits/shared_ptr_base.h:1193:5: note: candidate template ignored: could not match '__shared_ptr<type-parameter-0-0, _Lp>' against 'bool'
+    operator==(nullptr_t, const __shared_ptr<_Tp, _Lp>& __a) noexcept
+    ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.9.2/../../../../include/c++/4.9.2/bits/shared_ptr.h:333:5: note: candidate template ignored: could not match 'shared_ptr' against 'unique_ptr'
+    operator==(const shared_ptr<_Tp1>& __a,
+    ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.9.2/../../../../include/c++/4.9.2/bits/shared_ptr.h:339:5: note: candidate template ignored: could not match 'shared_ptr' against 'unique_ptr'
+    operator==(const shared_ptr<_Tp>& __a, nullptr_t) noexcept
+    ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.9.2/../../../../include/c++/4.9.2/bits/shared_ptr.h:344:5: note: candidate template ignored: could not match 'shared_ptr<type-parameter-0-0>' against 'bool'
+    operator==(nullptr_t, const shared_ptr<_Tp>& __a) noexcept
+    ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.9.2/../../../../include/c++/4.9.2/bits/streambuf_iterator.h:204:5: note: candidate template ignored: could not match 'istreambuf_iterator' against 'unique_ptr'
+    operator==(const istreambuf_iterator<_CharT, _Traits>& __a,
+    ^
+1 error generated.
