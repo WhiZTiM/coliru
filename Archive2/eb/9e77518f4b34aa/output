@@ -1,0 +1,224 @@
+main.cpp:19:30: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+    auto e = add_edge(0, 1, {123,456}, g);
+                             ^~~~~~~
+                             {      }
+main.cpp:20:15: error: invalid operands to binary expression ('ostream' (aka 'basic_ostream<char>') and 'edge_bundled' (aka 'std::array<double, 2>'))
+    std::cout << g[e.first];
+    ~~~~~~~~~ ^  ~~~~~~~~~~
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.9.2/../../../../include/c++/4.9.2/ostream:245:7: note: candidate function not viable: no known conversion from 'edge_bundled' (aka 'std::array<double, 2>') to 'const void *' for 1st argument; take the address of the argument with &
+      operator<<(const void* __p)
+      ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.9.2/../../../../include/c++/4.9.2/ostream:108:7: note: candidate function not viable: no known conversion from 'edge_bundled' (aka 'std::array<double, 2>') to '__ostream_type &(*)(__ostream_type &)' for 1st argument
+      operator<<(__ostream_type& (*__pf)(__ostream_type&))
+      ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.9.2/../../../../include/c++/4.9.2/ostream:117:7: note: candidate function not viable: no known conversion from 'edge_bundled' (aka 'std::array<double, 2>') to '__ios_type &(*)(__ios_type &)' for 1st argument
+      operator<<(__ios_type& (*__pf)(__ios_type&))
+      ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.9.2/../../../../include/c++/4.9.2/ostream:127:7: note: candidate function not viable: no known conversion from 'edge_bundled' (aka 'std::array<double, 2>') to 'std::ios_base &(*)(std::ios_base &)' for 1st argument
+      operator<<(ios_base& (*__pf) (ios_base&))
+      ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.9.2/../../../../include/c++/4.9.2/ostream:166:7: note: candidate function not viable: no known conversion from 'edge_bundled' (aka 'std::array<double, 2>') to 'long' for 1st argument
+      operator<<(long __n)
+      ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.9.2/../../../../include/c++/4.9.2/ostream:170:7: note: candidate function not viable: no known conversion from 'edge_bundled' (aka 'std::array<double, 2>') to 'unsigned long' for 1st argument
+      operator<<(unsigned long __n)
+      ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.9.2/../../../../include/c++/4.9.2/ostream:174:7: note: candidate function not viable: no known conversion from 'edge_bundled' (aka 'std::array<double, 2>') to 'bool' for 1st argument
+      operator<<(bool __n)
+      ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.9.2/../../../../include/c++/4.9.2/ostream:178:7: note: candidate function not viable: no known conversion from 'edge_bundled' (aka 'std::array<double, 2>') to 'short' for 1st argument
+      operator<<(short __n);
+      ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.9.2/../../../../include/c++/4.9.2/ostream:181:7: note: candidate function not viable: no known conversion from 'edge_bundled' (aka 'std::array<double, 2>') to 'unsigned short' for 1st argument
+      operator<<(unsigned short __n)
+      ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.9.2/../../../../include/c++/4.9.2/ostream:189:7: note: candidate function not viable: no known conversion from 'edge_bundled' (aka 'std::array<double, 2>') to 'int' for 1st argument
+      operator<<(int __n);
+      ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.9.2/../../../../include/c++/4.9.2/ostream:192:7: note: candidate function not viable: no known conversion from 'edge_bundled' (aka 'std::array<double, 2>') to 'unsigned int' for 1st argument
+      operator<<(unsigned int __n)
+      ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.9.2/../../../../include/c++/4.9.2/ostream:201:7: note: candidate function not viable: no known conversion from 'edge_bundled' (aka 'std::array<double, 2>') to 'long long' for 1st argument
+      operator<<(long long __n)
+      ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.9.2/../../../../include/c++/4.9.2/ostream:205:7: note: candidate function not viable: no known conversion from 'edge_bundled' (aka 'std::array<double, 2>') to 'unsigned long long' for 1st argument
+      operator<<(unsigned long long __n)
+      ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.9.2/../../../../include/c++/4.9.2/ostream:220:7: note: candidate function not viable: no known conversion from 'edge_bundled' (aka 'std::array<double, 2>') to 'double' for 1st argument
+      operator<<(double __f)
+      ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.9.2/../../../../include/c++/4.9.2/ostream:224:7: note: candidate function not viable: no known conversion from 'edge_bundled' (aka 'std::array<double, 2>') to 'float' for 1st argument
+      operator<<(float __f)
+      ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.9.2/../../../../include/c++/4.9.2/ostream:232:7: note: candidate function not viable: no known conversion from 'edge_bundled' (aka 'std::array<double, 2>') to 'long double' for 1st argument
+      operator<<(long double __f)
+      ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.9.2/../../../../include/c++/4.9.2/ostream:270:7: note: candidate function not viable: no known conversion from 'edge_bundled' (aka 'std::array<double, 2>') to '__streambuf_type *' (aka 'basic_streambuf<char, std::char_traits<char> > *') for 1st argument
+      operator<<(__streambuf_type* __sb);
+      ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.9.2/../../../../include/c++/4.9.2/ostream:476:5: note: candidate function [with _CharT = char, _Traits = std::char_traits<char>] not viable: no known conversion from 'edge_bundled' (aka 'std::array<double, 2>') to 'char' for 2nd argument
+    operator<<(basic_ostream<_CharT, _Traits>& __out, char __c)
+    ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.9.2/../../../../include/c++/4.9.2/ostream:482:5: note: candidate function [with _Traits = std::char_traits<char>] not viable: no known conversion from 'edge_bundled' (aka 'std::array<double, 2>') to 'char' for 2nd argument
+    operator<<(basic_ostream<char, _Traits>& __out, char __c)
+    ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.9.2/../../../../include/c++/4.9.2/ostream:488:5: note: candidate function [with _Traits = std::char_traits<char>] not viable: no known conversion from 'edge_bundled' (aka 'std::array<double, 2>') to 'signed char' for 2nd argument
+    operator<<(basic_ostream<char, _Traits>& __out, signed char __c)
+    ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.9.2/../../../../include/c++/4.9.2/ostream:493:5: note: candidate function [with _Traits = std::char_traits<char>] not viable: no known conversion from 'edge_bundled' (aka 'std::array<double, 2>') to 'unsigned char' for 2nd argument
+    operator<<(basic_ostream<char, _Traits>& __out, unsigned char __c)
+    ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.9.2/../../../../include/c++/4.9.2/ostream:530:5: note: candidate function [with _Traits = std::char_traits<char>] not viable: no known conversion from 'edge_bundled' (aka 'std::array<double, 2>') to 'const char *' for 2nd argument
+    operator<<(basic_ostream<char, _Traits>& __out, const char* __s)
+    ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.9.2/../../../../include/c++/4.9.2/ostream:543:5: note: candidate function [with _Traits = std::char_traits<char>] not viable: no known conversion from 'edge_bundled' (aka 'std::array<double, 2>') to 'const signed char *' for 2nd argument
+    operator<<(basic_ostream<char, _Traits>& __out, const signed char* __s)
+    ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.9.2/../../../../include/c++/4.9.2/ostream:548:5: note: candidate function [with _Traits = std::char_traits<char>] not viable: no known conversion from 'edge_bundled' (aka 'std::array<double, 2>') to 'const unsigned char *' for 2nd argument
+    operator<<(basic_ostream<char, _Traits>& __out, const unsigned char* __s)
+    ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.9.2/../../../../include/c++/4.9.2/ostream:602:5: note: candidate function [with _CharT = char, _Traits = std::char_traits<char>, _Tp = std::array<double, 2>] not viable: no known conversion from 'ostream' (aka 'basic_ostream<char>') to 'basic_ostream<char, std::char_traits<char> > &&' for 1st argument
+    operator<<(basic_ostream<_CharT, _Traits>&& __os, const _Tp& __x)
+    ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.9.2/../../../../include/c++/4.9.2/bits/ostream.tcc:321:5: note: candidate function [with _CharT = char, _Traits = std::char_traits<char>] not viable: no known conversion from 'edge_bundled' (aka 'std::array<double, 2>') to 'const char *' for 2nd argument
+    operator<<(basic_ostream<_CharT, _Traits>& __out, const char* __s)
+    ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.9.2/../../../../include/c++/4.9.2/bits/random.tcc:1150:5: note: candidate function [with _CharT = char, _Traits = std::char_traits<char>] not viable: no known conversion from 'edge_bundled' (aka 'std::array<double, 2>') to 'const std::bernoulli_distribution' for 2nd argument
+    operator<<(std::basic_ostream<_CharT, _Traits>& __os,
+    ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.9.2/../../../../include/c++/4.9.2/iomanip:79:5: note: candidate function [with _CharT = char, _Traits = std::char_traits<char>] not viable: no known conversion from 'edge_bundled' (aka 'std::array<double, 2>') to 'std::_Resetiosflags' for 2nd argument
+    operator<<(basic_ostream<_CharT, _Traits>& __os, _Resetiosflags __f)
+    ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.9.2/../../../../include/c++/4.9.2/iomanip:109:5: note: candidate function [with _CharT = char, _Traits = std::char_traits<char>] not viable: no known conversion from 'edge_bundled' (aka 'std::array<double, 2>') to 'std::_Setiosflags' for 2nd argument
+    operator<<(basic_ostream<_CharT, _Traits>& __os, _Setiosflags __f)
+    ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.9.2/../../../../include/c++/4.9.2/iomanip:143:5: note: candidate function [with _CharT = char, _Traits = std::char_traits<char>] not viable: no known conversion from 'edge_bundled' (aka 'std::array<double, 2>') to 'std::_Setbase' for 2nd argument
+    operator<<(basic_ostream<_CharT, _Traits>& __os, _Setbase __f)
+    ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.9.2/../../../../include/c++/4.9.2/iomanip:208:5: note: candidate function [with _CharT = char, _Traits = std::char_traits<char>] not viable: no known conversion from 'edge_bundled' (aka 'std::array<double, 2>') to 'std::_Setprecision' for 2nd argument
+    operator<<(basic_ostream<_CharT, _Traits>& __os, _Setprecision __f)
+    ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.9.2/../../../../include/c++/4.9.2/iomanip:238:5: note: candidate function [with _CharT = char, _Traits = std::char_traits<char>] not viable: no known conversion from 'edge_bundled' (aka 'std::array<double, 2>') to 'std::_Setw' for 2nd argument
+    operator<<(basic_ostream<_CharT, _Traits>& __os, _Setw __f)
+    ^
+/usr/local/include/boost/blank.hpp:93:46: note: candidate function [with E = char, T = std::char_traits<char>] not viable: no known conversion from 'edge_bundled' (aka 'std::array<double, 2>') to 'const boost::blank' for 2nd argument
+inline BOOST_TEMPLATED_STREAM(ostream, E,T)& operator<<(
+                                             ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.9.2/../../../../include/c++/4.9.2/ostream:471:5: note: candidate template ignored: deduced conflicting types for parameter '_CharT' ('char' vs. 'std::array<double, 2>')
+    operator<<(basic_ostream<_CharT, _Traits>& __out, _CharT __c)
+    ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.9.2/../../../../include/c++/4.9.2/bits/basic_string.h:2772:5: note: candidate template ignored: could not match 'basic_string' against 'array'
+    operator<<(basic_ostream<_CharT, _Traits>& __os,
+    ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.9.2/../../../../include/c++/4.9.2/ostream:513:5: note: candidate template ignored: could not match 'const _CharT *' against 'edge_bundled' (aka 'std::array<double, 2>')
+    operator<<(basic_ostream<_CharT, _Traits>& __out, const _CharT* __s)
+    ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.9.2/../../../../include/c++/4.9.2/bits/shared_ptr.h:66:5: note: candidate template ignored: could not match '__shared_ptr' against 'array'
+    operator<<(std::basic_ostream<_Ch, _Tr>& __os,
+    ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.9.2/../../../../include/c++/4.9.2/bits/random.h:1279:5: note: candidate template ignored: could not match 'independent_bits_engine' against 'array'
+    operator<<(std::basic_ostream<_CharT, _Traits>& __os,
+    ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.9.2/../../../../include/c++/4.9.2/bits/random.tcc:156:5: note: candidate template ignored: could not match 'linear_congruential_engine' against 'array'
+    operator<<(std::basic_ostream<_CharT, _Traits>& __os,
+    ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.9.2/../../../../include/c++/4.9.2/bits/random.tcc:477:5: note: candidate template ignored: could not match 'mersenne_twister_engine' against 'array'
+    operator<<(std::basic_ostream<_CharT, _Traits>& __os,
+    ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.9.2/../../../../include/c++/4.9.2/bits/random.tcc:632:5: note: candidate template ignored: could not match 'subtract_with_carry_engine' against 'array'
+    operator<<(std::basic_ostream<_CharT, _Traits>& __os,
+    ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.9.2/../../../../include/c++/4.9.2/bits/random.tcc:702:5: note: candidate template ignored: could not match 'discard_block_engine' against 'array'
+    operator<<(std::basic_ostream<_CharT, _Traits>& __os,
+    ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.9.2/../../../../include/c++/4.9.2/bits/random.tcc:831:5: note: candidate template ignored: could not match 'shuffle_order_engine' against 'array'
+    operator<<(std::basic_ostream<_CharT, _Traits>& __os,
+    ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.9.2/../../../../include/c++/4.9.2/bits/random.tcc:1029:5: note: candidate template ignored: could not match 'uniform_int_distribution' against 'array'
+    operator<<(std::basic_ostream<_CharT, _Traits>& __os,
+    ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.9.2/../../../../include/c++/4.9.2/bits/random.tcc:1088:5: note: candidate template ignored: could not match 'uniform_real_distribution' against 'array'
+    operator<<(std::basic_ostream<_CharT, _Traits>& __os,
+    ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.9.2/../../../../include/c++/4.9.2/bits/random.tcc:1232:5: note: candidate template ignored: could not match 'geometric_distribution' against 'array'
+    operator<<(std::basic_ostream<_CharT, _Traits>& __os,
+    ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.9.2/../../../../include/c++/4.9.2/bits/random.tcc:1347:5: note: candidate template ignored: could not match 'negative_binomial_distribution' against 'array'
+    operator<<(std::basic_ostream<_CharT, _Traits>& __os,
+    ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.9.2/../../../../include/c++/4.9.2/bits/random.tcc:1552:5: note: candidate template ignored: could not match 'poisson_distribution' against 'array'
+    operator<<(std::basic_ostream<_CharT, _Traits>& __os,
+    ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.9.2/../../../../include/c++/4.9.2/bits/random.tcc:1819:5: note: candidate template ignored: could not match 'binomial_distribution' against 'array'
+    operator<<(std::basic_ostream<_CharT, _Traits>& __os,
+    ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.9.2/../../../../include/c++/4.9.2/bits/random.tcc:1883:5: note: candidate template ignored: could not match 'exponential_distribution' against 'array'
+    operator<<(std::basic_ostream<_CharT, _Traits>& __os,
+    ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.9.2/../../../../include/c++/4.9.2/bits/random.tcc:2050:5: note: candidate template ignored: could not match 'normal_distribution' against 'array'
+    operator<<(std::basic_ostream<_CharT, _Traits>& __os,
+    ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.9.2/../../../../include/c++/4.9.2/bits/random.tcc:2115:5: note: candidate template ignored: could not match 'lognormal_distribution' against 'array'
+    operator<<(std::basic_ostream<_CharT, _Traits>& __os,
+    ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.9.2/../../../../include/c++/4.9.2/bits/random.tcc:2188:5: note: candidate template ignored: could not match 'chi_squared_distribution' against 'array'
+    operator<<(std::basic_ostream<_CharT, _Traits>& __os,
+    ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.9.2/../../../../include/c++/4.9.2/bits/random.tcc:2275:5: note: candidate template ignored: could not match 'cauchy_distribution' against 'array'
+    operator<<(std::basic_ostream<_CharT, _Traits>& __os,
+    ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.9.2/../../../../include/c++/4.9.2/bits/random.tcc:2352:5: note: candidate template ignored: could not match 'fisher_f_distribution' against 'array'
+    operator<<(std::basic_ostream<_CharT, _Traits>& __os,
+    ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.9.2/../../../../include/c++/4.9.2/bits/random.tcc:2427:5: note: candidate template ignored: could not match 'student_t_distribution' against 'array'
+    operator<<(std::basic_ostream<_CharT, _Traits>& __os,
+    ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.9.2/../../../../include/c++/4.9.2/bits/random.tcc:2596:5: note: candidate template ignored: could not match 'gamma_distribution' against 'array'
+    operator<<(std::basic_ostream<_CharT, _Traits>& __os,
+    ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.9.2/../../../../include/c++/4.9.2/bits/random.tcc:2674:5: note: candidate template ignored: could not match 'weibull_distribution' against 'array'
+    operator<<(std::basic_ostream<_CharT, _Traits>& __os,
+    ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.9.2/../../../../include/c++/4.9.2/bits/random.tcc:2750:5: note: candidate template ignored: could not match 'extreme_value_distribution' against 'array'
+    operator<<(std::basic_ostream<_CharT, _Traits>& __os,
+    ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.9.2/../../../../include/c++/4.9.2/bits/random.tcc:2886:5: note: candidate template ignored: could not match 'discrete_distribution' against 'array'
+    operator<<(std::basic_ostream<_CharT, _Traits>& __os,
+    ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.9.2/../../../../include/c++/4.9.2/bits/random.tcc:3096:5: note: candidate template ignored: could not match 'piecewise_constant_distribution' against 'array'
+    operator<<(std::basic_ostream<_CharT, _Traits>& __os,
+    ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.9.2/../../../../include/c++/4.9.2/bits/random.tcc:3312:5: note: candidate template ignored: could not match 'piecewise_linear_distribution' against 'array'
+    operator<<(std::basic_ostream<_CharT, _Traits>& __os,
+    ^
+/usr/local/include/boost/smart_ptr/shared_ptr.hpp:852:64: note: candidate template ignored: could not match 'shared_ptr' against 'array'
+template<class E, class T, class Y> std::basic_ostream<E, T> & operator<< (std::basic_ostream<E, T> & os, shared_ptr<Y> const & p)
+                                                               ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.9.2/../../../../include/c++/4.9.2/complex:521:5: note: candidate template ignored: could not match 'complex' against 'array'
+    operator<<(basic_ostream<_CharT, _Traits>& __os, const complex<_Tp>& __x)
+    ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.9.2/../../../../include/c++/4.9.2/bitset:1531:5: note: candidate template ignored: could not match 'bitset' against 'array'
+    operator<<(std::basic_ostream<_CharT, _Traits>& __os,
+    ^
+/usr/local/include/boost/graph/detail/edge.hpp:101:3: note: candidate template ignored: could not match 'edge_desc_impl' against 'array'
+  operator<<(std::basic_ostream<Char, Traits>& os,
+  ^
+/usr/local/include/boost/optional/optional.hpp:1232:1: note: candidate template ignored: could not match 'optional' against 'array'
+operator<<(std::basic_ostream<CharType, CharTrait>& out, optional<T> const& v);
+^
+/usr/local/include/boost/range/iterator_range_io.hpp:55:49: note: candidate template ignored: could not match 'iterator_range' against 'array'
+        inline std::basic_ostream<Elem,Traits>& operator<<( 
+                                                ^
+/usr/local/include/boost/smart_ptr/intrusive_ptr.hpp:312:64: note: candidate template ignored: could not match 'intrusive_ptr' against 'array'
+template<class E, class T, class Y> std::basic_ostream<E, T> & operator<< (std::basic_ostream<E, T> & os, intrusive_ptr<Y> const & p)
+                                                               ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.9.2/../../../../include/c++/4.9.2/iomanip:178:5: note: candidate template ignored: could not match '_Setfill' against 'array'
+    operator<<(basic_ostream<_CharT, _Traits>& __os, _Setfill<_CharT> __f)
+    ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.9.2/../../../../include/c++/4.9.2/iomanip:311:5: note: candidate template ignored: could not match '_Put_money' against 'array'
+    operator<<(basic_ostream<_CharT, _Traits>& __os, _Put_money<_MoneyT> __f)
+    ^
+/usr/local/include/boost/exception/info.hpp:189:5: note: candidate template ignored: could not match 'error_info' against 'array'
+    operator<<( E const & x, error_info<Tag,T> const & v )
+    ^
+1 warning and 1 error generated.
