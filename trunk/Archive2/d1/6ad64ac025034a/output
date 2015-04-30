@@ -1,0 +1,15 @@
+main.cpp:14:3: error: unknown type name 'ifstream'; did you mean 'std::ifstream'?
+  ifstream b_file ( "instructions.txt" );
+  ^~~~~~~~
+  std::ifstream
+/usr/include/c++/v1/iosfwd:156:38: note: 'std::ifstream' declared here
+typedef basic_ifstream<char>         ifstream;
+                                     ^
+main.cpp:16:3: error: use of undeclared identifier 'cout'; did you mean 'std::cout'?
+  cout<< instructions <<"\n";
+  ^~~~
+  std::cout
+/usr/include/c++/v1/iostream:50:33: note: 'std::cout' declared here
+extern _LIBCPP_FUNC_VIS ostream cout;
+                                ^
+2 errors generated.
