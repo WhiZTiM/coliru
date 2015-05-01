@@ -1,0 +1,7 @@
+main.cpp: In function 'int main()':
+main.cpp:11:19: error: invalid operands of types '<unresolved overloaded function type>' and '<unresolved overloaded function type>' to binary 'operator!='
+  while(v.begin!=v.end)
+                   ^
+main.cpp:14:33: error: 'nx' was not declared in this scope
+     std::cout << *it << ' ' << *nx << '\n';
+                                 ^
