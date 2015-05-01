@@ -1,0 +1,17 @@
++ mv main.cpp main.c
++ gcc -std=c99 -O0 -Wall -Wextra -pedantic -pthread main.c
+main.c: In function 'main':
+main.c:9:2: error: too many arguments to function 'foo'
+  foo(1,2,3,4,5,6,67);
+  ^
+main.c:3:6: note: declared here
+ void foo(void){
+      ^
++ clang -std=c99 -O0 -Wall -Wextra -pedantic -pthread main.c
+main.c:9:6: error: too many arguments to function call, expected 0, have 7
+        foo(1,2,3,4,5,6,67);
+        ~~~ ^~~~~~~~~~~~~~
+main.c:3:1: note: 'foo' declared here
+void foo(void){
+^
+1 error generated.
