@@ -1,0 +1,8 @@
+String s1 (Filipe) has been assigned to t1.
+String s2 (Florrie) has been assigned to t2.
+Calling t1->getName() returns: Filipe
+Calling t2->getName() returns: Florrie
+
+After calling std::swap(t1, t2), we expect the objects will have swapped places.
+Calling t1->getName() returns: Florrie
+Calling t2->getName() returns: Filipe
