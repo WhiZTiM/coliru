@@ -1,0 +1,19 @@
+main.cpp:8:11: error: ambiguous conversion for functional-style cast from 'boost::assign_detail::generic_list<std::pair<int, char> >' to 'std::map<int, char>'
+    (100, std::map<int, char>(map_list_of
+          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.9.2/../../../../include/c++/4.9.2/bits/stl_map.h:171:7: note: candidate constructor
+      map(const _Compare& __comp,
+      ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.9.2/../../../../include/c++/4.9.2/bits/stl_map.h:182:7: note: candidate constructor
+      map(const map& __x)
+      ^
+main.cpp:12:11: error: ambiguous conversion for functional-style cast from 'boost::assign_detail::generic_list<std::pair<int, char> >' to 'std::map<int, char>'
+    (101, std::map<int, char>(map_list_of
+          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.9.2/../../../../include/c++/4.9.2/bits/stl_map.h:171:7: note: candidate constructor
+      map(const _Compare& __comp,
+      ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.9.2/../../../../include/c++/4.9.2/bits/stl_map.h:182:7: note: candidate constructor
+      map(const map& __x)
+      ^
+2 errors generated.
