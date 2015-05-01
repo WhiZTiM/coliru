@@ -1,0 +1,1 @@
+g++ -O2 -std=c++11 -lboost_locale -pthread main.cpp && ./a.out

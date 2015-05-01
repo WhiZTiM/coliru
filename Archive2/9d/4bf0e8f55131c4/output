@@ -1,0 +1,22 @@
+main.cpp: In instantiation of 'struct tokenize(std::string, size_t, const Args ...) [with T = char; Args = {char, char}; std::string = std::basic_string<char>; size_t = long unsigned int]::<lambda(std::string, size_t, char, char, char)>':
+main.cpp:18:7:   required from 'std::string tokenize(std::string, size_t, const Args ...) [with T = char; Args = {char, char}; std::string = std::basic_string<char>; size_t = long unsigned int]'
+main.cpp:36:53:   required from here
+main.cpp:16:13: error: use of 'get_delim_pos' before deduction of 'auto'
+             get_delim_pos(str, start, args...);
+             ^
+main.cpp:16:13: error: use of 'get_delim_pos' before deduction of 'auto'
+main.cpp: In instantiation of 'std::string tokenize(std::string, size_t, const Args ...) [with T = char; Args = {char, char}; std::string = std::basic_string<char>; size_t = long unsigned int]':
+main.cpp:36:53:   required from here
+main.cpp:10:26: error: use of 'get_delim_pos' before deduction of 'auto'
+     auto get_delim_pos = [&, pos](  const std::string str,
+                          ^
+main.cpp:18:7: error: no match for call to '(tokenize(std::string, size_t, const Args ...) [with T = char; Args = {char, char}; std::string = std::basic_string<char>; size_t = long unsigned int]::<lambda(std::string, size_t, char, char, char)>) ()'
+     }();
+       ^
+main.cpp:10:33: note: candidate is:
+     auto get_delim_pos = [&, pos](  const std::string str,
+                                 ^
+main.cpp:13:55: note: tokenize(std::string, size_t, const Args ...)::<lambda(std::string, size_t, T, const Args ...)> [with T = char; Args = {char, char}; std::string = std::basic_string<char>; size_t = long unsigned int]
+                                     const Args... args) {
+                                                       ^
+main.cpp:13:55: note:   candidate expects 5 arguments, 0 provided
