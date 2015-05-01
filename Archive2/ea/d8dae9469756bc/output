@@ -1,0 +1,4 @@
+main.cpp: In function 'int main()':
+main.cpp:22:5: error: static assertion failed: oops
+     static_assert(boost::is_same<distance_result<P, P, S>::type, float>::value, "oops");
+     ^
