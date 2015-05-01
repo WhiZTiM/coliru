@@ -1,0 +1,22 @@
+main.cpp:9:21: error: expected a type
+        T& operator . () { return s->obj; }
+                    ^
+main.cpp:13:14: error: no type named 'unique_lock' in namespace 'std'
+        std::unique_lock<std::mutex> lock;
+        ~~~~~^
+main.cpp:13:25: error: expected member name or ';' after declaration specifiers
+        std::unique_lock<std::mutex> lock;
+        ~~~~~~~~~~~~~~~~^
+main.cpp:17:21: error: expected a type
+    Locker operator . () { return {this}; }
+                    ^
+main.cpp:21:10: error: no type named 'mutex' in namespace 'std'
+    std::mutex m;
+    ~~~~~^
+main.cpp:8:35: error: member initializer 's' does not name a non-static data member or base class
+        Locker(synchronized* s) : s{s}, lock{s->m} { } 
+                                  ^~~~
+main.cpp:8:41: error: member initializer 'lock' does not name a non-static data member or base class
+        Locker(synchronized* s) : s{s}, lock{s->m} { } 
+                                        ^~~~~~~~~~
+7 errors generated.
