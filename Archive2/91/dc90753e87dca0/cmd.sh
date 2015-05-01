@@ -1,0 +1,1 @@
+clang++ -std=c++1y -Wall -o main main.cpp ; ./main
