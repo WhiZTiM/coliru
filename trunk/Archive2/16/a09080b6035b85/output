@@ -1,0 +1,13 @@
+main.cpp:27:5: error: no matching function for call to 'Call'
+    Call(111, *callback);
+    ^~~~
+main.cpp:9:6: note: candidate template ignored: could not match 'function' against 'MyCallback'
+void Call(const T yyy, const Callback<T>& callback) {
+     ^
+main.cpp:28:5: error: no matching function for call to 'Call'
+    Call(222, *callback);
+    ^~~~
+main.cpp:9:6: note: candidate template ignored: could not match 'function' against 'MyCallback'
+void Call(const T yyy, const Callback<T>& callback) {
+     ^
+2 errors generated.
