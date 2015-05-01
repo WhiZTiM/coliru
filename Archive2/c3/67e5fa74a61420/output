@@ -1,0 +1,34 @@
+In file included from main.cpp:1:
+In file included from /usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.9.2/../../../../include/c++/4.9.2/iostream:39:
+In file included from /usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.9.2/../../../../include/c++/4.9.2/ostream:38:
+In file included from /usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.9.2/../../../../include/c++/4.9.2/ios:40:
+In file included from /usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.9.2/../../../../include/c++/4.9.2/bits/char_traits.h:39:
+In file included from /usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.9.2/../../../../include/c++/4.9.2/bits/stl_algobase.h:64:
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.9.2/../../../../include/c++/4.9.2/bits/stl_pair.h:119:22: error: call to constructor of 'std::map<int, char, std::less<int>, std::allocator<std::pair<const int, char> > >' is ambiguous
+        : first(__p.first), second(__p.second) { }
+                            ^      ~~~~~~~~~~
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.9.2/../../../../include/c++/4.9.2/bits/stl_tree.h:1843:29: note: in instantiation of function template specialization 'std::pair<const int, std::map<int, char, std::less<int>, std::allocator<std::pair<const int, char> > > >::pair<int, boost::assign_detail::generic_list<std::pair<int, char> > >' requested here
+          _M_insert_unique_(end(), *__first);
+                                   ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.9.2/../../../../include/c++/4.9.2/bits/stl_map.h:255:16: note: in instantiation of function template specialization 'std::_Rb_tree<int, std::pair<const int, std::map<int, char, std::less<int>, std::allocator<std::pair<const int, char> > > >, std::_Select1st<std::pair<const int, std::map<int, char, std::less<int>, std::allocator<std::pair<const int, char> > > > >, std::less<int>, std::allocator<std::pair<const int, std::map<int, char, std::less<int>, std::allocator<std::pair<const int, char> > > > > >::_M_insert_unique<std::_Deque_iterator<std::pair<int, boost::assign_detail::generic_list<std::pair<int, char> > >, std::pair<int, boost::assign_detail::generic_list<std::pair<int, char> > > &, std::pair<int, boost::assign_detail::generic_list<std::pair<int, char> > > *> >' requested here
+        { _M_t._M_insert_unique(__first, __last); }
+               ^
+/usr/local/include/boost/assign/list_of.hpp:163:20: note: in instantiation of function template specialization 'std::map<int, std::map<int, char, std::less<int>, std::allocator<std::pair<const int, char> > >, std::less<int>, std::allocator<std::pair<const int, std::map<int, char, std::less<int>, std::allocator<std::pair<const int, char> > > > > >::map<std::_Deque_iterator<std::pair<int, boost::assign_detail::generic_list<std::pair<int, char> > >, std::pair<int, boost::assign_detail::generic_list<std::pair<int, char> > > &, std::pair<int, boost::assign_detail::generic_list<std::pair<int, char> > > *> >' requested here
+            return Container( begin(), end() );
+                   ^
+/usr/local/include/boost/assign/list_of.hpp:142:20: note: in instantiation of function template specialization 'boost::assign_detail::converter<boost::assign_detail::generic_list<std::pair<int, boost::assign_detail::generic_list<std::pair<int, char> > > >, std::_Deque_iterator<std::pair<int, boost::assign_detail::generic_list<std::pair<int, char> > >, std::pair<int, boost::assign_detail::generic_list<std::pair<int, char> > > &, std::pair<int, boost::assign_detail::generic_list<std::pair<int, char> > > *> >::convert<std::map<int, std::map<int, char, std::less<int>, std::allocator<std::pair<const int, char> > >, std::less<int>, std::allocator<std::pair<const int, std::map<int, char, std::less<int>, std::allocator<std::pair<const int, char> > > > > > >' requested here
+            return convert<Container>( c, tag_type() );
+                   ^
+/usr/local/include/boost/assign/list_of.hpp:436:49: note: in instantiation of function template specialization 'boost::assign_detail::converter<boost::assign_detail::generic_list<std::pair<int, boost::assign_detail::generic_list<std::pair<int, char> > > >, std::_Deque_iterator<std::pair<int, boost::assign_detail::generic_list<std::pair<int, char> > >, std::pair<int, boost::assign_detail::generic_list<std::pair<int, char> > > &, std::pair<int, boost::assign_detail::generic_list<std::pair<int, char> > > *> >::convert_to_container<std::map<int, std::map<int, char, std::less<int>, std::allocator<std::pair<const int, char> > >, std::less<int>, std::allocator<std::pair<const int, std::map<int, char, std::less<int>, std::allocator<std::pair<const int, char> > > > > > >' requested here
+            return this-> BOOST_NESTED_TEMPLATE convert_to_container<Container>();
+                                                ^
+main.cpp:7:50: note: in instantiation of function template specialization 'boost::assign_detail::generic_list<std::pair<int, boost::assign_detail::generic_list<std::pair<int, char> > > >::operator map<std::map<int, std::map<int, char, std::less<int>, std::allocator<std::pair<const int, char> > >, std::less<int>, std::allocator<std::pair<const int, std::map<int, char, std::less<int>, std::allocator<std::pair<const int, char> > > > > > >' requested here
+const std::map<int, std::map<int, char> > test = map_list_of
+                                                 ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.9.2/../../../../include/c++/4.9.2/bits/stl_map.h:171:7: note: candidate constructor
+      map(const _Compare& __comp,
+      ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.9.2/../../../../include/c++/4.9.2/bits/stl_map.h:182:7: note: candidate constructor
+      map(const map& __x)
+      ^
+1 error generated.
