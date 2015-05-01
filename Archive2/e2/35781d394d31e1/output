@@ -1,0 +1,9 @@
+In file included from main.cpp:1:0:
+/usr/local/include/c++/4.9.2/cmath:99:5: error: no type named '__type' in 'struct __gnu_cxx::__enable_if<false, double>'
+     abs(_Tp __x)
+     ^
+/usr/local/include/c++/4.9.2/cmath:99:5: error: no type named '__type' in 'struct __gnu_cxx::__enable_if<false, double>'
+main.cpp: In function 'int main()':
+main.cpp:5:32: error: unable to deduce 'auto' from '& abs<double>'
+     auto x = &(std::abs<double>);
+                                ^
