@@ -1,0 +1,2 @@
+cat > input.txt <<< 'speedy gonzales' && cat >> input.txt <<< 'veracruz, mexico'
+clang++ -std=c++14 -O2 -Wall -Wextra -pedantic-errors main.cpp -lsupc++ && ./a.out < input.txt >> /dev/nul && cat Student.txt
