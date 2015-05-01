@@ -1,0 +1,5 @@
+Coordinate type:  boost::geometry::traits::coordinate_type<boost::geometry::model::d2::point_xy<float, boost::geometry::cs::cartesian>, void>
+Calculation type: boost::geometry::strategy::distance::pythagoras<void>::calculation_type<boost::geometry::model::d2::point_xy<float, boost::geometry::cs::cartesian>, boost::geometry::model::d2::point_xy<float, boost::geometry::cs::cartesian> >
+Result type:      double
+Calculation type: boost::geometry::strategy::distance::pythagoras<float>::calculation_type<boost::geometry::model::d2::point_xy<float, boost::geometry::cs::cartesian>, boost::geometry::model::d2::point_xy<float, boost::geometry::cs::cartesian> >
+Result type:      float
