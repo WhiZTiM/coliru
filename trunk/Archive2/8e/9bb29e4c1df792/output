@@ -1,0 +1,11 @@
+Normal mutex:
+counter=11774432
+counter=12423099
+counter=12656780
+
+Adaptive mutex:
+counter=4576231
+counter=5536805
+counter=5328169
+
+(Larger counter means faster.)
