@@ -1,0 +1,13 @@
+main.cpp:8:22: error: chosen constructor is explicit in copy-initialization
+brick foo() { return {42}; }
+                     ^~~~
+main.cpp:3:14: note: constructor declared here
+    explicit brick(int) { };
+             ^
+main.cpp:12:11: error: chosen constructor is explicit in copy-initialization
+    brick b = {42};
+          ^   ~~~~
+main.cpp:3:14: note: constructor declared here
+    explicit brick(int) { };
+             ^
+2 errors generated.
