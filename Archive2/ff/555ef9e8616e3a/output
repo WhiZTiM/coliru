@@ -1,0 +1,8 @@
+std::function:
+new 8
+new 16
+new 24
+new 32
+
+boost::function:
+new 32
