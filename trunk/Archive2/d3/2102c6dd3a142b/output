@@ -1,0 +1,16 @@
+main.cpp: In function 'int main()':
+main.cpp:45:16: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for(int j=0;j<merged.size();++j){
+                ^
+main.cpp:66:16: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for(int i=0;i<merged.size();++i){
+                ^
+0 0 0 0
+passed
+0 1 -913149952 0
+passed
+0 2 -913149952 32752
+passed
+0 3 0 32752
+passed
+0
