@@ -1,0 +1,22 @@
+<ruleStart_>
+  <try>ABCDEF XYZ #555: PQI</try>
+  <ruleEncoding_>
+    <try>ABCDEF XYZ #555: PQI</try>
+    <success>DEF XYZ #555: PQI #7</success>
+    <attributes>[[A, B, C]]</attributes>
+  </ruleEncoding_>
+  <ruleHandHeader_>
+    <try>DEF XYZ #555: PQI #7</try>
+    <ruleHandId_>
+      <try>555: PQI #777</try>
+      <success>: PQI #777</success>
+      <attributes>[555]</attributes>
+    </ruleHandId_>
+    <success>: PQI #777</success>
+    <attributes>[555]</attributes>
+  </ruleHandHeader_>
+  <success>: PQI #777</success>
+  <attributes>[[[A, B, C], 555]]</attributes>
+</ruleStart_>
+Success: ABC, 555
+Remaining: ': PQI #777'...
