@@ -1,0 +1,10 @@
+main.cpp:20:5: warning: identifier 'nullptr' is a keyword in C++11 [-Wc++0x-compat]
+     Fwd(g, nullptr);   // Fine
+     ^
+main.cpp:10:13: warning: unused parameter 'i' [-Wunused-parameter]
+ void g(int* i)
+             ^
+main.cpp: In function 'int main()':
+main.cpp:20:12: error: 'nullptr' was not declared in this scope
+     Fwd(g, nullptr);   // Fine
+            ^
