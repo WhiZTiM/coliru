@@ -1,0 +1,7 @@
+main.cpp: In function 'int main()':
+main.cpp:11:9: warning: unused variable 't1' [-Wunused-variable]
+  bar<5> t1; //ok
+         ^
+main.cpp:12:18: warning: unused variable 't2' [-Wunused-variable]
+     bar<pass(5)> t2; //also ok 
+                  ^
