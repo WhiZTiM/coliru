@@ -1,0 +1,11 @@
+main.cpp: In function 'int main()':
+main.cpp:15:16: error: call of overloaded 'test(<brace-enclosed initializer list>)' is ambiguous
+     test({1, 2});
+                ^
+main.cpp:15:16: note: candidates are:
+main.cpp:11:6: note: void test(one)
+ void test(one) {}
+      ^
+main.cpp:12:6: note: void test(two)
+ void test(two) {}
+      ^
