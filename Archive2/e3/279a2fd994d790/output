@@ -1,0 +1,12 @@
+
+vector of good objects
+------------------
+good::move constructor
+good::move constructor
+good::move constructor
+
+vector of bad objects
+------------------
+bad::copy constructor
+bad::copy constructor
+bad::copy constructor
