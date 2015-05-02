@@ -1,0 +1,7 @@
+main.cpp:15:17: warning: multi-character character constant [-Wmultichar]
+         r[i][j]='20';
+                 ^
+main.cpp: In function 'unsigned char** split_background(unsigned char*, int, int)':
+main.cpp:15:16: warning: large integer implicitly truncated to unsigned type [-Woverflow]
+         r[i][j]='20';
+                ^

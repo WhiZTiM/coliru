@@ -1,0 +1,1 @@
+g++ -std=c++14 -c -O2 -Wall -pedantic -pthread main.cpp
