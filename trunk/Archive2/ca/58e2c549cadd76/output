@@ -1,0 +1,7 @@
+main.cpp:15:18: warning: unused variable 't1' [-Wunused-variable]
+        bar<&foo::test> t1; //ok
+                        ^
+main.cpp:17:27: warning: unused variable 't2' [-Wunused-variable]
+    bar<pass(&foo::test)> t2; 
+                          ^
+2 warnings generated.
