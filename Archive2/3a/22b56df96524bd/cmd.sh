@@ -1,0 +1,1 @@
+g++ -std=c++14 -O2 -Wall -pedantic -pthread main.cpp && ./a.out "Madame, there was a man, a plan, a canal: Panama!"
