@@ -1,0 +1,6 @@
+main.cpp: In function 'int main()':
+main.cpp:15:9: warning: unused variable 'result' [-Wunused-variable]
+     int result = fibonacci(42);
+         ^
+finished computation at Sat May  2 15:49:59 2015
+elapsed time: 1s
