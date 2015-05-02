@@ -1,0 +1,1 @@
+clang++ -std=c++14 -stdlib=libc++ -Wall main.cpp && ./a.out
