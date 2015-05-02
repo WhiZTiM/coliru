@@ -1,0 +1,12 @@
+main.cpp: In function 'int main()':
+main.cpp:15:22: error: 'pass(&foo::test)' is not a valid template argument for type 'int (foo::*)(int)'
+  bar<pass(&foo::test)> t;
+                      ^
+main.cpp:15:22: error: it must be a pointer-to-member of the form '&X::Y'
+main.cpp:15:22: error: could not convert template argument 'pass(&foo::test)' to 'int (foo::*)(int)'
+main.cpp:15:25: error: invalid type in declaration before ';' token
+  bar<pass(&foo::test)> t;
+                         ^
+main.cpp:15:24: warning: unused variable 't' [-Wunused-variable]
+  bar<pass(&foo::test)> t;
+                        ^
