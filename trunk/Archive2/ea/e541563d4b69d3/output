@@ -1,0 +1,29 @@
+main.cpp:20:16: warning: invalid suffix on literal; C++11 requires a space between literal and identifier [-Wliteral-suffix]
+         {cout<<"inserire il voto"cm+1<<"\t";
+                ^
+main.cpp:26:40: warning: missing terminating " character [enabled by default]
+ cout<<endl<<"media dei voti di"<<nome<<"<<ms<<endl<<endl;
+                                        ^
+main.cpp:26:1: error: missing terminating " character
+ cout<<endl<<"media dei voti di"<<nome<<"<<ms<<endl<<endl;
+ ^
+main.cpp: In function 'int main()':
+main.cpp:10:13: error: 'cs' was not declared in this scope
+     int cm; cs;
+             ^
+main.cpp:15:9: error: 'com' was not declared in this scope
+     {   com=0;
+         ^
+main.cpp:20:34: error: expected ';' before 'cm'
+         {cout<<"inserire il voto"cm+1<<"\t";
+                                  ^
+main.cpp:27:7: error: no match for 'operator=' (operand types are 'std::basic_ostream<char>::__ostream_type {aka std::basic_ostream<char>}' and 'float')
+ sommam=sommam+ms;
+       ^
+main.cpp:27:7: note: candidate is:
+In file included from /usr/include/c++/4.8/iostream:39:0,
+                 from main.cpp:1:
+/usr/include/c++/4.8/ostream:58:11: note: std::basic_ostream<char>& std::basic_ostream<char>::operator=(const std::basic_ostream<char>&) <deleted>
+     class basic_ostream : virtual public basic_ios<_CharT, _Traits>
+           ^
+/usr/include/c++/4.8/ostream:58:11: note:   no known conversion for argument 1 from 'float' to 'const std::basic_ostream<char>&'
