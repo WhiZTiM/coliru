@@ -1,0 +1,11 @@
+main.cpp: In function 'int main()':
+main.cpp:29:10: error: call of overloaded 'foo(N::A&)' is ambiguous
+     foo(a);
+          ^
+main.cpp:29:10: note: candidates are:
+main.cpp:20:6: note: void foo(N::A&)
+ void foo(N::A& x){
+      ^
+main.cpp:10:10: note: void N::foo(N::A&)
+     void foo(A& x){
+          ^
