@@ -1,0 +1,8 @@
+main.cpp:5:14: error: unknown type name 'cudeTextureObject_t'; did you mean 'cudaTextureObject_t'?
+    operator cudeTextureObject_t () const { return t; }
+             ^~~~~~~~~~~~~~~~~~~
+             cudaTextureObject_t
+main.cpp:1:8: note: 'cudaTextureObject_t' declared here
+struct cudaTextureObject_t {};
+       ^
+1 error generated.
