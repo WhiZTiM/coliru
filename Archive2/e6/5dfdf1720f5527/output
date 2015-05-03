@@ -1,0 +1,15 @@
+main.cpp: In function 'int f()':
+main.cpp:8:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+main.cpp: In function 'int main()':
+main.cpp:14:13: warning: the address of 'int f()' will always evaluate as 'true' [-Waddress]
+     cout << f << endl;
+             ^
+main.cpp:15:14: warning: the address of 'int f()' will always evaluate as 'true' [-Waddress]
+     cout << &f << endl;
+              ^
+8
+1
+1
+1
