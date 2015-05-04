@@ -1,0 +1,4 @@
+Type cheese::green: 
+  Mangled: N6cheese5greenE
+  Demangled: cheese::green
+  typeinfo<>: cheese::green
