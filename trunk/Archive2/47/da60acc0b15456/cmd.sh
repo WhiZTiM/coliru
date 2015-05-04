@@ -1,0 +1,1 @@
+g++ -std=c++11 main.cpp && echo '3.PIE14,)(^%PUMPKIN15' | ./a.out
