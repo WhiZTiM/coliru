@@ -1,0 +1,5 @@
+main.cpp: In function 'int main()':
+main.cpp:4:29: warning: format '%g' expects argument of type 'double', but argument 2 has type 'int' [-Wformat=]
+    printf("%g",'c' - (char)5);
+                             ^
+6.94059e-310
