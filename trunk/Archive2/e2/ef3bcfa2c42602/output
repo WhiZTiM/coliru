@@ -1,0 +1,2 @@
+bash: line 27: warning: here-document at line 7 delimited by end-of-file (wanted `TEST')
+equal(graph_small, graph_large,my_callback)=false
