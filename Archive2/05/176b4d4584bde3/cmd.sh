@@ -1,0 +1,1 @@
+g++-4.9 -std=c++14 main.cpp -Wall -O3 -Wextra -Wno-unused-parameter -Werror -pedantic -pedantic-errors -fno-elide-constructors -Wno-unused-variable -Wno-unused-but-set-variable && ./a.out
