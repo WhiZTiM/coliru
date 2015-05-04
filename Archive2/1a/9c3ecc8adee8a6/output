@@ -1,0 +1,9 @@
+Server set up
+Connected system:0
+Client set up
+About to service server IO requests
+Server got a connection generic:0
+Server read timed out -- cancelling socket jobs
+Exiting server thread
+Service jobs all run
+Exiting client thread
