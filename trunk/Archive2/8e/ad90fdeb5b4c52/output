@@ -1,0 +1,10 @@
+main.cpp:4:6: warning: variable 'foo' has internal linkage but is not defined [-Wundefined-internal]
+   } foo;
+     ^
+main.cpp:8:5: note: used here
+    foo.len = 0;
+    ^
+1 warning generated.
+/tmp/main-626dc9.o: In function `main':
+main.cpp:(.text+0x3): undefined reference to `foo'
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
