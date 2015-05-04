@@ -1,0 +1,8 @@
+main.cpp: In function 'int main()':
+main.cpp:29:7: error: unused variable 'u1' [-Werror=unused-variable]
+    U1 u1;
+       ^
+main.cpp:30:7: error: variable 'u2' set but not used [-Werror=unused-but-set-variable]
+    U2 u2;
+       ^
+cc1plus: all warnings being treated as errors
