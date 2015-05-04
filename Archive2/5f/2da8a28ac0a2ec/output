@@ -1,0 +1,5 @@
+main.cpp: In function 'int main()':
+main.cpp:11:8: error: unused variable 'a' [-Werror=unused-variable]
+    int a = 3;
+        ^
+cc1plus: all warnings being treated as errors
