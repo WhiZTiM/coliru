@@ -1,0 +1,1 @@
+runghc -XOverloadedStrings main.cpp
