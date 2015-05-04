@@ -1,0 +1,19 @@
+main.cpp: In member function 'void DeserializeColumn::Deserialize(const uint8_t&)':
+main.cpp:237:11: error: assignment of read-only reference 'x'
+         x = *start_range;
+           ^
+main.cpp: In instantiation of 'void DeserializeColumn::Deserialize(const std::array<unsigned char, N>&) [with long unsigned int N = 16ul]':
+main.cpp:202:13:   required from 'void DeserializeColumn::operator()(const T&) [with T = std::array<unsigned char, 16ul>]'
+/usr/local/include/c++/4.9.2/functional:202:48:   required from 'typename std::enable_if<(((! std::is_member_pointer< <template-parameter-1-1> >::value) && (! std::is_function< <template-parameter-1-1> >::value)) && (! std::is_function<typename std::remove_pointer<_Tp>::type>::value)), typename std::result_of<_Functor&(_Args&& ...)>::type>::type std::__invoke(_Functor&, _Args&& ...) [with _Functor = DeserializeColumn; _Args = {std::array<unsigned char, 16ul>&}; typename std::enable_if<(((! std::is_member_pointer< <template-parameter-1-1> >::value) && (! std::is_function< <template-parameter-1-1> >::value)) && (! std::is_function<typename std::remove_pointer<_Tp>::type>::value)), typename std::result_of<_Functor&(_Args&& ...)>::type>::type = void]'
+/usr/local/include/c++/4.9.2/functional:435:57:   required from 'typename std::result_of<_Tp&(_Args&& ...)>::type std::reference_wrapper<_Tp>::operator()(_Args&& ...) const [with _Args = {std::array<unsigned char, 16ul>&}; _Tp = DeserializeColumn; typename std::result_of<_Tp&(_Args&& ...)>::type = void]'
+/usr/local/include/boost/fusion/algorithm/iteration/detail/for_each.hpp:65:18:   required from 'static void boost::fusion::detail::for_each_unrolled<N>::call(const I0&, const F&) [with I0 = boost::fusion::basic_iterator<boost::fusion::struct_iterator_tag, boost::fusion::random_access_traversal_tag, DeviceTableRow, 0>; F = std::reference_wrapper<DeserializeColumn>; int N = 4]'
+/usr/local/include/boost/fusion/algorithm/iteration/detail/for_each.hpp:135:100:   required from 'void boost::fusion::detail::for_each_dispatch(Sequence&, const F&, boost::fusion::random_access_traversal_tag) [with Sequence = DeviceTableRow; F = std::reference_wrapper<DeserializeColumn>]'
+/usr/local/include/boost/fusion/algorithm/iteration/detail/for_each.hpp:143:89:   required from 'void boost::fusion::detail::for_each(Sequence&, const F&, mpl_::false_) [with Sequence = DeviceTableRow; F = std::reference_wrapper<DeserializeColumn>; mpl_::false_ = mpl_::bool_<false>]'
+/usr/local/include/boost/fusion/algorithm/iteration/for_each.hpp:39:81:   required from 'typename boost::enable_if<boost::fusion::traits::is_sequence<Sequence>, void>::type boost::fusion::for_each(Sequence&, const F&) [with Sequence = DeviceTableRow; F = std::reference_wrapper<DeserializeColumn>; typename boost::enable_if<boost::fusion::traits::is_sequence<Sequence>, void>::type = void]'
+main.cpp:415:73:   required from 'void Deserialize(T&, const column_info_t&, const ColumnFilter&, payload_iter_t&, const payload_iter_t&) [with T = DeviceTableRow; DescribeTable::column_info_t = std::vector<ColumnInfo>; payload_iter_t = __gnu_cxx::__normal_iterator<unsigned char*, std::vector<unsigned char> >]'
+main.cpp:438:13:   required from 'void Deserialize(T&, Filters, payload_iter_t&, payload_iter_t&) [with T = DeviceTable; payload_iter_t = __gnu_cxx::__normal_iterator<unsigned char*, std::vector<unsigned char> >]'
+main.cpp:494:61:   required from 'void Deserialize(T&, Filters, std::vector<unsigned char>&, bool) [with T = DeviceTable]'
+main.cpp:545:5:   required from here
+main.cpp:253:18: error: assignment of read-only location '(& x)->std::array<_Tp, _Nm>::operator[]<unsigned char, 16ul>(((std::array<unsigned char, 16ul>::size_type)i))'
+             x[i] = *start_range;
+                  ^
