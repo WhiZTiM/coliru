@@ -1,0 +1,3 @@
+ERROR, no port provided
+usage: server : ./a.out port
+usage: client : ./a.out port hostname
