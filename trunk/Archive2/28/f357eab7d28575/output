@@ -1,0 +1,14 @@
++ g++ -std=c++1y -O2 -Wall -Wextra -pedantic -pthread main.cpp
+main.cpp: In instantiation of 'B<D>::B() [with D = D1]':
+main.cpp:9:8:   required from here
+main.cpp:5:9: error: static assertion failed: No public derivation allowed
+         static_assert(!std::is_convertible<D*, B*>::value, "No public derivation allowed");
+         ^
++ clang++ -stdlib=libc++ -std=c++1y -O2 -Wall -Wextra -pedantic -pthread -lcxxrt -ldl main.cpp
+main.cpp:5:9: error: static_assert failed "No public derivation allowed"
+        static_assert(!std::is_convertible<D*, B*>::value, "No public derivation allowed");
+        ^             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+main.cpp:9:8: note: in instantiation of member function 'B<D1>::B' requested here
+struct D1 : B<D1> {};
+       ^
+1 error generated.
