@@ -1,0 +1,1 @@
+g++ -std=c++11 main.cpp && echo '1 3.21415' | ./a.out
