@@ -1,0 +1,44 @@
+main.cpp: In function 'int main()':
+main.cpp:17:12: error: invalid initialization of reference of type 'A&' from expression of type 'const A'
+     A& d = b;
+            ^
+main.cpp:21:26: error: no match for call to '(const A) (A&)'
+     z(a); z(b); z(c); f(d); z(e); z(f);
+                          ^
+main.cpp:22:27: error: no match for 'operator=' (operand types are 'const A' and 'A')
+     z(A()); z(a = b); z(e = c); z(A(a)); z(A(c)); z(A(e));
+                           ^
+main.cpp:22:27: note: candidates are:
+main.cpp:5:8: note: A& A::operator=(const A&) <near match>
+ struct A {};
+        ^
+main.cpp:5:8: note:   no known conversion for implicit 'this' parameter from 'const A*' to 'A*'
+main.cpp:5:8: note: A& A::operator=(A&&) <near match>
+main.cpp:5:8: note:   no known conversion for argument 1 from 'A' to 'A&&'
+main.cpp:34:34: error: 'a4' was not declared in this scope
+     A a1 = b1, a2 = b2, a3 = b3; a4 = b4; 
+                                  ^
+main.cpp:35:13: error: invalid initialization of reference of type 'A&' from expression of type 'B'
+     A &a5 = b1, &a6 = b2, &a7 = b3, &a8 = b4;
+             ^
+main.cpp:35:23: error: invalid initialization of reference of type 'A&' from expression of type 'const B'
+     A &a5 = b1, &a6 = b2, &a7 = b3, &a8 = b4;
+                       ^
+main.cpp:35:33: error: invalid initialization of reference of type 'A&' from expression of type 'B'
+     A &a5 = b1, &a6 = b2, &a7 = b3, &a8 = b4;
+                                 ^
+main.cpp:35:43: error: invalid initialization of reference of type 'A&' from expression of type 'const B'
+     A &a5 = b1, &a6 = b2, &a7 = b3, &a8 = b4;
+                                           ^
+main.cpp:35:8: warning: unused variable 'a5' [-Wunused-variable]
+     A &a5 = b1, &a6 = b2, &a7 = b3, &a8 = b4;
+        ^
+main.cpp:35:18: warning: unused variable 'a6' [-Wunused-variable]
+     A &a5 = b1, &a6 = b2, &a7 = b3, &a8 = b4;
+                  ^
+main.cpp:35:28: warning: unused variable 'a7' [-Wunused-variable]
+     A &a5 = b1, &a6 = b2, &a7 = b3, &a8 = b4;
+                            ^
+main.cpp:35:38: warning: unused variable 'a8' [-Wunused-variable]
+     A &a5 = b1, &a6 = b2, &a7 = b3, &a8 = b4;
+                                      ^
