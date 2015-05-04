@@ -1,0 +1,4 @@
+main.cpp:33:20: warning: unused variable 'x' [-Wunused-variable]
+    watt_t<double> x = boost::units::sqrt(watt * watt + watt_t<double>(va) * watt_t<double>(va));
+                   ^
+1 warning generated.
