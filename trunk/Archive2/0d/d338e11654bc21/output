@@ -1,0 +1,5 @@
+the general case: foo<X,Y>
+explicit specialisation: foo<int,int>
+explicit specialisation: foo<char,char>
+explicit specialisation: foo<short,short>
+overload: foo( const double&, const double& )
