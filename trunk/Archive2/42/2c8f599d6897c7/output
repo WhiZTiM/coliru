@@ -1,0 +1,4 @@
+equal(graph_small, graph_large,my_callback)=true
+equal(graph_small, graph_large,my_callback)=true
+equal(graph_small, graph_large,my_callback)=false
+equal(graph_small, graph_large,my_callback)=false
