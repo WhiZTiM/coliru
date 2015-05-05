@@ -1,0 +1,4 @@
+main.cpp:14:26: error: use of undeclared identifier 'e3'
+    std::cout << f(100,  e3) << '\n';
+                         ^
+1 error generated.
