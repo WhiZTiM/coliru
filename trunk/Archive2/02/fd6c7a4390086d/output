@@ -1,0 +1,9 @@
+terminate called after throwing an instance of 'terminate called after throwing an instance of 'boost::interprocess::interprocess_exception'
+  what():  boost::interprocess::interprocess_exception'
+  what():  Function not implemented
+Before: 4491
+Parent: 4491
+Function not implemented
+Before: 4491
+Child: 4492
+bash: line 7:  4491 Aborted                 (core dumped) ./a.out
