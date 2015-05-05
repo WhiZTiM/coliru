@@ -1,0 +1,7 @@
+main.cpp: In function 'int main()':
+main.cpp:18:33: error: '__VERSION_xxq_' was not declared in this scope
+         "Hello", "from", "GCC", __VERSION_xxq_, "!"
+                                 ^
+main.cpp:19:5: error: could not convert '{"Hello", "from", "GCC", <expression error>, "!"}' from '<brace-enclosed initializer list>' to 'std::vector<std::basic_string<char> >'
+     };
+     ^
