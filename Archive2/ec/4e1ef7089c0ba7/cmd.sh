@@ -1,0 +1,1 @@
+g++ main.cpp -O3 -ffast-math -msse -mrecip && ./a.out
