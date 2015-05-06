@@ -1,0 +1,1 @@
+g++ -std=c++14 -O2 -Wall -pedantic -pthread main.cpp && echo file1 > file1.txt && echo file2 > file2.txt && cat file1.txt file2.txt | ./a.out
