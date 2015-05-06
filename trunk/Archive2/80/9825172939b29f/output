@@ -1,0 +1,4 @@
+main.cpp: In function 'int main()':
+main.cpp:6:11: error: expected primary-expression before '<<' token
+    cout , << "Questo e' il nostro compilatore online!" << endl;
+           ^
