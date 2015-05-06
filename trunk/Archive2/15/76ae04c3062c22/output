@@ -1,0 +1,1197 @@
+mFreeList.size=19
+
+0: 
+1: 
+2: 
+3: 
+4: 
+5: 
+6: 
+7: 
+8: 
+9: 
+10: 
+11: 
+12: deallocate 0 bytes
+deallocate 1 bytes
+deallocate 2 bytes
+deallocate 3 bytes
+deallocate 4 bytes
+deallocate 5 bytes
+deallocate 6 bytes
+deallocate 7 bytes
+deallocate 8 bytes
+deallocate 9 bytes
+deallocate 10 bytes
+deallocate 11 bytes
+deallocate 12 bytes
+
+13: 
+14: 
+15: 
+16: deallocate 13 bytes
+deallocate 14 bytes
+deallocate 15 bytes
+deallocate 16 bytes
+
+17: 
+18: 
+19: 
+20: 
+21: 
+22: 
+23: 
+24: 
+25: deallocate 17 bytes
+deallocate 18 bytes
+deallocate 19 bytes
+deallocate 20 bytes
+deallocate 21 bytes
+deallocate 22 bytes
+deallocate 23 bytes
+deallocate 24 bytes
+deallocate 25 bytes
+
+26: 
+27: 
+28: 
+29: 
+30: 
+31: 
+32: 
+33: 
+34: 
+35: 
+36: 
+37: 
+38: 
+39: 
+40: 
+41: 
+42: 
+43: 
+44: 
+45: 
+46: 
+47: 
+48: 
+49: deallocate 26 bytes
+deallocate 27 bytes
+deallocate 28 bytes
+deallocate 29 bytes
+deallocate 30 bytes
+deallocate 31 bytes
+deallocate 32 bytes
+deallocate 33 bytes
+deallocate 34 bytes
+deallocate 35 bytes
+deallocate 36 bytes
+deallocate 37 bytes
+deallocate 38 bytes
+deallocate 39 bytes
+deallocate 40 bytes
+deallocate 41 bytes
+deallocate 42 bytes
+deallocate 43 bytes
+deallocate 44 bytes
+deallocate 45 bytes
+deallocate 46 bytes
+deallocate 47 bytes
+deallocate 48 bytes
+deallocate 49 bytes
+
+50: 
+51: 
+52: 
+53: deallocate 50 bytes
+deallocate 51 bytes
+deallocate 52 bytes
+deallocate 53 bytes
+
+54: 
+55: 
+56: 
+57: deallocate 54 bytes
+deallocate 55 bytes
+deallocate 56 bytes
+deallocate 57 bytes
+
+58: 
+59: 
+60: 
+61: 
+62: 
+63: Batch is dead 18
+Selecting a new batch
+
+64: 
+65: 
+66: 
+67: 
+68: 
+69: 
+70: 
+71: 
+72: 
+73: 
+74: 
+75: 
+76: 
+77: 
+78: 
+79: deallocate 58 bytes
+deallocate 59 bytes
+deallocate 60 bytes
+deallocate 61 bytes
+deallocate 62 bytes
+Reviving a dead batch 18
+deallocate 63 bytes
+deallocate 64 bytes
+deallocate 65 bytes
+deallocate 66 bytes
+deallocate 67 bytes
+deallocate 68 bytes
+deallocate 69 bytes
+deallocate 70 bytes
+deallocate 71 bytes
+deallocate 72 bytes
+deallocate 73 bytes
+deallocate 74 bytes
+deallocate 75 bytes
+deallocate 76 bytes
+deallocate 77 bytes
+deallocate 78 bytes
+deallocate 79 bytes
+
+80: 
+81: 
+82: 
+83: 
+84: 
+85: 
+86: 
+87: 
+88: 
+89: Batch is dead 17
+Selecting a new batch
+
+90: 
+91: deallocate 80 bytes
+deallocate 81 bytes
+deallocate 82 bytes
+deallocate 83 bytes
+deallocate 84 bytes
+deallocate 85 bytes
+deallocate 86 bytes
+deallocate 87 bytes
+deallocate 88 bytes
+Reviving a dead batch 17
+deallocate 89 bytes
+deallocate 90 bytes
+deallocate 91 bytes
+
+92: 
+93: 
+94: 
+95: 
+96: 
+97: 
+98: 
+99: 
+100: 
+101: deallocate 92 bytes
+deallocate 93 bytes
+deallocate 94 bytes
+deallocate 95 bytes
+deallocate 96 bytes
+deallocate 97 bytes
+deallocate 98 bytes
+deallocate 99 bytes
+deallocate 100 bytes
+deallocate 101 bytes
+
+102: 
+103: 
+104: 
+105: 
+106: 
+107: 
+108: 
+109: Batch is dead 18
+Selecting a new batch
+
+110: 
+111: 
+112: 
+113: deallocate 102 bytes
+deallocate 103 bytes
+deallocate 104 bytes
+deallocate 105 bytes
+deallocate 106 bytes
+deallocate 107 bytes
+deallocate 108 bytes
+Reviving a dead batch 18
+deallocate 109 bytes
+deallocate 110 bytes
+deallocate 111 bytes
+deallocate 112 bytes
+deallocate 113 bytes
+
+114: 
+115: 
+116: 
+117: 
+118: 
+119: 
+120: deallocate 114 bytes
+deallocate 115 bytes
+deallocate 116 bytes
+deallocate 117 bytes
+deallocate 118 bytes
+deallocate 119 bytes
+deallocate 120 bytes
+
+121: 
+122: 
+123: 
+124: 
+125: 
+126: Batch is dead 17
+Selecting a new batch
+
+127: 
+128: 
+129: 
+130: 
+131: 
+132: 
+133: 
+134: 
+135: 
+136: 
+137: 
+138: 
+139: 
+140: 
+141: Batch is dead 18
+Selecting a new batch
+
+142: 
+143: 
+144: 
+145: 
+146: deallocate 121 bytes
+deallocate 122 bytes
+deallocate 123 bytes
+deallocate 124 bytes
+deallocate 125 bytes
+Reviving a dead batch 17
+deallocate 126 bytes
+deallocate 127 bytes
+deallocate 128 bytes
+deallocate 129 bytes
+deallocate 130 bytes
+deallocate 131 bytes
+deallocate 132 bytes
+deallocate 133 bytes
+deallocate 134 bytes
+deallocate 135 bytes
+deallocate 136 bytes
+deallocate 137 bytes
+deallocate 138 bytes
+deallocate 139 bytes
+deallocate 140 bytes
+Reviving a dead batch 18
+deallocate 141 bytes
+deallocate 142 bytes
+deallocate 143 bytes
+deallocate 144 bytes
+deallocate 145 bytes
+deallocate 146 bytes
+
+147: 
+148: 
+149: 
+150: deallocate 147 bytes
+deallocate 148 bytes
+deallocate 149 bytes
+deallocate 150 bytes
+
+151: 
+152: 
+153: 
+154: Batch is dead 16
+Selecting a new batch
+
+155: 
+156: 
+157: 
+158: 
+159: 
+160: 
+161: 
+162: 
+163: 
+164: 
+165: deallocate 151 bytes
+deallocate 152 bytes
+deallocate 153 bytes
+Reviving a dead batch 16
+deallocate 154 bytes
+deallocate 155 bytes
+deallocate 156 bytes
+deallocate 157 bytes
+deallocate 158 bytes
+deallocate 159 bytes
+deallocate 160 bytes
+deallocate 161 bytes
+deallocate 162 bytes
+deallocate 163 bytes
+deallocate 164 bytes
+deallocate 165 bytes
+
+166: Batch is dead 18
+Selecting a new batch
+
+167: deallocate 166 bytes
+deallocate 167 bytes
+
+168: 
+169: 
+170: 
+171: 
+172: 
+173: 
+174: 
+175: 
+176: 
+177: Batch is dead 16
+Selecting a new batch
+
+178: 
+179: 
+180: 
+181: 
+182: 
+183: 
+184: 
+185: 
+186: 
+187: Batch is dead 17
+Selecting a new batch
+
+188: 
+189: 
+190: 
+191: 
+192: 
+193: 
+194: 
+195: 
+196: 
+197: Batch is dead 15
+Selecting a new batch
+
+198: 
+199: 
+200: 
+201: 
+202: 
+203: 
+204: 
+205: 
+206: Batch is dead 14
+Selecting a new batch
+
+207: deallocate 168 bytes
+deallocate 169 bytes
+deallocate 170 bytes
+deallocate 171 bytes
+deallocate 172 bytes
+deallocate 173 bytes
+deallocate 174 bytes
+deallocate 175 bytes
+deallocate 176 bytes
+Reviving a dead batch 16
+deallocate 177 bytes
+deallocate 178 bytes
+deallocate 179 bytes
+deallocate 180 bytes
+deallocate 181 bytes
+deallocate 182 bytes
+deallocate 183 bytes
+deallocate 184 bytes
+deallocate 185 bytes
+deallocate 186 bytes
+Reviving a dead batch 17
+deallocate 187 bytes
+deallocate 188 bytes
+deallocate 189 bytes
+deallocate 190 bytes
+deallocate 191 bytes
+deallocate 192 bytes
+deallocate 193 bytes
+deallocate 194 bytes
+deallocate 195 bytes
+deallocate 196 bytes
+Reviving a dead batch 15
+deallocate 197 bytes
+deallocate 198 bytes
+deallocate 199 bytes
+deallocate 200 bytes
+deallocate 201 bytes
+deallocate 202 bytes
+deallocate 203 bytes
+deallocate 204 bytes
+deallocate 205 bytes
+Reviving a dead batch 14
+deallocate 206 bytes
+deallocate 207 bytes
+
+208: 
+209: 
+210: 
+211: 
+212: 
+213: 
+214: 
+215: Batch is dead 13
+Selecting a new batch
+
+216: 
+217: 
+218: deallocate 208 bytes
+deallocate 209 bytes
+deallocate 210 bytes
+deallocate 211 bytes
+deallocate 212 bytes
+deallocate 213 bytes
+deallocate 214 bytes
+Reviving a dead batch 13
+deallocate 215 bytes
+deallocate 216 bytes
+deallocate 217 bytes
+deallocate 218 bytes
+
+219: 
+220: deallocate 219 bytes
+deallocate 220 bytes
+
+221: 
+222: 
+223: 
+224: Batch is dead 14
+Selecting a new batch
+
+225: deallocate 221 bytes
+deallocate 222 bytes
+deallocate 223 bytes
+Reviving a dead batch 14
+deallocate 224 bytes
+deallocate 225 bytes
+
+226: 
+227: 
+228: 
+229: 
+230: 
+231: 
+232: Batch is dead 13
+Selecting a new batch
+
+233: 
+234: 
+235: 
+236: 
+237: 
+238: 
+239: 
+240: Batch is dead 14
+Selecting a new batch
+
+241: 
+242: 
+243: 
+244: 
+245: 
+246: deallocate 226 bytes
+deallocate 227 bytes
+deallocate 228 bytes
+deallocate 229 bytes
+deallocate 230 bytes
+deallocate 231 bytes
+Reviving a dead batch 13
+deallocate 232 bytes
+deallocate 233 bytes
+deallocate 234 bytes
+deallocate 235 bytes
+deallocate 236 bytes
+deallocate 237 bytes
+deallocate 238 bytes
+deallocate 239 bytes
+Reviving a dead batch 14
+deallocate 240 bytes
+deallocate 241 bytes
+deallocate 242 bytes
+deallocate 243 bytes
+deallocate 244 bytes
+deallocate 245 bytes
+deallocate 246 bytes
+
+247: 
+248: Batch is dead 15
+Selecting a new batch
+
+249: deallocate 247 bytes
+Reviving a dead batch 15
+deallocate 248 bytes
+deallocate 249 bytes
+
+250: 
+251: 
+252: 
+253: deallocate 250 bytes
+deallocate 251 bytes
+deallocate 252 bytes
+deallocate 253 bytes
+
+254: 
+255: Batch is dead 14
+Selecting a new batch
+
+256: deallocate 254 bytes
+Reviving a dead batch 14
+deallocate 255 bytes
+deallocate 256 bytes
+
+257: 
+258: 
+259: 
+260: 
+261: 
+262: Batch is dead 15
+Selecting a new batch
+
+263: 
+264: 
+265: 
+266: 
+267: 
+268: 
+269: Batch is dead 14
+Selecting a new batch
+
+270: deallocate 257 bytes
+deallocate 258 bytes
+deallocate 259 bytes
+deallocate 260 bytes
+deallocate 261 bytes
+Reviving a dead batch 15
+deallocate 262 bytes
+deallocate 263 bytes
+deallocate 264 bytes
+deallocate 265 bytes
+deallocate 266 bytes
+deallocate 267 bytes
+deallocate 268 bytes
+Reviving a dead batch 14
+deallocate 269 bytes
+deallocate 270 bytes
+
+271: 
+272: 
+273: 
+274: 
+275: deallocate 271 bytes
+deallocate 272 bytes
+deallocate 273 bytes
+deallocate 274 bytes
+deallocate 275 bytes
+
+276: Batch is dead 13
+Selecting a new batch
+
+277: 
+278: 
+279: 
+280: 
+281: deallocate 276 bytes
+deallocate 277 bytes
+deallocate 278 bytes
+deallocate 279 bytes
+deallocate 280 bytes
+deallocate 281 bytes
+
+282: 
+283: Batch is dead 14
+Selecting a new batch
+
+284: deallocate 282 bytes
+Reviving a dead batch 14
+deallocate 283 bytes
+deallocate 284 bytes
+
+285: 
+286: 
+287: 
+288: 
+289: Batch is dead 15
+Selecting a new batch
+
+290: 
+291: 
+292: 
+293: 
+294: deallocate 285 bytes
+deallocate 286 bytes
+deallocate 287 bytes
+deallocate 288 bytes
+Reviving a dead batch 15
+deallocate 289 bytes
+deallocate 290 bytes
+deallocate 291 bytes
+deallocate 292 bytes
+deallocate 293 bytes
+deallocate 294 bytes
+
+295: Batch is dead 14
+Selecting a new batch
+
+296: 
+297: 
+298: 
+299: deallocate 295 bytes
+deallocate 296 bytes
+deallocate 297 bytes
+deallocate 298 bytes
+deallocate 299 bytes
+
+300: deallocate 300 bytes
+
+301: Batch is dead 15
+Selecting a new batch
+
+302: 
+303: 
+304: 
+305: 
+306: 
+307: Batch is dead 17
+Selecting a new batch
+
+308: 
+309: 
+310: 
+311: 
+312: 
+313: Batch is dead 16
+Selecting a new batch
+
+314: 
+315: 
+316: 
+317: deallocate 301 bytes
+deallocate 302 bytes
+deallocate 303 bytes
+deallocate 304 bytes
+deallocate 305 bytes
+deallocate 306 bytes
+Reviving a dead batch 17
+deallocate 307 bytes
+deallocate 308 bytes
+deallocate 309 bytes
+deallocate 310 bytes
+deallocate 311 bytes
+deallocate 312 bytes
+Reviving a dead batch 16
+deallocate 313 bytes
+deallocate 314 bytes
+deallocate 315 bytes
+deallocate 316 bytes
+deallocate 317 bytes
+
+318: 
+319: Batch is dead 12
+Selecting a new batch
+
+320: 
+321: 
+322: 
+323: 
+324: 
+325: Batch is dead 16
+Selecting a new batch
+
+326: 
+327: 
+328: 
+329: 
+330: 
+331: Batch is dead 17
+Selecting a new batch
+
+332: deallocate 318 bytes
+Reviving a dead batch 12
+deallocate 319 bytes
+deallocate 320 bytes
+deallocate 321 bytes
+deallocate 322 bytes
+deallocate 323 bytes
+deallocate 324 bytes
+Reviving a dead batch 16
+deallocate 325 bytes
+deallocate 326 bytes
+deallocate 327 bytes
+deallocate 328 bytes
+deallocate 329 bytes
+deallocate 330 bytes
+Reviving a dead batch 17
+deallocate 331 bytes
+deallocate 332 bytes
+
+333: 
+334: 
+335: 
+336: Batch is dead 11
+Selecting a new batch
+
+337: deallocate 333 bytes
+deallocate 334 bytes
+deallocate 335 bytes
+Reviving a dead batch 11
+deallocate 336 bytes
+deallocate 337 bytes
+
+338: 
+339: 
+340: deallocate 338 bytes
+deallocate 339 bytes
+deallocate 340 bytes
+
+341: Batch is dead 17
+Selecting a new batch
+
+342: 
+343: 
+344: 
+345: 
+346: Batch is dead 11
+Selecting a new batch
+deallocate 341 bytes
+deallocate 342 bytes
+deallocate 343 bytes
+deallocate 344 bytes
+deallocate 345 bytes
+Reviving a dead batch 11
+deallocate 346 bytes
+
+347: 
+348: 
+349: 
+350: 
+351: Batch is dead 16
+Selecting a new batch
+deallocate 347 bytes
+deallocate 348 bytes
+deallocate 349 bytes
+deallocate 350 bytes
+Reviving a dead batch 16
+deallocate 351 bytes
+
+352: 
+353: 
+354: 
+355: 
+356: Batch is dead 11
+Selecting a new batch
+deallocate 352 bytes
+deallocate 353 bytes
+deallocate 354 bytes
+deallocate 355 bytes
+Reviving a dead batch 11
+deallocate 356 bytes
+
+357: 
+358: 
+359: 
+360: 
+361: Batch is dead 16
+Selecting a new batch
+deallocate 357 bytes
+deallocate 358 bytes
+deallocate 359 bytes
+deallocate 360 bytes
+Reviving a dead batch 16
+deallocate 361 bytes
+
+362: 
+363: deallocate 362 bytes
+deallocate 363 bytes
+
+364: 
+365: 
+366: Batch is dead 11
+Selecting a new batch
+
+367: 
+368: 
+369: 
+370: 
+371: Batch is dead 16
+Selecting a new batch
+
+372: 
+373: 
+374: 
+375: 
+376: Batch is dead 12
+Selecting a new batch
+deallocate 364 bytes
+deallocate 365 bytes
+Reviving a dead batch 11
+deallocate 366 bytes
+deallocate 367 bytes
+deallocate 368 bytes
+deallocate 369 bytes
+deallocate 370 bytes
+Reviving a dead batch 16
+deallocate 371 bytes
+deallocate 372 bytes
+deallocate 373 bytes
+deallocate 374 bytes
+deallocate 375 bytes
+Reviving a dead batch 12
+deallocate 376 bytes
+
+377: 
+378: deallocate 377 bytes
+deallocate 378 bytes
+
+379: 
+380: 
+381: Batch is dead 10
+Selecting a new batch
+
+382: 
+383: 
+384: 
+385: 
+386: Batch is dead 12
+Selecting a new batch
+
+387: 
+388: 
+389: 
+390: 
+391: Batch is dead 16
+Selecting a new batch
+
+392: 
+393: 
+394: 
+395: 
+396: Batch is dead 11
+Selecting a new batch
+
+397: 
+398: 
+399: 
+400: 
+401: Batch is dead 9
+Selecting a new batch
+
+402: 
+403: 
+404: 
+405: Batch is dead 8
+Selecting a new batch
+
+406: 
+407: 
+408: 
+409: Batch is dead 7
+Selecting a new batch
+
+410: 
+411: 
+412: 
+413: Batch is dead 6
+Selecting a new batch
+
+414: deallocate 379 bytes
+deallocate 380 bytes
+Reviving a dead batch 10
+deallocate 381 bytes
+deallocate 382 bytes
+deallocate 383 bytes
+deallocate 384 bytes
+deallocate 385 bytes
+Reviving a dead batch 12
+deallocate 386 bytes
+deallocate 387 bytes
+deallocate 388 bytes
+deallocate 389 bytes
+deallocate 390 bytes
+Reviving a dead batch 16
+deallocate 391 bytes
+deallocate 392 bytes
+deallocate 393 bytes
+deallocate 394 bytes
+deallocate 395 bytes
+Reviving a dead batch 11
+deallocate 396 bytes
+deallocate 397 bytes
+deallocate 398 bytes
+deallocate 399 bytes
+deallocate 400 bytes
+Reviving a dead batch 9
+deallocate 401 bytes
+deallocate 402 bytes
+deallocate 403 bytes
+deallocate 404 bytes
+Reviving a dead batch 8
+deallocate 405 bytes
+deallocate 406 bytes
+deallocate 407 bytes
+deallocate 408 bytes
+Reviving a dead batch 7
+deallocate 409 bytes
+deallocate 410 bytes
+deallocate 411 bytes
+deallocate 412 bytes
+Reviving a dead batch 6
+deallocate 413 bytes
+deallocate 414 bytes
+
+415: 
+416: 
+417: Batch is dead 5
+Selecting a new batch
+
+418: 
+419: 
+420: deallocate 415 bytes
+deallocate 416 bytes
+Reviving a dead batch 5
+deallocate 417 bytes
+deallocate 418 bytes
+deallocate 419 bytes
+deallocate 420 bytes
+
+421: Batch is dead 6
+Selecting a new batch
+
+422: 
+423: 
+424: 
+425: Batch is dead 5
+Selecting a new batch
+deallocate 421 bytes
+deallocate 422 bytes
+deallocate 423 bytes
+deallocate 424 bytes
+Reviving a dead batch 5
+deallocate 425 bytes
+
+426: 
+427: 
+428: 
+429: Batch is dead 7
+Selecting a new batch
+
+430: 
+431: 
+432: 
+433: Batch is dead 5
+Selecting a new batch
+
+434: 
+435: 
+436: 
+437: Batch is dead 8
+Selecting a new batch
+
+438: 
+439: 
+440: 
+441: Batch is dead 9
+Selecting a new batch
+deallocate 426 bytes
+deallocate 427 bytes
+deallocate 428 bytes
+Reviving a dead batch 7
+deallocate 429 bytes
+deallocate 430 bytes
+deallocate 431 bytes
+deallocate 432 bytes
+Reviving a dead batch 5
+deallocate 433 bytes
+deallocate 434 bytes
+deallocate 435 bytes
+deallocate 436 bytes
+Reviving a dead batch 8
+deallocate 437 bytes
+deallocate 438 bytes
+deallocate 439 bytes
+deallocate 440 bytes
+Reviving a dead batch 9
+deallocate 441 bytes
+
+442: 
+443: 
+444: deallocate 442 bytes
+deallocate 443 bytes
+deallocate 444 bytes
+
+445: Batch is dead 11
+Selecting a new batch
+
+446: 
+447: 
+448: deallocate 445 bytes
+deallocate 446 bytes
+deallocate 447 bytes
+deallocate 448 bytes
+
+449: Batch is dead 9
+Selecting a new batch
+
+450: 
+451: 
+452: 
+453: Batch is dead 8
+Selecting a new batch
+
+454: 
+455: 
+456: 
+457: Batch is dead 5
+Selecting a new batch
+
+458: 
+459: 
+460: deallocate 449 bytes
+deallocate 450 bytes
+deallocate 451 bytes
+deallocate 452 bytes
+Reviving a dead batch 8
+deallocate 453 bytes
+deallocate 454 bytes
+deallocate 455 bytes
+deallocate 456 bytes
+Reviving a dead batch 5
+deallocate 457 bytes
+deallocate 458 bytes
+deallocate 459 bytes
+deallocate 460 bytes
+
+461: Batch is dead 7
+Selecting a new batch
+
+462: 
+463: 
+464: 
+465: Batch is dead 5
+Selecting a new batch
+
+466: 
+467: 
+468: 
+469: Batch is dead 8
+Selecting a new batch
+
+470: 
+471: 
+472: 
+473: Batch is dead 16
+Selecting a new batch
+
+474: 
+475: 
+476: 
+477: Batch is dead 12
+Selecting a new batch
+
+478: 
+479: 
+480: 
+481: Batch is dead 10
+Selecting a new batch
+deallocate 461 bytes
+deallocate 462 bytes
+deallocate 463 bytes
+deallocate 464 bytes
+Reviving a dead batch 5
+deallocate 465 bytes
+deallocate 466 bytes
+deallocate 467 bytes
+deallocate 468 bytes
+Reviving a dead batch 8
+deallocate 469 bytes
+deallocate 470 bytes
+deallocate 471 bytes
+deallocate 472 bytes
+Reviving a dead batch 16
+deallocate 473 bytes
+deallocate 474 bytes
+deallocate 475 bytes
+deallocate 476 bytes
+Reviving a dead batch 12
+deallocate 477 bytes
+deallocate 478 bytes
+deallocate 479 bytes
+deallocate 480 bytes
+Reviving a dead batch 10
+deallocate 481 bytes
+
+482: 
+483: 
+484: 
+485: Batch is dead 4
+Selecting a new batch
+
+486: 
+487: 
+488: 
+489: Batch is dead 10
+Selecting a new batch
+
+490: 
+491: 
+492: 
+493: Batch is dead 12
+Selecting a new batch
+deallocate 482 bytes
+deallocate 483 bytes
+deallocate 484 bytes
+Reviving a dead batch 4
+deallocate 485 bytes
+deallocate 486 bytes
+deallocate 487 bytes
+deallocate 488 bytes
+Reviving a dead batch 10
+deallocate 489 bytes
+deallocate 490 bytes
+deallocate 491 bytes
+deallocate 492 bytes
+Reviving a dead batch 12
+deallocate 493 bytes
+
+494: 
+495: deallocate 494 bytes
+deallocate 495 bytes
+
+496: 
+497: Batch is dead 16
+Selecting a new batch
+
+498: 
+499: 
+
+*** Performing cleanup ***
+deallocate 496 bytes
+Reviving a dead batch 16
+deallocate 497 bytes
+deallocate 498 bytes
+deallocate 499 bytes
+End of program
