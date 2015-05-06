@@ -1,0 +1,7 @@
+main.cpp:14:16: error: cannot cast 'CanData' to its protected base class 'Header'
+  Header *pt = new CanData();
+               ^
+main.cpp:7:17: note: declared protected here
+class CanData : protected Header
+                ^~~~~~~~~~~~~~~~
+1 error generated.
