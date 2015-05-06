@@ -1,0 +1,4 @@
+main.cpp: In function 'int main()':
+main.cpp:5:71: error: cannot convert 'const wchar_t*' to 'const char*' for argument '1' to 'int printf(const char*, ...)'
+     std::printf(L"This\x96is\na\ntest\n\nShe said, \"How are you?\"\n");
+                                                                       ^
