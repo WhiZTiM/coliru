@@ -1,0 +1,1 @@
+g++ -std=c++11 -Wall -pedantic -pedantic-errors -Wextra -Werror -fno-elide-constructors -Wno-unused-parameter -Wno-unused-variable -Wno-unused-but-set-variable main.cpp && ./a.out
