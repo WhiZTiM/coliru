@@ -1,0 +1,143 @@
+main.cpp:19:7: error: expected nested-name-specifier before 'Set'
+ using Set = bive::set<Element>;
+       ^
+main.cpp: In function 'void merge_into(Set&, Set&)':
+main.cpp:23:10: warning: 'auto' changes meaning in C++11; please remove it [-Wc++0x-compat]
+     for (auto it = s.begin(); it != s.end();) {
+          ^
+main.cpp:23:15: error: 'it' does not name a type
+     for (auto it = s.begin(); it != s.end();) {
+               ^
+main.cpp:23:31: error: expected ';' before 'it'
+     for (auto it = s.begin(); it != s.end();) {
+                               ^
+main.cpp:23:31: error: 'it' was not declared in this scope
+main.cpp:24:9: warning: 'auto' changes meaning in C++11; please remove it [-Wc++0x-compat]
+         auto& e = *it;
+         ^
+main.cpp:24:15: error: ISO C++ forbids declaration of 'e' with no type [-fpermissive]
+         auto& e = *it;
+               ^
+main.cpp: In function 'int main()':
+main.cpp:31:29: warning: extended initializer lists only available with -std=c++11 or -std=gnu++11
+     std::vector<Element> va {{ "one"},{ "two"},{ "three"},{ "four"},{ "five"},{ "six"},{ "seven"},{ "eight"}, {"nine"} };
+                             ^
+main.cpp:31:120: error: in C++98 'va' must be initialized by constructor, not by '{...}'
+     std::vector<Element> va {{ "one"},{ "two"},{ "three"},{ "four"},{ "five"},{ "six"},{ "seven"},{ "eight"}, {"nine"} };
+                                                                                                                        ^
+main.cpp: In substitution of 'template<class _InputIterator> std::vector<_Tp, _Alloc>::vector(_InputIterator, _InputIterator, const allocator_type&) [with _InputIterator = <missing>]':
+main.cpp:31:120:   required from here
+main.cpp:31:120: warning: extended initializer lists only available with -std=c++11 or -std=gnu++11
+main.cpp:31:120: error: no matching function for call to 'std::vector<Element>::vector(<brace-enclosed initializer list>)'
+main.cpp:31:120: note: candidates are:
+In file included from /usr/local/include/c++/4.9.2/vector:64:0,
+                 from main.cpp:4:
+/usr/local/include/c++/4.9.2/bits/stl_vector.h:407:9: note: template<class _InputIterator> std::vector<_Tp, _Alloc>::vector(_InputIterator, _InputIterator, const allocator_type&)
+         vector(_InputIterator __first, _InputIterator __last,
+         ^
+/usr/local/include/c++/4.9.2/bits/stl_vector.h:407:9: note:   template argument deduction/substitution failed:
+main.cpp:31:120: warning: extended initializer lists only available with -std=c++11 or -std=gnu++11
+     std::vector<Element> va {{ "one"},{ "two"},{ "three"},{ "four"},{ "five"},{ "six"},{ "seven"},{ "eight"}, {"nine"} };
+                                                                                                                        ^
+main.cpp:31:120: note:   cannot convert '{"three"}' (type '<brace-enclosed initializer list>') to type 'const allocator_type& {aka const std::allocator<Element>&}'
+In file included from /usr/local/include/c++/4.9.2/vector:64:0,
+                 from main.cpp:4:
+/usr/local/include/c++/4.9.2/bits/stl_vector.h:318:7: note: std::vector<_Tp, _Alloc>::vector(const std::vector<_Tp, _Alloc>&) [with _Tp = Element; _Alloc = std::allocator<Element>]
+       vector(const vector& __x)
+       ^
+/usr/local/include/c++/4.9.2/bits/stl_vector.h:318:7: note:   candidate expects 1 argument, 9 provided
+/usr/local/include/c++/4.9.2/bits/stl_vector.h:303:7: note: std::vector<_Tp, _Alloc>::vector(std::vector<_Tp, _Alloc>::size_type, const value_type&, const allocator_type&) [with _Tp = Element; _Alloc = std::allocator<Element>; std::vector<_Tp, _Alloc>::size_type = long unsigned int; std::vector<_Tp, _Alloc>::value_type = Element; std::vector<_Tp, _Alloc>::allocator_type = std::allocator<Element>]
+       vector(size_type __n, const value_type& __value = value_type(),
+       ^
+/usr/local/include/c++/4.9.2/bits/stl_vector.h:303:7: note:   candidate expects 3 arguments, 9 provided
+/usr/local/include/c++/4.9.2/bits/stl_vector.h:264:7: note: std::vector<_Tp, _Alloc>::vector(const allocator_type&) [with _Tp = Element; _Alloc = std::allocator<Element>; std::vector<_Tp, _Alloc>::allocator_type = std::allocator<Element>]
+       vector(const allocator_type& __a) _GLIBCXX_NOEXCEPT
+       ^
+/usr/local/include/c++/4.9.2/bits/stl_vector.h:264:7: note:   candidate expects 1 argument, 9 provided
+/usr/local/include/c++/4.9.2/bits/stl_vector.h:253:7: note: std::vector<_Tp, _Alloc>::vector() [with _Tp = Element; _Alloc = std::allocator<Element>]
+       vector()
+       ^
+/usr/local/include/c++/4.9.2/bits/stl_vector.h:253:7: note:   candidate expects 0 arguments, 9 provided
+main.cpp:32:5: error: 'Set' was not declared in this scope
+     Set a;
+     ^
+main.cpp:33:9: warning: 'auto' changes meaning in C++11; please remove it [-Wc++0x-compat]
+     for(auto& v : va) a.insert(v);
+         ^
+main.cpp:33:15: error: ISO C++ forbids declaration of 'v' with no type [-fpermissive]
+     for(auto& v : va) a.insert(v);
+               ^
+main.cpp:33:19: error: range-based 'for' loops are not allowed in C++98 mode
+     for(auto& v : va) a.insert(v);
+                   ^
+main.cpp:33:23: error: 'a' was not declared in this scope
+     for(auto& v : va) a.insert(v);
+                       ^
+main.cpp:35:29: warning: extended initializer lists only available with -std=c++11 or -std=gnu++11
+     std::vector<Element> vb {{ "two"},{ "four"},{ "six"},{ "eight"}, {"ten"} };
+                             ^
+main.cpp:35:78: error: in C++98 'vb' must be initialized by constructor, not by '{...}'
+     std::vector<Element> vb {{ "two"},{ "four"},{ "six"},{ "eight"}, {"ten"} };
+                                                                              ^
+main.cpp: In substitution of 'template<class _InputIterator> std::vector<_Tp, _Alloc>::vector(_InputIterator, _InputIterator, const allocator_type&) [with _InputIterator = <missing>]':
+main.cpp:35:78:   required from here
+main.cpp:35:78: warning: extended initializer lists only available with -std=c++11 or -std=gnu++11
+main.cpp:35:78: error: no matching function for call to 'std::vector<Element>::vector(<brace-enclosed initializer list>)'
+main.cpp:35:78: note: candidates are:
+In file included from /usr/local/include/c++/4.9.2/vector:64:0,
+                 from main.cpp:4:
+/usr/local/include/c++/4.9.2/bits/stl_vector.h:407:9: note: template<class _InputIterator> std::vector<_Tp, _Alloc>::vector(_InputIterator, _InputIterator, const allocator_type&)
+         vector(_InputIterator __first, _InputIterator __last,
+         ^
+/usr/local/include/c++/4.9.2/bits/stl_vector.h:407:9: note:   template argument deduction/substitution failed:
+main.cpp:35:78: warning: extended initializer lists only available with -std=c++11 or -std=gnu++11
+     std::vector<Element> vb {{ "two"},{ "four"},{ "six"},{ "eight"}, {"ten"} };
+                                                                              ^
+main.cpp:35:78: note:   cannot convert '{"six"}' (type '<brace-enclosed initializer list>') to type 'const allocator_type& {aka const std::allocator<Element>&}'
+In file included from /usr/local/include/c++/4.9.2/vector:64:0,
+                 from main.cpp:4:
+/usr/local/include/c++/4.9.2/bits/stl_vector.h:318:7: note: std::vector<_Tp, _Alloc>::vector(const std::vector<_Tp, _Alloc>&) [with _Tp = Element; _Alloc = std::allocator<Element>]
+       vector(const vector& __x)
+       ^
+/usr/local/include/c++/4.9.2/bits/stl_vector.h:318:7: note:   candidate expects 1 argument, 5 provided
+/usr/local/include/c++/4.9.2/bits/stl_vector.h:303:7: note: std::vector<_Tp, _Alloc>::vector(std::vector<_Tp, _Alloc>::size_type, const value_type&, const allocator_type&) [with _Tp = Element; _Alloc = std::allocator<Element>; std::vector<_Tp, _Alloc>::size_type = long unsigned int; std::vector<_Tp, _Alloc>::value_type = Element; std::vector<_Tp, _Alloc>::allocator_type = std::allocator<Element>]
+       vector(size_type __n, const value_type& __value = value_type(),
+       ^
+/usr/local/include/c++/4.9.2/bits/stl_vector.h:303:7: note:   candidate expects 3 arguments, 5 provided
+/usr/local/include/c++/4.9.2/bits/stl_vector.h:264:7: note: std::vector<_Tp, _Alloc>::vector(const allocator_type&) [with _Tp = Element; _Alloc = std::allocator<Element>; std::vector<_Tp, _Alloc>::allocator_type = std::allocator<Element>]
+       vector(const allocator_type& __a) _GLIBCXX_NOEXCEPT
+       ^
+/usr/local/include/c++/4.9.2/bits/stl_vector.h:264:7: note:   candidate expects 1 argument, 5 provided
+/usr/local/include/c++/4.9.2/bits/stl_vector.h:253:7: note: std::vector<_Tp, _Alloc>::vector() [with _Tp = Element; _Alloc = std::allocator<Element>]
+       vector()
+       ^
+/usr/local/include/c++/4.9.2/bits/stl_vector.h:253:7: note:   candidate expects 0 arguments, 5 provided
+main.cpp:36:9: error: expected ';' before 'b'
+     Set b;
+         ^
+main.cpp:37:9: warning: 'auto' changes meaning in C++11; please remove it [-Wc++0x-compat]
+     for(auto& v : vb) b.insert(v);
+         ^
+main.cpp:37:15: error: ISO C++ forbids declaration of 'v' with no type [-fpermissive]
+     for(auto& v : vb) b.insert(v);
+               ^
+main.cpp:37:19: error: range-based 'for' loops are not allowed in C++98 mode
+     for(auto& v : vb) b.insert(v);
+                   ^
+main.cpp:37:23: error: 'b' was not declared in this scope
+     for(auto& v : vb) b.insert(v);
+                       ^
+In file included from /usr/local/include/boost/assert.hpp:54:0,
+                 from /usr/local/include/boost/intrusive/detail/assert.hpp:35,
+                 from /usr/local/include/boost/intrusive/rbtree_algorithms.hpp:35,
+                 from /usr/local/include/boost/intrusive/detail/rbtree_node.hpp:23,
+                 from /usr/local/include/boost/intrusive/set_hook.hpp:24,
+                 from /usr/local/include/boost/intrusive/rbtree.hpp:25,
+                 from /usr/local/include/boost/intrusive/set.hpp:24,
+                 from main.cpp:1:
+main.cpp:39:15: error: 'a' was not declared in this scope
+     assert(9==a.size());
+               ^
+main.cpp:40:15: error: 'b' was not declared in this scope
+     assert(5==b.size());
+               ^
