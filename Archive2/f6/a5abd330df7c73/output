@@ -1,0 +1,37 @@
+main.cpp: In instantiation of 'class JFunction<int>':
+main.cpp:28:20:   required from here
+main.cpp:12:9: error: no type named 'type' in 'struct std::enable_if<false, void>'
+     Ret operator()()
+         ^
+main.cpp: In instantiation of 'class JFunction<void>':
+main.cpp:29:21:   required from here
+main.cpp:18:9: error: no type named 'type' in 'struct std::enable_if<false, void>'
+     Ret operator()()
+         ^
+main.cpp: In function 'int main()':
+main.cpp:31:10: error: no match for call to '(JFunction<int>) ()'
+     fInt();
+          ^
+main.cpp:7:7: note: candidate is:
+ class JFunction
+       ^
+main.cpp:18:9: note: template<std::enable_if<true, void>::type* <anonymous> > Ret JFunction<Ret>::operator()() [with typename std::enable_if<(! std::is_void<_Tp>::value)>::type* <anonymous> = <enumerator>; Ret = int]
+     Ret operator()()
+         ^
+main.cpp:18:9: note:   template argument deduction/substitution failed:
+main.cpp:17:75: error: could not convert template argument '0' to 'std::enable_if<true, void>::type* {aka void*}'
+     template <typename std::enable_if<!std::is_void<Ret>::value>::type* = 0>
+                                                                           ^
+main.cpp:32:11: error: no match for call to '(JFunction<void>) ()'
+     fVoid();
+           ^
+main.cpp:7:7: note: candidate is:
+ class JFunction
+       ^
+main.cpp:12:9: note: template<std::enable_if<true, void>::type* <anonymous> > Ret JFunction<Ret>::operator()() [with typename std::enable_if<std::is_void<_Tp>::value>::type* <anonymous> = <enumerator>; Ret = void]
+     Ret operator()()
+         ^
+main.cpp:12:9: note:   template argument deduction/substitution failed:
+main.cpp:11:74: error: could not convert template argument '0' to 'std::enable_if<true, void>::type* {aka void*}'
+     template <typename std::enable_if<std::is_void<Ret>::value>::type* = 0>
+                                                                          ^
