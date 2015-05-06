@@ -1,0 +1,18 @@
++ clang++ -std=c++1y -stdlib=libc++ -Wall -pedantic main.cpp -pthread -lcxxrt -ldl
++ ./a.out
+i 6
+d 6
+NSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEE Hello World!
+NSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEE Hello World!
++ clang++ -std=c++1y -Wall -pedantic main.cpp -pthread -lcxxrt -ldl
++ ./a.out
+i 6
+d 6
+Ss Hello World!
+Ss Hello World!
++ g++ -std=c++1y -Wall -pedantic main.cpp -pthread
++ ./a.out
+i 6
+d 6
+Ss Hello World!
+Ss Hello World!
