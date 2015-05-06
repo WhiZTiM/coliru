@@ -1,0 +1,1 @@
+clang++ -std=c++14 -stdlib=libc++ -O2 -Wall -pedantic -pthread main.cpp && timeout 3 ./a.out || echo "Program timed out."
