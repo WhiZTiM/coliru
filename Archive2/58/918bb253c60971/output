@@ -1,0 +1,10 @@
+rv
+S::S()
+S::S(const S&)
+S::~S()
+S::~S()
+rvm
+S::S()
+S::S(S&&)
+S::~S()
+S::~S()
