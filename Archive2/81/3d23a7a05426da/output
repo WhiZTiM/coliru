@@ -1,0 +1,7 @@
+main.cpp:2:19: error: type name does not allow function specifier to be specified
+    using T = int virtual();
+                  ^
+main.cpp:3:7: error: 'f' is not virtual and cannot be declared pure
+    T f = 0;
+      ^   ~
+2 errors generated.
