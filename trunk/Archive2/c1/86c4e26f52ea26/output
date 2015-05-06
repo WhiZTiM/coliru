@@ -1,0 +1,3 @@
+With std::to_string: 42
+Without std::to_string
+With std::to_string: Y
