@@ -1,0 +1,11 @@
+main.cpp: In function 'int main()':
+main.cpp:30:18: error: call of overloaded 'bar()' is ambiguous
+     Foo().bar<A>();
+                  ^
+main.cpp:30:18: note: candidates are:
+main.cpp:13:6: note: void Foo::bar() [with Args = {A}]
+ void Foo::bar()
+      ^
+main.cpp:19:6: note: void Foo::bar() [with T1 = A]
+ void Foo::bar()
+      ^
