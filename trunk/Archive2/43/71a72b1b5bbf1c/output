@@ -1,0 +1,128 @@
+main.cpp: In function 'int main()':
+main.cpp:2:5: error: 'OpenMultiMethod' was not declared in this scope
+     OpenMultiMethod<int> test;
+     ^
+main.cpp:2:21: error: expected primary-expression before 'int'
+     OpenMultiMethod<int> test;
+                     ^
+main.cpp:3:5: error: 'test' was not declared in this scope
+     test.add_overload([](int a) {
+     ^
+main.cpp: In lambda function:
+main.cpp:4:9: error: 'cout' is not a member of 'std'
+         std::cout << "with int\n";
+         ^
+main.cpp: In lambda function:
+main.cpp:8:9: error: 'cout' is not a member of 'std'
+         std::cout << "with double\n";
+         ^
+main.cpp: In function 'int main()':
+main.cpp:11:26: error: 'Parent' has not been declared
+     test.add_overload([](Parent& p) {
+                          ^
+main.cpp: In lambda function:
+main.cpp:12:9: error: 'cout' is not a member of 'std'
+         std::cout << "with Parent&\n";
+         ^
+main.cpp: In function 'int main()':
+main.cpp:15:26: error: 'ChildA' has not been declared
+     test.add_overload([](ChildA& a) {
+                          ^
+main.cpp: In lambda function:
+main.cpp:16:9: error: 'cout' is not a member of 'std'
+         std::cout << "with ChildA&\n";
+         ^
+main.cpp: In function 'int main()':
+main.cpp:19:26: error: 'ChildB' has not been declared
+     test.add_overload([](ChildB& a) {
+                          ^
+main.cpp: In lambda function:
+main.cpp:20:9: error: 'cout' is not a member of 'std'
+         std::cout << "with ChildB&\n";
+         ^
+main.cpp: In function 'int main()':
+main.cpp:27:31: error: 'std::unique_ptr' has not been declared
+     test.add_overload([](std::unique_ptr<int>&& refref) {
+                               ^
+main.cpp:27:41: error: expected ',' or '...' before '<' token
+     test.add_overload([](std::unique_ptr<int>&& refref) {
+                                         ^
+main.cpp:30:20: error: 'qualified_signature_for' was not declared in this scope
+     for(auto sig : qualified_signature_for<decltype(foo)>()) {
+                    ^
+main.cpp:30:53: error: 'foo' was not declared in this scope
+     for(auto sig : qualified_signature_for<decltype(foo)>()) {
+                                                     ^
+main.cpp:30:44: error: expected primary-expression before 'decltype'
+     for(auto sig : qualified_signature_for<decltype(foo)>()) {
+                                            ^
+main.cpp:30:44: error: expected ')' before 'decltype'
+main.cpp:30:57: error: expected unqualified-id before '>' token
+     for(auto sig : qualified_signature_for<decltype(foo)>()) {
+                                                         ^
+main.cpp:33:5: error: 'cout' is not a member of 'std'
+     std::cout << "============\n";
+     ^
+main.cpp:34:5: error: 'Parent' was not declared in this scope
+     Parent p;
+     ^
+main.cpp:35:5: error: 'ChildA' was not declared in this scope
+     ChildA a;
+     ^
+main.cpp:36:5: error: 'ChildB' was not declared in this scope
+     ChildB b;
+     ^
+main.cpp:37:13: error: 'pr' was not declared in this scope
+     Parent& pr = p;
+             ^
+main.cpp:37:18: error: 'p' was not declared in this scope
+     Parent& pr = p;
+                  ^
+main.cpp:38:13: error: 'ar' was not declared in this scope
+     Parent& ar = a;
+             ^
+main.cpp:38:18: error: 'a' was not declared in this scope
+     Parent& ar = a;
+                  ^
+main.cpp:39:13: error: 'br' was not declared in this scope
+     Parent& br = b;
+             ^
+main.cpp:39:18: error: 'b' was not declared in this scope
+     Parent& br = b;
+                  ^
+main.cpp:40:11: error: 'Parent' does not name a type
+     const Parent& pcr = p;
+           ^
+main.cpp:41:11: error: 'Parent' does not name a type
+     const Parent& acr = a;
+           ^
+main.cpp:42:11: error: 'Parent' does not name a type
+     const Parent& bcr = b;
+           ^
+main.cpp:43:14: error: 'Parent' does not name a type
+     volatile Parent& pvr = p;
+              ^
+main.cpp:44:14: error: 'Parent' does not name a type
+     volatile Parent& avr = a;
+              ^
+main.cpp:45:14: error: 'Parent' does not name a type
+     volatile Parent& bvr = b;
+              ^
+main.cpp:46:20: error: 'Parent' does not name a type
+     const volatile Parent& pcvr = p;
+                    ^
+main.cpp:47:20: error: 'Parent' does not name a type
+     const volatile Parent& bcvr = a;
+                    ^
+main.cpp:48:20: error: 'Parent' does not name a type
+     const volatile Parent& acvr = b;
+                    ^
+main.cpp:54:10: error: 'pcr' was not declared in this scope
+     test(pcr);
+          ^
+main.cpp:55:10: error: 'acr' was not declared in this scope
+     test(acr);
+          ^
+main.cpp:56:10: error: 'bcr' was not declared in this scope
+     test(bcr);/*
+          ^
