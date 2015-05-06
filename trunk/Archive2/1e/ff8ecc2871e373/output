@@ -1,0 +1,18 @@
+g++
+main.cpp:11:6: error: prototype for 'auto C::f() const' does not match any in class 'C'
+ auto C::f() const { return value; }
+      ^
+main.cpp:6:9: error: candidate is: int C::f() const
+     int f() const;
+         ^
+clang++
+main.cpp:11:9: error: return type of out-of-line definition of 'C::f' differs from that in the declaration
+auto C::f() const { return value; }
+~~~~    ^
+main.cpp:6:9: note: previous declaration is here
+    int f() const;
+    ~~~ ^
+main.cpp:11:28: error: cannot initialize return object of type 'auto' with an lvalue of type 'const int'
+auto C::f() const { return value; }
+                           ^~~~~
+2 errors generated.
