@@ -1,0 +1,99 @@
+<start>
+  <try>Sarai    :    52.731</try>
+  <query>
+    <try>Sarai    :    52.731</try>
+    <pair>
+      <try>Sarai    :    52.731</try>
+      <key>
+        <try>Sarai    :    52.731</try>
+        <success>:    52.731199473801</success>
+        <attributes>[[S, a, r, a, i]]</attributes>
+      </key>
+      <value>
+        <try>    52.731199473801\n</try>
+        <success>\nJamiya   :    Jelly</success>
+        <attributes>[52.7312]</attributes>
+      </value>
+      <success>Jamiya   :    Jelly </success>
+      <attributes>[[[S, a, r, a, i], 52.7312]]</attributes>
+    </pair>
+    <pair>
+      <try>Jamiya   :    Jelly </try>
+      <key>
+        <try>Jamiya   :    Jelly </try>
+        <success>:    Jelly Drop\nClar</success>
+        <attributes>[[J, a, m, i, y, a]]</attributes>
+      </key>
+      <value>
+        <try>    Jelly Drop\nClara</try>
+        <success>\nClara    :    -92.4</success>
+        <attributes>[[J, e, l, l, y,  , D, r, o, p]]</attributes>
+      </value>
+      <success>Clara    :    -92.40</success>
+      <attributes>[[[J, a, m, i, y, a], [J, e, l, l, y,  , D, r, o, p]]]</attributes>
+    </pair>
+    <pair>
+      <try>Clara    :    -92.40</try>
+      <key>
+        <try>Clara    :    -92.40</try>
+        <success>:    -92.40860586988</success>
+        <attributes>[[C, l, a, r, a]]</attributes>
+      </key>
+      <value>
+        <try>    -92.408605869885</try>
+        <success>\nJanelle  :    13234</success>
+        <attributes>[-92.4086]</attributes>
+      </value>
+      <success>Janelle  :    132349</success>
+      <attributes>[[[C, l, a, r, a], -92.4086]]</attributes>
+    </pair>
+    <pair>
+      <try>Janelle  :    132349</try>
+      <key>
+        <try>Janelle  :    132349</try>
+        <success>:    132349223\nBrile</success>
+        <attributes>[[J, a, n, e, l, l, e]]</attributes>
+      </key>
+      <value>
+        <try>    132349223\nBriley</try>
+        <success>\nBriley   :    -40.9</success>
+        <attributes>[132349223]</attributes>
+      </value>
+      <success>Briley   :    -40.90</success>
+      <attributes>[[[J, a, n, e, l, l, e], 132349223]]</attributes>
+    </pair>
+    <pair>
+      <try>Briley   :    -40.90</try>
+      <key>
+        <try>Briley   :    -40.90</try>
+        <success>:    -40.90535249560</success>
+        <attributes>[[B, r, i, l, e, y]]</attributes>
+      </key>
+      <value>
+        <try>    -40.905352495602</try>
+        <success>\n</success>
+        <attributes>[-40.9054]</attributes>
+      </value>
+      <success></success>
+      <attributes>[[[B, r, i, l, e, y], -40.9054]]</attributes>
+    </pair>
+    <pair>
+      <try></try>
+      <key>
+        <try></try>
+        <fail/>
+      </key>
+      <fail/>
+    </pair>
+    <success></success>
+    <attributes>[[[[B, r, i, l, e, y], -40.9054], [[C, l, a, r, a], -92.4086], [[J, a, m, i, y, a], [J, e, l, l, y,  , D, r, o, p]], [[J, a, n, e, l, l, e], 132349223], [[S, a, r, a, i], 52.7312]]]</attributes>
+  </query>
+  <success></success>
+  <attributes>[[[[B, r, i, l, e, y], -40.9054], [[C, l, a, r, a], -92.4086], [[J, a, m, i, y, a], [J, e, l, l, y,  , D, r, o, p]], [[J, a, n, e, l, l, e], 132349223], [[S, a, r, a, i], 52.7312]]]</attributes>
+</start>
+Parse succeeded:
+	'Briley'	-> -40.9054
+	'Clara'	-> -92.4086
+	'Jamiya'	-> Jelly Drop
+	'Janelle'	-> 132349223
+	'Sarai'	-> 52.7312
