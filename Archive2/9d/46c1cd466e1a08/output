@@ -1,0 +1,21 @@
+main.cpp: In function 'int main()':
+main.cpp:12:35: error: no matching function for call to 'async(std::_Bind<main()::<lambda(std::string&&)>(std::basic_string<char>)>&)'
+     auto future = std::async(bound);
+                                   ^
+main.cpp:12:35: note: candidates are:
+In file included from main.cpp:3:0:
+/usr/local/include/c++/4.9.2/future:1574:5: note: template<class _Fn, class ... _Args> std::future<typename std::result_of<_Functor(_ArgTypes ...)>::type> std::async(std::launch, _Fn&&, _Args&& ...)
+     async(launch __policy, _Fn&& __fn, _Args&&... __args)
+     ^
+/usr/local/include/c++/4.9.2/future:1574:5: note:   template argument deduction/substitution failed:
+main.cpp:12:35: note:   cannot convert 'bound' (type 'std::_Bind<main()::<lambda(std::string&&)>(std::basic_string<char>)>') to type 'std::launch'
+     auto future = std::async(bound);
+                                   ^
+In file included from main.cpp:3:0:
+/usr/local/include/c++/4.9.2/future:1594:5: note: template<class _Fn, class ... _Args> std::future<typename std::result_of<_Functor(_ArgTypes ...)>::type> std::async(_Fn&&, _Args&& ...)
+     async(_Fn&& __fn, _Args&&... __args)
+     ^
+/usr/local/include/c++/4.9.2/future:1594:5: note:   template argument deduction/substitution failed:
+/usr/local/include/c++/4.9.2/future: In substitution of 'template<class _Fn, class ... _Args> std::future<typename std::result_of<_Functor(_ArgTypes ...)>::type> std::async(_Fn&&, _Args&& ...) [with _Fn = std::_Bind<main()::<lambda(std::string&&)>(std::basic_string<char>)>&; _Args = {}]':
+main.cpp:12:35:   required from here
+/usr/local/include/c++/4.9.2/future:1594:5: error: no type named 'type' in 'class std::result_of<std::_Bind<main()::<lambda(std::string&&)>(std::basic_string<char>)>&()>'
