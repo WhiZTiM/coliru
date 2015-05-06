@@ -1,0 +1,8 @@
+t2 is waiting
+t1 is waiting
+t3 is waiting
+notify_all 1
+notify_all 2
+notify_all 3
+t2 woke up
+Program timed out.
