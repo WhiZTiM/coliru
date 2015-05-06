@@ -1,0 +1,7 @@
+main.cpp: In function 'int main()':
+main.cpp:276:9: error: 'allocatator' was not declared in this scope
+         allocatator.deallocate(n2, 2);
+         ^
+main.cpp:283:9: error: 'allocatator' was not declared in this scope
+         allocatator.deallocate(n3, 3);
+         ^
