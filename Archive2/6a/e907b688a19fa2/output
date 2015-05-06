@@ -1,0 +1,87 @@
+main.cpp: In function 'int main()':
+main.cpp:12:11: error: no match for call to '(std::_Bind<main()::<lambda(std::string&&)>(std::basic_string<char>)>) ()'
+     bound();
+           ^
+In file included from main.cpp:2:0:
+/usr/local/include/c++/4.9.2/functional:1248:11: note: candidates are:
+     class _Bind<_Functor(_Bound_args...)>
+           ^
+/usr/local/include/c++/4.9.2/functional:1319:2: note: template<class ... _Args, class _Result> _Result std::_Bind<_Functor(_Bound_args ...)>::operator()(_Args&& ...) [with _Args = {_Args ...}; _Result = _Result; _Functor = main()::<lambda(std::string&&)>; _Bound_args = {std::basic_string<char, std::char_traits<char>, std::allocator<char> >}]
+  operator()(_Args&&... __args)
+  ^
+/usr/local/include/c++/4.9.2/functional:1319:2: note:   template argument deduction/substitution failed:
+/usr/local/include/c++/4.9.2/functional:1315:37: error: no match for call to '(main()::<lambda(std::string&&)>) (std::basic_string<char>&)'
+  = decltype( std::declval<_Functor>()(
+                                     ^
+main.cpp:8:20: note: candidates are:
+     auto lambda = [] (std::string&& message) {
+                    ^
+In file included from main.cpp:2:0:
+/usr/local/include/c++/4.9.2/functional:1315:37: note: void (*)(std::string&&) {aka void (*)(std::basic_string<char>&&)} <conversion>
+  = decltype( std::declval<_Functor>()(
+                                     ^
+/usr/local/include/c++/4.9.2/functional:1315:37: note:   no known conversion for argument 2 from 'std::basic_string<char>' to 'std::string&& {aka std::basic_string<char>&&}'
+main.cpp:8:44: note: main()::<lambda(std::string&&)> <near match>
+     auto lambda = [] (std::string&& message) {
+                                            ^
+main.cpp:8:44: note:   no known conversion for argument 1 from 'std::basic_string<char>' to 'std::string&& {aka std::basic_string<char>&&}'
+In file included from main.cpp:2:0:
+/usr/local/include/c++/4.9.2/functional:1333:2: note: template<class ... _Args, class _Result> _Result std::_Bind<_Functor(_Bound_args ...)>::operator()(_Args&& ...) const [with _Args = {_Args ...}; _Result = _Result; _Functor = main()::<lambda(std::string&&)>; _Bound_args = {std::basic_string<char, std::char_traits<char>, std::allocator<char> >}]
+  operator()(_Args&&... __args) const
+  ^
+/usr/local/include/c++/4.9.2/functional:1333:2: note:   template argument deduction/substitution failed:
+/usr/local/include/c++/4.9.2/functional:1329:53: error: no match for call to '(const main()::<lambda(std::string&&)>) (const std::basic_string<char>&)'
+          typename add_const<_Functor>::type>::type>()(
+                                                     ^
+main.cpp:8:20: note: candidates are:
+     auto lambda = [] (std::string&& message) {
+                    ^
+In file included from main.cpp:2:0:
+/usr/local/include/c++/4.9.2/functional:1329:53: note: void (*)(std::string&&) {aka void (*)(std::basic_string<char>&&)} <conversion>
+          typename add_const<_Functor>::type>::type>()(
+                                                     ^
+/usr/local/include/c++/4.9.2/functional:1329:53: note:   candidate expects 2 arguments, 2 provided
+main.cpp:8:44: note: main()::<lambda(std::string&&)>
+     auto lambda = [] (std::string&& message) {
+                                            ^
+main.cpp:8:44: note:   no known conversion for argument 1 from 'const std::basic_string<char>' to 'std::string&& {aka std::basic_string<char>&&}'
+In file included from main.cpp:2:0:
+/usr/local/include/c++/4.9.2/functional:1347:2: note: template<class ... _Args, class _Result> _Result std::_Bind<_Functor(_Bound_args ...)>::operator()(_Args&& ...) volatile [with _Args = {_Args ...}; _Result = _Result; _Functor = main()::<lambda(std::string&&)>; _Bound_args = {std::basic_string<char, std::char_traits<char>, std::allocator<char> >}]
+  operator()(_Args&&... __args) volatile
+  ^
+/usr/local/include/c++/4.9.2/functional:1347:2: note:   template argument deduction/substitution failed:
+/usr/local/include/c++/4.9.2/functional:1343:70: error: no match for call to '(volatile main()::<lambda(std::string&&)>) (volatile std::basic_string<char>&)'
+                        typename add_volatile<_Functor>::type>::type>()(
+                                                                      ^
+main.cpp:8:20: note: candidates are:
+     auto lambda = [] (std::string&& message) {
+                    ^
+In file included from main.cpp:2:0:
+/usr/local/include/c++/4.9.2/functional:1343:70: note: void (*)(std::string&&) {aka void (*)(std::basic_string<char>&&)} <conversion>
+                        typename add_volatile<_Functor>::type>::type>()(
+                                                                      ^
+/usr/local/include/c++/4.9.2/functional:1343:70: note:   candidate expects 1 argument, 2 provided
+main.cpp:8:44: note: main()::<lambda(std::string&&)>
+     auto lambda = [] (std::string&& message) {
+                                            ^
+main.cpp:8:44: note:   no known conversion for argument 1 from 'volatile std::basic_string<char>' to 'std::string&& {aka std::basic_string<char>&&}'
+In file included from main.cpp:2:0:
+/usr/local/include/c++/4.9.2/functional:1361:2: note: template<class ... _Args, class _Result> _Result std::_Bind<_Functor(_Bound_args ...)>::operator()(_Args&& ...) const volatile [with _Args = {_Args ...}; _Result = _Result; _Functor = main()::<lambda(std::string&&)>; _Bound_args = {std::basic_string<char, std::char_traits<char>, std::allocator<char> >}]
+  operator()(_Args&&... __args) const volatile
+  ^
+/usr/local/include/c++/4.9.2/functional:1361:2: note:   template argument deduction/substitution failed:
+/usr/local/include/c++/4.9.2/functional:1357:64: error: no match for call to '(const volatile main()::<lambda(std::string&&)>) (const volatile std::basic_string<char>&)'
+                        typename add_cv<_Functor>::type>::type>()(
+                                                                ^
+main.cpp:8:20: note: candidates are:
+     auto lambda = [] (std::string&& message) {
+                    ^
+In file included from main.cpp:2:0:
+/usr/local/include/c++/4.9.2/functional:1357:64: note: void (*)(std::string&&) {aka void (*)(std::basic_string<char>&&)} <conversion>
+                        typename add_cv<_Functor>::type>::type>()(
+                                                                ^
+/usr/local/include/c++/4.9.2/functional:1357:64: note:   candidate expects 1 argument, 2 provided
+main.cpp:8:44: note: main()::<lambda(std::string&&)>
+     auto lambda = [] (std::string&& message) {
+                                            ^
+main.cpp:8:44: note:   no known conversion for argument 1 from 'const volatile std::basic_string<char>' to 'std::string&& {aka std::basic_string<char>&&}'
