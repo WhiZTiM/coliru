@@ -1,0 +1,6 @@
+main.cpp:7:10: warning: unused variable 'pint' [-Wunused-variable]
+    int* pint = nullptr;
+         ^
+1 warning generated.
+42
+314159
