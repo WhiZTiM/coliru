@@ -1,0 +1,6 @@
+main.cpp: In member function 'typename std::enable_if<(! std::is_void<T>::value), T>::type JFunction<Ret>::operator()() [with T = int; Ret = int; typename std::enable_if<(! std::is_void<T>::value), T>::type = int]':
+main.cpp:24:16: warning: 'result' is used uninitialized in this function [-Wuninitialized]
+         return result;
+                ^
+Returning.
+Not returning.
