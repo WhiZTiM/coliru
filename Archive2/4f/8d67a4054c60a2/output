@@ -1,0 +1,12 @@
+In file included from main.cpp:2:0:
+/usr/local/include/c++/4.9.2/functional: In instantiation of 'struct std::_Bind_simple<print(T&&) [with T = std::basic_string<char>&]::<lambda(std::basic_string<char>&)>(std::basic_string<char>)>':
+/usr/local/include/c++/4.9.2/future:1581:70:   required from 'std::future<typename std::result_of<_Functor(_ArgTypes ...)>::type> std::async(std::launch, _Fn&&, _Args&& ...) [with _Fn = print(T&&) [with T = std::basic_string<char>&]::<lambda(std::basic_string<char>&)>; _Args = {std::basic_string<char, std::char_traits<char>, std::allocator<char> >&}; typename std::result_of<_Functor(_ArgTypes ...)>::type = void]'
+/usr/local/include/c++/4.9.2/future:1597:36:   required from 'std::future<typename std::result_of<_Functor(_ArgTypes ...)>::type> std::async(_Fn&&, _Args&& ...) [with _Fn = print(T&&) [with T = std::basic_string<char>&]::<lambda(std::basic_string<char>&)>; _Args = {std::basic_string<char, std::char_traits<char>, std::allocator<char> >&}; typename std::result_of<_Functor(_ArgTypes ...)>::type = void]'
+main.cpp:11:26:   required from 'std::future<void> print(T&&) [with T = std::basic_string<char>&]'
+main.cpp:16:26:   required from here
+/usr/local/include/c++/4.9.2/functional:1665:61: error: no type named 'type' in 'class std::result_of<print(T&&) [with T = std::basic_string<char>&]::<lambda(std::basic_string<char>&)>(std::basic_string<char>)>'
+       typedef typename result_of<_Callable(_Args...)>::type result_type;
+                                                             ^
+/usr/local/include/c++/4.9.2/functional:1695:9: error: no type named 'type' in 'class std::result_of<print(T&&) [with T = std::basic_string<char>&]::<lambda(std::basic_string<char>&)>(std::basic_string<char>)>'
+         _M_invoke(_Index_tuple<_Indices...>)
+         ^
