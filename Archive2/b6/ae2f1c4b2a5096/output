@@ -1,0 +1,7 @@
+copy ctor is called
+copy ctor is called
+copy ctor is called
+copy ctor is called
+copy ctor is called
+count_copy: 5
+2 3 4 5 
