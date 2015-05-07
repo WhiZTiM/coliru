@@ -1,0 +1,3 @@
+g++ -std=c++11 -O3 -Wall -pthread -pedantic main.cpp && ./a.out <<JSON
+{"user": {"userID": "5C118C8D-AA65-49C0-B907-348DE87D6665","dateProperty": "05-06-2015"},"challenges": [{"question#1": "answer","value": 5},{"question": "answer","value": 5},{"question": "answer","value": 5},{"question": "answer","value": 5},{"question": "answer","value": 5},{"question": "answer","value": 5},{"question": "answer","value": 5},{"question": "answer","value": 5},{"question": "answer","value": 5},{"question": "answer","value": 5}]}
+JSON
