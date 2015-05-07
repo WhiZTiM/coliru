@@ -1,0 +1,1 @@
+g++ -x c++ -std=c++14 -DNDEBUG -O3 -Wall -Wextra -Wno-unused-variable -pthread main.cpp -o main && ./main main.cpp
