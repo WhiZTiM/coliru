@@ -1,0 +1,7 @@
+main.cpp:85:18: error: no matching function for call to 'call'
+    std::cout << call(c, 3.) << "\n";
+                 ^~~~
+main.cpp:51:50: note: candidate template ignored: substitution failure [with Callable = Cube]: no type named 'return_type' in 'return_type_info<Cube, void>'
+typename return_type_info<Callable>::return_type call(Callable f, double x) {
+                                     ~~~~~~~~~~~ ^
+1 error generated.
