@@ -1,0 +1,7 @@
+main.cpp:2:9: error: #include expects "FILENAME" or <FILENAME>
+ #include
+         ^
+main.cpp: In constructor 'FlagNth::FlagNth(size_t)':
+main.cpp:6:27: error: class 'FlagNth' does not have any field named 'current'
+     FlagNth( size_t n ) : current( 0 ), n_( n ) {}
+                           ^
