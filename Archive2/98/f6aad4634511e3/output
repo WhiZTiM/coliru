@@ -1,0 +1,9 @@
++ clang++ --std=gnu++11 main.cpp
+main.cpp:12:18: error: must use 'class' tag to refer to type 'Scan' in this scope
+    void Foo() { Scan scan; };
+                 ^
+                 class 
+main.cpp:10:10: note: class 'Scan' is hidden by a non-type declaration of 'Scan' here
+    void Scan();
+         ^
+1 error generated.
