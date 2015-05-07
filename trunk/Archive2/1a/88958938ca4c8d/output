@@ -1,0 +1,7 @@
+main.cpp:8:7: error: variable type 'D' is an abstract class
+    D d;
+      ^
+main.cpp:2:18: note: unimplemented pure virtual method 'f' in 'D'
+    virtual void f() = 0;
+                 ^
+1 error generated.
