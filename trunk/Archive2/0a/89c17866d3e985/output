@@ -1,0 +1,6 @@
+main.cpp:4:9: error: declaration of 'foo bar::foo' [-fpermissive]
+     foo foo;
+         ^
+main.cpp:1:12: error: changes meaning of 'foo' from 'enum class foo' [-fpermissive]
+ enum class foo { };
+            ^
