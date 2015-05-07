@@ -1,0 +1,5 @@
+total 700
+866950   4 drwxrwxrwx 2 2001 2000   4096 May  7 18:23 .
+733892 680 drwxrwxrwx 3 2001 2000 692224 May  7 18:23 ..
+866975  12 -rwxr-xr-x 1 2001 2000   8299 May  7 18:23 a.out
+866951   4 -rw-rw-rw- 1 2001 2000    250 May  7 18:23 main.cpp
