@@ -1,0 +1,11 @@
+main.cpp: In function 'int main()':
+main.cpp:24:5: error: ambiguous overload for 'operator++' (operand type is 'A')
+     ++a;
+     ^
+main.cpp:24:5: note: candidates are:
+main.cpp:8:8: note: A& A::operator++()
+     A& operator++() { cout << 2 << endl; return *this; }
+        ^
+main.cpp:15:4: note: A& operator++(A&)
+ A& operator++(A& a) { cout << 6 << endl; return a; }
+    ^
