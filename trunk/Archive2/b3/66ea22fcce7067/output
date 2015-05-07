@@ -1,0 +1,37 @@
+main.cpp:157:16: warning: 'AbstractTree::remove' hides overloaded virtual function [-Woverloaded-virtual]
+  virtual bool remove(Iterator *iter, int leaf_only) = 0;
+               ^
+main.cpp:103:16: note: hidden overloaded virtual function 'Container::remove' declared here: different number of parameters (1 vs 2)
+  virtual void remove(Iterator *iter) = 0;
+               ^
+main.cpp:172:34: warning: field 'parrent' will be initialized after field 'color' [-Wreorder]
+      : left(NULL), right(NULL), parrent(NULL), color(RED), data(data){};
+                                 ^
+main.cpp:172:49: warning: field 'color' will be initialized after field 'data' [-Wreorder]
+      : left(NULL), right(NULL), parrent(NULL), color(RED), data(data){};
+                                                ^
+main.cpp:199:10: warning: 'RBtree::Iterator::equals' hides overloaded virtual function [-Woverloaded-virtual]
+    bool equals(Iterator *right);   // done!
+         ^
+main.cpp:49:18: note: hidden overloaded virtual function 'Container::Iterator::equals' declared here: type mismatch at 1st parameter ('Container::Iterator *' vs 'RBtree::Iterator *')
+    virtual bool equals(Iterator *right) = 0;
+                 ^
+main.cpp:243:8: warning: 'RBtree::remove' hides overloaded virtual function [-Woverloaded-virtual]
+  void remove(Iterator *iter){};
+       ^
+main.cpp:157:16: note: hidden overloaded virtual function 'AbstractTree::remove' declared here: different number of parameters (2 vs 1)
+  virtual bool remove(Iterator *iter, int leaf_only) = 0;
+               ^
+main.cpp:245:7: warning: 'RBtree::insert' hides overloaded virtual function [-Woverloaded-virtual]
+  int insert(Iterator *iter, int child_index, void *elem, size_t size);
+      ^
+main.cpp:149:15: note: hidden overloaded virtual function 'AbstractTree::insert' declared here: type mismatch at 1st parameter ('AbstractTree::Iterator *' vs 'RBtree::Iterator *')
+  virtual int insert(Iterator *iter, int child_index, void *elem,
+              ^
+main.cpp:246:8: warning: 'RBtree::remove' hides overloaded virtual function [-Woverloaded-virtual]
+  bool remove(Iterator *iter, int leaf_only);
+       ^
+main.cpp:157:16: note: hidden overloaded virtual function 'AbstractTree::remove' declared here: type mismatch at 1st parameter ('AbstractTree::Iterator *' vs 'RBtree::Iterator *')
+  virtual bool remove(Iterator *iter, int leaf_only) = 0;
+               ^
+7 warnings generated.
