@@ -1,0 +1,35 @@
+main.cpp:3:38: error: 'java' has not been declared
+         struct ExampleClass : public java::lang::Object {
+                                      ^
+main.cpp:3:50: error: expected '{' before 'Object'
+         struct ExampleClass : public java::lang::Object {
+                                                  ^
+main.cpp:3:57: error: invalid type in declaration before '{' token
+         struct ExampleClass : public java::lang::Object {
+                                                         ^
+main.cpp:4:13: error: expected primary-expression before 'static'
+             static constexpr const char* signature = "LExampleClass";
+             ^
+main.cpp:4:13: error: expected '}' before 'static'
+main.cpp:4:13: error: expected ',' or ';' before 'static'
+main.cpp:6:13: error: 'Method' does not name a type
+             Method<void()> speak = m<void>("speak", "()V");
+             ^
+main.cpp:7:13: error: 'Method' does not name a type
+             Method<Int()> bar = m<Int>("bar", "()I");
+             ^
+main.cpp:8:13: error: 'Method' does not name a type
+             Method<java::lang::String()> qux = m<java::lang::String>("qux", "()Ljava/lang/String;");
+             ^
+main.cpp:9:13: error: 'Method' does not name a type
+             Method<ExampleClass()> get_self = m<ExampleClass>("get_self", "()LExampleClass;");
+             ^
+main.cpp:11:32: error: expected ')' before '*' token
+             ExampleClass(JNIEnv* env, jobject obj) : Object(env, obj) {
+                                ^
+main.cpp:13:10: warning: extra ';' [-Wpedantic]
+         };
+          ^
+main.cpp:15:1: error: expected declaration before '}' token
+ }
+ ^
