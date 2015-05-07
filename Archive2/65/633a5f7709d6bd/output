@@ -1,0 +1,5 @@
+main.cpp: In instantiation of 'void func(RandomAccessIter&) [with RandomAccessIter = __gnu_cxx::__normal_iterator<int*, std::vector<int> >]':
+main.cpp:23:15:   required from here
+main.cpp:12:5: error: static assertion failed: Not the fucking same.
+     static_assert(
+     ^
