@@ -1,0 +1,4 @@
+main.cpp:17:5: warning: expression result unused [-Wunused-value]
+    d;
+    ^
+1 warning generated.
