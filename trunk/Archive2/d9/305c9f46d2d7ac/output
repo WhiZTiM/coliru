@@ -1,0 +1,68 @@
+
+impl_test(int, int, int, int):
+	lea	eax, [rdi+rsi]
+	add	eax, edx
+	add	eax, ecx
+	ret
+
+impl_test(std::array<int, 4ul>):
+	mov	rax, rdi
+	sar	rax, 32
+	add	eax, edi
+	add	eax, esi
+	sar	rsi, 32
+	add	eax, esi
+	ret
+
+impl_test(abcd):
+	mov	rax, rdi
+	sar	rax, 32
+	add	eax, edi
+	add	eax, esi
+	sar	rsi, 32
+	add	eax, esi
+	ret
+
+impl_test(std::tuple<int, int, int, int>):
+	mov	eax, DWORD PTR [rdi+8]
+	add	eax, DWORD PTR [rdi+12]
+	add	eax, DWORD PTR [rdi+4]
+	add	eax, DWORD PTR [rdi]
+	ret
+
+main:
+	push	rbp
+	push	rbx
+	mov	ecx, 4
+	mov	edx, 3
+	movabs	rbp, 8589934592
+	mov	esi, 2
+	sub	rsp, 24
+	mov	edi, 1
+	movabs	rbx, 17179869184
+	call	int test<int, int, int, int>(int, int, int, int)
+
+	mov	rdi, rbp
+	mov	rsi, rbx
+	or	rbx, 3
+	or	rdi, 1
+	or	rsi, 3
+	call	int test<std::array<int, 4ul> >(std::array<int, 4ul>)
+
+	mov	rdi, rbp
+	mov	rsi, rbx
+	or	rdi, 1
+	call	int test<abcd>(abcd)
+
+	mov	rdi, rsp
+	mov	DWORD PTR [rsp], 4
+	mov	DWORD PTR [rsp+4], 3
+	mov	DWORD PTR [rsp+8], 2
+	mov	DWORD PTR [rsp+12], 1
+	call	int test<std::tuple<int, int, int, int> >(std::tuple<int, int, int, int>)
+
+	add	rsp, 24
+	xor	eax, eax
+	pop	rbx
+	pop	rbp
+	ret
