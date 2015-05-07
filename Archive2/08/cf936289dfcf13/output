@@ -1,0 +1,4 @@
+/usr/bin/ld: /tmp/ccaLfovm.o: undefined reference to symbol 'shm_open@@GLIBC_2.2.5'
+/usr/bin/ld: note: 'shm_open@@GLIBC_2.2.5' is defined in DSO /lib/x86_64-linux-gnu/librt.so.1 so try adding it to the linker command line
+/lib/x86_64-linux-gnu/librt.so.1: could not read symbols: Invalid operation
+collect2: error: ld returned 1 exit status
