@@ -1,0 +1,4 @@
+main.cpp: In function 'int main()':
+main.cpp:13:17: error: invalid initialization of non-const reference of type 'A&' from an rvalue of type 'A'
+     A& a = f(A());
+                 ^
