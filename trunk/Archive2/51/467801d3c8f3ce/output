@@ -1,0 +1,4 @@
+main.cpp: In function 'int main()':
+main.cpp:17:9: error: invalid conversion from 'int' to 'TestEnum' [-fpermissive]
+     f1(1);
+         ^
