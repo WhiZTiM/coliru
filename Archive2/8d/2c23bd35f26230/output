@@ -1,0 +1,14 @@
+In file included from /usr/local/include/c++/4.9.2/bits/stl_algobase.h:65:0,
+                 from /usr/local/include/c++/4.9.2/bits/char_traits.h:39,
+                 from /usr/local/include/c++/4.9.2/ios:40,
+                 from /usr/local/include/c++/4.9.2/ostream:38,
+                 from /usr/local/include/c++/4.9.2/iostream:39,
+                 from main.cpp:1:
+/usr/local/include/c++/4.9.2/bits/stl_iterator_base_types.h: In instantiation of 'struct std::iterator_traits<void*>':
+/usr/local/include/c++/4.9.2/bits/stl_algobase.h:387:57:   required from '_OI std::__copy_move_a(_II, _II, _OI) [with bool _IsMove = false; _II = void*; _OI = std::back_insert_iterator<std::vector<unsigned char> >]'
+/usr/local/include/c++/4.9.2/bits/stl_algobase.h:434:38:   required from '_OI std::__copy_move_a2(_II, _II, _OI) [with bool _IsMove = false; _II = void*; _OI = std::back_insert_iterator<std::vector<unsigned char> >]'
+/usr/local/include/c++/4.9.2/bits/stl_algobase.h:466:17:   required from '_OI std::copy(_II, _II, _OI) [with _II = void*; _OI = std::back_insert_iterator<std::vector<unsigned char> >]'
+main.cpp:11:78:   required from here
+/usr/local/include/c++/4.9.2/bits/stl_iterator_base_types.h:181:43: error: forming reference to void
+       typedef _Tp&                        reference;
+                                           ^
