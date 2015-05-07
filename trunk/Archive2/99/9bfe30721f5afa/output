@@ -1,0 +1,10 @@
+main.cpp: In constructor 'Catalogue::Catalogue()':
+main.cpp:23:39: error: converting to 'const boost::geometry::model::point<float, 2ul, boost::geometry::cs::cartesian>' from initializer list would use explicit constructor 'boost::geometry::model::point<CoordinateType, DimensionCount, CoordinateSystem>::point(const CoordinateType&, const CoordinateType&, const CoordinateType&) [with CoordinateType = float; long unsigned int DimensionCount = 2ul; CoordinateSystem = boost::geometry::cs::cartesian]'
+         rtree.insert({{ a.x, a.y }, a});
+                                       ^
+main.cpp:24:39: error: converting to 'const boost::geometry::model::point<float, 2ul, boost::geometry::cs::cartesian>' from initializer list would use explicit constructor 'boost::geometry::model::point<CoordinateType, DimensionCount, CoordinateSystem>::point(const CoordinateType&, const CoordinateType&, const CoordinateType&) [with CoordinateType = float; long unsigned int DimensionCount = 2ul; CoordinateSystem = boost::geometry::cs::cartesian]'
+         rtree.insert({{ b.x, b.y }, b});
+                                       ^
+main.cpp:25:39: error: converting to 'const boost::geometry::model::point<float, 2ul, boost::geometry::cs::cartesian>' from initializer list would use explicit constructor 'boost::geometry::model::point<CoordinateType, DimensionCount, CoordinateSystem>::point(const CoordinateType&, const CoordinateType&, const CoordinateType&) [with CoordinateType = float; long unsigned int DimensionCount = 2ul; CoordinateSystem = boost::geometry::cs::cartesian]'
+         rtree.insert({{ c.x, c.y }, c});
+                                       ^
