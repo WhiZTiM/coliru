@@ -1,0 +1,1 @@
+g++ -DCOLIRU -std=c++11 -O3 -Wall -pthread -pedantic main.cpp -lboost_thread -lboost_system -lrt && ./a.out; strings 21845989-f5e0-4c84-b170-cd34dc9f37fc
