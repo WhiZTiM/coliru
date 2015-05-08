@@ -1,0 +1,4 @@
++ clang++ -D_GLIBCXX_DEBUG -stdlib=libstdc++ -std=c++11 -fsanitize=undefined -Wall -Wextra -Wconversion -pedantic main.cpp
++ ./a.out
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.9.2/../../../../include/c++/4.9.2/bits/ios_base.h:96:24: runtime error: load of value 4294967221, which is not a valid value for type 'std::_Ios_Fmtflags'
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.9.2/../../../../include/c++/4.9.2/bits/ios_base.h:76:67: runtime error: load of value 4294967221, which is not a valid value for type 'std::_Ios_Fmtflags'
