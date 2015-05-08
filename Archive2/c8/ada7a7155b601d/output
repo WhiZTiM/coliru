@@ -1,0 +1,31 @@
+test(int, int, int, int):
+	lea	eax, [rdi+rsi]
+	add	eax, edx
+	add	eax, ecx
+	ret
+test(std::array<int, 4ul>):
+	mov	rax, rdi
+	sar	rax, 32
+	add	eax, edi
+	add	eax, esi
+	sar	rsi, 32
+	add	eax, esi
+	ret
+test(abcd):
+	mov	rax, rdi
+	sar	rax, 32
+	add	eax, edi
+	add	eax, esi
+	sar	rsi, 32
+	add	eax, esi
+	ret
+test(std::tuple<int, int, int, int>):
+	mov	eax, DWORD PTR [rdi+8]
+	add	eax, DWORD PTR [rdi+12]
+	add	eax, DWORD PTR [rdi+4]
+	add	eax, DWORD PTR [rdi]
+	ret
+
+main:
+	xor	eax, eax
+	ret
