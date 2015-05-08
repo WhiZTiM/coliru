@@ -1,0 +1,7 @@
+main.cpp: In function 'int main()':
+main.cpp:53:14: warning: variable 'c1' set but not used [-Wunused-but-set-variable]
+     Copyable c1 = func(Copyable(D));
+              ^
+main.cpp:56:13: warning: variable 'm1' set but not used [-Wunused-but-set-variable]
+     Movable m1 = func(Movable(D)); // calls Movable move constructor because the result of func is rvalue
+             ^
