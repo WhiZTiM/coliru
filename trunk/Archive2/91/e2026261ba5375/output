@@ -1,0 +1,47 @@
+
+g++ (libstdc++) ######################################################################
+main.cpp: In instantiation of 'start(Args&& ...)::<lambda()> mutable::<lambda()> mutable [with Args = {Foo}]':
+main.cpp:11:23:   required from 'struct start(Args&& ...)::<lambda()> mutable [with Args = {Foo}]::<lambda()>'
+main.cpp:15:13:   required from 'start(Args&& ...)::<lambda()> mutable [with Args = {Foo}]'
+main.cpp:10:65:   required from 'struct start(Args&& ...) [with Args = {Foo}]::<lambda()>'
+main.cpp:16:5:   required from 'void start(Args&& ...) [with Args = {Foo}]'
+main.cpp:21:16:   required from here
+main.cpp:12:22: warning: variable 'z' set but not used [-Wunused-but-set-variable]
+                 auto z = [] (Args&&... args) {
+                      ^
+main.cpp: In instantiation of 'start(Args&& ...)::<lambda()> mutable [with Args = {Foo}]':
+main.cpp:10:65:   required from 'struct start(Args&& ...) [with Args = {Foo}]::<lambda()>'
+main.cpp:16:5:   required from 'void start(Args&& ...) [with Args = {Foo}]'
+main.cpp:21:16:   required from here
+main.cpp:11:18: warning: variable 'y' set but not used [-Wunused-but-set-variable]
+             auto y = [args] () mutable {
+                  ^
+main.cpp: In instantiation of 'void start(Args&& ...) [with Args = {Foo}]':
+main.cpp:21:16:   required from here
+main.cpp:10:10: warning: variable 'x' set but not used [-Wunused-but-set-variable]
+     auto x = [args = std::make_tuple(std::forward<Args>(args)...)] () mutable {
+          ^
+
+clang++ (libc++) ######################################################################
+main.cpp:10:57: error: variable 'args' cannot be implicitly captured in a lambda with no capture-default specified
+    auto x = [args = std::make_tuple(std::forward<Args>(args)...)] () mutable {
+                                                        ^
+main.cpp:21:5: note: in instantiation of function template specialization 'start<Foo>' requested here
+    start(Foo{});
+    ^
+main.cpp:9:22: note: 'args' declared here
+void start(Args&&... args) {
+                     ^
+main.cpp:10:14: note: lambda expression begins here
+    auto x = [args = std::make_tuple(std::forward<Args>(args)...)] () mutable {
+             ^
+main.cpp:12:22: warning: unused variable 'z' [-Wunused-variable]
+                auto z = [] (Args&&... args) {
+                     ^
+main.cpp:11:18: warning: unused variable 'y' [-Wunused-variable]
+            auto y = [args] () mutable {
+                 ^
+main.cpp:10:10: warning: unused variable 'x' [-Wunused-variable]
+    auto x = [args = std::make_tuple(std::forward<Args>(args)...)] () mutable {
+         ^
+3 warnings and 1 error generated.
