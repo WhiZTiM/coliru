@@ -1,0 +1,16 @@
+main.cpp:9:36: error: 'void_t' is not a member of 'std'
+   struct test_apply<Z,types<Ts...>,std::void_t<Z<Ts...>>>:
+                                    ^
+main.cpp:9:36: error: 'void_t' is not a member of 'std'
+main.cpp:9:55: error: template argument 3 is invalid
+   struct test_apply<Z,types<Ts...>,std::void_t<Z<Ts...>>>:
+                                                       ^
+main.cpp:9:57: error: expected unqualified-id before '>' token
+   struct test_apply<Z,types<Ts...>,std::void_t<Z<Ts...>>>:
+                                                         ^
+main.cpp:11:5: warning: extra ';' [-Wpedantic]
+   {};
+     ^
+main.cpp:12:2: warning: extra ';' [-Wpedantic]
+ };
+  ^
