@@ -1,0 +1,21 @@
+main.cpp: In function 'void switchChars(char*, char*, int)':
+main.cpp:4:8: error: 'size_t' does not name a type
+  const size_t ALIGNMENT = sizeof(void*);
+        ^
+main.cpp:6:2: error: 'size_t' was not declared in this scope
+  size_t alignedX = ((size_t)x + ALIGNMENT-1) & ~(ALIGNMENT-1);
+  ^
+main.cpp:7:9: error: expected ';' before 'alignedY'
+  size_t alignedY = ((size_t)y + ALIGNMENT-1) & ~(ALIGNMENT-1);
+         ^
+main.cpp:8:6: error: 'alignedX' was not declared in this scope
+  if((alignedX - (size_t)x) == (alignedY - (size_t)y))
+      ^
+main.cpp:8:25: error: expected ')' before 'x'
+  if((alignedX - (size_t)x) == (alignedY - (size_t)y))
+                         ^
+main.cpp:39:1: error: expected ')' at end of input
+ }
+ ^
+main.cpp:39:1: error: expected statement at end of input
+main.cpp:39:1: error: expected '}' at end of input
