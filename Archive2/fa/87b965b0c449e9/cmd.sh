@@ -1,0 +1,1 @@
+clang++ -std=c++14 -O2 -Wall -pedantic -Wno-address-of-temporary -pthread main.cpp && ./a.out
