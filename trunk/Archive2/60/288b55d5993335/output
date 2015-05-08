@@ -1,0 +1,28 @@
+In file included from /usr/local/include/c++/4.9.2/bits/stl_algobase.h:64:0,
+                 from /usr/local/include/c++/4.9.2/bits/char_traits.h:39,
+                 from /usr/local/include/c++/4.9.2/string:40,
+                 from main.cpp:1:
+/usr/local/include/c++/4.9.2/bits/stl_pair.h: In instantiation of 'struct std::pair<const std::basic_string<char>, std::reference_wrapper<const A> >':
+/usr/local/include/c++/4.9.2/ext/aligned_buffer.h:44:34:   required from 'struct __gnu_cxx::__aligned_buffer<std::pair<const std::basic_string<char>, std::reference_wrapper<const A> > >'
+/usr/local/include/c++/4.9.2/bits/hashtable_policy.h:249:43:   required from 'struct std::__detail::_Hash_node_value_base<std::pair<const std::basic_string<char>, std::reference_wrapper<const A> > >'
+/usr/local/include/c++/4.9.2/bits/hashtable_policy.h:280:12:   required from 'struct std::__detail::_Hash_node<std::pair<const std::basic_string<char>, std::reference_wrapper<const A> >, true>'
+/usr/local/include/c++/4.9.2/bits/hashtable_policy.h:1899:60:   required from 'struct std::__detail::_Hashtable_alloc<std::allocator<std::__detail::_Hash_node<std::pair<const std::basic_string<char>, std::reference_wrapper<const A> >, true> > >'
+/usr/local/include/c++/4.9.2/bits/hashtable.h:170:11:   required from 'class std::_Hashtable<std::basic_string<char>, std::pair<const std::basic_string<char>, std::reference_wrapper<const A> >, std::allocator<std::pair<const std::basic_string<char>, std::reference_wrapper<const A> > >, std::__detail::_Select1st, std::equal_to<std::basic_string<char> >, std::hash<std::basic_string<char> >, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<true, false, true> >'
+/usr/local/include/c++/4.9.2/bits/unordered_map.h:101:18:   required from 'class std::unordered_map<std::basic_string<char>, std::reference_wrapper<const A> >'
+main.cpp:10:68:   required from here
+/usr/local/include/c++/4.9.2/bits/stl_pair.h:102:11: error: 'std::pair<_T1, _T2>::second' has incomplete type
+       _T2 second;                /// @c second is a copy of the second object
+           ^
+In file included from /usr/local/include/c++/4.9.2/bits/move.h:57:0,
+                 from /usr/local/include/c++/4.9.2/bits/stl_pair.h:59,
+                 from /usr/local/include/c++/4.9.2/bits/stl_algobase.h:64,
+                 from /usr/local/include/c++/4.9.2/bits/char_traits.h:39,
+                 from /usr/local/include/c++/4.9.2/string:40,
+                 from main.cpp:1:
+/usr/local/include/c++/4.9.2/type_traits:1922:11: error: declaration of 'class std::reference_wrapper<const A>'
+     class reference_wrapper;
+           ^
+main.cpp: In function 'int main()':
+main.cpp:12:45: error: 'cref' is not a member of 'std'
+   stringToRef.insert(std::make_pair("Test", std::cref(a)));
+                                             ^
