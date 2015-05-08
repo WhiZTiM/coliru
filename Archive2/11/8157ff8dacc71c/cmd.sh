@@ -1,0 +1,1 @@
+g++ -std=c++11 -lboost_system -lboost_thread -O2 -Wall -pedantic -pthread main.cpp
