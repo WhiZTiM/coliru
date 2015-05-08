@@ -1,0 +1,2 @@
+#title Calling conventions (Clang edition)
+clang++ -c -std=c++14 -O2 -Wall -Wno-missing-braces -pedantic main.cpp -S -masm=intel -o - | grep -v '\.' | perl -pe 's,(	call.*),\1\n,g; s,main:,\nmain:,g; s,impl_test,\nimpl_test,g'
