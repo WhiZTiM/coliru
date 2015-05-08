@@ -1,0 +1,57 @@
+
+main:
+	sub	rsp, 24
+	mov	edi, OFFSET FLAT:std::cout
+	mov	edx, DWORD PTR [rsp+12]
+	mov	esi, DWORD PTR [rsp+8]
+	mov	ecx, DWORD PTR [rsp+4]
+	mov	eax, DWORD PTR [rsp]
+	add	eax, ecx
+	add	esi, eax
+	add	esi, edx
+	call	std::basic_ostream<char, std::char_traits<char> >::operator<<(int)
+
+	mov	ecx, DWORD PTR [rsp]
+	mov	eax, DWORD PTR [rsp+4]
+	mov	edi, OFFSET FLAT:std::cout
+	mov	esi, DWORD PTR [rsp+8]
+	mov	edx, DWORD PTR [rsp+12]
+	add	eax, ecx
+	add	esi, eax
+	add	esi, edx
+	call	std::basic_ostream<char, std::char_traits<char> >::operator<<(int)
+
+	mov	ecx, DWORD PTR [rsp]
+	mov	eax, DWORD PTR [rsp+4]
+	mov	edi, OFFSET FLAT:std::cout
+	mov	esi, DWORD PTR [rsp+8]
+	mov	edx, DWORD PTR [rsp+12]
+	add	eax, ecx
+	add	esi, eax
+	add	esi, edx
+	call	std::basic_ostream<char, std::char_traits<char> >::operator<<(int)
+
+	mov	edx, DWORD PTR [rsp+12]
+	mov	esi, DWORD PTR [rsp+8]
+	mov	edi, OFFSET FLAT:std::cout
+	mov	ecx, DWORD PTR [rsp+4]
+	mov	eax, DWORD PTR [rsp]
+	add	eax, ecx
+	add	esi, eax
+	add	esi, edx
+	call	std::basic_ostream<char, std::char_traits<char> >::operator<<(int)
+
+	xor	eax, eax
+	add	rsp, 24
+	ret
+_GLOBAL__sub_I_
+main:
+	sub	rsp, 8
+	mov	edi, OFFSET FLAT:std::__ioinit
+	call	std::ios_base::Init::Init()
+
+	mov	edx, OFFSET FLAT:__dso_handle
+	mov	esi, OFFSET FLAT:std::__ioinit
+	mov	edi, OFFSET FLAT:std::ios_base::Init::~Init()
+	add	rsp, 8
+	jmp	__cxa_atexit
