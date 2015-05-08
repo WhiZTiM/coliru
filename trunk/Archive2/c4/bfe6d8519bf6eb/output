@@ -1,0 +1,5 @@
+main.cpp: In instantiation of 'void SexyMethod(T) [with T = const char*]':
+main.cpp:16:20:   required from here
+main.cpp:10:5: error: static assertion failed: This method takes sexy parameters only.
+     static_assert(boost::mpl::contains<sexy_types, T>::value, "This method takes sexy parameters only.");
+     ^
