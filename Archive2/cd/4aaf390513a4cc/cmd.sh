@@ -1,0 +1,2 @@
+#title GCC Calling conventions (parameter passing)
+g++ -c -std=c++14 -O2 -Wall -Wno-uninitialized -pedantic main.cpp -S -masm=intel -o - | c++filt | grep -v '\.' | perl -pe 's,(	call.*),\1\n,g; s,main:,\nmain:,g; s,impl_test,\nimpl_test,g'
