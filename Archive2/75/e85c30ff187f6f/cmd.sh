@@ -1,0 +1,1 @@
+g++ -std=c++14 -O2 -Wall -fno-exceptions -pedantic -pthread main.cpp -lboost_system -lboost_filesystem && ./a.out
