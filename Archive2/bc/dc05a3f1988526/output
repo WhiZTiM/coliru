@@ -1,0 +1,9 @@
+main.cpp: In function 'void foo(int)':
+main.cpp:1:27: warning: unused variable 'bar' [-Wunused-variable]
+ void foo(int bar) { { int bar = 0; } }
+                           ^
+main.cpp: In function 'void foo2(int)':
+main.cpp:3:26: error: declaration of 'int bar' shadows a parameter
+ void foo2(int bar) { int bar = 0; }
+                          ^
+main.cpp:3:26: warning: unused variable 'bar' [-Wunused-variable]
