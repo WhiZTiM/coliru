@@ -1,0 +1,4 @@
+onUnexpected
+catch 1
+end main
+onExit
