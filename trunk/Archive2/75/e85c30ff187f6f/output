@@ -1,0 +1,6 @@
+In file included from /usr/local/include/boost/filesystem.hpp:17:0,
+                 from main.cpp:3:
+/usr/local/include/boost/filesystem/operations.hpp: In constructor 'boost::filesystem::filesystem_error::filesystem_error(const string&, boost::system::error_code)':
+/usr/local/include/boost/filesystem/operations.hpp:84:16: error: exception handling disabled, use -fexceptions to enable
+         catch (...) { m_imp_ptr.reset(); }
+                ^
