@@ -1,0 +1,12 @@
+/tmp/cch3Z0LY.o: In function `std::basic_ostream<char, std::char_traits<char> >& boost::chrono::operator<< <char, std::char_traits<char>, boost::chrono::duration<long, boost::ratio<1l, 1000000000l> > >(std::basic_ostream<char, std::char_traits<char> >&, boost::chrono::time_point<boost::chrono::system_clock, boost::chrono::duration<long, boost::ratio<1l, 1000000000l> > > const&)':
+main.cpp:(.text._ZN5boost6chronolsIcSt11char_traitsIcENS0_8durationIlNS_5ratioILl1ELl1000000000EEEEEEERSt13basic_ostreamIT_T0_ESC_RKNS0_10time_pointINS0_12system_clockET1_EE[_ZN5boost6chronolsIcSt11char_traitsIcENS0_8durationIlNS_5ratioILl1ELl1000000000EEEEEEERSt13basic_ostreamIT_T0_ESC_RKNS0_10time_pointINS0_12system_clockET1_EE]+0x149): undefined reference to `boost::chrono::system_clock::to_time_t(boost::chrono::time_point<boost::chrono::system_clock, boost::chrono::duration<long, boost::ratio<1l, 1000000000l> > > const&)'
+main.cpp:(.text._ZN5boost6chronolsIcSt11char_traitsIcENS0_8durationIlNS_5ratioILl1ELl1000000000EEEEEEERSt13basic_ostreamIT_T0_ESC_RKNS0_10time_pointINS0_12system_clockET1_EE[_ZN5boost6chronolsIcSt11char_traitsIcENS0_8durationIlNS_5ratioILl1ELl1000000000EEEEEEERSt13basic_ostreamIT_T0_ESC_RKNS0_10time_pointINS0_12system_clockET1_EE]+0x74c): undefined reference to `boost::chrono::system_clock::from_time_t(long)'
+/tmp/cch3Z0LY.o: In function `main':
+main.cpp:(.text.startup+0x6): undefined reference to `boost::chrono::system_clock::now()'
+/tmp/cch3Z0LY.o: In function `_GLOBAL__sub_I_main':
+main.cpp:(.text.startup+0xce): undefined reference to `boost::system::generic_category()'
+main.cpp:(.text.startup+0xd3): undefined reference to `boost::system::generic_category()'
+main.cpp:(.text.startup+0xd8): undefined reference to `boost::system::system_category()'
+collect2: error: ld returned 1 exit status
+bash: line 8: ./test: No such file or directory
+bash: line 9: ./test: No such file or directory
