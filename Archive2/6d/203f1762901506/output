@@ -1,0 +1,12 @@
+main.cpp: In function 'int main()':
+main.cpp:17:12: error: no matching function for call to 'foo(Z)'
+     foo(Z{});
+            ^
+main.cpp:5:6: note: candidate: void foo(X)
+ void foo(X data){}
+      ^
+main.cpp:5:6: note:   no known conversion for argument 1 from 'Z' to 'X'
+main.cpp:6:6: note: candidate: void foo(Y)
+ void foo(Y data){}
+      ^
+main.cpp:6:6: note:   no known conversion for argument 1 from 'Z' to 'Y'
