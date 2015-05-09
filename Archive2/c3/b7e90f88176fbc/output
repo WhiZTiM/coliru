@@ -1,0 +1,12 @@
+main.cpp:37:0: warning: ignoring #pragma omp parallel [-Wunknown-pragmas]
+ #pragma omp parallel
+ ^
+main.cpp:39:0: warning: ignoring #pragma omp single [-Wunknown-pragmas]
+ #pragma omp single
+ ^
+main.cpp:42:0: warning: ignoring #pragma omp for [-Wunknown-pragmas]
+ #pragma omp for reduction(+:sum)
+ ^
+/tmp/cceYxO3b.o: In function `main':
+main.cpp:(.text.startup+0x129): undefined reference to `omp_get_num_threads'
+collect2: error: ld returned 1 exit status
