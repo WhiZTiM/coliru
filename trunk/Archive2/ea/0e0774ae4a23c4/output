@@ -1,0 +1,4 @@
+main.cpp:6:4: error: invalid token in macro parameter list
+if(1337!=1337)
+   ^
+1 error generated.
