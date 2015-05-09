@@ -1,0 +1,5 @@
+abcdef
+abcdef
+terminate called after throwing an instance of 'detail::back_insert_constraint_failed'
+  what():  std::exception
+bash: line 7: 22675 Aborted                 (core dumped) ./a.out
