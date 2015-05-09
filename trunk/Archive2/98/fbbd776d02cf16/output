@@ -1,0 +1,42 @@
++ g++ -std=c++1y -O2 -Wall -Wextra -pedantic -pthread -lboost_system main.cpp
++ ./a.out
++ clang++ -std=c++1y -O2 -Wall -Wextra -pedantic -pthread -lcxxrt -ldl -lboost_system main.cpp
+main.cpp:6:12: error: variable 't' cannot be implicitly captured in a lambda with no capture-default specified
+    [a = p(t)] () {
+           ^
+main.cpp:13:5: note: in instantiation of function template specialization 'start<int>' requested here
+    start(0);
+    ^
+main.cpp:5:14: note: 't' declared here
+void start(T t) {
+             ^
+main.cpp:6:5: note: lambda expression begins here
+    [a = p(t)] () {
+    ^
+main.cpp:7:9: warning: expression result unused [-Wunused-value]
+        [a] () {};
+        ^~~~~~~~~
+main.cpp:6:5: warning: expression result unused [-Wunused-value]
+    [a = p(t)] () {
+    ^~~~~~~~~~~~~~~
+2 warnings and 1 error generated.
++ clang++ -stdlib=libc++ -std=c++1y -O2 -Wall -Wextra -pedantic -pthread -lcxxrt -ldl -lboost_system main.cpp
+main.cpp:6:12: error: variable 't' cannot be implicitly captured in a lambda with no capture-default specified
+    [a = p(t)] () {
+           ^
+main.cpp:13:5: note: in instantiation of function template specialization 'start<int>' requested here
+    start(0);
+    ^
+main.cpp:5:14: note: 't' declared here
+void start(T t) {
+             ^
+main.cpp:6:5: note: lambda expression begins here
+    [a = p(t)] () {
+    ^
+main.cpp:7:9: warning: expression result unused [-Wunused-value]
+        [a] () {};
+        ^~~~~~~~~
+main.cpp:6:5: warning: expression result unused [-Wunused-value]
+    [a = p(t)] () {
+    ^~~~~~~~~~~~~~~
+2 warnings and 1 error generated.
