@@ -1,0 +1,13 @@
+main.cpp: In function 'int main()':
+main.cpp:17:49: error: decltype cannot resolve address of overloaded function
+   using result_type = std::result_of<decltype(&f)(int)>::type;
+                                                 ^
+main.cpp:17:55: error: template argument 1 is invalid
+   using result_type = std::result_of<decltype(&f)(int)>::type;
+                                                       ^
+main.cpp:18:30: error: 'result_type' was not declared in this scope
+   static_assert(std::is_same<result_type, int>::value, "");
+                              ^
+main.cpp:18:46: error: template argument 1 is invalid
+   static_assert(std::is_same<result_type, int>::value, "");
+                                              ^
