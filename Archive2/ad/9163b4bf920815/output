@@ -1,0 +1,18 @@
+Allocate: return new Impl
+Allocate: return new Impl
+Allocate: return new Impl
+Allocate: return new Impl
+Allocate: return new Impl
+Allocate: return new Impl
+Allocate: return new Impl
+do_release: pool size is now: 1
+do_release: pool size is now: 2
+do_release: pool size is now: 3
+do_release: pool size is now: 4
+Allocate: pool size is now 3
+Allocate: pool size is now 2
+do_release: pool size is now: 3
+do_release: pool size is now: 4
+do_release: pool size is now: 5
+do_release: pool size is now: 6
+do_release: pool size is now: 7
