@@ -1,0 +1,6 @@
+/usr/bin/ld: /tmp/cce9eH9m.o: undefined reference to symbol '_ZN5boost6system15system_categoryEv'
+/usr/bin/ld: note: '_ZN5boost6system15system_categoryEv' is defined in DSO /usr/local/lib/libboost_system.so.1.57.0 so try adding it to the linker command line
+/usr/local/lib/libboost_system.so.1.57.0: could not read symbols: Invalid operation
+collect2: error: ld returned 1 exit status
+bash: line 8: ./test: No such file or directory
+bash: line 9: ./test: No such file or directory
