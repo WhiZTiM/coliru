@@ -1,0 +1,10 @@
+main.cpp: In function ‘int main()’:
+main.cpp:21:7: error: expected primary-expression before ‘;’ token
+     --;
+       ^
+main.cpp:24:7: error: expected primary-expression before ‘;’ token
+     --;
+       ^
+main.cpp:27:7: error: expected primary-expression before ‘;’ token
+     --;
+       ^
