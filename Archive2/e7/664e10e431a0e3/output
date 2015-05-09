@@ -1,0 +1,36 @@
+Returning item from pool. mFreeList.size=5 New pool size will be 4
+Returning item from pool. mFreeList.size=4 New pool size will be 3
+Returning item from pool. mFreeList.size=3 New pool size will be 2
+Returning item from pool. mFreeList.size=2 New pool size will be 1
+Returning item from pool. mFreeList.size=1 New pool size will be 0
+Returning new Impl
+Returning new Impl
+Returning new Impl
+Deleting non-pooled item
+do_release: pool size is now: 0
+Deleting non-pooled item
+do_release: pool size is now: 0
+Deleting non-pooled item
+do_release: pool size is now: 0
+Adding item back to pool. New pool size will be 1
+do_release: pool size is now: 1
+Returning item from pool. mFreeList.size=1 New pool size will be 0
+Returning new Impl
+Deleting non-pooled item
+do_release: pool size is now: 0
+Adding item back to pool. New pool size will be 1
+do_release: pool size is now: 1
+Adding item back to pool. New pool size will be 2
+do_release: pool size is now: 2
+Adding item back to pool. New pool size will be 3
+do_release: pool size is now: 3
+Returning item from pool. mFreeList.size=3 New pool size will be 2
+Returning item from pool. mFreeList.size=2 New pool size will be 1
+Adding item back to pool. New pool size will be 2
+do_release: pool size is now: 2
+Adding item back to pool. New pool size will be 3
+do_release: pool size is now: 3
+Adding item back to pool. New pool size will be 4
+do_release: pool size is now: 4
+Adding item back to pool. New pool size will be 5
+do_release: pool size is now: 5
