@@ -1,0 +1,4 @@
+main.cpp:12:11: error: non-const lvalue reference to type 'int' cannot bind to a temporary of type 'int'
+    auto& v = foo();
+          ^   ~~~~~
+1 error generated.
