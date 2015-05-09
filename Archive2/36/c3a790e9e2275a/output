@@ -1,0 +1,2 @@
+a.out: main.cpp:72: int main(): Assertion `deserialiseE2(data) == expected1' failed.
+bash: line 8: 24272 Aborted                 (core dumped) ./a.out
