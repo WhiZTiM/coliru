@@ -1,0 +1,28 @@
+In file included from main.cpp:1:
+In file included from /usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.1.0/../../../../include/c++/5.1.0/iostream:39:
+In file included from /usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.1.0/../../../../include/c++/5.1.0/ostream:38:
+In file included from /usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.1.0/../../../../include/c++/5.1.0/ios:42:
+In file included from /usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.1.0/../../../../include/c++/5.1.0/bits/ios_base.h:41:
+In file included from /usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.1.0/../../../../include/c++/5.1.0/bits/locale_classes.h:40:
+In file included from /usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.1.0/../../../../include/c++/5.1.0/string:41:
+In file included from /usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.1.0/../../../../include/c++/5.1.0/bits/allocator.h:46:
+In file included from /usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.1.0/../../../../include/c++/5.1.0/x86_64-unknown-linux-gnu/bits/c++allocator.h:33:
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.1.0/../../../../include/c++/5.1.0/ext/new_allocator.h:120:23: error: calling a private constructor of class 'T'
+        { ::new((void *)__p) _Up(std::forward<_Args>(__args)...); }
+                             ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.1.0/../../../../include/c++/5.1.0/bits/alloc_traits.h:256:8: note: in instantiation of function template specialization '__gnu_cxx::new_allocator<T>::construct<T, char const (&)[6]>' requested here
+        { __a.construct(__p, std::forward<_Args>(__args)...); }
+              ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.1.0/../../../../include/c++/5.1.0/bits/alloc_traits.h:402:4: note: in instantiation of function template specialization 'std::allocator_traits<std::allocator<T> >::_S_construct<T, char const (&)[6]>' requested here
+        { _S_construct(__a, __p, std::forward<_Args>(__args)...); }
+          ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.1.0/../../../../include/c++/5.1.0/bits/vector.tcc:96:21: note: in instantiation of function template specialization 'std::allocator_traits<std::allocator<T> >::construct<T, char const (&)[6]>' requested here
+            _Alloc_traits::construct(this->_M_impl, this->_M_impl._M_finish,
+                           ^
+main.cpp:23:8: note: in instantiation of function template specialization 'std::vector<T, std::allocator<T> >::emplace_back<char const (&)[6]>' requested here
+   vec.emplace_back("hello");
+       ^
+main.cpp:12:3: note: declared private here
+  T(std::string s) : str(s) {}
+  ^
+1 error generated.
