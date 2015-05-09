@@ -1,0 +1,64 @@
+main.cpp:12:5: error: stray '\303' in program
+     std :: matriz < std :: seqüência , 2 > a3 =  {  std :: seqüência ( "a" ) , "b"  } ;
+     ^
+main.cpp:12:5: error: stray '\274' in program
+main.cpp:12:5: error: stray '\303' in program
+main.cpp:12:5: error: stray '\252' in program
+main.cpp:12:5: error: stray '\303' in program
+main.cpp:12:5: error: stray '\274' in program
+main.cpp:12:5: error: stray '\303' in program
+main.cpp:12:5: error: stray '\252' in program
+main.cpp:15:5: error: stray '\303' in program
+     std :: tipo ( a1. começar ( ) , a1. end ( ) ) ; 
+     ^
+main.cpp:15:5: error: stray '\247' in program
+main.cpp:16:5: error: stray '\303' in program
+     std :: reverse_copy ( . a2 começar ( ) ., a2 final ( ) , 
+     ^
+main.cpp:16:5: error: stray '\247' in program
+main.cpp:23:31: error: empty character constant
+         std :: cout  << s <<  '' ; 
+                               ^
+main.cpp: In function 'int principal()':
+main.cpp:10:5: error: 'matriz' is not a member of 'std'
+     std :: matriz < int , 3 > a1 {  { 1 , 2 , 3 }  } ;  // double-chaves necessária em C ++ 11 (e não em C ++ 14) 
+     ^
+main.cpp:10:21: error: expected primary-expression before 'int'
+     std :: matriz < int , 3 > a1 {  { 1 , 2 , 3 }  } ;  // double-chaves necessária em C ++ 11 (e não em C ++ 14) 
+                     ^
+main.cpp:11:5: error: 'matriz' is not a member of 'std'
+     std :: matriz < int , 3 > a2 =  { 1 , 2 , 3 } ;   // nunca exigiu depois = 
+     ^
+main.cpp:11:21: error: expected primary-expression before 'int'
+     std :: matriz < int , 3 > a2 =  { 1 , 2 , 3 } ;   // nunca exigiu depois = 
+                     ^
+main.cpp:12:5: error: 'matriz' is not a member of 'std'
+     std :: matriz < std :: seqüência , 2 > a3 =  {  std :: seqüência ( "a" ) , "b"  } ;
+     ^
+main.cpp:12:21: error: 'seq' is not a member of 'std'
+     std :: matriz < std :: seqüência , 2 > a3 =  {  std :: seqüência ( "a" ) , "b"  } ;
+                     ^
+main.cpp:15:5: error: 'tipo' is not a member of 'std'
+     std :: tipo ( a1. começar ( ) , a1. end ( ) ) ; 
+     ^
+main.cpp:15:19: error: 'a1' was not declared in this scope
+     std :: tipo ( a1. começar ( ) , a1. end ( ) ) ; 
+                   ^
+main.cpp:16:27: error: expected primary-expression before '.' token
+     std :: reverse_copy ( . a2 começar ( ) ., a2 final ( ) , 
+                           ^
+main.cpp:16:48: error: 'a2' was not declared in this scope
+     std :: reverse_copy ( . a2 começar ( ) ., a2 final ( ) , 
+                                                ^
+main.cpp:19:22: error: unknown escape sequence: '\040'
+     std :: cout  <<  " \ n " ;
+                      ^
+main.cpp:22:12: error: expected primary-expression before 'const'
+     para ( const  auto & s : a3 ) 
+            ^
+main.cpp:22:33: error: 'para' was not declared in this scope
+     para ( const  auto & s : a3 ) 
+                                 ^
+main.cpp:24:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
