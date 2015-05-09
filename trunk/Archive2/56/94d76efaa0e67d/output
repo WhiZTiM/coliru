@@ -1,0 +1,44 @@
+_Z4testSt5tupleIJiiiiEE:
+	mov	eax, DWORD PTR [rdi+8]
+	add	eax, DWORD PTR [rdi+12]
+	add	eax, DWORD PTR [rdi+4]
+	add	eax, DWORD PTR [rdi]
+	ret
+
+main:
+	sub	rsp, 24
+	mov	DWORD PTR [rsp], 4
+	mov	DWORD PTR [rsp+4], 3
+	mov	DWORD PTR [rsp+8], 2
+	mov	DWORD PTR [rsp+12], 1
+	mov	rdi, rsp
+	call	_Z5test2St5tupleIJiiiiEE
+
+	mov	eax, 0
+	add	rsp, 24
+	ret
+_Z4testSt5tupleIJiiiiEE:                # @_Z4testSt5tupleIJiiiiEE
+# BB#0:
+	mov	rax, rsi
+	shr	rax, 32
+	mov	rcx, rdi
+	shr	rcx, 32
+	add	edi, esi
+	add	edi, ecx
+	add	edi, eax
+	mov	eax, edi
+	ret
+
+
+main:                                   # @main
+# BB#0:
+	push	rax
+	movabs	rdi, 12884901892
+	movabs	rsi, 4294967298
+	call	_Z5test2St5tupleIJiiiiEE
+
+	xor	eax, eax
+	pop	rdx
+	ret
+
+
