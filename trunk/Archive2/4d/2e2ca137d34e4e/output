@@ -1,0 +1,9 @@
+main.cpp:8:19: warning: suffix for double constant is a GCC extension
+     Complex(T r = 0.0d, T i = 0.0d);
+                   ^
+main.cpp:8:31: warning: suffix for double constant is a GCC extension
+     Complex(T r = 0.0d, T i = 0.0d);
+                               ^
+/tmp/cc6ZISJd.o: In function `main':
+main.cpp:(.text+0x1f): undefined reference to `Complex<double>::Complex(double, double)'
+collect2: error: ld returned 1 exit status
