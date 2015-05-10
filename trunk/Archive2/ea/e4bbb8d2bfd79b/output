@@ -1,0 +1,6 @@
+create  obj1->Aimer
+print  obj1->Aimer
+create  obj1->Kokia
+create  obj2->rurutia
+create  obj3->inuyasha
+print  obj1->Kokia
