@@ -1,0 +1,5 @@
+main.cpp: In instantiation of 'constexpr T f(T) [with T = int]':
+main.cpp:9:15:   required from here
+main.cpp:5:18: error: request for member 'get' in 'x', which is of non-class type 'int'
+     return x.get();
+                  ^
