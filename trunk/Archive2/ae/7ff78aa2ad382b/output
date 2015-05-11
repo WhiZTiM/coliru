@@ -1,0 +1,10 @@
+main.cpp: In function 'Test&& test2()':
+main.cpp:42:28: warning: function may return address of local variable [-Wreturn-local-addr]
+     return std::move(Test());
+                            ^
+main.cpp:42:27: note: declared here
+     return std::move(Test());
+                           ^
+defaul constructor is used
+old copy constructor is used
+rvalue reference tryfunc is used
