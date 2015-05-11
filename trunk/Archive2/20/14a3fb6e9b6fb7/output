@@ -1,0 +1,81 @@
+main.cpp:13:31: error: expected ')' before 'const'
+     GetColumnSize(column_id_t const column_id) : column_id(column_id)
+                               ^
+main.cpp:17:5: error: 'column_id_t' does not name a type
+     column_id_t const column_id;
+     ^
+main.cpp:41:28: error: 'unsigned_int_t' has not been declared
+     uint32_t HighestSetBit(unsigned_int_t n) const
+                            ^
+main.cpp:54:18: error: 'signed_int_t' has not been declared
+     void GetSize(signed_int_t const& x)
+                  ^
+main.cpp:61:18: error: 'string_t' has not been declared
+     void GetSize(string_t const& x)
+                  ^
+main.cpp:61:10: error: 'void GetColumnSize::GetSize(const int&)' cannot be overloaded
+     void GetSize(string_t const& x)
+          ^
+main.cpp:54:10: error: with 'void GetColumnSize::GetSize(const int&)'
+     void GetSize(signed_int_t const& x)
+          ^
+main.cpp:66:18: error: 'unsigned_int_t' has not been declared
+     void GetSize(unsigned_int_t const& x)
+                  ^
+main.cpp:66:10: error: 'void GetColumnSize::GetSize(const int&)' cannot be overloaded
+     void GetSize(unsigned_int_t const& x)
+          ^
+main.cpp:54:10: error: with 'void GetColumnSize::GetSize(const int&)'
+     void GetSize(signed_int_t const& x)
+          ^
+main.cpp:72:23: error: 'std::vector' has not been declared
+     void GetSize(std::vector<uint8_t> const& x)
+                       ^
+main.cpp:72:29: error: expected ',' or '...' before '<' token
+     void GetSize(std::vector<uint8_t> const& x)
+                             ^
+main.cpp:78:23: error: 'std::array' has not been declared
+     void GetSize(std::array<uint8_t, N> const& x)
+                       ^
+main.cpp:78:28: error: expected ',' or '...' before '<' token
+     void GetSize(std::array<uint8_t, N> const& x)
+                            ^
+main.cpp: In member function 'void GetColumnSize::operator()(const T&)':
+main.cpp:24:41: error: 'class GetColumnSize' has no member named 'column_id'
+         if (this->column_pos++ == this->column_id)
+                                         ^
+main.cpp:30:55: error: 'class GetColumnSize' has no member named 'column_id'
+         if (!this->found && (this->column_pos > this->column_id))
+                                                       ^
+main.cpp: In member function 'uint32_t GetColumnSize::HighestSetBit(int) const':
+main.cpp:44:9: error: 'unsigned_int_t' was not declared in this scope
+         unsigned_int_t r = 1;
+         ^
+main.cpp:48:13: error: 'r' was not declared in this scope
+             r++;
+             ^
+main.cpp:51:16: error: 'r' was not declared in this scope
+         return r;
+                ^
+main.cpp: In member function 'void GetColumnSize::GetSize(const int&)':
+main.cpp:56:9: error: 'unsigned_int_t' was not declared in this scope
+         unsigned_int_t absolute = std::abs(x);
+         ^
+main.cpp:58:31: error: 'ceil' is not a member of 'std'
+         this->column_length = std::ceil((HighestSetBit(absolute) + 1) / 8.0);
+                               ^
+main.cpp:58:56: error: 'absolute' was not declared in this scope
+         this->column_length = std::ceil((HighestSetBit(absolute) + 1) / 8.0);
+                                                        ^
+main.cpp: In member function 'void GetColumnSize::GetSize(const int&)':
+main.cpp:63:33: error: request for member 'length' in 'x', which is of non-class type 'const int'
+         this->column_length = x.length();
+                                 ^
+main.cpp: In member function 'void GetColumnSize::GetSize(const int&)':
+main.cpp:69:31: error: 'ceil' is not a member of 'std'
+         this->column_length = std::ceil((HighestSetBit(x)) / 8.0);
+                               ^
+main.cpp: In member function 'void GetColumnSize::GetSize(int)':
+main.cpp:74:31: error: 'x' was not declared in this scope
+         this->column_length = x.size();
+                               ^
