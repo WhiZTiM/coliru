@@ -1,0 +1,9 @@
+In file included from /usr/local/include/boost/scoped_ptr.hpp:14:0,
+                 from main.cpp:2:
+/usr/local/include/boost/smart_ptr/scoped_ptr.hpp: In function 'int main()':
+/usr/local/include/boost/smart_ptr/scoped_ptr.hpp:47:5: error: 'boost::scoped_ptr<T>::scoped_ptr(const boost::scoped_ptr<T>&) [with T = obj]' is private
+     scoped_ptr(scoped_ptr const &);
+     ^
+main.cpp:74:31: error: within this context
+     scopedPtr<obj>::type q2 = q1 ;
+                               ^
