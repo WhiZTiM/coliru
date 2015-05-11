@@ -1,0 +1,4 @@
+main.cpp: In function 'void f(B&)':
+main.cpp:5:37: error: cannot dynamic_cast '& x' (of type 'class B*') to type 'class D*' (source type is not polymorphic)
+     if (auto y = dynamic_cast<D*>(&x)) {
+                                     ^
