@@ -1,0 +1,8 @@
+main.cpp:9:57: warning: friend declaration 'constexpr int inst_flag(inst_check_wrapper<T>)' declares a non-template function [-Wnon-template-friend]
+     friend constexpr int inst_flag(inst_check_wrapper<T>);
+                                                         ^
+main.cpp:9:57: note: (if this is not what you intended, make sure the function template has already been declared and add <> after the function name here) 
+main.cpp: In function 'int main()':
+main.cpp:39:5: error: static assertion failed: failure
+     static_assert(is_instantiated<MyStruct<int>>(), "failure");
+     ^
