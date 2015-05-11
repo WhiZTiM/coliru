@@ -1,0 +1,10 @@
+main.cpp: In function 'int main()':
+main.cpp:24:5: error: 'stirng' is not a member of 'std'
+     std::stirng name ("kylin") ;
+     ^
+main.cpp:25:15: error: 'name' was not declared in this scope
+     obj obj1 (name) ;
+               ^
+main.cpp:31:5: error: 'reutrn' was not declared in this scope
+     reutrn 0 ;
+     ^
