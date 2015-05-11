@@ -1,0 +1,7 @@
+ok here we test the explicit obj1's string and non-explicit obj2's string constructor 
+my name is obj2's kylin
+---------------------------------------------------------------------------------------------
+ok here we test the explicit obj1's string and non-explicit obj2's object & constructors 
+ my name is obj1's kylin
+ my name is obj1's kylin  copyed 
+my name is obj2's kylin copyed 
