@@ -1,0 +1,16 @@
+======================================== scoped_ptr tests ================================================================
+FileManager open aimer.txt
+node open aimer.txt
+======================================== shared_ptr tests ================================================================
+FileManager open shared_ptr ---> kylin_zhang 
+node open shared_ptr ---> kylin_zhang 
+FileManager open shared_ptr ----> naruto 
+node open shared_ptr ----> naruto 
+======================================== destructor call ================================================================
+ next you will see , before the end of the program scoped_ptr will call the corresponding destruct methods
+release node_t shared_ptr ----> naruto 
+release FileManager shared_ptr ----> naruto 
+release node_t shared_ptr ---> kylin_zhang 
+release FileManager shared_ptr ---> kylin_zhang 
+release node_t aimer.txt
+release FileManager aimer.txt
