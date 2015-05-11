@@ -1,0 +1,4 @@
+main.cpp:9:54: warning: friend declaration 'constexpr int init_flag(init_flag_wrapper<T>)' declares a non-template function [-Wnon-template-friend]
+   friend constexpr int init_flag(init_flag_wrapper<T>);
+                                                      ^
+main.cpp:9:54: note: (if this is not what you intended, make sure the function template has already been declared and add <> after the function name here) 
