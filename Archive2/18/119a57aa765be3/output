@@ -1,0 +1,8 @@
+main.cpp:7:17: error: default initialization of an object of const type 'const A' without a user-provided default constructor
+    constexpr A a;
+                ^
+main.cpp:7:18: note: add an explicit initializer to initialize 'a'
+    constexpr A a;
+                 ^
+                 {}
+1 error generated.
