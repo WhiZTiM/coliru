@@ -1,0 +1,12 @@
+main.cpp: In function 'int nooffullnodes(node*)':
+main.cpp:55:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+printing using In-Order traversal:20  30  40  50  60  70  80  
+ No of nodes:7
+ nooffullnodes : 3
+No of elements in range: 30 40 50 60 70gcc (GCC) 5.1.0
+Copyright (C) 2015 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
