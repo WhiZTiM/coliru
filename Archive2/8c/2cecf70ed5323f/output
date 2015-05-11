@@ -1,0 +1,194 @@
+main.cpp: In function 'int main()':
+main.cpp:17:9: error: no match for 'operator==' (operand types are 'std::vector<std::__cxx11::list<int> >' and 'std::__cxx11::list<std::vector<int> >')
+     a.c == b.c;
+         ^
+In file included from main.cpp:3:0:
+/usr/local/include/c++/5.1.0/array:232:5: note: candidate: template<class _Tp, long unsigned int _Nm> bool std::operator==(const std::array<_Tp, _Nm>&, const std::array<_Tp, _Nm>&)
+     operator==(const array<_Tp, _Nm>& __one, const array<_Tp, _Nm>& __two)
+     ^
+/usr/local/include/c++/5.1.0/array:232:5: note:   template argument deduction/substitution failed:
+main.cpp:17:14: note:   'std::vector<std::__cxx11::list<int> >' is not derived from 'const std::array<_Tp, _Nm>'
+     a.c == b.c;
+              ^
+In file included from /usr/local/include/c++/5.1.0/string:52:0,
+                 from /usr/local/include/c++/5.1.0/stdexcept:39,
+                 from /usr/local/include/c++/5.1.0/array:38,
+                 from main.cpp:3:
+/usr/local/include/c++/5.1.0/bits/basic_string.h:4932:5: note: candidate: template<class _CharT, class _Traits, class _Alloc> bool std::operator==(const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&, const _CharT*)
+     operator==(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+     ^
+/usr/local/include/c++/5.1.0/bits/basic_string.h:4932:5: note:   template argument deduction/substitution failed:
+main.cpp:17:14: note:   'std::vector<std::__cxx11::list<int> >' is not derived from 'const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>'
+     a.c == b.c;
+              ^
+In file included from /usr/local/include/c++/5.1.0/string:52:0,
+                 from /usr/local/include/c++/5.1.0/stdexcept:39,
+                 from /usr/local/include/c++/5.1.0/array:38,
+                 from main.cpp:3:
+/usr/local/include/c++/5.1.0/bits/basic_string.h:4920:5: note: candidate: template<class _CharT, class _Traits, class _Alloc> bool std::operator==(const _CharT*, const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&)
+     operator==(const _CharT* __lhs,
+     ^
+/usr/local/include/c++/5.1.0/bits/basic_string.h:4920:5: note:   template argument deduction/substitution failed:
+main.cpp:17:14: note:   mismatched types 'const _CharT*' and 'std::vector<std::__cxx11::list<int> >'
+     a.c == b.c;
+              ^
+In file included from /usr/local/include/c++/5.1.0/string:52:0,
+                 from /usr/local/include/c++/5.1.0/stdexcept:39,
+                 from /usr/local/include/c++/5.1.0/array:38,
+                 from main.cpp:3:
+/usr/local/include/c++/5.1.0/bits/basic_string.h:4906:5: note: candidate: template<class _CharT> typename __gnu_cxx::__enable_if<std::__is_char<_Tp>::__value, bool>::__type std::operator==(const std::__cxx11::basic_string<_CharT>&, const std::__cxx11::basic_string<_CharT>&)
+     operator==(const basic_string<_CharT>& __lhs,
+     ^
+/usr/local/include/c++/5.1.0/bits/basic_string.h:4906:5: note:   template argument deduction/substitution failed:
+main.cpp:17:14: note:   'std::vector<std::__cxx11::list<int> >' is not derived from 'const std::__cxx11::basic_string<_CharT>'
+     a.c == b.c;
+              ^
+In file included from /usr/local/include/c++/5.1.0/string:52:0,
+                 from /usr/local/include/c++/5.1.0/stdexcept:39,
+                 from /usr/local/include/c++/5.1.0/array:38,
+                 from main.cpp:3:
+/usr/local/include/c++/5.1.0/bits/basic_string.h:4899:5: note: candidate: template<class _CharT, class _Traits, class _Alloc> bool std::operator==(const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&, const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&)
+     operator==(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+     ^
+/usr/local/include/c++/5.1.0/bits/basic_string.h:4899:5: note:   template argument deduction/substitution failed:
+main.cpp:17:14: note:   'std::vector<std::__cxx11::list<int> >' is not derived from 'const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>'
+     a.c == b.c;
+              ^
+In file included from /usr/local/include/c++/5.1.0/bits/char_traits.h:40:0,
+                 from /usr/local/include/c++/5.1.0/string:40,
+                 from /usr/local/include/c++/5.1.0/stdexcept:39,
+                 from /usr/local/include/c++/5.1.0/array:38,
+                 from main.cpp:3:
+/usr/local/include/c++/5.1.0/bits/postypes.h:216:5: note: candidate: template<class _StateT> bool std::operator==(const std::fpos<_StateT>&, const std::fpos<_StateT>&)
+     operator==(const fpos<_StateT>& __lhs, const fpos<_StateT>& __rhs)
+     ^
+/usr/local/include/c++/5.1.0/bits/postypes.h:216:5: note:   template argument deduction/substitution failed:
+main.cpp:17:14: note:   'std::vector<std::__cxx11::list<int> >' is not derived from 'const std::fpos<_StateT>'
+     a.c == b.c;
+              ^
+In file included from /usr/local/include/c++/5.1.0/list:63:0,
+                 from main.cpp:2:
+/usr/local/include/c++/5.1.0/bits/stl_list.h:1807:5: note: candidate: template<class _Tp, class _Alloc> bool std::operator==(const std::__cxx11::list<_Tp, _Alloc>&, const std::__cxx11::list<_Tp, _Alloc>&)
+     operator==(const list<_Tp, _Alloc>& __x, const list<_Tp, _Alloc>& __y)
+     ^
+/usr/local/include/c++/5.1.0/bits/stl_list.h:1807:5: note:   template argument deduction/substitution failed:
+main.cpp:17:14: note:   'std::vector<std::__cxx11::list<int> >' is not derived from 'const std::__cxx11::list<_Tp, _Alloc>'
+     a.c == b.c;
+              ^
+In file included from /usr/local/include/c++/5.1.0/list:63:0,
+                 from main.cpp:2:
+/usr/local/include/c++/5.1.0/bits/stl_list.h:285:5: note: candidate: template<class _Val> bool std::operator==(const std::_List_iterator<_Tp>&, const std::_List_const_iterator<_Val>&)
+     operator==(const _List_iterator<_Val>& __x,
+     ^
+/usr/local/include/c++/5.1.0/bits/stl_list.h:285:5: note:   template argument deduction/substitution failed:
+main.cpp:17:14: note:   'std::vector<std::__cxx11::list<int> >' is not derived from 'const std::_List_iterator<_Tp>'
+     a.c == b.c;
+              ^
+In file included from /usr/local/include/c++/5.1.0/vector:64:0,
+                 from main.cpp:1:
+/usr/local/include/c++/5.1.0/bits/stl_vector.h:1511:5: note: candidate: template<class _Tp, class _Alloc> bool std::operator==(const std::vector<_Tp, _Alloc>&, const std::vector<_Tp, _Alloc>&)
+     operator==(const vector<_Tp, _Alloc>& __x, const vector<_Tp, _Alloc>& __y)
+     ^
+/usr/local/include/c++/5.1.0/bits/stl_vector.h:1511:5: note:   template argument deduction/substitution failed:
+main.cpp:17:14: note:   'std::__cxx11::list<std::vector<int> >' is not derived from 'const std::vector<_Tp, _Alloc>'
+     a.c == b.c;
+              ^
+In file included from /usr/local/include/c++/5.1.0/vector:61:0,
+                 from main.cpp:1:
+/usr/local/include/c++/5.1.0/bits/allocator.h:134:5: note: candidate: template<class _Tp> bool std::operator==(const std::allocator<_Tp1>&, const std::allocator<_Tp1>&)
+     operator==(const allocator<_Tp>&, const allocator<_Tp>&)
+     ^
+/usr/local/include/c++/5.1.0/bits/allocator.h:134:5: note:   template argument deduction/substitution failed:
+main.cpp:17:14: note:   'std::vector<std::__cxx11::list<int> >' is not derived from 'const std::allocator<_Tp1>'
+     a.c == b.c;
+              ^
+In file included from /usr/local/include/c++/5.1.0/vector:61:0,
+                 from main.cpp:1:
+/usr/local/include/c++/5.1.0/bits/allocator.h:128:5: note: candidate: template<class _T1, class _T2> bool std::operator==(const std::allocator<_Tp1>&, const std::allocator<_T2>&)
+     operator==(const allocator<_T1>&, const allocator<_T2>&)
+     ^
+/usr/local/include/c++/5.1.0/bits/allocator.h:128:5: note:   template argument deduction/substitution failed:
+main.cpp:17:14: note:   'std::vector<std::__cxx11::list<int> >' is not derived from 'const std::allocator<_Tp1>'
+     a.c == b.c;
+              ^
+In file included from /usr/local/include/c++/5.1.0/bits/stl_algobase.h:67:0,
+                 from /usr/local/include/c++/5.1.0/vector:60,
+                 from main.cpp:1:
+/usr/local/include/c++/5.1.0/bits/stl_iterator.h:1071:5: note: candidate: template<class _Iterator> bool std::operator==(const std::move_iterator<_Iterator>&, const std::move_iterator<_Iterator>&)
+     operator==(const move_iterator<_Iterator>& __x,
+     ^
+/usr/local/include/c++/5.1.0/bits/stl_iterator.h:1071:5: note:   template argument deduction/substitution failed:
+main.cpp:17:14: note:   'std::vector<std::__cxx11::list<int> >' is not derived from 'const std::move_iterator<_Iterator>'
+     a.c == b.c;
+              ^
+In file included from /usr/local/include/c++/5.1.0/bits/stl_algobase.h:67:0,
+                 from /usr/local/include/c++/5.1.0/vector:60,
+                 from main.cpp:1:
+/usr/local/include/c++/5.1.0/bits/stl_iterator.h:1065:5: note: candidate: template<class _IteratorL, class _IteratorR> bool std::operator==(const std::move_iterator<_Iterator>&, const std::move_iterator<_IteratorR>&)
+     operator==(const move_iterator<_IteratorL>& __x,
+     ^
+/usr/local/include/c++/5.1.0/bits/stl_iterator.h:1065:5: note:   template argument deduction/substitution failed:
+main.cpp:17:14: note:   'std::vector<std::__cxx11::list<int> >' is not derived from 'const std::move_iterator<_Iterator>'
+     a.c == b.c;
+              ^
+In file included from /usr/local/include/c++/5.1.0/bits/stl_algobase.h:67:0,
+                 from /usr/local/include/c++/5.1.0/vector:60,
+                 from main.cpp:1:
+/usr/local/include/c++/5.1.0/bits/stl_iterator.h:342:5: note: candidate: template<class _IteratorL, class _IteratorR> bool std::operator==(const std::reverse_iterator<_Iterator>&, const std::reverse_iterator<_IteratorR>&)
+     operator==(const reverse_iterator<_IteratorL>& __x,
+     ^
+/usr/local/include/c++/5.1.0/bits/stl_iterator.h:342:5: note:   template argument deduction/substitution failed:
+main.cpp:17:14: note:   'std::vector<std::__cxx11::list<int> >' is not derived from 'const std::reverse_iterator<_Iterator>'
+     a.c == b.c;
+              ^
+In file included from /usr/local/include/c++/5.1.0/bits/stl_algobase.h:67:0,
+                 from /usr/local/include/c++/5.1.0/vector:60,
+                 from main.cpp:1:
+/usr/local/include/c++/5.1.0/bits/stl_iterator.h:292:5: note: candidate: template<class _Iterator> bool std::operator==(const std::reverse_iterator<_Iterator>&, const std::reverse_iterator<_Iterator>&)
+     operator==(const reverse_iterator<_Iterator>& __x,
+     ^
+/usr/local/include/c++/5.1.0/bits/stl_iterator.h:292:5: note:   template argument deduction/substitution failed:
+main.cpp:17:14: note:   'std::vector<std::__cxx11::list<int> >' is not derived from 'const std::reverse_iterator<_Iterator>'
+     a.c == b.c;
+              ^
+In file included from /usr/local/include/c++/5.1.0/bits/stl_algobase.h:64:0,
+                 from /usr/local/include/c++/5.1.0/vector:60,
+                 from main.cpp:1:
+/usr/local/include/c++/5.1.0/bits/stl_pair.h:214:5: note: candidate: template<class _T1, class _T2> constexpr bool std::operator==(const std::pair<_T1, _T2>&, const std::pair<_T1, _T2>&)
+     operator==(const pair<_T1, _T2>& __x, const pair<_T1, _T2>& __y)
+     ^
+/usr/local/include/c++/5.1.0/bits/stl_pair.h:214:5: note:   template argument deduction/substitution failed:
+main.cpp:17:14: note:   'std::vector<std::__cxx11::list<int> >' is not derived from 'const std::pair<_T1, _T2>'
+     a.c == b.c;
+              ^
+In file included from /usr/local/include/c++/5.1.0/x86_64-unknown-linux-gnu/bits/c++allocator.h:33:0,
+                 from /usr/local/include/c++/5.1.0/bits/allocator.h:46,
+                 from /usr/local/include/c++/5.1.0/vector:61,
+                 from main.cpp:1:
+/usr/local/include/c++/5.1.0/ext/new_allocator.h:139:5: note: candidate: template<class _Tp> bool __gnu_cxx::operator==(const __gnu_cxx::new_allocator<_Tp>&, const __gnu_cxx::new_allocator<_Tp>&)
+     operator==(const new_allocator<_Tp>&, const new_allocator<_Tp>&)
+     ^
+/usr/local/include/c++/5.1.0/ext/new_allocator.h:139:5: note:   template argument deduction/substitution failed:
+main.cpp:17:14: note:   'std::vector<std::__cxx11::list<int> >' is not derived from 'const __gnu_cxx::new_allocator<_Tp>'
+     a.c == b.c;
+              ^
+In file included from /usr/local/include/c++/5.1.0/bits/stl_algobase.h:67:0,
+                 from /usr/local/include/c++/5.1.0/vector:60,
+                 from main.cpp:1:
+/usr/local/include/c++/5.1.0/bits/stl_iterator.h:827:5: note: candidate: template<class _Iterator, class _Container> bool __gnu_cxx::operator==(const __gnu_cxx::__normal_iterator<_Iterator, _Container>&, const __gnu_cxx::__normal_iterator<_Iterator, _Container>&)
+     operator==(const __normal_iterator<_Iterator, _Container>& __lhs,
+     ^
+/usr/local/include/c++/5.1.0/bits/stl_iterator.h:827:5: note:   template argument deduction/substitution failed:
+main.cpp:17:14: note:   'std::vector<std::__cxx11::list<int> >' is not derived from 'const __gnu_cxx::__normal_iterator<_Iterator, _Container>'
+     a.c == b.c;
+              ^
+In file included from /usr/local/include/c++/5.1.0/bits/stl_algobase.h:67:0,
+                 from /usr/local/include/c++/5.1.0/vector:60,
+                 from main.cpp:1:
+/usr/local/include/c++/5.1.0/bits/stl_iterator.h:820:5: note: candidate: template<class _IteratorL, class _IteratorR, class _Container> bool __gnu_cxx::operator==(const __gnu_cxx::__normal_iterator<_IteratorL, _Container>&, const __gnu_cxx::__normal_iterator<_IteratorR, _Container>&)
+     operator==(const __normal_iterator<_IteratorL, _Container>& __lhs,
+     ^
+/usr/local/include/c++/5.1.0/bits/stl_iterator.h:820:5: note:   template argument deduction/substitution failed:
+main.cpp:17:14: note:   'std::vector<std::__cxx11::list<int> >' is not derived from 'const __gnu_cxx::__normal_iterator<_IteratorL, _Container>'
+     a.c == b.c;
+              ^
