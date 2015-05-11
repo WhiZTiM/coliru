@@ -1,0 +1,5 @@
+FileManager open aimer.txt
+node open aimer.txt
+ next you will see , before the end of the program scoped_ptr will call the corresponding destruct methods
+release node_t aimer.txt
+release FileManager aimer.txt
