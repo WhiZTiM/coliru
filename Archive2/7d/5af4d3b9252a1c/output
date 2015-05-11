@@ -1,0 +1,5 @@
+main.cpp: In instantiation of 'void fn(const Coll&) [with Coll = std::initializer_list<const int>]':
+main.cpp:21:13:   required from here
+main.cpp:11:23: error: 'X<const std::initializer_list<const int>&> x' has incomplete type
+     X<decltype(coll)> x;
+                       ^
