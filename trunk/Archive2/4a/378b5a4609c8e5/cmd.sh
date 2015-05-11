@@ -1,0 +1,2 @@
+clang++ -std=c++11 -stdlib=libc++ -O3 -Wall -Wextra -pedantic-errors main.cpp && ./a.out && echo '====== out.txt =========' && cat out.txt 
+#echo ============== && g++ -ggdb -std=c++11 -O3 -Wall -Wextra -pedantic-errors main.cpp -c -S main.cpp && cat main.s
