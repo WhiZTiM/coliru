@@ -1,0 +1,12 @@
+================= print_func shows=======================
+reference counter :2
+node name kylin_zhang
+================= shared_node print shows=======================
+p 's use counter 3
+reference counter : 3
+node name kylin_zhang
+reference counter : 3
+node name kylin_zhang
+use counter 3
+================= destructor shows=======================
+release node kylin_zhang
