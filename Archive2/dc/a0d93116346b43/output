@@ -1,0 +1,6 @@
+main.cpp:14:28: error: use of deleted function 'const t&& carefully::move(const t&) [with t = int]'
+     c = carefully::move( k ),
+                            ^
+main.cpp:7:16: note: declared here
+     t const && move( t const & ) = delete;
+                ^
