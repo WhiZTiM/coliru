@@ -1,0 +1,15 @@
+main.cpp:1:1: error: 'stringstream' does not name a type
+ stringstream stream_Babel;
+ ^
+main.cpp:4:1: error: expected unqualified-id before 'for'
+ for(string line: Zmat){
+ ^
+main.cpp:11:13: error: 'cntfileName' does not name a type
+             cntfileName++;
+             ^
+main.cpp:12:13: error: 'fileName' does not name a type
+             fileName = to_string(cntfileName) + (".sdf");
+             ^
+main.cpp:13:13: error: 'cout' does not name a type
+             cout << fileName << endl;
+             ^
