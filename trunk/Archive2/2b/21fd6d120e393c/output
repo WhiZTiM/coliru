@@ -1,0 +1,7 @@
+12000000 original (boost::tokenizer) rate: 3.3522μs
+14000000 possible (boost::split) rate: 4.68398μs
+14000000 spirit (dynamic version) rate: 2.58377μs
+14000000 spirit (direct version, avoid type erasure) rate: 2.24564μs
+
+next step:
+10000000 spirit (precompiled sep) rate: 1.20391μs
