@@ -1,0 +1,3 @@
+/usr/bin/ld: main.o: relocation R_X86_64_PC32 against undefined symbol `__morestack' can not be used when making a shared object; recompile with -fPIC
+/usr/bin/ld: final link failed: Bad value
+collect2: error: ld returned 1 exit status
