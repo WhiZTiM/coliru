@@ -1,0 +1,4 @@
+bar() - Before adding new elements:
+Subvector: {42 52 };
+Elements added by bar:
+Subvector: {32 33 };
