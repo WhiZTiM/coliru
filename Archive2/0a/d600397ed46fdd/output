@@ -1,0 +1,298 @@
+hello world
+size: 100 depth: 13 ideal depth: 7 depth ave: 7.89 ideal depth ave: 5.8 total depth: 789
+size: 100 depth: 7 ideal depth: 7 depth ave: 5.8 ideal depth ave: 5.8 total depth: 580
+
+size: 200 depth: 17 ideal depth: 8 depth ave: 9.46 ideal depth ave: 6.765 total depth: 1892
+size: 200 depth: 8 ideal depth: 8 depth ave: 6.765 ideal depth ave: 6.765 total depth: 1353
+
+size: 300 depth: 18 ideal depth: 9 depth ave: 9.48333 ideal depth ave: 7.32667 total depth: 2845
+size: 300 depth: 9 ideal depth: 9 depth ave: 7.32667 ideal depth ave: 7.32667 total depth: 2198
+
+size: 400 depth: 19 ideal depth: 9 depth ave: 10.375 ideal depth ave: 7.745 total depth: 4150
+size: 400 depth: 9 ideal depth: 9 depth ave: 7.745 ideal depth ave: 7.745 total depth: 3098
+
+size: 500 depth: 18 ideal depth: 9 depth ave: 9.758 ideal depth ave: 7.996 total depth: 4879
+size: 500 depth: 9 ideal depth: 9 depth ave: 7.996 ideal depth ave: 7.996 total depth: 3998
+
+size: 600 depth: 18 ideal depth: 10 depth ave: 10.6917 ideal depth ave: 8.31167 total depth: 6415
+size: 600 depth: 10 ideal depth: 10 depth ave: 8.31167 ideal depth ave: 8.31167 total depth: 4987
+
+size: 700 depth: 21 ideal depth: 10 depth ave: 11.0271 ideal depth ave: 8.55286 total depth: 7719
+size: 700 depth: 10 ideal depth: 10 depth ave: 8.55286 ideal depth ave: 8.55286 total depth: 5987
+
+size: 800 depth: 24 ideal depth: 10 depth ave: 11.79 ideal depth ave: 8.73375 total depth: 9432
+size: 800 depth: 10 ideal depth: 10 depth ave: 8.73375 ideal depth ave: 8.73375 total depth: 6987
+
+size: 900 depth: 18 ideal depth: 10 depth ave: 10.7333 ideal depth ave: 8.87444 total depth: 9660
+size: 900 depth: 10 ideal depth: 10 depth ave: 8.87444 ideal depth ave: 8.87444 total depth: 7987
+
+size: 1000 depth: 20 ideal depth: 10 depth ave: 11.433 ideal depth ave: 8.987 total depth: 11433
+size: 1000 depth: 10 ideal depth: 10 depth ave: 8.987 ideal depth ave: 8.987 total depth: 8987
+
+size: 1100 depth: 21 ideal depth: 11 depth ave: 12.0027 ideal depth ave: 9.14909 total depth: 13203
+size: 1100 depth: 11 ideal depth: 11 depth ave: 9.14909 ideal depth ave: 9.14909 total depth: 10064
+
+size: 1200 depth: 23 ideal depth: 11 depth ave: 11.9175 ideal depth ave: 9.30333 total depth: 14301
+size: 1200 depth: 11 ideal depth: 11 depth ave: 9.30333 ideal depth ave: 9.30333 total depth: 11164
+
+size: 1300 depth: 23 ideal depth: 11 depth ave: 12.1677 ideal depth ave: 9.43385 total depth: 15818
+size: 1300 depth: 11 ideal depth: 11 depth ave: 9.43385 ideal depth ave: 9.43385 total depth: 12264
+
+size: 1400 depth: 24 ideal depth: 11 depth ave: 12.4314 ideal depth ave: 9.54571 total depth: 17404
+size: 1400 depth: 11 ideal depth: 11 depth ave: 9.54571 ideal depth ave: 9.54571 total depth: 13364
+
+size: 1500 depth: 21 ideal depth: 11 depth ave: 12.152 ideal depth ave: 9.64267 total depth: 18228
+size: 1500 depth: 11 ideal depth: 11 depth ave: 9.64267 ideal depth ave: 9.64267 total depth: 14464
+
+size: 1600 depth: 25 ideal depth: 11 depth ave: 13.3588 ideal depth ave: 9.7275 total depth: 21374
+size: 1600 depth: 11 ideal depth: 11 depth ave: 9.7275 ideal depth ave: 9.7275 total depth: 15564
+
+size: 1700 depth: 28 ideal depth: 11 depth ave: 14.7982 ideal depth ave: 9.80235 total depth: 25157
+size: 1700 depth: 11 ideal depth: 11 depth ave: 9.80235 ideal depth ave: 9.80235 total depth: 16664
+
+size: 1800 depth: 24 ideal depth: 11 depth ave: 13.55 ideal depth ave: 9.86889 total depth: 24390
+size: 1800 depth: 11 ideal depth: 11 depth ave: 9.86889 ideal depth ave: 9.86889 total depth: 17764
+
+size: 1900 depth: 23 ideal depth: 11 depth ave: 13.4316 ideal depth ave: 9.92842 total depth: 25520
+size: 1900 depth: 11 ideal depth: 11 depth ave: 9.92842 ideal depth ave: 9.92842 total depth: 18864
+
+size: 2000 depth: 25 ideal depth: 11 depth ave: 13.34 ideal depth ave: 9.982 total depth: 26680
+size: 2000 depth: 11 ideal depth: 11 depth ave: 9.982 ideal depth ave: 9.982 total depth: 19964
+
+size: 2100 depth: 23 ideal depth: 12 depth ave: 13.4376 ideal depth ave: 10.0557 total depth: 28219
+size: 2100 depth: 12 ideal depth: 12 depth ave: 10.0557 ideal depth ave: 10.0557 total depth: 21117
+
+size: 2200 depth: 22 ideal depth: 12 depth ave: 12.6777 ideal depth ave: 10.1441 total depth: 27891
+size: 2200 depth: 12 ideal depth: 12 depth ave: 10.1441 ideal depth ave: 10.1441 total depth: 22317
+
+size: 2300 depth: 24 ideal depth: 12 depth ave: 12.8248 ideal depth ave: 10.2248 total depth: 29497
+size: 2300 depth: 12 ideal depth: 12 depth ave: 10.2248 ideal depth ave: 10.2248 total depth: 23517
+
+size: 2400 depth: 24 ideal depth: 12 depth ave: 13.3504 ideal depth ave: 10.2988 total depth: 32041
+size: 2400 depth: 12 ideal depth: 12 depth ave: 10.2988 ideal depth ave: 10.2988 total depth: 24717
+
+size: 2500 depth: 27 ideal depth: 12 depth ave: 14.6104 ideal depth ave: 10.3668 total depth: 36526
+size: 2500 depth: 12 ideal depth: 12 depth ave: 10.3668 ideal depth ave: 10.3668 total depth: 25917
+
+size: 2600 depth: 25 ideal depth: 12 depth ave: 13.6773 ideal depth ave: 10.4296 total depth: 35561
+size: 2600 depth: 12 ideal depth: 12 depth ave: 10.4296 ideal depth ave: 10.4296 total depth: 27117
+
+size: 2700 depth: 25 ideal depth: 12 depth ave: 13.4974 ideal depth ave: 10.4878 total depth: 36443
+size: 2700 depth: 12 ideal depth: 12 depth ave: 10.4878 ideal depth ave: 10.4878 total depth: 28317
+
+size: 2800 depth: 25 ideal depth: 12 depth ave: 14.3682 ideal depth ave: 10.5418 total depth: 40231
+size: 2800 depth: 12 ideal depth: 12 depth ave: 10.5418 ideal depth ave: 10.5418 total depth: 29517
+
+size: 2900 depth: 26 ideal depth: 12 depth ave: 13.771 ideal depth ave: 10.5921 total depth: 39936
+size: 2900 depth: 12 ideal depth: 12 depth ave: 10.5921 ideal depth ave: 10.5921 total depth: 30717
+
+size: 3000 depth: 30 ideal depth: 12 depth ave: 14.443 ideal depth ave: 10.639 total depth: 43329
+size: 3000 depth: 12 ideal depth: 12 depth ave: 10.639 ideal depth ave: 10.639 total depth: 31917
+
+size: 3100 depth: 25 ideal depth: 12 depth ave: 15.2739 ideal depth ave: 10.6829 total depth: 47349
+size: 3100 depth: 12 ideal depth: 12 depth ave: 10.6829 ideal depth ave: 10.6829 total depth: 33117
+
+size: 3200 depth: 26 ideal depth: 12 depth ave: 13.1412 ideal depth ave: 10.7241 total depth: 42052
+size: 3200 depth: 12 ideal depth: 12 depth ave: 10.7241 ideal depth ave: 10.7241 total depth: 34317
+
+size: 3300 depth: 26 ideal depth: 12 depth ave: 14.2003 ideal depth ave: 10.7627 total depth: 46861
+size: 3300 depth: 12 ideal depth: 12 depth ave: 10.7627 ideal depth ave: 10.7627 total depth: 35517
+
+size: 3400 depth: 28 ideal depth: 12 depth ave: 13.8226 ideal depth ave: 10.7991 total depth: 46997
+size: 3400 depth: 12 ideal depth: 12 depth ave: 10.7991 ideal depth ave: 10.7991 total depth: 36717
+
+size: 3500 depth: 28 ideal depth: 12 depth ave: 13.7806 ideal depth ave: 10.8334 total depth: 48232
+size: 3500 depth: 12 ideal depth: 12 depth ave: 10.8334 ideal depth ave: 10.8334 total depth: 37917
+
+size: 3600 depth: 27 ideal depth: 12 depth ave: 14.6864 ideal depth ave: 10.8658 total depth: 52871
+size: 3600 depth: 12 ideal depth: 12 depth ave: 10.8658 ideal depth ave: 10.8658 total depth: 39117
+
+size: 3700 depth: 24 ideal depth: 12 depth ave: 13.9481 ideal depth ave: 10.8965 total depth: 51608
+size: 3700 depth: 12 ideal depth: 12 depth ave: 10.8965 ideal depth ave: 10.8965 total depth: 40317
+
+size: 3800 depth: 28 ideal depth: 12 depth ave: 14.45 ideal depth ave: 10.9255 total depth: 54910
+size: 3800 depth: 12 ideal depth: 12 depth ave: 10.9255 ideal depth ave: 10.9255 total depth: 41517
+
+size: 3900 depth: 28 ideal depth: 12 depth ave: 14.0251 ideal depth ave: 10.9531 total depth: 54698
+size: 3900 depth: 12 ideal depth: 12 depth ave: 10.9531 ideal depth ave: 10.9531 total depth: 42717
+
+size: 4000 depth: 29 ideal depth: 12 depth ave: 15.0497 ideal depth ave: 10.9793 total depth: 60199
+size: 4000 depth: 12 ideal depth: 12 depth ave: 10.9793 ideal depth ave: 10.9793 total depth: 43917
+
+size: 4100 depth: 25 ideal depth: 13 depth ave: 14.8517 ideal depth ave: 11.0054 total depth: 60892
+size: 4100 depth: 13 ideal depth: 13 depth ave: 11.0054 ideal depth ave: 11.0054 total depth: 45122
+
+size: 4200 depth: 30 ideal depth: 13 depth ave: 15.6014 ideal depth ave: 11.0529 total depth: 65526
+size: 4200 depth: 13 ideal depth: 13 depth ave: 11.0529 ideal depth ave: 11.0529 total depth: 46422
+
+size: 4300 depth: 29 ideal depth: 13 depth ave: 14.5079 ideal depth ave: 11.0981 total depth: 62384
+size: 4300 depth: 13 ideal depth: 13 depth ave: 11.0981 ideal depth ave: 11.0981 total depth: 47722
+
+size: 4400 depth: 27 ideal depth: 13 depth ave: 15.8566 ideal depth ave: 11.1414 total depth: 69769
+size: 4400 depth: 13 ideal depth: 13 depth ave: 11.1414 ideal depth ave: 11.1414 total depth: 49022
+
+size: 4500 depth: 28 ideal depth: 13 depth ave: 15.8553 ideal depth ave: 11.1827 total depth: 71349
+size: 4500 depth: 13 ideal depth: 13 depth ave: 11.1827 ideal depth ave: 11.1827 total depth: 50322
+
+size: 4600 depth: 27 ideal depth: 13 depth ave: 14.632 ideal depth ave: 11.2222 total depth: 67307
+size: 4600 depth: 13 ideal depth: 13 depth ave: 11.2222 ideal depth ave: 11.2222 total depth: 51622
+
+size: 4700 depth: 27 ideal depth: 13 depth ave: 14.2574 ideal depth ave: 11.26 total depth: 67010
+size: 4700 depth: 13 ideal depth: 13 depth ave: 11.26 ideal depth ave: 11.26 total depth: 52922
+
+size: 4800 depth: 26 ideal depth: 13 depth ave: 15.4792 ideal depth ave: 11.2963 total depth: 74300
+size: 4800 depth: 13 ideal depth: 13 depth ave: 11.2963 ideal depth ave: 11.2963 total depth: 54222
+
+size: 4900 depth: 30 ideal depth: 13 depth ave: 15.9327 ideal depth ave: 11.331 total depth: 78070
+size: 4900 depth: 13 ideal depth: 13 depth ave: 11.331 ideal depth ave: 11.331 total depth: 55522
+
+size: 5000 depth: 27 ideal depth: 13 depth ave: 15.1638 ideal depth ave: 11.3644 total depth: 75819
+size: 5000 depth: 13 ideal depth: 13 depth ave: 11.3644 ideal depth ave: 11.3644 total depth: 56822
+
+size: 5100 depth: 26 ideal depth: 13 depth ave: 15.0363 ideal depth ave: 11.3965 total depth: 76685
+size: 5100 depth: 13 ideal depth: 13 depth ave: 11.3965 ideal depth ave: 11.3965 total depth: 58122
+
+size: 5200 depth: 30 ideal depth: 13 depth ave: 16.3331 ideal depth ave: 11.4273 total depth: 84932
+size: 5200 depth: 13 ideal depth: 13 depth ave: 11.4273 ideal depth ave: 11.4273 total depth: 59422
+
+size: 5300 depth: 32 ideal depth: 13 depth ave: 16.3609 ideal depth ave: 11.457 total depth: 86713
+size: 5300 depth: 13 ideal depth: 13 depth ave: 11.457 ideal depth ave: 11.457 total depth: 60722
+
+size: 5400 depth: 28 ideal depth: 13 depth ave: 15.54 ideal depth ave: 11.4856 total depth: 83916
+size: 5400 depth: 13 ideal depth: 13 depth ave: 11.4856 ideal depth ave: 11.4856 total depth: 62022
+
+size: 5500 depth: 30 ideal depth: 13 depth ave: 16.0889 ideal depth ave: 11.5131 total depth: 88489
+size: 5500 depth: 13 ideal depth: 13 depth ave: 11.5131 ideal depth ave: 11.5131 total depth: 63322
+
+size: 5600 depth: 32 ideal depth: 13 depth ave: 16.4768 ideal depth ave: 11.5396 total depth: 92270
+size: 5600 depth: 13 ideal depth: 13 depth ave: 11.5396 ideal depth ave: 11.5396 total depth: 64622
+
+size: 5700 depth: 30 ideal depth: 13 depth ave: 15.2065 ideal depth ave: 11.5653 total depth: 86677
+size: 5700 depth: 13 ideal depth: 13 depth ave: 11.5653 ideal depth ave: 11.5653 total depth: 65922
+
+size: 5800 depth: 29 ideal depth: 13 depth ave: 16.5841 ideal depth ave: 11.59 total depth: 96188
+size: 5800 depth: 13 ideal depth: 13 depth ave: 11.59 ideal depth ave: 11.59 total depth: 67222
+
+size: 5900 depth: 31 ideal depth: 13 depth ave: 15.3247 ideal depth ave: 11.6139 total depth: 90416
+size: 5900 depth: 13 ideal depth: 13 depth ave: 11.6139 ideal depth ave: 11.6139 total depth: 68522
+
+size: 6000 depth: 31 ideal depth: 13 depth ave: 16.3975 ideal depth ave: 11.637 total depth: 98385
+size: 6000 depth: 13 ideal depth: 13 depth ave: 11.637 ideal depth ave: 11.637 total depth: 69822
+
+size: 6100 depth: 28 ideal depth: 13 depth ave: 15.3311 ideal depth ave: 11.6593 total depth: 93520
+size: 6100 depth: 13 ideal depth: 13 depth ave: 11.6593 ideal depth ave: 11.6593 total depth: 71122
+
+size: 6200 depth: 31 ideal depth: 13 depth ave: 16.0229 ideal depth ave: 11.681 total depth: 99342
+size: 6200 depth: 13 ideal depth: 13 depth ave: 11.681 ideal depth ave: 11.681 total depth: 72422
+
+size: 6300 depth: 27 ideal depth: 13 depth ave: 15.0473 ideal depth ave: 11.7019 total depth: 94798
+size: 6300 depth: 13 ideal depth: 13 depth ave: 11.7019 ideal depth ave: 11.7019 total depth: 73722
+
+size: 6400 depth: 30 ideal depth: 13 depth ave: 16.7867 ideal depth ave: 11.7222 total depth: 107435
+size: 6400 depth: 13 ideal depth: 13 depth ave: 11.7222 ideal depth ave: 11.7222 total depth: 75022
+
+size: 6500 depth: 29 ideal depth: 13 depth ave: 15.7162 ideal depth ave: 11.7418 total depth: 102155
+size: 6500 depth: 13 ideal depth: 13 depth ave: 11.7418 ideal depth ave: 11.7418 total depth: 76322
+
+size: 6600 depth: 30 ideal depth: 13 depth ave: 15.4886 ideal depth ave: 11.7609 total depth: 102225
+size: 6600 depth: 13 ideal depth: 13 depth ave: 11.7609 ideal depth ave: 11.7609 total depth: 77622
+
+size: 6700 depth: 28 ideal depth: 13 depth ave: 15.2501 ideal depth ave: 11.7794 total depth: 102176
+size: 6700 depth: 13 ideal depth: 13 depth ave: 11.7794 ideal depth ave: 11.7794 total depth: 78922
+
+size: 6800 depth: 35 ideal depth: 13 depth ave: 17.0512 ideal depth ave: 11.7974 total depth: 115948
+size: 6800 depth: 13 ideal depth: 13 depth ave: 11.7974 ideal depth ave: 11.7974 total depth: 80222
+
+size: 6900 depth: 30 ideal depth: 13 depth ave: 15.5978 ideal depth ave: 11.8148 total depth: 107625
+size: 6900 depth: 13 ideal depth: 13 depth ave: 11.8148 ideal depth ave: 11.8148 total depth: 81522
+
+size: 7000 depth: 32 ideal depth: 13 depth ave: 16.956 ideal depth ave: 11.8317 total depth: 118692
+size: 7000 depth: 13 ideal depth: 13 depth ave: 11.8317 ideal depth ave: 11.8317 total depth: 82822
+
+size: 7100 depth: 31 ideal depth: 13 depth ave: 15.7185 ideal depth ave: 11.8482 total depth: 111601
+size: 7100 depth: 13 ideal depth: 13 depth ave: 11.8482 ideal depth ave: 11.8482 total depth: 84122
+
+size: 7200 depth: 28 ideal depth: 13 depth ave: 15.0958 ideal depth ave: 11.8642 total depth: 108690
+size: 7200 depth: 13 ideal depth: 13 depth ave: 11.8642 ideal depth ave: 11.8642 total depth: 85422
+
+size: 7300 depth: 29 ideal depth: 13 depth ave: 16.1582 ideal depth ave: 11.8797 total depth: 117955
+size: 7300 depth: 13 ideal depth: 13 depth ave: 11.8797 ideal depth ave: 11.8797 total depth: 86722
+
+size: 7400 depth: 27 ideal depth: 13 depth ave: 15.6451 ideal depth ave: 11.8949 total depth: 115774
+size: 7400 depth: 13 ideal depth: 13 depth ave: 11.8949 ideal depth ave: 11.8949 total depth: 88022
+
+size: 7500 depth: 30 ideal depth: 13 depth ave: 17.1943 ideal depth ave: 11.9096 total depth: 128957
+size: 7500 depth: 13 ideal depth: 13 depth ave: 11.9096 ideal depth ave: 11.9096 total depth: 89322
+
+size: 7600 depth: 34 ideal depth: 13 depth ave: 16.5055 ideal depth ave: 11.9239 total depth: 125442
+size: 7600 depth: 13 ideal depth: 13 depth ave: 11.9239 ideal depth ave: 11.9239 total depth: 90622
+
+size: 7700 depth: 29 ideal depth: 13 depth ave: 15.9356 ideal depth ave: 11.9379 total depth: 122704
+size: 7700 depth: 13 ideal depth: 13 depth ave: 11.9379 ideal depth ave: 11.9379 total depth: 91922
+
+size: 7800 depth: 30 ideal depth: 13 depth ave: 15.884 ideal depth ave: 11.9515 total depth: 123895
+size: 7800 depth: 13 ideal depth: 13 depth ave: 11.9515 ideal depth ave: 11.9515 total depth: 93222
+
+size: 7900 depth: 29 ideal depth: 13 depth ave: 15.7239 ideal depth ave: 11.9648 total depth: 124219
+size: 7900 depth: 13 ideal depth: 13 depth ave: 11.9648 ideal depth ave: 11.9648 total depth: 94522
+
+size: 8000 depth: 30 ideal depth: 13 depth ave: 15.7289 ideal depth ave: 11.9778 total depth: 125831
+size: 8000 depth: 13 ideal depth: 13 depth ave: 11.9778 ideal depth ave: 11.9778 total depth: 95822
+
+size: 8100 depth: 28 ideal depth: 13 depth ave: 16.3498 ideal depth ave: 11.9904 total depth: 132433
+size: 8100 depth: 13 ideal depth: 13 depth ave: 11.9904 ideal depth ave: 11.9904 total depth: 97122
+
+size: 8200 depth: 32 ideal depth: 14 depth ave: 16.5149 ideal depth ave: 12.0038 total depth: 135422
+size: 8200 depth: 14 ideal depth: 14 depth ave: 12.0038 ideal depth ave: 12.0038 total depth: 98431
+
+size: 8300 depth: 29 ideal depth: 14 depth ave: 15.8017 ideal depth ave: 12.0278 total depth: 131154
+size: 8300 depth: 14 ideal depth: 14 depth ave: 12.0278 ideal depth ave: 12.0278 total depth: 99831
+
+size: 8400 depth: 33 ideal depth: 14 depth ave: 17.9575 ideal depth ave: 12.0513 total depth: 150843
+size: 8400 depth: 14 ideal depth: 14 depth ave: 12.0513 ideal depth ave: 12.0513 total depth: 101231
+
+size: 8500 depth: 30 ideal depth: 14 depth ave: 15.4756 ideal depth ave: 12.0742 total depth: 131543
+size: 8500 depth: 14 ideal depth: 14 depth ave: 12.0742 ideal depth ave: 12.0742 total depth: 102631
+
+size: 8600 depth: 28 ideal depth: 14 depth ave: 16.483 ideal depth ave: 12.0966 total depth: 141754
+size: 8600 depth: 14 ideal depth: 14 depth ave: 12.0966 ideal depth ave: 12.0966 total depth: 104031
+
+size: 8700 depth: 28 ideal depth: 14 depth ave: 15.5614 ideal depth ave: 12.1185 total depth: 135384
+size: 8700 depth: 14 ideal depth: 14 depth ave: 12.1185 ideal depth ave: 12.1185 total depth: 105431
+
+size: 8800 depth: 34 ideal depth: 14 depth ave: 17.431 ideal depth ave: 12.1399 total depth: 153393
+size: 8800 depth: 14 ideal depth: 14 depth ave: 12.1399 ideal depth ave: 12.1399 total depth: 106831
+
+size: 8900 depth: 31 ideal depth: 14 depth ave: 16.7771 ideal depth ave: 12.1608 total depth: 149316
+size: 8900 depth: 14 ideal depth: 14 depth ave: 12.1608 ideal depth ave: 12.1608 total depth: 108231
+
+size: 9000 depth: 32 ideal depth: 14 depth ave: 16.1323 ideal depth ave: 12.1812 total depth: 145191
+size: 9000 depth: 14 ideal depth: 14 depth ave: 12.1812 ideal depth ave: 12.1812 total depth: 109631
+
+size: 9100 depth: 30 ideal depth: 14 depth ave: 15.6085 ideal depth ave: 12.2012 total depth: 142037
+size: 9100 depth: 14 ideal depth: 14 depth ave: 12.2012 ideal depth ave: 12.2012 total depth: 111031
+
+size: 9200 depth: 33 ideal depth: 14 depth ave: 17.5545 ideal depth ave: 12.2208 total depth: 161501
+size: 9200 depth: 14 ideal depth: 14 depth ave: 12.2208 ideal depth ave: 12.2208 total depth: 112431
+
+size: 9300 depth: 30 ideal depth: 14 depth ave: 16.6555 ideal depth ave: 12.2399 total depth: 154896
+size: 9300 depth: 14 ideal depth: 14 depth ave: 12.2399 ideal depth ave: 12.2399 total depth: 113831
+
+size: 9400 depth: 30 ideal depth: 14 depth ave: 15.6866 ideal depth ave: 12.2586 total depth: 147454
+size: 9400 depth: 14 ideal depth: 14 depth ave: 12.2586 ideal depth ave: 12.2586 total depth: 115231
+
+size: 9500 depth: 31 ideal depth: 14 depth ave: 16.4627 ideal depth ave: 12.2769 total depth: 156396
+size: 9500 depth: 14 ideal depth: 14 depth ave: 12.2769 ideal depth ave: 12.2769 total depth: 116631
+
+size: 9600 depth: 31 ideal depth: 14 depth ave: 15.6949 ideal depth ave: 12.2949 total depth: 150671
+size: 9600 depth: 14 ideal depth: 14 depth ave: 12.2949 ideal depth ave: 12.2949 total depth: 118031
+
+size: 9700 depth: 30 ideal depth: 14 depth ave: 16.5272 ideal depth ave: 12.3125 total depth: 160314
+size: 9700 depth: 14 ideal depth: 14 depth ave: 12.3125 ideal depth ave: 12.3125 total depth: 119431
+
+size: 9800 depth: 32 ideal depth: 14 depth ave: 16.0145 ideal depth ave: 12.3297 total depth: 156942
+size: 9800 depth: 14 ideal depth: 14 depth ave: 12.3297 ideal depth ave: 12.3297 total depth: 120831
+
+size: 9900 depth: 34 ideal depth: 14 depth ave: 17.1139 ideal depth ave: 12.3466 total depth: 169428
+size: 9900 depth: 14 ideal depth: 14 depth ave: 12.3466 ideal depth ave: 12.3466 total depth: 122231
+
