@@ -1,0 +1,4 @@
+main.cpp:16:28: error: expected '(' for function-style cast or type construction
+   long long int c= a*long long int(b);
+                      ~~~~ ^
+1 error generated.
