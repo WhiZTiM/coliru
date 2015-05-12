@@ -1,0 +1,7 @@
+main.cpp: In function 'int main()':
+main.cpp:18:28: error: conflicting declaration 'std::vector<char> data'
+     std::vector<char> data(data, data + 4);
+                            ^
+main.cpp:17:18: note: previous declaration as 'const char* data'
+     const char * data = "abcd";
+                  ^
