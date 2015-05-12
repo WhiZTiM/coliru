@@ -1,0 +1,10 @@
+exc: main.cpp(21): Throw in function (unknown)
+Dynamic exception type: xb
+
+*this: main.cpp(21): Throw in function (unknown)
+Dynamic exception type: xd
+std::exception::what: std::exception
+
+caught: main.cpp(21): Throw in function (unknown)
+Dynamic exception type: boost::exception_detail::clone_impl<xd>
+std::exception::what: std::exception
