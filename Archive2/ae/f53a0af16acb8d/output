@@ -1,0 +1,10 @@
+clang:
+0
+1
+1
+gcc:
+main.cpp: In instantiation of 'const std::type_info* which(const T&) [with Ts = {A, B}; T = Base]':
+main.cpp:38:63:   required from here
+main.cpp:26:8: error: conversion from 'std::__debug::array<const std::type_info*, 2ul>' to non-scalar type 'const std::__debug::array<const std::type_info*, 1ul>' requested
+       ));
+        ^
