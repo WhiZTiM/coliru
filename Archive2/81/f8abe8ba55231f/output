@@ -1,0 +1,12 @@
+In file included from main.cpp:1:
+In file included from /usr/include/c++/v1/iostream:38:
+In file included from /usr/include/c++/v1/ios:216:
+In file included from /usr/include/c++/v1/__locale:18:
+In file included from /usr/include/c++/v1/mutex:177:
+/usr/include/c++/v1/functional:2404:5: error: static_assert failed "This hash only works for enumeration types"
+    static_assert(is_enum<_Tp>::value, "This hash only works for enumeration types");
+    ^             ~~~~~~~~~~~~~~~~~~~
+main.cpp:8:34: note: in instantiation of template class 'std::__1::hash<const std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > >' requested here
+    std::hash<const std::string> hash_fn;
+                                 ^
+1 error generated.
