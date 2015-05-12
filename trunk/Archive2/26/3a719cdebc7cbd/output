@@ -1,0 +1,5 @@
+main.cpp: In function 'std::vector<std::__cxx11::basic_string<char> > split_words(std::__cxx11::string)':
+main.cpp:26:19: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for (int j = 0; j< split.size()-1; j++)
+                   ^
+Geben Sie Wörter oder einen Satz ein: bash: line 7:  4373 Segmentation fault      (core dumped) ./a.out
