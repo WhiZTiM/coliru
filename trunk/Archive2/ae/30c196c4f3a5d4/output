@@ -1,0 +1,5 @@
+int == int32_t: 1
+intptr_t == int32_t: 0
+intptr_t == int64_t: 1
+intptr_t == long: 1
+intptr_t == long long: 0
