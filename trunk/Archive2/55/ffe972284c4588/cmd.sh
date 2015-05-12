@@ -1,0 +1,1 @@
+g++ -std=c++1y -O1 main.cpp && time ./a.out
