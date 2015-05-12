@@ -1,0 +1,10 @@
+main.cpp:37:15: error: no matching function for call to 'map_combine'
+        std::cout << map_combine<f>(comb, 1,2,x) << std::endl;;
+                     ^~~~~~~~~~~~~~
+main.cpp:31:6: note: candidate template ignored: invalid explicitly-specified argument for template parameter 'Map'
+auto map_combine(Combine combine, Head head, Args ... args){
+     ^
+main.cpp:26:6: note: candidate function template not viable: requires 2 arguments, but 4 were provided
+auto map_combine(Combine combine, Arg arg){
+     ^
+1 error generated.
