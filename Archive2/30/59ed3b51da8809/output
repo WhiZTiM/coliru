@@ -1,0 +1,12 @@
+main.cpp: In function 'Toto* callToto()':
+main.cpp:18:3: error: 'Toto::~Toto()' is private
+   ~Toto()
+   ^
+main.cpp:27:10: error: within this context
+     Toto t;
+          ^
+main.cpp:27:10: warning: address of local variable 't' returned [-Wreturn-local-addr]
+main.cpp: In function 'int main()':
+main.cpp:40:11: warning: unused variable 't' [-Wunused-variable]
+     Toto *t = callToto();
+           ^
