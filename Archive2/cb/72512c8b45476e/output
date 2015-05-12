@@ -1,0 +1,7 @@
+main.cpp:15:8: warning: direct base 'Base' inaccessible in 'B' due to ambiguity
+ struct B : A, Base {
+        ^
+main.cpp: In member function 'void B::f()':
+main.cpp:17:15: error: 'Base' is an ambiguous base of 'B'
+         Base::var = 1;  // Base is in here twice, directly and through A
+               ^
