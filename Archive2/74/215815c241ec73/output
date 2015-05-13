@@ -1,0 +1,13 @@
+main.cpp: In function 'int main()':
+main.cpp:113:5: error: 'forward_list' is not a member of 'std'
+     std::forward_list<Check> lck(ck.begin(), ck.end());
+     ^
+main.cpp:113:28: error: expected primary-expression before '>' token
+     std::forward_list<Check> lck(ck.begin(), ck.end());
+                            ^
+main.cpp:113:34: error: 'ck' was not declared in this scope
+     std::forward_list<Check> lck(ck.begin(), ck.end());
+                                  ^
+main.cpp:113:54: error: 'lck' was not declared in this scope
+     std::forward_list<Check> lck(ck.begin(), ck.end());
+                                                      ^
