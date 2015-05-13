@@ -1,0 +1,4 @@
+T is derived from Base<T>, U is not derived
+T is not derived, U is derived from Base<U>
+T is derived from Base<T>, U is derived from Base<U>
+Both T and U are not derived
