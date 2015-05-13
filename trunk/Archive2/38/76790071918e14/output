@@ -1,0 +1,12 @@
++ g++ -std=c++03 -O3 -Wall -pedantic -Wextra main.cpp -lboost_iostreams -lz
++ ./a.out
+MultOperation<Base<T1, R1>, Base<T2, R2>, typename boost::common_type<R1, R2>::type> operator*(const Base<T1, R1>&, const Base<T2, R2>&) [with T1 = Terminal<int>; T2 = Terminal<long int>; R1 = int; R2 = long int; typename boost::common_type<R1, R2>::type = long int]
+typename boost::disable_if<is_some_kind_of_Base<T2>, MultOperation<Base<T1, R1>, Terminal<T2>, typename boost::common_type<R1, T2>::type> >::type operator*(const Base<T1, R1>&, const T2&) [with T1 = Terminal<int>; T2 = int; R1 = int; typename boost::disable_if<is_some_kind_of_Base<T2>, MultOperation<Base<T1, R1>, Terminal<T2>, typename boost::common_type<R1, T2>::type> >::type = MultOperation<Base<Terminal<int>, int>, Terminal<int>, int>]
++ clang++ -std=c++03 -O3 -Wall -pedantic -Wextra main.cpp -lboost_iostreams -lz
++ ./a.out
+MultOperation<Base<T1, R1>, Base<T2, R2>, typename boost::common_type<R1, R2>::type> operator*(const Base<T1, R1> &, const Base<T2, R2> &) [T1 = Terminal<int>, T2 = Terminal<long>, R1 = int, R2 = long]
+typename boost::disable_if<is_some_kind_of_Base<T2>, MultOperation<Base<T1, R1>, Terminal<T2>, typename boost::common_type<R1, T2>::type> >::type operator*(const Base<T1, R1> &, const T2 &) [T1 = Terminal<int>, T2 = int, R1 = int]
++ clang++ -stdlib=libc++ -std=c++03 -O3 -Wall -pedantic -Wextra main.cpp -lcxxrt -ldl -lboost_iostreams -lz
++ ./a.out
+MultOperation<Base<T1, R1>, Base<T2, R2>, typename boost::common_type<R1, R2>::type> operator*(const Base<T1, R1> &, const Base<T2, R2> &) [T1 = Terminal<int>, T2 = Terminal<long>, R1 = int, R2 = long]
+typename boost::disable_if<is_some_kind_of_Base<T2>, MultOperation<Base<T1, R1>, Terminal<T2>, typename boost::common_type<R1, T2>::type> >::type operator*(const Base<T1, R1> &, const T2 &) [T1 = Terminal<int>, T2 = int, R1 = int]
