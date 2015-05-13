@@ -1,0 +1,13 @@
+/tmp/ccjq5fGC.o: In function `void boost::iostreams::mapped_file_source::open<boost::iostreams::detail::path>(boost::iostreams::basic_mapped_file_params<boost::iostreams::detail::path> const&)':
+main.cpp:(.text._ZN5boost9iostreams18mapped_file_source4openINS0_6detail4pathEEEvRKNS0_24basic_mapped_file_paramsIT_EE[_ZN5boost9iostreams18mapped_file_source4openINS0_6detail4pathEEEvRKNS0_24basic_mapped_file_paramsIT_EE]+0xcb): undefined reference to `boost::iostreams::mapped_file_source::open_impl(boost::iostreams::basic_mapped_file_params<boost::iostreams::detail::path> const&)'
+/tmp/ccjq5fGC.o: In function `main':
+main.cpp:(.text.startup+0xed): undefined reference to `boost::iostreams::mapped_file_source::init()'
+main.cpp:(.text.startup+0x1d1): undefined reference to `boost::iostreams::mapped_file_source::mapped_file_source(boost::iostreams::mapped_file_source const&)'
+main.cpp:(.text.startup+0x2ba): undefined reference to `boost::iostreams::mapped_file_source::mapped_file_source(boost::iostreams::mapped_file_source const&)'
+main.cpp:(.text.startup+0x2e8): undefined reference to `boost::iostreams::mapped_file_source::end() const'
+main.cpp:(.text.startup+0x2f8): undefined reference to `boost::iostreams::mapped_file_source::begin() const'
+/tmp/ccjq5fGC.o: In function `void boost::iostreams::detail::close_all<boost::iostreams::mapped_file_source>(boost::iostreams::mapped_file_source&)':
+main.cpp:(.text._ZN5boost9iostreams6detail9close_allINS0_18mapped_file_sourceEEEvRT_[_ZN5boost9iostreams6detail9close_allINS0_18mapped_file_sourceEEEvRT_]+0x2): undefined reference to `boost::iostreams::mapped_file_source::close()'
+/tmp/ccjq5fGC.o: In function `boost::iostreams::detail::direct_streambuf<boost::iostreams::mapped_file_source, std::char_traits<char> >::close_impl(std::_Ios_Openmode)':
+main.cpp:(.text._ZN5boost9iostreams6detail16direct_streambufINS0_18mapped_file_sourceESt11char_traitsIcEE10close_implESt13_Ios_Openmode[_ZN5boost9iostreams6detail16direct_streambufINS0_18mapped_file_sourceESt11char_traitsIcEE10close_implESt13_Ios_Openmode]+0x9e): undefined reference to `boost::iostreams::mapped_file_source::close()'
+collect2: error: ld returned 1 exit status
