@@ -1,0 +1,25 @@
+main.cpp: In function 'void test()':
+main.cpp:17:1: error: a template declaration cannot appear at block scope
+ template<bool C> \
+ ^
+main.cpp:27:5: note: in expansion of macro 'STATIC_ASSERT'
+     STATIC_ASSERT(B, test_asssertion);
+     ^
+main.cpp:22:29: error: 'msg_' was not declared in this scope
+ enum { msg##_enum = sizeof( msg_<expr>::assertion_failed( msg_<expr>::assert_me() ) ) }
+                             ^
+main.cpp:27:5: note: in expansion of macro 'STATIC_ASSERT'
+     STATIC_ASSERT(B, test_asssertion);
+     ^
+main.cpp:22:39: error: '::assertion_failed' has not been declared
+ enum { msg##_enum = sizeof( msg_<expr>::assertion_failed( msg_<expr>::assert_me() ) ) }
+                                       ^
+main.cpp:27:5: note: in expansion of macro 'STATIC_ASSERT'
+     STATIC_ASSERT(B, test_asssertion);
+     ^
+main.cpp:22:69: error: '::assert_me' has not been declared
+ enum { msg##_enum = sizeof( msg_<expr>::assertion_failed( msg_<expr>::assert_me() ) ) }
+                                                                     ^
+main.cpp:27:5: note: in expansion of macro 'STATIC_ASSERT'
+     STATIC_ASSERT(B, test_asssertion);
+     ^
