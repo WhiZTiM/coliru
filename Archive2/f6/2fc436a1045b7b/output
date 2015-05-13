@@ -1,0 +1,15 @@
+main.cpp: In function 'void test()':											main.cpp: In instantiation of 'void test() [with bool B = false]':
+main.cpp:15:22: warning: typedef 'types_must_match' locally defined but not used [-Wunused-local-typedefs]		main.cpp:22:17:	  required from here
+     STATIC_ASSERT(B, types_must_match);										main.cpp:7:34: error: static assertion failed: types_must_match
+		      ^													 #define STATIC_ASSERT(expr, msg) static_assert(expr, #msg)
+main.cpp:3:46: note: in definition of macro 'STATIC_ASSERT'												  ^
+ #define STATIC_ASSERT(expr, msg) typedef int msg[(expr) ? 1 : -1];							main.cpp:15:5: note: in expansion of macro 'STATIC_ASSERT'
+					      ^										     STATIC_ASSERT(B, types_must_match);
+main.cpp: In instantiation of 'void test() [with bool B = false]':							     ^
+main.cpp:22:17:	  required from here											
+main.cpp:15:22: error: size of array is negative									
+     STATIC_ASSERT(B, types_must_match);										
+		      ^													
+main.cpp:3:46: note: in definition of macro 'STATIC_ASSERT'								
+ #define STATIC_ASSERT(expr, msg) typedef int msg[(expr) ? 1 : -1];							
+					      ^										
