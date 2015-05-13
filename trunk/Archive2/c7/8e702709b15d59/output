@@ -1,0 +1,14 @@
+g++ (GCC) 5.1.0
+Copyright (C) 2015 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+ NUM_ARGS="1"
+clang version 3.6.0 (tags/RELEASE_360/final 235480)
+Target: x86_64-unknown-linux-gnu
+Thread model: posix
+main.cpp:26:63: warning: token pasting of ',' and __VA_ARGS__ is a GNU extension [-Wgnu-zero-variadic-macro-arguments]
+#define FOO(...) do { static thread_local BAR bar{#__VA_ARGS__, ##__VA_ARGS__}; } while (false)
+                                                              ^
+1 warning generated.
+ NUM_ARGS="1"
