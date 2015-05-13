@@ -1,0 +1,11 @@
+main.cpp:7:12: error: array initializer must be an initializer list
+    string city1[] = "toronto";
+           ^
+main.cpp:8:13: error: use of undeclared identifier 'city'; did you mean 'city1'?
+    cout << city;   
+            ^~~~
+            city1
+main.cpp:7:12: note: 'city1' declared here
+    string city1[] = "toronto";
+           ^
+2 errors generated.
