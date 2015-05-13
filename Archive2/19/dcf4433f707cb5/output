@@ -1,0 +1,14 @@
+main.cpp: In function 'int main()':
+main.cpp:10:13: error: invalid initialization of non-const reference of type 'boost::shared_ptr<B>&' from an rvalue of type 'boost::shared_ptr<B>'
+     b.swap(d);
+             ^
+In file included from /usr/local/include/boost/shared_ptr.hpp:17:0,
+                 from main.cpp:1:
+/usr/local/include/boost/smart_ptr/shared_ptr.hpp:420:5: note:   after user-defined conversion: boost::shared_ptr<T>::shared_ptr(const boost::shared_ptr<Y>&, typename boost::detail::sp_enable_if_convertible<Y, T>::type) [with Y = D; T = B; typename boost::detail::sp_enable_if_convertible<Y, T>::type = boost::detail::sp_empty]
+     shared_ptr( shared_ptr<Y> const & r, typename boost::detail::sp_enable_if_convertible<Y,T>::type = boost::detail::sp_empty() )
+     ^
+In file included from /usr/local/include/boost/shared_ptr.hpp:17:0,
+                 from main.cpp:1:
+/usr/local/include/boost/smart_ptr/shared_ptr.hpp:679:10: note:   initializing argument 1 of 'void boost::shared_ptr<T>::swap(boost::shared_ptr<T>&) [with T = B]'
+     void swap( shared_ptr & other ) BOOST_NOEXCEPT
+          ^
