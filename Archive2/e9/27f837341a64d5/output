@@ -1,0 +1,3 @@
+main.cpp:69:2: error: #endif without #if
+ #endif // MyType.h
+  ^
