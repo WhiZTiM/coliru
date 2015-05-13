@@ -1,0 +1,3 @@
+g++ -std=c++11 -Os -Wall -pedantic main.cpp  && ./a.out <<XML
+<xml><chapter><name>First Chapter</name><link>xyz1</link><chapter><name>First Sub-Chapter</name><link>xyz2</link><chapter><name>Sub Sub</name><link>xyz3</link><chapter><name>Sub Sub Sib</name><link>xyz4</link></chapter></chapter></chapter></chapter><chapter><name>Second Chapter</name><link>abc1</link><chapter><name>First Sub-Chapter</name><link>abc2</link></chapter></chapter></xml>
+XML
