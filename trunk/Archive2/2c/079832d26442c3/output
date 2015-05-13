@@ -1,0 +1,7 @@
+(ifs.is_open())
+    {       
+        boost::iostreams::stream<boost::iostreams::mapped_file_source> is("main.cpp");
+        if (is.seekg(200, is.beg))
+            std::cout << is.rdbuf();
+    }
+}
