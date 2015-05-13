@@ -1,0 +1,21 @@
+main.cpp:11:5: error: 'PreferenceCore' does not name a type
+     PreferenceCore *preferencesCore ;
+     ^
+main.cpp:20:5: error: 'BitInt' does not name a type
+     BitInt two ;
+     ^
+main.cpp:22:5: error: 'BitInt' does not name a type
+     BitInt ChordSpace ;
+     ^
+main.cpp:25:5: error: 'ChordId' does not name a type
+     ChordId MaxChordId ;
+     ^
+main.cpp:26:5: error: 'ChordId' does not name a type
+     ChordId MinChordId ;
+     ^
+main.cpp:27:32: error: expected ')' before '*' token
+     Constants( PreferencesCore *prefer ) ;
+                                ^
+main.cpp:36:5: error: 'BitInt' does not name a type
+     BitInt getChordSpace () ;
+     ^
