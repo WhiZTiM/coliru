@@ -1,0 +1,10 @@
+main.cpp:11:79: error: 'const vector2d vector2d::operator+(const vector2d&, const vector2d&)' must take either zero or one argument
+   /*friend*/ const vector2d operator + (const vector2d& v1, const vector2d& v2) {
+                                                                               ^
+main.cpp: In function 'int main()':
+main.cpp:22:17: error: no match for 'operator+' (operand types are 'vector2d' and 'vector2d')
+  vector2d c = a + b;
+                 ^
+main.cpp:22:11: warning: unused variable 'c' [-Wunused-variable]
+  vector2d c = a + b;
+           ^
