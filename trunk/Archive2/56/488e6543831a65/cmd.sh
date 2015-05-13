@@ -1,0 +1,1 @@
+g++-4.9 -std=c++11 -Os -Wall -pedantic main.cpp  && ./a.out -lboost_thread -lboost_system -lboost_iostreams
