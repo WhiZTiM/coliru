@@ -1,0 +1,8 @@
+In file included from main.cpp:1:0:
+/Archive2/61/8a7158c571e83b/main.cpp:194:9: warning: multi-line comment [-Wcomment]
+         //if (s() == uintt(0)){\
+         ^
+main.cpp:297:9: warning: multi-line comment [-Wcomment]
+         //variable\
+         ^
+hello world
