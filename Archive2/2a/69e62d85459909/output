@@ -1,0 +1,12 @@
+main.cpp:396:1: warning: control may reach end of non-void function [-Wreturn-type]
+}
+^
+main.cpp:417:1: warning: control may reach end of non-void function [-Wreturn-type]
+}
+^
+2 warnings generated.
+File Graphs=10
+Seuil=0.2
+frequentsglobal=12
+BOOST_VERSION=105700
+TIME: 0s
