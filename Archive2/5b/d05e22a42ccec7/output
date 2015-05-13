@@ -1,0 +1,17 @@
+main.cpp:11:21: error: 'auto' not allowed in function prototype
+auto compose1(const auto& f, const auto& g)
+                    ^~~~
+main.cpp:11:36: error: 'auto' not allowed in function prototype
+auto compose1(const auto& f, const auto& g)
+                                   ^~~~
+main.cpp:13:9: error: no viable conversion from '(lambda at main.cpp:13:9)' to 'auto'
+ return [&f, &g](auto ...args) { return g(f(args...)); };
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+main.cpp:13:9: note: candidate template ignored: could not match 'auto (*)(type-parameter-0-0...)' against 'auto'
+main.cpp:22:15: error: no matching function for call to 'compose1'
+ std::cout << compose1(f, g)("Hello") << '\n';
+              ^~~~~~~~
+main.cpp:11:6: note: candidate function not viable: no known conversion from 'std::__cxx11::basic_string<char> (const std::string)' to 'int &' for 1st argument
+auto compose1(const auto& f, const auto& g)
+     ^
+4 errors generated.
