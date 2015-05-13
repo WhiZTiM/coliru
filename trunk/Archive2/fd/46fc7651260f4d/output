@@ -1,0 +1,38 @@
+g++ (GCC) 5.1.0
+Copyright (C) 2015 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+main.cpp: In function 'int main()':
+main.cpp:3:62: error: storage class 'thread_local' invalid for function 'bar'
+ #define FOO(...) do { static thread_local BAR bar(__VA_ARGS__); } while (false)
+                                                              ^
+main.cpp:11:5: note: in expansion of macro 'FOO'
+     FOO();
+     ^
+main.cpp:3:62: warning: 'static' specified invalid for function 'bar' declared out of global scope [-Wpedantic]
+ #define FOO(...) do { static thread_local BAR bar(__VA_ARGS__); } while (false)
+                                                              ^
+main.cpp:11:5: note: in expansion of macro 'FOO'
+     FOO();
+     ^
+main.cpp:3:62: error: cannot declare static function inside another function
+ #define FOO(...) do { static thread_local BAR bar(__VA_ARGS__); } while (false)
+                                                              ^
+main.cpp:11:5: note: in expansion of macro 'FOO'
+     FOO();
+     ^
+clang version 3.6.0 (tags/RELEASE_360/final 235480)
+Target: x86_64-unknown-linux-gnu
+Thread model: posix
+main.cpp:11:5: error: function declared in block scope cannot have 'static' storage class
+    FOO();
+    ^
+main.cpp:3:23: note: expanded from macro 'FOO'
+#define FOO(...) do { static thread_local BAR bar(__VA_ARGS__); } while (false)
+                      ^
+main.cpp:11:5: error: 'thread_local' is only allowed on variable declarations
+main.cpp:3:30: note: expanded from macro 'FOO'
+#define FOO(...) do { static thread_local BAR bar(__VA_ARGS__); } while (false)
+                             ^
+2 errors generated.
