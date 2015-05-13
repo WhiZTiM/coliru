@@ -1,0 +1,3 @@
+main.cpp:1:0: error: unterminated #ifndef
+ #ifndef _PIPE_H_
+ ^
