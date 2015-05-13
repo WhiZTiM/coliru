@@ -1,0 +1,20 @@
+main.cpp: In instantiation of 'void test() [with bool B = false]':
+main.cpp:21:17:   required from here
+main.cpp:11:50: error: no matching function for call to 'test() [with bool B = false]::assertion_failed::B_must_not_be_false(void*)'
+ enum { msg##_enum = sizeof( assertion_failed::msg( assertion_failed::assert_me() ) ) }
+                                                  ^
+main.cpp:16:5: note: in expansion of macro 'STATIC_ASSERT'
+     STATIC_ASSERT(B, B_must_not_be_false);
+     ^
+main.cpp:16:22: note: candidate: static int test()::assertion_failed::B_must_not_be_false(typename assert<B>::type) [with bool B = false; typename assert<B>::type = assert<false>]
+     STATIC_ASSERT(B, B_must_not_be_false);
+                      ^
+main.cpp:8:16: note: in definition of macro 'STATIC_ASSERT'
+     static int msg(typename assert<expr>::type);                                  \
+                ^
+main.cpp:16:22: note:   no known conversion for argument 1 from 'void*' to 'assert<false>::type {aka assert<false>}'
+     STATIC_ASSERT(B, B_must_not_be_false);
+                      ^
+main.cpp:8:16: note: in definition of macro 'STATIC_ASSERT'
+     static int msg(typename assert<expr>::type);                                  \
+                ^
