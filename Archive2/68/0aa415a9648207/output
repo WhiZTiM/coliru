@@ -1,0 +1,9 @@
+main.cpp: In instantiation of 'struct test() [with bool B = false]::types_must_match':					main.cpp: In instantiation of 'void test() [with bool B = false]':
+main.cpp:15:5:	 required from 'void test() [with bool B = false]'							main.cpp:22:17:	  required from here
+main.cpp:22:17:	  required from here											main.cpp:7:34: error: static assertion failed: types_must_match
+main.cpp:3:68: error: negative width in bit-field 'test() [with bool B = false]::types_must_match::_'			 #define STATIC_ASSERT(expr, msg) static_assert(expr, #msg)
+ #define STATIC_ASSERT(expr, msg) struct msg {int _ : (expr) ? 1 : -1; };										  ^
+								    ^							main.cpp:15:5: note: in expansion of macro 'STATIC_ASSERT'
+main.cpp:15:5: note: in expansion of macro 'STATIC_ASSERT'								     STATIC_ASSERT(B, types_must_match);
+     STATIC_ASSERT(B, types_must_match);										     ^
+     ^															
