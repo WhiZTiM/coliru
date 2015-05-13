@@ -1,0 +1,331 @@
+main.cpp:64:15: warning: unused parameter 'what' [-Wunused-parameter]
+main.cpp:283:6: warning: unused parameter 'arg' [-Wunused-parameter]
+main.cpp:286:6: warning: unused parameter 'arg' [-Wunused-parameter]
+main.cpp:293:6: warning: unused parameter 'arg' [-Wunused-parameter]
+main.cpp:297:13: warning: unused parameter 'sig' [-Wunused-parameter]
+main.cpp:297:13: warning: unused parameter 'si' [-Wunused-parameter]
+main.cpp:297:13: warning: unused parameter 'unused' [-Wunused-parameter]
+std::thread::hardware_concurrency() = 1
+default settings:
+    corePoolSize = 1, maximumPoolSize = 1, keepAliveTime = 300000 ms.
+new settings:
+    corePoolSize = 4, maximumPoolSize = 8, keepAliveTime = 2000 ms.
+setCorePoolSize() && getCorePoolSize() ok.
+setMaximumPoolSize() && getMaximumPoolSize() ok.
+setKeepAliveTime() && getKeepAliveTime() ok.
+-----------------------------------------------------------------------------------
+PrestartAllCoreThreads()-->poolSize_ = 0;corePoolSize_ = 4
+PrestartAllCoreThreads()-->poolSize_ = 1;corePoolSize_ = 4
+PrestartAllCoreThreads()-->poolSize_ = 2;corePoolSize_ = 4
+thread no. = 1.  void StartRoutine(std::size_t i) {
+thread no. = 2.  void StartRoutine(std::size_t i) {
+PrestartAllCoreThreads()-->poolSize_ = 3;corePoolSize_ = 4
+thread no. = 3.  void StartRoutine(std::size_t i) {
+thread no. = 4.  void StartRoutine(std::size_t i) {
+conditionVariable_.notify_one();
+conditionVariable_.notify_one();
+conditionVariable_.notify_one();
+thread no. = 1.  conditionVariable_.wait.woken up
+conditionVariable_.notify_one();
+thread no. = 2.  conditionVariable_.wait.woken up
+thread no. = 1.  if (taskQueue_.pop(t)) {
+thread no. = 2.  if (taskQueue_.pop(t)) {
+thread no. = 1.  if (taskQueue_.pop(t)) {
+thread no. = 2.  if (taskQueue_.pop(t)) {
+thread no. = 1.  std::lock_guard<std::mutex> lock(terminateTheThreadMutex_);
+thread no. = 3.  conditionVariable_.wait.woken up
+if (poolSize_ < maximumPoolSize_ && taskQueueSize_ + 1 > poolSize_) {
+conditionVariable_.notify_one();
+conditionVariable_.notify_one();
+conditionVariable_.notify_one();
+conditionVariable_.notify_one();
+conditionVariable_.notify_one();
+thread no. = 5.  void StartRoutine(std::size_t i) {
+thread no. = 1.  if (!timerEnabled) {
+thread no. = 2.  std::lock_guard<std::mutex> lock(terminateTheThreadMutex_);
+thread no. = 2.  if (!timerEnabled) {
+if (poolSize_ < maximumPoolSize_ && taskQueueSize_ + 1 > poolSize_) {
+thread no. = 4.  conditionVariable_.wait.woken up
+thread no. = 6.  void StartRoutine(std::size_t i) {
+thread no. = 3.  if (taskQueue_.pop(t)) {
+thread no. = 1.  conditionVariable_.wait_for.woken up or timeout
+thread no. = 1.  if (taskQueue_.pop(t)) {
+thread no. = 1.  if (taskQueue_.pop(t)) {
+thread no. = 1.  if (taskQueue_.pop(t)) {
+thread no. = 1.  if (taskQueue_.pop(t)) {
+thread no. = 1.  std::lock_guard<std::mutex> lock(terminateTheThreadMutex_);
+thread no. = 1.  if (!timerEnabled) {
+thread no. = 4.  if (taskQueue_.pop(t)) {
+thread no. = 3.  std::lock_guard<std::mutex> lock(terminateTheThreadMutex_);
+thread no. = 4.  std::lock_guard<std::mutex> lock(terminateTheThreadMutex_);
+thread no. = 3.  if (!timerEnabled) {
+conditionVariable_.notify_one();
+conditionVariable_.notify_one();
+conditionVariable_.notify_one();
+conditionVariable_.notify_one();
+conditionVariable_.notify_one();
+conditionVariable_.notify_one();
+conditionVariable_.notify_one();
+thread no. = 2.  conditionVariable_.wait_for.woken up or timeout
+thread no. = 2.  if (taskQueue_.pop(t)) {
+thread no. = 1.  conditionVariable_.wait_for.woken up or timeout
+thread no. = 1.  if (taskQueue_.pop(t)) {
+thread no. = 1.  if (taskQueue_.pop(t)) {
+thread no. = 1.  if (taskQueue_.pop(t)) {
+thread no. = 1.  if (taskQueue_.pop(t)) {
+thread no. = 1.  std::lock_guard<std::mutex> lock(terminateTheThreadMutex_);
+thread no. = 1.  if (!timerEnabled) {
+thread no. = 2.  if (taskQueue_.pop(t)) {
+if (poolSize_ < maximumPoolSize_ && taskQueueSize_ + 1 > poolSize_) {
+thread no. = 4.  if (!timerEnabled) {
+thread no. = 2.  std::lock_guard<std::mutex> lock(terminateTheThreadMutex_);
+conditionVariable_.notify_one();
+thread no. = 2.  if (!timerEnabled) {
+conditionVariable_.notify_one();
+thread no. = 5.  conditionVariable_.wait.woken up
+conditionVariable_.notify_one();
+conditionVariable_.notify_one();
+conditionVariable_.notify_one();
+conditionVariable_.notify_one();
+conditionVariable_.notify_one();
+thread no. = 5.  if (taskQueue_.pop(t)) {
+thread no. = 5.  if (taskQueue_.pop(t)) {
+thread no. = 5.  if (taskQueue_.pop(t)) {
+thread no. = 3.  conditionVariable_.wait_for.woken up or timeout
+thread no. = 7.  void StartRoutine(std::size_t i) {
+thread no. = 8.  void StartRoutine(std::size_t i) {
+thread no. = 3.  if (taskQueue_.pop(t)) {
+thread no. = 3.  if (taskQueue_.pop(t)) {
+thread no. = 3.  if (taskQueue_.pop(t)) {
+thread no. = 3.  std::lock_guard<std::mutex> lock(terminateTheThreadMutex_);
+thread no. = 3.  if (!timerEnabled) {
+thread no. = 6.  conditionVariable_.wait.woken up
+thread no. = 6.  std::lock_guard<std::mutex> lock(terminateTheThreadMutex_);
+thread no. = 6.  if (!timerEnabled) {
+thread no. = 5.  if (taskQueue_.pop(t)) {
+thread no. = 1.  conditionVariable_.wait_for.woken up or timeout
+thread no. = 5.  std::lock_guard<std::mutex> lock(terminateTheThreadMutex_);
+thread no. = 5.  if (!timerEnabled) {
+thread no. = 1.  std::lock_guard<std::mutex> lock(terminateTheThreadMutex_);
+thread no. = 1.  terminateTheThread = true;
+if (poolSize_ < maximumPoolSize_ && taskQueueSize_ + 1 > poolSize_) {
+conditionVariable_.notify_one();
+conditionVariable_.notify_one();
+conditionVariable_.notify_one();
+conditionVariable_.notify_one();
+conditionVariable_.notify_one();
+conditionVariable_.notify_one();
+conditionVariable_.notify_one();
+thread no. = 6.  conditionVariable_.wait_for.woken up or timeout
+thread no. = 6.  if (taskQueue_.pop(t)) {
+thread no. = 6.  if (taskQueue_.pop(t)) {
+thread no. = 6.  if (taskQueue_.pop(t)) {
+thread no. = 6.  if (taskQueue_.pop(t)) {
+thread no. = 6.  if (taskQueue_.pop(t)) {
+thread no. = 6.  if (taskQueue_.pop(t)) {
+thread no. = 6.  if (taskQueue_.pop(t)) {
+thread no. = 6.  std::lock_guard<std::mutex> lock(terminateTheThreadMutex_);
+thread no. = 6.  if (!timerEnabled) {
+thread no. = 5.  conditionVariable_.wait_for.woken up or timeout
+thread no. = 5.  std::lock_guard<std::mutex> lock(terminateTheThreadMutex_);
+thread no. = 5.  terminateTheThread = true;
+if (poolSize_ < maximumPoolSize_ && taskQueueSize_ + 1 > poolSize_) {
+conditionVariable_.notify_one();
+thread no. = 6.  conditionVariable_.wait_for.woken up or timeout
+thread no. = 6.  if (taskQueue_.pop(t)) {
+thread no. = 6.  if (taskQueue_.pop(t)) {
+thread no. = 6.  std::lock_guard<std::mutex> lock(terminateTheThreadMutex_);
+thread no. = 6.  if (!timerEnabled) {
+thread no. = 9.  void StartRoutine(std::size_t i) {
+conditionVariable_.notify_one();
+conditionVariable_.notify_one();
+conditionVariable_.notify_one();
+thread no. = 2.  conditionVariable_.wait_for.woken up or timeout
+conditionVariable_.notify_one();
+thread no. = 2.  if (taskQueue_.pop(t)) {
+thread no. = 2.  if (taskQueue_.pop(t)) {
+thread no. = 2.  if (taskQueue_.pop(t)) {
+thread no. = 2.  if (taskQueue_.pop(t)) {
+thread no. = 2.  std::lock_guard<std::mutex> lock(terminateTheThreadMutex_);
+thread no. = 2.  if (!timerEnabled) {
+conditionVariable_.notify_one();
+thread no. = 8.  conditionVariable_.wait.woken up
+conditionVariable_.notify_one();
+thread no. = 8.  if (taskQueue_.pop(t)) {
+thread no. = 4.  conditionVariable_.wait_for.woken up or timeout
+conditionVariable_.notify_one();
+conditionVariable_.notify_one();
+conditionVariable_.notify_one();
+conditionVariable_.notify_one();
+thread no. = 4.  if (taskQueue_.pop(t)) {
+thread no. = 3.  conditionVariable_.wait_for.woken up or timeout
+thread no. = 4.  if (taskQueue_.pop(t)) {
+conditionVariable_.notify_one();
+thread no. = 4.  if (taskQueue_.pop(t)) {
+thread no. = 4.  std::lock_guard<std::mutex> lock(terminateTheThreadMutex_);
+thread no. = 3.  if (taskQueue_.pop(t)) {
+conditionVariable_.notify_one();
+thread no. = 2.  conditionVariable_.wait_for.woken up or timeout
+thread no. = 2.  if (taskQueue_.pop(t)) {
+thread no. = 2.  std::lock_guard<std::mutex> lock(terminateTheThreadMutex_);
+thread no. = 7.  conditionVariable_.wait.woken up
+thread no. = 8.  if (taskQueue_.pop(t)) {
+thread no. = 3.  std::lock_guard<std::mutex> lock(terminateTheThreadMutex_);
+conditionVariable_.notify_one();
+thread no. = 8.  std::lock_guard<std::mutex> lock(terminateTheThreadMutex_);
+conditionVariable_.notify_one();
+thread no. = 4.  if (!timerEnabled) {
+conditionVariable_.notify_one();
+conditionVariable_.notify_one();
+conditionVariable_.notify_one();
+conditionVariable_.notify_one();
+conditionVariable_.notify_one();
+thread no. = 6.  conditionVariable_.wait_for.woken up or timeout
+thread no. = 6.  if (taskQueue_.pop(t)) {
+thread no. = 6.  if (taskQueue_.pop(t)) {
+thread no. = 6.  if (taskQueue_.pop(t)) {
+thread no. = 6.  if (taskQueue_.pop(t)) {
+thread no. = 6.  if (taskQueue_.pop(t)) {
+thread no. = 6.  if (taskQueue_.pop(t)) {
+thread no. = 6.  if (taskQueue_.pop(t)) {
+thread no. = 7.  std::lock_guard<std::mutex> lock(terminateTheThreadMutex_);
+thread no. = 9.  conditionVariable_.wait.woken up
+if (poolSize_ < maximumPoolSize_ && taskQueueSize_ + 1 > poolSize_) {
+conditionVariable_.notify_one();
+thread no. = 9.  if (taskQueue_.pop(t)) {
+conditionVariable_.notify_one();
+conditionVariable_.notify_one();
+conditionVariable_.notify_one();
+conditionVariable_.notify_one();
+conditionVariable_.notify_one();
+thread no. = 2.  if (!timerEnabled) {
+conditionVariable_.notify_one();
+thread no. = 4.  conditionVariable_.wait_for.woken up or timeout
+conditionVariable_.notify_one();
+thread no. = 10.  void StartRoutine(std::size_t i) {
+conditionVariable_.notify_one();
+thread no. = 3.  if (!timerEnabled) {
+conditionVariable_.notify_one();
+conditionVariable_.notify_one();
+conditionVariable_.notify_one();
+conditionVariable_.notify_one();
+conditionVariable_.notify_one();
+conditionVariable_.notify_one();
+conditionVariable_.notify_one();
+conditionVariable_.notify_one();
+conditionVariable_.notify_one();
+conditionVariable_.notify_one();
+conditionVariable_.notify_one();
+conditionVariable_.notify_one();
+conditionVariable_.notify_one();
+conditionVariable_.notify_one();
+conditionVariable_.notify_one();
+conditionVariable_.notify_one();
+conditionVariable_.notify_one();
+conditionVariable_.notify_one();
+conditionVariable_.notify_one();
+conditionVariable_.notify_one();
+thread no. = 4.  if (taskQueue_.pop(t)) {
+thread no. = 3.  conditionVariable_.wait_for.woken up or timeout
+conditionVariable_.notify_one();
+thread no. = 8.  if (!timerEnabled) {
+conditionVariable_.notify_one();
+conditionVariable_.notify_one();
+conditionVariable_.notify_one();
+conditionVariable_.notify_one();
+conditionVariable_.notify_one();
+conditionVariable_.notify_one();
+conditionVariable_.notify_one();
+conditionVariable_.notify_one();
+thread no. = 3.  if (taskQueue_.pop(t)) {
+conditionVariable_.notify_one();
+thread no. = 4.  if (taskQueue_.pop(t)) {
+conditionVariable_.notify_one();
+thread no. = 6.  std::lock_guard<std::mutex> lock(terminateTheThreadMutex_);
+thread no. = 2.  conditionVariable_.wait_for.woken up or timeout
+thread no. = 4.  if (taskQueue_.pop(t)) {
+thread no. = 2.  if (taskQueue_.pop(t)) {
+thread no. = 6.  if (!timerEnabled) {
+thread no. = 2.  if (taskQueue_.pop(t)) {
+thread no. = 4.  if (taskQueue_.pop(t)) {
+conditionVariable_.notify_one();
+thread no. = 4.  if (taskQueue_.pop(t)) {
+thread no. = 4.  if (taskQueue_.pop(t)) {
+thread no. = 4.  if (taskQueue_.pop(t)) {
+thread no. = 3.  if (taskQueue_.pop(t)) {
+thread no. = 4.  if (taskQueue_.pop(t)) {
+conditionVariable_.notify_one();
+thread no. = 2.  if (taskQueue_.pop(t)) {
+thread no. = 4.  if (taskQueue_.pop(t)) {
+thread no. = 2.  if (taskQueue_.pop(t)) {
+thread no. = 4.  if (taskQueue_.pop(t)) {
+thread no. = 3.  if (taskQueue_.pop(t)) {
+thread no. = 4.  if (taskQueue_.pop(t)) {
+thread no. = 3.  if (taskQueue_.pop(t)) {
+thread no. = 8.  conditionVariable_.wait_for.woken up or timeout
+thread no. = 4.  if (taskQueue_.pop(t)) {
+conditionVariable_.notify_one();
+thread no. = 8.  if (taskQueue_.pop(t)) {
+conditionVariable_.notify_one();
+thread no. = 8.  if (taskQueue_.pop(t)) {
+conditionVariable_.notify_one();
+thread no. = 8.  if (taskQueue_.pop(t)) {
+conditionVariable_.notify_one();
+thread no. = 8.  if (taskQueue_.pop(t)) {
+conditionVariable_.notify_one();
+thread no. = 8.  if (taskQueue_.pop(t)) {
+conditionVariable_.notify_one();
+thread no. = 8.  if (taskQueue_.pop(t)) {
+conditionVariable_.notify_one();
+thread no. = 8.  if (taskQueue_.pop(t)) {
+thread no. = 4.  if (taskQueue_.pop(t)) {
+thread no. = 6.  conditionVariable_.wait_for.woken up or timeout
+conditionVariable_.notify_one();
+thread no. = 4.  if (taskQueue_.pop(t)) {
+thread no. = 6.  if (taskQueue_.pop(t)) {
+thread no. = 6.  if (taskQueue_.pop(t)) {
+thread no. = 6.  if (taskQueue_.pop(t)) {
+thread no. = 6.  if (taskQueue_.pop(t)) {
+thread no. = 6.  if (taskQueue_.pop(t)) {
+thread no. = 6.  if (taskQueue_.pop(t)) {
+thread no. = 6.  if (taskQueue_.pop(t)) {
+thread no. = 6.  if (taskQueue_.pop(t)) {
+thread no. = 6.  if (taskQueue_.pop(t)) {
+thread no. = 6.  if (taskQueue_.pop(t)) {
+thread no. = 6.  if (taskQueue_.pop(t)) {
+thread no. = 6.  if (taskQueue_.pop(t)) {
+thread no. = 6.  if (taskQueue_.pop(t)) {
+conditionVariable_.notify_one();
+thread no. = 6.  if (taskQueue_.pop(t)) {
+thread no. = 6.  if (taskQueue_.pop(t)) {
+thread no. = 6.  if (taskQueue_.pop(t)) {
+thread no. = 4.  if (taskQueue_.pop(t)) {
+conditionVariable_.notify_one();
+thread no. = 2.  if (taskQueue_.pop(t)) {
+thread no. = 2.  std::lock_guard<std::mutex> lock(terminateTheThreadMutex_);
+thread no. = 3.  if (taskQueue_.pop(t)) {
+thread no. = 3.  std::lock_guard<std::mutex> lock(terminateTheThreadMutex_);
+thread no. = 10.  conditionVariable_.wait.woken up
+thread no. = 9.  std::lock_guard<std::mutex> lock(terminateTheThreadMutex_);
+thread no. = 8.  if (taskQueue_.pop(t)) {
+thread no. = 8.  std::lock_guard<std::mutex> lock(terminateTheThreadMutex_);
+thread no. = 7.  if (!timerEnabled) {
+thread no. = 10.  std::lock_guard<std::mutex> lock(terminateTheThreadMutex_);
+thread no. = 2.  if (!timerEnabled) {
+thread no. = 3.  if (!timerEnabled) {
+thread no. = 9.  if (!timerEnabled) {
+thread no. = 8.  if (!timerEnabled) {
+thread no. = 10.  if (!timerEnabled) {
+exception = std::runtime_error
+exception = An exception of unknown type has occurred. All exceptions should inherit from std::exception.
+max threadNo = 10
+time = 0.001531 s
+cnt = 100
+CompletedTaskCount = 100
+Clean up.
+thread no. = 3.  conditionVariable_.wait_for.woken up or timeout
+thread no. = 7.  conditionVariable_.wait_for.woken up or timeout
+thread no. = 8.  conditionVariable_.wait_for.woken up or timeout
+thread no. = 4.  conditionVariable_.wait.woken up
+thread no. = 6.  conditionVariable_.wait.woken up
+thread no. = 2.  conditionVariable_.wait_for.woken up or timeout
