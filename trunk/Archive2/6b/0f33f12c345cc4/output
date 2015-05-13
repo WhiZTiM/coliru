@@ -1,0 +1,21 @@
+g++ (GCC) 5.1.0
+Copyright (C) 2015 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+50100
+sizeof(n) = 4 SIZE=0 NUM_ARGS="0 file: "main.cpp" func: "main" args: ""
+sizeof(n) = 16 SIZE=3 NUM_ARGS="3 file: "main.cpp" func: "main" args: ""i=",i,"now is the time for all good men to come to the aid of their country.""
+clang version 3.6.0 (tags/RELEASE_360/final 235480)
+Target: x86_64-unknown-linux-gnu
+Thread model: posix
+main.cpp:7:126: warning: token pasting of ',' and __VA_ARGS__ is a GNU extension [-Wgnu-zero-variadic-macro-arguments]
+#define FOO(...) do { static thread_local BAR<__LINE__,__COUNTER__,args_size(__VA_ARGS__)> bar{__FILE__,__func__,#__VA_ARGS__,##__VA_ARGS__}; } while (false)
+                                                                                                                             ^
+main.cpp:7:127: warning: token pasting of ',' and __VA_ARGS__ is a GNU extension [-Wgnu-zero-variadic-macro-arguments]
+#define FOO(...) do { static thread_local BAR<__LINE__,__COUNTER__,args_size(__VA_ARGS__)> bar{__FILE__,__func__,#__VA_ARGS__,##__VA_ARGS__}; } while (false)
+                                                                                                                              ^
+2 warnings generated.
+40201
+sizeof(n) = 4 SIZE=0 NUM_ARGS="0 file: "main.cpp" func: "main" args: ""
+sizeof(n) = 16 SIZE=3 NUM_ARGS="3 file: "main.cpp" func: "main" args: ""i=",i,"now is the time for all good men to come to the aid of their country.""
