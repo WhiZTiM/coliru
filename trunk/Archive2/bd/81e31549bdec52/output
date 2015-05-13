@@ -1,0 +1,55 @@
+main.cpp: In instantiation of 'Todo::Actions::Do(const T&)::<lambda(const auto:1&)> [with auto:1 = Todo::None; T = boost::variant<Todo::None, Todo::Exec>]':
+main.cpp:66:82:   required from 'void visitors::detail::internal_vis<F>::operator()(T&& ...) const [with T = {const Todo::None&}; F = const Todo::Actions::Do(const T&) [with T = boost::variant<Todo::None, Todo::Exec>]::<lambda(const auto:1&)>]'
+/usr/local/include/boost/variant/variant.hpp:938:32:   required from 'boost::detail::variant::invoke_visitor<Visitor>::result_type boost::detail::variant::invoke_visitor<Visitor>::internal_visit(T&, int) [with T = const Todo::None; Visitor = const visitors::detail::internal_vis<const Todo::Actions::Do(const T&) [with T = boost::variant<Todo::None, Todo::Exec>]::<lambda(const auto:1&)> >; boost::detail::variant::invoke_visitor<Visitor>::result_type = void]'
+/usr/local/include/boost/variant/detail/visitation_impl.hpp:113:9:   required from 'typename Visitor::result_type boost::detail::variant::visitation_impl_invoke_impl(int, Visitor&, VoidPtrCV, T*, mpl_::true_) [with Visitor = boost::detail::variant::invoke_visitor<const visitors::detail::internal_vis<const Todo::Actions::Do(const T&) [with T = boost::variant<Todo::None, Todo::Exec>]::<lambda(const auto:1&)> > >; VoidPtrCV = const void*; T = Todo::None; typename Visitor::result_type = void; mpl_::true_ = mpl_::bool_<true>]'
+/usr/local/include/boost/variant/detail/visitation_impl.hpp:156:9:   required from 'typename Visitor::result_type boost::detail::variant::visitation_impl_invoke(int, Visitor&, VoidPtrCV, T*, NoBackupFlag, int) [with Visitor = boost::detail::variant::invoke_visitor<const visitors::detail::internal_vis<const Todo::Actions::Do(const T&) [with T = boost::variant<Todo::None, Todo::Exec>]::<lambda(const auto:1&)> > >; VoidPtrCV = const void*; T = Todo::None; NoBackupFlag = boost::variant<Todo::None, Todo::Exec>::has_fallback_type_; typename Visitor::result_type = void]'
+/usr/local/include/boost/variant/detail/visitation_impl.hpp:237:5:   [ skipping 2 instantiation contexts, use -ftemplate-backtrace-limit=0 to disable ]
+/usr/local/include/boost/variant/variant.hpp:2259:13:   required from 'typename Visitor::result_type boost::variant<T0, TN>::internal_apply_visitor(Visitor&) const [with Visitor = boost::detail::variant::invoke_visitor<const visitors::detail::internal_vis<const Todo::Actions::Do(const T&) [with T = boost::variant<Todo::None, Todo::Exec>]::<lambda(const auto:1&)> > >; T0_ = Todo::None; TN = {Todo::Exec}; typename Visitor::result_type = void]'
+/usr/local/include/boost/variant/variant.hpp:2281:52:   required from 'typename Visitor::result_type boost::variant<T0, TN>::apply_visitor(Visitor&) const [with Visitor = const visitors::detail::internal_vis<const Todo::Actions::Do(const T&) [with T = boost::variant<Todo::None, Todo::Exec>]::<lambda(const auto:1&)> >; T0_ = Todo::None; TN = {Todo::Exec}; typename Visitor::result_type = void]'
+/usr/local/include/boost/variant/detail/apply_visitor_unary.hpp:74:43:   required from 'typename Visitor::result_type boost::apply_visitor(const Visitor&, Visitable&) [with Visitor = visitors::detail::internal_vis<const Todo::Actions::Do(const T&) [with T = boost::variant<Todo::None, Todo::Exec>]::<lambda(const auto:1&)> >; Visitable = const boost::variant<Todo::None, Todo::Exec>; typename Visitor::result_type = void]'
+main.cpp:73:105:   required from 'void visitors::apply(const F&, const V&) [with F = Todo::Actions::Do(const T&) [with T = boost::variant<Todo::None, Todo::Exec>]::<lambda(const auto:1&)>; V = boost::variant<Todo::None, Todo::Exec>]'
+main.cpp:81:68:   required from 'void Todo::Actions::Do(const T&) [with T = boost::variant<Todo::None, Todo::Exec>]'
+main.cpp:98:21:   required from here
+main.cpp:13:14: error: 'void Todo::None::Do() const' is private
+         void Do() const {};
+              ^
+main.cpp:81:51: error: within this context
+             visitors::apply([](auto const& cmd) { cmd.Do(); }, todo);
+                                                   ^
+In file included from /usr/local/include/boost/serialization/extended_type_info_typeid.hpp:37:0,
+                 from /usr/local/include/boost/archive/detail/iserializer.hpp:46,
+                 from /usr/local/include/boost/archive/detail/interface_iarchive.hpp:22,
+                 from /usr/local/include/boost/archive/detail/common_iarchive.hpp:23,
+                 from /usr/local/include/boost/archive/basic_text_iarchive.hpp:31,
+                 from /usr/local/include/boost/archive/text_iarchive.hpp:24,
+                 from main.cpp:1:
+/usr/local/include/boost/serialization/access.hpp: In instantiation of 'static void boost::serialization::access::serialize(Archive&, T&, unsigned int) [with Archive = boost::archive::text_iarchive; T = Todo::None]':
+/usr/local/include/boost/serialization/serialization.hpp:69:69:   required from 'void boost::serialization::serialize(Archive&, T&, unsigned int) [with Archive = boost::archive::text_iarchive; T = Todo::None]'
+/usr/local/include/boost/serialization/serialization.hpp:128:27:   required from 'void boost::serialization::serialize_adl(Archive&, T&, unsigned int) [with Archive = boost::archive::text_iarchive; T = Todo::None]'
+/usr/local/include/boost/archive/detail/iserializer.hpp:188:5:   required from 'void boost::archive::detail::iserializer<Archive, T>::load_object_data(boost::archive::detail::basic_iarchive&, void*, unsigned int) const [with Archive = boost::archive::text_iarchive; T = Todo::None]'
+/usr/local/include/boost/archive/detail/iserializer.hpp:116:1:   required from 'class boost::archive::detail::iserializer<boost::archive::text_iarchive, Todo::None>'
+/usr/local/include/boost/archive/detail/iserializer.hpp:410:13:   required from 'static void boost::archive::detail::load_non_pointer_type<Archive>::load_standard::invoke(Archive&, const T&) [with T = Todo::None; Archive = boost::archive::text_iarchive]'
+/usr/local/include/boost/archive/detail/iserializer.hpp:462:28:   [ skipping 32 instantiation contexts, use -ftemplate-backtrace-limit=0 to disable ]
+/usr/local/include/boost/archive/detail/iserializer.hpp:618:24:   required from 'void boost::archive::load(Archive&, T&) [with Archive = boost::archive::text_iarchive; T = boost::variant<Todo::None, Todo::Exec>]'
+/usr/local/include/boost/archive/detail/common_iarchive.hpp:66:40:   required from 'void boost::archive::detail::common_iarchive<Archive>::load_override(T&, int) [with T = boost::variant<Todo::None, Todo::Exec>; Archive = boost::archive::text_iarchive]'
+/usr/local/include/boost/archive/basic_text_iarchive.hpp:71:9:   required from 'void boost::archive::basic_text_iarchive<Archive>::load_override(T&, int) [with T = boost::variant<Todo::None, Todo::Exec>; Archive = boost::archive::text_iarchive]'
+/usr/local/include/boost/archive/text_iarchive.hpp:92:57:   required from 'void boost::archive::text_iarchive_impl<Archive>::load_override(T&, int) [with T = boost::variant<Todo::None, Todo::Exec>; Archive = boost::archive::text_iarchive]'
+/usr/local/include/boost/archive/detail/interface_iarchive.hpp:60:9:   required from 'Archive& boost::archive::detail::interface_iarchive<Archive>::operator>>(T&) [with T = boost::variant<Todo::None, Todo::Exec>; Archive = boost::archive::text_iarchive]'
+main.cpp:54:28:   required from here
+/usr/local/include/boost/serialization/access.hpp:118:9: error: 'class Todo::None' has no member named 'serialize'
+         t.serialize(ar, file_version);
+         ^
+/usr/local/include/boost/serialization/access.hpp: In instantiation of 'static void boost::serialization::access::serialize(Archive&, T&, unsigned int) [with Archive = boost::archive::text_oarchive; T = Todo::None]':
+/usr/local/include/boost/serialization/serialization.hpp:69:69:   required from 'void boost::serialization::serialize(Archive&, T&, unsigned int) [with Archive = boost::archive::text_oarchive; T = Todo::None]'
+/usr/local/include/boost/serialization/serialization.hpp:128:27:   required from 'void boost::serialization::serialize_adl(Archive&, T&, unsigned int) [with Archive = boost::archive::text_oarchive; T = Todo::None]'
+/usr/local/include/boost/archive/detail/oserializer.hpp:152:5:   required from 'void boost::archive::detail::oserializer<Archive, T>::save_object_data(boost::archive::detail::basic_oarchive&, const void*) const [with Archive = boost::archive::text_oarchive; T = Todo::None]'
+/usr/local/include/boost/archive/detail/oserializer.hpp:101:1:   required from 'class boost::archive::detail::oserializer<boost::archive::text_oarchive, Todo::None>'
+/usr/local/include/boost/archive/detail/oserializer.hpp:253:13:   required from 'static void boost::archive::detail::save_non_pointer_type<Archive>::save_standard::invoke(Archive&, const T&) [with T = Todo::None; Archive = boost::archive::text_oarchive]'
+/usr/local/include/boost/archive/detail/oserializer.hpp:308:28:   [ skipping 35 instantiation contexts, use -ftemplate-backtrace-limit=0 to disable ]
+/usr/local/include/boost/archive/detail/oserializer.hpp:308:28:   required from 'static void boost::archive::detail::save_non_pointer_type<Archive>::invoke(Archive&, const T&) [with T = boost::variant<Todo::None, Todo::Exec>; Archive = boost::archive::text_oarchive]'
+/usr/local/include/boost/archive/detail/oserializer.hpp:525:24:   required from 'void boost::archive::save(Archive&, T&) [with Archive = boost::archive::text_oarchive; T = const boost::variant<Todo::None, Todo::Exec>]'
+/usr/local/include/boost/archive/detail/common_oarchive.hpp:69:40:   required from 'void boost::archive::detail::common_oarchive<Archive>::save_override(T&, int) [with T = const boost::variant<Todo::None, Todo::Exec>; Archive = boost::archive::text_oarchive]'
+/usr/local/include/boost/archive/basic_text_oarchive.hpp:86:9:   required from 'void boost::archive::basic_text_oarchive<Archive>::save_override(T&, int) [with T = const boost::variant<Todo::None, Todo::Exec>; Archive = boost::archive::text_oarchive]'
+/usr/local/include/boost/archive/detail/interface_oarchive.hpp:63:9:   required from 'Archive& boost::archive::detail::interface_oarchive<Archive>::operator<<(T&) [with T = const boost::variant<Todo::None, Todo::Exec>; Archive = boost::archive::text_oarchive]'
+main.cpp:42:28:   required from here
+/usr/local/include/boost/serialization/access.hpp:118:9: error: 'class Todo::None' has no member named 'serialize'
