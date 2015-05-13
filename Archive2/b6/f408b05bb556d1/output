@@ -1,0 +1,50 @@
++ g++ -std=c++03 -O3 -Wall -pedantic -Wextra main.cpp -lboost_iostreams -lz
+In file included from /usr/local/include/boost/typeof/typeof.hpp:209:0,
+                 from /usr/local/include/boost/type_traits/common_type.hpp:28,
+                 from /usr/local/include/boost/type_traits.hpp:22,
+                 from main.cpp:1:
+/usr/local/include/boost/type_traits/common_type.hpp: In instantiation of 'struct boost::type_traits_detail::common_type_2<MultOperation<Terminal<int>, Terminal<int>, int>, long int>':
+/usr/local/include/boost/type_traits/common_type.hpp:141:12:   required from 'struct boost::common_type<MultOperation<Terminal<int>, Terminal<int>, int>, long int, void>'
+main.cpp:49:1:   required by substitution of 'template<class T1, class T2, class R2> typename boost::disable_if<is_some_kind_of_Base<T1>, MultOperation<Terminal<T1>, T2, typename boost::common_type<T1, R2>::type> >::type operator*(const T1&, const Base<T2, R2>&) [with T1 = MultOperation<Terminal<int>, Terminal<int>, int>; T2 = Terminal<long int>; R2 = long int]'
+main.cpp:66:15:   required from here
+/usr/local/include/boost/type_traits/common_type.hpp:120:17: error: operands to ?: have different types 'boost::add_rvalue_reference<MultOperation<Terminal<int>, Terminal<int>, int> >::type {aka MultOperation<Terminal<int>, Terminal<int>, int>}' and 'boost::add_rvalue_reference<long int>::type {aka long int}'
+         typedef BOOST_TYPEOF_TPL(declval_b() ? declval_T() : declval_U()) type;
+                 ^
++ clang++ -std=c++03 -O3 -Wall -pedantic -Wextra main.cpp -lboost_iostreams -lz
+In file included from main.cpp:1:
+In file included from /usr/local/include/boost/type_traits.hpp:22:
+/usr/local/include/boost/type_traits/common_type.hpp:120:46: error: incompatible operand types ('typename add_rvalue_reference<MultOperation<Terminal<int>, Terminal<int>, int> >::type' (aka 'MultOperation<Terminal<int>, Terminal<int>, int>') and 'typename add_rvalue_reference<long>::type' (aka 'long'))
+        typedef BOOST_TYPEOF_TPL(declval_b() ? declval_T() : declval_U()) type;
+                                             ^ ~~~~~~~~~~~   ~~~~~~~~~~~
+/usr/local/include/boost/typeof/native.hpp:41:76: note: expanded from macro 'BOOST_TYPEOF'
+#define BOOST_TYPEOF(expr) BOOST_TYPEOF_KEYWORD(boost::type_of::ensure_obj(expr))
+                                                                           ^
+/usr/local/include/boost/type_traits/common_type.hpp:143:14: note: in instantiation of template class 'boost::type_traits_detail::common_type_2<MultOperation<Terminal<int>, Terminal<int>, int>, long>' requested here
+    : public type_traits_detail::common_type_2<T,U>
+             ^
+main.cpp:48:102: note: in instantiation of template class 'boost::common_type<MultOperation<Terminal<int>, Terminal<int>, int>, long, void>' requested here
+typename boost::disable_if<is_some_kind_of_Base<T1>, MultOperation<Terminal<T1>, T2, typename boost::common_type<T1, R2>::type> >::type
+                                                                                                     ^
+main.cpp:66:13: note: while substituting deduced template arguments into function template 'operator*' [with T1 = MultOperation<Terminal<int>, Terminal<int>, int>, T2 = Terminal<long>, R2 = long]
+    (t * 1) * t2;
+            ^
+1 error generated.
++ clang++ -stdlib=libc++ -std=c++03 -O3 -Wall -pedantic -Wextra main.cpp -lcxxrt -ldl -lboost_iostreams -lz
+In file included from main.cpp:1:
+In file included from /usr/local/include/boost/type_traits.hpp:22:
+/usr/local/include/boost/type_traits/common_type.hpp:120:46: error: incompatible operand types ('typename add_rvalue_reference<MultOperation<Terminal<int>, Terminal<int>, int> >::type' (aka 'MultOperation<Terminal<int>, Terminal<int>, int>') and 'typename add_rvalue_reference<long>::type' (aka 'long'))
+        typedef BOOST_TYPEOF_TPL(declval_b() ? declval_T() : declval_U()) type;
+                                             ^ ~~~~~~~~~~~   ~~~~~~~~~~~
+/usr/local/include/boost/typeof/native.hpp:41:76: note: expanded from macro 'BOOST_TYPEOF'
+#define BOOST_TYPEOF(expr) BOOST_TYPEOF_KEYWORD(boost::type_of::ensure_obj(expr))
+                                                                           ^
+/usr/local/include/boost/type_traits/common_type.hpp:143:14: note: in instantiation of template class 'boost::type_traits_detail::common_type_2<MultOperation<Terminal<int>, Terminal<int>, int>, long>' requested here
+    : public type_traits_detail::common_type_2<T,U>
+             ^
+main.cpp:48:102: note: in instantiation of template class 'boost::common_type<MultOperation<Terminal<int>, Terminal<int>, int>, long, void>' requested here
+typename boost::disable_if<is_some_kind_of_Base<T1>, MultOperation<Terminal<T1>, T2, typename boost::common_type<T1, R2>::type> >::type
+                                                                                                     ^
+main.cpp:66:13: note: while substituting deduced template arguments into function template 'operator*' [with T1 = MultOperation<Terminal<int>, Terminal<int>, int>, T2 = Terminal<long>, R2 = long]
+    (t * 1) * t2;
+            ^
+1 error generated.
