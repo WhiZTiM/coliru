@@ -1,0 +1,25 @@
+10 20 50 100
+
+;; Function void func(int, int, int, int) (_Z4funciiii, funcdef_no=1024, decl_uid=22908, symbol_order=316)
+
+void func(int, int, int, int) (int x1, int x2, int x3, int x4)
+{
+  <bb 2>:
+  printf ("%d %d %d %d\n", x1_14(D), x2_13(D), x3_12(D), x4_11(D)); [tail call]
+  return;
+
+}
+
+
+
+;; Function int main() (main, funcdef_no=1072, decl_uid=31250, symbol_order=317) (executed once)
+
+int main() ()
+{
+  <bb 2>:
+  printf ("%d %d %d %d\n", 10, 20, 50, 100);
+  return 0;
+
+}
+
+
