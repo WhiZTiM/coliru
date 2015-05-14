@@ -1,0 +1,12 @@
+Foo being constructed with value of 0
+Foo being constructed with value of 1
+Foo being constructed with value of 2
+Foo being constructed with value of 3
+Foo being constructed with value of 4
+Foo being copy constructed with value of 0
+Foo being copy constructed with value of 1
+Foo being copy constructed with value of 2
+Foo being copy constructed with value of 3
+Foo being copy constructed with value of 4
+Foo being copy constructed with value of 1
+MyFoo value: 1
