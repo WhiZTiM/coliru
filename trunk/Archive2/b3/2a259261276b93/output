@@ -1,0 +1,2 @@
+./sema: counter=1000000 time=467 ms
+./cond: counter=1000000 time=48 ms
