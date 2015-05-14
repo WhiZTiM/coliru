@@ -1,0 +1,1 @@
+clang++ -std=c++14 main.cpp -O3 -Weverything -Wno-c++98-compat && ./a.out <<< "CA"
