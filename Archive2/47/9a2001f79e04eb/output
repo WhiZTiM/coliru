@@ -1,0 +1,8 @@
+main.cpp: In function 'void packet::test()':
+main.cpp:65:21: error: no match for 'operator==' (operand types are 'packet::TagAttributes' and 'packet::TagAttributes')
+     std::cout << (a == b);
+                     ^
+main.cpp:48:13: note: candidate: bool packet::operator==(const packet::test&, const packet::test&)
+ inline bool operator==(test const&, test const&) { return true; }
+             ^
+main.cpp:48:13: note:   no known conversion for argument 1 from 'packet::TagAttributes' to 'const packet::test&'
