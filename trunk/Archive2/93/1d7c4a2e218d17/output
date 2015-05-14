@@ -1,0 +1,1 @@
+UPDATE `myTable` SET `Field1` = "value",`Field2` = "value",`Field3` = "value" WHERE `Field4` = "value"
