@@ -1,0 +1,12 @@
+0-1  distance=4   time=42ns/increment
+0-2  distance=8   time=42ns/increment
+0-3  distance=12  time=43ns/increment
+0-4  distance=16  time=42ns/increment
+0-8  distance=32  time=9ns/increment
+0-12 distance=48  time=9ns/increment
+0-16 distance=64  time=9ns/increment
+0-24 distance=96  time=9ns/increment
+0-32 distance=128 time=9ns/increment
+0-48 distance=192 time=9ns/increment
+0-64 distance=256 time=9ns/increment
+0-96 distance=384 time=9ns/increment
