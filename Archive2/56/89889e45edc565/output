@@ -1,0 +1,10 @@
+main.cpp:13:34: error: too few arguments to function call, single argument 'i' was not specified
+    void badbar() { Base::badfoo(); }  // compiles ok
+                    ~~~~~~~~~~~~ ^
+main.cpp:21:7: note: in instantiation of member function 'Derived<int>::badbar' requested here
+    d.badbar();
+      ^
+main.cpp:5:5: note: 'badfoo' declared here
+    void badfoo(int i) {}                                                       
+    ^
+1 error generated.
