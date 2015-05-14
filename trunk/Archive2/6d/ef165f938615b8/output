@@ -1,0 +1,16 @@
++ gcc -x c -O2 -fno-aggressive-loop-optimizations -std=c99 -Wall -Wextra -Wconversion -pedantic main.cpp
+main.cpp: In function 'max1':
+main.cpp:6:12: warning: function returns address of local variable [-Wreturn-local-addr]
+     return &a;
+            ^
+main.cpp:4:9: warning: unused variable 'b' [-Wunused-variable]
+     int b=0;
+         ^
+main.cpp: In function 'max2':
+main.cpp:14:12: warning: function returns address of local variable [-Wreturn-local-addr]
+     return a > b ? &a : &b;
+            ^
+main.cpp:12:9: note: declared here
+     int b=0;
+         ^
++ ./a.out
