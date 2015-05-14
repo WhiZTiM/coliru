@@ -1,0 +1,2 @@
+./sema: 1000000 time_=304 ms.
+./cond: 1000000 time_=74 ms.
