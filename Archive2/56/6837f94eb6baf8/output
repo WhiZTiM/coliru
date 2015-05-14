@@ -1,0 +1,4 @@
+main.cpp:13:34: error: call to non-static member function without an object argument
+    static void badbar() { Base::badfoo(); }  // compiles ok
+                           ~~~~~~^~~~~~
+1 error generated.
