@@ -1,0 +1,4 @@
+main.cpp: In function 'void perebor()':
+main.cpp:89:25: warning: unused variable 'count' [-Wunused-variable]
+         static unsigned count = 0;
+                         ^
