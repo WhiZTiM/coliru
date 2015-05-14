@@ -1,0 +1,10 @@
+main.cpp:27:34: error: expected initializer before 'CMD_OFF'
+         static const DALICommand CMD_OFF(0, false);
+                                  ^
+main.cpp:40:34: error: expected initializer before 'CMD_OFF'
+         static const DALICommand CMD_OFF(0, false);
+                                  ^
+main.cpp: In function 'int main()':
+main.cpp:100:47: error: 'StandardDaliCommand' was not declared in this scope
+     DALICommand( StdDALICommand( StdTarget(), StandardDaliCommand::CMD_ON ) );
+                                               ^
