@@ -1,0 +1,7 @@
+main.cpp: In function 'int main()':
+main.cpp:17:49: warning: conversion to 'long unsigned int' from 'int' may change the sign of the result [-Wsign-conversion]
+     n = sizeof(int) * static_cast<size_t>(length) ;
+                                                 ^
+main.cpp:7:12: warning: variable 'n' set but not used [-Wunused-but-set-variable]
+     size_t n;
+            ^
