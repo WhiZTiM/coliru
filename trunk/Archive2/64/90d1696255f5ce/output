@@ -1,0 +1,10 @@
+*** glibc detected *** ./a.out: munmap_chunk(): invalid pointer: 0x00007fffa3d4e1bc ***
+======= Backtrace: =========
+/lib/x86_64-linux-gnu/libc.so.6(+0x7e846)[0x7f817b645846]
+./a.out[0x4005bb]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xed)[0x7f817b5e876d]
+./a.out[0x400479]
+======= Memory map: ========
+0x91d010
+0x7fffa3d4e1bc
+bash: line 7: 19041 Aborted                 (core dumped) ./a.out <<< "CA"
