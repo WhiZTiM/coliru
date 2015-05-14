@@ -1,0 +1,14 @@
+In file included from main.cpp:34:
+In file included from /usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.1.0/../../../../include/c++/5.1.0/ext/hash_map:60:
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.1.0/../../../../include/c++/5.1.0/backward/backward_warning.h:32:2: warning: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated. [-W#warnings]
+#warning \
+ ^
+main.cpp:112:14: warning: comparison of unsigned expression < 0 is always false [-Wtautological-compare]
+        if (i<0||size()<=i) throw Range_error(i);
+            ~^~
+main.cpp:118:14: warning: comparison of unsigned expression < 0 is always false [-Wtautological-compare]
+        if (i<0||size()<=i) throw Range_error(i);
+            ~^~
+3 warnings generated.
+Hello, World!
+Please enter a character to exit
