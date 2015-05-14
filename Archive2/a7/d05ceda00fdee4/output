@@ -1,0 +1,5 @@
+Address Type:0
+Address Type:1
+terminate called after throwing an instance of 'std::invalid_argument'
+  what():  Address Type not implemented!
+bash: line 7: 29049 Aborted                 (core dumped) ./a.out
