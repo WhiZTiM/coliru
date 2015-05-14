@@ -1,0 +1,4 @@
+main.cpp: In function 'const string& get()':
+main.cpp:6:12: warning: returning reference to temporary [-Wreturn-local-addr]
+     return ""s;
+            ^
