@@ -1,0 +1,19 @@
+main.cpp: In member function 'void Manager::runCallBack()':
+main.cpp:30:21: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for ( int i = 0;i < fds.size() ; i++ )
+                     ^
+ now i would like register methods defined in class Node into Manager function<void()> list 
+ in method start 
+ in manager call input function 
+ in manager call input function 
+ in manager call input function 
+ now register methods in class Obj into Manager , by input parameter the pointer of class Manager instance 
+ in manager call input function 
+ in manager call input function 
+ ------------------------ run  method----------------------------
+running method defined in Node
+ Aimer : hello i am Aimer 
+ Kokia : hello i am Kokia 
+ Kylin Zhang : ..... - _ - ......
+func1 running 
+func 2 running 
