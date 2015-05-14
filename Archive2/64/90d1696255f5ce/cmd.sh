@@ -1,0 +1,1 @@
+clang -std=c11 -x c main.cpp -O3 -Weverything  && ./a.out <<< "CA"
