@@ -1,0 +1,19 @@
+main.cpp:2:18: error: variable or field 'LoadAssets' declared void
+  void LoadAssets(XMLElement* assetsInXml,
+                  ^
+main.cpp:2:18: error: 'XMLElement' was not declared in this scope
+main.cpp:2:30: error: 'assetsInXml' was not declared in this scope
+  void LoadAssets(XMLElement* assetsInXml,
+                              ^
+main.cpp:3:9: error: expected primary-expression before 'const'
+         const char* failMessage,
+         ^
+main.cpp:4:21: error: expected primary-expression before 'allocator'
+         LambdaAlloc allocator,
+                     ^
+main.cpp:5:22: error: expected primary-expression before 'destructor'
+         LambdaDelete destructor)
+                      ^
+main.cpp:32:6: error: expected unqualified-id before 'if'
+      if(tag == "Models") 
+      ^
