@@ -1,0 +1,4 @@
+main.cpp: In function 'int main()':
+main.cpp:16:38: warning: '#pragma omp cancel for' inside 'nowait' for construct
+GCC 5.1 / OpenMP 201307
+omp_get_cancellation=1
