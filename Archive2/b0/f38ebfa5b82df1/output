@@ -1,0 +1,7 @@
+int (*)(int)
+main::{lambda(int)#1}
+std::_Bind<std::_Mem_fn<int (derived::*)(int)> (derived*, int)>
+
+PFiiE
+Z4mainEUliE_
+St5_BindIFSt7_Mem_fnIM7derivedFiiEEPS1_iEE
