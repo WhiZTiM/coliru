@@ -1,0 +1,5 @@
+main.cpp: In function 'int main()':
+main.cpp:23:35: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for(char i = shaderCstr[0]; i < strlen(shaderCstr); ++i)
+                                   ^
+#$%&'()*+,-./0123456789:;<=
