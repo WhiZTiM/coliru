@@ -1,0 +1,13 @@
+main.cpp:7:14: warning: trigraph converted to '~' character [-Wtrigraphs]
+        foo operator??-() { return {??-lol}; };
+                    ^
+main.cpp:7:30: warning: trigraph converted to '~' character [-Wtrigraphs]
+        foo operator??-() { return {??-lol}; };
+                                    ^
+main.cpp:14:11: warning: trigraph converted to '~' character [-Wtrigraphs]
+        cout << (??-a).lol << endl;
+                 ^
+3 warnings generated.
+4
+-5
+clang: error: unknown argument: '-tripraphs'
