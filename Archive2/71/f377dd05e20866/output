@@ -1,0 +1,7 @@
+main.cpp:7:26: error: expected namespace name
+    using namespace std::literals;
+                    ~~~~~^
+main.cpp:10:34: error: invalid suffix 's' on integer constant
+    std::this_thread::sleep_for(2s);
+                                 ^
+2 errors generated.
