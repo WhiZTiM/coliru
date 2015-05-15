@@ -1,0 +1,18 @@
+main.cpp:4:1: error: no matching function for call to 'assertion_failed'
+BOOST_MPL_ASSERT_MSG(false, SOME_MESSAGE, ()); // prints an error mentionning SOME_MESSAGE
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/local/include/boost/mpl/assert.hpp:435:48: note: expanded from macro 'BOOST_MPL_ASSERT_MSG'
+#define BOOST_MPL_ASSERT_MSG( c, msg, types_ ) \
+                                               ^
+/usr/local/include/boost/mpl/assert.hpp:429:9: note: expanded from macro '\
+BOOST_MPL_ASSERT_MSG_IMPL'
+        boost::mpl::assertion_failed<(c)>( BOOST_PP_CAT(mpl_assert_arg,counter)::assert_arg() ) \
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/local/include/boost/mpl/assert.hpp:60:58: note: expanded from macro '\
+BOOST_MPL_AUX_ASSERT_CONSTANT'
+#   define BOOST_MPL_AUX_ASSERT_CONSTANT(T, expr) enum { expr }
+                                                         ^
+/usr/local/include/boost/mpl/assert.hpp:83:5: note: candidate function [with C = false] not viable: no known conversion from 'boost::mpl::failed ************(SOME_MESSAGE::************)()' to 'typename assert<false>::type' (aka 'mpl_::assert<false>') for 1st argument
+int assertion_failed( typename assert<C>::type );
+    ^
+1 error generated.
