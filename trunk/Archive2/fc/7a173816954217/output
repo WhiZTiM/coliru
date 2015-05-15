@@ -1,0 +1,4 @@
+main.cpp: In function 'void fun()':
+main.cpp:7:18: warning: 'noreturn' function does return
+ [[x]] void fun(){}
+                  ^
