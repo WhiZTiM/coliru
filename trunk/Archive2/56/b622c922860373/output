@@ -1,0 +1,10 @@
+.
+./rootfolder
+./rootfolder/project
+./rootfolder/project/README.md
+./rootfolder/project/src
+./rootfolder/project/src/main.cpp
+./rootfolder/project/Makefile
+./main.cpp
+./input.txt
+./a.out
