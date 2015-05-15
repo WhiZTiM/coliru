@@ -1,0 +1,14 @@
+main.cpp: In function 'int main()':
+main.cpp:7:21: error: array must be initialized with a brace-enclosed initializer
+     int deref[5] = *ptr;
+                     ^
+main.cpp:7:9: warning: unused variable 'deref' [-Wunused-variable]
+     int deref[5] = *ptr;
+         ^
+In file included from /usr/local/include/boost/shared_ptr.hpp:17:0,
+                 from main.cpp:2:
+/usr/local/include/boost/smart_ptr/shared_ptr.hpp: In instantiation of 'typename boost::detail::sp_dereference<T>::type boost::shared_ptr<T>::operator*() const [with T = int [5]; typename boost::detail::sp_dereference<T>::type = void]':
+main.cpp:7:21:   required from here
+/usr/local/include/boost/smart_ptr/shared_ptr.hpp:642:17: error: return-statement with a value, in function returning 'void' [-fpermissive]
+         return *px;
+                 ^
