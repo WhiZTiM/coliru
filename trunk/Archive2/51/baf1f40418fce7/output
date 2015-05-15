@@ -1,0 +1,5 @@
+bash: line 17: 28810 Segmentation fault      (core dumped) ./a.out
+.
+./main.cpp
+./input.txt
+./a.out
