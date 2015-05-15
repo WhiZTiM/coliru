@@ -1,0 +1,2 @@
++ g++ -O3 -fdelete-null-pointer-checks -std=c++14 main.cpp -lcxxrt -ldl
++ ./a.out
