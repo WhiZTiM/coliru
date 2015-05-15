@@ -1,0 +1,13 @@
+id:0 <--> id:8 id:8 id:7 id:6 id:1 
+id:1 <--> id:3 id:4 id:4 id:3 id:0 id:2 
+id:2 <--> id:7 id:1 
+id:3 <--> id:1 id:7 id:1 id:9 id:4 
+id:4 <--> id:1 id:1 id:5 id:6 id:3 
+id:5 <--> id:4 id:9 
+id:6 <--> id:0 id:9 id:4 id:8 
+id:7 <--> id:3 id:0 id:2 id:9 
+id:8 <--> id:0 id:0 id:6 
+id:9 <--> id:7 id:6 id:3 id:5 
+
+Vertex at index #1 has a bundled property of 'id:1'
+Vertex at index #7 has a bundled property of 'id:7'
