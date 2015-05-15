@@ -1,0 +1,15 @@
+main.cpp: In function 'int main()':
+main.cpp:13:41: error: call of overloaded 'min(std::__cxx11::string&, std::__cxx11::string&)' is ambiguous
+     cout<<"minimum string is: "<<min(a,b)<<'\n';
+                                         ^
+main.cpp:6:3: note: candidate: C min(C, C) [with C = std::__cxx11::basic_string<char>]
+ C min(C a,C b) {
+   ^
+In file included from /usr/local/include/c++/5.1.0/bits/char_traits.h:39:0,
+                 from /usr/local/include/c++/5.1.0/ios:40,
+                 from /usr/local/include/c++/5.1.0/ostream:38,
+                 from /usr/local/include/c++/5.1.0/iostream:39,
+                 from main.cpp:1:
+/usr/local/include/c++/5.1.0/bits/stl_algobase.h:195:5: note: candidate: const _Tp& std::min(const _Tp&, const _Tp&) [with _Tp = std::__cxx11::basic_string<char>]
+     min(const _Tp& __a, const _Tp& __b)
+     ^
