@@ -1,0 +1,15 @@
+------Serialise CMD_ON------
+Target type: 0
+Target address: 1
+Command Number: 5
+Device Family: 0
+DTR1 required: 0
+DTR2 required: 0
+
+------Serialise CMD_OFF------
+Target type: 3
+Target address: 50
+Command Number: 0
+Device Family: 0
+DTR1 required: 0
+DTR2 required: 0
