@@ -1,0 +1,9 @@
++ g++ -O3 -fdelete-null-pointer-checks -std=c++14 main.cpp -lcxxrt -ldl
+main.cpp: In function 'int main()':
+main.cpp:34:40: error: no matching function for call to 'CallOnlyIfDerivedFromBase()'
+  CallOnlyIfDerivedFromBase<NotDerived>();
+                                        ^
+main.cpp:25:41: note: candidate: template<class T> std::enable_if_t<std::is_base_of<Base, T>::value> CallOnlyIfDerivedFromBase()
+ enable_if_t<is_base_of<Base, T>::value> CallOnlyIfDerivedFromBase()
+                                         ^
+main.cpp:25:41: note:   template argument deduction/substitution failed:
