@@ -1,0 +1,12 @@
+main.cpp:7:69: warning: missing terminating ' character
+ Any compiler is within its rights to produce coherent output, but it's also within its rights to not run the code at all.
+                                                                     ^
+main.cpp:7:1: error: missing terminating ' character
+ Any compiler is within its rights to produce coherent output, but it's also within its rights to not run the code at all.
+ ^
+main.cpp:3:1: error: expected unqualified-id before numeric constant
+ 5a
+ ^
+main.cpp:19:1: error: 'Then' does not name a type
+ Then every element would be initialized to 0. Then we can say this code has determinate behavior: It will run in an infinite loop, printing "the third element is 0" every time. This happens because the programmer used the assignment operator (=) instead of the comparison operator (==).
+ ^
