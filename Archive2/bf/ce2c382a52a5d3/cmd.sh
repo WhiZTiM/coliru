@@ -1,0 +1,1 @@
+gcc -O2 -Wall -pedantic && ./a.out
