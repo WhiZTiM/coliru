@@ -1,0 +1,6 @@
+str: 'ffff' int: 65535 0xffff (status: Success)
+str: '0x82345678' int: 2184468088 0x82345678 (status: Success)
+str: '123' int: 291 0x123 (status: Success)
+str: '123x' int: 0 0x0 (status: Invalid argument)
+str: '0x1234567890ab' int: 0 0x0 (status: Numerical result out of range)
+str: 'NULL' int: 0 0x0 (status: Invalid argument)
