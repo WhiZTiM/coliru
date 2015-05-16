@@ -1,0 +1,5 @@
+main.cpp:28:2: warning: extra ';' [-Wpedantic]
+ };
+  ^
+buddy::operator<
+std::operator<
