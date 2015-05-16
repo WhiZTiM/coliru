@@ -1,0 +1,3 @@
+main.cpp:5:46: error: non-class, non-variable partial specialization 'func<int, S>' is not allowed
+ template<typename S> void func<int, S>(int, S) {}
+                                              ^
