@@ -1,0 +1,8 @@
+main.cpp:2:5: error: static_assert failed "disabled!"
+    static_assert( false, 
+    ^              ~~~~~
+1 error generated.
+main.cpp:2:5: error: static_assert failed "enabled!"
+    static_assert( false, 
+    ^              ~~~~~
+1 error generated.
