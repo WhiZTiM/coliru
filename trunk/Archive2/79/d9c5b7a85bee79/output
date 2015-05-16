@@ -1,0 +1,10 @@
+main.cpp:3:11: error: '::main' must return 'int'
+ void main()
+           ^
+main.cpp: In function 'int main()':
+main.cpp:8:5: error: expected ';' before 'if'
+     if((x>45) && (x<=60))     //se x for maior que 45 e menor que 60
+     ^
+main.cpp:5:11: warning: unused variable 'y' [-Wunused-variable]
+     int x,y;
+           ^
