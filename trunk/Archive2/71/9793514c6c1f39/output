@@ -1,0 +1,16 @@
+main.cpp: In function 'int main()':
+main.cpp:2:5: error: static assertion failed: disabled!
+     static_assert( false, 
+     ^
+main.cpp: In function 'int main()':
+main.cpp:2:5: error: static assertion failed: enabled!
+     static_assert( false, 
+     ^
+main.cpp:2:5: error: static_assert failed "disabled!"
+    static_assert( false, 
+    ^              ~~~~~
+1 error generated.
+main.cpp:2:5: error: static_assert failed "enabled!"
+    static_assert( false, 
+    ^              ~~~~~
+1 error generated.
