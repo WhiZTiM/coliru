@@ -1,0 +1,1 @@
+gcc -Wall -fopenmp main.cpp && OMP_CANCELLATION=true ./a.out
