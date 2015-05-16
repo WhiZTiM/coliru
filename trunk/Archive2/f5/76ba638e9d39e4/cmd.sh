@@ -1,0 +1,3 @@
+cat>macAddr.txt<<"JSON"; g++ -std=c++11 -O2 -Wall -pedantic -pthread main.cpp && ./a.out
+[{"mac":"60:21:C0:20:6A:8C","power":-73,"sensor_id":254,"timestamp":"2015-05-16 19:32:19"},{"mac":"CC:FA:00:B4:3D:44","power":-52,"sensor_id":254,"timestamp":"2015-05-16 19:32:17"},{"mac":"CC:3A:61:82:D1:20","power":-76,"sensor_id":254,"timestamp":"2015-05-16 19:32:12"},{"mac":"0C:48:85:FF:1C:2D","power":-79,"sensor_id":254,"timestamp":"2015-05-16 19:32:12"},{"mac":"34:A3:95:A2:00:2E","power":-76,"sensor_id":254,"timestamp":"2015-05-16 19:32:11"}]
+JSON
