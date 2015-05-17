@@ -1,0 +1,1 @@
+g++ -x c++ -std=c++14 -DNDEBUG -O0 -Wall -Wextra  -pthread main.cpp -o main && ./main main.cpp
