@@ -1,0 +1,24 @@
+main.cpp:237:13: error: use of undeclared identifier 'cout'; did you mean 'count'?
+            cout<<"[" << d[u] << "]";
+            ^~~~
+            count
+/usr/local/include/boost/range/algorithm/count.hpp:31:1: note: 'count' declared here
+count(SinglePassRange& rng, const Value& val)
+^
+main.cpp:237:13: error: reference to overloaded function could not be resolved; did you mean to call it?
+            cout<<"[" << d[u] << "]";
+            ^~~~
+/usr/local/include/boost/range/algorithm/count.hpp:31:1: note: possible target for call
+count(SinglePassRange& rng, const Value& val)
+^
+main.cpp:239:9: error: use of undeclared identifier 'cout'; did you mean 'count'?
+        cout <<endl;
+        ^~~~
+        count
+/usr/local/include/boost/range/algorithm/count.hpp:31:1: note: 'count' declared here
+count(SinglePassRange& rng, const Value& val)
+^
+main.cpp:239:16: error: use of undeclared identifier 'endl'
+        cout <<endl;
+               ^
+4 errors generated.
