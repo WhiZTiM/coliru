@@ -1,0 +1,15 @@
+an_observer::on_event(sender:0x7fffe1813a80)
+closure(sender:0x7fffe1813a80)
+------------
+an_observer::on_event(sender:0x7fffe1813a80)
+closure(sender:0x7fffe1813a80)
+non_member_event_handler(sender:0x7fffe1813a80)
+function_object::operator()(sender:0x7fffe1813a80)
+==============
+an_observer::on_event(sender:0x7fff92aa4650)
+closure(sender:0x7fff92aa4650)
+------------
+an_observer::on_event(sender:0x7fff92aa4650)
+closure(sender:0x7fff92aa4650)
+non_member_event_handler(sender:0x7fff92aa4650)
+function_object::operator()(sender:0x7fff92aa4650)
