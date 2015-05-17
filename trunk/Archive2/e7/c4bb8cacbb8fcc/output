@@ -1,0 +1,135 @@
+main.cpp: In member function 'uint64_t main()::uuid_type::get_node() const':
+main.cpp:60:25: error: no matching function for call to 'main()::variant_type::variant_type()'
+            variant_type type;
+                         ^
+main.cpp:33:18: note: candidate: main()::variant_type::variant_type(const uint64_t&)
+         explicit variant_type(const uint64_t & v)
+                  ^
+main.cpp:33:18: note:   candidate expects 1 argument, 0 provided
+main.cpp:27:18: note: candidate: main()::variant_type::variant_type(const uint32_t&)
+         explicit variant_type(const uint32_t & v)
+                  ^
+main.cpp:27:18: note:   candidate expects 1 argument, 0 provided
+main.cpp:21:18: note: candidate: main()::variant_type::variant_type(const uint16_t&)
+         explicit variant_type(const uint16_t & v)
+                  ^
+main.cpp:21:18: note:   candidate expects 1 argument, 0 provided
+main.cpp:15:18: note: candidate: main()::variant_type::variant_type(const uint8_t&)
+         explicit variant_type(const uint8_t & v)
+                  ^
+main.cpp:15:18: note:   candidate expects 1 argument, 0 provided
+main.cpp:9:11: note: candidate: constexpr main()::variant_type::variant_type(const main()::variant_type&)
+     union variant_type {
+           ^
+main.cpp:9:11: note:   candidate expects 1 argument, 0 provided
+main.cpp:9:11: note: candidate: constexpr main()::variant_type::variant_type(main()::variant_type&&)
+main.cpp:9:11: note:   candidate expects 1 argument, 0 provided
+main.cpp: In member function 'void main()::uuid_type::set_timestamp(uint64_t)':
+main.cpp:72:22: error: assignment of read-only parameter 'timestamp'
+            timestamp &= version_mask;
+                      ^
+main.cpp:73:22: error: assignment of read-only parameter 'timestamp'
+            timestamp |= (get_version() & (~version_mask));
+                      ^
+main.cpp: In member function 'void main()::uuid_type::set_sequence(uint16_t)':
+main.cpp:110:21: error: assignment of read-only parameter 'sequence'
+            sequence &= variant_mask;
+                     ^
+main.cpp:111:21: error: assignment of read-only parameter 'sequence'
+            sequence |= (get_variant() & (~variant_mask));
+                     ^
+main.cpp: In function 'int main()':
+main.cpp:126:15: error: use of deleted function 'main()::uuid_type::uuid_type()'
+     uuid_type uuid;
+               ^
+main.cpp:39:12: note: 'main()::uuid_type::uuid_type()' is implicitly deleted because the default definition would be ill-formed:
+     struct uuid_type
+            ^
+main.cpp:39:12: error: no matching function for call to 'main()::variant_type::variant_type()'
+main.cpp:33:18: note: candidate: main()::variant_type::variant_type(const uint64_t&)
+         explicit variant_type(const uint64_t & v)
+                  ^
+main.cpp:33:18: note:   candidate expects 1 argument, 0 provided
+main.cpp:27:18: note: candidate: main()::variant_type::variant_type(const uint32_t&)
+         explicit variant_type(const uint32_t & v)
+                  ^
+main.cpp:27:18: note:   candidate expects 1 argument, 0 provided
+main.cpp:21:18: note: candidate: main()::variant_type::variant_type(const uint16_t&)
+         explicit variant_type(const uint16_t & v)
+                  ^
+main.cpp:21:18: note:   candidate expects 1 argument, 0 provided
+main.cpp:15:18: note: candidate: main()::variant_type::variant_type(const uint8_t&)
+         explicit variant_type(const uint8_t & v)
+                  ^
+main.cpp:15:18: note:   candidate expects 1 argument, 0 provided
+main.cpp:9:11: note: candidate: constexpr main()::variant_type::variant_type(const main()::variant_type&)
+     union variant_type {
+           ^
+main.cpp:9:11: note:   candidate expects 1 argument, 0 provided
+main.cpp:9:11: note: candidate: constexpr main()::variant_type::variant_type(main()::variant_type&&)
+main.cpp:9:11: note:   candidate expects 1 argument, 0 provided
+main.cpp:39:12: error: no matching function for call to 'main()::variant_type::variant_type()'
+     struct uuid_type
+            ^
+main.cpp:33:18: note: candidate: main()::variant_type::variant_type(const uint64_t&)
+         explicit variant_type(const uint64_t & v)
+                  ^
+main.cpp:33:18: note:   candidate expects 1 argument, 0 provided
+main.cpp:27:18: note: candidate: main()::variant_type::variant_type(const uint32_t&)
+         explicit variant_type(const uint32_t & v)
+                  ^
+main.cpp:27:18: note:   candidate expects 1 argument, 0 provided
+main.cpp:21:18: note: candidate: main()::variant_type::variant_type(const uint16_t&)
+         explicit variant_type(const uint16_t & v)
+                  ^
+main.cpp:21:18: note:   candidate expects 1 argument, 0 provided
+main.cpp:15:18: note: candidate: main()::variant_type::variant_type(const uint8_t&)
+         explicit variant_type(const uint8_t & v)
+                  ^
+main.cpp:15:18: note:   candidate expects 1 argument, 0 provided
+main.cpp:9:11: note: candidate: constexpr main()::variant_type::variant_type(const main()::variant_type&)
+     union variant_type {
+           ^
+main.cpp:9:11: note:   candidate expects 1 argument, 0 provided
+main.cpp:9:11: note: candidate: constexpr main()::variant_type::variant_type(main()::variant_type&&)
+main.cpp:9:11: note:   candidate expects 1 argument, 0 provided
+main.cpp:137:18: error: no matching function for call to 'main()::variant_type::variant_type()'
+     variant_type node;
+                  ^
+main.cpp:33:18: note: candidate: main()::variant_type::variant_type(const uint64_t&)
+         explicit variant_type(const uint64_t & v)
+                  ^
+main.cpp:33:18: note:   candidate expects 1 argument, 0 provided
+main.cpp:27:18: note: candidate: main()::variant_type::variant_type(const uint32_t&)
+         explicit variant_type(const uint32_t & v)
+                  ^
+main.cpp:27:18: note:   candidate expects 1 argument, 0 provided
+main.cpp:21:18: note: candidate: main()::variant_type::variant_type(const uint16_t&)
+         explicit variant_type(const uint16_t & v)
+                  ^
+main.cpp:21:18: note:   candidate expects 1 argument, 0 provided
+main.cpp:15:18: note: candidate: main()::variant_type::variant_type(const uint8_t&)
+         explicit variant_type(const uint8_t & v)
+                  ^
+main.cpp:15:18: note:   candidate expects 1 argument, 0 provided
+main.cpp:9:11: note: candidate: constexpr main()::variant_type::variant_type(const main()::variant_type&)
+     union variant_type {
+           ^
+main.cpp:9:11: note:   candidate expects 1 argument, 0 provided
+main.cpp:9:11: note: candidate: constexpr main()::variant_type::variant_type(main()::variant_type&&)
+main.cpp:9:11: note:   candidate expects 1 argument, 0 provided
+main.cpp:162:9: error: no match for 'operator[]' (operand types are 'main()::variant_type' and 'int')
+     node[0] &= multicast_mask;
+         ^
+main.cpp:163:9: error: no match for 'operator[]' (operand types are 'main()::variant_type' and 'int')
+     node[0] |= (multicast & (~multicast_mask));
+         ^
+main.cpp:196:48: error: no match for 'operator[]' (operand types are 'main()::variant_type' and 'int')
+                          << *((uint16_t *)&node[0])
+                                                ^
+main.cpp:200:48: error: no match for 'operator[]' (operand types are 'main()::variant_type' and 'int')
+                          << *((uint32_t *)&node[2]) << "\n";
+                                                ^
+main.cpp:205:55: error: no match for 'operator[]' (operand types are 'main()::variant_type' and 'int')
+                          << static_cast<uint16_t>(node[0] & (~multicast_mask)) << "\n";
+                                                       ^
