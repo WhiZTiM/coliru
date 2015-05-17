@@ -1,0 +1,30 @@
+main.cpp: In function 'int main()':
+main.cpp:33:27: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+     *((uint64_t *)&uuid[0]) = timestamp;
+                           ^
+main.cpp:34:27: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+     *((uint16_t *)&uuid[8]) = sequence;
+                           ^
+main.cpp:35:28: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+     *((uint16_t *)&uuid[10]) = *((uint16_t *)&node[0]);
+                            ^
+main.cpp:35:54: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+     *((uint16_t *)&uuid[10]) = *((uint16_t *)&node[0]);
+                                                      ^
+main.cpp:36:28: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+     *((uint32_t *)&uuid[12]) = *((uint32_t *)&node[2]);
+                            ^
+main.cpp:36:54: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+     *((uint32_t *)&uuid[12]) = *((uint32_t *)&node[2]);
+                                                      ^
+main.cpp:61:51: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+                          << *((uint16_t *)&node[0])
+                                                   ^
+main.cpp:65:51: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+                          << *((uint32_t *)&node[2]) << "\n";
+                                                   ^
+Timestamp: 0000000000000000
+Version: 40
+Sequence: 00000000
+Variant: 80
+Node: 000000000000
