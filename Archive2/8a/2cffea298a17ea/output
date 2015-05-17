@@ -1,0 +1,11 @@
+main.cpp: In instantiation of 'constexpr void typeInfoError() [with T = SmallString1; int SIZE = 4; int ALIGNMENT = 1]':
+main.cpp:31:33:   required from here
+main.cpp:6:5: error: static assertion failed: Intentionally fail. See template parameters above for size and alignment info.
+     static_assert(SIZE == 0, "Intentionally fail. See template parameters above for size and alignment info.");
+     ^
+main.cpp: In instantiation of 'constexpr void typeInfoError() [with T = SmallString2; int SIZE = 4; int ALIGNMENT = 4]':
+main.cpp:32:33:   required from here
+main.cpp:6:5: error: static assertion failed: Intentionally fail. See template parameters above for size and alignment info.
+main.cpp: In instantiation of 'constexpr void typeInfoError() [with T = SmallString3; int SIZE = 4; int ALIGNMENT = 4]':
+main.cpp:33:33:   required from here
+main.cpp:6:5: error: static assertion failed: Intentionally fail. See template parameters above for size and alignment info.
