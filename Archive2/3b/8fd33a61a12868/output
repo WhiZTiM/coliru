@@ -1,0 +1,4 @@
+main.cpp: In function 'int main()':
+main.cpp:20:39: error: cannot convert from pointer to base class 'base' to pointer to derived class 'derived' because the base is virtual
+         return static_cast<derived&>(b).i;
+                                       ^
