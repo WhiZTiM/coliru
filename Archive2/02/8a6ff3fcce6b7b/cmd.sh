@@ -1,0 +1,1 @@
+runghc -Wall main.cpp

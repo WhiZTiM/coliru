@@ -1,0 +1,6 @@
+
+main.cpp:3:9:
+    Warning: Pattern match(es) are non-exhaustive
+             In an equation for `insert': Patterns not matched: _ []
+main.cpp: main.cpp:(3,9)-(5,36): Non-exhaustive patterns in function insert
+
