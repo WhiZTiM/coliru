@@ -1,0 +1,5 @@
+main.c:10:5: warning: no previous prototype for function 'f' [-Wmissing-prototypes]
+int f(x, y, z) int x; int y; int z; { return x + y + z; }
+    ^
+1 warning generated.
+f(1, 2, 3) = 6
