@@ -1,0 +1,1 @@
+cat main.cpp > main.c && gcc -std=c99  -S -O2 -Wall -pedantic -pthread main.c && cat main.s
