@@ -1,0 +1,6 @@
+Before:
+virtual std::ostream& D1::print(std::ostream&) const
+virtual std::ostream& D1::print(std::ostream&) const
+virtual std::ostream& D2::print(std::ostream&) const
+virtual std::ostream& D1::print(std::ostream&) const
+
