@@ -1,0 +1,19 @@
+
+g++ (libstdc++) ######################################################################
+MyError::MyError()
+hi
+MyError::~MyError
+goodbye
+
+g++ (libstdc++, -fno-elide-constructors) ######################################################################
+MyError::MyError()
+MyError::~MyError
+hi
+MyError::~MyError
+goodbye
+
+clang++ (libc++) ######################################################################
+MyError::MyError()
+hi
+MyError::~MyError
+goodbye
