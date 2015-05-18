@@ -1,0 +1,6 @@
+Parsing the date out of '02/01/2013' in the locale en_US.utf8
+Day: 1 Month: 2 Year: 2013
+Parsing the date out of '02-01-2013' in the locale en_US.utf8
+Parse failed. Unparsed string: -01-2013
+Parsing the date out of '2013年02月01日' in the locale ja_JP.utf8
+Day: 1 Month: 2 Year: 2013
