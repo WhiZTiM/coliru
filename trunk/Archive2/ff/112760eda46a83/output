@@ -1,0 +1,26 @@
+main.cpp: In instantiation of 'void test(T) [with T = double]':
+main.cpp:42:10:   required from here
+main.cpp:7:75: error: no matching function for call to 'expected_int_type::assertion_failed(_)'
+ #define STATIC_ASSERT(expr, msg) (void)sizeof( msg::assertion_failed<expr>(_()) )
+                                                                           ^
+main.cpp:36:5: note: in expansion of macro 'STATIC_ASSERT'
+     STATIC_ASSERT( (is_same<T,int>::value), expected_int_type);
+     ^
+main.cpp:11:33: note: candidate: template<bool C> static int expected_int_type::assertion_failed(typename assert<C>::type)
+     template<bool C> static int assertion_failed(typename assert<C>::type); \
+                                 ^
+main.cpp:31:1: note: in expansion of macro 'DEFINE_ASSERT_MESSAGE'
+ DEFINE_ASSERT_MESSAGE(expected_int_type);
+ ^
+main.cpp:11:33: note:   template argument deduction/substitution failed:
+     template<bool C> static int assertion_failed(typename assert<C>::type); \
+                                 ^
+main.cpp:31:1: note: in expansion of macro 'DEFINE_ASSERT_MESSAGE'
+ DEFINE_ASSERT_MESSAGE(expected_int_type);
+ ^
+main.cpp:7:75: note:   cannot convert '_()' (type '_') to type 'assert<false>::type {aka assert<false>}'
+ #define STATIC_ASSERT(expr, msg) (void)sizeof( msg::assertion_failed<expr>(_()) )
+                                                                           ^
+main.cpp:36:5: note: in expansion of macro 'STATIC_ASSERT'
+     STATIC_ASSERT( (is_same<T,int>::value), expected_int_type);
+     ^

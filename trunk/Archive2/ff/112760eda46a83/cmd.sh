@@ -1,0 +1,1 @@
+g++ -std=c++03 -DCRAPPYCOMPILER -O2 -Wall -pedantic -pthread main.cpp
