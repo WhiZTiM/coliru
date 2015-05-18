@@ -1,0 +1,7 @@
+main.cpp:10:11: warning: multi-character character constant [-Wmultichar]
+     if (v<'20'){
+           ^
+main.cpp: In function 'int main()':
+main.cpp:18:1: error: expected ';' before '}' token
+ }
+ ^
