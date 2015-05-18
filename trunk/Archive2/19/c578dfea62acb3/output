@@ -1,0 +1,36 @@
+Data();
+Data();
+Data();
+Data();
+Data();
+--------- start:
+Data();
+Data();
+Data(Data&& data);
+~Data();
+Data();
+Data(Data&& data);
+Data(Data&& data);
+~Data();
+~Data();
+Data();
+Data();
+Data(Data&& data);
+~Data();
+Data();
+Data(Data&& data);
+Data(Data&& data);
+~Data();
+~Data();
+--------- end:
+~Data();
+~Data();
+~Data();
+~Data();
+~Data();
+~Data();
+~Data();
+~Data();
+~Data();
+~Data();
+~Data();
