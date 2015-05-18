@@ -1,0 +1,1 @@
+mv main.cpp main.c && clang -std=c11 -Weverything main.c && ./a.out
