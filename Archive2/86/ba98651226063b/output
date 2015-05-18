@@ -1,0 +1,4 @@
+main.cpp:10:11: warning: multi-character character constant [-Wmultichar]
+     if (v<'20'){
+           ^
+Entre com o preço de custo:valor de venda é: 0.000000valor de venda é: 0.000000
