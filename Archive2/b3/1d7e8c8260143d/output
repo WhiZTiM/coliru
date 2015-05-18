@@ -1,0 +1,2 @@
+Before main function exits!
+bash: line 7: 32644 Segmentation fault      (core dumped) ./a.out
