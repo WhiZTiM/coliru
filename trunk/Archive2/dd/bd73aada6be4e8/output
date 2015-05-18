@@ -1,0 +1,18 @@
+main.cpp: In instantiation of 'void test(T) [with T = double]':
+main.cpp:29:10:   required from here
+main.cpp:12:75: error: no matching function for call to 'expected_int_type::assertion_failed(int)'
+ #define STATIC_ASSERT(expr, msg) (void)sizeof( msg::assertion_failed<expr>(0) )
+                                                                           ^
+main.cpp:23:5: note: in expansion of macro 'STATIC_ASSERT'
+     STATIC_ASSERT( (is_same<T,int>::value), expected_int_type);
+     ^
+main.cpp:7:16: note: candidate: template<bool C> static int expected_int_type::assertion_failed(typename assert<C>::type)
+     static int assertion_failed(typename assert<C>::type);
+                ^
+main.cpp:7:16: note:   template argument deduction/substitution failed:
+main.cpp:12:75: note:   cannot convert '0' (type 'int') to type 'assert<false>::type {aka assert<false>}'
+ #define STATIC_ASSERT(expr, msg) (void)sizeof( msg::assertion_failed<expr>(0) )
+                                                                           ^
+main.cpp:23:5: note: in expansion of macro 'STATIC_ASSERT'
+     STATIC_ASSERT( (is_same<T,int>::value), expected_int_type);
+     ^
