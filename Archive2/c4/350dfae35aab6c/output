@@ -1,0 +1,13 @@
+main.cpp:10:11: warning: multi-character character constant [-Wmultichar]
+     if (v<'20'){
+           ^
+main.cpp: In function 'int main()':
+main.cpp:11:17: warning: right operand of comma operator has no effect [-Wunused-value]
+         x=v*1,45;
+                 ^
+main.cpp:14:12: warning: right operand of comma operator has no effect [-Wunused-value]
+     x=v*1,3;
+            ^
+main.cpp:18:1: error: expected ';' before '}' token
+ }
+ ^
