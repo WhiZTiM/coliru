@@ -1,0 +1,3 @@
+Default constructed:     AA
+C string constructed:    AB
+std::string constructed: XZ
