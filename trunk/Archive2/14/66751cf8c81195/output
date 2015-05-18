@@ -1,0 +1,19 @@
+main.cpp:21:21: error: a non-type template parameter cannot have type 'class F'
+template <class F...>
+                    ^
+main.cpp:22:21: error: type 'F' of function parameter pack does not contain any unexpanded parameter packs
+auto make_overload(F... f) {
+                   ~^~~~~
+main.cpp:22:25: error: variable has incomplete type 'F'
+auto make_overload(F... f) {
+                        ^
+main.cpp:21:17: note: forward declaration of 'F'
+template <class F...>
+                ^
+main.cpp:31:15: error: no matching function for call to 'make_overload'
+    auto fn = make_overload(f1, f2, f3);
+              ^~~~~~~~~~~~~
+main.cpp:22:6: note: candidate function template not viable: requires single argument 'f', but 3 arguments were provided
+auto make_overload(F... f) {
+     ^
+4 errors generated.
