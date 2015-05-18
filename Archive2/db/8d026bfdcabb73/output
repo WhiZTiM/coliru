@@ -1,0 +1,43 @@
+main.cpp:11:11: error: template parameter 'class ... F'
+ template <class... F>
+           ^
+main.cpp:20:8: error: redeclared here as 'class F'
+ struct overload : F {
+        ^
+main.cpp: In function 'int main()':
+main.cpp:46:42: error: request for member 'operator()' is ambiguous
+     std::cout << static_cast<int>(fgh(1,2)) << std::endl;
+                                          ^
+main.cpp:38:54: note: candidates are: main()::<lambda(std::__cxx11::string, std::__cxx11::string)>
+     auto h = [](std::string x,std::string y) -> std::string {
+                                                      ^
+main.cpp:35:39: note:                 main()::<lambda(double, double)>
+     auto g = [](double x,double y) -> double {
+                                       ^
+main.cpp:32:33: note:                 main()::<lambda(int, int)>
+     auto f = [](int x,int y) -> int {
+                                 ^
+main.cpp:47:49: error: request for member 'operator()' is ambiguous
+     std::cout << static_cast<double>(fgh(1.5,2.5)) << std::endl;
+                                                 ^
+main.cpp:38:54: note: candidates are: main()::<lambda(std::__cxx11::string, std::__cxx11::string)>
+     auto h = [](std::string x,std::string y) -> std::string {
+                                                      ^
+main.cpp:35:39: note:                 main()::<lambda(double, double)>
+     auto g = [](double x,double y) -> double {
+                                       ^
+main.cpp:32:33: note:                 main()::<lambda(int, int)>
+     auto f = [](int x,int y) -> int {
+                                 ^
+main.cpp:48:60: error: request for member 'operator()' is ambiguous
+     std::cout << static_cast<std::string>(fgh("bob","larry")) << std::endl;
+                                                            ^
+main.cpp:38:54: note: candidates are: main()::<lambda(std::__cxx11::string, std::__cxx11::string)>
+     auto h = [](std::string x,std::string y) -> std::string {
+                                                      ^
+main.cpp:35:39: note:                 main()::<lambda(double, double)>
+     auto g = [](double x,double y) -> double {
+                                       ^
+main.cpp:32:33: note:                 main()::<lambda(int, int)>
+     auto f = [](int x,int y) -> int {
+                                 ^
