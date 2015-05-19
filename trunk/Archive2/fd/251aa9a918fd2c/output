@@ -1,0 +1,11 @@
+main.cpp:39:2: error: expected '}'
+}
+ ^
+main.cpp:5:14: note: to match this '{'
+struct Timer {
+             ^
+main.cpp:39:2: error: expected ';' after struct
+}
+ ^
+ ;
+2 errors generated.

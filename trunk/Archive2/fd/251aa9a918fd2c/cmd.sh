@@ -1,0 +1,1 @@
+clang++ -std=c++1z -Ofast main.cpp && ./a.out
