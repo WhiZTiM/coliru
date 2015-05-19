@@ -1,0 +1,13 @@
+main.cpp:19:57: error: object of type 'Data<float>' cannot be assigned because its copy assignment operator is implicitly deleted
+        for (uint_fast32_t n=0; n<N; n++ ) this->ptr[n] = rhs; 
+                                                        ^
+main.cpp:28:16: note: in instantiation of member function 'Data<Data<float> >::operator=' requested here
+template class Data<Data<float>>;
+               ^
+main.cpp:10:37: note: copy assignment operator of 'Data<float>' is implicitly deleted because base class 'DataContent<float>' has a deleted copy assignment operator
+template <typename T> struct Data : DataContent<T> {
+                                    ^
+main.cpp:4:30: note: copy assignment operator of 'DataContent<float>' is implicitly deleted because field 'bytes' is of const-qualified type 'const std::uint_fast16_t' (aka 'const unsigned long')
+    const std::uint_fast16_t bytes = sizeof(T); 
+                             ^
+1 error generated.
