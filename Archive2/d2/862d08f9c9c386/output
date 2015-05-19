@@ -1,0 +1,1 @@
+decltype (p) mylib::operator<<(mylib::myclass<P>&, boost::phoenix::actor<boost::proto::exprns_::basic_expr<boost::proto::tagns_::tag::terminal, boost::proto::argsns_::term<Arg>, 0l> >) [with P = int; T = double; decltype (p) = mylib::myclass<int>&] arg: 3
