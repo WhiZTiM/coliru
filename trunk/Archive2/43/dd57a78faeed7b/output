@@ -1,0 +1,122 @@
+is 'en-gb' a valid language tag?
+language: en
+region: gb
+true
+
+is 'en-AU' a valid language tag?
+language: en
+region: AU
+true
+
+is 'en-US' a valid language tag?
+language: en
+region: US
+true
+
+is 'en_AU' a valid language tag?
+language: en
+did not hit end|false
+
+is 'zh-Hant' a valid language tag?
+language: zh
+script: Hant
+true
+
+is 'zh-Hans' a valid language tag?
+language: zh
+script: Hans
+true
+
+is 'sr-Cyrl' a valid language tag?
+language: sr
+script: Cyrl
+true
+
+is 'sr-Latn' a valid language tag?
+language: sr
+script: Latn
+true
+
+is 'zh-cmn-Hans-CN' a valid language tag?
+language: zh
+did not hit end|false
+
+is 'cmn-Hans-CN' a valid language tag?
+language: cmn
+script: Hans
+region: CN
+true
+
+is 'zh-yue-HK' a valid language tag?
+language: zhyueHK
+region: HK
+true
+
+is 'yue-HK' a valid language tag?
+language: yue
+region: HK
+true
+
+is 'zh-Hans-CN' a valid language tag?
+language: zh
+script: Hans
+region: CN
+true
+
+is 'sr-Latn-RS' a valid language tag?
+language: sr
+script: Latn
+region: RS
+true
+
+is 'sl-rozaj' a valid language tag?
+language: sl
+variant: rozaj
+true
+
+is 'sl-rozaj-biske' a valid language tag?
+language: sl
+variant: rozaj
+variant: biske
+true
+
+is 'sl-nedis' a valid language tag?
+language: sl
+variant: nedis
+true
+
+is 'de-CH-1901' a valid language tag?
+language: de
+region: CH
+variant: 1901
+true
+
+is 'sl-IT-nedis' a valid language tag?
+language: sl
+region: IT
+variant: nedis
+true
+
+is 'hy-Latn-IT-arevela' a valid language tag?
+language: hy
+script: Latn
+region: IT
+variant: arevela
+true
+
+is 'es-419' a valid language tag?
+language: es
+region: 419
+true
+
+is 'zh-CN-a-myext-x-private' a valid language tag?
+language: zh
+region: CN
+extension: amyextx
+private: private
+true
+
+is 'abcdefgh' a valid language tag?
+language: abcdefgh
+true
+
