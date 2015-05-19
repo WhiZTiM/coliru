@@ -1,0 +1,33 @@
+
+str: 'ffff' => uint: 65535 0xffff   status: Success
+
+str: '0x0001' => uint: 1 0x1   status: Success
+
+str: '0X0082345678' => uint: 2184468088 0x82345678   status: Success
+
+str: '0129' => uint: 297 0x129   status: Success
+
+str: '129x' => uint: 0 0x0   status: Invalid argument
+
+str: '0x100000000' => uint: 0 0x0   status: Numerical result out of range
+
+str: 'NULL' => uint: 0 0x0   status: Invalid argument
+
+str: '00001' => uint: 1 0x1   status: Success
+==============
+
+str: 'ffff' => uint: 65535 0xffff   status: Success
+
+str: '0x0001' => uint: 1 0x1   status: Success
+
+str: '0X0082345678' => uint: 2184468088 0x82345678   status: Success
+
+str: '0129' => uint: 297 0x129   status: Success
+
+str: '129x' => uint: 0 0x0   status: Invalid argument
+
+str: '0x100000000' => uint: 0 0x0   status: Numerical result out of range
+
+str: 'NULL' => uint: 0 0x0   status: Invalid argument
+
+str: '00001' => uint: 1 0x1   status: Success
