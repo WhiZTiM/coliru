@@ -1,0 +1,7 @@
+main.cpp:27:15: error: taking the address of a temporary object of type 'Bar' [-Waddress-of-temporary]
+    auto p1 = &foo().m_bar;
+              ^~~~~~~~~~~~
+main.cpp:28:15: error: cannot take the address of an rvalue of type 'Bar'
+    auto p2 = &bar().m_bar;
+              ^~~~~~~~~~~~
+2 errors generated.
