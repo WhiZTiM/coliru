@@ -1,0 +1,20 @@
+main.cpp: In function 'int main()':
+main.cpp:17:8: error: no match for 'operator=' (operand types are 'std::vector<int>' and 'vec::vector<int>')
+     v1 = v2; // Error: v1 and v2 are different object's type.
+        ^
+In file included from /usr/local/include/c++/5.1.0/vector:69:0,
+                 from main.cpp:1:
+/usr/local/include/c++/5.1.0/bits/vector.tcc:167:5: note: candidate: std::vector<_Tp, _Alloc>& std::vector<_Tp, _Alloc>::operator=(const std::vector<_Tp, _Alloc>&) [with _Tp = int; _Alloc = std::allocator<int>]
+     vector<_Tp, _Alloc>::
+     ^
+/usr/local/include/c++/5.1.0/bits/vector.tcc:167:5: note:   no known conversion for argument 1 from 'vec::vector<int>' to 'const std::vector<int>&'
+In file included from /usr/local/include/c++/5.1.0/vector:64:0,
+                 from main.cpp:1:
+/usr/local/include/c++/5.1.0/bits/stl_vector.h:448:7: note: candidate: std::vector<_Tp, _Alloc>& std::vector<_Tp, _Alloc>::operator=(std::vector<_Tp, _Alloc>&&) [with _Tp = int; _Alloc = std::allocator<int>]
+       operator=(vector&& __x) noexcept(_Alloc_traits::_S_nothrow_move())
+       ^
+/usr/local/include/c++/5.1.0/bits/stl_vector.h:448:7: note:   no known conversion for argument 1 from 'vec::vector<int>' to 'std::vector<int>&&'
+/usr/local/include/c++/5.1.0/bits/stl_vector.h:470:7: note: candidate: std::vector<_Tp, _Alloc>& std::vector<_Tp, _Alloc>::operator=(std::initializer_list<_Tp>) [with _Tp = int; _Alloc = std::allocator<int>]
+       operator=(initializer_list<value_type> __l)
+       ^
+/usr/local/include/c++/5.1.0/bits/stl_vector.h:470:7: note:   no known conversion for argument 1 from 'vec::vector<int>' to 'std::initializer_list<int>'
