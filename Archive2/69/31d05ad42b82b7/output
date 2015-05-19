@@ -1,0 +1,7 @@
+main.cpp:6:16: error: invalid range expression of type '(lambda at main.cpp:13:24)'; no viable 'begin' function available
+    for(auto e : c){
+               ^ ~
+main.cpp:14:5: note: in instantiation of function template specialization 'for_each<(lambda at main.cpp:13:24), std::vector<int, std::allocator<int> > >' requested here
+    for_each(print, cijfers);
+    ^
+1 error generated.
