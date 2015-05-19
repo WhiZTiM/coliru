@@ -1,0 +1,32 @@
+main.cpp:5:5: error: expected class-name before '{' token
+     {
+     ^
+main.cpp:16:17: error: 'WizardFactory' has not been declared
+     inline bool WizardFactory::registerWizard(const std::string &wizardType, WizardBuilder &&builder)
+                 ^
+main.cpp:16:58: error: 'string' in namespace 'std' does not name a type
+     inline bool WizardFactory::registerWizard(const std::string &wizardType, WizardBuilder &&builder)
+                                                          ^
+main.cpp:16:78: error: 'WizardBuilder' has not been declared
+     inline bool WizardFactory::registerWizard(const std::string &wizardType, WizardBuilder &&builder)
+                                                                              ^
+main.cpp: In function 'bool registerWizard(const int&, int&&)':
+main.cpp:18:16: error: 'm_registry' was not declared in this scope
+         return m_registry.insert( std::make_pair(wizardType,std::forward<WizardBuilder>(builder)) ).second;
+                ^
+main.cpp:18:35: error: 'make_pair' is not a member of 'std'
+         return m_registry.insert( std::make_pair(wizardType,std::forward<WizardBuilder>(builder)) ).second;
+                                   ^
+main.cpp:18:61: error: 'forward' is not a member of 'std'
+         return m_registry.insert( std::make_pair(wizardType,std::forward<WizardBuilder>(builder)) ).second;
+                                                             ^
+main.cpp:18:74: error: 'WizardBuilder' was not declared in this scope
+         return m_registry.insert( std::make_pair(wizardType,std::forward<WizardBuilder>(builder)) ).second;
+                                                                          ^
+main.cpp: At global scope:
+main.cpp:32:16: error: 'WizardFactory' has not been declared
+     const bool WizardFactory::Registrant<WIZARD>::staticRegistration(
+                ^
+main.cpp:32:41: error: expected initializer before '<' token
+     const bool WizardFactory::Registrant<WIZARD>::staticRegistration(
+                                         ^
