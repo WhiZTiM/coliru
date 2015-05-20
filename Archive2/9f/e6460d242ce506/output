@@ -1,0 +1,16 @@
+main.cpp:1:16: error: use of undeclared identifier 'std'
+bool getStatic(std::string::const_iterator& pos, std::string::const_iterator end, std::string& result)
+               ^
+main.cpp:1:50: error: use of undeclared identifier 'std'
+bool getStatic(std::string::const_iterator& pos, std::string::const_iterator end, std::string& result)
+                                                 ^
+main.cpp:1:83: error: use of undeclared identifier 'std'
+bool getStatic(std::string::const_iterator& pos, std::string::const_iterator end, std::string& result)
+                                                                                  ^
+main.cpp:10:1: error: use of undeclared identifier 'std'
+std::map<u1, opcodeFunc> mapInit()
+^
+main.cpp:10:9: error: expected unqualified-id
+std::map<u1, opcodeFunc> mapInit()
+        ^
+5 errors generated.
