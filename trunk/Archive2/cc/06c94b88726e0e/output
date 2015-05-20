@@ -1,0 +1,14 @@
+sizeof(C)=1
+---------
+op new 1
+ctor
+dtor
+op delete
+---------
+op new[] 10
+ctor
+ctor
+dtor
+dtor
+op delete[]
+---------
