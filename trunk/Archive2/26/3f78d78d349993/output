@@ -1,0 +1,6 @@
+/tmp/main-32a46a.o: In function `_GLOBAL__sub_I_main.cpp':
+main.cpp:(.text.startup+0x20): undefined reference to `boost::system::generic_category()'
+main.cpp:(.text.startup+0x2c): undefined reference to `boost::system::generic_category()'
+main.cpp:(.text.startup+0x38): undefined reference to `boost::system::system_category()'
+main.cpp:(.text.startup+0x44): undefined reference to `boost::system::system_category()'
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
