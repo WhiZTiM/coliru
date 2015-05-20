@@ -1,0 +1,2 @@
+Using -O0:  lock+unlock=42ns
+Using -O2:  lock+unlock=27ns
