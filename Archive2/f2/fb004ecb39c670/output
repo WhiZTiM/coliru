@@ -1,0 +1,8 @@
+main.cpp: In instantiation of 'void f(T, const char*) [with T = X&]':
+main.cpp:16:20:   required from here
+main.cpp:9:5: error: the type being destroyed is 'X', but the destructor refers to 'X&'
+     x.~T();
+     ^
+main.cpp:10:5: error: new cannot be applied to a reference type
+     new (&x) T(p);
+     ^
