@@ -1,0 +1,2 @@
+Entering: getId called by: decltype ((((std::declval<testCls&>)()).getId)({parm#1}...)) DebugWrapper<testCls&>::getId<>() const id: 42
+Exitting: getId called by: decltype ((((std::declval<testCls&>)()).getId)({parm#1}...)) DebugWrapper<testCls&>::getId<>() const
