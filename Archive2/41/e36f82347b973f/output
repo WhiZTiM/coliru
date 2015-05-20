@@ -1,0 +1,4 @@
+main.cpp: In function 'int main()':
+main.cpp:4:16: warning: unused variable 'r' [-Wunused-variable]
+     extern int r[1 + ((&i +1) - &i)];// ok (but redudant)
+                ^
