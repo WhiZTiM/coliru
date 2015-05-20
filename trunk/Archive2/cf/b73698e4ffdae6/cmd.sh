@@ -1,0 +1,1 @@
+g++ -std=c++1z -O3 -Wall main.cpp -S && cat main.s
