@@ -1,0 +1,4 @@
+main.cpp: In function 'int main(int, char**)':
+main.cpp:16:8: warning: ISO C++ forbids incrementing a pointer of type 'void*' [-Wpointer-arith]
+     u.p++;      // UB according to standards
+        ^
