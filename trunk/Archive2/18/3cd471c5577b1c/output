@@ -1,0 +1,5 @@
+Unsigned in bytes: 4 Day size in bytes: 4
+Creating 10000000 days
+Creating days took: 0.176027 seconds
+Copying days took: 0.0922731 seconds
+Copying numbers took: 0.0877459 seconds

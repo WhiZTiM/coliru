@@ -1,0 +1,1 @@
+clang++ -std=c++14 -Weverything -Wno-c++98-compat -Ofast main.cpp && ./a.out
