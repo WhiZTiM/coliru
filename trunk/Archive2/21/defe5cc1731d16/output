@@ -1,0 +1,4 @@
+main.cpp: In copy constructor 'foo::foo(const foo&)':
+main.cpp:10:51: error: array used as initializer
+     foo(const foo &fromParams): boo(fromParams.boo)
+                                                   ^
