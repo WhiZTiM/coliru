@@ -1,0 +1,10 @@
+0 5 0 63 170 170 170 17 255 1 2 3 4 
+
+*** Deserialise ***
+Command: 5
+Operation: 0
+Target type: 0
+Target address: 63
+Data 1: 43690
+Data 2: 43537
+Dynamic data: 1 2 3 4 
