@@ -1,0 +1,43 @@
+gameID: 5
+name: innerClass1
+gameID: 750815952
+name: innerClass2
+dataName: d1
+inner i1: {
+    "gameID": "\"5\"",
+    "name": "\"innerClass1\""
+}
+
+inner i2: {
+    "gameID": "\"750815952\"",
+    "name": "\"innerClass2\""
+}
+
+dataName: d2
+base d1: {
+    "dataName": "\"d1\"",
+    "inner i1": "\"{\n    \"gameID\": \"\\\"5\\\"\",\n    \"name\": \"\\\"innerClass1\\\"\"\n}\n\"",
+    "inner i2": "\"{\n    \"gameID\": \"\\\"750815952\\\"\",\n    \"name\": \"\\\"innerClass2\\\"\"\n}\n\""
+}
+
+base d2: {
+    "dataName": "\"d2\""
+}
+
+comment: this holds all the base classes
+
+
+------------- RESULT --------------
+
+baseClasses: {
+    "base d1": "\"{\n    \"dataName\": \"\\\"d1\\\"\",\n    \"inner i1\": \"\\\"{\\n    \\\"gameID\\\": \\\"\\\\\\\"5\\\\\\\"\\\",\\n    \\\"name\\\": \\\"\\\\\\\"innerClass1\\\\\\\"\\\"\\n}\\n\\\"\",\n    \"inner i2\": \"\\\"{\\n    \\\"gameID\\\": \\\"\\\\\\\"750815952\\\\\\\"\\\",\\n    \\\"name\\\": \\\"\\\\\\\"innerClass2\\\\\\\"\\\"\\n}\\n\\\"\"\n}\n\"",
+    "base d2": "\"{\n    \"dataName\": \"\\\"d2\\\"\"\n}\n\"",
+    "comment": "\"this holds all the base classes\""
+}
+
+comment: this is the base-packet
+{
+    "baseClasses": "\"{\n    \"base d1\": \"\\\"{\\n    \\\"dataName\\\": \\\"\\\\\\\"d1\\\\\\\"\\\",\\n    \\\"inner i1\\\": \\\"\\\\\\\"{\\\\n    \\\\\\\"gameID\\\\\\\": \\\\\\\"\\\\\\\\\\\\\\\"5\\\\\\\\\\\\\\\"\\\\\\\",\\\\n    \\\\\\\"name\\\\\\\": \\\\\\\"\\\\\\\\\\\\\\\"innerClass1\\\\\\\\\\\\\\\"\\\\\\\"\\\\n}\\\\n\\\\\\\"\\\",\\n    \\\"inner i2\\\": \\\"\\\\\\\"{\\\\n    \\\\\\\"gameID\\\\\\\": \\\\\\\"\\\\\\\\\\\\\\\"750815952\\\\\\\\\\\\\\\"\\\\\\\",\\\\n    \\\\\\\"name\\\\\\\": \\\\\\\"\\\\\\\\\\\\\\\"innerClass2\\\\\\\\\\\\\\\"\\\\\\\"\\\\n}\\\\n\\\\\\\"\\\"\\n}\\n\\\"\",\n    \"base d2\": \"\\\"{\\n    \\\"dataName\\\": \\\"\\\\\\\"d2\\\\\\\"\\\"\\n}\\n\\\"\",\n    \"comment\": \"\\\"this holds all the base classes\\\"\"\n}\n\"",
+    "comment": "\"this is the base-packet\""
+}
+
