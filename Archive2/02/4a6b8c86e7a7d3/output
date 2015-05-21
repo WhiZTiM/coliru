@@ -1,0 +1,35 @@
+main.cpp:2:60: fatal error: recursive template instantiation exceeded maximum depth of 256
+    auto const lambda = [&](int n, auto const & f){ if (n) f(n-1, f); };
+                                                           ^
+main.cpp:2:60: note: in instantiation of function template specialization 'main()::(anonymous class)::operator()<(lambda at main.cpp:2:25)>' requested here
+    auto const lambda = [&](int n, auto const & f){ if (n) f(n-1, f); };
+                                                           ^
+main.cpp:2:60: note: in instantiation of function template specialization 'main()::(anonymous class)::operator()<(lambda at main.cpp:2:25)>' requested here
+    auto const lambda = [&](int n, auto const & f){ if (n) f(n-1, f); };
+                                                           ^
+main.cpp:2:60: note: in instantiation of function template specialization 'main()::(anonymous class)::operator()<(lambda at main.cpp:2:25)>' requested here
+    auto const lambda = [&](int n, auto const & f){ if (n) f(n-1, f); };
+                                                           ^
+main.cpp:2:60: note: in instantiation of function template specialization 'main()::(anonymous class)::operator()<(lambda at main.cpp:2:25)>' requested here
+    auto const lambda = [&](int n, auto const & f){ if (n) f(n-1, f); };
+                                                           ^
+main.cpp:2:60: note: in instantiation of function template specialization 'main()::(anonymous class)::operator()<(lambda at main.cpp:2:25)>' requested here
+    auto const lambda = [&](int n, auto const & f){ if (n) f(n-1, f); };
+                                                           ^
+main.cpp:2:60: note: (skipping 247 contexts in backtrace; use -ftemplate-backtrace-limit=0 to see all)
+main.cpp:2:60: note: in instantiation of function template specialization 'main()::(anonymous class)::operator()<(lambda at main.cpp:2:25)>' requested here
+    auto const lambda = [&](int n, auto const & f){ if (n) f(n-1, f); };
+                                                           ^
+main.cpp:2:60: note: in instantiation of function template specialization 'main()::(anonymous class)::operator()<(lambda at main.cpp:2:25)>' requested here
+    auto const lambda = [&](int n, auto const & f){ if (n) f(n-1, f); };
+                                                           ^
+main.cpp:2:60: note: in instantiation of function template specialization 'main()::(anonymous class)::operator()<(lambda at main.cpp:2:25)>' requested here
+    auto const lambda = [&](int n, auto const & f){ if (n) f(n-1, f); };
+                                                           ^
+main.cpp:2:60: note: in instantiation of function template specialization 'main()::(anonymous class)::operator()<(lambda at main.cpp:2:25)>' requested here
+    auto const lambda = [&](int n, auto const & f){ if (n) f(n-1, f); };
+                                                           ^
+main.cpp:3:11: note: in instantiation of function template specialization 'main()::(anonymous class)::operator()<(lambda at main.cpp:2:25)>' requested here
+    lambda(5, lambda);
+          ^
+1 error generated.
