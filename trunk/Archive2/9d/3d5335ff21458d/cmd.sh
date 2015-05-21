@@ -1,0 +1,1 @@
+clang++ -std=c++0x -Wall -Wextra -pedantic main.cpp && ./a.out && g++ -std=c++0x -Wall -Wextra -pedantic main.cpp && ./a.out
