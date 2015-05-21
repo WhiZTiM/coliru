@@ -1,0 +1,15 @@
+Foo number 1 created.
+Foo number 2 created.
+Foo number 3 created.
+Bar number 1 created.
+Bar number 2 created.
+Bar number 3 created.
+FooBar number 1 created.
+foo1.receive():  Message1 received.  It says 10.
+foo2.receive():  Message1 received.  It says 10.
+foo3.receive():  Message1 received.  It says 10.
+foobar1.receive():  Message1 received.  It says 10.
+bar1.receive():  Message2 received.  It says c.
+bar2.receive():  Message2 received.  It says c.
+bar3.receive():  Message2 received.  It says c.
+foobar1.receive():  Message2 received.  It says c.
