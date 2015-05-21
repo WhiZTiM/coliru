@@ -1,0 +1,13 @@
+result: ((a & b) ^ ((c & d) | (a & b)))
+result: (((a & b) ^ (c & d)) | (a & b))
+result: (a & b)
+result: (a | b)
+result: (xor_in1 ^ xor_in2)
+result: (xorin1 ^ xorin2)
+expectation_failure at 'cd or ef;'
+unparsed: 'ab cd or ef;'
+result: (and1 ^ xor)
+result: (!a)
+result: ((!a) & b)
+result: (!(a & b))
+result: (a | (b | c))
