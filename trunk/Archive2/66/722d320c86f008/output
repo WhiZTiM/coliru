@@ -1,0 +1,16 @@
+main.cpp: In function 'int main()':
+main.cpp:27:59: error: expected ';' before 't'
+     std::chrono::duration_cast<std::chrono::microseconds> t = (end - start);
+                                                           ^
+main.cpp:27:76: error: statement cannot resolve address of overloaded function
+     std::chrono::duration_cast<std::chrono::microseconds> t = (end - start);
+                                                                            ^
+main.cpp:29:22: error: 't' was not declared in this scope
+     LOG_ELAPSED_TIME(t, "This %s", "thing");
+                      ^
+main.cpp:8:18: note: in definition of macro 'AVC_INFO_NOOID'
+     vprintf(FMT, __VA_ARGS__)
+                  ^
+main.cpp:29:5: note: in expansion of macro 'LOG_ELAPSED_TIME'
+     LOG_ELAPSED_TIME(t, "This %s", "thing");
+     ^
