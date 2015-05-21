@@ -1,0 +1,18 @@
+main.cpp: In instantiation of 'main()::<lambda(const auto:1&, const auto:2&)> [with auto:1 = std::unique_ptr<list_impl>; auto:2 = main()::<lambda(const auto:1&, const auto:2&)>]':
+main.cpp:24:25:   required from here
+main.cpp:20:16: error: use of 'main()::<lambda(const auto:1&, const auto:2&)> [with auto:1 = std::unique_ptr<list_impl>; auto:2 = main()::<lambda(const auto:1&, const auto:2&)>]' before deduction of 'auto'
+             rec(x->tail, rec);
+                ^
+In file included from /usr/local/include/c++/5.1.0/memory:81:0,
+                 from main.cpp:2:
+/usr/local/include/c++/5.1.0/bits/unique_ptr.h: In instantiation of 'typename std::_MakeUniq<_Tp>::__single_object std::make_unique(_Args&& ...) [with _Tp = list_impl; _Args = {int&, std::unique_ptr<list_impl, std::default_delete<list_impl> >&}; typename std::_MakeUniq<_Tp>::__single_object = std::unique_ptr<list_impl>]':
+main.cpp:11:74:   required from here
+/usr/local/include/c++/5.1.0/bits/unique_ptr.h:765:69: error: no matching function for call to 'list_impl::list_impl(int&, std::unique_ptr<list_impl>&)'
+     { return unique_ptr<_Tp>(new _Tp(std::forward<_Args>(__args)...)); }
+                                                                     ^
+main.cpp:5:8: note: candidate: list_impl::list_impl()
+ struct list_impl {
+        ^
+main.cpp:5:8: note:   candidate expects 0 arguments, 2 provided
+main.cpp:5:8: note: candidate: list_impl::list_impl(list_impl&&)
+main.cpp:5:8: note:   candidate expects 1 argument, 2 provided
