@@ -1,0 +1,1 @@
+sed -i 's/x//g' main.cpp # clang++ -std=c++14 -Wall main.cpp && ./a.out
