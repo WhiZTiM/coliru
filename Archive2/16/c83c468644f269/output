@@ -1,0 +1,23 @@
+[ 1 2 3 4 5 ]  (constructor/destructor counts: 5/0)
+
+deleting first value: [ 2 3 4 5 ]  (constructor/destructor counts: 5/1)
+
+deleting third value: [ 2 4 5 ]  (constructor/destructor counts: 5/2)
+
+adding new value: 6 [ 2 4 5 6 ]  (constructor/destructor counts: 6/2)
+
+deleting last value: [ 2 4 5 ]  (constructor/destructor counts: 6/3)
+
+final constructor/destructor counts: 6/6
+==============
+[ 1 2 3 4 5 ]  (constructor/destructor counts: 5/0)
+
+deleting first value: [ 2 3 4 5 ]  (constructor/destructor counts: 5/1)
+
+deleting third value: [ 2 4 5 ]  (constructor/destructor counts: 5/2)
+
+adding new value: 6 [ 2 4 5 6 ]  (constructor/destructor counts: 6/2)
+
+deleting last value: [ 2 4 5 ]  (constructor/destructor counts: 6/3)
+
+final constructor/destructor counts: 6/6
