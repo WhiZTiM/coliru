@@ -1,0 +1,22 @@
+main.cpp: In function 'int principal()':
+main.cpp:6:15: error: 'nueva' was not declared in this scope
+     int * a = nueva int [ N ] ;
+               ^
+main.cpp:8:27: error: expected primary-expression before 'n'
+     para  ( std :: size_t n =  0 ; n < N ;  ++ n ) 
+                           ^
+main.cpp:8:36: error: 'n' was not declared in this scope
+     para  ( std :: size_t n =  0 ; n < N ;  ++ n ) 
+                                    ^
+main.cpp:11:5: error: 'eliminar' was not declared in this scope
+     eliminar [ ] una ; 
+     ^
+main.cpp:11:16: error: expected primary-expression before ']' token
+     eliminar [ ] una ; 
+                ^
+main.cpp:6:11: warning: unused variable 'a' [-Wunused-variable]
+     int * a = nueva int [ N ] ;
+           ^
+main.cpp:12:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
