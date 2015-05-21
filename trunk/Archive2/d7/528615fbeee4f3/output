@@ -1,0 +1,20 @@
++ clang++ -stdlib=libc++ -std=c++11 -Wall -Wextra -pedantic -pthread main.cpp -c
+main.cpp:6:16: error: constexpr variable 'UB' must be initialized by a constant expression
+constexpr int* UB = increment(bar);
+               ^    ~~~~~~~~~~~~~~
+main.cpp:3:45: note: cannot refer to element 2 of non-array object in a constant expression
+constexpr int* increment(int* p) { return p + 1; }
+                                            ^
+main.cpp:6:21: note: in call to 'increment(&foo + 1)'
+constexpr int* UB = increment(bar);
+                    ^
+main.cpp:8:16: error: constexpr variable 'also_UB' must be initialized by a constant expression
+constexpr int* also_UB = increment(nullptr);
+               ^         ~~~~~~~~~~~~~~~~~~
+main.cpp:3:45: note: cannot perform pointer arithmetic on null pointer
+constexpr int* increment(int* p) { return p + 1; }
+                                            ^
+main.cpp:8:26: note: in call to 'increment(0)'
+constexpr int* also_UB = increment(nullptr);
+                         ^
+2 errors generated.
