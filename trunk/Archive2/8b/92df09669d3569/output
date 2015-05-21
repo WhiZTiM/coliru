@@ -1,0 +1,63 @@
+main.cpp:81:103: error: a space is required between consecutive right angle brackets (use '> >')
+        or_  = (xor_ >> qr::distinct(alnum|'_')[ "or" ]  >> or_ ) [ _val = phx::construct<binop<op_or >>(_1, _2) ] | xor_   [ _val = _1 ];
+                                                                                                      ^~
+                                                                                                      > >
+main.cpp:82:103: error: a space is required between consecutive right angle brackets (use '> >')
+        xor_ = (and_ >> qr::distinct(alnum|'_')[ "xor" ] >> xor_) [ _val = phx::construct<binop<op_xor>>(_1, _2) ] | and_   [ _val = _1 ];
+                                                                                                      ^~
+                                                                                                      > >
+main.cpp:83:103: error: a space is required between consecutive right angle brackets (use '> >')
+        and_ = (not_ >> qr::distinct(alnum|'_')[ "and" ] >> and_) [ _val = phx::construct<binop<op_and>>(_1, _2) ] | not_   [ _val = _1 ];
+                                                                                                      ^~
+                                                                                                      > >
+main.cpp:84:103: error: a space is required between consecutive right angle brackets (use '> >')
+        not_ = (qr::distinct(alnum|'_')[ "not" ] > simple       ) [ _val = phx::construct<unop <op_not>>(_1)     ] | simple [ _val = _1 ];
+                                                                                                      ^~
+                                                                                                      > >
+main.cpp:105:6: warning: 'auto' type specifier is a C++11 extension [-Wc++11-extensions]
+for (auto& input : std::list<std::string> {
+     ^
+main.cpp:105:43: error: expected '(' for function-style cast or type construction
+for (auto& input : std::list<std::string> {
+                   ~~~~~~~~~~~~~~~~~~~~~~ ^
+main.cpp:105:18: warning: range-based for loop is a C++11 extension [-Wc++11-extensions]
+for (auto& input : std::list<std::string> {
+                 ^
+main.cpp:105:43: error: expected ')'
+for (auto& input : std::list<std::string> {
+                                          ^
+main.cpp:105:5: note: to match this '('
+for (auto& input : std::list<std::string> {
+    ^
+main.cpp:121:5: warning: 'auto' type specifier is a C++11 extension [-Wc++11-extensions]
+    auto f(std::begin(input)), l(std::end(input));
+    ^
+main.cpp:121:17: error: no type named 'begin' in namespace 'std'
+    auto f(std::begin(input)), l(std::end(input));
+           ~~~~~^
+main.cpp:121:5: error: 'auto' not allowed in function return type
+    auto f(std::begin(input)), l(std::end(input));
+    ^~~~
+main.cpp:121:11: warning: parentheses were disambiguated as a function declaration [-Wvexing-parse]
+    auto f(std::begin(input)), l(std::end(input));
+          ^~~~~~~~~~~~~~~~~~~
+main.cpp:121:12: note: add a pair of parentheses to declare a variable
+    auto f(std::begin(input)), l(std::end(input));
+           ^
+           (
+main.cpp:121:39: error: no type named 'end' in namespace 'std'
+    auto f(std::begin(input)), l(std::end(input));
+                                 ~~~~~^
+main.cpp:127:38: error: use of undeclared identifier 'l'
+        bool ok = qi::phrase_parse(f,l,p > ';',qi::space,result);
+                                     ^
+main.cpp:127:40: error: use of undeclared identifier 'p'
+        bool ok = qi::phrase_parse(f,l,p > ';',qi::space,result);
+                                       ^
+main.cpp:139:12: error: use of undeclared identifier 'l'
+    if (f!=l) std::cerr << "unparsed: '" << std::string(f,l) << "'\n";
+           ^
+main.cpp:139:59: error: use of undeclared identifier 'l'
+    if (f!=l) std::cerr << "unparsed: '" << std::string(f,l) << "'\n";
+                                                          ^
+4 warnings and 13 errors generated.
