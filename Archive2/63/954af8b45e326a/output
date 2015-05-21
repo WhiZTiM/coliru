@@ -1,0 +1,12 @@
+main.cpp: In function 'int main(int, char**)':
+main.cpp:23:21: error: no matching function for call to 'vec2<float>::vec2(vec2<int>&)'
+  vec2<float> bar(foo);
+                     ^
+main.cpp:11:2: note: candidate: vec2<T>::vec2(const vec2<T>&) [with T = float]
+  vec2(const vec2& original):
+  ^
+main.cpp:11:2: note:   no known conversion for argument 1 from 'vec2<int>' to 'const vec2<float>&'
+main.cpp:9:2: note: candidate: vec2<T>::vec2() [with T = float]
+  vec2(): x(0), y(0) {}
+  ^
+main.cpp:9:2: note:   candidate expects 0 arguments, 1 provided
