@@ -1,0 +1,12 @@
+main.cpp: In function 'int main()':
+main.cpp:21:7: warning: unused variable 'check1' [-Wunused-variable]
+  bool check1 = qi::phrase_parse(str_line, l, *braced_hex >> '[' >> *braced_hex >> ']' , qi::space, v_Begin_BF_Range);
+       ^
+main.cpp:22:7: warning: unused variable 'check2' [-Wunused-variable]
+  bool check2 =qi::phrase_parse(str_line, l, *braced_hex , qi::space, v_BF_Char);
+       ^
+Extraction from special Case is: 6
+95 97 49 113 1571 24849 
+
+Extraction from Simple Case is: 6
+95 97 49 113 1571 24849 
