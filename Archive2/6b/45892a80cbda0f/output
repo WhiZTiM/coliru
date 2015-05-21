@@ -1,0 +1,30 @@
+
+======= input '(a and b) xor ((c and d) or (a and b));'
+result: ((a & b) ^ ((c & d) | (a & b)))
+
+======= input '(a b) xor ((c d) or (a b));'
+result: ((a & b) ^ ((c & d) | (a & b)))
+
+======= input 'a and b xor c and d or a and b;'
+result: (((a & b) ^ (c & d)) | (a & b))
+
+======= input 'a b xor c d or a b;'
+result: (((a & b) ^ (c & d)) | (a & b))
+
+======= input 'a and b;'
+result: (a & b)
+
+======= input 'a b;'
+result: (a & b)
+
+======= input 'not a and b;'
+result: ((!a) & b)
+
+======= input 'not a b;'
+result: ((!a) & b)
+
+======= input 'not (a and b);'
+result: (!(a & b))
+
+======= input 'not (a b);'
+result: (!(a & b))
