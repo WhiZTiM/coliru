@@ -1,0 +1,10 @@
+main.cpp:11:83: warning: extra ';' [-Wpedantic]
+ BOOST_FUSION_ADAPT_STRUCT(::CMyTag, (std::string, tagName) (std::string, tagData));
+                                                                                   ^
+Parse success: 6
+Name 'text', Data 'asd '
+Name 'img', Data ''
+Name 'ref', Data 'I'
+Name 'text', Data 'sdkflsdlk '
+Name 'img', Data ''
+Name 'text', Data 'wmrwerml'
