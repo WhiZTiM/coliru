@@ -1,0 +1,11 @@
+main.cpp: In instantiation of 'T& System<Ts>::get() [with T = unsigned int; Ts = {int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, char}]':
+main.cpp:25:37:   required from here
+main.cpp:9:9: error: static assertion failed: the requested type does not exist in this system
+         static_assert(std::is_base_of<System<T>, System<Ts...>>::value, "the requested type does not exist in this system");
+         ^
+main.cpp:10:27: error: invalid use of non-static data member 'System<unsigned int>::value'
+         return System<T>::value;
+                           ^
+main.cpp:17:13: note: declared here
+     T value{};
+             ^
