@@ -1,0 +1,4 @@
+main.cpp: In function 'int main(int, char**)':
+main.cpp:7:32: error: an array reference cannot appear in a constant-expression
+         secondVal = 1 & "WOW"[0]
+                                ^
