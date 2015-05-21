@@ -1,0 +1,37 @@
+main.cpp:24:12: error: no template named 'sharep_ptr' in namespace 'boost'; did you mean 'shared_ptr'?
+    boost::sharep_ptr< B > p( new B);
+    ~~~~~~~^~~~~~~~~~
+           shared_ptr
+/usr/local/include/boost/smart_ptr/shared_ptr.hpp:717:36: note: 'shared_ptr' declared here
+    template<class Y> friend class shared_ptr;
+                                   ^
+main.cpp:26:10: error: no member named 'list' in namespace 'std'
+    std::list< boost::shared_ptr<A> > array;
+    ~~~~~^
+main.cpp:26:37: error: expected '(' for function-style cast or type construction
+    std::list< boost::shared_ptr<A> > array;
+               ~~~~~~~~~~~~~~~~~~~~ ^
+main.cpp:26:39: error: use of undeclared identifier 'array'
+    std::list< boost::shared_ptr<A> > array;
+                                      ^
+main.cpp:27:5: error: use of undeclared identifier 'array'; did you mean 'std::array'?
+    array.push_back( p );
+    ^~~~~
+    std::array
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.1.0/../../../../include/c++/5.1.0/array:81:12: note: 'std::array' declared here
+    struct array
+           ^
+main.cpp:27:5: error: use of undeclared identifier 'array'; did you mean 'std::array'?
+    array.push_back( p );
+    ^~~~~
+    std::array
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.1.0/../../../../include/c++/5.1.0/array:81:12: note: 'std::array' declared here
+    struct array
+           ^
+main.cpp:27:5: error: unknown type name 'array'
+    array.push_back( p );
+    ^
+main.cpp:27:10: error: cannot use dot operator on a type
+    array.push_back( p );
+         ^
+8 errors generated.
