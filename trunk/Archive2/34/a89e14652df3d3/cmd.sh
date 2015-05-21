@@ -1,0 +1,1 @@
+clang++ -std=c++11 -O2 -O -Wall -Wnarrowing -pedantic -lboost_system -ltbb -lboost_serialization -Werror=type-limits -pthread main.cpp && ./a.out
