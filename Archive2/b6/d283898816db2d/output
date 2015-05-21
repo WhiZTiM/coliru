@@ -1,0 +1,40 @@
+In file included from main.cpp:1:
+In file included from /usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.1.0/../../../../include/c++/5.1.0/iostream:39:
+In file included from /usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.1.0/../../../../include/c++/5.1.0/ostream:38:
+In file included from /usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.1.0/../../../../include/c++/5.1.0/ios:42:
+In file included from /usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.1.0/../../../../include/c++/5.1.0/bits/ios_base.h:46:
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.1.0/../../../../include/c++/5.1.0/system_error:147:58: fatal error: recursive template instantiation exceeded maximum depth of 256
+             enable_if<is_error_code_enum<_ErrorCodeEnum>::value>::type>
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.1.0/../../../../include/c++/5.1.0/system_error:148:7: note: in instantiation of default argument for 'error_code<int>' required here
+      error_code(_ErrorCodeEnum __e) noexcept
+      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+main.cpp:18:20: note: while substituting deduced template arguments into function template 'error_code' [with _ErrorCodeEnum = int, $1 = (no value)]
+        cout << x->head << ' ';
+                   ^
+main.cpp:20:13: note: in instantiation of function template specialization 'main()::(anonymous class)::operator()<std::unique_ptr<list_impl, std::default_delete<list_impl> >, (lambda at main.cpp:17:27)>' requested here
+            rec(x->tail, rec);
+            ^
+main.cpp:20:13: note: in instantiation of function template specialization 'main()::(anonymous class)::operator()<std::unique_ptr<list_impl, std::default_delete<list_impl> >, (lambda at main.cpp:17:27)>' requested here
+            rec(x->tail, rec);
+            ^
+main.cpp:20:13: note: in instantiation of function template specialization 'main()::(anonymous class)::operator()<std::unique_ptr<list_impl, std::default_delete<list_impl> >, (lambda at main.cpp:17:27)>' requested here
+            rec(x->tail, rec);
+            ^
+main.cpp:20:13: note: (skipping 247 contexts in backtrace; use -ftemplate-backtrace-limit=0 to see all)
+main.cpp:20:13: note: in instantiation of function template specialization 'main()::(anonymous class)::operator()<std::unique_ptr<list_impl, std::default_delete<list_impl> >, (lambda at main.cpp:17:27)>' requested here
+            rec(x->tail, rec);
+            ^
+main.cpp:20:13: note: in instantiation of function template specialization 'main()::(anonymous class)::operator()<std::unique_ptr<list_impl, std::default_delete<list_impl> >, (lambda at main.cpp:17:27)>' requested here
+            rec(x->tail, rec);
+            ^
+main.cpp:20:13: note: in instantiation of function template specialization 'main()::(anonymous class)::operator()<std::unique_ptr<list_impl, std::default_delete<list_impl> >, (lambda at main.cpp:17:27)>' requested here
+            rec(x->tail, rec);
+            ^
+main.cpp:20:13: note: in instantiation of function template specialization 'main()::(anonymous class)::operator()<std::unique_ptr<list_impl, std::default_delete<list_impl> >, (lambda at main.cpp:17:27)>' requested here
+            rec(x->tail, rec);
+            ^
+main.cpp:24:13: note: in instantiation of function template specialization 'main()::(anonymous class)::operator()<std::unique_ptr<list_impl, std::default_delete<list_impl> >, (lambda at main.cpp:17:27)>' requested here
+    recursor(l, recursor);
+            ^
+1 error generated.
