@@ -1,0 +1,67 @@
+main.cpp:7:5: error: 'List' does not name a type
+     List<PuntWaarDokterWoont> dokters;
+     ^
+main.cpp:8:1: error: expected ';' after class definition
+ }
+ ^
+main.cpp:13:1: error: expected ';' after class definition
+ }
+ ^
+main.cpp: In function 'int main()':
+main.cpp:17:5: error: 'GoogleMap' was not declared in this scope
+     GoogleMap << PuntWaarDokterWoont(1, 2);
+     ^
+main.cpp:17:42: error: no matching function for call to 'PuntWaarDokterWoont::PuntWaarDokterWoont(int, int)'
+     GoogleMap << PuntWaarDokterWoont(1, 2);
+                                          ^
+main.cpp:10:7: note: candidate: PuntWaarDokterWoont::PuntWaarDokterWoont()
+ class PuntWaarDokterWoont {
+       ^
+main.cpp:10:7: note:   candidate expects 0 arguments, 2 provided
+main.cpp:10:7: note: candidate: constexpr PuntWaarDokterWoont::PuntWaarDokterWoont(const PuntWaarDokterWoont&)
+main.cpp:10:7: note:   candidate expects 1 argument, 2 provided
+main.cpp:10:7: note: candidate: constexpr PuntWaarDokterWoont::PuntWaarDokterWoont(PuntWaarDokterWoont&&)
+main.cpp:10:7: note:   candidate expects 1 argument, 2 provided
+main.cpp:18:42: error: no matching function for call to 'PuntWaarDokterWoont::PuntWaarDokterWoont(int, int)'
+     GoogleMap << PuntWaarDokterWoont(4, 6);
+                                          ^
+main.cpp:10:7: note: candidate: PuntWaarDokterWoont::PuntWaarDokterWoont()
+ class PuntWaarDokterWoont {
+       ^
+main.cpp:10:7: note:   candidate expects 0 arguments, 2 provided
+main.cpp:10:7: note: candidate: constexpr PuntWaarDokterWoont::PuntWaarDokterWoont(const PuntWaarDokterWoont&)
+main.cpp:10:7: note:   candidate expects 1 argument, 2 provided
+main.cpp:10:7: note: candidate: constexpr PuntWaarDokterWoont::PuntWaarDokterWoont(PuntWaarDokterWoont&&)
+main.cpp:10:7: note:   candidate expects 1 argument, 2 provided
+main.cpp:19:42: error: no matching function for call to 'PuntWaarDokterWoont::PuntWaarDokterWoont(int, int)'
+     GoogleMap << PuntWaarDokterWoont(2, 5);
+                                          ^
+main.cpp:10:7: note: candidate: PuntWaarDokterWoont::PuntWaarDokterWoont()
+ class PuntWaarDokterWoont {
+       ^
+main.cpp:10:7: note:   candidate expects 0 arguments, 2 provided
+main.cpp:10:7: note: candidate: constexpr PuntWaarDokterWoont::PuntWaarDokterWoont(const PuntWaarDokterWoont&)
+main.cpp:10:7: note:   candidate expects 1 argument, 2 provided
+main.cpp:10:7: note: candidate: constexpr PuntWaarDokterWoont::PuntWaarDokterWoont(PuntWaarDokterWoont&&)
+main.cpp:10:7: note:   candidate expects 1 argument, 2 provided
+main.cpp:21:39: error: no matching function for call to 'GebruikerPunt::GebruikerPunt(int, int, int)'
+     GebruikerPunt userChoice(10, 20, 9);
+                                       ^
+main.cpp:2:7: note: candidate: GebruikerPunt::GebruikerPunt()
+ class GebruikerPunt {
+       ^
+main.cpp:2:7: note:   candidate expects 0 arguments, 3 provided
+main.cpp:2:7: note: candidate: constexpr GebruikerPunt::GebruikerPunt(const GebruikerPunt&)
+main.cpp:2:7: note:   candidate expects 1 argument, 3 provided
+main.cpp:2:7: note: candidate: constexpr GebruikerPunt::GebruikerPunt(GebruikerPunt&&)
+main.cpp:2:7: note:   candidate expects 1 argument, 3 provided
+main.cpp:22:10: error: 'Alle' was not declared in this scope
+     for (Alle punten in google maps in de square (1, 11, 19, 29) (x1, y1, x2, y2))
+          ^
+main.cpp:27:1: error: expected primary-expression before '}' token
+ }
+ ^
+main.cpp:27:1: error: expected ';' before '}' token
+main.cpp:27:1: error: expected primary-expression before '}' token
+main.cpp:27:1: error: expected ')' before '}' token
+main.cpp:27:1: error: expected primary-expression before '}' token
