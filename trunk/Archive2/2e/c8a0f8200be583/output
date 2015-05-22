@@ -1,0 +1,40 @@
+main.cpp:9:22: error: expected initializer before '<' token
+ std::string getName()<unsigned char> { return "unsigned"; }
+                      ^
+main.cpp:12:22: error: expected initializer before '<' token
+ std::string getName()<signed char> {return "signed";}
+                      ^
+main.cpp:15:22: error: expected initializer before '<' token
+ std::string getName()<int> {return "int";}
+                      ^
+main.cpp: In static member function 'static void Tuple<T, Args ...>::print()':
+main.cpp:29:31: error: expected unqualified-id before '.' token
+                           Tail.print(); }
+                               ^
+main.cpp: At global scope:
+main.cpp:32:13: error: expected primary-expression before ')' token
+ int main(***) {
+             ^
+main.cpp:32:15: error: expected ',' or ';' before '{' token
+ int main(***) {
+               ^
+main.cpp:44:13: error: template-id 'getName<char>' used as a declarator
+ std::string getName<char> {return "char";}
+             ^
+main.cpp:44:13: error: 'template<class T> std::__cxx11::string getName' conflicts with a previous declaration
+main.cpp:6:13: note: previous declaration 'std::__cxx11::string getName()'
+ std::string getName() { return "Unknown"; }
+             ^
+main.cpp:44:28: error: expected primary-expression before 'return'
+ std::string getName<char> {return "char";}
+                            ^
+main.cpp:44:28: error: expected '}' before 'return'
+main.cpp:44:13: warning: variable templates only available with -std=c++14 or -std=gnu++14
+ std::string getName<char> {return "char";}
+             ^
+main.cpp:44:28: error: expected ';' before 'return'
+ std::string getName<char> {return "char";}
+                            ^
+main.cpp:44:42: error: expected declaration before '}' token
+ std::string getName<char> {return "char";}
+                                          ^
