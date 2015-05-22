@@ -1,0 +1,1 @@
+clang -x c -lpthread -Wall -pedantic main.cpp && ./a.out
