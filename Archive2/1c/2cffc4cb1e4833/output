@@ -1,0 +1,5 @@
+10
+70
+world
+000000000040095f W decltype (({parm#1}.x)()) hello<has_x>(has_x)
+000000000040096e W decltype ({parm#1}.y) hello<has_x_y>(has_x_y)
