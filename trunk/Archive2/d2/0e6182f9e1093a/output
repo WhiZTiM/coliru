@@ -1,0 +1,10 @@
+main.cpp:2:0: warning: ignoring #pragma aaa  [-Wunknown-pragmas]
+ #pragma aaa
+ ^
+1
+2
+3
+4
+5
+6
+done
