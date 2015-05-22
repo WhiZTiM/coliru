@@ -1,0 +1,7 @@
+main.cpp:16:5: error: no matching function for call to 'must_be_int'
+    must_be_int(1.2);
+    ^~~~~~~~~~~
+main.cpp:5:9: note: candidate template ignored: disabled by 'enable_if' [with T = double]
+        std::is_same<T, int>::value // T == int
+        ^
+1 error generated.
