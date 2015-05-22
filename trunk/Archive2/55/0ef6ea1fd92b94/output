@@ -1,0 +1,10 @@
+main.cpp:11:16: warning: initializing 'const char **' with an expression of type 'char **' discards qualifiers in nested pointer types [-Wincompatible-pointer-types-discards-qualifiers]
+  const char **pcc = &pc;  // #1: Not allowed
+               ^     ~~~
+main.cpp:13:14: warning: passing 'char **' to parameter of type 'const char **' discards qualifiers in nested pointer types [-Wincompatible-pointer-types-discards-qualifiers]
+  do_foo(pc, &pc);
+             ^~~
+main.cpp:4:37: note: passing argument to parameter 'pcc' here
+void do_foo (char *pc, char const **pcc) {
+                                    ^
+2 warnings generated.
