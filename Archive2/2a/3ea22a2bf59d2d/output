@@ -1,0 +1,46 @@
+main.cpp: In member function 'void priority_list_based_non_ranged_queue<keyT, varT>::insert(const keyT&, const varT&)':
+main.cpp:12:19: error: 'pair' was not declared in this scope
+         push_back(pair<keyT,varT>(k,v));
+                   ^
+main.cpp:12:19: note: suggested alternative:
+In file included from /usr/local/include/c++/5.1.0/bits/stl_algobase.h:64:0,
+                 from /usr/local/include/c++/5.1.0/bits/char_traits.h:39,
+                 from /usr/local/include/c++/5.1.0/ios:40,
+                 from /usr/local/include/c++/5.1.0/ostream:38,
+                 from /usr/local/include/c++/5.1.0/iostream:39,
+                 from main.cpp:1:
+/usr/local/include/c++/5.1.0/bits/stl_pair.h:96:12: note:   'std::pair'
+     struct pair
+            ^
+main.cpp:12:28: error: expected primary-expression before ',' token
+         push_back(pair<keyT,varT>(k,v));
+                            ^
+main.cpp:12:33: error: expected primary-expression before '>' token
+         push_back(pair<keyT,varT>(k,v));
+                                 ^
+main.cpp: In member function 'varT priority_list_based_non_ranged_queue<keyT, varT>::remove(uint)':
+main.cpp:17:9: error: 'list' has not been declared
+         list::erase(i);
+         ^
+main.cpp: In member function 'varT priority_list_based_non_ranged_queue<keyT, varT>::extractMin()':
+main.cpp:23:31: error: there are no arguments to 'size' that depend on a template parameter, so a declaration of 'size' must be available [-fpermissive]
+         for(uint i = 0;i<size();i++)
+                               ^
+main.cpp:23:31: note: (if you use '-fpermissive', G++ will accept your code, but allowing the use of an undeclared name is deprecated)
+main.cpp: In member function 'void priority_list_based_non_ranged_queue<keyT, varT>::changePriority(uint, keyT)':
+main.cpp:29:15: error: 'count' was not declared in this scope
+         if(i>=count) return;
+               ^
+main.cpp:29:15: note: suggested alternative:
+In file included from /usr/local/include/c++/5.1.0/algorithm:62:0,
+                 from main.cpp:2:
+/usr/local/include/c++/5.1.0/bits/stl_algo.h:3959:5: note:   'std::count'
+     count(_InputIterator __first, _InputIterator __last, const _Tp& __value)
+     ^
+main.cpp: In member function 'priority_list_based_non_ranged_queue<keyT, varT> priority_list_based_non_ranged_queue<keyT, varT>::join(const priority_list_based_non_ranged_queue<keyT, varT>&)':
+main.cpp:34:9: error: 'list' has not been declared
+         list::insert(end(),right.begin(),right.end());
+         ^
+main.cpp:34:26: error: there are no arguments to 'end' that depend on a template parameter, so a declaration of 'end' must be available [-fpermissive]
+         list::insert(end(),right.begin(),right.end());
+                          ^
