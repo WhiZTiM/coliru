@@ -1,0 +1,6 @@
+main.cpp: In function 'int main()':
+main.cpp:17:3: error: non-constant condition for static assertion
+   static_assert((f(3.14159265359),true),"Failed to compute at compile time");
+   ^
+main.cpp:17:19:   in constexpr expansion of 'f(3.14159274e+0f)'
+main.cpp:17:3: error: accessing 'intfloat::in' member instead of initialized 'intfloat::fl' member in constant expression
