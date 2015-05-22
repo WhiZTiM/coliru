@@ -1,0 +1,4 @@
+main.cpp:7:19: error: invalid suffix 'LUL' on integer constant
+    std::cout << 3LUL << std::endl;
+                  ^
+1 error generated.
