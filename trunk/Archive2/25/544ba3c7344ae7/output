@@ -1,0 +1,6 @@
+main.cpp: In function 'void g()':
+main.cpp:11:18: warning: 'a' is used uninitialized in this function [-Wuninitialized]
+     double a = a+a;
+                  ^
+-1337
+-2674
