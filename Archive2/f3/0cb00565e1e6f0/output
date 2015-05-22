@@ -1,0 +1,13 @@
+main.cpp:5:6: warning: no previous prototype for function 'do_something' [-Wmissing-prototypes]
+void do_something(int) {}
+     ^
+main.cpp:7:6: warning: no previous prototype for function 'fun' [-Wmissing-prototypes]
+void fun (const std::vector<int> &vec) {
+     ^
+main.cpp:9:26: warning: implicit conversion changes signedness: 'int' to 'size_type' (aka 'unsigned long') [-Wsign-conversion]
+        do_something(vec[i]);
+                     ~~~ ^
+main.cpp:8:23: warning: comparison of integers of different signs: 'int' and 'unsigned long' [-Wsign-compare]
+    for (int i = 0; i < vec.size() - 1; ++i)
+                    ~ ^ ~~~~~~~~~~~~~~
+4 warnings generated.

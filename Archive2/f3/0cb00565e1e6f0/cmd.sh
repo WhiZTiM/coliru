@@ -1,0 +1,1 @@
+clang++ -std=c++14 -O2 -c -Weverything -pedantic -pthread main.cpp
