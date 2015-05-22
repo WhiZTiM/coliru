@@ -1,0 +1,22 @@
+main.cpp: In function 'int main()':
+main.cpp:24:18: error: no matching function for call to 'sort(std::vector<int>&)'
+     std::sort(arr);
+                  ^
+In file included from /usr/local/include/c++/5.1.0/algorithm:62:0,
+                 from main.cpp:4:
+/usr/local/include/c++/5.1.0/bits/stl_algo.h:4689:5: note: candidate: template<class _RAIter> void std::sort(_RAIter, _RAIter)
+     sort(_RandomAccessIterator __first, _RandomAccessIterator __last)
+     ^
+/usr/local/include/c++/5.1.0/bits/stl_algo.h:4689:5: note:   template argument deduction/substitution failed:
+main.cpp:24:18: note:   candidate expects 2 arguments, 1 provided
+     std::sort(arr);
+                  ^
+In file included from /usr/local/include/c++/5.1.0/algorithm:62:0,
+                 from main.cpp:4:
+/usr/local/include/c++/5.1.0/bits/stl_algo.h:4718:5: note: candidate: template<class _RAIter, class _Compare> void std::sort(_RAIter, _RAIter, _Compare)
+     sort(_RandomAccessIterator __first, _RandomAccessIterator __last,
+     ^
+/usr/local/include/c++/5.1.0/bits/stl_algo.h:4718:5: note:   template argument deduction/substitution failed:
+main.cpp:24:18: note:   candidate expects 3 arguments, 1 provided
+     std::sort(arr);
+                  ^
