@@ -1,0 +1,64 @@
+g++ (GCC) 5.1.0
+Copyright (C) 2015 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+	.file	"main.cpp"
+	.section	.text.unlikely,"ax",@progbits
+.LCOLDB0:
+	.text
+.LHOTB0:
+	.p2align 4,,15
+	.type	_Z16concrete_wrapperIZ3bazvEUljE_jJjEET0_PKvDpT1_, @function
+_Z16concrete_wrapperIZ3bazvEUljE_jJjEET0_PKvDpT1_:
+.LFB9:
+	.cfi_startproc
+	testl	%esi, %esi
+	jne	.L4
+	movl	$1, %eax
+	ret
+	.p2align 4,,10
+	.p2align 3
+.L4:
+	movq	(%rdi), %rax
+	subl	$1, %esi
+	movq	8(%rax), %rdx
+	movq	(%rax), %rdi
+	jmp	*%rdx
+	.cfi_endproc
+.LFE9:
+	.size	_Z16concrete_wrapperIZ3bazvEUljE_jJjEET0_PKvDpT1_, .-_Z16concrete_wrapperIZ3bazvEUljE_jJjEET0_PKvDpT1_
+	.section	.text.unlikely
+.LCOLDE0:
+	.text
+.LHOTE0:
+	.section	.text.unlikely
+.LCOLDB1:
+	.text
+.LHOTB1:
+	.p2align 4,,15
+	.globl	_Z3bazv
+	.type	_Z3bazv, @function
+_Z3bazv:
+.LFB3:
+	.cfi_startproc
+	subq	$40, %rsp
+	.cfi_def_cfa_offset 48
+	movl	$4, %esi
+	movq	16(%rsp), %rax
+	movq	(%rax), %rdi
+	call	*8(%rax)
+	movl	%eax, 12(%rsp)
+	movl	12(%rsp), %eax
+	addq	$40, %rsp
+	.cfi_def_cfa_offset 8
+	ret
+	.cfi_endproc
+.LFE3:
+	.size	_Z3bazv, .-_Z3bazv
+	.section	.text.unlikely
+.LCOLDE1:
+	.text
+.LHOTE1:
+	.ident	"GCC: (GNU) 5.1.0"
+	.section	.note.GNU-stack,"",@progbits
