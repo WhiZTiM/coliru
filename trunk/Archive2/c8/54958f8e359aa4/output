@@ -1,0 +1,4 @@
+main.cpp:14:20: error: cannot define or redeclare 'bar' here because namespace 'O' does not enclose namespace 'Foo<int>'
+    const int Baz::bar = 1;
+              ~~~~~^
+1 error generated.
