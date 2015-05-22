@@ -1,0 +1,4 @@
+main.cpp:9:39: warning: comparison of unsigned expression >= 0 is always true [-Wtautological-compare]
+    for(std::size_t i = foo.size(); i >= 0; --i)
+                                    ~ ^  ~
+1 warning generated.
