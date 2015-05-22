@@ -1,0 +1,7 @@
+main.cpp:5:6: warning: no previous prototype for function 'do_something' [-Wmissing-prototypes]
+void do_something(int) {}
+     ^
+main.cpp:7:6: warning: no previous prototype for function 'fun' [-Wmissing-prototypes]
+void fun (const std::vector<int> &vec) {
+     ^
+2 warnings generated.
