@@ -1,0 +1,6 @@
+main.cpp:6:18: warning: ISO C++ forbids use of 'auto' in parameter declaration [-Wpedantic]
+ void Check(const auto& result)
+                  ^
+unsigned result : 12
+unsigned result : 30
+unsigned result : test
