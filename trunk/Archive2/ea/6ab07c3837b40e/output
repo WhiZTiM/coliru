@@ -1,0 +1,4 @@
+main.cpp:8:14: warning: unused variable 'bar' [-Wunused-variable]
+    Foo::Bar bar;   
+             ^
+1 warning generated.
