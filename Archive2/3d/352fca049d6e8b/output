@@ -1,0 +1,6 @@
+Parse success:  '1.23' -> 1.23
+Parse success:  '.123' -> 0.123
+Parse success:  '2.e6' -> 2e+06
+Parse success:  'inf' -> inf
+Parse rejected: '3.2323' at '3.2323'
+Parse rejected: 'nan' at 'nan'
