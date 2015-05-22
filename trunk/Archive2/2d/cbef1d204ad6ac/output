@@ -1,0 +1,46 @@
++ g++ -std=c++11 -O3 -Wall -pedantic -Wextra main.cpp -lboost_iostreams -lz
++ ./a.out
+Operator (expr, value)
+Operator (value, expr)
+Operator (expr, expr)
+0 0 0
++ echo ========================================
+========================================
++ clang++ -std=c++11 -O3 -Wall -pedantic -Wextra main.cpp -lboost_iostreams -lz
++ ./a.out
+Operator (expr, value)
+Operator (value, expr)
+Operator (expr, expr)
+0 0 0
++ echo ========================================
+========================================
++ clang++ -stdlib=libc++ -std=c++11 -O3 -Wall -pedantic -Wextra main.cpp -lcxxrt -ldl -lboost_iostreams -lz
+In file included from main.cpp:1:
+In file included from /usr/local/include/boost/type_traits.hpp:29:
+In file included from /usr/local/include/boost/type_traits/has_new_operator.hpp:12:
+In file included from /usr/include/c++/v1/new:68:
+In file included from /usr/include/c++/v1/exception:81:
+/usr/include/c++/v1/type_traits:1470:43: error: incompatible operand types ('Unary<int, int>' and 'int')
+    typedef typename decay<decltype(__f() ? __t() : __u())>::type type;
+                                          ^ ~~~~~   ~~~~~
+main.cpp:94:18: note: in instantiation of template class 'std::__1::common_type<Unary<int, int>, int>' requested here
+        typename common_type< T1 , typename select_last< Args2... >::type >::type
+                 ^
+main.cpp:113:35: note: while substituting deduced template arguments into function template 'operator*' [with Args2 = <int>, T1 = Unary<int, int>, T2 = Terminal]
+    int i = eval(Unary<int,int>() * Terminal<int>());
+                                  ^
+In file included from main.cpp:1:
+In file included from /usr/local/include/boost/type_traits.hpp:29:
+In file included from /usr/local/include/boost/type_traits/has_new_operator.hpp:12:
+In file included from /usr/include/c++/v1/new:68:
+In file included from /usr/include/c++/v1/exception:81:
+/usr/include/c++/v1/type_traits:1470:43: error: incompatible operand types ('int' and 'Terminal<int>')
+    typedef typename decay<decltype(__f() ? __t() : __u())>::type type;
+                                          ^ ~~~~~   ~~~~~
+main.cpp:76:18: note: in instantiation of template class 'std::__1::common_type<int, Terminal<int> >' requested here
+        typename common_type< typename select_last< Args1... >::type , T2 >::type
+                 ^
+main.cpp:113:35: note: while substituting deduced template arguments into function template 'operator*' [with Args1 = <int, int>, T1 = Unary, T2 = Terminal<int>]
+    int i = eval(Unary<int,int>() * Terminal<int>());
+                                  ^
+2 errors generated.
