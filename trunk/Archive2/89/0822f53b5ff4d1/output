@@ -1,0 +1,21 @@
+main.cpp: In function 'int main()':
+main.cpp:37:43: error: no matching function for call to 'all_of(std::__cxx11::string&, <unresolved overloaded function type>)'
+     cout << algorithm::all_of(sub, isspace);
+                                           ^
+In file included from /usr/local/include/c++/5.1.0/algorithm:62:0,
+                 from main.cpp:2:
+/usr/local/include/c++/5.1.0/bits/stl_algo.h:508:5: note: candidate: template<class _IIter, class _Predicate> bool std::all_of(_IIter, _IIter, _Predicate)
+     all_of(_InputIterator __first, _InputIterator __last, _Predicate __pred)
+     ^
+/usr/local/include/c++/5.1.0/bits/stl_algo.h:508:5: note:   template argument deduction/substitution failed:
+main.cpp:37:43: note:   candidate expects 3 arguments, 2 provided
+     cout << algorithm::all_of(sub, isspace);
+                                           ^
+In file included from main.cpp:6:0:
+/usr/local/include/boost/algorithm/cxx11/all_of.hpp:54:6: note: candidate: template<class Range, class Predicate> bool boost::algorithm::all_of(const Range&, Predicate)
+ bool all_of ( const Range &r, Predicate p )
+      ^
+/usr/local/include/boost/algorithm/cxx11/all_of.hpp:54:6: note:   template argument deduction/substitution failed:
+main.cpp:37:43: note:   couldn't deduce template parameter 'Predicate'
+     cout << algorithm::all_of(sub, isspace);
+                                           ^
