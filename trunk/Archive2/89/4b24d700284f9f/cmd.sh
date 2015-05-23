@@ -1,0 +1,1 @@
+set -x; g++ -c -std=c++11 -Wall -Wextra -pedantic main.cpp
