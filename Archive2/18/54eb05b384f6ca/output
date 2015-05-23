@@ -1,0 +1,307 @@
+<Sequence>
+  <try>Key1=Value1;Key2=01-</try>
+  <Pair>
+    <try>Key1=Value1;Key2=01-</try>
+    <KeyName>
+      <try>Key1=Value1;Key2=01-</try>
+      <success>=Value1;Key2=01-Jan-</success>
+      <attributes>[[K, e, y, 1]]</attributes>
+    </KeyName>
+    <Value>
+      <try>Value1;Key2=01-Jan-2</try>
+      <success>;Key2=01-Jan-2015;Ke</success>
+      <attributes>[[V, a, l, u, e, 1]]</attributes>
+    </Value>
+    <success>;Key2=01-Jan-2015;Ke</success>
+    <attributes>[[[K, e, y, 1], [V, a, l, u, e, 1]]]</attributes>
+  </Pair>
+  <Pair>
+    <try>Key2=01-Jan-2015;Key</try>
+    <KeyName>
+      <try>Key2=01-Jan-2015;Key</try>
+      <success>=01-Jan-2015;Key3=2.</success>
+      <attributes>[[K, e, y, 2]]</attributes>
+    </KeyName>
+    <Value>
+      <try>01-Jan-2015;Key3=2.7</try>
+      <success>;Key3=2.7181;Key4=Jo</success>
+      <attributes>[[0, 1, -, J, a, n, -, 2, 0, 1, 5]]</attributes>
+    </Value>
+    <success>;Key3=2.7181;Key4=Jo</success>
+    <attributes>[[[K, e, y, 2], [0, 1, -, J, a, n, -, 2, 0, 1, 5]]]</attributes>
+  </Pair>
+  <Pair>
+    <try>Key3=2.7181;Key4=Joh</try>
+    <KeyName>
+      <try>Key3=2.7181;Key4=Joh</try>
+      <success>=2.7181;Key4=Johnny</success>
+      <attributes>[[K, e, y, 3]]</attributes>
+    </KeyName>
+    <Value>
+      <try>2.7181;Key4=Johnny</try>
+      <success>;Key4=Johnny</success>
+      <attributes>[[2, ., 7, 1, 8, 1]]</attributes>
+    </Value>
+    <success>;Key4=Johnny</success>
+    <attributes>[[[K, e, y, 3], [2, ., 7, 1, 8, 1]]]</attributes>
+  </Pair>
+  <Pair>
+    <try>Key4=Johnny</try>
+    <KeyName>
+      <try>Key4=Johnny</try>
+      <success>=Johnny</success>
+      <attributes>[[K, e, y, 4]]</attributes>
+    </KeyName>
+    <Value>
+      <try>Johnny</try>
+      <success></success>
+      <attributes>[[J, o, h, n, n, y]]</attributes>
+    </Value>
+    <success></success>
+    <attributes>[[[K, e, y, 4], [J, o, h, n, n, y]]]</attributes>
+  </Pair>
+  <success></success>
+  <attributes>[[[[K, e, y, 1], [V, a, l, u, e, 1]], [[K, e, y, 2], [0, 1, -, J, a, n, -, 2, 0, 1, 5]], [[K, e, y, 3], [2, ., 7, 1, 8, 1]], [[K, e, y, 4], [J, o, h, n, n, y]]]]</attributes>
+</Sequence>
+Key1|Value1
+Key2|01-Jan-2015
+Key3|2.7181
+Key4|Johnny
+=====
+<Sequence>
+  <try>Key1=Value1;Key2={In</try>
+  <Pair>
+    <try>Key1=Value1;Key2={In</try>
+    <KeyName>
+      <try>Key1=Value1;Key2={In</try>
+      <success>=Value1;Key2={InnerK</success>
+      <attributes>[[K, e, y, 1]]</attributes>
+    </KeyName>
+    <Value>
+      <try>Value1;Key2={InnerK1</try>
+      <success>;Key2={InnerK1=one;I</success>
+      <attributes>[[V, a, l, u, e, 1]]</attributes>
+    </Value>
+    <success>;Key2={InnerK1=one;I</success>
+    <attributes>[[[K, e, y, 1], [V, a, l, u, e, 1]]]</attributes>
+  </Pair>
+  <Pair>
+    <try>Key2={InnerK1=one;IK</try>
+    <KeyName>
+      <try>Key2={InnerK1=one;IK</try>
+      <success>={InnerK1=one;IK2=11</success>
+      <attributes>[[K, e, y, 2]]</attributes>
+    </KeyName>
+    <Sequence>
+      <try>InnerK1=one;IK2=11-N</try>
+      <Pair>
+        <try>InnerK1=one;IK2=11-N</try>
+        <KeyName>
+          <try>InnerK1=one;IK2=11-N</try>
+          <success>=one;IK2=11-Nov-2011</success>
+          <attributes>[[I, n, n, e, r, K, 1]]</attributes>
+        </KeyName>
+        <Value>
+          <try>one;IK2=11-Nov-2011;</try>
+          <success>;IK2=11-Nov-2011;};</success>
+          <attributes>[[o, n, e]]</attributes>
+        </Value>
+        <success>;IK2=11-Nov-2011;};</success>
+        <attributes>[[[I, n, n, e, r, K, 1], [o, n, e]]]</attributes>
+      </Pair>
+      <Pair>
+        <try>IK2=11-Nov-2011;};</try>
+        <KeyName>
+          <try>IK2=11-Nov-2011;};</try>
+          <success>=11-Nov-2011;};</success>
+          <attributes>[[I, K, 2]]</attributes>
+        </KeyName>
+        <Value>
+          <try>11-Nov-2011;};</try>
+          <success>;};</success>
+          <attributes>[[1, 1, -, N, o, v, -, 2, 0, 1, 1]]</attributes>
+        </Value>
+        <success>;};</success>
+        <attributes>[[[I, K, 2], [1, 1, -, N, o, v, -, 2, 0, 1, 1]]]</attributes>
+      </Pair>
+      <Pair>
+        <try>};</try>
+        <KeyName>
+          <try>};</try>
+          <fail/>
+        </KeyName>
+        <fail/>
+      </Pair>
+      <success>};</success>
+      <attributes>[[[[I, K, 2], [1, 1, -, N, o, v, -, 2, 0, 1, 1]], [[I, n, n, e, r, K, 1], [o, n, e]]]]</attributes>
+    </Sequence>
+    <success>;</success>
+    <attributes>[[[K, e, y, 2], [I, n, n, e, r, K, 1, =, o, n, e, ;, I, K, 2, =, 1, 1, -, N, o, v, -, 2, 0, 1, 1, ;]]]</attributes>
+  </Pair>
+  <Pair>
+    <try></try>
+    <KeyName>
+      <try></try>
+      <fail/>
+    </KeyName>
+    <fail/>
+  </Pair>
+  <success></success>
+  <attributes>[[[[K, e, y, 1], [V, a, l, u, e, 1]], [[K, e, y, 2], [I, n, n, e, r, K, 1, =, o, n, e, ;, I, K, 2, =, 1, 1, -, N, o, v, -, 2, 0, 1, 1, ;]]]]</attributes>
+</Sequence>
+Key1|Value1
+Key2|InnerK1=one;IK2=11-Nov-2011;
+=====
+<Sequence>
+  <try>K1=V1;K2={IK1=IV1;IK</try>
+  <Pair>
+    <try>K1=V1;K2={IK1=IV1;IK</try>
+    <KeyName>
+      <try>K1=V1;K2={IK1=IV1;IK</try>
+      <success>=V1;K2={IK1=IV1;IK2=</success>
+      <attributes>[[K, 1]]</attributes>
+    </KeyName>
+    <Value>
+      <try>V1;K2={IK1=IV1;IK2=I</try>
+      <success>;K2={IK1=IV1;IK2=IV2</success>
+      <attributes>[[V, 1]]</attributes>
+    </Value>
+    <success>;K2={IK1=IV1;IK2=IV2</success>
+    <attributes>[[[K, 1], [V, 1]]]</attributes>
+  </Pair>
+  <Pair>
+    <try>K2={IK1=IV1;IK2=IV2;</try>
+    <KeyName>
+      <try>K2={IK1=IV1;IK2=IV2;</try>
+      <success>={IK1=IV1;IK2=IV2;};</success>
+      <attributes>[[K, 2]]</attributes>
+    </KeyName>
+    <Sequence>
+      <try>IK1=IV1;IK2=IV2;};K3</try>
+      <Pair>
+        <try>IK1=IV1;IK2=IV2;};K3</try>
+        <KeyName>
+          <try>IK1=IV1;IK2=IV2;};K3</try>
+          <success>=IV1;IK2=IV2;};K3=V3</success>
+          <attributes>[[I, K, 1]]</attributes>
+        </KeyName>
+        <Value>
+          <try>IV1;IK2=IV2;};K3=V3;</try>
+          <success>;IK2=IV2;};K3=V3;K4=</success>
+          <attributes>[[I, V, 1]]</attributes>
+        </Value>
+        <success>;IK2=IV2;};K3=V3;K4=</success>
+        <attributes>[[[I, K, 1], [I, V, 1]]]</attributes>
+      </Pair>
+      <Pair>
+        <try>IK2=IV2;};K3=V3;K4={</try>
+        <KeyName>
+          <try>IK2=IV2;};K3=V3;K4={</try>
+          <success>=IV2;};K3=V3;K4={JK1</success>
+          <attributes>[[I, K, 2]]</attributes>
+        </KeyName>
+        <Value>
+          <try>IV2;};K3=V3;K4={JK1=</try>
+          <success>;};K3=V3;K4={JK1=JV1</success>
+          <attributes>[[I, V, 2]]</attributes>
+        </Value>
+        <success>;};K3=V3;K4={JK1=JV1</success>
+        <attributes>[[[I, K, 2], [I, V, 2]]]</attributes>
+      </Pair>
+      <Pair>
+        <try>};K3=V3;K4={JK1=JV1;</try>
+        <KeyName>
+          <try>};K3=V3;K4={JK1=JV1;</try>
+          <fail/>
+        </KeyName>
+        <fail/>
+      </Pair>
+      <success>};K3=V3;K4={JK1=JV1;</success>
+      <attributes>[[[[I, K, 1], [I, V, 1]], [[I, K, 2], [I, V, 2]]]]</attributes>
+    </Sequence>
+    <success>;K3=V3;K4={JK1=JV1;J</success>
+    <attributes>[[[K, 2], [I, K, 1, =, I, V, 1, ;, I, K, 2, =, I, V, 2, ;]]]</attributes>
+  </Pair>
+  <Pair>
+    <try>K3=V3;K4={JK1=JV1;JK</try>
+    <KeyName>
+      <try>K3=V3;K4={JK1=JV1;JK</try>
+      <success>=V3;K4={JK1=JV1;JK2=</success>
+      <attributes>[[K, 3]]</attributes>
+    </KeyName>
+    <Value>
+      <try>V3;K4={JK1=JV1;JK2=J</try>
+      <success>;K4={JK1=JV1;JK2=JV2</success>
+      <attributes>[[V, 3]]</attributes>
+    </Value>
+    <success>;K4={JK1=JV1;JK2=JV2</success>
+    <attributes>[[[K, 3], [V, 3]]]</attributes>
+  </Pair>
+  <Pair>
+    <try>K4={JK1=JV1;JK2=JV2;</try>
+    <KeyName>
+      <try>K4={JK1=JV1;JK2=JV2;</try>
+      <success>={JK1=JV1;JK2=JV2;};</success>
+      <attributes>[[K, 4]]</attributes>
+    </KeyName>
+    <Sequence>
+      <try>JK1=JV1;JK2=JV2;};</try>
+      <Pair>
+        <try>JK1=JV1;JK2=JV2;};</try>
+        <KeyName>
+          <try>JK1=JV1;JK2=JV2;};</try>
+          <success>=JV1;JK2=JV2;};</success>
+          <attributes>[[J, K, 1]]</attributes>
+        </KeyName>
+        <Value>
+          <try>JV1;JK2=JV2;};</try>
+          <success>;JK2=JV2;};</success>
+          <attributes>[[J, V, 1]]</attributes>
+        </Value>
+        <success>;JK2=JV2;};</success>
+        <attributes>[[[J, K, 1], [J, V, 1]]]</attributes>
+      </Pair>
+      <Pair>
+        <try>JK2=JV2;};</try>
+        <KeyName>
+          <try>JK2=JV2;};</try>
+          <success>=JV2;};</success>
+          <attributes>[[J, K, 2]]</attributes>
+        </KeyName>
+        <Value>
+          <try>JV2;};</try>
+          <success>;};</success>
+          <attributes>[[J, V, 2]]</attributes>
+        </Value>
+        <success>;};</success>
+        <attributes>[[[J, K, 2], [J, V, 2]]]</attributes>
+      </Pair>
+      <Pair>
+        <try>};</try>
+        <KeyName>
+          <try>};</try>
+          <fail/>
+        </KeyName>
+        <fail/>
+      </Pair>
+      <success>};</success>
+      <attributes>[[[[J, K, 1], [J, V, 1]], [[J, K, 2], [J, V, 2]]]]</attributes>
+    </Sequence>
+    <success>;</success>
+    <attributes>[[[K, 4], [J, K, 1, =, J, V, 1, ;, J, K, 2, =, J, V, 2, ;]]]</attributes>
+  </Pair>
+  <Pair>
+    <try></try>
+    <KeyName>
+      <try></try>
+      <fail/>
+    </KeyName>
+    <fail/>
+  </Pair>
+  <success></success>
+  <attributes>[[[[K, 1], [V, 1]], [[K, 2], [I, K, 1, =, I, V, 1, ;, I, K, 2, =, I, V, 2, ;]], [[K, 3], [V, 3]], [[K, 4], [J, K, 1, =, J, V, 1, ;, J, K, 2, =, J, V, 2, ;]]]]</attributes>
+</Sequence>
+K1|V1
+K2|IK1=IV1;IK2=IV2;
+K3|V3
+K4|JK1=JV1;JK2=JV2;
