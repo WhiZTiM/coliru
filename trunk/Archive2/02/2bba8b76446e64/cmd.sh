@@ -1,0 +1,1 @@
+clang++ --version && clang++ -std=c++11 -Wall -Wextra -pedantic -o main main.cpp && ./main
