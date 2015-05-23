@@ -1,0 +1,8 @@
+clag++
+g++
+main.cpp: In instantiation of 'class Vector<24, int>':
+main.cpp:15:19:   required from here
+main.cpp:5:18: error: redefinition of 'template<int L2, class T2> Vector<L2, T2> operator+(const Vector<L2, T2>&, const Vector<L2, T2>&)'
+   Vector<L2, T2> operator+(const Vector<L2, T2>&, const Vector<L2, T2>&) {
+                  ^
+main.cpp:5:18: note: 'template<int L2, class T2> Vector<L2, T2> operator+(const Vector<L2, T2>&, const Vector<L2, T2>&)' previously defined here
