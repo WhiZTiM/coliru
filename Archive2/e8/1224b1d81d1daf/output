@@ -1,0 +1,19 @@
+main.cpp: In function 'void Kruskal(int**, int, int, int)':
+main.cpp:140:27: warning: ISO C++ forbids variable length array 'distancia' [-Wvla]
+  int distancia[numVertices];
+                           ^
+main.cpp:141:34: warning: ISO C++ forbids variable length array 'quantidadeAcesso' [-Wvla]
+  int quantidadeAcesso[numVertices];
+                                  ^
+main.cpp:148:46: warning: ISO C++ forbids variable length array 'arvoreMinima' [-Wvla]
+     int arvoreMinima[numVertices][numVertices];
+                                              ^
+main.cpp:148:46: warning: ISO C++ forbids variable length array 'arvoreMinima' [-Wvla]
+main.cpp:149:31: warning: ISO C++ forbids variable length array 'pesoAresta' [-Wvla]
+     int pesoAresta[numVertices];
+                               ^
+main.cpp:150:47: warning: ISO C++ forbids variable length array 'matrizPesoAux' [-Wvla]
+     int matrizPesoAux[numVertices][numVertices];
+                                               ^
+main.cpp:150:47: warning: ISO C++ forbids variable length array 'matrizPesoAux' [-Wvla]
+bash: line 7:  1608 Segmentation fault      (core dumped) ./a.out
