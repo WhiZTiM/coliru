@@ -1,0 +1,16 @@
+main.cpp:20:22: error: calling a private constructor of class 'NS::foo<int>'
+        NS::foo<int> f;
+                     ^
+main.cpp:8:9: note: implicitly declared private here
+        foo() {}
+        ^
+main.cpp:20:22: error: calling a private constructor of class 'NS::foo<int>'
+        NS::foo<int> f;
+                     ^
+main.cpp:27:14: note: in instantiation of member function 'bar<int>::bar' requested here
+    bar<int> b;
+             ^
+main.cpp:8:9: note: implicitly declared private here
+        foo() {}
+        ^
+2 errors generated.
