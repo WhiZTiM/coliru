@@ -1,0 +1,7 @@
+clang version 3.6.0 (tags/RELEASE_360/final 235480)
+Target: x86_64-unknown-linux-gnu
+Thread model: posix
+main.cpp:18:23: warning: comparison of integers of different signs: 'int' and 'unsigned long' [-Wsign-compare]
+    for (int i = 0; i <= s2.length() - s1.length(); i++) {
+                    ~ ^  ~~~~~~~~~~~~~~~~~~~~~~~~~
+1 warning generated.
