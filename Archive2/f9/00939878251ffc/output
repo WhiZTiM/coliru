@@ -1,0 +1,6 @@
+Before: Names: [john,bob,alice]
+         Ages: [32,19,35]
+       Zipped: [(john, 32),(bob, 19),(alice, 35)]
+ After: Names: [bob,john,alice]
+         Ages: [19,32,35]
+       Zipped: [(bob, 19),(john, 32),(alice, 35)]
