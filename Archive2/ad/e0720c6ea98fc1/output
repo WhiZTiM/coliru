@@ -1,0 +1,16 @@
+clang version 3.6.0 (tags/RELEASE_360/final 235480)
+main.cpp:10:18: warning: pragma STDC FENV_ACCESS ON is not supported, ignoring pragma [-Wunknown-pragmas]
+    #pragma STDC FENV_ACCESS ON // standard C99 pragma, ignored by clang++, g++, and msvc++
+                 ^
+1 warning generated.
+FE_TOWARDZERO: 19.80, -19.80 => 19.00, -19.00
+ FE_TONEAREST: 19.80, -19.80 => 19.00, -19.00
+  FE_DOWNWARD: 19.80, -19.80 => 19.00, -19.00
+==============
+g++ (GCC) 5.1.0
+main.cpp:10:0: warning: ignoring #pragma STDC FENV_ACCESS [-Wunknown-pragmas]
+     #pragma STDC FENV_ACCESS ON // standard C99 pragma, ignored by clang++, g++, and msvc++
+ ^
+FE_TOWARDZERO: 19.80, -19.80 => 19.00, -19.00
+ FE_TONEAREST: 19.80, -19.80 => 19.00, -19.00
+  FE_DOWNWARD: 19.80, -19.80 => 19.00, -19.00
