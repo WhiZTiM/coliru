@@ -1,0 +1,14 @@
+*** glibc detected *** ./a.out: double free or corruption (fasttop): 0x0000000001532010 ***
+======= Backtrace: =========
+/lib/x86_64-linux-gnu/libc.so.6(+0x7e846)[0x7faf5aeb4846]
+./a.out[0x401aa5]
+./a.out[0x402f1b]
+/usr/lib/libc++.so.1(_ZNSt3__119__shared_weak_count16__release_sharedEv+0x29)[0x7faf5b9c1729]
+./a.out[0x401a7f]
+./a.out[0x401450]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xed)[0x7faf5ae5776d]
+./a.out[0x4012f9]
+======= Memory map: ========
+Bad::~Bad() called
+Bad::~Bad() called
+bash: line 7:  7385 Aborted                 (core dumped) ./a.out
