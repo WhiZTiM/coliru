@@ -1,0 +1,84 @@
+clang++ c++11
+main.cpp:8:16: error: no viable conversion from 'int *' to 'shared_ptr<int>'
+        return new int(42); // Error
+               ^~~~~~~~~~~
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.1.0/../../../../include/c++/5.1.0/bits/shared_ptr.h:107:7: note: candidate constructor not viable: no known conversion from 'int *' to 'const std::shared_ptr<int> &' for 1st argument
+      shared_ptr(const shared_ptr&) noexcept = default;
+      ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.1.0/../../../../include/c++/5.1.0/bits/shared_ptr.h:229:7: note: candidate constructor not viable: no known conversion from 'int *' to 'std::shared_ptr<int> &&' for 1st argument
+      shared_ptr(shared_ptr&& __r) noexcept
+      ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.1.0/../../../../include/c++/5.1.0/bits/shared_ptr.h:269:17: note: candidate constructor not viable: no known conversion from 'int *' to 'nullptr_t' for 1st argument
+      constexpr shared_ptr(nullptr_t) noexcept : shared_ptr() { }
+                ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.1.0/../../../../include/c++/5.1.0/bits/shared_ptr.h:221:2: note: candidate template ignored: could not match 'shared_ptr<type-parameter-0-0>' against 'int *'
+        shared_ptr(const shared_ptr<_Tp1>& __r) noexcept
+        ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.1.0/../../../../include/c++/5.1.0/bits/shared_ptr.h:238:2: note: candidate template ignored: could not match 'shared_ptr<type-parameter-0-0>' against 'int *'
+        shared_ptr(shared_ptr<_Tp1>&& __r) noexcept
+        ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.1.0/../../../../include/c++/5.1.0/bits/shared_ptr.h:255:2: note: candidate template ignored: could not match 'auto_ptr<type-parameter-0-0>' against 'int *'
+        shared_ptr(std::auto_ptr<_Tp1>&& __r);
+        ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.1.0/../../../../include/c++/5.1.0/bits/shared_ptr.h:262:2: note: candidate template ignored: could not match 'unique_ptr<type-parameter-0-0, type-parameter-0-1>' against 'int *'
+        shared_ptr(std::unique_ptr<_Tp1, _Del>&& __r)
+        ^
+main.cpp:10:16: error: chosen constructor is explicit in copy-initialization
+        return {new int(42)};// Error
+               ^~~~~~~~~~~~~
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.1.0/../../../../include/c++/5.1.0/bits/shared_ptr.h:116:11: note: constructor declared here
+        explicit shared_ptr(_Tp1* __p)
+                 ^
+2 errors generated.
+
+clang++ c++14
+main.cpp:8:16: error: no viable conversion from 'int *' to 'shared_ptr<int>'
+        return new int(42); // Error
+               ^~~~~~~~~~~
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.1.0/../../../../include/c++/5.1.0/bits/shared_ptr.h:107:7: note: candidate constructor not viable: no known conversion from 'int *' to 'const std::shared_ptr<int> &' for 1st argument
+      shared_ptr(const shared_ptr&) noexcept = default;
+      ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.1.0/../../../../include/c++/5.1.0/bits/shared_ptr.h:229:7: note: candidate constructor not viable: no known conversion from 'int *' to 'std::shared_ptr<int> &&' for 1st argument
+      shared_ptr(shared_ptr&& __r) noexcept
+      ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.1.0/../../../../include/c++/5.1.0/bits/shared_ptr.h:269:17: note: candidate constructor not viable: no known conversion from 'int *' to 'nullptr_t' for 1st argument
+      constexpr shared_ptr(nullptr_t) noexcept : shared_ptr() { }
+                ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.1.0/../../../../include/c++/5.1.0/bits/shared_ptr.h:221:2: note: candidate template ignored: could not match 'shared_ptr<type-parameter-0-0>' against 'int *'
+        shared_ptr(const shared_ptr<_Tp1>& __r) noexcept
+        ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.1.0/../../../../include/c++/5.1.0/bits/shared_ptr.h:238:2: note: candidate template ignored: could not match 'shared_ptr<type-parameter-0-0>' against 'int *'
+        shared_ptr(shared_ptr<_Tp1>&& __r) noexcept
+        ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.1.0/../../../../include/c++/5.1.0/bits/shared_ptr.h:255:2: note: candidate template ignored: could not match 'auto_ptr<type-parameter-0-0>' against 'int *'
+        shared_ptr(std::auto_ptr<_Tp1>&& __r);
+        ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.1.0/../../../../include/c++/5.1.0/bits/shared_ptr.h:262:2: note: candidate template ignored: could not match 'unique_ptr<type-parameter-0-0, type-parameter-0-1>' against 'int *'
+        shared_ptr(std::unique_ptr<_Tp1, _Del>&& __r)
+        ^
+main.cpp:10:16: error: chosen constructor is explicit in copy-initialization
+        return {new int(42)};// Error
+               ^~~~~~~~~~~~~
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.1.0/../../../../include/c++/5.1.0/bits/shared_ptr.h:116:11: note: constructor declared here
+        explicit shared_ptr(_Tp1* __p)
+                 ^
+2 errors generated.
+
+g++ c++11
+main.cpp: In function 'std::shared_ptr<int> f(int)':
+main.cpp:8:26: error: could not convert '(operator new(4ul), (<statement>, ((int*)<anonymous>)))' from 'int*' to 'std::shared_ptr<int>'
+         return new int(42); // Error
+                          ^
+main.cpp:10:28: error: converting to 'std::shared_ptr<int>' from initializer list would use explicit constructor 'std::shared_ptr<_Tp>::shared_ptr(_Tp1*) [with _Tp1 = int; _Tp = int]'
+         return {new int(42)};// Error
+                            ^
+
+g++ c++14
+main.cpp: In function 'std::shared_ptr<int> f(int)':
+main.cpp:8:26: error: could not convert '(operator new(4ul), (<statement>, ((int*)<anonymous>)))' from 'int*' to 'std::shared_ptr<int>'
+         return new int(42); // Error
+                          ^
+main.cpp:10:28: error: converting to 'std::shared_ptr<int>' from initializer list would use explicit constructor 'std::shared_ptr<_Tp>::shared_ptr(_Tp1*) [with _Tp1 = int; _Tp = int]'
+         return {new int(42)};// Error
+                            ^
+
