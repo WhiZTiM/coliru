@@ -1,0 +1,25 @@
+main.cpp:98:48: error: no matching function for call to object of type 'const ranges::v3::with_braced_init_args<ranges::v3::random_shuffle_fn>'
+    v |= action::push_back(view::iota(0, N)) | random_shuffle(); 
+                                               ^~~~~~~~~~~~~~
+/usr/local/include/range/v3/utility/functional.hpp:914:18: note: candidate function template not viable: requires at least argument 'rng0', but no arguments were provided
+            auto operator()(std::initializer_list<V0> &&rng0, Args &&...args) const ->
+                 ^
+/usr/local/include/range/v3/utility/functional.hpp:921:18: note: candidate function template not viable: requires at least 2 arguments, but 0 were provided
+            auto operator()(Rng0 && rng0, std::initializer_list<V1> &&rng1, Args &&...args) const ->
+                 ^
+/usr/local/include/range/v3/utility/functional.hpp:928:18: note: candidate function template not viable: requires at least 2 arguments, but 0 were provided
+            auto operator()(std::initializer_list<V0> rng0, std::initializer_list<V1> &&rng1, Args &&...args) const ->
+                 ^
+/usr/local/include/range/v3/algorithm/random_shuffle.hpp:68:15: note: candidate function template not viable: requires 2 arguments, but 0 were provided
+            I operator()(I begin, S end_) const
+              ^
+/usr/local/include/range/v3/algorithm/random_shuffle.hpp:91:15: note: candidate function template not viable: requires 3 arguments, but 0 were provided
+            I operator()(I begin, S end_, Gen && rand) const
+              ^
+/usr/local/include/range/v3/algorithm/random_shuffle.hpp:109:40: note: candidate function template not viable: requires single argument 'rng', but no arguments were provided
+            range_safe_iterator_t<Rng> operator()(Rng &&rng) const
+                                       ^
+/usr/local/include/range/v3/algorithm/random_shuffle.hpp:118:40: note: candidate function template not viable: requires 2 arguments, but 0 were provided
+            range_safe_iterator_t<Rng> operator()(Rng &&rng, Gen && rand) const
+                                       ^
+1 error generated.
