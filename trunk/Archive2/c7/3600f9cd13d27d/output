@@ -1,0 +1,17 @@
+main.cpp: In function 'void printVector(std::vector<std::__cxx11::basic_string<char> >)':
+main.cpp:10:20: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for (int i=0; i<v.size();++i)
+                    ^
+main.cpp:12:7: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   if(i==v.size()-1)
+       ^
+main.cpp: In function 'int main()':
+main.cpp:33:18: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for (int j =0; j<face.size();++j)
+                  ^
+main.cpp:35:20: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    for (int i= 0; j<value.size();++i)
+                    ^
+terminate called after throwing an instance of 'std::bad_alloc'
+  what():  std::bad_alloc
+bash: line 7: 29825 Aborted                 (core dumped) ./a.out
