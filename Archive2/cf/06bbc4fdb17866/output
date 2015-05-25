@@ -1,0 +1,10 @@
+main.cpp:102:28: warning: unused parameter 'x' [-Wunused-parameter]
+    iterator find(const K& x){
+                           ^
+main.cpp:101:62: error: no type named 'type' in 'std::enable_if<false, void>'; 'enable_if' cannot be used to disable this declaration
+    template <typename K, typename = typename std::enable_if<wtf::is_transparent<Comparator>::value, void>::type*>
+                                                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+main.cpp:282:30: note: in instantiation of template class 'flatmap<std::__cxx11::basic_string<char>, int, std::less<std::__cxx11::basic_string<char> >, std::allocator<std::pair<std::__cxx11::basic_string<char>, int> > >' requested here
+   flatmap<std::string, int> fm, fm2;
+                             ^
+1 warning and 1 error generated.
