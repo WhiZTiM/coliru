@@ -1,0 +1,5 @@
+main.cpp: In constructor 'thing::thing()':
+main.cpp:5:33: error: increment of read-only location '(thing*)this'
+         const_cast<thing*>(this)++;
+                                 ^
+main.cpp:5:33: error: lvalue required as increment operand
