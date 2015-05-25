@@ -1,0 +1,11 @@
+main.cpp: In function 'const long int& f(const long int&)':
+main.cpp:1:54: warning: returning reference to temporary [-Wreturn-local-addr]
+ long const& f(long const& arg) { return true ? arg : 0; }
+                                                      ^
+main.cpp: In function 'int main()':
+main.cpp:5:10: warning: unused variable 'l' [-Wunused-variable]
+     long l = 0;
+          ^
+main.cpp:6:17: warning: unused variable 'r' [-Wunused-variable]
+     long const& r = f(0);
+                 ^
