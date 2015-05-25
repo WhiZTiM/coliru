@@ -1,0 +1,22 @@
+/usr/local/include/c++/4.9.2/bits/stl_pair.h: In instantiation of 'constexpr std::pair<_T1, _T2>::pair() [with _T1 = const std::basic_string<char>; _T2 = Foo]':
+/usr/local/include/boost/serialization/access.hpp:132:9:   required from 'static void boost::serialization::access::construct(T*) [with T = std::pair<const std::basic_string<char>, Foo>]'
+/usr/local/include/boost/serialization/serialization.hpp:93:24:   required from 'void boost::serialization::load_construct_data(Archive&, T*, unsigned int) [with Archive = boost::archive::xml_iarchive; T = std::pair<const std::basic_string<char>, Foo>]'
+/usr/local/include/boost/serialization/serialization.hpp:158:37:   required from 'void boost::serialization::load_construct_data_adl(Archive&, T*, unsigned int) [with Archive = boost::archive::xml_iarchive; T = std::pair<const std::basic_string<char>, Foo>]'
+/usr/local/include/boost/serialization/detail/stack_constructor.hpp:58:9:   required from 'boost::serialization::detail::stack_construct<Archive, T>::stack_construct(Archive&, unsigned int) [with Archive = boost::archive::xml_iarchive; T = std::pair<const std::basic_string<char>, Foo>]'
+/usr/local/include/boost/serialization/collections_load_imp.hpp:83:55:   required from 'typename Container::iterator boost::serialization::stl::archive_input_map<Archive, Container>::operator()(Archive&, Container&, unsigned int, typename Container::iterator) [with Archive = boost::archive::xml_iarchive; Container = std::map<std::basic_string<char>, Foo>; typename Container::iterator = std::_Rb_tree_iterator<std::pair<const std::basic_string<char>, Foo> >]'
+/usr/local/include/boost/serialization/collections_load_imp.hpp:158:47:   [ skipping 10 instantiation contexts, use -ftemplate-backtrace-limit=0 to disable ]
+/usr/local/include/boost/archive/detail/iserializer.hpp:618:24:   required from 'void boost::archive::load(Archive&, T&) [with Archive = boost::archive::xml_iarchive; T = std::map<std::basic_string<char>, Foo>]'
+/usr/local/include/boost/archive/detail/common_iarchive.hpp:66:40:   required from 'void boost::archive::detail::common_iarchive<Archive>::load_override(T&, int) [with T = std::map<std::basic_string<char>, Foo>; Archive = boost::archive::xml_iarchive]'
+/usr/local/include/boost/archive/basic_xml_iarchive.hpp:92:9:   required from 'void boost::archive::basic_xml_iarchive<Archive>::load_override(const boost::serialization::nvp<T>&, int) [with T = std::map<std::basic_string<char>, Foo>; Archive = boost::archive::xml_iarchive]'
+/usr/local/include/boost/archive/xml_iarchive.hpp:105:56:   required from 'void boost::archive::xml_iarchive_impl<Archive>::load_override(T&, int) [with T = const boost::serialization::nvp<std::map<std::basic_string<char>, Foo> >; Archive = boost::archive::xml_iarchive]'
+/usr/local/include/boost/archive/detail/interface_iarchive.hpp:60:9:   required from 'Archive& boost::archive::detail::interface_iarchive<Archive>::operator>>(T&) [with T = const boost::serialization::nvp<std::map<std::basic_string<char>, Foo> >; Archive = boost::archive::xml_iarchive]'
+main.cpp:62:52:   required from here
+main.cpp:31:5: error: 'Foo::Foo()' is private
+     Foo() = default;
+     ^
+In file included from /usr/local/include/c++/4.9.2/utility:70:0,
+                 from /usr/local/include/boost/serialization/nvp.hpp:19,
+                 from main.cpp:1:
+/usr/local/include/c++/4.9.2/bits/stl_pair.h:109:25: error: within this context
+       : first(), second() { }
+                         ^
