@@ -1,0 +1,14 @@
+main.cpp:196:19: error: use of undeclared identifier 'Creator'; did you mean 'operator'?
+struct holder<R (*Creator)(Args...), Deleter> : std::unique_ptr<typename std::pointer_traits<R>::element_type, Deleter> {
+                  ^~~~~~~
+                  operator
+main.cpp:196:26: error: expected a type
+struct holder<R (*Creator)(Args...), Deleter> : std::unique_ptr<typename std::pointer_traits<R>::element_type, Deleter> {
+                         ^
+main.cpp:196:28: error: 'Args' does not refer to a value
+struct holder<R (*Creator)(Args...), Deleter> : std::unique_ptr<typename std::pointer_traits<R>::element_type, Deleter> {
+                           ^
+main.cpp:195:34: note: declared here
+template<typename R, typename ...Args, typename Deleter>
+                                 ^
+3 errors generated.
