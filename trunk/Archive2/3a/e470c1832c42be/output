@@ -1,0 +1,46 @@
+main.cpp:51:5: warning: field '_streambuf' will be initialized after base 'std::ostream' (aka 'basic_ostream<char>') [-Wreorder]
+                : _streambuf{ostream, indentation}
+                  ^
+1 warning generated.
+pivot: 12
+first recursion (on: 0 -387)
+    pivot: 0
+    first recursion (on: -387)
+        pivot: -387
+        first recursion (on: empty)
+            done
+        second recursion (on: empty)
+            done
+        merged: -387
+    second recursion (on: empty)
+        done
+    merged: -387 0
+second recursion (on: 23 123 55 1 23)
+    pivot: 123
+    first recursion (on: 1)
+        pivot: 1
+        first recursion (on: empty)
+            done
+        second recursion (on: empty)
+            done
+        merged: 1
+    second recursion (on: 55 23 23)
+        pivot: 55
+        first recursion (on: 23 23)
+            pivot: 23
+            first recursion (on: empty)
+                done
+            second recursion (on: 23)
+                pivot: 23
+                first recursion (on: empty)
+                    done
+                second recursion (on: empty)
+                    done
+                merged: 23
+            merged: 23 23
+        second recursion (on: empty)
+            done
+        merged: 23 23 55
+    merged: 1 123 23 23 55
+merged: -387 0 12 1 123 23 23 55
+-387 0 12 1 123 23 23 55
