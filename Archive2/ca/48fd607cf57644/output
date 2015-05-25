@@ -1,0 +1,39 @@
+main.cpp:1:1: error: use of undeclared identifier 'std'
+std::map<std::string, json::value> _limits;
+^
+main.cpp:1:9: error: expected unqualified-id
+std::map<std::string, json::value> _limits;
+        ^
+main.cpp:4:24: error: use of undeclared identifier 'std'
+auto get_limit_by_name(std::string name) const -> json::value const& {
+                       ^
+main.cpp:4:51: error: use of undeclared identifier 'json'
+auto get_limit_by_name(std::string name) const -> json::value const& {
+                                                  ^
+main.cpp:4:42: error: non-member function cannot have 'const' qualifier
+auto get_limit_by_name(std::string name) const -> json::value const& {
+                                         ^~~~~~
+main.cpp:4:62: error: expected ';' after top level declarator
+auto get_limit_by_name(std::string name) const -> json::value const& {
+                                                             ^
+                                                             ;
+main.cpp:4:70: error: expected unqualified-id
+auto get_limit_by_name(std::string name) const -> json::value const& {
+                                                                     ^
+main.cpp:15:24: error: use of undeclared identifier 'std'
+auto get_limit_by_name(std::string name) const -> json::value const& {
+                       ^
+main.cpp:15:51: error: use of undeclared identifier 'json'
+auto get_limit_by_name(std::string name) const -> json::value const& {
+                                                  ^
+main.cpp:15:42: error: non-member function cannot have 'const' qualifier
+auto get_limit_by_name(std::string name) const -> json::value const& {
+                                         ^~~~~~
+main.cpp:15:62: error: expected ';' after top level declarator
+auto get_limit_by_name(std::string name) const -> json::value const& {
+                                                             ^
+                                                             ;
+main.cpp:15:70: error: expected unqualified-id
+auto get_limit_by_name(std::string name) const -> json::value const& {
+                                                                     ^
+12 errors generated.
