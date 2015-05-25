@@ -1,0 +1,8 @@
+main.cpp:19:40: error: template argument for template type parameter must be a type; did you forget 'typename'?
+struct is_transparent<T, typename Void<T::bar>::type > {
+                                       ^
+                                       typename 
+main.cpp:8:16: note: template parameter is declared here
+template<class T>
+               ^
+1 error generated.
