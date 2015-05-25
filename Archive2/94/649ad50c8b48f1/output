@@ -1,0 +1,20 @@
+void save_construct_data(Archive &, const Foo *, const unsigned int) [Archive = boost::archive::xml_oarchive]
+void Foo::serialize(Archive &, const unsigned int) [Archive = boost::archive::xml_oarchive]
+void save_construct_data(Archive &, const Foo *, const unsigned int) [Archive = boost::archive::xml_oarchive]
+void Foo::serialize(Archive &, const unsigned int) [Archive = boost::archive::xml_oarchive]
+void save_construct_data(Archive &, const Foo *, const unsigned int) [Archive = boost::archive::xml_oarchive]
+void Foo::serialize(Archive &, const unsigned int) [Archive = boost::archive::xml_oarchive]
+void save_construct_data(Archive &, const Foo *, const unsigned int) [Archive = boost::archive::xml_oarchive]
+void Foo::serialize(Archive &, const unsigned int) [Archive = boost::archive::xml_oarchive]
+void load_construct_data(Archive &, Foo *, const unsigned int) [Archive = boost::archive::xml_iarchive]
+void Foo::serialize(Archive &, const unsigned int) [Archive = boost::archive::xml_iarchive]
+void load_construct_data(Archive &, Foo *, const unsigned int) [Archive = boost::archive::xml_iarchive]
+void Foo::serialize(Archive &, const unsigned int) [Archive = boost::archive::xml_iarchive]
+void load_construct_data(Archive &, Foo *, const unsigned int) [Archive = boost::archive::xml_iarchive]
+void Foo::serialize(Archive &, const unsigned int) [Archive = boost::archive::xml_iarchive]
+void load_construct_data(Archive &, Foo *, const unsigned int) [Archive = boost::archive::xml_iarchive]
+void Foo::serialize(Archive &, const unsigned int) [Archive = boost::archive::xml_iarchive]
+Foo { 12 }
+Foo { 99 }
+Foo { 42 }
+Foo { -3 }
