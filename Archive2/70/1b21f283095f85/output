@@ -1,0 +1,6 @@
+`vector_patch.hpp' -> `/Archive2/8f/ea1d0bb536489a/main.cpp'
+In file included from main.cpp:1:
+./vector_patch.hpp:36:10: fatal error: 'boost/serialization/detail/is_default_constructible.hpp' file not found
+#include <boost/serialization/detail/is_default_constructible.hpp>
+         ^
+1 error generated.
