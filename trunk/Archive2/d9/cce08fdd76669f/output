@@ -1,0 +1,5 @@
+main.cpp: In instantiation of 'void show_type() [with T = const std::tuple<foo<0ul>, foo<1ul>, foo<2ul>, foo<3ul>, foo<4ul> >]':
+main.cpp:27:33:   required from here
+main.cpp:22:3: error: static assertion failed: look at T
+ { static_assert((T*)0, "look at T"); }
+   ^
