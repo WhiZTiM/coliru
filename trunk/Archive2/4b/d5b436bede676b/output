@@ -1,0 +1,4 @@
+main.cpp: In function 'int main()':
+main.cpp:6:41: warning: variable 'o' set but not used [-Wunused-but-set-variable]
+     stdx::optional<stdx::optional<int>> o = stdx::nullopt;
+                                         ^
