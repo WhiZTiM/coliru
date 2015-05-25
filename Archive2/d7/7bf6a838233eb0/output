@@ -1,0 +1,11 @@
+Boost version: 105700
+void save_construct_data(Archive&, const std::pair<K, Foo>*, unsigned int) [with Archive = boost::archive::xml_oarchive; K = const std::__cxx11::basic_string<char>]
+void Foo::serialize(Archive&, unsigned int) [with Archive = boost::archive::xml_oarchive]
+void save_construct_data(Archive&, const std::pair<K, Foo>*, unsigned int) [with Archive = boost::archive::xml_oarchive; K = const std::__cxx11::basic_string<char>]
+void Foo::serialize(Archive&, unsigned int) [with Archive = boost::archive::xml_oarchive]
+void load_construct_data(Archive&, std::pair<K, Foo>*, unsigned int) [with Archive = boost::archive::xml_iarchive; K = const std::__cxx11::basic_string<char>]
+void Foo::serialize(Archive&, unsigned int) [with Archive = boost::archive::xml_iarchive]
+void load_construct_data(Archive&, std::pair<K, Foo>*, unsigned int) [with Archive = boost::archive::xml_iarchive; K = const std::__cxx11::basic_string<char>]
+void Foo::serialize(Archive&, unsigned int) [with Archive = boost::archive::xml_iarchive]
+a, Foo { 12 }
+b, Foo { 42 }
