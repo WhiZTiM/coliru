@@ -1,0 +1,5 @@
+`myciel4.col' -> `/Archive2/7e/5ec0f98888f0e5/main.cpp'
+main.cpp:28:12: error: no viable conversion from 'std::istream' (aka 'basic_istream<char>') to 'bool'
+    return dimacs;
+           ^~~~~~
+1 error generated.
