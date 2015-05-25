@@ -1,0 +1,7 @@
+main.cpp: In function 'int main()':
+main.cpp:21:27: error: invalid initialization of non-const reference of type '__gnu_cxx::__normal_iterator<std::__cxx11::basic_string<char>*, std::vector<std::__cxx11::basic_string<char> > >&' from an rvalue of type 'std::vector<std::__cxx11::basic_string<char> >::iterator {aka __gnu_cxx::__normal_iterator<std::__cxx11::basic_string<char>*, std::vector<std::__cxx11::basic_string<char> > >}'
+     auto &it = words.begin();
+                           ^
+main.cpp:21:11: warning: unused variable 'it' [-Wunused-variable]
+     auto &it = words.begin();
+           ^
