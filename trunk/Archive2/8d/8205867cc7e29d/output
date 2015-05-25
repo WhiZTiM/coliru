@@ -1,0 +1,9 @@
+main.cpp: In function 'int main()':
+main.cpp:6:24: warning: operation on 'i' may be undefined [-Wsequence-point]
+     i = (i = i + 1) + 1;
+                        ^
+main.cpp:8:16: warning: operation on 'j' may be undefined [-Wsequence-point]
+     j = j++ + 1;
+                ^
+3
+2
