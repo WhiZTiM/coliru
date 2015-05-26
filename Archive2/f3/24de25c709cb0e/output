@@ -1,0 +1,7 @@
+main.cpp: In function 'int main()':
+main.cpp:10:35: error: invalid initialization of non-const reference of type 'std::__cxx11::string& {aka std::__cxx11::basic_string<char>&}' from an rvalue of type 'std::__cxx11::string {aka std::__cxx11::basic_string<char>}'
+   uppercasify( std::string(title) );    // error #2
+                                   ^
+main.cpp:3:6: note:   initializing argument 1 of 'void uppercasify(std::__cxx11::string&)'
+ void uppercasify( std::string& ) {}
+      ^
