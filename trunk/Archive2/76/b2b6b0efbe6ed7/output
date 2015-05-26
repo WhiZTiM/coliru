@@ -1,0 +1,13 @@
+main.cpp: In function 'int main(int, char**)':
+main.cpp:7:24: warning: ISO C++ forbids taking address of function '::main' [-Wpedantic]
+     main(argc-1, argv+1);
+                        ^
+4
+3
+2
+1
+0
+My arguments in reverse are:  baz
+My arguments in reverse are:  bar
+My arguments in reverse are:  foo
+My arguments in reverse are:  ./a.out
