@@ -1,0 +1,7 @@
+main.cpp:16:17: warning: unused variable 'a' [-Wunused-variable]
+    A<int, int> a;
+                ^
+main.cpp:17:12: warning: unused variable 'b' [-Wunused-variable]
+    A<int> b;
+           ^
+2 warnings generated.
