@@ -1,0 +1,19 @@
+main.cpp: In function 'int main()':
+main.cpp:11:41: warning: format '%u' expects argument of type 'unsigned int', but argument 2 has type 'long unsigned int' [-Wformat=]
+     printf("sizeof(A) = %u\n", sizeof(A));
+                                         ^
+main.cpp:15:9: warning: large integer implicitly truncated to unsigned type [-Woverflow]
+     a.x = 2; printf("a.x = %u\n", a.x);
+         ^
+main.cpp:16:9: warning: large integer implicitly truncated to unsigned type [-Woverflow]
+     a.x = 3; printf("a.x = %u\n", a.x);
+         ^
+main.cpp:17:9: warning: large integer implicitly truncated to unsigned type [-Woverflow]
+     a.x = 4; printf("a.x = %u\n", a.x);
+         ^
+sizeof(A) = 1
+a.x = 0
+a.x = 1
+a.x = 0
+a.x = 1
+a.x = 0
