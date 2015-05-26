@@ -1,0 +1,16 @@
+main.cpp:14:9: error: 'pu' does not name a type
+         pu
+         ^
+main.cpp: In function 'int main()':
+main.cpp:33:23: error: 'struct AttrValue' has no member named 'value'
+     std::cout << attr.value << std::endl;
+                       ^
+main.cpp: In instantiation of 'AttrValue::AttrValue(T&&) [with T = double]':
+main.cpp:32:24:   required from here
+main.cpp:22:9: error: 'AttrValue::AttrValueDerived<T>::AttrValueDerived(T&&) [with T = double]' is private
+         AttrValueDerived(T&& value) :
+         ^
+main.cpp:9:60: error: within this context
+         ptr(new AttrValueDerived<T>(std::forward<T>(value))) {
+                                                            ^
+main.cpp:9:60: error: 'AttrValue::AttrValueBase' is an inaccessible base of 'AttrValue::AttrValueDerived<double>'
