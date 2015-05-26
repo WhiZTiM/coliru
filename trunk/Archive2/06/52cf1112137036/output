@@ -1,0 +1,32 @@
++ g++-5.1 -std=c++14 -O3 -Wall -Wextra -pedantic -Wno-unused-variable -Wno-unused-parameter -pthread main.cpp
+main.cpp: In instantiation of 'handle<_type>::handle() [with _type = int]':
+main.cpp:183:15:   required from here
+main.cpp:15:20: error: no matching function for call to 'handle<int>::make_pptr()'
+     mData(make_pptr())
+                    ^
+main.cpp:144:18: note: candidate: constexpr auto handle<_type>::make_pptr(const ptr&) [with _type = int; handle<_type>::ptr = std::shared_ptr<int>]
+   constexpr auto make_pptr(ptr const & pointer)
+                  ^
+main.cpp:144:18: note:   candidate expects 1 argument, 0 provided
+main.cpp:149:16: note: candidate: constexpr auto handle<_type>::make_pptr(handle<_type>::ptr&) [with _type = int; handle<_type>::ptr = std::shared_ptr<int>]
+ constexpr auto make_pptr(ptr & pointer)
+                ^
+main.cpp:149:16: note:   candidate expects 1 argument, 0 provided
+main.cpp:154:18: note: candidate: constexpr auto handle<_type>::make_pptr(handle<_type>::ptr&&) [with _type = int; handle<_type>::ptr = std::shared_ptr<int>]
+   constexpr auto make_pptr(ptr && pointer)
+                  ^
+main.cpp:154:18: note:   candidate expects 1 argument, 0 provided
+main.cpp:170:16: note: candidate: template<class ... _args, class> constexpr auto handle<_type>::make_pptr(_args&& ...) [with _args = {_args ...}; <template-parameter-2-2> = <template-parameter-1-2>; _type = int]
+ constexpr auto make_pptr(_args && ...args)
+                ^
+main.cpp:170:16: note:   template argument deduction/substitution failed:
+main.cpp:162:25: error: invalid use of incomplete type 'struct std::tuple_element<0ul, std::tuple<> >'
+                         not std::is_same<
+                         ^
+In file included from /usr/local/include/c++/5.1.0/tuple:38:0,
+                 from /usr/local/include/c++/5.1.0/functional:55,
+                 from /usr/local/include/c++/5.1.0/memory:79,
+                 from main.cpp:2:
+/usr/local/include/c++/5.1.0/utility:85:11: note: declaration of 'struct std::tuple_element<0ul, std::tuple<> >'
+     class tuple_element;
+           ^
