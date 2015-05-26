@@ -1,0 +1,55 @@
+<vec>
+  <try>"f",111,222,333,"ref_type","spc","type","lan","name","scop"\n</try>
+  <start>
+    <try>"f",111,222,333,"ref_type","spc","type","lan","name","scop"\n</try>
+    <quoted_string>
+      <try>"f",111,222,333,"ref_type","spc","type","lan","name","scop"\n</try>
+      <success>,111,222,333,"ref_type","spc","type","lan","name","scop"\n</success>
+      <attributes>[[f]]</attributes>
+    </quoted_string>
+    <quoted_string>
+      <try>"ref_type","spc","type","lan","name","scop"\n</try>
+      <success>,"spc","type","lan","name","scop"\n</success>
+      <attributes>[[r, e, f, _, t, y, p, e]]</attributes>
+    </quoted_string>
+    <quoted_string>
+      <try>"spc","type","lan","name","scop"\n</try>
+      <success>,"type","lan","name","scop"\n</success>
+      <attributes>[[s, p, c]]</attributes>
+    </quoted_string>
+    <quoted_string>
+      <try>"type","lan","name","scop"\n</try>
+      <success>,"lan","name","scop"\n</success>
+      <attributes>[[t, y, p, e]]</attributes>
+    </quoted_string>
+    <quoted_string>
+      <try>"lan","name","scop"\n</try>
+      <success>,"name","scop"\n</success>
+      <attributes>[[l, a, n]]</attributes>
+    </quoted_string>
+    <quoted_string>
+      <try>"name","scop"\n</try>
+      <success>,"scop"\n</success>
+      <attributes>[[n, a, m, e]]</attributes>
+    </quoted_string>
+    <quoted_string>
+      <try>"scop"\n</try>
+      <success>\n</success>
+      <attributes>[[s, c, o, p]]</attributes>
+    </quoted_string>
+    <success>\n</success>
+    <attributes>[[[f], 111, 222, 333, [r, e, f, _, t, y, p, e], [s, p, c], [t, y, p, e], [l, a, n], [n, a, m, e], [s, c, o, p]]]</attributes>
+  </start>
+  <start>
+    <try></try>
+    <quoted_string>
+      <try></try>
+      <fail/>
+    </quoted_string>
+    <fail/>
+  </start>
+  <success>\n</success>
+  <attributes>[[[[f], 111, 222, 333, [r, e, f, _, t, y, p, e], [s, p, c], [t, y, p, e], [l, a, n], [n, a, m, e], [s, c, o, p]]]]</attributes>
+</vec>
+(f 111 222 333 ref_type spc type lan name scop)
+success!
