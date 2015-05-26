@@ -1,0 +1,4 @@
+total 12
+-rwxr-xr-x 1 2001 2000 6794 May 26 21:18 a.out
+-rw-r--r-- 1 2001 2000    0 May 26 21:18 foo
+-rw-rw-rw- 1 2001 2000  111 May 26 21:18 main.cpp
