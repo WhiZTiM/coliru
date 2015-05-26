@@ -1,0 +1,426 @@
+main.cpp:43:27: error: too many arguments provided to function-like macro invocation
+                          (unsigned long long, offset),
+                          ^
+/usr/local/include/boost/fusion/adapted/struct/adapt_struct.hpp:54:9: note: macro 'BOOST_FUSION_ADAPT_STRUCT' defined here
+#define BOOST_FUSION_ADAPT_STRUCT(NAME, ATTRIBUTES)                             \
+        ^
+main.cpp:42:1: error: unknown type name 'BOOST_FUSION_ADAPT_STRUCT'
+BOOST_FUSION_ADAPT_STRUCT(frontend::cursor, (std::string, file),
+^
+main.cpp:51:1: error: expected unqualified-id
+namespace frontend {
+^
+In file included from main.cpp:13:
+In file included from /usr/local/include/boost/fusion/adapted.hpp:18:
+In file included from /usr/local/include/boost/fusion/adapted/struct.hpp:18:
+In file included from /usr/local/include/boost/fusion/adapted/struct/define_assoc_struct.hpp:13:
+In file included from /usr/local/include/boost/fusion/adapted/struct/detail/define_struct.hpp:13:
+In file included from /usr/local/include/boost/fusion/sequence/intrinsic/begin.hpp:18:
+In file included from /usr/local/include/boost/fusion/sequence/intrinsic/detail/segmented_begin.hpp:13:
+In file included from /usr/local/include/boost/fusion/view/iterator_range.hpp:11:
+In file included from /usr/local/include/boost/fusion/view/iterator_range/iterator_range.hpp:22:
+In file included from /usr/local/include/boost/fusion/view/iterator_range/detail/segments_impl.hpp:14:
+In file included from /usr/local/include/boost/fusion/view/iterator_range/detail/segmented_iterator_range.hpp:20:
+In file included from /usr/local/include/boost/fusion/algorithm/transformation/push_back.hpp:12:
+In file included from /usr/local/include/boost/fusion/view/joint_view/joint_view.hpp:16:
+/usr/local/include/boost/fusion/sequence/intrinsic/size.hpp:34:49: error: no type named 'size' in 'frontend::cursor'
+            struct unsegmented_size : Sequence::size {};
+                                      ~~~~~~~~~~^~~~
+/usr/local/include/boost/fusion/sequence/intrinsic/size.hpp:38:17: note: in instantiation of template class 'boost::fusion::extension::size_impl<boost::fusion::non_fusion_tag>::unsegmented_size<frontend::cursor>' requested here
+              : mpl::if_<
+                ^
+/usr/local/include/boost/fusion/sequence/intrinsic/size.hpp:70:15: note: in instantiation of template class 'boost::fusion::extension::size_impl<boost::fusion::non_fusion_tag>::apply<frontend::cursor>' requested here
+            : extension::size_impl<typename detail::tag_of<Sequence>::type>::
+              ^
+/usr/local/include/boost/fusion/container/vector/convert.hpp:24:59: note: in instantiation of template class 'boost::fusion::result_of::size<frontend::cursor>' requested here
+            typedef typename detail::as_vector<result_of::size<Sequence>::value> gen;
+                                                          ^
+/usr/local/include/boost/fusion/container/vector/convert.hpp:33:32: note: in instantiation of template class 'boost::fusion::result_of::as_vector<frontend::cursor>' requested here
+    inline typename result_of::as_vector<Sequence>::type
+                               ^
+main.cpp:99:26: note: while substituting deduced template arguments into function template 'as_vector' [with Sequence = frontend::cursor]
+            std::cout << boost::fusion::as_vector(c) << std::endl;
+                         ^
+In file included from main.cpp:13:
+In file included from /usr/local/include/boost/fusion/adapted.hpp:18:
+In file included from /usr/local/include/boost/fusion/adapted/struct.hpp:18:
+In file included from /usr/local/include/boost/fusion/adapted/struct/define_assoc_struct.hpp:13:
+In file included from /usr/local/include/boost/fusion/adapted/struct/detail/define_struct.hpp:13:
+In file included from /usr/local/include/boost/fusion/sequence/intrinsic/begin.hpp:18:
+In file included from /usr/local/include/boost/fusion/sequence/intrinsic/detail/segmented_begin.hpp:13:
+In file included from /usr/local/include/boost/fusion/view/iterator_range.hpp:11:
+In file included from /usr/local/include/boost/fusion/view/iterator_range/iterator_range.hpp:22:
+In file included from /usr/local/include/boost/fusion/view/iterator_range/detail/segments_impl.hpp:14:
+In file included from /usr/local/include/boost/fusion/view/iterator_range/detail/segmented_iterator_range.hpp:20:
+In file included from /usr/local/include/boost/fusion/algorithm/transformation/push_back.hpp:12:
+In file included from /usr/local/include/boost/fusion/view/joint_view/joint_view.hpp:16:
+/usr/local/include/boost/fusion/sequence/intrinsic/size.hpp:75:39: error: no type named 'type' in 'boost::fusion::extension::size_impl<boost::fusion::non_fusion_tag>::apply<frontend::cursor>'
+            template apply<Sequence>::type size_application;
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~
+/usr/local/include/boost/fusion/container/vector/convert.hpp:24:59: note: in instantiation of template class 'boost::fusion::result_of::size<frontend::cursor>' requested here
+            typedef typename detail::as_vector<result_of::size<Sequence>::value> gen;
+                                                          ^
+/usr/local/include/boost/fusion/container/vector/convert.hpp:33:32: note: in instantiation of template class 'boost::fusion::result_of::as_vector<frontend::cursor>' requested here
+    inline typename result_of::as_vector<Sequence>::type
+                               ^
+main.cpp:99:26: note: while substituting deduced template arguments into function template 'as_vector' [with Sequence = frontend::cursor]
+            std::cout << boost::fusion::as_vector(c) << std::endl;
+                         ^
+In file included from main.cpp:13:
+In file included from /usr/local/include/boost/fusion/adapted.hpp:18:
+In file included from /usr/local/include/boost/fusion/adapted/struct.hpp:18:
+In file included from /usr/local/include/boost/fusion/adapted/struct/define_assoc_struct.hpp:13:
+In file included from /usr/local/include/boost/fusion/adapted/struct/detail/define_struct.hpp:13:
+In file included from /usr/local/include/boost/fusion/sequence/intrinsic/begin.hpp:18:
+In file included from /usr/local/include/boost/fusion/sequence/intrinsic/detail/segmented_begin.hpp:13:
+In file included from /usr/local/include/boost/fusion/view/iterator_range.hpp:11:
+In file included from /usr/local/include/boost/fusion/view/iterator_range/iterator_range.hpp:22:
+In file included from /usr/local/include/boost/fusion/view/iterator_range/detail/segments_impl.hpp:14:
+In file included from /usr/local/include/boost/fusion/view/iterator_range/detail/segmented_iterator_range.hpp:20:
+In file included from /usr/local/include/boost/fusion/algorithm/transformation/push_back.hpp:12:
+In file included from /usr/local/include/boost/fusion/view/joint_view/joint_view.hpp:16:
+/usr/local/include/boost/fusion/sequence/intrinsic/size.hpp:34:49: error: no type named 'size' in 'frontend::cursor'
+            struct unsegmented_size : Sequence::size {};
+                                      ~~~~~~~~~~^~~~
+/usr/local/include/boost/fusion/sequence/intrinsic/size.hpp:38:17: note: in instantiation of template class 'boost::fusion::extension::size_impl<boost::fusion::non_fusion_tag>::unsegmented_size<const frontend::cursor>' requested here
+              : mpl::if_<
+                ^
+/usr/local/include/boost/fusion/sequence/intrinsic/size.hpp:70:15: note: in instantiation of template class 'boost::fusion::extension::size_impl<boost::fusion::non_fusion_tag>::apply<const frontend::cursor>' requested here
+            : extension::size_impl<typename detail::tag_of<Sequence>::type>::
+              ^
+/usr/local/include/boost/fusion/container/vector/convert.hpp:24:59: note: in instantiation of template class 'boost::fusion::result_of::size<const frontend::cursor>' requested here
+            typedef typename detail::as_vector<result_of::size<Sequence>::value> gen;
+                                                          ^
+/usr/local/include/boost/fusion/container/vector/convert.hpp:42:32: note: in instantiation of template class 'boost::fusion::result_of::as_vector<const frontend::cursor>' requested here
+    inline typename result_of::as_vector<Sequence const>::type
+                               ^
+main.cpp:99:26: note: while substituting deduced template arguments into function template 'as_vector' [with Sequence = frontend::cursor]
+            std::cout << boost::fusion::as_vector(c) << std::endl;
+                         ^
+In file included from main.cpp:13:
+In file included from /usr/local/include/boost/fusion/adapted.hpp:18:
+In file included from /usr/local/include/boost/fusion/adapted/struct.hpp:18:
+In file included from /usr/local/include/boost/fusion/adapted/struct/define_assoc_struct.hpp:13:
+In file included from /usr/local/include/boost/fusion/adapted/struct/detail/define_struct.hpp:13:
+In file included from /usr/local/include/boost/fusion/sequence/intrinsic/begin.hpp:18:
+In file included from /usr/local/include/boost/fusion/sequence/intrinsic/detail/segmented_begin.hpp:13:
+In file included from /usr/local/include/boost/fusion/view/iterator_range.hpp:11:
+In file included from /usr/local/include/boost/fusion/view/iterator_range/iterator_range.hpp:22:
+In file included from /usr/local/include/boost/fusion/view/iterator_range/detail/segments_impl.hpp:14:
+In file included from /usr/local/include/boost/fusion/view/iterator_range/detail/segmented_iterator_range.hpp:20:
+In file included from /usr/local/include/boost/fusion/algorithm/transformation/push_back.hpp:12:
+In file included from /usr/local/include/boost/fusion/view/joint_view/joint_view.hpp:16:
+/usr/local/include/boost/fusion/sequence/intrinsic/size.hpp:75:39: error: no type named 'type' in 'boost::fusion::extension::size_impl<boost::fusion::non_fusion_tag>::apply<const frontend::cursor>'
+            template apply<Sequence>::type size_application;
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~
+/usr/local/include/boost/fusion/container/vector/convert.hpp:24:59: note: in instantiation of template class 'boost::fusion::result_of::size<const frontend::cursor>' requested here
+            typedef typename detail::as_vector<result_of::size<Sequence>::value> gen;
+                                                          ^
+/usr/local/include/boost/fusion/container/vector/convert.hpp:42:32: note: in instantiation of template class 'boost::fusion::result_of::as_vector<const frontend::cursor>' requested here
+    inline typename result_of::as_vector<Sequence const>::type
+                               ^
+main.cpp:99:26: note: while substituting deduced template arguments into function template 'as_vector' [with Sequence = frontend::cursor]
+            std::cout << boost::fusion::as_vector(c) << std::endl;
+                         ^
+main.cpp:99:26: error: no matching function for call to 'as_vector'
+            std::cout << boost::fusion::as_vector(c) << std::endl;
+                         ^~~~~~~~~~~~~~~~~~~~~~~~
+/usr/local/include/boost/fusion/container/vector/convert.hpp:34:5: note: candidate template ignored: substitution failure [with Sequence = frontend::cursor]
+    as_vector(Sequence& seq)
+    ^
+/usr/local/include/boost/fusion/container/vector/convert.hpp:43:5: note: candidate template ignored: substitution failure [with Sequence = frontend::cursor]
+    as_vector(Sequence const& seq)
+    ^
+In file included from main.cpp:15:
+In file included from /usr/local/include/boost/spirit/include/qi.hpp:16:
+In file included from /usr/local/include/boost/spirit/home/qi.hpp:16:
+In file included from /usr/local/include/boost/spirit/home/qi/auxiliary.hpp:19:
+In file included from /usr/local/include/boost/spirit/home/qi/auxiliary/attr.hpp:18:
+/usr/local/include/boost/spirit/home/qi/detail/assign_to.hpp:152:20: error: no matching conversion for static_cast from 'const std::__cxx11::basic_string<char>' to 'frontend::cursor'
+            attr = static_cast<Attribute>(val);
+                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/local/include/boost/spirit/home/qi/detail/assign_to.hpp:170:13: note: in instantiation of function template specialization 'boost::spirit::traits::assign_to_attribute_from_value<frontend::cursor, std::__cxx11::basic_string<char>, void>::call<std::__cxx11::basic_string<char> >' requested here
+            call(val, attr, is_one_element_sequence());
+            ^
+/usr/local/include/boost/spirit/home/qi/detail/assign_to.hpp:359:59: note: in instantiation of member function 'boost::spirit::traits::assign_to_attribute_from_value<frontend::cursor, std::__cxx11::basic_string<char>, void>::call' requested here
+            assign_to_attribute_from_value<Attribute, T>::call(val, attr);
+                                                          ^
+/usr/local/include/boost/spirit/home/qi/detail/assign_to.hpp:382:17: note: in instantiation of function template specialization 'boost::spirit::traits::detail::assign_to<std::__cxx11::basic_string<char>, frontend::cursor>' requested here
+        detail::assign_to(val, attr, is_not_wrapped_container());
+                ^
+/usr/local/include/boost/spirit/home/qi/detail/attributes.hpp:27:21: note: in instantiation of function template specialization 'boost::spirit::traits::assign_to<std::__cxx11::basic_string<char>, frontend::cursor>' requested here
+            traits::assign_to(attr, val);
+                    ^
+/usr/local/include/boost/spirit/home/qi/detail/attributes.hpp:165:71: note: in instantiation of member function 'boost::spirit::qi::default_transform_attribute<frontend::cursor, std::__cxx11::basic_string<char> >::post' requested here
+        return transform_attribute<Exposed, Transformed, qi::domain>::post(dest, attr);
+                                                                      ^
+/usr/local/include/boost/spirit/home/qi/nonterminal/rule.hpp:308:29: note: (skipping 12 contexts in backtrace; use -ftemplate-backtrace-limit=0 to see all)
+                    traits::post_transform(attr_param, attr_);
+                            ^
+/usr/local/include/boost/function/function_template.hpp:1126:5: note: in instantiation of function template specialization 'boost::function<bool (boost::spirit::basic_istream_iterator<char, std::char_traits<char> > &, const boost::spirit::basic_istream_iterator<char, std::char_traits<char> > &, boost::spirit::context<boost::fusion::cons<frontend::cursor &, boost::fusion::nil_>, boost::fusion::vector0<void> > &, const boost::spirit::qi::char_class<boost::spirit::tag::char_code<boost::spirit::tag::blank, boost::spirit::char_encoding::standard> > &)>::function<boost::spirit::qi::detail::parser_binder<boost::spirit::qi::sequence<boost::fusion::cons<boost::spirit::qi::reference<const boost::spirit::qi::rule<boost::spirit::basic_istream_iterator<char, std::char_traits<char> >, std::__cxx11::basic_string<char> (), boost::proto::exprns_::expr<boost::proto::tagns_::tag::terminal, boost::proto::argsns_::term<boost::spirit::tag::char_code<boost::spirit::tag::blank, boost::spirit::char_encoding::standard> >, 0>, boost::spirit::unused_type, boost::spirit::unused_type> >, boost::fusion::cons<boost::spirit::qi::literal_char<boost::spirit::char_encoding::standard, true, false>, boost::fusion::cons<boost::spirit::qi::any_uint_parser<unsigned int, 10, 1, -1>, boost::fusion::cons<boost::spirit::qi::literal_char<boost::spirit::char_encoding::standard, true, false>, boost::fusion::cons<boost::spirit::qi::any_uint_parser<unsigned int, 10, 1, -1>, boost::fusion::cons<boost::spirit::qi::literal_char<boost::spirit::char_encoding::standard, true, false>, boost::fusion::cons<boost::spirit::qi::any_uint_parser<unsigned int, 10, 1, -1>, boost::fusion::cons<boost::spirit::qi::literal_char<boost::spirit::char_encoding::standard, true, false>, boost::fusion::cons<boost::spirit::qi::reference<const boost::spirit::qi::rule<boost::spirit::basic_istream_iterator<char, std::char_traits<char> >, std::__cxx11::basic_string<char> (), boost::proto::exprns_::expr<boost::proto::tagns_::tag::terminal, boost::proto::argsns_::term<boost::spirit::tag::char_code<boost::spirit::tag::blank, boost::spirit::char_encoding::standard> >, 0>, boost::spirit::unused_type, boost::spirit::unused_type> >, boost::fusion::cons<boost::spirit::qi::literal_char<boost::spirit::char_encoding::standard, true, false>, boost::fusion::cons<boost::spirit::qi::reference<const boost::spirit::qi::rule<boost::spirit::basic_istream_iterator<char, std::char_traits<char> >, std::__cxx11::basic_string<char> (), boost::proto::exprns_::expr<boost::proto::tagns_::tag::terminal, boost::proto::argsns_::term<boost::spirit::tag::char_code<boost::spirit::tag::blank, boost::spirit::char_encoding::standard> >, 0>, boost::spirit::unused_type, boost::spirit::unused_type> >, boost::fusion::cons<boost::spirit::qi::literal_char<boost::spirit::char_encoding::standard, true, false>, boost::fusion::cons<boost::spirit::qi::reference<const boost::spirit::qi::rule<boost::spirit::basic_istream_iterator<char, std::char_traits<char> >, std::__cxx11::basic_string<char> (), boost::proto::exprns_::expr<boost::proto::tagns_::tag::terminal, boost::proto::argsns_::term<boost::spirit::tag::char_code<boost::spirit::tag::blank, boost::spirit::char_encoding::standard> >, 0>, boost::spirit::unused_type, boost::spirit::unused_type> >, boost::fusion::cons<boost::spirit::qi::literal_char<boost::spirit::char_encoding::standard, true, false>, boost::fusion::cons<boost::spirit::qi::reference<const boost::spirit::qi::rule<boost::spirit::basic_istream_iterator<char, std::char_traits<char> >, std::__cxx11::basic_string<char> (), boost::proto::exprns_::expr<boost::proto::tagns_::tag::terminal, boost::proto::argsns_::term<boost::spirit::tag::char_code<boost::spirit::tag::blank, boost::spirit::char_encoding::standard> >, 0>, boost::spirit::unused_type, boost::spirit::unused_type> >, boost::fusion::cons<boost::spirit::qi::literal_char<boost::spirit::char_encoding::standard, true, false>, boost::fusion::cons<boost::spirit::qi::reference<const boost::spirit::qi::rule<boost::spirit::basic_istream_iterator<char, std::char_traits<char> >, std::__cxx11::basic_string<char> (), boost::proto::exprns_::expr<boost::proto::tagns_::tag::terminal, boost::proto::argsns_::term<boost::spirit::tag::char_code<boost::spirit::tag::blank, boost::spirit::char_encoding::standard> >, 0>, boost::spirit::unused_type, boost::spirit::unused_type> >, boost::fusion::cons<boost::spirit::qi::literal_char<boost::spirit::char_encoding::standard, true, false>, boost::fusion::cons<boost::spirit::qi::reference<const boost::spirit::qi::rule<boost::spirit::basic_istream_iterator<char, std::char_traits<char> >, std::__cxx11::basic_string<char> (), boost::proto::exprns_::expr<boost::proto::tagns_::tag::terminal, boost::proto::argsns_::term<boost::spirit::tag::char_code<boost::spirit::tag::blank, boost::spirit::char_encoding::standard> >, 0>, boost::spirit::unused_type, boost::spirit::unused_type> >, boost::fusion::nil_> > > > > > > > > > > > > > > > > > > >, mpl_::bool_<true> > >' requested here
+    self_type(f).swap(*this);
+    ^
+/usr/local/include/boost/spirit/home/qi/nonterminal/rule.hpp:183:19: note: in instantiation of function template specialization 'boost::function<bool (boost::spirit::basic_istream_iterator<char, std::char_traits<char> > &, const boost::spirit::basic_istream_iterator<char, std::char_traits<char> > &, boost::spirit::context<boost::fusion::cons<frontend::cursor &, boost::fusion::nil_>, boost::fusion::vector0<void> > &, const boost::spirit::qi::char_class<boost::spirit::tag::char_code<boost::spirit::tag::blank, boost::spirit::char_encoding::standard> > &)>::operator=<boost::spirit::qi::detail::parser_binder<boost::spirit::qi::sequence<boost::fusion::cons<boost::spirit::qi::reference<const boost::spirit::qi::rule<boost::spirit::basic_istream_iterator<char, std::char_traits<char> >, std::__cxx11::basic_string<char> (), boost::proto::exprns_::expr<boost::proto::tagns_::tag::terminal, boost::proto::argsns_::term<boost::spirit::tag::char_code<boost::spirit::tag::blank, boost::spirit::char_encoding::standard> >, 0>, boost::spirit::unused_type, boost::spirit::unused_type> >, boost::fusion::cons<boost::spirit::qi::literal_char<boost::spirit::char_encoding::standard, true, false>, boost::fusion::cons<boost::spirit::qi::any_uint_parser<unsigned int, 10, 1, -1>, boost::fusion::cons<boost::spirit::qi::literal_char<boost::spirit::char_encoding::standard, true, false>, boost::fusion::cons<boost::spirit::qi::any_uint_parser<unsigned int, 10, 1, -1>, boost::fusion::cons<boost::spirit::qi::literal_char<boost::spirit::char_encoding::standard, true, false>, boost::fusion::cons<boost::spirit::qi::any_uint_parser<unsigned int, 10, 1, -1>, boost::fusion::cons<boost::spirit::qi::literal_char<boost::spirit::char_encoding::standard, true, false>, boost::fusion::cons<boost::spirit::qi::reference<const boost::spirit::qi::rule<boost::spirit::basic_istream_iterator<char, std::char_traits<char> >, std::__cxx11::basic_string<char> (), boost::proto::exprns_::expr<boost::proto::tagns_::tag::terminal, boost::proto::argsns_::term<boost::spirit::tag::char_code<boost::spirit::tag::blank, boost::spirit::char_encoding::standard> >, 0>, boost::spirit::unused_type, boost::spirit::unused_type> >, boost::fusion::cons<boost::spirit::qi::literal_char<boost::spirit::char_encoding::standard, true, false>, boost::fusion::cons<boost::spirit::qi::reference<const boost::spirit::qi::rule<boost::spirit::basic_istream_iterator<char, std::char_traits<char> >, std::__cxx11::basic_string<char> (), boost::proto::exprns_::expr<boost::proto::tagns_::tag::terminal, boost::proto::argsns_::term<boost::spirit::tag::char_code<boost::spirit::tag::blank, boost::spirit::char_encoding::standard> >, 0>, boost::spirit::unused_type, boost::spirit::unused_type> >, boost::fusion::cons<boost::spirit::qi::literal_char<boost::spirit::char_encoding::standard, true, false>, boost::fusion::cons<boost::spirit::qi::reference<const boost::spirit::qi::rule<boost::spirit::basic_istream_iterator<char, std::char_traits<char> >, std::__cxx11::basic_string<char> (), boost::proto::exprns_::expr<boost::proto::tagns_::tag::terminal, boost::proto::argsns_::term<boost::spirit::tag::char_code<boost::spirit::tag::blank, boost::spirit::char_encoding::standard> >, 0>, boost::spirit::unused_type, boost::spirit::unused_type> >, boost::fusion::cons<boost::spirit::qi::literal_char<boost::spirit::char_encoding::standard, true, false>, boost::fusion::cons<boost::spirit::qi::reference<const boost::spirit::qi::rule<boost::spirit::basic_istream_iterator<char, std::char_traits<char> >, std::__cxx11::basic_string<char> (), boost::proto::exprns_::expr<boost::proto::tagns_::tag::terminal, boost::proto::argsns_::term<boost::spirit::tag::char_code<boost::spirit::tag::blank, boost::spirit::char_encoding::standard> >, 0>, boost::spirit::unused_type, boost::spirit::unused_type> >, boost::fusion::cons<boost::spirit::qi::literal_char<boost::spirit::char_encoding::standard, true, false>, boost::fusion::cons<boost::spirit::qi::reference<const boost::spirit::qi::rule<boost::spirit::basic_istream_iterator<char, std::char_traits<char> >, std::__cxx11::basic_string<char> (), boost::proto::exprns_::expr<boost::proto::tagns_::tag::terminal, boost::proto::argsns_::term<boost::spirit::tag::char_code<boost::spirit::tag::blank, boost::spirit::char_encoding::standard> >, 0>, boost::spirit::unused_type, boost::spirit::unused_type> >, boost::fusion::cons<boost::spirit::qi::literal_char<boost::spirit::char_encoding::standard, true, false>, boost::fusion::cons<boost::spirit::qi::reference<const boost::spirit::qi::rule<boost::spirit::basic_istream_iterator<char, std::char_traits<char> >, std::__cxx11::basic_string<char> (), boost::proto::exprns_::expr<boost::proto::tagns_::tag::terminal, boost::proto::argsns_::term<boost::spirit::tag::char_code<boost::spirit::tag::blank, boost::spirit::char_encoding::standard> >, 0>, boost::spirit::unused_type, boost::spirit::unused_type> >, boost::fusion::nil_> > > > > > > > > > > > > > > > > > > >, mpl_::bool_<true> > >' requested here
+            lhs.f = detail::bind_parser<Auto>(
+                  ^
+/usr/local/include/boost/spirit/home/qi/nonterminal/rule.hpp:247:13: note: in instantiation of function template specialization 'boost::spirit::qi::rule<boost::spirit::basic_istream_iterator<char, std::char_traits<char> >, frontend::cursor (), boost::proto::exprns_::expr<boost::proto::tagns_::tag::terminal, boost::proto::argsns_::term<boost::spirit::tag::char_code<boost::spirit::tag::blank, boost::spirit::char_encoding::standard> >, 0>, boost::spirit::unused_type, boost::spirit::unused_type>::define<mpl_::bool_<true>, boost::proto::exprns_::expr<boost::proto::tagns_::tag::shift_right, boost::proto::argsns_::list2<const boost::proto::exprns_::expr<boost::proto::tagns_::tag::shift_right, boost::proto::argsns_::list2<const boost::proto::exprns_::expr<boost::proto::tagns_::tag::shift_right, boost::proto::argsns_::list2<const boost::proto::exprns_::expr<boost::proto::tagns_::tag::shift_right, boost::proto::argsns_::list2<const boost::proto::exprns_::expr<boost::proto::tagns_::tag::shift_right, boost::proto::argsns_::list2<const boost::proto::exprns_::expr<boost::proto::tagns_::tag::shift_right, boost::proto::argsns_::list2<const boost::proto::exprns_::expr<boost::proto::tagns_::tag::shift_right, boost::proto::argsns_::list2<const boost::proto::exprns_::expr<boost::proto::tagns_::tag::shift_right, boost::proto::argsns_::list2<const boost::proto::exprns_::expr<boost::proto::tagns_::tag::shift_right, boost::proto::argsns_::list2<const boost::proto::exprns_::expr<boost::proto::tagns_::tag::shift_right, boost::proto::argsns_::list2<const boost::proto::exprns_::expr<boost::proto::tagns_::tag::shift_right, boost::proto::argsns_::list2<const boost::proto::exprns_::expr<boost::proto::tagns_::tag::shift_right, boost::proto::argsns_::list2<const boost::proto::exprns_::expr<boost::proto::tagns_::tag::shift_right, boost::proto::argsns_::list2<const boost::proto::exprns_::expr<boost::proto::tagns_::tag::shift_right, boost::proto::argsns_::list2<const boost::proto::exprns_::expr<boost::proto::tagns_::tag::shift_right, boost::proto::argsns_::list2<const boost::proto::exprns_::expr<boost::proto::tagns_::tag::shift_right, boost::proto::argsns_::list2<const boost::proto::exprns_::expr<boost::proto::tagns_::tag::shift_right, boost::proto::argsns_::list2<const boost::proto::exprns_::expr<boost::proto::tagns_::tag::shift_right, boost::proto::argsns_::list2<boost::spirit::qi::rule<boost::spirit::basic_istream_iterator<char, std::char_traits<char> >, std::__cxx11::basic_string<char> (), boost::proto::exprns_::expr<boost::proto::tagns_::tag::terminal, boost::proto::argsns_::term<boost::spirit::tag::char_code<boost::spirit::tag::blank, boost::spirit::char_encoding::standard> >, 0>, boost::spirit::unused_type, boost::spirit::unused_type> &, boost::proto::exprns_::expr<boost::proto::tagns_::tag::terminal, boost::proto::argsns_::term<const char &>, 0> >, 2> &, const boost::spirit::terminal<boost::spirit::tag::uint_> &>, 2> &, boost::proto::exprns_::expr<boost::proto::tagns_::tag::terminal, boost::proto::argsns_::term<const char &>, 0> >, 2> &, const boost::spirit::terminal<boost::spirit::tag::uint_> &>, 2> &, boost::proto::exprns_::expr<boost::proto::tagns_::tag::terminal, boost::proto::argsns_::term<const char &>, 0> >, 2> &, const boost::spirit::terminal<boost::spirit::tag::uint_> &>, 2> &, boost::proto::exprns_::expr<boost::proto::tagns_::tag::terminal, boost::proto::argsns_::term<const char &>, 0> >, 2> &, boost::spirit::qi::rule<boost::spirit::basic_istream_iterator<char, std::char_traits<char> >, std::__cxx11::basic_string<char> (), boost::proto::exprns_::expr<boost::proto::tagns_::tag::terminal, boost::proto::argsns_::term<boost::spirit::tag::char_code<boost::spirit::tag::blank, boost::spirit::char_encoding::standard> >, 0>, boost::spirit::unused_type, boost::spirit::unused_type> &>, 2> &, boost::proto::exprns_::expr<boost::proto::tagns_::tag::terminal, boost::proto::argsns_::term<const char &>, 0> >, 2> &, boost::spirit::qi::rule<boost::spirit::basic_istream_iterator<char, std::char_traits<char> >, std::__cxx11::basic_string<char> (), boost::proto::exprns_::expr<boost::proto::tagns_::tag::terminal, boost::proto::argsns_::term<boost::spirit::tag::char_code<boost::spirit::tag::blank, boost::spirit::char_encoding::standard> >, 0>, boost::spirit::unused_type, boost::spirit::unused_type> &>, 2> &, boost::proto::exprns_::expr<boost::proto::tagns_::tag::terminal, boost::proto::argsns_::term<const char &>, 0> >, 2> &, boost::spirit::qi::rule<boost::spirit::basic_istream_iterator<char, std::char_traits<char> >, std::__cxx11::basic_string<char> (), boost::proto::exprns_::expr<boost::proto::tagns_::tag::terminal, boost::proto::argsns_::term<boost::spirit::tag::char_code<boost::spirit::tag::blank, boost::spirit::char_encoding::standard> >, 0>, boost::spirit::unused_type, boost::spirit::unused_type> &>, 2> &, boost::proto::exprns_::expr<boost::proto::tagns_::tag::terminal, boost::proto::argsns_::term<const char &>, 0> >, 2> &, boost::spirit::qi::rule<boost::spirit::basic_istream_iterator<char, std::char_traits<char> >, std::__cxx11::basic_string<char> (), boost::proto::exprns_::expr<boost::proto::tagns_::tag::terminal, boost::proto::argsns_::term<boost::spirit::tag::char_code<boost::spirit::tag::blank, boost::spirit::char_encoding::standard> >, 0>, boost::spirit::unused_type, boost::spirit::unused_type> &>, 2> &, boost::proto::exprns_::expr<boost::proto::tagns_::tag::terminal, boost::proto::argsns_::term<const char &>, 0> >, 2> &, boost::spirit::qi::rule<boost::spirit::basic_istream_iterator<char, std::char_traits<char> >, std::__cxx11::basic_string<char> (), boost::proto::exprns_::expr<boost::proto::tagns_::tag::terminal, boost::proto::argsns_::term<boost::spirit::tag::char_code<boost::spirit::tag::blank, boost::spirit::char_encoding::standard> >, 0>, boost::spirit::unused_type, boost::spirit::unused_type> &>, 2> &, boost::proto::exprns_::expr<boost::proto::tagns_::tag::terminal, boost::proto::argsns_::term<const char &>, 0> >, 2> &, boost::spirit::qi::rule<boost::spirit::basic_istream_iterator<char, std::char_traits<char> >, std::__cxx11::basic_string<char> (), boost::proto::exprns_::expr<boost::proto::tagns_::tag::terminal, boost::proto::argsns_::term<boost::spirit::tag::char_code<boost::spirit::tag::blank, boost::spirit::char_encoding::standard> >, 0>, boost::spirit::unused_type, boost::spirit::unused_type> &>, 2> >' requested here
+            define<mpl::true_>(r, expr, traits::matches<qi::domain, Expr>());
+            ^
+main.cpp:64:19: note: in instantiation of function template specialization 'boost::spirit::qi::operator%=<const boost::proto::exprns_::expr<boost::proto::tagns_::tag::shift_right, boost::proto::argsns_::list2<const boost::proto::exprns_::expr<boost::proto::tagns_::tag::shift_right, boost::proto::argsns_::list2<const boost::proto::exprns_::expr<boost::proto::tagns_::tag::shift_right, boost::proto::argsns_::list2<const boost::proto::exprns_::expr<boost::proto::tagns_::tag::shift_right, boost::proto::argsns_::list2<const boost::proto::exprns_::expr<boost::proto::tagns_::tag::shift_right, boost::proto::argsns_::list2<const boost::proto::exprns_::expr<boost::proto::tagns_::tag::shift_right, boost::proto::argsns_::list2<const boost::proto::exprns_::expr<boost::proto::tagns_::tag::shift_right, boost::proto::argsns_::list2<const boost::proto::exprns_::expr<boost::proto::tagns_::tag::shift_right, boost::proto::argsns_::list2<const boost::proto::exprns_::expr<boost::proto::tagns_::tag::shift_right, boost::proto::argsns_::list2<const boost::proto::exprns_::expr<boost::proto::tagns_::tag::shift_right, boost::proto::argsns_::list2<const boost::proto::exprns_::expr<boost::proto::tagns_::tag::shift_right, boost::proto::argsns_::list2<const boost::proto::exprns_::expr<boost::proto::tagns_::tag::shift_right, boost::proto::argsns_::list2<const boost::proto::exprns_::expr<boost::proto::tagns_::tag::shift_right, boost::proto::argsns_::list2<const boost::proto::exprns_::expr<boost::proto::tagns_::tag::shift_right, boost::proto::argsns_::list2<const boost::proto::exprns_::expr<boost::proto::tagns_::tag::shift_right, boost::proto::argsns_::list2<const boost::proto::exprns_::expr<boost::proto::tagns_::tag::shift_right, boost::proto::argsns_::list2<const boost::proto::exprns_::expr<boost::proto::tagns_::tag::shift_right, boost::proto::argsns_::list2<const boost::proto::exprns_::expr<boost::proto::tagns_::tag::shift_right, boost::proto::argsns_::list2<boost::spirit::qi::rule<boost::spirit::basic_istream_iterator<char, std::char_traits<char> >, std::__cxx11::basic_string<char> (), boost::proto::exprns_::expr<boost::proto::tagns_::tag::terminal, boost::proto::argsns_::term<boost::spirit::tag::char_code<boost::spirit::tag::blank, boost::spirit::char_encoding::standard> >, 0>, boost::spirit::unused_type, boost::spirit::unused_type> &, boost::proto::exprns_::expr<boost::proto::tagns_::tag::terminal, boost::proto::argsns_::term<const char &>, 0> >, 2> &, const boost::spirit::terminal<boost::spirit::tag::uint_> &>, 2> &, boost::proto::exprns_::expr<boost::proto::tagns_::tag::terminal, boost::proto::argsns_::term<const char &>, 0> >, 2> &, const boost::spirit::terminal<boost::spirit::tag::uint_> &>, 2> &, boost::proto::exprns_::expr<boost::proto::tagns_::tag::terminal, boost::proto::argsns_::term<const char &>, 0> >, 2> &, const boost::spirit::terminal<boost::spirit::tag::uint_> &>, 2> &, boost::proto::exprns_::expr<boost::proto::tagns_::tag::terminal, boost::proto::argsns_::term<const char &>, 0> >, 2> &, boost::spirit::qi::rule<boost::spirit::basic_istream_iterator<char, std::char_traits<char> >, std::__cxx11::basic_string<char> (), boost::proto::exprns_::expr<boost::proto::tagns_::tag::terminal, boost::proto::argsns_::term<boost::spirit::tag::char_code<boost::spirit::tag::blank, boost::spirit::char_encoding::standard> >, 0>, boost::spirit::unused_type, boost::spirit::unused_type> &>, 2> &, boost::proto::exprns_::expr<boost::proto::tagns_::tag::terminal, boost::proto::argsns_::term<const char &>, 0> >, 2> &, boost::spirit::qi::rule<boost::spirit::basic_istream_iterator<char, std::char_traits<char> >, std::__cxx11::basic_string<char> (), boost::proto::exprns_::expr<boost::proto::tagns_::tag::terminal, boost::proto::argsns_::term<boost::spirit::tag::char_code<boost::spirit::tag::blank, boost::spirit::char_encoding::standard> >, 0>, boost::spirit::unused_type, boost::spirit::unused_type> &>, 2> &, boost::proto::exprns_::expr<boost::proto::tagns_::tag::terminal, boost::proto::argsns_::term<const char &>, 0> >, 2> &, boost::spirit::qi::rule<boost::spirit::basic_istream_iterator<char, std::char_traits<char> >, std::__cxx11::basic_string<char> (), boost::proto::exprns_::expr<boost::proto::tagns_::tag::terminal, boost::proto::argsns_::term<boost::spirit::tag::char_code<boost::spirit::tag::blank, boost::spirit::char_encoding::standard> >, 0>, boost::spirit::unused_type, boost::spirit::unused_type> &>, 2> &, boost::proto::exprns_::expr<boost::proto::tagns_::tag::terminal, boost::proto::argsns_::term<const char &>, 0> >, 2> &, boost::spirit::qi::rule<boost::spirit::basic_istream_iterator<char, std::char_traits<char> >, std::__cxx11::basic_string<char> (), boost::proto::exprns_::expr<boost::proto::tagns_::tag::terminal, boost::proto::argsns_::term<boost::spirit::tag::char_code<boost::spirit::tag::blank, boost::spirit::char_encoding::standard> >, 0>, boost::spirit::unused_type, boost::spirit::unused_type> &>, 2> &, boost::proto::exprns_::expr<boost::proto::tagns_::tag::terminal, boost::proto::argsns_::term<const char &>, 0> >, 2> &, boost::spirit::qi::rule<boost::spirit::basic_istream_iterator<char, std::char_traits<char> >, std::__cxx11::basic_string<char> (), boost::proto::exprns_::expr<boost::proto::tagns_::tag::terminal, boost::proto::argsns_::term<boost::spirit::tag::char_code<boost::spirit::tag::blank, boost::spirit::char_encoding::standard> >, 0>, boost::spirit::unused_type, boost::spirit::unused_type> &>, 2> &, boost::proto::exprns_::expr<boost::proto::tagns_::tag::terminal, boost::proto::argsns_::term<const char &>, 0> >, 2> &, boost::spirit::qi::rule<boost::spirit::basic_istream_iterator<char, std::char_traits<char> >, std::__cxx11::basic_string<char> (), boost::proto::exprns_::expr<boost::proto::tagns_::tag::terminal, boost::proto::argsns_::term<boost::spirit::tag::char_code<boost::spirit::tag::blank, boost::spirit::char_encoding::standard> >, 0>, boost::spirit::unused_type, boost::spirit::unused_type> &>, 2> >' requested here
+            start %=
+                  ^
+main.cpp:97:40: note: in instantiation of member function 'frontend::cursor_parser<boost::spirit::basic_istream_iterator<char, std::char_traits<char> > >::cursor_parser' requested here
+    if (phrase_parse(start_in, end_in, frontend::cursor_parser<It>(), frontend::qi::blank, v)) {
+                                       ^
+main.cpp:23:12: note: candidate constructor (the implicit move constructor) not viable: no known conversion from 'const std::__cxx11::basic_string<char>' to 'frontend::cursor' for 1st argument
+    struct cursor {
+           ^
+main.cpp:23:12: note: candidate constructor (the implicit copy constructor) not viable: no known conversion from 'const std::__cxx11::basic_string<char>' to 'const frontend::cursor' for 1st argument
+    struct cursor {
+           ^
+main.cpp:23:12: note: candidate constructor (the implicit default constructor) not viable: requires 0 arguments, but 1 was provided
+In file included from main.cpp:15:
+In file included from /usr/local/include/boost/spirit/include/qi.hpp:16:
+In file included from /usr/local/include/boost/spirit/home/qi.hpp:14:
+In file included from /usr/local/include/boost/spirit/home/qi/action.hpp:14:
+In file included from /usr/local/include/boost/spirit/home/qi/action/action.hpp:16:
+In file included from /usr/local/include/boost/spirit/home/qi/detail/attributes.hpp:12:
+/usr/local/include/boost/spirit/home/support/attributes.hpp:1240:17: error: invalid operands to binary expression ('std::basic_ostream<char>' and 'const frontend::cursor')
+            out << val;
+            ~~~ ^  ~~~
+/usr/local/include/boost/spirit/home/support/attributes.hpp:1256:13: note: in instantiation of function template specialization 'boost::spirit::traits::print_attribute_debug<std::basic_ostream<char>, frontend::cursor, void>::call_impl3<frontend::cursor>' requested here
+            call_impl3(out, val, fusion::traits::is_sequence<T_>());
+            ^
+/usr/local/include/boost/spirit/home/support/attributes.hpp:1291:13: note: in instantiation of function template specialization 'boost::spirit::traits::print_attribute_debug<std::basic_ostream<char>, frontend::cursor, void>::call_impl2<frontend::cursor>' requested here
+            call_impl2(out, val, is_container<T_>());
+            ^
+/usr/local/include/boost/spirit/home/support/attributes.hpp:1297:13: note: in instantiation of function template specialization 'boost::spirit::traits::print_attribute_debug<std::basic_ostream<char>, frontend::cursor, void>::call_impl<frontend::cursor>' requested here
+            call_impl(out, val, not_is_variant<T>());
+            ^
+/usr/local/include/boost/spirit/home/support/attributes.hpp:1317:40: note: in instantiation of member function 'boost::spirit::traits::print_attribute_debug<std::basic_ostream<char>, frontend::cursor, void>::call' requested here
+        print_attribute_debug<Out, T>::call(out, val);
+                                       ^
+/usr/local/include/boost/spirit/home/support/attributes.hpp:1210:33: note: in instantiation of function template specialization 'boost::spirit::traits::print_attribute<std::basic_ostream<char>, frontend::cursor>' requested here
+                spirit::traits::print_attribute(out, val);
+                                ^
+/usr/local/include/boost/fusion/algorithm/iteration/detail/for_each.hpp:35:9: note: (skipping 14 contexts in backtrace; use -ftemplate-backtrace-limit=0 to see all)
+        f(*first);
+        ^
+/usr/local/include/boost/function/function_template.hpp:1071:5: note: in instantiation of function template specialization 'boost::function4<bool, boost::spirit::basic_istream_iterator<char, std::char_traits<char> > &, const boost::spirit::basic_istream_iterator<char, std::char_traits<char> > &, boost::spirit::context<boost::fusion::cons<frontend::cursor &, boost::fusion::nil_>, boost::fusion::vector0<void> > &, const boost::spirit::qi::char_class<boost::spirit::tag::char_code<boost::spirit::tag::blank, boost::spirit::char_encoding::standard> > &>::function4<boost::spirit::qi::debug_handler<boost::spirit::basic_istream_iterator<char, std::char_traits<char> >, boost::spirit::context<boost::fusion::cons<frontend::cursor &, boost::fusion::nil_>, boost::fusion::vector0<void> >, boost::spirit::qi::char_class<boost::spirit::tag::char_code<boost::spirit::tag::blank, boost::spirit::char_encoding::standard> >, boost::spirit::qi::simple_trace> >' requested here
+    base_type(f)
+    ^
+/usr/local/include/boost/function/function_template.hpp:1126:5: note: in instantiation of function template specialization 'boost::function<bool (boost::spirit::basic_istream_iterator<char, std::char_traits<char> > &, const boost::spirit::basic_istream_iterator<char, std::char_traits<char> > &, boost::spirit::context<boost::fusion::cons<frontend::cursor &, boost::fusion::nil_>, boost::fusion::vector0<void> > &, const boost::spirit::qi::char_class<boost::spirit::tag::char_code<boost::spirit::tag::blank, boost::spirit::char_encoding::standard> > &)>::function<boost::spirit::qi::debug_handler<boost::spirit::basic_istream_iterator<char, std::char_traits<char> >, boost::spirit::context<boost::fusion::cons<frontend::cursor &, boost::fusion::nil_>, boost::fusion::vector0<void> >, boost::spirit::qi::char_class<boost::spirit::tag::char_code<boost::spirit::tag::blank, boost::spirit::char_encoding::standard> >, boost::spirit::qi::simple_trace> >' requested here
+    self_type(f).swap(*this);
+    ^
+/usr/local/include/boost/spirit/home/qi/nonterminal/debug_handler.hpp:122:13: note: in instantiation of function template specialization 'boost::function<bool (boost::spirit::basic_istream_iterator<char, std::char_traits<char> > &, const boost::spirit::basic_istream_iterator<char, std::char_traits<char> > &, boost::spirit::context<boost::fusion::cons<frontend::cursor &, boost::fusion::nil_>, boost::fusion::vector0<void> > &, const boost::spirit::qi::char_class<boost::spirit::tag::char_code<boost::spirit::tag::blank, boost::spirit::char_encoding::standard> > &)>::operator=<boost::spirit::qi::debug_handler<boost::spirit::basic_istream_iterator<char, std::char_traits<char> >, boost::spirit::context<boost::fusion::cons<frontend::cursor &, boost::fusion::nil_>, boost::fusion::vector0<void> >, boost::spirit::qi::char_class<boost::spirit::tag::char_code<boost::spirit::tag::blank, boost::spirit::char_encoding::standard> >, boost::spirit::qi::simple_trace> >' requested here
+        r.f = debug_handler(r.f, trace(), r.name());
+            ^
+main.cpp:78:13: note: in instantiation of function template specialization 'boost::spirit::qi::debug<boost::spirit::basic_istream_iterator<char, std::char_traits<char> >, frontend::cursor (), boost::proto::exprns_::expr<boost::proto::tagns_::tag::terminal, boost::proto::argsns_::term<boost::spirit::tag::char_code<boost::spirit::tag::blank, boost::spirit::char_encoding::standard> >, 0>, boost::spirit::unused_type, boost::spirit::unused_type>' requested here
+            BOOST_SPIRIT_DEBUG_NODES((quoted_string)(start)(vec))
+            ^
+/usr/local/include/boost/spirit/home/qi/nonterminal/debug_handler.hpp:142:27: note: expanded from macro 'BOOST_SPIRIT_DEBUG_NODES'
+    BOOST_PP_SEQ_FOR_EACH(BOOST_SPIRIT_DEBUG_NODE_A, _, seq)                    \
+                          ^
+/usr/local/include/boost/preprocessor/seq/for_each.hpp:26:67: note: expanded from macro 'BOOST_PP_SEQ_FOR_EACH'
+#    define BOOST_PP_SEQ_FOR_EACH(macro, data, seq) BOOST_PP_FOR((macro, data, seq (nil)), BOOST_PP_SEQ_FOR_EACH_P, BOOST_PP_SEQ_FOR_EACH_O, BOOST_PP_SEQ_FOR_EACH_M)
+                                                                  ^
+/usr/local/include/boost/preprocessor/repetition/detail/for.hpp:22:78: note: expanded from macro 'BOOST_PP_FOR_1'
+# define BOOST_PP_FOR_1(s, p, o, m) BOOST_PP_FOR_1_C(BOOST_PP_BOOL(p(2, s)), s, p, o, m)
+                                                                             ^
+note: (skipping 8 expansions in backtrace; use -fmacro-backtrace-limit=0 to see all)
+/usr/local/include/boost/preprocessor/seq/for_each.hpp:49:57: note: expanded from macro 'BOOST_PP_SEQ_FOR_EACH_M_I'
+# define BOOST_PP_SEQ_FOR_EACH_M_I(r, macro, data, seq) macro(r, data, BOOST_PP_SEQ_HEAD(seq))
+                                                        ^
+/usr/local/include/boost/spirit/home/qi/nonterminal/debug_handler.hpp:138:5: note: expanded from macro 'BOOST_SPIRIT_DEBUG_NODE_A'
+    BOOST_SPIRIT_DEBUG_NODE(name);                                              \
+    ^
+/usr/local/include/boost/spirit/home/qi/nonterminal/debug_handler.hpp:131:53: note: expanded from macro 'BOOST_SPIRIT_DEBUG_NODE'
+    #define BOOST_SPIRIT_DEBUG_NODE(r)  r.name(#r); debug(r)
+                                                    ^
+main.cpp:97:40: note: in instantiation of member function 'frontend::cursor_parser<boost::spirit::basic_istream_iterator<char, std::char_traits<char> > >::cursor_parser' requested here
+    if (phrase_parse(start_in, end_in, frontend::cursor_parser<It>(), frontend::qi::blank, v)) {
+                                       ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.1.0/../../../../include/c++/5.1.0/ostream:245:7: note: candidate function not viable: no known conversion from 'const frontend::cursor' to 'const void *' for 1st argument; take the address of the argument with &
+      operator<<(const void* __p)
+      ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.1.0/../../../../include/c++/5.1.0/system_error:209:5: note: candidate function [with _CharT = char, _Traits = std::char_traits<char>] not viable: no known conversion from 'const frontend::cursor' to 'const std::error_code' for 2nd argument
+    operator<<(basic_ostream<_CharT, _Traits>& __os, const error_code& __e)
+    ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.1.0/../../../../include/c++/5.1.0/ostream:108:7: note: candidate function not viable: no known conversion from 'const frontend::cursor' to '__ostream_type &(*)(__ostream_type &)' for 1st argument
+      operator<<(__ostream_type& (*__pf)(__ostream_type&))
+      ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.1.0/../../../../include/c++/5.1.0/ostream:117:7: note: candidate function not viable: no known conversion from 'const frontend::cursor' to '__ios_type &(*)(__ios_type &)' for 1st argument
+      operator<<(__ios_type& (*__pf)(__ios_type&))
+      ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.1.0/../../../../include/c++/5.1.0/ostream:127:7: note: candidate function not viable: no known conversion from 'const frontend::cursor' to 'std::ios_base &(*)(std::ios_base &)' for 1st argument
+      operator<<(ios_base& (*__pf) (ios_base&))
+      ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.1.0/../../../../include/c++/5.1.0/ostream:166:7: note: candidate function not viable: no known conversion from 'const frontend::cursor' to 'long' for 1st argument
+      operator<<(long __n)
+      ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.1.0/../../../../include/c++/5.1.0/ostream:170:7: note: candidate function not viable: no known conversion from 'const frontend::cursor' to 'unsigned long' for 1st argument
+      operator<<(unsigned long __n)
+      ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.1.0/../../../../include/c++/5.1.0/ostream:174:7: note: candidate function not viable: no known conversion from 'const frontend::cursor' to 'bool' for 1st argument
+      operator<<(bool __n)
+      ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.1.0/../../../../include/c++/5.1.0/ostream:178:7: note: candidate function not viable: no known conversion from 'const frontend::cursor' to 'short' for 1st argument
+      operator<<(short __n);
+      ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.1.0/../../../../include/c++/5.1.0/ostream:181:7: note: candidate function not viable: no known conversion from 'const frontend::cursor' to 'unsigned short' for 1st argument
+      operator<<(unsigned short __n)
+      ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.1.0/../../../../include/c++/5.1.0/ostream:189:7: note: candidate function not viable: no known conversion from 'const frontend::cursor' to 'int' for 1st argument
+      operator<<(int __n);
+      ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.1.0/../../../../include/c++/5.1.0/ostream:192:7: note: candidate function not viable: no known conversion from 'const frontend::cursor' to 'unsigned int' for 1st argument
+      operator<<(unsigned int __n)
+      ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.1.0/../../../../include/c++/5.1.0/ostream:201:7: note: candidate function not viable: no known conversion from 'const frontend::cursor' to 'long long' for 1st argument
+      operator<<(long long __n)
+      ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.1.0/../../../../include/c++/5.1.0/ostream:205:7: note: candidate function not viable: no known conversion from 'const frontend::cursor' to 'unsigned long long' for 1st argument
+      operator<<(unsigned long long __n)
+      ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.1.0/../../../../include/c++/5.1.0/ostream:220:7: note: candidate function not viable: no known conversion from 'const frontend::cursor' to 'double' for 1st argument
+      operator<<(double __f)
+      ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.1.0/../../../../include/c++/5.1.0/ostream:224:7: note: candidate function not viable: no known conversion from 'const frontend::cursor' to 'float' for 1st argument
+      operator<<(float __f)
+      ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.1.0/../../../../include/c++/5.1.0/ostream:232:7: note: candidate function not viable: no known conversion from 'const frontend::cursor' to 'long double' for 1st argument
+      operator<<(long double __f)
+      ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.1.0/../../../../include/c++/5.1.0/ostream:270:7: note: candidate function not viable: no known conversion from 'const frontend::cursor' to '__streambuf_type *' (aka 'basic_streambuf<char, std::char_traits<char> > *') for 1st argument
+      operator<<(__streambuf_type* __sb);
+      ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.1.0/../../../../include/c++/5.1.0/ostream:502:5: note: candidate function [with _CharT = char, _Traits = std::char_traits<char>] not viable: no known conversion from 'const frontend::cursor' to 'char' for 2nd argument
+    operator<<(basic_ostream<_CharT, _Traits>& __out, char __c)
+    ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.1.0/../../../../include/c++/5.1.0/ostream:508:5: note: candidate function [with _Traits = std::char_traits<char>] not viable: no known conversion from 'const frontend::cursor' to 'char' for 2nd argument
+    operator<<(basic_ostream<char, _Traits>& __out, char __c)
+    ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.1.0/../../../../include/c++/5.1.0/ostream:514:5: note: candidate function [with _Traits = std::char_traits<char>] not viable: no known conversion from 'const frontend::cursor' to 'signed char' for 2nd argument
+    operator<<(basic_ostream<char, _Traits>& __out, signed char __c)
+    ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.1.0/../../../../include/c++/5.1.0/ostream:519:5: note: candidate function [with _Traits = std::char_traits<char>] not viable: no known conversion from 'const frontend::cursor' to 'unsigned char' for 2nd argument
+    operator<<(basic_ostream<char, _Traits>& __out, unsigned char __c)
+    ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.1.0/../../../../include/c++/5.1.0/ostream:556:5: note: candidate function [with _Traits = std::char_traits<char>] not viable: no known conversion from 'const frontend::cursor' to 'const char *' for 2nd argument
+    operator<<(basic_ostream<char, _Traits>& __out, const char* __s)
+    ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.1.0/../../../../include/c++/5.1.0/ostream:569:5: note: candidate function [with _Traits = std::char_traits<char>] not viable: no known conversion from 'const frontend::cursor' to 'const signed char *' for 2nd argument
+    operator<<(basic_ostream<char, _Traits>& __out, const signed char* __s)
+    ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.1.0/../../../../include/c++/5.1.0/ostream:574:5: note: candidate function [with _Traits = std::char_traits<char>] not viable: no known conversion from 'const frontend::cursor' to 'const unsigned char *' for 2nd argument
+    operator<<(basic_ostream<char, _Traits>& __out, const unsigned char* __s)
+    ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.1.0/../../../../include/c++/5.1.0/ostream:628:5: note: candidate function [with _CharT = char, _Traits = std::char_traits<char>, _Tp = frontend::cursor] not viable: no known conversion from 'std::basic_ostream<char>' to 'basic_ostream<char, std::char_traits<char> > &&' for 1st argument
+    operator<<(basic_ostream<_CharT, _Traits>&& __os, const _Tp& __x)
+    ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.1.0/../../../../include/c++/5.1.0/bits/ostream.tcc:321:5: note: candidate function [with _CharT = char, _Traits = std::char_traits<char>] not viable: no known conversion from 'const frontend::cursor' to 'const char *' for 2nd argument
+    operator<<(basic_ostream<_CharT, _Traits>& __out, const char* __s)
+    ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.1.0/../../../../include/c++/5.1.0/bits/random.tcc:1150:5: note: candidate function [with _CharT = char, _Traits = std::char_traits<char>] not viable: no known conversion from 'const frontend::cursor' to 'const std::bernoulli_distribution' for 2nd argument
+    operator<<(std::basic_ostream<_CharT, _Traits>& __os,
+    ^
+/usr/local/include/boost/spirit/home/support/unused.hpp:81:17: note: candidate function [with Out = std::basic_ostream<char>] not viable: no known conversion from 'const frontend::cursor' to 'const detail::unused_only' for 2nd argument
+    inline Out& operator<<(Out& out, detail::unused_only const&)
+                ^
+/usr/local/include/boost/spirit/home/support/info.hpp:150:10: note: candidate function [with Out = std::basic_ostream<char>] not viable: no known conversion from 'const frontend::cursor' to 'const boost::spirit::info' for 2nd argument
+    Out& operator<<(Out& out, info const& what)
+         ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.1.0/../../../../include/c++/5.1.0/ostream:497:5: note: candidate template ignored: deduced conflicting types for parameter '_CharT' ('char' vs. 'frontend::cursor')
+    operator<<(basic_ostream<_CharT, _Traits>& __out, _CharT __c)
+    ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.1.0/../../../../include/c++/5.1.0/bits/basic_string.h:5167:5: note: candidate template ignored: could not match 'basic_string<type-parameter-0-0, type-parameter-0-1, type-parameter-0-2>' against 'const frontend::cursor'
+    operator<<(basic_ostream<_CharT, _Traits>& __os,
+    ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.1.0/../../../../include/c++/5.1.0/ostream:539:5: note: candidate template ignored: could not match 'const _CharT *' against 'frontend::cursor'
+    operator<<(basic_ostream<_CharT, _Traits>& __out, const _CharT* __s)
+    ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.1.0/../../../../include/c++/5.1.0/bits/random.h:1276:5: note: candidate template ignored: could not match 'independent_bits_engine<type-parameter-0-0, __w, type-parameter-0-2>' against 'const frontend::cursor'
+    operator<<(std::basic_ostream<_CharT, _Traits>& __os,
+    ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.1.0/../../../../include/c++/5.1.0/bits/random.tcc:156:5: note: candidate template ignored: could not match 'linear_congruential_engine<type-parameter-0-0, __a, __c, __m>' against 'const frontend::cursor'
+    operator<<(std::basic_ostream<_CharT, _Traits>& __os,
+    ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.1.0/../../../../include/c++/5.1.0/bits/random.tcc:477:5: note: candidate template ignored: could not match 'mersenne_twister_engine<type-parameter-0-0, __w, __n, __m, __r, __a, __u, __d, __s, __b, __t, __c, __l, __f>' against 'const frontend::cursor'
+    operator<<(std::basic_ostream<_CharT, _Traits>& __os,
+    ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.1.0/../../../../include/c++/5.1.0/bits/random.tcc:632:5: note: candidate template ignored: could not match 'subtract_with_carry_engine<type-parameter-0-0, __w, __s, __r>' against 'const frontend::cursor'
+    operator<<(std::basic_ostream<_CharT, _Traits>& __os,
+    ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.1.0/../../../../include/c++/5.1.0/bits/random.tcc:702:5: note: candidate template ignored: could not match 'discard_block_engine<type-parameter-0-0, __p, __r>' against 'const frontend::cursor'
+    operator<<(std::basic_ostream<_CharT, _Traits>& __os,
+    ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.1.0/../../../../include/c++/5.1.0/bits/random.tcc:831:5: note: candidate template ignored: could not match 'shuffle_order_engine<type-parameter-0-0, __k>' against 'const frontend::cursor'
+    operator<<(std::basic_ostream<_CharT, _Traits>& __os,
+    ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.1.0/../../../../include/c++/5.1.0/bits/random.tcc:1029:5: note: candidate template ignored: could not match 'uniform_int_distribution<type-parameter-0-0>' against 'const frontend::cursor'
+    operator<<(std::basic_ostream<_CharT, _Traits>& __os,
+    ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.1.0/../../../../include/c++/5.1.0/bits/random.tcc:1088:5: note: candidate template ignored: could not match 'uniform_real_distribution<type-parameter-0-0>' against 'const frontend::cursor'
+    operator<<(std::basic_ostream<_CharT, _Traits>& __os,
+    ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.1.0/../../../../include/c++/5.1.0/bits/random.tcc:1232:5: note: candidate template ignored: could not match 'geometric_distribution<type-parameter-0-0>' against 'const frontend::cursor'
+    operator<<(std::basic_ostream<_CharT, _Traits>& __os,
+    ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.1.0/../../../../include/c++/5.1.0/bits/random.tcc:1347:5: note: candidate template ignored: could not match 'negative_binomial_distribution<type-parameter-0-0>' against 'const frontend::cursor'
+    operator<<(std::basic_ostream<_CharT, _Traits>& __os,
+    ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.1.0/../../../../include/c++/5.1.0/bits/random.tcc:1552:5: note: candidate template ignored: could not match 'poisson_distribution<type-parameter-0-0>' against 'const frontend::cursor'
+    operator<<(std::basic_ostream<_CharT, _Traits>& __os,
+    ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.1.0/../../../../include/c++/5.1.0/bits/random.tcc:1819:5: note: candidate template ignored: could not match 'binomial_distribution<type-parameter-0-0>' against 'const frontend::cursor'
+    operator<<(std::basic_ostream<_CharT, _Traits>& __os,
+    ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.1.0/../../../../include/c++/5.1.0/bits/random.tcc:1883:5: note: candidate template ignored: could not match 'exponential_distribution<type-parameter-0-0>' against 'const frontend::cursor'
+    operator<<(std::basic_ostream<_CharT, _Traits>& __os,
+    ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.1.0/../../../../include/c++/5.1.0/bits/random.tcc:2050:5: note: candidate template ignored: could not match 'normal_distribution<type-parameter-0-0>' against 'const frontend::cursor'
+    operator<<(std::basic_ostream<_CharT, _Traits>& __os,
+    ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.1.0/../../../../include/c++/5.1.0/bits/random.tcc:2115:5: note: candidate template ignored: could not match 'lognormal_distribution<type-parameter-0-0>' against 'const frontend::cursor'
+    operator<<(std::basic_ostream<_CharT, _Traits>& __os,
+    ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.1.0/../../../../include/c++/5.1.0/bits/random.tcc:2188:5: note: candidate template ignored: could not match 'chi_squared_distribution<type-parameter-0-0>' against 'const frontend::cursor'
+    operator<<(std::basic_ostream<_CharT, _Traits>& __os,
+    ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.1.0/../../../../include/c++/5.1.0/bits/random.tcc:2275:5: note: candidate template ignored: could not match 'cauchy_distribution<type-parameter-0-0>' against 'const frontend::cursor'
+    operator<<(std::basic_ostream<_CharT, _Traits>& __os,
+    ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.1.0/../../../../include/c++/5.1.0/bits/random.tcc:2352:5: note: candidate template ignored: could not match 'fisher_f_distribution<type-parameter-0-0>' against 'const frontend::cursor'
+    operator<<(std::basic_ostream<_CharT, _Traits>& __os,
+    ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.1.0/../../../../include/c++/5.1.0/bits/random.tcc:2427:5: note: candidate template ignored: could not match 'student_t_distribution<type-parameter-0-0>' against 'const frontend::cursor'
+    operator<<(std::basic_ostream<_CharT, _Traits>& __os,
+    ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.1.0/../../../../include/c++/5.1.0/bits/random.tcc:2596:5: note: candidate template ignored: could not match 'gamma_distribution<type-parameter-0-0>' against 'const frontend::cursor'
+    operator<<(std::basic_ostream<_CharT, _Traits>& __os,
+    ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.1.0/../../../../include/c++/5.1.0/bits/random.tcc:2674:5: note: candidate template ignored: could not match 'weibull_distribution<type-parameter-0-0>' against 'const frontend::cursor'
+    operator<<(std::basic_ostream<_CharT, _Traits>& __os,
+    ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.1.0/../../../../include/c++/5.1.0/bits/random.tcc:2750:5: note: candidate template ignored: could not match 'extreme_value_distribution<type-parameter-0-0>' against 'const frontend::cursor'
+    operator<<(std::basic_ostream<_CharT, _Traits>& __os,
+    ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.1.0/../../../../include/c++/5.1.0/bits/random.tcc:2886:5: note: candidate template ignored: could not match 'discrete_distribution<type-parameter-0-0>' against 'const frontend::cursor'
+    operator<<(std::basic_ostream<_CharT, _Traits>& __os,
+    ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.1.0/../../../../include/c++/5.1.0/bits/random.tcc:3096:5: note: candidate template ignored: could not match 'piecewise_constant_distribution<type-parameter-0-0>' against 'const frontend::cursor'
+    operator<<(std::basic_ostream<_CharT, _Traits>& __os,
+    ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.1.0/../../../../include/c++/5.1.0/bits/random.tcc:3312:5: note: candidate template ignored: could not match 'piecewise_linear_distribution<type-parameter-0-0>' against 'const frontend::cursor'
+    operator<<(std::basic_ostream<_CharT, _Traits>& __os,
+    ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.1.0/../../../../include/c++/5.1.0/bits/shared_ptr.h:66:5: note: candidate template ignored: could not match '__shared_ptr<type-parameter-0-2, _Lp>' against 'const frontend::cursor'
+    operator<<(std::basic_ostream<_Ch, _Tr>& __os,
+    ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.1.0/../../../../include/c++/5.1.0/bitset:1532:5: note: candidate template ignored: could not match 'bitset<_Nb>' against 'const frontend::cursor'
+    operator<<(std::basic_ostream<_CharT, _Traits>& __os,
+    ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.1.0/../../../../include/c++/5.1.0/complex:526:5: note: candidate template ignored: could not match 'complex<type-parameter-0-0>' against 'const frontend::cursor'
+    operator<<(basic_ostream<_CharT, _Traits>& __os, const complex<_Tp>& __x)
+    ^
+10 errors generated.
