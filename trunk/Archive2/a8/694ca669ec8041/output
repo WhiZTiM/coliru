@@ -1,0 +1,10 @@
+main.cpp: In function 'int main()':
+main.cpp:100:41: error: conversion from '<brace-enclosed initializer list>' to 'AttrValue' is ambiguous
+     AttrValue dict = {{"a", 3}, {"b", 4}};
+                                         ^
+main.cpp:54:5: note: candidate: AttrValue::AttrValue(AttrValue::AttrInitList&&)
+     AttrValue(AttrInitList&& value) : ptr(new AttrValueDerived<AttrList>(std::forward<AttrInitList>(value))) {}
+     ^
+main.cpp:53:5: note: candidate: AttrValue::AttrValue(AttrValue::AttrDictInitList&&)
+     AttrValue(AttrDictInitList&& value) : ptr(new AttrValueDerived<AttrDict>(std::forward<AttrDictInitList>(value))) {}
+     ^
