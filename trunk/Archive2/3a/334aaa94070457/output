@@ -1,0 +1,15 @@
+Constructor called!
+About to create f3...
+Move ctor called!
+Destructor called!
+s null? 0
+Destructor called!
+s null? 0
+*** glibc detected *** ./a.out: double free or corruption (out): 0x00007ff6aed54260 ***
+======= Backtrace: =========
+/lib/x86_64-linux-gnu/libc.so.6(+0x7e846)[0x7ff6aea19846]
+./a.out[0x400b92]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xed)[0x7ff6ae9bc76d]
+./a.out[0x400c21]
+======= Memory map: ========
+bash: line 7:  9454 Aborted                 (core dumped) ./a.out
