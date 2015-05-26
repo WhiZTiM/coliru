@@ -1,0 +1,1 @@
+clang++ -std=c++14 -O2 -Wall W-no-unused-variable -pedantic -pthread main.cpp && ./a.out
