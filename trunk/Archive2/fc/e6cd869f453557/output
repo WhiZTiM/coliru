@@ -1,0 +1,4 @@
+main.cpp:6:32: warning: unused variable 'y' [-Wunused-variable]
+    std::initializer_list<int> y = x;
+                               ^
+1 warning generated.
