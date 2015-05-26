@@ -1,0 +1,57 @@
+
+================
+
+unlockable name: versionBase
+prereqs:
+statistic prereqs:
+prereq for:
+    buildingTypeTradingPostB
+    groundTypeForest
+
+unlockable name: groundTypeForest
+prereqs:
+    versionBase
+statistic prereqs:
+prereq for:
+    groundTypeDarkForest
+
+unlockable name: groundTypeDarkForest
+prereqs:
+    groundTypeForest
+statistic prereqs:
+    killedEnemyCharacter_wolf
+    killedEnemyCharacter_iceWolf
+prereq for:
+
+unlockable name: buildingTypeTradingPostB
+prereqs:
+    versionBase
+statistic prereqs:
+    resourceDelivered_total
+prereq for:
+    buildingTypeTradingPostC
+
+unlockable name: buildingTypeTradingPostC
+prereqs:
+    buildingTypeTradingPostB
+statistic prereqs:
+    resourceDelivered_total
+prereq for:
+    buildingTypeTradingPostD
+
+unlockable name: buildingTypeTradingPostD
+prereqs:
+    buildingTypeTradingPostC
+statistic prereqs:
+    resourceDelivered_total
+prereq for:
+
+======== Unlocked ========
+
+groundTypeForest
+versionBase
+
+======== Unlockable ========
+
+groundTypeDarkForest
+buildingTypeTradingPostB
