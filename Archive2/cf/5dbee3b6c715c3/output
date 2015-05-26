@@ -1,0 +1,76 @@
+main.cpp:15:20: warning: extra ';' after member function definition [-Wextra-semi]
+        pacient(){};
+                   ^
+main.cpp:28:9: warning: 'pacient' has virtual functions but non-virtual destructor [-Wnon-virtual-dtor]
+        ~pacient(){
+        ^
+main.cpp:16:21: warning: declaration shadows a field of 'pacient' [-Wshadow]
+        pacient(int colesterol, int tensiune_art, char * nume, char *prenume,
+                    ^
+main.cpp:6:13: note: previous declaration is here
+        int colesterol;
+            ^
+main.cpp:16:58: warning: declaration shadows a field of 'pacient' [-Wshadow]
+        pacient(int colesterol, int tensiune_art, char * nume, char *prenume,
+                                                         ^
+main.cpp:8:16: note: previous declaration is here
+        char * nume;
+               ^
+main.cpp:16:70: warning: declaration shadows a field of 'pacient' [-Wshadow]
+        pacient(int colesterol, int tensiune_art, char * nume, char *prenume,
+                                                                     ^
+main.cpp:9:16: note: previous declaration is here
+        char * prenume;
+               ^
+main.cpp:17:17: warning: declaration shadows a field of 'pacient' [-Wshadow]
+            int varsta, char * adresa, char *data_analiza)
+                ^
+main.cpp:10:13: note: previous declaration is here
+        int varsta;
+            ^
+main.cpp:17:32: warning: declaration shadows a field of 'pacient' [-Wshadow]
+            int varsta, char * adresa, char *data_analiza)
+                               ^
+main.cpp:11:16: note: previous declaration is here
+        char * adresa;
+               ^
+main.cpp:17:46: warning: declaration shadows a field of 'pacient' [-Wshadow]
+            int varsta, char * adresa, char *data_analiza)
+                                             ^
+main.cpp:12:16: note: previous declaration is here
+        char * data_analiza;
+               ^
+main.cpp:21:13: error: use of undeclared identifier 'strcpy'
+            strcpy((*this).nume, nume);
+            ^
+main.cpp:22:13: error: use of undeclared identifier 'strcpy'
+            strcpy((*this).prenume, prenume);
+            ^
+main.cpp:24:13: error: use of undeclared identifier 'strcpy'
+            strcpy((*this).adresa, adresa);
+            ^
+main.cpp:25:13: error: use of undeclared identifier 'strcpy'
+            strcpy((*this).data_analiza, data_analiza);
+            ^
+main.cpp:31:13: error: use of undeclared identifier 'strcpy'
+            strcpy(nume, "");
+            ^
+main.cpp:32:13: error: use of undeclared identifier 'strcpy'
+            strcpy(prenume, "");
+            ^
+main.cpp:34:13: error: use of undeclared identifier 'strcpy'
+            strcpy(adresa, "");
+            ^
+main.cpp:35:13: error: use of undeclared identifier 'strcpy'
+            strcpy(data_analiza, "");
+            ^
+main.cpp:38:44: warning: ISO C++11 does not allow conversion from string literal to 'char *' [-Wwritable-strings]
+        virtual char * get_name() { return "Este pacient"; }
+                                           ^
+main.cpp:73:6: warning: C++98 requires newline at end of file [-Wc++98-compat-pedantic]
+    }
+     ^
+main.cpp:4:11: warning: 'pacient' has no out-of-line virtual method definitions; its vtable will be emitted in every translation unit [-Wweak-vtables]
+    class pacient{
+          ^
+11 warnings and 8 errors generated.
