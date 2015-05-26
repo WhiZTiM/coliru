@@ -1,0 +1,4 @@
+main.cpp: In function 'int main(int, char**)':
+main.cpp:8:24: warning: comparison with string literal results in unspecified behaviour [-Waddress]
+         if (argv[i] == "-game")
+                        ^
