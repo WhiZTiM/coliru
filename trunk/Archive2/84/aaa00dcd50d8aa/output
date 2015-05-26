@@ -1,0 +1,14 @@
+AttrValue( float value)
+AttrValue(   int value)
+AttrValue(double value)
+AttrValue(const char* value)
+AttrValue(double value)
+AttrValue(      InitList&& value)
+AttrValue(      InitList&& value)
+AttrValue(   int value)
+AttrValue(   int value)
+AttrValue(      Dict&&         value)
+AttrValue(   int value)
+AttrValue(      InitList&& value)
+4
+3
