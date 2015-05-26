@@ -1,0 +1,1 @@
+g++ -std=c++11 -Os -Wall -pedantic -pthread main.cpp && ./a.out <<< '"f",111,222,333,"ref_type","spc","type","lan","name","scop"'
