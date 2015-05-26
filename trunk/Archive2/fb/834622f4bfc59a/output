@@ -1,0 +1,9 @@
+Constructor called!
+About to create f3...
+Move ctor called!
+Destructor called!
+s null? 0
+Destructor called!
+s null? 1
+Destructor called!
+s null? 1
