@@ -1,0 +1,4 @@
+main.cpp: In function 'bool ddd2dmm(double, double&, nmea_coord_ns_ew_t&)':
+main.cpp:41:10: error: expected primary-expression before ')' token
+     dmm *) 1E2;
+          ^
