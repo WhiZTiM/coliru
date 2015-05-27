@@ -1,0 +1,21 @@
++ g++ -std=c++1y -O2 -Wall -Wextra -pedantic -pthread -lboost_system main.cpp
+main.cpp: In function 'int main()':
+main.cpp:37:9: error: aggregate 'TD<typelist<std::tuple<int, double, long long int>, std::tuple<char, float, unsigned int>, std::tuple<long int, short int, wchar_t> > > t' has incomplete type and cannot be defined
+   TD<T> t;
+         ^
++ clang++ -std=c++1y -O2 -Wall -Wextra -pedantic -pthread -lcxxrt -ldl -lboost_system main.cpp
+main.cpp:37:9: error: implicit instantiation of undefined template 'TD<typelist<std::tuple<int, double, long long>, std::tuple<char, float, unsigned int>, std::tuple<long, short, wchar_t> > >'
+  TD<T> t;
+        ^
+main.cpp:34:23: note: template is declared here
+template<class> class TD;
+                      ^
+1 error generated.
++ clang++ -stdlib=libc++ -std=c++1y -O2 -Wall -Wextra -pedantic -pthread -lcxxrt -ldl -lboost_system main.cpp
+main.cpp:37:9: error: implicit instantiation of undefined template 'TD<typelist<std::__1::tuple<int, double, long long>, std::__1::tuple<char, float, unsigned int>, std::__1::tuple<long, short, wchar_t> > >'
+  TD<T> t;
+        ^
+main.cpp:34:23: note: template is declared here
+template<class> class TD;
+                      ^
+1 error generated.
