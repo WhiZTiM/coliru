@@ -1,0 +1,16 @@
+main.cpp:25:15: error: template template argument has different template parameters than its corresponding template template parameter
+struct Holder<A>{};
+              ^
+main.cpp:24:22: note: template parameter has a different kind in template argument
+template<template<int,bool,char> class A>
+                     ^
+main.cpp:21:19: note: previous template template parameter is here
+template<template<class...> class>
+                  ^
+main.cpp:61:14: warning: unused variable 'b_zod' [-Wunused-variable]
+    Bar<Zod> b_zod;
+             ^
+main.cpp:62:21: warning: unused variable 'b_foo' [-Wunused-variable]
+    Bar<Foo::inner> b_foo;
+                    ^
+2 warnings and 1 error generated.
