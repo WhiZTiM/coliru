@@ -1,0 +1,1 @@
+clang++ -std=c++1z -W{all,extra,error,pedantic} -pthread main.cpp && ./a.out
