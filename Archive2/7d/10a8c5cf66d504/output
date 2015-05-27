@@ -1,0 +1,7 @@
+main.cpp: In function 'int main()':
+main.cpp:12:13: error: passing 'const Rational' as 'this' argument discards qualifiers [-fpermissive]
+     (a * b) = c;
+             ^
+main.cpp:3:7: note:   in call to 'Rational& Rational::operator=(const Rational&)'
+ class Rational { };
+       ^
