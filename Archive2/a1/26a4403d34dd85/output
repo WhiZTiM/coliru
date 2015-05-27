@@ -1,0 +1,10 @@
+main.cpp:13:14: error: no matching function for call to 'next'
+            *std::next(out, idx) = *it;
+             ^~~~~~~~~
+main.cpp:24:5: note: in instantiation of function template specialization 'counting_sort<__gnu_cxx::__normal_iterator<int *, std::vector<int, std::allocator<int> > >, std::back_insert_iterator<std::vector<int, std::allocator<int> > >, (lambda at main.cpp:23:21)>' requested here
+    counting_sort(begin(vec), end(vec), std::back_inserter(out), 11, index_fn);
+    ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.1.0/../../../../include/c++/5.1.0/bits/stl_iterator_base_funcs.h:184:5: note: candidate template ignored: substitution failure [with _ForwardIterator = std::back_insert_iterator<std::vector<int, std::allocator<int> > >]: argument may not have 'void' type
+    next(_ForwardIterator __x, typename
+    ^
+1 error generated.
