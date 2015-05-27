@@ -1,0 +1,74 @@
+main.cpp:93:47: error: 'this' is not a constant expression
+     auto value() -> decltype(type_of<ptr->type>::type)
+                                               ^
+main.cpp:93:47: note: in template argument for type 'AttrValue::AttrType' 
+main.cpp:17:24: error: enclosing class of constexpr non-static member function 'AttrValue::AttrType AttrValue::attrType_of(int) const' is not a literal type
+     AttrType constexpr attrType_of(int) const { return AttrType::INTEGER; }
+                        ^
+main.cpp:7:7: note: 'AttrValue' is not literal because:
+ class AttrValue
+       ^
+main.cpp:7:7: note:   'AttrValue' is not an aggregate, does not have a trivial default constructor, and has no constexpr constructor that is not a copy or move constructor
+main.cpp:18:24: error: enclosing class of constexpr non-static member function 'AttrValue::AttrType AttrValue::attrType_of(float) const' is not a literal type
+     AttrType constexpr attrType_of(float) const { return AttrType::FLOAT; }
+                        ^
+main.cpp:19:24: error: enclosing class of constexpr non-static member function 'AttrValue::AttrType AttrValue::attrType_of(double) const' is not a literal type
+     AttrType constexpr attrType_of(double) const { return AttrType::DOUBLE; }
+                        ^
+main.cpp:20:24: error: enclosing class of constexpr non-static member function 'AttrValue::AttrType AttrValue::attrType_of(const string&) const' is not a literal type
+     AttrType constexpr attrType_of(const std::string&) const { return AttrType::STRING; }
+                        ^
+main.cpp:21:24: error: enclosing class of constexpr non-static member function 'AttrValue::AttrType AttrValue::attrType_of(const List&) const' is not a literal type
+     AttrType constexpr attrType_of(const List&) const { return AttrType::LIST; }
+                        ^
+main.cpp:22:24: error: enclosing class of constexpr non-static member function 'AttrValue::AttrType AttrValue::attrType_of(const Dict&) const' is not a literal type
+     AttrType constexpr attrType_of(const Dict&) const { return AttrType::DICTIONARY; }
+                        ^
+main.cpp:23:24: error: enclosing class of constexpr non-static member function 'AttrValue::AttrType AttrValue::attrType_of(...) const' is not a literal type
+     AttrType constexpr attrType_of(...) const { return AttrType::UNKNOWN; }
+                        ^
+main.cpp: In function 'int main()':
+main.cpp:172:36: error: 'class AttrValue' has no member named 'value'
+     std::cout << "value: " << list.value() << std::endl;
+                                    ^
+main.cpp: In instantiation of 'AttrValue::AttrValueDerived<T>::AttrValueDerived(U&&) [with U = int&; T = int]':
+main.cpp:64:69:   required from here
+main.cpp:56:102: error: cannot call member function 'AttrValue::AttrType AttrValue::attrType_of(int) const' without object
+         AttrValueDerived(U&& value) : AttrValueBase(attrType_of(value)), value(std::forward<U>(value)) {}
+                                                                                                      ^
+main.cpp: In instantiation of 'AttrValue::AttrValueDerived<T>::AttrValueDerived(U&&) [with U = float&; T = float]':
+main.cpp:65:69:   required from here
+main.cpp:56:102: error: cannot call member function 'AttrValue::AttrType AttrValue::attrType_of(float) const' without object
+main.cpp: In instantiation of 'AttrValue::AttrValueDerived<T>::AttrValueDerived(U&&) [with U = double&; T = double]':
+main.cpp:66:69:   required from here
+main.cpp:56:102: error: cannot call member function 'AttrValue::AttrType AttrValue::attrType_of(double) const' without object
+main.cpp: In instantiation of 'AttrValue::AttrValueDerived<T>::AttrValueDerived(U&&) [with U = const char*&; T = std::__cxx11::basic_string<char>]':
+main.cpp:68:86:   required from here
+main.cpp:56:102: error: cannot call member function 'AttrValue::AttrType AttrValue::attrType_of(const string&) const' without object
+main.cpp: In instantiation of 'AttrValue::AttrValueDerived<T>::AttrValueDerived(U&&) [with U = const std::__cxx11::basic_string<char>&; T = std::__cxx11::basic_string<char>]':
+main.cpp:69:86:   required from here
+main.cpp:56:102: error: cannot call member function 'AttrValue::AttrType AttrValue::attrType_of(const string&) const' without object
+main.cpp: In instantiation of 'AttrValue::AttrValueDerived<T>::AttrValueDerived(U&&) [with U = const std::vector<AttrValue>&; T = std::vector<AttrValue>]':
+main.cpp:71:88:   required from here
+main.cpp:56:102: error: cannot call member function 'AttrValue::AttrType AttrValue::attrType_of(const List&) const' without object
+main.cpp: In instantiation of 'AttrValue::AttrValueDerived<T>::AttrValueDerived(U&&) [with U = std::vector<AttrValue>; T = std::vector<AttrValue>]':
+main.cpp:72:88:   required from here
+main.cpp:56:102: error: cannot call member function 'AttrValue::AttrType AttrValue::attrType_of(const List&) const' without object
+main.cpp: In instantiation of 'AttrValue::AttrValueDerived<T>::AttrValueDerived(U&&) [with U = const std::initializer_list<AttrValue>&; T = std::vector<AttrValue>]':
+main.cpp:73:88:   required from here
+main.cpp:56:102: error: cannot call member function 'AttrValue::AttrType AttrValue::attrType_of(const List&) const' without object
+main.cpp: In instantiation of 'AttrValue::AttrValueDerived<T>::AttrValueDerived(U&&) [with U = std::initializer_list<AttrValue>; T = std::vector<AttrValue>]':
+main.cpp:74:88:   required from here
+main.cpp:56:102: error: cannot call member function 'AttrValue::AttrType AttrValue::attrType_of(const List&) const' without object
+main.cpp: In instantiation of 'AttrValue::AttrValueDerived<T>::AttrValueDerived(U&&) [with U = const std::map<std::__cxx11::basic_string<char>, AttrValue>&; T = std::map<std::__cxx11::basic_string<char>, AttrValue>]':
+main.cpp:76:92:   required from here
+main.cpp:56:102: error: cannot call member function 'AttrValue::AttrType AttrValue::attrType_of(const Dict&) const' without object
+main.cpp: In instantiation of 'AttrValue::AttrValueDerived<T>::AttrValueDerived(U&&) [with U = std::map<std::__cxx11::basic_string<char>, AttrValue>; T = std::map<std::__cxx11::basic_string<char>, AttrValue>]':
+main.cpp:77:92:   required from here
+main.cpp:56:102: error: cannot call member function 'AttrValue::AttrType AttrValue::attrType_of(const Dict&) const' without object
+main.cpp: In instantiation of 'AttrValue::AttrValueDerived<T>::AttrValueDerived(U&&) [with U = const std::initializer_list<std::pair<const std::__cxx11::basic_string<char>, AttrValue> >&; T = std::map<std::__cxx11::basic_string<char>, AttrValue>]':
+main.cpp:78:92:   required from here
+main.cpp:56:102: error: cannot call member function 'AttrValue::AttrType AttrValue::attrType_of(const Dict&) const' without object
+main.cpp: In instantiation of 'AttrValue::AttrValueDerived<T>::AttrValueDerived(U&&) [with U = std::initializer_list<std::pair<const std::__cxx11::basic_string<char>, AttrValue> >; T = std::map<std::__cxx11::basic_string<char>, AttrValue>]':
+main.cpp:79:92:   required from here
+main.cpp:56:102: error: cannot call member function 'AttrValue::AttrType AttrValue::attrType_of(const Dict&) const' without object
