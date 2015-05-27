@@ -1,0 +1,12 @@
+main.cpp:6:0: warning: ignoring #pragma STDC FENV_ACCESS [-Wunknown-pragmas]
+ #pragma STDC FENV_ACCESS ON
+ ^
+round(+2.3) = 2  round(+2.5) = 3  round(+2.7) = 3
+round(-2.3) = -2  round(-2.5) = -3  round(-2.7) = -3
+round(-0.0) = -0
+round(-Inf) = -inf
+lround(+2.3) = 2  lround(+2.5) = 3  lround(+2.7) = 3
+lround(-2.3) = -2  lround(-2.5) = -3  lround(-2.7) = -3
+lround(-0.0) = 0
+lround(-Inf) = -9223372036854775808
+std::lround(LONG_MAX+1.5) = -9223372036854775808
