@@ -1,0 +1,10 @@
+main.cpp: In function 'int main()':
+main.cpp:8:13: error: call of overloaded 'foo(NULL)' is ambiguous
+     foo(NULL);
+             ^
+main.cpp:3:6: note: candidate: void foo(std::nullptr_t) <deleted>
+ void foo(std::nullptr_t) = delete;
+      ^
+main.cpp:4:6: note: candidate: void foo(int*)
+ void foo(int*) {}
+      ^
