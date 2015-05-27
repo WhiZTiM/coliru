@@ -1,0 +1,8 @@
+main.cpp: In constructor 'AttrValue::AttrValue(int)':
+main.cpp:37:36: error: 'INTEGER' was not declared in this scope
+     AttrValue(   int value) : type(INTEGER), ptr(new AttrValueDerived<   int>(value)) { std::cout << "AttrValue(   int value)" << std::endl; }    
+                                    ^
+main.cpp: In constructor 'AttrValue::AttrValue(float)':
+main.cpp:38:38: error: 'FLOAT' was not declared in this scope
+     AttrValue( float value) : type(  FLOAT), ptr(new AttrValueDerived< float>(value)) { std::cout << "AttrValue( float value)" << std::endl; }
+                                      ^
