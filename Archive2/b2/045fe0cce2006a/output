@@ -1,0 +1,18 @@
+main.cpp: In member function 'int abc::getCount()':
+main.cpp:17:5: error: 'coutcount' was not declared in this scope
+     coutcount;
+     ^
+main.cpp:18:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+main.cpp: In function 'int main()':
+main.cpp:9:9: error: 'int abc::a' is private
+     int a;
+         ^
+main.cpp:26:35: error: within this context
+     cout<<"The value of a="<<abc::a;
+                                   ^
+main.cpp:26:35: error: invalid use of non-static data member 'abc::a'
+main.cpp:9:9: note: declared here
+     int a;
+         ^
