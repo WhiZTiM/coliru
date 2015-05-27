@@ -1,0 +1,83 @@
+main.cpp: In function 'int main()':
+main.cpp:15:9: error: no match for 'operator>>' (operand types are 'std::ostream {aka std::basic_ostream<char>}' and 'const char [19]')
+     cout>>"number of digits :"<<count
+         ^
+In file included from /usr/local/include/c++/5.1.0/string:53:0,
+                 from /usr/local/include/c++/5.1.0/bits/locale_classes.h:40,
+                 from /usr/local/include/c++/5.1.0/bits/ios_base.h:41,
+                 from /usr/local/include/c++/5.1.0/ios:42,
+                 from /usr/local/include/c++/5.1.0/ostream:38,
+                 from /usr/local/include/c++/5.1.0/iostream:39,
+                 from main.cpp:1:
+/usr/local/include/c++/5.1.0/bits/basic_string.tcc:1441:5: note: candidate: template<class _CharT, class _Traits, class _Alloc> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&)
+     operator>>(basic_istream<_CharT, _Traits>& __in,
+     ^
+/usr/local/include/c++/5.1.0/bits/basic_string.tcc:1441:5: note:   template argument deduction/substitution failed:
+main.cpp:15:11: note:   'std::ostream {aka std::basic_ostream<char>}' is not derived from 'std::basic_istream<_CharT, _Traits>'
+     cout>>"number of digits :"<<count
+           ^
+In file included from /usr/local/include/c++/5.1.0/istream:934:0,
+                 from /usr/local/include/c++/5.1.0/iostream:40,
+                 from main.cpp:1:
+/usr/local/include/c++/5.1.0/bits/istream.tcc:955:5: note: candidate: template<class _CharT2, class _Traits2> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, _CharT2*)
+     operator>>(basic_istream<_CharT, _Traits>& __in, _CharT* __s)
+     ^
+/usr/local/include/c++/5.1.0/bits/istream.tcc:955:5: note:   template argument deduction/substitution failed:
+main.cpp:15:11: note:   'std::ostream {aka std::basic_ostream<char>}' is not derived from 'std::basic_istream<_CharT, _Traits>'
+     cout>>"number of digits :"<<count
+           ^
+In file included from /usr/local/include/c++/5.1.0/istream:934:0,
+                 from /usr/local/include/c++/5.1.0/iostream:40,
+                 from main.cpp:1:
+/usr/local/include/c++/5.1.0/bits/istream.tcc:923:5: note: candidate: template<class _CharT, class _Traits> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, _CharT&)
+     operator>>(basic_istream<_CharT, _Traits>& __in, _CharT& __c)
+     ^
+/usr/local/include/c++/5.1.0/bits/istream.tcc:923:5: note:   template argument deduction/substitution failed:
+main.cpp:15:11: note:   'std::ostream {aka std::basic_ostream<char>}' is not derived from 'std::basic_istream<_CharT, _Traits>'
+     cout>>"number of digits :"<<count
+           ^
+In file included from /usr/local/include/c++/5.1.0/iostream:40:0,
+                 from main.cpp:1:
+/usr/local/include/c++/5.1.0/istream:756:5: note: candidate: template<class _Traits> std::basic_istream<char, _Traits>& std::operator>>(std::basic_istream<char, _Traits>&, unsigned char&)
+     operator>>(basic_istream<char, _Traits>& __in, unsigned char& __c)
+     ^
+/usr/local/include/c++/5.1.0/istream:756:5: note:   template argument deduction/substitution failed:
+main.cpp:15:11: note:   'std::ostream {aka std::basic_ostream<char>}' is not derived from 'std::basic_istream<char, _Traits>'
+     cout>>"number of digits :"<<count
+           ^
+In file included from /usr/local/include/c++/5.1.0/iostream:40:0,
+                 from main.cpp:1:
+/usr/local/include/c++/5.1.0/istream:761:5: note: candidate: template<class _Traits> std::basic_istream<char, _Traits>& std::operator>>(std::basic_istream<char, _Traits>&, signed char&)
+     operator>>(basic_istream<char, _Traits>& __in, signed char& __c)
+     ^
+/usr/local/include/c++/5.1.0/istream:761:5: note:   template argument deduction/substitution failed:
+main.cpp:15:11: note:   'std::ostream {aka std::basic_ostream<char>}' is not derived from 'std::basic_istream<char, _Traits>'
+     cout>>"number of digits :"<<count
+           ^
+In file included from /usr/local/include/c++/5.1.0/iostream:40:0,
+                 from main.cpp:1:
+/usr/local/include/c++/5.1.0/istream:803:5: note: candidate: template<class _Traits> std::basic_istream<char, _Traits>& std::operator>>(std::basic_istream<char, _Traits>&, unsigned char*)
+     operator>>(basic_istream<char, _Traits>& __in, unsigned char* __s)
+     ^
+/usr/local/include/c++/5.1.0/istream:803:5: note:   template argument deduction/substitution failed:
+main.cpp:15:11: note:   'std::ostream {aka std::basic_ostream<char>}' is not derived from 'std::basic_istream<char, _Traits>'
+     cout>>"number of digits :"<<count
+           ^
+In file included from /usr/local/include/c++/5.1.0/iostream:40:0,
+                 from main.cpp:1:
+/usr/local/include/c++/5.1.0/istream:808:5: note: candidate: template<class _Traits> std::basic_istream<char, _Traits>& std::operator>>(std::basic_istream<char, _Traits>&, signed char*)
+     operator>>(basic_istream<char, _Traits>& __in, signed char* __s)
+     ^
+/usr/local/include/c++/5.1.0/istream:808:5: note:   template argument deduction/substitution failed:
+main.cpp:15:11: note:   'std::ostream {aka std::basic_ostream<char>}' is not derived from 'std::basic_istream<char, _Traits>'
+     cout>>"number of digits :"<<count
+           ^
+In file included from /usr/local/include/c++/5.1.0/iostream:40:0,
+                 from main.cpp:1:
+/usr/local/include/c++/5.1.0/istream:924:5: note: candidate: template<class _CharT, class _Traits, class _Tp> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&&, _Tp&)
+     operator>>(basic_istream<_CharT, _Traits>&& __is, _Tp& __x)
+     ^
+/usr/local/include/c++/5.1.0/istream:924:5: note:   template argument deduction/substitution failed:
+main.cpp:15:11: note:   'std::ostream {aka std::basic_ostream<char>}' is not derived from 'std::basic_istream<_CharT, _Traits>'
+     cout>>"number of digits :"<<count
+           ^
