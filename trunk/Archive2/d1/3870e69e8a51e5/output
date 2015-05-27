@@ -1,0 +1,15 @@
+AttrValue( float value)
+AttrValue(   int value)
+AttrValue(double value)
+AttrValue(const char* value)
+AttrValue(double value)
+AttrValue(      InitList&& value)
+AttrValue(      InitList&& value)
+SIZE: 4
+AttrValue(          List&& value)
+SIZE: 0
+AttrValue(   int value)
+AttrValue(   int value)
+AttrValue(      Dict&&         value)
+a.out: main.cpp:61: T& AttrValue::value() [with T = std::vector<AttrValue>]: Assertion `ptrAux != nullptr' failed.
+bash: line 7:  7766 Aborted                 (core dumped) ./a.out
