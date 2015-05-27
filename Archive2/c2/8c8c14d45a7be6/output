@@ -1,0 +1,6 @@
+In file included from /usr/local/include/c++/5.1.0/cassert:43:0,
+                 from main.cpp:2:
+main.cpp: In member function 'bool AttrValue::value()':
+main.cpp:95:41: error: 'T' was not declared in this scope
+         assert( type() == attrType_of(T()) );
+                                         ^
