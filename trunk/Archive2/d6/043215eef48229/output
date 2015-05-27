@@ -1,0 +1,6 @@
+main.cpp: In constructor 'C::C(factory&)':
+main.cpp:20:14: warning: 'auto' will change meaning in C++0x; please remove it [-Wc++0x-compat]
+main.cpp:20:20: error: ISO C++ forbids declaration of 'e' with no type [-fpermissive]
+main.cpp:20:24: error: range-based-for loops are not allowed in C++98 mode
+main.cpp:21:44: error: request for member 'first' in 'e', which is of non-class type 'int'
+main.cpp:21:73: error: request for member 'second' in 'e', which is of non-class type 'int'
