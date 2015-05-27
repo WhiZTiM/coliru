@@ -1,0 +1,7 @@
+
+Main.hs:39:26:
+    Couldn't match type `[Char]' with `Int'
+    Expected type: Expr' a
+      Actual type: Expr' Int
+    In the first argument of eval', namely `x'
+    In the first argument of `(+)', namely `eval' x'
