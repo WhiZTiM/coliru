@@ -1,0 +1,25 @@
++ g++-5.1 -std=c++14 -O3 -Wall -Wextra -pedantic -Wno-unused-variable -Wno-unused-parameter -pthread main.cpp
+In file included from /usr/local/include/boost/range/detail/default_constructible_unary_fn.hpp:13:0,
+                 from /usr/local/include/boost/range/adaptor/transformed.hpp:15,
+                 from main.cpp:1:
+/usr/local/include/boost/optional/optional.hpp: In instantiation of 'void boost::optional_detail::optional_base<T>::assign_value(boost::optional_detail::optional_base<T>::argument_type, boost::optional_detail::optional_base<T>::is_not_reference_tag) [with T = std::_Bind<int (*(std::_Placeholder<1>))(int)>; boost::optional_detail::optional_base<T>::argument_type = const std::_Bind<int (*(std::_Placeholder<1>))(int)>&; boost::optional_detail::optional_base<T>::is_not_reference_tag = mpl_::bool_<false>]':
+/usr/local/include/boost/optional/optional.hpp:335:26:   required from 'void boost::optional_detail::optional_base<T>::assign(const boost::optional_detail::optional_base<T>&) [with T = std::_Bind<int (*(std::_Placeholder<1>))(int)>]'
+/usr/local/include/boost/optional/optional.hpp:911:9:   required from 'boost::optional<T>& boost::optional<T>::operator=(const boost::optional<T>&) [with T = std::_Bind<int (*(std::_Placeholder<1>))(int)>]'
+/usr/local/include/boost/range/detail/default_constructible_unary_fn.hpp:23:7:   required from 'constexpr _ForwardIterator std::__min_element(_ForwardIterator, _ForwardIterator, _Compare) [with _ForwardIterator = boost::iterators::transform_iterator<boost::range_detail::default_constructible_unary_fn_wrapper<std::_Bind<int (*(std::_Placeholder<1>))(int)>, int>, __gnu_cxx::__normal_iterator<int*, std::vector<int> >, boost::iterators::use_default, boost::iterators::use_default>; _Compare = __gnu_cxx::__ops::_Iter_less_iter]'
+/usr/local/include/c++/5.1.0/bits/stl_algo.h:5451:43:   required from 'constexpr _FIter std::min_element(_FIter, _FIter) [with _FIter = boost::iterators::transform_iterator<boost::range_detail::default_constructible_unary_fn_wrapper<std::_Bind<int (*(std::_Placeholder<1>))(int)>, int>, __gnu_cxx::__normal_iterator<int*, std::vector<int> >, boost::iterators::use_default, boost::iterators::use_default>]'
+/usr/local/include/boost/range/algorithm/min_element.hpp:44:28:   required from 'typename boost::range_iterator<const T>::type boost::range::min_element(const ForwardRange&) [with ForwardRange = boost::range_detail::transformed_range<std::_Bind<int (*(std::_Placeholder<1>))(int)>, std::vector<int> >; typename boost::range_iterator<const T>::type = boost::iterators::transform_iterator<boost::range_detail::default_constructible_unary_fn_wrapper<std::_Bind<int (*(std::_Placeholder<1>))(int)>, int>, __gnu_cxx::__normal_iterator<int*, std::vector<int> >, boost::iterators::use_default, boost::iterators::use_default>]'
+main.cpp:19:81:   required from here
+/usr/local/include/boost/optional/optional.hpp:674:80: error: use of deleted function 'std::_Bind<int (*(std::_Placeholder<1>))(int)>& std::_Bind<int (*(std::_Placeholder<1>))(int)>::operator=(const std::_Bind<int (*(std::_Placeholder<1>))(int)>&)'
+     void assign_value ( argument_type val, is_not_reference_tag ) { get_impl() = val; }
+                                                                                ^
+In file included from /usr/local/include/boost/utility/compare_pointees.hpp:15:0,
+                 from /usr/local/include/boost/optional/optional.hpp:51,
+                 from /usr/local/include/boost/range/detail/default_constructible_unary_fn.hpp:13,
+                 from /usr/local/include/boost/range/adaptor/transformed.hpp:15,
+                 from main.cpp:1:
+/usr/local/include/c++/5.1.0/functional:1058:11: note: 'std::_Bind<int (*(std::_Placeholder<1>))(int)>& std::_Bind<int (*(std::_Placeholder<1>))(int)>::operator=(const std::_Bind<int (*(std::_Placeholder<1>))(int)>&)' is implicitly declared as deleted because 'std::_Bind<int (*(std::_Placeholder<1>))(int)>' declares a move constructor or move assignment operator
+     class _Bind<_Functor(_Bound_args...)>
+           ^
++ clang++ -std=c++14 -O3 -Wall -Wextra -pedantic -Wno-unused-variable -Wno-unused-parameter -pthread -stdlib=libc++ main.cpp -lsupc++
++ ./a.out
+-3
