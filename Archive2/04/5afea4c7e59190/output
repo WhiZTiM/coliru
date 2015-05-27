@@ -1,0 +1,4 @@
+Running ./v0 with DEMO_VERSION=0
+22 serialization::archive 11 0 0 1 9 Forty two
+Running ./v1 with DEMO_VERSION=1
+22 serialization::archive 11 0 1 0 0 1 0 9 Forty two
