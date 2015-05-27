@@ -1,0 +1,4 @@
+main.cpp:7:23: error: reinterpret_cast from 'char' to 'unsigned char' is not allowed
+    unsigned char k = reinterpret_cast<unsigned char>(j);
+                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+1 error generated.
