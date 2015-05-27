@@ -1,0 +1,5 @@
+main.cpp: In function 'int main()':
+main.cpp:54:62: error: type/value mismatch at argument 1 in template parameter list for 'template<template<class, char <anonymous>, bool <anonymous> > class<template-parameter-1-1> > struct test'
+     std::cout << "test<C> = " << test<B<int,char,bool>::inner>::value;
+                                                              ^
+main.cpp:54:62: note:   expected a template of type 'template<class, char <anonymous>, bool <anonymous> > class<template-parameter-1-1>', got 'template<int <anonymous>, char <anonymous>, bool <anonymous> > struct B<int, char, bool>::inner'
