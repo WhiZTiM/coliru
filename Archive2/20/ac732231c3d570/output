@@ -1,0 +1,4 @@
+main.cpp:6:6: warning: multi-character character constant [-Wmultichar]
+     R'(a)';
+      ^
+2646313
