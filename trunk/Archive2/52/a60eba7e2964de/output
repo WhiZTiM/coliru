@@ -1,0 +1,5 @@
+main.cpp: In function 'int* node(int, int)':
+main.cpp:94:6: warning: address of local variable 'coordonee' returned [-Wreturn-local-addr]
+  int coordonee[2] = {0,0};
+      ^
+bash: line 7: 12177 Segmentation fault      (core dumped) ./a.out 500
