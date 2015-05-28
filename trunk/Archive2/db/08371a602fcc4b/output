@@ -1,0 +1,4 @@
+main.cpp:5:4: warning: #warning "New way here." [-Wcpp]
+   #warning "New way here."
+    ^
+201402
