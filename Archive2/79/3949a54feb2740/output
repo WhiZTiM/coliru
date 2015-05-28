@@ -1,0 +1,23 @@
+Car constructor count = 0
+Car::ctor
+Car constructor count = 1
+--------------------
+Car constructor count = 0
+Car::copy ctor
+Car constructor count = 1
+--------------------
+Car constructor count = 0
+Car::ctor
+Car constructor count = 1
+--------------------
+Car constructor count = 0
+Car::copy ctor
+Car constructor count = 1
+--------------------
+Car::ctor
+DerivedCar::ctor
+Car::dtor
+Car::dtor
+Car::dtor
+Car::dtor
+Car::dtor
