@@ -1,0 +1,66 @@
+main.cpp: In function 'int main()':
+main.cpp:18:19: warning: unused variable 'x1' [-Wunused-variable]
+     constexpr int x1 = 10 ;
+                   ^
+main.cpp:19:19: warning: unused variable 'x1b' [-Wunused-variable]
+     constexpr int x1b = 10 ;
+                   ^
+main.cpp:20:19: warning: unused variable 'x1c' [-Wunused-variable]
+     constexpr int x1c = 20 ;
+                   ^
+main.cpp:22:18: warning: unused variable 'd1' [-Wunused-variable]
+     const double d1 = 1.1 ;
+                  ^
+1AILm11EE
+1AILm10EE
+Z4mainEUlvE_
+200
+
+;; Function int main() (main, funcdef_no=1285, decl_uid=29856, symbol_order=369) (executed once)
+
+int main() ()
+{
+  struct __lambda0 f1;
+  volatile int x2;
+  struct basic_ostream & _4;
+  struct basic_ostream & _6;
+  struct basic_ostream & _8;
+  int x2.0_10;
+  struct basic_ostream & _13;
+  struct basic_ostream & _16;
+  int _19;
+  int _20;
+
+  <bb 2>:
+  x2 ={v} 10;
+  _4 = std::operator<< <std::char_traits<char> > (&cout, &_ZTS1AILm11EE);
+  _6 = std::operator<< <std::char_traits<char> > (_4, "\n");
+  _8 = std::operator<< <std::char_traits<char> > (_6, &_ZTS1AILm10EE);
+  std::operator<< <std::char_traits<char> > (_8, "\n");
+  x2.0_10 ={v} x2;
+  f1.__x2 = x2.0_10;
+  _13 = std::operator<< <std::char_traits<char> > (&cout, &MEM[(void *)&_ZTSZ4mainEUlvE_ + 1B]);
+  std::operator<< <std::char_traits<char> > (_13, "\n");
+  _19 ={v} f1.__x2;
+  _20 = _19 * 20;
+  _16 = std::basic_ostream<char>::operator<< (&cout, _20);
+  std::operator<< <std::char_traits<char> > (_16, "\n");
+  f1 ={v} {CLOBBER};
+  return 0;
+
+}
+
+
+
+;; Function (static initializers for main.cpp) (_GLOBAL__sub_I_main, funcdef_no=1437, decl_uid=31335, symbol_order=696) (executed once)
+
+(static initializers for main.cpp) ()
+{
+  <bb 2>:
+  std::ios_base::Init::Init (&__ioinit);
+  __cxa_atexit (__comp_dtor , &__ioinit, &__dso_handle); [tail call]
+  return;
+
+}
+
+
