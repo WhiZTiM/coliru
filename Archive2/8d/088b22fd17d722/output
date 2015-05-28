@@ -1,0 +1,66 @@
+What is your name? 
+ Object1()..
+ Object1()..
+ Object1()..
+ Object1()..
+ Object1()..
+ Object1()..
+ Object1()..
+ Object1()..
+ Object1()..
+ Object1()..
+ Object1 (Object1 & that)..
+ Object1 (Object1 & that)..
+ Object1 (Object1 & that)..
+ Object1 (Object1 & that)..
+ Object1 (Object1 & that)..
+ Object1 (Object1 & that)..
+ Object1 (Object1 & that)..
+ Object1 (Object1 & that)..
+ Object1 (Object1 & that)..
+ Object1 (Object1 & that)..
+ ~Object1().. for 0
+ ~Object1().. for 0
+ ~Object1().. for 0
+ ~Object1().. for 0
+ ~Object1().. for 0
+ ~Object1().. for 0
+ ~Object1().. for 0
+ ~Object1().. for 0
+ ~Object1().. for 0
+ ~Object1().. for 0
+ Object1& operator=(const int 0)..
+ Object1& operator=(const int 1)..
+ Object1& operator=(const int 2)..
+ Object1& operator=(const int 3)..
+ Object1& operator=(const int 4)..
+ Object1& operator=(const int 5)..
+ Object1& operator=(const int 6)..
+ Object1& operator=(const int 7)..
+ Object1& operator=(const int 8)..
+ Object1& operator=(const int 9)..
+
+0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 
+ Object1 (Object1 && temp).., temp.value1 = 7
+ Object1 (Object1 && temp).., temp.value1 = 8
+ Object1 (Object1 && temp).., temp.value1 = 9
+ Object1 & operator=(Object1 && temp)..,temp.value1 =  6
+ Object1 & operator=(Object1 && temp)..,temp.value1 =  5
+ Object1& operator=(const Object1 &v).. v = 3
+ Object1& operator=(const Object1 &v).. v = 4
+ Object1& operator=(const Object1 &v).. v = 3
+
+0, 1, 2, 3, 4, 3, 4, 3, 5, 6, 7, 8, 9, 
+ ~Object1().. for 9
+ ~Object1().. for 8
+ ~Object1().. for 7
+ ~Object1().. for 6
+ ~Object1().. for 5
+ ~Object1().. for 3
+ ~Object1().. for 4
+ ~Object1().. for 3
+ ~Object1().. for 4
+ ~Object1().. for 3
+ ~Object1().. for 2
+ ~Object1().. for 1
+ ~Object1().. for 0
