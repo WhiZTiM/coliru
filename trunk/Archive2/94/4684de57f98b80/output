@@ -1,0 +1,7 @@
+start!
+allocator constructed
+deleter constructed
+custom array allocator
+unique_ptr constructed
+shared_ptr constructed
+custom array deleter
