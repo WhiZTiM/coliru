@@ -1,0 +1,6 @@
+main.cpp: In instantiation of 'struct Decorator<ConcreteImplementation2>':
+main.cpp:45:45:   required from here
+main.cpp:28:8: warning: direct base 'Interface' inaccessible in 'Decorator<ConcreteImplementation2>' due to ambiguity
+ struct Decorator : virtual Interface, virtual ToDecorate
+        ^
+virtual void ConcreteImplementation2::Foo() const
