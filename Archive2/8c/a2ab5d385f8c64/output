@@ -1,0 +1,33 @@
+main.cpp:6:5: error: 'string' does not name a type
+     string getZone() { return currentZone; }
+     ^
+main.cpp:7:18: error: 'string' has not been declared
+     void setZone(string zone) { currentZone = zone; }
+                  ^
+main.cpp:9:20: error: 'TextBuffer' has not been declared
+     void setBuffer(TextBuffer* buffer) { currentBuffer = buffer; }
+                    ^
+main.cpp:11:24: error: 'string' has not been declared
+     void printToBuffer(string s) { currentBuffer->printToBuffer(s); }
+                        ^
+main.cpp:13:11: error: 'string' does not name a type
+     const string gameTitle = "ASCII Text RPG";
+           ^
+main.cpp:15:5: error: 'string' does not name a type
+     string currentZone = "NULL";
+     ^
+main.cpp:16:5: error: 'TextBuffer' does not name a type
+     TextBuffer* currentBuffer = NULL;
+     ^
+main.cpp: In member function 'void SystemObject::setZone(int)':
+main.cpp:7:33: error: 'currentZone' was not declared in this scope
+     void setZone(string zone) { currentZone = zone; }
+                                 ^
+main.cpp: In member function 'void SystemObject::setBuffer(int*)':
+main.cpp:9:42: error: 'currentBuffer' was not declared in this scope
+     void setBuffer(TextBuffer* buffer) { currentBuffer = buffer; }
+                                          ^
+main.cpp: In member function 'void SystemObject::printToBuffer(int)':
+main.cpp:11:36: error: 'currentBuffer' was not declared in this scope
+     void printToBuffer(string s) { currentBuffer->printToBuffer(s); }
+                                    ^
