@@ -1,0 +1,31 @@
+main.cpp:58:32: warning: character constant too long for its type
+ error: use of deleted function 'SystemObject& SystemObject::operator=(const SystemObject&)'|
+                                ^
+main.cpp:1:1: error: 'includes' does not name a type
+ includes and stuff
+ ^
+main.cpp:7:1: error: expected unqualified-id before '...' token
+ ...
+ ^
+main.cpp: In function 'int main()':
+main.cpp:11:26: error: 'system' was not declared in this scope
+     system("mode 100, 35");
+                          ^
+main.cpp:12:5: error: 'game' was not declared in this scope
+     game.setBuffer(mainBuffer);
+     ^
+main.cpp:12:20: error: 'mainBuffer' was not declared in this scope
+     game.setBuffer(mainBuffer);
+                    ^
+main.cpp:13:5: error: expected primary-expression before '...' token
+     ...
+     ^
+main.cpp:39:1: error: expected primary-expression before 'int'
+ int BaseCharacter::heal(int amt)
+ ^
+main.cpp:56:1: error: 'This' was not declared in this scope
+ This is the error I am getting.
+ ^
+main.cpp:58:92: error: expected '}' at end of input
+ error: use of deleted function 'SystemObject& SystemObject::operator=(const SystemObject&)'|
+                                                                                            ^
