@@ -1,0 +1,1 @@
+g++ -std=c++14 -O2 -Wall -pedantic -pthread main.cpp && ./a.out < /Archive2/b0/cd8018d214edf7/main.cpp
