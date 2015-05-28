@@ -1,0 +1,7 @@
++ g++-5.1 -std=c++14 -O3 -Wall -Wextra -pedantic -Wno-unused-variable -Wno-unused-parameter -pthread main.cpp
++ ./a.out
+available bytes: 8
+value of x(int): 2
+available bytes: 4
+value of y(float): 2.5
+available bytes: 0
