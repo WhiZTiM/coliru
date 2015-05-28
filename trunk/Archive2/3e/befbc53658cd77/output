@@ -1,0 +1,29 @@
++ clang++ -std=c++11 -O3 -Wall -Wextra -pedantic -Wno-unused-variable -Wno-unused-parameter -Wconversion -pthread main.cpp
+In file included from main.cpp:1:
+In file included from /usr/local/include/boost/range/adaptor/transformed.hpp:15:
+In file included from /usr/local/include/boost/range/detail/default_constructible_unary_fn.hpp:13:
+/usr/local/include/boost/optional/optional.hpp:674:80: error: object of type 'std::_Bind<int (*(std::_Placeholder<1>))(int)>' cannot be assigned because its copy assignment operator is implicitly deleted
+    void assign_value ( argument_type val, is_not_reference_tag ) { get_impl() = val; }
+                                                                               ^
+/usr/local/include/boost/optional/optional.hpp:335:14: note: in instantiation of member function 'boost::optional_detail::optional_base<std::_Bind<int (*(std::_Placeholder<1>))(int)> >::assign_value' requested here
+             assign_value(rhs.get_impl(), is_reference_predicate() );
+             ^
+/usr/local/include/boost/optional/optional.hpp:911:15: note: in instantiation of member function 'boost::optional_detail::optional_base<std::_Bind<int (*(std::_Placeholder<1>))(int)> >::assign' requested here
+        this->assign( static_cast<base const&>(rhs) ) ;
+              ^
+/usr/local/include/boost/range/detail/default_constructible_unary_fn.hpp:23:7: note: in instantiation of member function 'boost::optional<std::_Bind<int (*(std::_Placeholder<1>))(int)> >::operator=' requested here
+class default_constructible_unary_fn_wrapper
+      ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.1.0/../../../../include/c++/5.1.0/bits/stl_algo.h:5451:30: note: in instantiation of function template specialization 'std::__min_element<boost::iterators::transform_iterator<boost::range_detail::default_constructible_unary_fn_wrapper<std::_Bind<int (*(std::_Placeholder<1>))(int)>, int>, __gnu_cxx::__normal_iterator<int *, std::vector<int, std::allocator<int> > >, boost::iterators::use_default, boost::iterators::use_default>, __gnu_cxx::__ops::_Iter_less_iter>' requested here
+      return _GLIBCXX_STD_A::__min_element(__first, __last,
+                             ^
+/usr/local/include/boost/range/algorithm/min_element.hpp:44:17: note: in instantiation of function template specialization 'std::min_element<boost::iterators::transform_iterator<boost::range_detail::default_constructible_unary_fn_wrapper<std::_Bind<int (*(std::_Placeholder<1>))(int)>, int>, __gnu_cxx::__normal_iterator<int *, std::vector<int, std::allocator<int> > >, boost::iterators::use_default, boost::iterators::use_default> >' requested here
+    return std::min_element(boost::begin(rng), boost::end(rng));
+                ^
+main.cpp:19:27: note: in instantiation of function template specialization 'boost::range::min_element<boost::range_detail::transformed_range<std::_Bind<int (*(std::_Placeholder<1>))(int)>, std::vector<int, std::allocator<int> > > >' requested here
+        int min = *boost::min_element(values | boost::adaptors::transformed(fun));
+                          ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.1.0/../../../../include/c++/5.1.0/functional:1119:7: note: copy assignment operator is implicitly deleted because '_Bind<int (*(std::_Placeholder<1>))(int)>' has a user-declared move constructor
+      _Bind(_Bind&& __b)
+      ^
+1 error generated.
