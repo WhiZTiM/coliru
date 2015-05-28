@@ -1,0 +1,12 @@
+The default constructor is being called
+The int constructor is begin called
+Now you have a total number of 2 creatures before destruction
+The destructor is now being called
+Now you have a total number of 1 creatures after destruction
+Copy constructor called
+Now you have a total number of 2 creatures before destruction
+The destructor is now being called
+Now you have a total number of 1 creatures after destruction
+Now you have a total number of 1 creatures before destruction
+The destructor is now being called
+Now you have a total number of 0 creatures after destruction
