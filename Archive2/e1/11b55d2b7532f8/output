@@ -1,0 +1,3 @@
+terminate called after throwing an instance of 'boost::exception_detail::clone_impl<boost::exception_detail::error_info_injector<boost::property_tree::json_parser::json_parser_error> >'
+  what():  <unspecified file>(1): expected value
+bash: line 7: 21152 Aborted                 (core dumped) ./a.out
