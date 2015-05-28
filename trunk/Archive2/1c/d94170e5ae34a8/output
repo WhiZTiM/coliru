@@ -1,0 +1,1 @@
+void print_type() [T = atch::type_list<Hello, void, World>]
