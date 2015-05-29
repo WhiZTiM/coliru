@@ -1,0 +1,1 @@
+g++ -std=c++1z -O2 -Wall main.cpp && ./a.out
