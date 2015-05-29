@@ -1,0 +1,4 @@
+Inserisci la dimensione dell' array A e dell' array B: Introduci elementi nell'array A: 
+Introduci elementi nell'array B: 
+Inserisci la dimensione dell'array C: 
+bash: line 7: 30952 Segmentation fault      (core dumped) ./a.out
