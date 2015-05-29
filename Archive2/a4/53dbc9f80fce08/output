@@ -1,0 +1,4 @@
+main.cpp:11:6: warning: conflicting types for built-in function 'log'
+ void log(int level, const char* fmt, ...)
+      ^
+[42]: Logging, 1, 2, 3
