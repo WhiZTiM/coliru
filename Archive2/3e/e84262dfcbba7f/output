@@ -1,0 +1,6 @@
+main.cpp:3:9: warning: "undefned1" is not defined [-Wundef]
+     #if undefned1 == undefined2
+         ^
+main.cpp:3:22: warning: "undefined2" is not defined [-Wundef]
+     #if undefned1 == undefined2
+                      ^

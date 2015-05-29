@@ -1,0 +1,1 @@
+gcc -Wundef main.cpp && ./a.out
