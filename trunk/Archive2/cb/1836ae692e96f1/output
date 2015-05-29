@@ -1,0 +1,27 @@
+main.cpp:7:15: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+     int count=0;
+               ^
+main.cpp: In member function 'int Base::getCount()':
+main.cpp:11:68: warning: no return statement in function returning non-void [-Wreturn-type]
+     int getCount() {cout << "The count value is " << count << endl;}
+                                                                    ^
+main.cpp: In member function 'Base Base::operator++(int)':
+main.cpp:12:82: warning: no return statement in function returning non-void [-Wreturn-type]
+     Base operator ++ (int) {count++;  cout << "Postfix increment called" << endl;}
+                                                                                  ^
+main.cpp: In member function 'Base Base::operator++()':
+main.cpp:13:78: warning: no return statement in function returning non-void [-Wreturn-type]
+     Base operator ++ () {count++;  cout << "Prefix increment called" << endl;}
+                                                                              ^
+main.cpp: In member function 'Base Derived::operator--(int)':
+main.cpp:19:82: warning: no return statement in function returning non-void [-Wreturn-type]
+     Base operator --(int)  {count--;  cout << "Postfix decrement called" << endl;}
+                                                                                  ^
+Constructor called
+Postfix increment called
+Destructor called
+Prefix increment called
+Destructor called
+Postfix decrement called
+Destructor called
+Destructor called
