@@ -1,0 +1,5 @@
+main.cpp: In function 'int main(int, char**)':
+main.cpp:13:6: warning: statement has no effect [-Wunused-value]
+   nb + i;
+      ^
+0.00000
