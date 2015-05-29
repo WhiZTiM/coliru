@@ -1,0 +1,56 @@
+main.cpp:5:60: error: unknown escape sequence: '\040'
+ Char array2 [ ]  =  {  'F' , 'o' , 'o' , 'b' , 'a' , 'r' , ' \ 0 '  } ;
+                                                            ^
+main.cpp:5:60: warning: multi-character character constant [-Wmultichar]
+main.cpp:7:25: error: missing terminating " character
+ const  de char * s1 = R "foo (
+                         ^
+main.cpp:7:1: error: missing terminating " character
+ const  de char * s1 = R "foo (
+ ^
+main.cpp:8:1: error: stray '\303' in program
+ Olá
+ ^
+main.cpp:8:1: error: stray '\241' in program
+main.cpp:10:7: error: missing terminating " character
+ ) Foo " ; 
+       ^
+main.cpp:10:1: error: missing terminating " character
+ ) Foo " ; 
+ ^
+main.cpp:16:32: error: unknown escape sequence: '\040'
+     std :: cout  << array1 <<  ' \ n '  << array2 <<  ' \ n ' ;
+                                ^
+main.cpp:16:32: warning: multi-character character constant [-Wmultichar]
+main.cpp:16:55: error: unknown escape sequence: '\040'
+     std :: cout  << array1 <<  ' \ n '  << array2 <<  ' \ n ' ;
+                                                       ^
+main.cpp:16:55: warning: multi-character character constant [-Wmultichar]
+main.cpp:3:1: error: 'Char' does not name a type
+ Char array1 [ ]  =  "Foo"  "bar" ; 
+ ^
+main.cpp:5:1: error: 'Char' does not name a type
+ Char array2 [ ]  =  {  'F' , 'o' , 'o' , 'b' , 'a' , 'r' , ' \ 0 '  } ;
+ ^
+main.cpp:5:71: error: extra ';' [-Wpedantic]
+ Char array2 [ ]  =  {  'F' , 'o' , 'o' , 'b' , 'a' , 'r' , ' \ 0 '  } ;
+                                                                       ^
+main.cpp:7:8: error: 'de' does not name a type
+ const  de char * s1 = R "foo (
+        ^
+main.cpp: In function 'int principal()':
+main.cpp:16:21: error: 'array1' was not declared in this scope
+     std :: cout  << array1 <<  ' \ n '  << array2 <<  ' \ n ' ;
+                     ^
+main.cpp:16:44: error: 'array2' was not declared in this scope
+     std :: cout  << array1 <<  ' \ n '  << array2 <<  ' \ n ' ;
+                                            ^
+main.cpp:18:21: error: 's1' was not declared in this scope
+     std :: cout  << s1 << s2 ; 
+                     ^
+main.cpp:18:27: error: 's2' was not declared in this scope
+     std :: cout  << s1 << s2 ; 
+                           ^
+main.cpp:19:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
