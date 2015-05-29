@@ -1,0 +1,9 @@
+main.cpp: In function 'void bar()':
+main.cpp:8:23: error: expansion pattern 'i<Xs>' contains no argument packs
+     int is[] = { i<Xs>... };
+                       ^
+main.cpp: In instantiation of 'void bar() [with Xs = {void, void, void}]':
+main.cpp:13:27:   required from here
+main.cpp:8:9: warning: unused variable 'is' [-Wunused-variable]
+     int is[] = { i<Xs>... };
+         ^
