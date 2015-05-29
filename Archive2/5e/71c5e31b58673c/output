@@ -1,0 +1,9 @@
+Node a: 0
+Node b: 1
+Node c: 2
+Node d: 3
+Node e: 4
+Node e->next: 0
+Node e->next = a.next->next->next->next->next: 0
+0
+4
