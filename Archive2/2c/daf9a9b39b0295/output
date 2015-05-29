@@ -1,0 +1,4 @@
+main.cpp: In function 'int main()':
+main.cpp:9:20: error: no match for call to '(std::unique_ptr<int>) (int*)'
+     foo(new int(88));
+                    ^
