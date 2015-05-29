@@ -1,0 +1,17 @@
+main.cpp: In member function 'int Base::getCount()':
+main.cpp:11:68: error: no return statement in function returning non-void [-Werror=return-type]
+     int getCount() {cout << "The count value is " << count << endl;}
+                                                                    ^
+main.cpp: In member function 'Base Base::operator++(int)':
+main.cpp:12:82: error: no return statement in function returning non-void [-Werror=return-type]
+     Base operator ++ (int) {count++;  cout << "Postfix increment called" << endl;}
+                                                                                  ^
+main.cpp: In member function 'Base Base::operator++()':
+main.cpp:13:78: error: no return statement in function returning non-void [-Werror=return-type]
+     Base operator ++ () {count++;  cout << "Prefix increment called" << endl;}
+                                                                              ^
+main.cpp: In member function 'Base Derived::operator--(int)':
+main.cpp:19:82: error: no return statement in function returning non-void [-Werror=return-type]
+     Base operator --(int)  {count--;  cout << "Postfix decrement called" << endl;}
+                                                                                  ^
+cc1plus: all warnings being treated as errors
