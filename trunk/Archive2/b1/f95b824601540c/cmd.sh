@@ -1,0 +1,1 @@
+g++ -std=c++14 -O2 -Wall -Wnon-template-friend -pedantic -pthread main.cpp && ./a.out
