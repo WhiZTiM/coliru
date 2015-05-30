@@ -1,0 +1,18 @@
+main.cpp:6:51: error: expected ';' at end of member declaration
+     std::map<int, T>* storage = new std::map<int, T>();
+                                                   ^
+main.cpp:6:51: error: declaration of 'std::map<int, T> X<T>::T'
+main.cpp:4:11: error:  shadows template parm 'class T'
+ template <typename T>
+           ^
+main.cpp:6:52: error: expected unqualified-id before '>' token
+     std::map<int, T>* storage = new std::map<int, T>();
+                                                    ^
+main.cpp:6:46: error: wrong number of template arguments (1, should be at least 2)
+     std::map<int, T>* storage = new std::map<int, T>();
+                                              ^
+In file included from /usr/local/include/c++/5.1.0/map:61:0,
+                 from main.cpp:1:
+/usr/local/include/c++/5.1.0/bits/stl_map.h:96:11: note: provided for 'template<class _Key, class _Tp, class _Compare, class _Alloc> class std::map'
+     class map
+           ^
