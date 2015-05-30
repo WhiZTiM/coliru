@@ -1,0 +1,6 @@
+main.cpp: In function 'main':
+main.cpp:7:12: warning: repeated ' ' flag in format [-Wformat=]
+     printf("%f % + fi \n", creal(z), cimag(z));
+            ^
+main.cpp:7:12: warning: ' ' flag ignored with '+' flag in gnu_printf format [-Wformat=]
+1.000000 +2.000000i 
