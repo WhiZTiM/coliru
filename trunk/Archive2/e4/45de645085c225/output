@@ -1,0 +1,37 @@
+main.cpp:5:41: warning: friend declaration 'constexpr int adl_flag(flag<N>)' declares a non-template function [-Wnon-template-friend]
+   friend constexpr int adl_flag (flag<N>);
+                                         ^
+main.cpp:5:41: note: (if this is not what you intended, make sure the function template has already been declared and add <> after the function name here) 
+main.cpp:5:24: warning: inline function 'constexpr int adl_flag(flag<32>)' used but never defined
+   friend constexpr int adl_flag (flag<N>);
+                        ^
+main.cpp:5:24: warning: inline function 'constexpr int adl_flag(flag<31>)' used but never defined
+main.cpp:5:24: warning: inline function 'constexpr int adl_flag(flag<30>)' used but never defined
+main.cpp:5:24: warning: inline function 'constexpr int adl_flag(flag<29>)' used but never defined
+main.cpp:5:24: warning: inline function 'constexpr int adl_flag(flag<28>)' used but never defined
+main.cpp:5:24: warning: inline function 'constexpr int adl_flag(flag<27>)' used but never defined
+main.cpp:5:24: warning: inline function 'constexpr int adl_flag(flag<26>)' used but never defined
+main.cpp:5:24: warning: inline function 'constexpr int adl_flag(flag<25>)' used but never defined
+main.cpp:5:24: warning: inline function 'constexpr int adl_flag(flag<24>)' used but never defined
+main.cpp:5:24: warning: inline function 'constexpr int adl_flag(flag<23>)' used but never defined
+main.cpp:5:24: warning: inline function 'constexpr int adl_flag(flag<22>)' used but never defined
+main.cpp:5:24: warning: inline function 'constexpr int adl_flag(flag<21>)' used but never defined
+main.cpp:5:24: warning: inline function 'constexpr int adl_flag(flag<20>)' used but never defined
+main.cpp:5:24: warning: inline function 'constexpr int adl_flag(flag<19>)' used but never defined
+main.cpp:5:24: warning: inline function 'constexpr int adl_flag(flag<18>)' used but never defined
+main.cpp:5:24: warning: inline function 'constexpr int adl_flag(flag<17>)' used but never defined
+main.cpp:5:24: warning: inline function 'constexpr int adl_flag(flag<16>)' used but never defined
+main.cpp:5:24: warning: inline function 'constexpr int adl_flag(flag<15>)' used but never defined
+main.cpp:5:24: warning: inline function 'constexpr int adl_flag(flag<14>)' used but never defined
+main.cpp:5:24: warning: inline function 'constexpr int adl_flag(flag<13>)' used but never defined
+main.cpp:5:24: warning: inline function 'constexpr int adl_flag(flag<12>)' used but never defined
+main.cpp:5:24: warning: inline function 'constexpr int adl_flag(flag<11>)' used but never defined
+main.cpp:5:24: warning: inline function 'constexpr int adl_flag(flag<10>)' used but never defined
+main.cpp:5:24: warning: inline function 'constexpr int adl_flag(flag<9>)' used but never defined
+main.cpp:5:24: warning: inline function 'constexpr int adl_flag(flag<8>)' used but never defined
+main.cpp:5:24: warning: inline function 'constexpr int adl_flag(flag<7>)' used but never defined
+main.cpp:5:24: warning: inline function 'constexpr int adl_flag(flag<6>)' used but never defined
+main.cpp:5:24: warning: inline function 'constexpr int adl_flag(flag<5>)' used but never defined
+main.cpp:5:24: warning: inline function 'constexpr int adl_flag(flag<4>)' used but never defined
+main.cpp:5:24: warning: inline function 'constexpr int adl_flag(flag<0>)' used but never defined
+1 2 3
