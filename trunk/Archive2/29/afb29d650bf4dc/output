@@ -1,0 +1,18 @@
+main.cpp: In function 'int main()':
+main.cpp:31:12: error: no matching function for call to 'foo(X)'
+     foo(X{});
+            ^
+main.cpp:22:6: note: candidate: template<class T, decltype (detail::check_trait_t<T>{}) <anonymous> > void foo(T)
+ void foo(T){}
+      ^
+main.cpp:22:6: note:   template argument deduction/substitution failed:
+main.cpp:16:52: error: no matching function for call to 'has_some_trait(X)'
+ template<class T, class C = decltype(has_some_trait(T{}))>
+                                                    ^
+main.cpp:11:15: note: candidate: template<class T, class> some_trait<T> has_some_trait(T)
+ some_trait<T> has_some_trait(T);
+               ^
+main.cpp:11:15: note:   template argument deduction/substitution failed:
+main.cpp:21:60: note: invalid template non-type parameter
+ template<class T, decltype (detail::check_trait_t<T> {}) = 0>
+                                                            ^
