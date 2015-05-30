@@ -1,0 +1,12 @@
+
+
+g++ & libstdc++ ######################################################################################################
+
+void print_type() [with T = std::integral_constant<int, 0>]
+void print_type() [with T = std::integral_constant<int, 15>]
+
+
+clang++ & libc++ ######################################################################################################
+
+void print_type() [T = std::__1::integral_constant<int, 0>]
+void print_type() [T = std::__1::integral_constant<int, 15>]
