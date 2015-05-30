@@ -1,0 +1,53 @@
+
+
+========== test.h ==========
+  #pragma once
+  
+  
+  template<typename T>
+  T sum(T a, T b)
+  {
+      return a + b;
+  }
+  
+  
+  extern template int sum(int, int);
+  extern template long sum(long, long);
+  extern template double sum(double, double);
+  
+
+========== test.cpp ==========
+  #include "test.h"
+  
+  
+  template int sum(int, int);
+  template long sum(long, long);
+  template double sum(double, double);
+
+========== main.cpp ==========
+  #include "test.h"
+  #include <iostream>
+  
+  
+  // enabling this line causes linker error
+  //extern template float sum(float, float);
+  
+  
+  int main()
+  {
+      std::cout << sum(3, 4) << std::endl;     // extern in test.h, explicitly instantiated in test.cpp
+      std::cout << sum(3l, 4l) << std::endl;   // extern in test.h, explicitly instantiated in test.cpp
+      std::cout << sum(3.0, 4.0) << std::endl; // extern in test.h explicitly instantiated in test.cpp
+  
+      
+      // T=float is not explicitly instantiated in test.cpp
+      // so instantiation happens here unless the commented out extern above is enabled
+      std::cout << sum(3.0f, 4.0f) << std::endl; 
+      
+  }
+
+========== output ==========
+7
+7
+7
+7
