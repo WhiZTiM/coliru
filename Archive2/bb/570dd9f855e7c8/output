@@ -1,0 +1,27 @@
+main.cpp: In instantiation of 'constexpr str_const str_const::operator+(const char (&)[N]) const [with long unsigned int N = 4ul]':
+main.cpp:56:26:   required from here
+main.cpp:31:14: warning: ISO C++ forbids variable length array [-Wvla]
+         char new_str[size() + N] = {0};
+              ^
+main.cpp:38:33: error: no matching function for call to 'str_const::str_const(char [(<anonymous> + 1)])'
+         return str_const(new_str);
+                                 ^
+main.cpp:12:15: note: candidate: template<long unsigned int N> constexpr str_const::str_const(const char (&)[N])
+     constexpr str_const(const char(&a)[N]) : // ctor
+               ^
+main.cpp:12:15: note:   template argument deduction/substitution failed:
+main.cpp:38:33: note:   variable-sized array type 'long int' is not a valid template argument
+         return str_const(new_str);
+                                 ^
+main.cpp:5:7: note: candidate: constexpr str_const::str_const(const str_const&)
+ class str_const {
+       ^
+main.cpp:5:7: note:   no known conversion for argument 1 from 'char [(<anonymous> + 1)]' to 'const str_const&'
+main.cpp:5:7: note: candidate: constexpr str_const::str_const(str_const&&)
+main.cpp:5:7: note:   no known conversion for argument 1 from 'char [(<anonymous> + 1)]' to 'str_const&&'
+main.cpp: In function 'int main()':
+main.cpp:56:5: error: non-constant condition for static assertion
+     static_assert(str1 + "DEF" == "ABCDEF", "Fail");
+     ^
+main.cpp:56:26:   in constexpr expansion of 'str1.str_const::operator+<4ul>("DEF")'
+main.cpp:56:5: error: constexpr call flows off the end of the function
