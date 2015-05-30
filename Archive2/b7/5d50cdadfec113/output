@@ -1,0 +1,34 @@
+main.cpp: In function 'void* malloc(size_t)':
+main.cpp:13:25: error: declaration of 'void* malloc(size_t)' has a different exception specifier
+ void *malloc(size_t size) {
+                         ^
+In file included from /usr/local/include/c++/5.1.0/cstdlib:72:0,
+                 from /usr/local/include/c++/5.1.0/ext/string_conversions.h:41,
+                 from /usr/local/include/c++/5.1.0/bits/basic_string.h:5244,
+                 from /usr/local/include/c++/5.1.0/string:52,
+                 from /usr/local/include/c++/5.1.0/bits/locale_classes.h:40,
+                 from /usr/local/include/c++/5.1.0/bits/ios_base.h:41,
+                 from /usr/local/include/c++/5.1.0/ios:42,
+                 from /usr/local/include/c++/5.1.0/ostream:38,
+                 from /usr/local/include/c++/5.1.0/iostream:39,
+                 from main.cpp:3:
+/usr/include/stdlib.h:471:14: error: from previous declaration 'void* malloc(size_t) throw ()'
+ extern void *malloc (size_t __size) __THROW __attribute_malloc__ __wur;
+              ^
+main.cpp: In function 'void free(void*)':
+main.cpp:25:20: error: declaration of 'void free(void*)' has a different exception specifier
+ void free(void* ptr) {
+                    ^
+In file included from /usr/local/include/c++/5.1.0/cstdlib:72:0,
+                 from /usr/local/include/c++/5.1.0/ext/string_conversions.h:41,
+                 from /usr/local/include/c++/5.1.0/bits/basic_string.h:5244,
+                 from /usr/local/include/c++/5.1.0/string:52,
+                 from /usr/local/include/c++/5.1.0/bits/locale_classes.h:40,
+                 from /usr/local/include/c++/5.1.0/bits/ios_base.h:41,
+                 from /usr/local/include/c++/5.1.0/ios:42,
+                 from /usr/local/include/c++/5.1.0/ostream:38,
+                 from /usr/local/include/c++/5.1.0/iostream:39,
+                 from main.cpp:3:
+/usr/include/stdlib.h:488:13: error: from previous declaration 'void free(void*) throw ()'
+ extern void free (void *__ptr) __THROW;
+             ^
