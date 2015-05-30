@@ -1,0 +1,1 @@
+clang -x c -std=c11 -O2 -Wall -pedantic -pthread -lcrypto main.cpp && time ./a.out
