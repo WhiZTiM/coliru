@@ -1,0 +1,19 @@
+main.cpp: In instantiation of 'struct DeferredContainer<DictionaryObject>':
+/usr/local/include/boost/mpl/sizeof.hpp:27:26:   required from 'struct boost::mpl::sizeof_<DeferredContainer<DictionaryObject> >'
+/usr/local/include/boost/mpl/aux_/has_type.hpp:20:1:   required by substitution of 'template<class U> static char (& boost::mpl::aux::has_type<T, fallback_>::gcc_3_2_wknd::test(const volatile boost::mpl::aux::type_wrapper<U>*, boost::mpl::aux::type_wrapper<typename U::type>*))[2] [with U = boost::mpl::sizeof_<DeferredContainer<DictionaryObject> >]'
+/usr/local/include/boost/mpl/aux_/has_type.hpp:20:1:   required from 'const bool boost::mpl::aux::has_type<boost::mpl::sizeof_<DeferredContainer<DictionaryObject> >, mpl_::bool_<true> >::value'
+/usr/local/include/boost/mpl/aux_/has_type.hpp:20:1:   required from 'struct boost::mpl::aux::has_type<boost::mpl::sizeof_<DeferredContainer<DictionaryObject> >, mpl_::bool_<true> >'
+/usr/local/include/boost/mpl/aux_/preprocessed/gcc/quote.hpp:32:36:   required from 'struct boost::mpl::quote1<boost::mpl::sizeof_, mpl_::void_>::apply<DeferredContainer<DictionaryObject> >'
+/usr/local/include/boost/mpl/aux_/preprocessed/gcc/apply_wrap.hpp:36:8:   [ skipping 11 instantiation contexts, use -ftemplate-backtrace-limit=0 to disable ]
+/usr/local/include/boost/mpl/transform.hpp:56:8:   required from 'struct boost::mpl::aux::reverse_transform1_impl<boost::mpl::l_item<mpl_::long_<2l>, Deferred<MixedArrayObject>, boost::mpl::l_item<mpl_::long_<1l>, DeferredContainer<DictionaryObject>, boost::mpl::l_end> >, boost::mpl::sizeof_<mpl_::arg<1> >, boost::mpl::front_inserter<boost::mpl::l_end> >'
+/usr/local/include/boost/mpl/transform.hpp:113:1:   required from 'struct boost::mpl::transform1<boost::mpl::l_item<mpl_::long_<2l>, Deferred<MixedArrayObject>, boost::mpl::l_item<mpl_::long_<1l>, DeferredContainer<DictionaryObject>, boost::mpl::l_end> >, boost::mpl::sizeof_<mpl_::arg<1> >, mpl_::na>'
+/usr/local/include/boost/variant/variant.hpp:126:57:   required from 'struct boost::detail::variant::max_value<boost::mpl::l_item<mpl_::long_<2l>, Deferred<MixedArrayObject>, boost::mpl::l_item<mpl_::long_<1l>, DeferredContainer<DictionaryObject>, boost::mpl::l_end> >, boost::mpl::sizeof_<mpl_::arg<1> > >'
+/usr/local/include/boost/variant/variant.hpp:277:17:   required from 'struct boost::detail::variant::make_storage<boost::mpl::l_item<mpl_::long_<2l>, Deferred<MixedArrayObject>, boost::mpl::l_item<mpl_::long_<1l>, DeferredContainer<DictionaryObject>, boost::mpl::l_end> >, boost::variant<Deferred<MixedArrayObject>, DeferredContainer<DictionaryObject> >::has_fallback_type_>'
+/usr/local/include/boost/variant/variant.hpp:1211:17:   required from 'class boost::variant<Deferred<MixedArrayObject>, DeferredContainer<DictionaryObject> >'
+main.cpp:35:15:   required from here
+main.cpp:12:33: error: invalid use of incomplete type 'class DictionaryObject'
+  typedef typename T::value_type value_type;
+                                 ^
+main.cpp:15:7: note: forward declaration of 'class DictionaryObject'
+ class DictionaryObject;
+       ^
