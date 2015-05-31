@@ -1,0 +1,802 @@
+In file included from main.cpp:59:
+In file included from /usr/local/include/boost/format.hpp:38:
+In file included from /usr/local/include/boost/format/internals.hpp:20:
+In file included from /usr/local/include/boost/optional.hpp:15:
+In file included from /usr/local/include/boost/optional/optional.hpp:36:
+In file included from /usr/local/include/boost/type_traits/decay.hpp:18:
+/usr/local/include/boost/mpl/eval_if.hpp:60:26: error: no type named 'type' in 'boost::range_mutable_iterator<ranges::v3::take_while_view<ranges::v3::range<ranges::v3::basic_iterator<ranges::v3::adaptor_cursor<ranges::v3::basic_iterator<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, ranges::v3::default_sentinel>, ranges::v3::adaptor_base>, ranges::v3::adaptor_sentinel<ranges::v3::basic_sentinel<ranges::v3::default_sentinel>, ranges::v3::iter_take_while_view<ranges::v3::range<ranges::v3::basic_iterator<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, ranges::v3::default_sentinel>, ranges::v3::basic_sentinel<ranges::v3::default_sentinel> >, ranges::v3::indirected<ranges::v3::group_by_view<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, (lambda at main.cpp:105:27)>::cursor<true>::take_while_pred>, false>::sentinel_adaptor<true> > >, ranges::v3::basic_sentinel<ranges::v3::adaptor_sentinel<ranges::v3::basic_sentinel<ranges::v3::default_sentinel>, ranges::v3::iter_take_while_view<ranges::v3::range<ranges::v3::basic_iterator<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, ranges::v3::default_sentinel>, ranges::v3::basic_sentinel<ranges::v3::default_sentinel> >, ranges::v3::indirected<ranges::v3::group_by_view<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, (lambda at main.cpp:105:27)>::cursor<true>::take_while_pred>, false>::sentinel_adaptor<true> > > >, ranges::v3::group_by_view<ranges::v3::take_while_view<ranges::v3::range<ranges::v3::basic_iterator<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, ranges::v3::default_sentinel>, ranges::v3::basic_sentinel<ranges::v3::default_sentinel> >, ranges::v3::group_by_view<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, (lambda at main.cpp:105:27)>::cursor<true>::take_while_pred, false>, (lambda at main.cpp:111:27)>::cursor<true>::take_while_pred, false>, void>'
+    typedef typename f_::type type;
+            ~~~~~~~~~~~~~^~~~
+/usr/local/include/boost/range/iterator.hpp:65:31: note: in instantiation of template class 'boost::mpl::eval_if_c<false, boost::range_const_iterator<ranges::v3::take_while_view<ranges::v3::range<ranges::v3::basic_iterator<ranges::v3::adaptor_cursor<ranges::v3::basic_iterator<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, ranges::v3::default_sentinel>, ranges::v3::adaptor_base>, ranges::v3::adaptor_sentinel<ranges::v3::basic_sentinel<ranges::v3::default_sentinel>, ranges::v3::iter_take_while_view<ranges::v3::range<ranges::v3::basic_iterator<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, ranges::v3::default_sentinel>, ranges::v3::basic_sentinel<ranges::v3::default_sentinel> >, ranges::v3::indirected<ranges::v3::group_by_view<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, (lambda at main.cpp:105:27)>::cursor<true>::take_while_pred>, false>::sentinel_adaptor<true> > >, ranges::v3::basic_sentinel<ranges::v3::adaptor_sentinel<ranges::v3::basic_sentinel<ranges::v3::default_sentinel>, ranges::v3::iter_take_while_view<ranges::v3::range<ranges::v3::basic_iterator<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, ranges::v3::default_sentinel>, ranges::v3::basic_sentinel<ranges::v3::default_sentinel> >, ranges::v3::indirected<ranges::v3::group_by_view<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, (lambda at main.cpp:105:27)>::cursor<true>::take_while_pred>, false>::sentinel_adaptor<true> > > >, ranges::v3::group_by_view<ranges::v3::take_while_view<ranges::v3::range<ranges::v3::basic_iterator<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, ranges::v3::default_sentinel>, ranges::v3::basic_sentinel<ranges::v3::default_sentinel> >, ranges::v3::group_by_view<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, (lambda at main.cpp:105:27)>::cursor<true>::take_while_pred, false>, (lambda at main.cpp:111:27)>::cursor<true>::take_while_pred, false>, void>, boost::range_mutable_iterator<ranges::v3::take_while_view<ranges::v3::range<ranges::v3::basic_iterator<ranges::v3::adaptor_cursor<ranges::v3::basic_iterator<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, ranges::v3::default_sentinel>, ranges::v3::adaptor_base>, ranges::v3::adaptor_sentinel<ranges::v3::basic_sentinel<ranges::v3::default_sentinel>, ranges::v3::iter_take_while_view<ranges::v3::range<ranges::v3::basic_iterator<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, ranges::v3::default_sentinel>, ranges::v3::basic_sentinel<ranges::v3::default_sentinel> >, ranges::v3::indirected<ranges::v3::group_by_view<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, (lambda at main.cpp:105:27)>::cursor<true>::take_while_pred>, false>::sentinel_adaptor<true> > >, ranges::v3::basic_sentinel<ranges::v3::adaptor_sentinel<ranges::v3::basic_sentinel<ranges::v3::default_sentinel>, ranges::v3::iter_take_while_view<ranges::v3::range<ranges::v3::basic_iterator<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, ranges::v3::default_sentinel>, ranges::v3::basic_sentinel<ranges::v3::default_sentinel> >, ranges::v3::indirected<ranges::v3::group_by_view<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, (lambda at main.cpp:105:27)>::cursor<true>::take_while_pred>, false>::sentinel_adaptor<true> > > >, ranges::v3::group_by_view<ranges::v3::take_while_view<ranges::v3::range<ranges::v3::basic_iterator<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, ranges::v3::default_sentinel>, ranges::v3::basic_sentinel<ranges::v3::default_sentinel> >, ranges::v3::group_by_view<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, (lambda at main.cpp:105:27)>::cursor<true>::take_while_pred, false>, (lambda at main.cpp:111:27)>::cursor<true>::take_while_pred, false>, void> >' requested here
+        typedef typename mpl::eval_if_c<
+                              ^
+/usr/local/include/boost/range/difference_type.hpp:28:40: note: in instantiation of template class 'boost::range_iterator<ranges::v3::take_while_view<ranges::v3::range<ranges::v3::basic_iterator<ranges::v3::adaptor_cursor<ranges::v3::basic_iterator<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, ranges::v3::default_sentinel>, ranges::v3::adaptor_base>, ranges::v3::adaptor_sentinel<ranges::v3::basic_sentinel<ranges::v3::default_sentinel>, ranges::v3::iter_take_while_view<ranges::v3::range<ranges::v3::basic_iterator<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, ranges::v3::default_sentinel>, ranges::v3::basic_sentinel<ranges::v3::default_sentinel> >, ranges::v3::indirected<ranges::v3::group_by_view<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, (lambda at main.cpp:105:27)>::cursor<true>::take_while_pred>, false>::sentinel_adaptor<true> > >, ranges::v3::basic_sentinel<ranges::v3::adaptor_sentinel<ranges::v3::basic_sentinel<ranges::v3::default_sentinel>, ranges::v3::iter_take_while_view<ranges::v3::range<ranges::v3::basic_iterator<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, ranges::v3::default_sentinel>, ranges::v3::basic_sentinel<ranges::v3::default_sentinel> >, ranges::v3::indirected<ranges::v3::group_by_view<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, (lambda at main.cpp:105:27)>::cursor<true>::take_while_pred>, false>::sentinel_adaptor<true> > > >, ranges::v3::group_by_view<ranges::v3::take_while_view<ranges::v3::range<ranges::v3::basic_iterator<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, ranges::v3::default_sentinel>, ranges::v3::basic_sentinel<ranges::v3::default_sentinel> >, ranges::v3::group_by_view<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, (lambda at main.cpp:105:27)>::cursor<true>::take_while_pred, false>, (lambda at main.cpp:111:27)>::cursor<true>::take_while_pred, false>, void>' requested here
+                BOOST_DEDUCED_TYPENAME range_iterator<
+                                       ^
+/usr/local/include/boost/range/size_type.hpp:57:40: note: in instantiation of template class 'boost::range_difference<ranges::v3::take_while_view<ranges::v3::range<ranges::v3::basic_iterator<ranges::v3::adaptor_cursor<ranges::v3::basic_iterator<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, ranges::v3::default_sentinel>, ranges::v3::adaptor_base>, ranges::v3::adaptor_sentinel<ranges::v3::basic_sentinel<ranges::v3::default_sentinel>, ranges::v3::iter_take_while_view<ranges::v3::range<ranges::v3::basic_iterator<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, ranges::v3::default_sentinel>, ranges::v3::basic_sentinel<ranges::v3::default_sentinel> >, ranges::v3::indirected<ranges::v3::group_by_view<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, (lambda at main.cpp:105:27)>::cursor<true>::take_while_pred>, false>::sentinel_adaptor<true> > >, ranges::v3::basic_sentinel<ranges::v3::adaptor_sentinel<ranges::v3::basic_sentinel<ranges::v3::default_sentinel>, ranges::v3::iter_take_while_view<ranges::v3::range<ranges::v3::basic_iterator<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, ranges::v3::default_sentinel>, ranges::v3::basic_sentinel<ranges::v3::default_sentinel> >, ranges::v3::indirected<ranges::v3::group_by_view<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, (lambda at main.cpp:105:27)>::cursor<true>::take_while_pred>, false>::sentinel_adaptor<true> > > >, ranges::v3::group_by_view<ranges::v3::take_while_view<ranges::v3::range<ranges::v3::basic_iterator<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, ranges::v3::default_sentinel>, ranges::v3::basic_sentinel<ranges::v3::default_sentinel> >, ranges::v3::group_by_view<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, (lambda at main.cpp:105:27)>::cursor<true>::take_while_pred, false>, (lambda at main.cpp:111:27)>::cursor<true>::take_while_pred, false> >' requested here
+                BOOST_DEDUCED_TYPENAME range_difference<C>::type
+                                       ^
+/usr/local/include/boost/range/size_type.hpp:87:11: note: in instantiation of template class 'boost::detail::range_size<ranges::v3::take_while_view<ranges::v3::range<ranges::v3::basic_iterator<ranges::v3::adaptor_cursor<ranges::v3::basic_iterator<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, ranges::v3::default_sentinel>, ranges::v3::adaptor_base>, ranges::v3::adaptor_sentinel<ranges::v3::basic_sentinel<ranges::v3::default_sentinel>, ranges::v3::iter_take_while_view<ranges::v3::range<ranges::v3::basic_iterator<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, ranges::v3::default_sentinel>, ranges::v3::basic_sentinel<ranges::v3::default_sentinel> >, ranges::v3::indirected<ranges::v3::group_by_view<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, (lambda at main.cpp:105:27)>::cursor<true>::take_while_pred>, false>::sentinel_adaptor<true> > >, ranges::v3::basic_sentinel<ranges::v3::adaptor_sentinel<ranges::v3::basic_sentinel<ranges::v3::default_sentinel>, ranges::v3::iter_take_while_view<ranges::v3::range<ranges::v3::basic_iterator<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, ranges::v3::default_sentinel>, ranges::v3::basic_sentinel<ranges::v3::default_sentinel> >, ranges::v3::indirected<ranges::v3::group_by_view<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, (lambda at main.cpp:105:27)>::cursor<true>::take_while_pred>, false>::sentinel_adaptor<true> > > >, ranges::v3::group_by_view<ranges::v3::take_while_view<ranges::v3::range<ranges::v3::basic_iterator<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, ranges::v3::default_sentinel>, ranges::v3::basic_sentinel<ranges::v3::default_sentinel> >, ranges::v3::group_by_view<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, (lambda at main.cpp:105:27)>::cursor<true>::take_while_pred, false>, (lambda at main.cpp:111:27)>::cursor<true>::take_while_pred, false>, void>' requested here
+        : detail::range_size<T>
+          ^
+/usr/local/include/boost/range/size.hpp:54:21: note: in instantiation of template class 'boost::range_size<const ranges::v3::take_while_view<ranges::v3::range<ranges::v3::basic_iterator<ranges::v3::adaptor_cursor<ranges::v3::basic_iterator<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, ranges::v3::default_sentinel>, ranges::v3::adaptor_base>, ranges::v3::adaptor_sentinel<ranges::v3::basic_sentinel<ranges::v3::default_sentinel>, ranges::v3::iter_take_while_view<ranges::v3::range<ranges::v3::basic_iterator<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, ranges::v3::default_sentinel>, ranges::v3::basic_sentinel<ranges::v3::default_sentinel> >, ranges::v3::indirected<ranges::v3::group_by_view<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, (lambda at main.cpp:105:27)>::cursor<true>::take_while_pred>, false>::sentinel_adaptor<true> > >, ranges::v3::basic_sentinel<ranges::v3::adaptor_sentinel<ranges::v3::basic_sentinel<ranges::v3::default_sentinel>, ranges::v3::iter_take_while_view<ranges::v3::range<ranges::v3::basic_iterator<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, ranges::v3::default_sentinel>, ranges::v3::basic_sentinel<ranges::v3::default_sentinel> >, ranges::v3::indirected<ranges::v3::group_by_view<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, (lambda at main.cpp:105:27)>::cursor<true>::take_while_pred>, false>::sentinel_adaptor<true> > > >, ranges::v3::group_by_view<ranges::v3::take_while_view<ranges::v3::range<ranges::v3::basic_iterator<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, ranges::v3::default_sentinel>, ranges::v3::basic_sentinel<ranges::v3::default_sentinel> >, ranges::v3::group_by_view<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, (lambda at main.cpp:105:27)>::cursor<true>::take_while_pred, false>, (lambda at main.cpp:111:27)>::cursor<true>::take_while_pred, false> >' requested here
+    inline typename range_size<const SinglePassRange>::type
+                    ^
+/usr/local/include/range/v3/size.hpp:91:30: note: (skipping 80 contexts in backtrace; use -ftemplate-backtrace-limit=0 to see all)
+                    decltype(size(detail::forward<Rng>(rng)))
+                             ^
+/usr/local/include/range/v3/utility/functional.hpp:511:13: note: while substituting deduced template arguments into function template 'pipe' [with Rng = ranges::v3::group_by_view<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, (lambda at main.cpp:105:27)>, Vw = ranges::v3::view::view<ranges::v3::detail::pipeable_binder<std::_Bind<ranges::v3::view::transform_fn (std::_Placeholder<1>, (lambda at main.cpp:141:28))> > > &, _concept_requires_91 = (no value), $3 = (no value)]
+            pipeable_access::impl<Pipe>::pipe(std::forward<Arg>(arg), pipe)
+            ^
+/usr/local/include/range/v3/detail/config.hpp:25:17: note: expanded from macro 'RANGES_DECLTYPE_AUTO_RETURN'
+    -> decltype(__VA_ARGS__)                                    \
+                ^
+main.cpp:285:11: note: while substituting deduced template arguments into function template 'operator|' [with Arg = ranges::v3::group_by_view<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, (lambda at main.cpp:105:27)>, Pipe = ranges::v3::view::view<ranges::v3::detail::pipeable_binder<std::_Bind<ranges::v3::view::transform_fn (std::_Placeholder<1>, (lambda at main.cpp:141:28))> > >, _concept_requires_507 = (no value), $3 = (no value)]
+          | layout_months()
+          ^
+/usr/local/include/range/v3/utility/functional.hpp:501:17: note: in instantiation of function template specialization 'format_calendar(std::size_t)::(anonymous class)::operator()<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date> >' requested here
+                pipe(std::forward<Arg>(arg))
+                ^
+/usr/local/include/range/v3/detail/config.hpp:25:17: note: expanded from macro 'RANGES_DECLTYPE_AUTO_RETURN'
+    -> decltype(__VA_ARGS__)                                    \
+                ^
+/usr/local/include/range/v3/utility/functional.hpp:511:13: note: while substituting deduced template arguments into function template 'pipe' [with Arg = ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, Pipe = ranges::v3::detail::pipeable_binder<(lambda at main.cpp:279:26)>]
+            pipeable_access::impl<Pipe>::pipe(std::forward<Arg>(arg), pipe)
+            ^
+/usr/local/include/range/v3/detail/config.hpp:25:17: note: expanded from macro 'RANGES_DECLTYPE_AUTO_RETURN'
+    -> decltype(__VA_ARGS__)                                    \
+                ^
+main.cpp:334:33: note: while substituting deduced template arguments into function template 'operator|' [with Arg = ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, Pipe = ranges::v3::detail::pipeable_binder<(lambda at main.cpp:279:26)>, _concept_requires_507 = (no value), $3 = (no value)]
+        copy(dates(start, stop) | format_calendar(months_per_line),
+                                ^
+In file included from main.cpp:59:
+In file included from /usr/local/include/boost/format.hpp:38:
+In file included from /usr/local/include/boost/format/internals.hpp:20:
+In file included from /usr/local/include/boost/optional.hpp:15:
+In file included from /usr/local/include/boost/optional/optional.hpp:36:
+In file included from /usr/local/include/boost/type_traits/decay.hpp:18:
+/usr/local/include/boost/mpl/eval_if.hpp:60:26: error: no type named 'type' in 'boost::range_const_iterator<ranges::v3::take_while_view<ranges::v3::range<ranges::v3::basic_iterator<ranges::v3::adaptor_cursor<ranges::v3::basic_iterator<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, ranges::v3::default_sentinel>, ranges::v3::adaptor_base>, ranges::v3::adaptor_sentinel<ranges::v3::basic_sentinel<ranges::v3::default_sentinel>, ranges::v3::iter_take_while_view<ranges::v3::range<ranges::v3::basic_iterator<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, ranges::v3::default_sentinel>, ranges::v3::basic_sentinel<ranges::v3::default_sentinel> >, ranges::v3::indirected<ranges::v3::group_by_view<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, (lambda at main.cpp:105:27)>::cursor<true>::take_while_pred>, false>::sentinel_adaptor<true> > >, ranges::v3::basic_sentinel<ranges::v3::adaptor_sentinel<ranges::v3::basic_sentinel<ranges::v3::default_sentinel>, ranges::v3::iter_take_while_view<ranges::v3::range<ranges::v3::basic_iterator<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, ranges::v3::default_sentinel>, ranges::v3::basic_sentinel<ranges::v3::default_sentinel> >, ranges::v3::indirected<ranges::v3::group_by_view<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, (lambda at main.cpp:105:27)>::cursor<true>::take_while_pred>, false>::sentinel_adaptor<true> > > >, ranges::v3::group_by_view<ranges::v3::take_while_view<ranges::v3::range<ranges::v3::basic_iterator<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, ranges::v3::default_sentinel>, ranges::v3::basic_sentinel<ranges::v3::default_sentinel> >, ranges::v3::group_by_view<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, (lambda at main.cpp:105:27)>::cursor<true>::take_while_pred, false>, (lambda at main.cpp:111:27)>::cursor<true>::take_while_pred, false>, void>'
+    typedef typename f_::type type;
+            ~~~~~~~~~~~~~^~~~
+/usr/local/include/boost/range/iterator.hpp:65:31: note: in instantiation of template class 'boost::mpl::eval_if_c<true, boost::range_const_iterator<ranges::v3::take_while_view<ranges::v3::range<ranges::v3::basic_iterator<ranges::v3::adaptor_cursor<ranges::v3::basic_iterator<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, ranges::v3::default_sentinel>, ranges::v3::adaptor_base>, ranges::v3::adaptor_sentinel<ranges::v3::basic_sentinel<ranges::v3::default_sentinel>, ranges::v3::iter_take_while_view<ranges::v3::range<ranges::v3::basic_iterator<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, ranges::v3::default_sentinel>, ranges::v3::basic_sentinel<ranges::v3::default_sentinel> >, ranges::v3::indirected<ranges::v3::group_by_view<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, (lambda at main.cpp:105:27)>::cursor<true>::take_while_pred>, false>::sentinel_adaptor<true> > >, ranges::v3::basic_sentinel<ranges::v3::adaptor_sentinel<ranges::v3::basic_sentinel<ranges::v3::default_sentinel>, ranges::v3::iter_take_while_view<ranges::v3::range<ranges::v3::basic_iterator<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, ranges::v3::default_sentinel>, ranges::v3::basic_sentinel<ranges::v3::default_sentinel> >, ranges::v3::indirected<ranges::v3::group_by_view<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, (lambda at main.cpp:105:27)>::cursor<true>::take_while_pred>, false>::sentinel_adaptor<true> > > >, ranges::v3::group_by_view<ranges::v3::take_while_view<ranges::v3::range<ranges::v3::basic_iterator<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, ranges::v3::default_sentinel>, ranges::v3::basic_sentinel<ranges::v3::default_sentinel> >, ranges::v3::group_by_view<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, (lambda at main.cpp:105:27)>::cursor<true>::take_while_pred, false>, (lambda at main.cpp:111:27)>::cursor<true>::take_while_pred, false>, void>, boost::range_mutable_iterator<const ranges::v3::take_while_view<ranges::v3::range<ranges::v3::basic_iterator<ranges::v3::adaptor_cursor<ranges::v3::basic_iterator<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, ranges::v3::default_sentinel>, ranges::v3::adaptor_base>, ranges::v3::adaptor_sentinel<ranges::v3::basic_sentinel<ranges::v3::default_sentinel>, ranges::v3::iter_take_while_view<ranges::v3::range<ranges::v3::basic_iterator<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, ranges::v3::default_sentinel>, ranges::v3::basic_sentinel<ranges::v3::default_sentinel> >, ranges::v3::indirected<ranges::v3::group_by_view<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, (lambda at main.cpp:105:27)>::cursor<true>::take_while_pred>, false>::sentinel_adaptor<true> > >, ranges::v3::basic_sentinel<ranges::v3::adaptor_sentinel<ranges::v3::basic_sentinel<ranges::v3::default_sentinel>, ranges::v3::iter_take_while_view<ranges::v3::range<ranges::v3::basic_iterator<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, ranges::v3::default_sentinel>, ranges::v3::basic_sentinel<ranges::v3::default_sentinel> >, ranges::v3::indirected<ranges::v3::group_by_view<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, (lambda at main.cpp:105:27)>::cursor<true>::take_while_pred>, false>::sentinel_adaptor<true> > > >, ranges::v3::group_by_view<ranges::v3::take_while_view<ranges::v3::range<ranges::v3::basic_iterator<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, ranges::v3::default_sentinel>, ranges::v3::basic_sentinel<ranges::v3::default_sentinel> >, ranges::v3::group_by_view<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, (lambda at main.cpp:105:27)>::cursor<true>::take_while_pred, false>, (lambda at main.cpp:111:27)>::cursor<true>::take_while_pred, false>, void> >' requested here
+        typedef typename mpl::eval_if_c<
+                              ^
+/usr/local/include/boost/range/concepts.hpp:270:40: note: in instantiation of template class 'boost::range_iterator<const ranges::v3::take_while_view<ranges::v3::range<ranges::v3::basic_iterator<ranges::v3::adaptor_cursor<ranges::v3::basic_iterator<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, ranges::v3::default_sentinel>, ranges::v3::adaptor_base>, ranges::v3::adaptor_sentinel<ranges::v3::basic_sentinel<ranges::v3::default_sentinel>, ranges::v3::iter_take_while_view<ranges::v3::range<ranges::v3::basic_iterator<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, ranges::v3::default_sentinel>, ranges::v3::basic_sentinel<ranges::v3::default_sentinel> >, ranges::v3::indirected<ranges::v3::group_by_view<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, (lambda at main.cpp:105:27)>::cursor<true>::take_while_pred>, false>::sentinel_adaptor<true> > >, ranges::v3::basic_sentinel<ranges::v3::adaptor_sentinel<ranges::v3::basic_sentinel<ranges::v3::default_sentinel>, ranges::v3::iter_take_while_view<ranges::v3::range<ranges::v3::basic_iterator<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, ranges::v3::default_sentinel>, ranges::v3::basic_sentinel<ranges::v3::default_sentinel> >, ranges::v3::indirected<ranges::v3::group_by_view<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, (lambda at main.cpp:105:27)>::cursor<true>::take_while_pred>, false>::sentinel_adaptor<true> > > >, ranges::v3::group_by_view<ranges::v3::take_while_view<ranges::v3::range<ranges::v3::basic_iterator<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, ranges::v3::default_sentinel>, ranges::v3::basic_sentinel<ranges::v3::default_sentinel> >, ranges::v3::group_by_view<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, (lambda at main.cpp:105:27)>::cursor<true>::take_while_pred, false>, (lambda at main.cpp:111:27)>::cursor<true>::take_while_pred, false>, void>' requested here
+        typedef BOOST_DEDUCED_TYPENAME range_iterator<
+                                       ^
+/usr/local/include/boost/concept/detail/has_constraints.hpp:32:63: note: in instantiation of template class 'boost::SinglePassRangeConcept<ranges::v3::take_while_view<ranges::v3::range<ranges::v3::basic_iterator<ranges::v3::adaptor_cursor<ranges::v3::basic_iterator<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, ranges::v3::default_sentinel>, ranges::v3::adaptor_base>, ranges::v3::adaptor_sentinel<ranges::v3::basic_sentinel<ranges::v3::default_sentinel>, ranges::v3::iter_take_while_view<ranges::v3::range<ranges::v3::basic_iterator<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, ranges::v3::default_sentinel>, ranges::v3::basic_sentinel<ranges::v3::default_sentinel> >, ranges::v3::indirected<ranges::v3::group_by_view<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, (lambda at main.cpp:105:27)>::cursor<true>::take_while_pred>, false>::sentinel_adaptor<true> > >, ranges::v3::basic_sentinel<ranges::v3::adaptor_sentinel<ranges::v3::basic_sentinel<ranges::v3::default_sentinel>, ranges::v3::iter_take_while_view<ranges::v3::range<ranges::v3::basic_iterator<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, ranges::v3::default_sentinel>, ranges::v3::basic_sentinel<ranges::v3::default_sentinel> >, ranges::v3::indirected<ranges::v3::group_by_view<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, (lambda at main.cpp:105:27)>::cursor<true>::take_while_pred>, false>::sentinel_adaptor<true> > > >, ranges::v3::group_by_view<ranges::v3::take_while_view<ranges::v3::range<ranges::v3::basic_iterator<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, ranges::v3::default_sentinel>, ranges::v3::basic_sentinel<ranges::v3::default_sentinel> >, ranges::v3::group_by_view<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, (lambda at main.cpp:105:27)>::cursor<true>::take_while_pred, false>, (lambda at main.cpp:111:27)>::cursor<true>::take_while_pred, false> >' requested here
+  inline yes has_constraints_(Model*, wrap_constraints<Model,&Model::constraints>* = 0);
+                                                              ^
+/usr/local/include/boost/concept/detail/has_constraints.hpp:44:25: note: while substituting deduced template arguments into function template 'has_constraints_' [with Model = boost::SinglePassRangeConcept<ranges::v3::take_while_view<ranges::v3::range<ranges::v3::basic_iterator<ranges::v3::adaptor_cursor<ranges::v3::basic_iterator<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, ranges::v3::default_sentinel>, ranges::v3::adaptor_base>, ranges::v3::adaptor_sentinel<ranges::v3::basic_sentinel<ranges::v3::default_sentinel>, ranges::v3::iter_take_while_view<ranges::v3::range<ranges::v3::basic_iterator<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, ranges::v3::default_sentinel>, ranges::v3::basic_sentinel<ranges::v3::default_sentinel> >, ranges::v3::indirected<ranges::v3::group_by_view<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, (lambda at main.cpp:105:27)>::cursor<true>::take_while_pred>, false>::sentinel_adaptor<true> > >, ranges::v3::basic_sentinel<ranges::v3::adaptor_sentinel<ranges::v3::basic_sentinel<ranges::v3::default_sentinel>, ranges::v3::iter_take_while_view<ranges::v3::range<ranges::v3::basic_iterator<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, ranges::v3::default_sentinel>, ranges::v3::basic_sentinel<ranges::v3::default_sentinel> >, ranges::v3::indirected<ranges::v3::group_by_view<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, (lambda at main.cpp:105:27)>::cursor<true>::take_while_pred>, false>::sentinel_adaptor<true> > > >, ranges::v3::group_by_view<ranges::v3::take_while_view<ranges::v3::range<ranges::v3::basic_iterator<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, ranges::v3::default_sentinel>, ranges::v3::basic_sentinel<ranges::v3::default_sentinel> >, ranges::v3::group_by_view<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, (lambda at main.cpp:105:27)>::cursor<true>::take_while_pred, false>, (lambda at main.cpp:111:27)>::cursor<true>::take_while_pred, false> >]
+      , value = sizeof( detail::has_constraints_((Model*)0) ) == sizeof(detail::yes) );
+                        ^
+/usr/local/include/boost/config/suffix.hpp:394:72: note: expanded from macro 'BOOST_STATIC_CONSTANT'
+#     define BOOST_STATIC_CONSTANT(type, assignment) static const type assignment
+                                                                       ^
+/usr/local/include/boost/mpl/if.hpp:63:68: note: in instantiation of template class 'boost::concepts::not_satisfied<boost::SinglePassRangeConcept<ranges::v3::take_while_view<ranges::v3::range<ranges::v3::basic_iterator<ranges::v3::adaptor_cursor<ranges::v3::basic_iterator<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, ranges::v3::default_sentinel>, ranges::v3::adaptor_base>, ranges::v3::adaptor_sentinel<ranges::v3::basic_sentinel<ranges::v3::default_sentinel>, ranges::v3::iter_take_while_view<ranges::v3::range<ranges::v3::basic_iterator<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, ranges::v3::default_sentinel>, ranges::v3::basic_sentinel<ranges::v3::default_sentinel> >, ranges::v3::indirected<ranges::v3::group_by_view<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, (lambda at main.cpp:105:27)>::cursor<true>::take_while_pred>, false>::sentinel_adaptor<true> > >, ranges::v3::basic_sentinel<ranges::v3::adaptor_sentinel<ranges::v3::basic_sentinel<ranges::v3::default_sentinel>, ranges::v3::iter_take_while_view<ranges::v3::range<ranges::v3::basic_iterator<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, ranges::v3::default_sentinel>, ranges::v3::basic_sentinel<ranges::v3::default_sentinel> >, ranges::v3::indirected<ranges::v3::group_by_view<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, (lambda at main.cpp:105:27)>::cursor<true>::take_while_pred>, false>::sentinel_adaptor<true> > > >, ranges::v3::group_by_view<ranges::v3::take_while_view<ranges::v3::range<ranges::v3::basic_iterator<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, ranges::v3::default_sentinel>, ranges::v3::basic_sentinel<ranges::v3::default_sentinel> >, ranges::v3::group_by_view<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, (lambda at main.cpp:105:27)>::cursor<true>::take_while_pred, false>, (lambda at main.cpp:111:27)>::cursor<true>::take_while_pred, false> > >' requested here
+          BOOST_MPL_AUX_STATIC_CAST(bool, BOOST_MPL_AUX_VALUE_WKND(T1)::value)
+                                                                   ^
+/usr/local/include/boost/mpl/aux_/value_wknd.hpp:57:40: note: expanded from macro 'BOOST_MPL_AUX_VALUE_WKND'
+#   define BOOST_MPL_AUX_VALUE_WKND(C) C
+                                       ^
+/usr/local/include/boost/mpl/aux_/static_cast.hpp:24:62: note: expanded from macro 'BOOST_MPL_AUX_STATIC_CAST'
+#   define BOOST_MPL_AUX_STATIC_CAST(T, expr) static_cast<T>(expr)
+                                                             ^
+/usr/local/include/boost/concept/detail/general.hpp:51:10: note: (skipping 83 contexts in backtrace; use -ftemplate-backtrace-limit=0 to see all)
+  : mpl::if_<
+         ^
+/usr/local/include/range/v3/utility/functional.hpp:511:13: note: while substituting deduced template arguments into function template 'pipe' [with Rng = ranges::v3::group_by_view<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, (lambda at main.cpp:105:27)>, Vw = ranges::v3::view::view<ranges::v3::detail::pipeable_binder<std::_Bind<ranges::v3::view::transform_fn (std::_Placeholder<1>, (lambda at main.cpp:141:28))> > > &, _concept_requires_91 = (no value), $3 = (no value)]
+            pipeable_access::impl<Pipe>::pipe(std::forward<Arg>(arg), pipe)
+            ^
+/usr/local/include/range/v3/detail/config.hpp:25:17: note: expanded from macro 'RANGES_DECLTYPE_AUTO_RETURN'
+    -> decltype(__VA_ARGS__)                                    \
+                ^
+main.cpp:285:11: note: while substituting deduced template arguments into function template 'operator|' [with Arg = ranges::v3::group_by_view<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, (lambda at main.cpp:105:27)>, Pipe = ranges::v3::view::view<ranges::v3::detail::pipeable_binder<std::_Bind<ranges::v3::view::transform_fn (std::_Placeholder<1>, (lambda at main.cpp:141:28))> > >, _concept_requires_507 = (no value), $3 = (no value)]
+          | layout_months()
+          ^
+/usr/local/include/range/v3/utility/functional.hpp:501:17: note: in instantiation of function template specialization 'format_calendar(std::size_t)::(anonymous class)::operator()<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date> >' requested here
+                pipe(std::forward<Arg>(arg))
+                ^
+/usr/local/include/range/v3/detail/config.hpp:25:17: note: expanded from macro 'RANGES_DECLTYPE_AUTO_RETURN'
+    -> decltype(__VA_ARGS__)                                    \
+                ^
+/usr/local/include/range/v3/utility/functional.hpp:511:13: note: while substituting deduced template arguments into function template 'pipe' [with Arg = ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, Pipe = ranges::v3::detail::pipeable_binder<(lambda at main.cpp:279:26)>]
+            pipeable_access::impl<Pipe>::pipe(std::forward<Arg>(arg), pipe)
+            ^
+/usr/local/include/range/v3/detail/config.hpp:25:17: note: expanded from macro 'RANGES_DECLTYPE_AUTO_RETURN'
+    -> decltype(__VA_ARGS__)                                    \
+                ^
+main.cpp:334:33: note: while substituting deduced template arguments into function template 'operator|' [with Arg = ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, Pipe = ranges::v3::detail::pipeable_binder<(lambda at main.cpp:279:26)>, _concept_requires_507 = (no value), $3 = (no value)]
+        copy(dates(start, stop) | format_calendar(months_per_line),
+                                ^
+In file included from main.cpp:60:
+In file included from /usr/local/include/boost/lexical_cast.hpp:30:
+In file included from /usr/local/include/boost/range/iterator_range_core.hpp:27:
+In file included from /usr/local/include/boost/iterator/iterator_facade.hpp:14:
+/usr/local/include/boost/iterator/iterator_categories.hpp:119:60: error: no type named 'iterator_category' in 'std::iterator_traits<int>'
+        typename boost::detail::iterator_traits<Iterator>::iterator_category
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~
+/usr/local/include/boost/range/concepts.hpp:126:44: note: in instantiation of template class 'boost::iterators::iterator_traversal<int>' requested here
+            typedef BOOST_DEDUCED_TYPENAME iterator_traversal<Iterator>::type traversal_category;
+                                           ^
+/usr/local/include/boost/range/concepts.hpp:146:15: note: in instantiation of template class 'boost::range_detail::IncrementableIteratorConcept<int>' requested here
+            : IncrementableIteratorConcept<Iterator>
+              ^
+/usr/local/include/boost/concept/detail/has_constraints.hpp:32:63: note: in instantiation of template class 'boost::range_detail::SinglePassIteratorConcept<int>' requested here
+  inline yes has_constraints_(Model*, wrap_constraints<Model,&Model::constraints>* = 0);
+                                                              ^
+/usr/local/include/boost/concept/detail/has_constraints.hpp:44:25: note: while substituting deduced template arguments into function template 'has_constraints_' [with Model = boost::range_detail::SinglePassIteratorConcept<int>]
+      , value = sizeof( detail::has_constraints_((Model*)0) ) == sizeof(detail::yes) );
+                        ^
+/usr/local/include/boost/config/suffix.hpp:394:72: note: expanded from macro 'BOOST_STATIC_CONSTANT'
+#     define BOOST_STATIC_CONSTANT(type, assignment) static const type assignment
+                                                                       ^
+/usr/local/include/boost/mpl/if.hpp:63:68: note: in instantiation of template class 'boost::concepts::not_satisfied<boost::range_detail::SinglePassIteratorConcept<int> >' requested here
+          BOOST_MPL_AUX_STATIC_CAST(bool, BOOST_MPL_AUX_VALUE_WKND(T1)::value)
+                                                                   ^
+/usr/local/include/boost/mpl/aux_/value_wknd.hpp:57:40: note: expanded from macro 'BOOST_MPL_AUX_VALUE_WKND'
+#   define BOOST_MPL_AUX_VALUE_WKND(C) C
+                                       ^
+/usr/local/include/boost/mpl/aux_/static_cast.hpp:24:62: note: expanded from macro 'BOOST_MPL_AUX_STATIC_CAST'
+#   define BOOST_MPL_AUX_STATIC_CAST(T, expr) static_cast<T>(expr)
+                                                             ^
+/usr/local/include/boost/concept/detail/general.hpp:51:10: note: (skipping 88 contexts in backtrace; use -ftemplate-backtrace-limit=0 to see all)
+  : mpl::if_<
+         ^
+/usr/local/include/range/v3/utility/functional.hpp:511:13: note: while substituting deduced template arguments into function template 'pipe' [with Rng = ranges::v3::group_by_view<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, (lambda at main.cpp:105:27)>, Vw = ranges::v3::view::view<ranges::v3::detail::pipeable_binder<std::_Bind<ranges::v3::view::transform_fn (std::_Placeholder<1>, (lambda at main.cpp:141:28))> > > &, _concept_requires_91 = (no value), $3 = (no value)]
+            pipeable_access::impl<Pipe>::pipe(std::forward<Arg>(arg), pipe)
+            ^
+/usr/local/include/range/v3/detail/config.hpp:25:17: note: expanded from macro 'RANGES_DECLTYPE_AUTO_RETURN'
+    -> decltype(__VA_ARGS__)                                    \
+                ^
+main.cpp:285:11: note: while substituting deduced template arguments into function template 'operator|' [with Arg = ranges::v3::group_by_view<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, (lambda at main.cpp:105:27)>, Pipe = ranges::v3::view::view<ranges::v3::detail::pipeable_binder<std::_Bind<ranges::v3::view::transform_fn (std::_Placeholder<1>, (lambda at main.cpp:141:28))> > >, _concept_requires_507 = (no value), $3 = (no value)]
+          | layout_months()
+          ^
+/usr/local/include/range/v3/utility/functional.hpp:501:17: note: in instantiation of function template specialization 'format_calendar(std::size_t)::(anonymous class)::operator()<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date> >' requested here
+                pipe(std::forward<Arg>(arg))
+                ^
+/usr/local/include/range/v3/detail/config.hpp:25:17: note: expanded from macro 'RANGES_DECLTYPE_AUTO_RETURN'
+    -> decltype(__VA_ARGS__)                                    \
+                ^
+/usr/local/include/range/v3/utility/functional.hpp:511:13: note: while substituting deduced template arguments into function template 'pipe' [with Arg = ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, Pipe = ranges::v3::detail::pipeable_binder<(lambda at main.cpp:279:26)>]
+            pipeable_access::impl<Pipe>::pipe(std::forward<Arg>(arg), pipe)
+            ^
+/usr/local/include/range/v3/detail/config.hpp:25:17: note: expanded from macro 'RANGES_DECLTYPE_AUTO_RETURN'
+    -> decltype(__VA_ARGS__)                                    \
+                ^
+main.cpp:334:33: note: while substituting deduced template arguments into function template 'operator|' [with Arg = ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, Pipe = ranges::v3::detail::pipeable_binder<(lambda at main.cpp:279:26)>, _concept_requires_507 = (no value), $3 = (no value)]
+        copy(dates(start, stop) | format_calendar(months_per_line),
+                                ^
+In file included from main.cpp:60:
+In file included from /usr/local/include/boost/lexical_cast.hpp:30:
+In file included from /usr/local/include/boost/range/iterator_range_core.hpp:38:
+In file included from /usr/local/include/boost/range/functions.hpp:20:
+In file included from /usr/local/include/boost/range/size.hpp:21:
+In file included from /usr/local/include/boost/range/size_type.hpp:20:
+/usr/local/include/boost/range/concepts.hpp:152:71: error: no type named 'traversal_category' in 'boost::range_detail::SinglePassIteratorConcept<int>'
+                    BOOST_DEDUCED_TYPENAME SinglePassIteratorConcept::traversal_category,
+                                                                      ^
+/usr/local/include/boost/range/concepts.hpp:102:67: note: expanded from macro 'BOOST_RANGE_CONCEPT_ASSERT'
+    #define BOOST_RANGE_CONCEPT_ASSERT( x ) BOOST_CONCEPT_ASSERT( x )
+                                                                  ^
+/usr/local/include/boost/concept/assert.hpp:43:36: note: expanded from macro 'BOOST_CONCEPT_ASSERT'
+    BOOST_CONCEPT_ASSERT_FN(void(*)ModelInParens)
+                                   ^
+/usr/local/include/boost/concept/detail/general.hpp:78:38: note: expanded from macro 'BOOST_CONCEPT_ASSERT_FN'
+    &::boost::concepts::requirement_<ModelFnPtr>::failed>    \
+                                     ^
+/usr/local/include/boost/concept/detail/has_constraints.hpp:32:63: note: in instantiation of template class 'boost::range_detail::SinglePassIteratorConcept<int>' requested here
+  inline yes has_constraints_(Model*, wrap_constraints<Model,&Model::constraints>* = 0);
+                                                              ^
+/usr/local/include/boost/concept/detail/has_constraints.hpp:44:25: note: while substituting deduced template arguments into function template 'has_constraints_' [with Model = boost::range_detail::SinglePassIteratorConcept<int>]
+      , value = sizeof( detail::has_constraints_((Model*)0) ) == sizeof(detail::yes) );
+                        ^
+/usr/local/include/boost/config/suffix.hpp:394:72: note: expanded from macro 'BOOST_STATIC_CONSTANT'
+#     define BOOST_STATIC_CONSTANT(type, assignment) static const type assignment
+                                                                       ^
+/usr/local/include/boost/mpl/if.hpp:63:68: note: in instantiation of template class 'boost::concepts::not_satisfied<boost::range_detail::SinglePassIteratorConcept<int> >' requested here
+          BOOST_MPL_AUX_STATIC_CAST(bool, BOOST_MPL_AUX_VALUE_WKND(T1)::value)
+                                                                   ^
+/usr/local/include/boost/mpl/aux_/value_wknd.hpp:57:40: note: expanded from macro 'BOOST_MPL_AUX_VALUE_WKND'
+#   define BOOST_MPL_AUX_VALUE_WKND(C) C
+                                       ^
+/usr/local/include/boost/mpl/aux_/static_cast.hpp:24:62: note: expanded from macro 'BOOST_MPL_AUX_STATIC_CAST'
+#   define BOOST_MPL_AUX_STATIC_CAST(T, expr) static_cast<T>(expr)
+                                                             ^
+/usr/local/include/boost/concept/detail/general.hpp:51:10: note: in instantiation of template class 'boost::mpl::if_<boost::concepts::not_satisfied<boost::range_detail::SinglePassIteratorConcept<int> >, boost::concepts::constraint<boost::range_detail::SinglePassIteratorConcept<int> >, boost::concepts::requirement<boost::concepts::failed ************boost::range_detail::SinglePassIteratorConcept<int>::************> >' requested here
+  : mpl::if_<
+         ^
+/usr/local/include/boost/range/concepts.hpp:276:9: note: in instantiation of template class 'boost::concepts::requirement_<void (*)(boost::range_detail::SinglePassIteratorConcept<int>)>' requested here
+        BOOST_RANGE_CONCEPT_ASSERT((
+        ^
+/usr/local/include/boost/range/concepts.hpp:102:45: note: expanded from macro 'BOOST_RANGE_CONCEPT_ASSERT'
+    #define BOOST_RANGE_CONCEPT_ASSERT( x ) BOOST_CONCEPT_ASSERT( x )
+                                            ^
+/usr/local/include/boost/concept/assert.hpp:43:5: note: expanded from macro 'BOOST_CONCEPT_ASSERT'
+    BOOST_CONCEPT_ASSERT_FN(void(*)ModelInParens)
+    ^
+/usr/local/include/boost/concept/detail/general.hpp:78:25: note: expanded from macro 'BOOST_CONCEPT_ASSERT_FN'
+    &::boost::concepts::requirement_<ModelFnPtr>::failed>    \
+                        ^
+/usr/local/include/boost/concept/detail/has_constraints.hpp:32:63: note: (skipping 86 contexts in backtrace; use -ftemplate-backtrace-limit=0 to see all)
+  inline yes has_constraints_(Model*, wrap_constraints<Model,&Model::constraints>* = 0);
+                                                              ^
+/usr/local/include/range/v3/utility/functional.hpp:511:13: note: while substituting deduced template arguments into function template 'pipe' [with Rng = ranges::v3::group_by_view<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, (lambda at main.cpp:105:27)>, Vw = ranges::v3::view::view<ranges::v3::detail::pipeable_binder<std::_Bind<ranges::v3::view::transform_fn (std::_Placeholder<1>, (lambda at main.cpp:141:28))> > > &, _concept_requires_91 = (no value), $3 = (no value)]
+            pipeable_access::impl<Pipe>::pipe(std::forward<Arg>(arg), pipe)
+            ^
+/usr/local/include/range/v3/detail/config.hpp:25:17: note: expanded from macro 'RANGES_DECLTYPE_AUTO_RETURN'
+    -> decltype(__VA_ARGS__)                                    \
+                ^
+main.cpp:285:11: note: while substituting deduced template arguments into function template 'operator|' [with Arg = ranges::v3::group_by_view<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, (lambda at main.cpp:105:27)>, Pipe = ranges::v3::view::view<ranges::v3::detail::pipeable_binder<std::_Bind<ranges::v3::view::transform_fn (std::_Placeholder<1>, (lambda at main.cpp:141:28))> > >, _concept_requires_507 = (no value), $3 = (no value)]
+          | layout_months()
+          ^
+/usr/local/include/range/v3/utility/functional.hpp:501:17: note: in instantiation of function template specialization 'format_calendar(std::size_t)::(anonymous class)::operator()<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date> >' requested here
+                pipe(std::forward<Arg>(arg))
+                ^
+/usr/local/include/range/v3/detail/config.hpp:25:17: note: expanded from macro 'RANGES_DECLTYPE_AUTO_RETURN'
+    -> decltype(__VA_ARGS__)                                    \
+                ^
+/usr/local/include/range/v3/utility/functional.hpp:511:13: note: while substituting deduced template arguments into function template 'pipe' [with Arg = ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, Pipe = ranges::v3::detail::pipeable_binder<(lambda at main.cpp:279:26)>]
+            pipeable_access::impl<Pipe>::pipe(std::forward<Arg>(arg), pipe)
+            ^
+/usr/local/include/range/v3/detail/config.hpp:25:17: note: expanded from macro 'RANGES_DECLTYPE_AUTO_RETURN'
+    -> decltype(__VA_ARGS__)                                    \
+                ^
+main.cpp:334:33: note: while substituting deduced template arguments into function template 'operator|' [with Arg = ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, Pipe = ranges::v3::detail::pipeable_binder<(lambda at main.cpp:279:26)>, _concept_requires_507 = (no value), $3 = (no value)]
+        copy(dates(start, stop) | format_calendar(months_per_line),
+                                ^
+In file included from main.cpp:59:
+In file included from /usr/local/include/boost/format.hpp:38:
+In file included from /usr/local/include/boost/format/internals.hpp:20:
+In file included from /usr/local/include/boost/optional.hpp:15:
+In file included from /usr/local/include/boost/optional/optional.hpp:36:
+In file included from /usr/local/include/boost/type_traits/decay.hpp:18:
+/usr/local/include/boost/mpl/eval_if.hpp:60:26: error: no type named 'type' in 'boost::range_mutable_iterator<ranges::v3::group_by_view<ranges::v3::take_while_view<ranges::v3::range<ranges::v3::basic_iterator<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, ranges::v3::default_sentinel>, ranges::v3::basic_sentinel<ranges::v3::default_sentinel> >, ranges::v3::group_by_view<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, (lambda at main.cpp:105:27)>::cursor<true>::take_while_pred, false>, (lambda at main.cpp:111:27)>, void>'
+    typedef typename f_::type type;
+            ~~~~~~~~~~~~~^~~~
+/usr/local/include/boost/range/iterator.hpp:65:31: note: in instantiation of template class 'boost::mpl::eval_if_c<false, boost::range_const_iterator<ranges::v3::group_by_view<ranges::v3::take_while_view<ranges::v3::range<ranges::v3::basic_iterator<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, ranges::v3::default_sentinel>, ranges::v3::basic_sentinel<ranges::v3::default_sentinel> >, ranges::v3::group_by_view<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, (lambda at main.cpp:105:27)>::cursor<true>::take_while_pred, false>, (lambda at main.cpp:111:27)>, void>, boost::range_mutable_iterator<ranges::v3::group_by_view<ranges::v3::take_while_view<ranges::v3::range<ranges::v3::basic_iterator<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, ranges::v3::default_sentinel>, ranges::v3::basic_sentinel<ranges::v3::default_sentinel> >, ranges::v3::group_by_view<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, (lambda at main.cpp:105:27)>::cursor<true>::take_while_pred, false>, (lambda at main.cpp:111:27)>, void> >' requested here
+        typedef typename mpl::eval_if_c<
+                              ^
+/usr/local/include/boost/range/difference_type.hpp:28:40: note: in instantiation of template class 'boost::range_iterator<ranges::v3::group_by_view<ranges::v3::take_while_view<ranges::v3::range<ranges::v3::basic_iterator<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, ranges::v3::default_sentinel>, ranges::v3::basic_sentinel<ranges::v3::default_sentinel> >, ranges::v3::group_by_view<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, (lambda at main.cpp:105:27)>::cursor<true>::take_while_pred, false>, (lambda at main.cpp:111:27)>, void>' requested here
+                BOOST_DEDUCED_TYPENAME range_iterator<
+                                       ^
+/usr/local/include/boost/range/size_type.hpp:57:40: note: in instantiation of template class 'boost::range_difference<ranges::v3::group_by_view<ranges::v3::take_while_view<ranges::v3::range<ranges::v3::basic_iterator<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, ranges::v3::default_sentinel>, ranges::v3::basic_sentinel<ranges::v3::default_sentinel> >, ranges::v3::group_by_view<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, (lambda at main.cpp:105:27)>::cursor<true>::take_while_pred, false>, (lambda at main.cpp:111:27)> >' requested here
+                BOOST_DEDUCED_TYPENAME range_difference<C>::type
+                                       ^
+/usr/local/include/boost/range/size_type.hpp:87:11: note: in instantiation of template class 'boost::detail::range_size<ranges::v3::group_by_view<ranges::v3::take_while_view<ranges::v3::range<ranges::v3::basic_iterator<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, ranges::v3::default_sentinel>, ranges::v3::basic_sentinel<ranges::v3::default_sentinel> >, ranges::v3::group_by_view<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, (lambda at main.cpp:105:27)>::cursor<true>::take_while_pred, false>, (lambda at main.cpp:111:27)>, void>' requested here
+        : detail::range_size<T>
+          ^
+/usr/local/include/boost/range/size.hpp:54:21: note: in instantiation of template class 'boost::range_size<const ranges::v3::group_by_view<ranges::v3::take_while_view<ranges::v3::range<ranges::v3::basic_iterator<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, ranges::v3::default_sentinel>, ranges::v3::basic_sentinel<ranges::v3::default_sentinel> >, ranges::v3::group_by_view<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, (lambda at main.cpp:105:27)>::cursor<true>::take_while_pred, false>, (lambda at main.cpp:111:27)> >' requested here
+    inline typename range_size<const SinglePassRange>::type
+                    ^
+/usr/local/include/range/v3/size.hpp:91:30: note: (skipping 49 contexts in backtrace; use -ftemplate-backtrace-limit=0 to see all)
+                    decltype(size(detail::forward<Rng>(rng)))
+                             ^
+/usr/local/include/range/v3/utility/functional.hpp:511:13: note: while substituting deduced template arguments into function template 'pipe' [with Rng = ranges::v3::group_by_view<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, (lambda at main.cpp:105:27)>, Vw = ranges::v3::view::view<ranges::v3::detail::pipeable_binder<std::_Bind<ranges::v3::view::transform_fn (std::_Placeholder<1>, (lambda at main.cpp:141:28))> > > &, _concept_requires_91 = (no value), $3 = (no value)]
+            pipeable_access::impl<Pipe>::pipe(std::forward<Arg>(arg), pipe)
+            ^
+/usr/local/include/range/v3/detail/config.hpp:25:17: note: expanded from macro 'RANGES_DECLTYPE_AUTO_RETURN'
+    -> decltype(__VA_ARGS__)                                    \
+                ^
+main.cpp:285:11: note: while substituting deduced template arguments into function template 'operator|' [with Arg = ranges::v3::group_by_view<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, (lambda at main.cpp:105:27)>, Pipe = ranges::v3::view::view<ranges::v3::detail::pipeable_binder<std::_Bind<ranges::v3::view::transform_fn (std::_Placeholder<1>, (lambda at main.cpp:141:28))> > >, _concept_requires_507 = (no value), $3 = (no value)]
+          | layout_months()
+          ^
+/usr/local/include/range/v3/utility/functional.hpp:501:17: note: in instantiation of function template specialization 'format_calendar(std::size_t)::(anonymous class)::operator()<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date> >' requested here
+                pipe(std::forward<Arg>(arg))
+                ^
+/usr/local/include/range/v3/detail/config.hpp:25:17: note: expanded from macro 'RANGES_DECLTYPE_AUTO_RETURN'
+    -> decltype(__VA_ARGS__)                                    \
+                ^
+/usr/local/include/range/v3/utility/functional.hpp:511:13: note: while substituting deduced template arguments into function template 'pipe' [with Arg = ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, Pipe = ranges::v3::detail::pipeable_binder<(lambda at main.cpp:279:26)>]
+            pipeable_access::impl<Pipe>::pipe(std::forward<Arg>(arg), pipe)
+            ^
+/usr/local/include/range/v3/detail/config.hpp:25:17: note: expanded from macro 'RANGES_DECLTYPE_AUTO_RETURN'
+    -> decltype(__VA_ARGS__)                                    \
+                ^
+main.cpp:334:33: note: while substituting deduced template arguments into function template 'operator|' [with Arg = ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, Pipe = ranges::v3::detail::pipeable_binder<(lambda at main.cpp:279:26)>, _concept_requires_507 = (no value), $3 = (no value)]
+        copy(dates(start, stop) | format_calendar(months_per_line),
+                                ^
+In file included from main.cpp:59:
+In file included from /usr/local/include/boost/format.hpp:38:
+In file included from /usr/local/include/boost/format/internals.hpp:20:
+In file included from /usr/local/include/boost/optional.hpp:15:
+In file included from /usr/local/include/boost/optional/optional.hpp:36:
+In file included from /usr/local/include/boost/type_traits/decay.hpp:18:
+/usr/local/include/boost/mpl/eval_if.hpp:60:26: error: no type named 'type' in 'boost::range_const_iterator<ranges::v3::group_by_view<ranges::v3::take_while_view<ranges::v3::range<ranges::v3::basic_iterator<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, ranges::v3::default_sentinel>, ranges::v3::basic_sentinel<ranges::v3::default_sentinel> >, ranges::v3::group_by_view<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, (lambda at main.cpp:105:27)>::cursor<true>::take_while_pred, false>, (lambda at main.cpp:111:27)>, void>'
+    typedef typename f_::type type;
+            ~~~~~~~~~~~~~^~~~
+/usr/local/include/boost/range/iterator.hpp:65:31: note: in instantiation of template class 'boost::mpl::eval_if_c<true, boost::range_const_iterator<ranges::v3::group_by_view<ranges::v3::take_while_view<ranges::v3::range<ranges::v3::basic_iterator<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, ranges::v3::default_sentinel>, ranges::v3::basic_sentinel<ranges::v3::default_sentinel> >, ranges::v3::group_by_view<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, (lambda at main.cpp:105:27)>::cursor<true>::take_while_pred, false>, (lambda at main.cpp:111:27)>, void>, boost::range_mutable_iterator<const ranges::v3::group_by_view<ranges::v3::take_while_view<ranges::v3::range<ranges::v3::basic_iterator<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, ranges::v3::default_sentinel>, ranges::v3::basic_sentinel<ranges::v3::default_sentinel> >, ranges::v3::group_by_view<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, (lambda at main.cpp:105:27)>::cursor<true>::take_while_pred, false>, (lambda at main.cpp:111:27)>, void> >' requested here
+        typedef typename mpl::eval_if_c<
+                              ^
+/usr/local/include/boost/range/concepts.hpp:270:40: note: in instantiation of template class 'boost::range_iterator<const ranges::v3::group_by_view<ranges::v3::take_while_view<ranges::v3::range<ranges::v3::basic_iterator<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, ranges::v3::default_sentinel>, ranges::v3::basic_sentinel<ranges::v3::default_sentinel> >, ranges::v3::group_by_view<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, (lambda at main.cpp:105:27)>::cursor<true>::take_while_pred, false>, (lambda at main.cpp:111:27)>, void>' requested here
+        typedef BOOST_DEDUCED_TYPENAME range_iterator<
+                                       ^
+/usr/local/include/boost/concept/detail/has_constraints.hpp:32:63: note: in instantiation of template class 'boost::SinglePassRangeConcept<ranges::v3::group_by_view<ranges::v3::take_while_view<ranges::v3::range<ranges::v3::basic_iterator<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, ranges::v3::default_sentinel>, ranges::v3::basic_sentinel<ranges::v3::default_sentinel> >, ranges::v3::group_by_view<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, (lambda at main.cpp:105:27)>::cursor<true>::take_while_pred, false>, (lambda at main.cpp:111:27)> >' requested here
+  inline yes has_constraints_(Model*, wrap_constraints<Model,&Model::constraints>* = 0);
+                                                              ^
+/usr/local/include/boost/concept/detail/has_constraints.hpp:44:25: note: while substituting deduced template arguments into function template 'has_constraints_' [with Model = boost::SinglePassRangeConcept<ranges::v3::group_by_view<ranges::v3::take_while_view<ranges::v3::range<ranges::v3::basic_iterator<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, ranges::v3::default_sentinel>, ranges::v3::basic_sentinel<ranges::v3::default_sentinel> >, ranges::v3::group_by_view<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, (lambda at main.cpp:105:27)>::cursor<true>::take_while_pred, false>, (lambda at main.cpp:111:27)> >]
+      , value = sizeof( detail::has_constraints_((Model*)0) ) == sizeof(detail::yes) );
+                        ^
+/usr/local/include/boost/config/suffix.hpp:394:72: note: expanded from macro 'BOOST_STATIC_CONSTANT'
+#     define BOOST_STATIC_CONSTANT(type, assignment) static const type assignment
+                                                                       ^
+/usr/local/include/boost/mpl/if.hpp:63:68: note: in instantiation of template class 'boost::concepts::not_satisfied<boost::SinglePassRangeConcept<ranges::v3::group_by_view<ranges::v3::take_while_view<ranges::v3::range<ranges::v3::basic_iterator<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, ranges::v3::default_sentinel>, ranges::v3::basic_sentinel<ranges::v3::default_sentinel> >, ranges::v3::group_by_view<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, (lambda at main.cpp:105:27)>::cursor<true>::take_while_pred, false>, (lambda at main.cpp:111:27)> > >' requested here
+          BOOST_MPL_AUX_STATIC_CAST(bool, BOOST_MPL_AUX_VALUE_WKND(T1)::value)
+                                                                   ^
+/usr/local/include/boost/mpl/aux_/value_wknd.hpp:57:40: note: expanded from macro 'BOOST_MPL_AUX_VALUE_WKND'
+#   define BOOST_MPL_AUX_VALUE_WKND(C) C
+                                       ^
+/usr/local/include/boost/mpl/aux_/static_cast.hpp:24:62: note: expanded from macro 'BOOST_MPL_AUX_STATIC_CAST'
+#   define BOOST_MPL_AUX_STATIC_CAST(T, expr) static_cast<T>(expr)
+                                                             ^
+/usr/local/include/boost/concept/detail/general.hpp:51:10: note: (skipping 52 contexts in backtrace; use -ftemplate-backtrace-limit=0 to see all)
+  : mpl::if_<
+         ^
+/usr/local/include/range/v3/utility/functional.hpp:511:13: note: while substituting deduced template arguments into function template 'pipe' [with Rng = ranges::v3::group_by_view<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, (lambda at main.cpp:105:27)>, Vw = ranges::v3::view::view<ranges::v3::detail::pipeable_binder<std::_Bind<ranges::v3::view::transform_fn (std::_Placeholder<1>, (lambda at main.cpp:141:28))> > > &, _concept_requires_91 = (no value), $3 = (no value)]
+            pipeable_access::impl<Pipe>::pipe(std::forward<Arg>(arg), pipe)
+            ^
+/usr/local/include/range/v3/detail/config.hpp:25:17: note: expanded from macro 'RANGES_DECLTYPE_AUTO_RETURN'
+    -> decltype(__VA_ARGS__)                                    \
+                ^
+main.cpp:285:11: note: while substituting deduced template arguments into function template 'operator|' [with Arg = ranges::v3::group_by_view<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, (lambda at main.cpp:105:27)>, Pipe = ranges::v3::view::view<ranges::v3::detail::pipeable_binder<std::_Bind<ranges::v3::view::transform_fn (std::_Placeholder<1>, (lambda at main.cpp:141:28))> > >, _concept_requires_507 = (no value), $3 = (no value)]
+          | layout_months()
+          ^
+/usr/local/include/range/v3/utility/functional.hpp:501:17: note: in instantiation of function template specialization 'format_calendar(std::size_t)::(anonymous class)::operator()<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date> >' requested here
+                pipe(std::forward<Arg>(arg))
+                ^
+/usr/local/include/range/v3/detail/config.hpp:25:17: note: expanded from macro 'RANGES_DECLTYPE_AUTO_RETURN'
+    -> decltype(__VA_ARGS__)                                    \
+                ^
+/usr/local/include/range/v3/utility/functional.hpp:511:13: note: while substituting deduced template arguments into function template 'pipe' [with Arg = ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, Pipe = ranges::v3::detail::pipeable_binder<(lambda at main.cpp:279:26)>]
+            pipeable_access::impl<Pipe>::pipe(std::forward<Arg>(arg), pipe)
+            ^
+/usr/local/include/range/v3/detail/config.hpp:25:17: note: expanded from macro 'RANGES_DECLTYPE_AUTO_RETURN'
+    -> decltype(__VA_ARGS__)                                    \
+                ^
+main.cpp:334:33: note: while substituting deduced template arguments into function template 'operator|' [with Arg = ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, Pipe = ranges::v3::detail::pipeable_binder<(lambda at main.cpp:279:26)>, _concept_requires_507 = (no value), $3 = (no value)]
+        copy(dates(start, stop) | format_calendar(months_per_line),
+                                ^
+In file included from main.cpp:59:
+In file included from /usr/local/include/boost/format.hpp:38:
+In file included from /usr/local/include/boost/format/internals.hpp:20:
+In file included from /usr/local/include/boost/optional.hpp:15:
+In file included from /usr/local/include/boost/optional/optional.hpp:36:
+In file included from /usr/local/include/boost/type_traits/decay.hpp:18:
+/usr/local/include/boost/mpl/eval_if.hpp:60:26: error: no type named 'type' in 'boost::range_mutable_iterator<ranges::v3::transform_view<ranges::v3::group_by_view<ranges::v3::take_while_view<ranges::v3::range<ranges::v3::basic_iterator<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, ranges::v3::default_sentinel>, ranges::v3::basic_sentinel<ranges::v3::default_sentinel> >, ranges::v3::group_by_view<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, (lambda at main.cpp:105:27)>::cursor<true>::take_while_pred, false>, (lambda at main.cpp:111:27)>, (lambda at main.cpp:124:28)>, void>'
+    typedef typename f_::type type;
+            ~~~~~~~~~~~~~^~~~
+/usr/local/include/boost/range/iterator.hpp:65:31: note: in instantiation of template class 'boost::mpl::eval_if_c<false, boost::range_const_iterator<ranges::v3::transform_view<ranges::v3::group_by_view<ranges::v3::take_while_view<ranges::v3::range<ranges::v3::basic_iterator<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, ranges::v3::default_sentinel>, ranges::v3::basic_sentinel<ranges::v3::default_sentinel> >, ranges::v3::group_by_view<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, (lambda at main.cpp:105:27)>::cursor<true>::take_while_pred, false>, (lambda at main.cpp:111:27)>, (lambda at main.cpp:124:28)>, void>, boost::range_mutable_iterator<ranges::v3::transform_view<ranges::v3::group_by_view<ranges::v3::take_while_view<ranges::v3::range<ranges::v3::basic_iterator<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, ranges::v3::default_sentinel>, ranges::v3::basic_sentinel<ranges::v3::default_sentinel> >, ranges::v3::group_by_view<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, (lambda at main.cpp:105:27)>::cursor<true>::take_while_pred, false>, (lambda at main.cpp:111:27)>, (lambda at main.cpp:124:28)>, void> >' requested here
+        typedef typename mpl::eval_if_c<
+                              ^
+/usr/local/include/boost/range/difference_type.hpp:28:40: note: in instantiation of template class 'boost::range_iterator<ranges::v3::transform_view<ranges::v3::group_by_view<ranges::v3::take_while_view<ranges::v3::range<ranges::v3::basic_iterator<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, ranges::v3::default_sentinel>, ranges::v3::basic_sentinel<ranges::v3::default_sentinel> >, ranges::v3::group_by_view<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, (lambda at main.cpp:105:27)>::cursor<true>::take_while_pred, false>, (lambda at main.cpp:111:27)>, (lambda at main.cpp:124:28)>, void>' requested here
+                BOOST_DEDUCED_TYPENAME range_iterator<
+                                       ^
+/usr/local/include/boost/range/size_type.hpp:57:40: note: in instantiation of template class 'boost::range_difference<ranges::v3::transform_view<ranges::v3::group_by_view<ranges::v3::take_while_view<ranges::v3::range<ranges::v3::basic_iterator<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, ranges::v3::default_sentinel>, ranges::v3::basic_sentinel<ranges::v3::default_sentinel> >, ranges::v3::group_by_view<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, (lambda at main.cpp:105:27)>::cursor<true>::take_while_pred, false>, (lambda at main.cpp:111:27)>, (lambda at main.cpp:124:28)> >' requested here
+                BOOST_DEDUCED_TYPENAME range_difference<C>::type
+                                       ^
+/usr/local/include/boost/range/size_type.hpp:87:11: note: in instantiation of template class 'boost::detail::range_size<ranges::v3::transform_view<ranges::v3::group_by_view<ranges::v3::take_while_view<ranges::v3::range<ranges::v3::basic_iterator<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, ranges::v3::default_sentinel>, ranges::v3::basic_sentinel<ranges::v3::default_sentinel> >, ranges::v3::group_by_view<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, (lambda at main.cpp:105:27)>::cursor<true>::take_while_pred, false>, (lambda at main.cpp:111:27)>, (lambda at main.cpp:124:28)>, void>' requested here
+        : detail::range_size<T>
+          ^
+/usr/local/include/boost/range/size.hpp:54:21: note: in instantiation of template class 'boost::range_size<const ranges::v3::transform_view<ranges::v3::group_by_view<ranges::v3::take_while_view<ranges::v3::range<ranges::v3::basic_iterator<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, ranges::v3::default_sentinel>, ranges::v3::basic_sentinel<ranges::v3::default_sentinel> >, ranges::v3::group_by_view<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, (lambda at main.cpp:105:27)>::cursor<true>::take_while_pred, false>, (lambda at main.cpp:111:27)>, (lambda at main.cpp:124:28)> >' requested here
+    inline typename range_size<const SinglePassRange>::type
+                    ^
+/usr/local/include/range/v3/size.hpp:91:30: note: (skipping 36 contexts in backtrace; use -ftemplate-backtrace-limit=0 to see all)
+                    decltype(size(detail::forward<Rng>(rng)))
+                             ^
+/usr/local/include/range/v3/utility/functional.hpp:511:13: note: while substituting deduced template arguments into function template 'pipe' [with Rng = ranges::v3::group_by_view<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, (lambda at main.cpp:105:27)>, Vw = ranges::v3::view::view<ranges::v3::detail::pipeable_binder<std::_Bind<ranges::v3::view::transform_fn (std::_Placeholder<1>, (lambda at main.cpp:141:28))> > > &, _concept_requires_91 = (no value), $3 = (no value)]
+            pipeable_access::impl<Pipe>::pipe(std::forward<Arg>(arg), pipe)
+            ^
+/usr/local/include/range/v3/detail/config.hpp:25:17: note: expanded from macro 'RANGES_DECLTYPE_AUTO_RETURN'
+    -> decltype(__VA_ARGS__)                                    \
+                ^
+main.cpp:285:11: note: while substituting deduced template arguments into function template 'operator|' [with Arg = ranges::v3::group_by_view<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, (lambda at main.cpp:105:27)>, Pipe = ranges::v3::view::view<ranges::v3::detail::pipeable_binder<std::_Bind<ranges::v3::view::transform_fn (std::_Placeholder<1>, (lambda at main.cpp:141:28))> > >, _concept_requires_507 = (no value), $3 = (no value)]
+          | layout_months()
+          ^
+/usr/local/include/range/v3/utility/functional.hpp:501:17: note: in instantiation of function template specialization 'format_calendar(std::size_t)::(anonymous class)::operator()<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date> >' requested here
+                pipe(std::forward<Arg>(arg))
+                ^
+/usr/local/include/range/v3/detail/config.hpp:25:17: note: expanded from macro 'RANGES_DECLTYPE_AUTO_RETURN'
+    -> decltype(__VA_ARGS__)                                    \
+                ^
+/usr/local/include/range/v3/utility/functional.hpp:511:13: note: while substituting deduced template arguments into function template 'pipe' [with Arg = ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, Pipe = ranges::v3::detail::pipeable_binder<(lambda at main.cpp:279:26)>]
+            pipeable_access::impl<Pipe>::pipe(std::forward<Arg>(arg), pipe)
+            ^
+/usr/local/include/range/v3/detail/config.hpp:25:17: note: expanded from macro 'RANGES_DECLTYPE_AUTO_RETURN'
+    -> decltype(__VA_ARGS__)                                    \
+                ^
+main.cpp:334:33: note: while substituting deduced template arguments into function template 'operator|' [with Arg = ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, Pipe = ranges::v3::detail::pipeable_binder<(lambda at main.cpp:279:26)>, _concept_requires_507 = (no value), $3 = (no value)]
+        copy(dates(start, stop) | format_calendar(months_per_line),
+                                ^
+In file included from main.cpp:59:
+In file included from /usr/local/include/boost/format.hpp:38:
+In file included from /usr/local/include/boost/format/internals.hpp:20:
+In file included from /usr/local/include/boost/optional.hpp:15:
+In file included from /usr/local/include/boost/optional/optional.hpp:36:
+In file included from /usr/local/include/boost/type_traits/decay.hpp:18:
+/usr/local/include/boost/mpl/eval_if.hpp:60:26: error: no type named 'type' in 'boost::range_const_iterator<ranges::v3::transform_view<ranges::v3::group_by_view<ranges::v3::take_while_view<ranges::v3::range<ranges::v3::basic_iterator<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, ranges::v3::default_sentinel>, ranges::v3::basic_sentinel<ranges::v3::default_sentinel> >, ranges::v3::group_by_view<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, (lambda at main.cpp:105:27)>::cursor<true>::take_while_pred, false>, (lambda at main.cpp:111:27)>, (lambda at main.cpp:124:28)>, void>'
+    typedef typename f_::type type;
+            ~~~~~~~~~~~~~^~~~
+/usr/local/include/boost/range/iterator.hpp:65:31: note: in instantiation of template class 'boost::mpl::eval_if_c<true, boost::range_const_iterator<ranges::v3::transform_view<ranges::v3::group_by_view<ranges::v3::take_while_view<ranges::v3::range<ranges::v3::basic_iterator<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, ranges::v3::default_sentinel>, ranges::v3::basic_sentinel<ranges::v3::default_sentinel> >, ranges::v3::group_by_view<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, (lambda at main.cpp:105:27)>::cursor<true>::take_while_pred, false>, (lambda at main.cpp:111:27)>, (lambda at main.cpp:124:28)>, void>, boost::range_mutable_iterator<const ranges::v3::transform_view<ranges::v3::group_by_view<ranges::v3::take_while_view<ranges::v3::range<ranges::v3::basic_iterator<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, ranges::v3::default_sentinel>, ranges::v3::basic_sentinel<ranges::v3::default_sentinel> >, ranges::v3::group_by_view<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, (lambda at main.cpp:105:27)>::cursor<true>::take_while_pred, false>, (lambda at main.cpp:111:27)>, (lambda at main.cpp:124:28)>, void> >' requested here
+        typedef typename mpl::eval_if_c<
+                              ^
+/usr/local/include/boost/range/concepts.hpp:270:40: note: in instantiation of template class 'boost::range_iterator<const ranges::v3::transform_view<ranges::v3::group_by_view<ranges::v3::take_while_view<ranges::v3::range<ranges::v3::basic_iterator<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, ranges::v3::default_sentinel>, ranges::v3::basic_sentinel<ranges::v3::default_sentinel> >, ranges::v3::group_by_view<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, (lambda at main.cpp:105:27)>::cursor<true>::take_while_pred, false>, (lambda at main.cpp:111:27)>, (lambda at main.cpp:124:28)>, void>' requested here
+        typedef BOOST_DEDUCED_TYPENAME range_iterator<
+                                       ^
+/usr/local/include/boost/concept/detail/has_constraints.hpp:32:63: note: in instantiation of template class 'boost::SinglePassRangeConcept<ranges::v3::transform_view<ranges::v3::group_by_view<ranges::v3::take_while_view<ranges::v3::range<ranges::v3::basic_iterator<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, ranges::v3::default_sentinel>, ranges::v3::basic_sentinel<ranges::v3::default_sentinel> >, ranges::v3::group_by_view<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, (lambda at main.cpp:105:27)>::cursor<true>::take_while_pred, false>, (lambda at main.cpp:111:27)>, (lambda at main.cpp:124:28)> >' requested here
+  inline yes has_constraints_(Model*, wrap_constraints<Model,&Model::constraints>* = 0);
+                                                              ^
+/usr/local/include/boost/concept/detail/has_constraints.hpp:44:25: note: while substituting deduced template arguments into function template 'has_constraints_' [with Model = boost::SinglePassRangeConcept<ranges::v3::transform_view<ranges::v3::group_by_view<ranges::v3::take_while_view<ranges::v3::range<ranges::v3::basic_iterator<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, ranges::v3::default_sentinel>, ranges::v3::basic_sentinel<ranges::v3::default_sentinel> >, ranges::v3::group_by_view<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, (lambda at main.cpp:105:27)>::cursor<true>::take_while_pred, false>, (lambda at main.cpp:111:27)>, (lambda at main.cpp:124:28)> >]
+      , value = sizeof( detail::has_constraints_((Model*)0) ) == sizeof(detail::yes) );
+                        ^
+/usr/local/include/boost/config/suffix.hpp:394:72: note: expanded from macro 'BOOST_STATIC_CONSTANT'
+#     define BOOST_STATIC_CONSTANT(type, assignment) static const type assignment
+                                                                       ^
+/usr/local/include/boost/mpl/if.hpp:63:68: note: in instantiation of template class 'boost::concepts::not_satisfied<boost::SinglePassRangeConcept<ranges::v3::transform_view<ranges::v3::group_by_view<ranges::v3::take_while_view<ranges::v3::range<ranges::v3::basic_iterator<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, ranges::v3::default_sentinel>, ranges::v3::basic_sentinel<ranges::v3::default_sentinel> >, ranges::v3::group_by_view<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, (lambda at main.cpp:105:27)>::cursor<true>::take_while_pred, false>, (lambda at main.cpp:111:27)>, (lambda at main.cpp:124:28)> > >' requested here
+          BOOST_MPL_AUX_STATIC_CAST(bool, BOOST_MPL_AUX_VALUE_WKND(T1)::value)
+                                                                   ^
+/usr/local/include/boost/mpl/aux_/value_wknd.hpp:57:40: note: expanded from macro 'BOOST_MPL_AUX_VALUE_WKND'
+#   define BOOST_MPL_AUX_VALUE_WKND(C) C
+                                       ^
+/usr/local/include/boost/mpl/aux_/static_cast.hpp:24:62: note: expanded from macro 'BOOST_MPL_AUX_STATIC_CAST'
+#   define BOOST_MPL_AUX_STATIC_CAST(T, expr) static_cast<T>(expr)
+                                                             ^
+/usr/local/include/boost/concept/detail/general.hpp:51:10: note: (skipping 39 contexts in backtrace; use -ftemplate-backtrace-limit=0 to see all)
+  : mpl::if_<
+         ^
+/usr/local/include/range/v3/utility/functional.hpp:511:13: note: while substituting deduced template arguments into function template 'pipe' [with Rng = ranges::v3::group_by_view<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, (lambda at main.cpp:105:27)>, Vw = ranges::v3::view::view<ranges::v3::detail::pipeable_binder<std::_Bind<ranges::v3::view::transform_fn (std::_Placeholder<1>, (lambda at main.cpp:141:28))> > > &, _concept_requires_91 = (no value), $3 = (no value)]
+            pipeable_access::impl<Pipe>::pipe(std::forward<Arg>(arg), pipe)
+            ^
+/usr/local/include/range/v3/detail/config.hpp:25:17: note: expanded from macro 'RANGES_DECLTYPE_AUTO_RETURN'
+    -> decltype(__VA_ARGS__)                                    \
+                ^
+main.cpp:285:11: note: while substituting deduced template arguments into function template 'operator|' [with Arg = ranges::v3::group_by_view<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, (lambda at main.cpp:105:27)>, Pipe = ranges::v3::view::view<ranges::v3::detail::pipeable_binder<std::_Bind<ranges::v3::view::transform_fn (std::_Placeholder<1>, (lambda at main.cpp:141:28))> > >, _concept_requires_507 = (no value), $3 = (no value)]
+          | layout_months()
+          ^
+/usr/local/include/range/v3/utility/functional.hpp:501:17: note: in instantiation of function template specialization 'format_calendar(std::size_t)::(anonymous class)::operator()<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date> >' requested here
+                pipe(std::forward<Arg>(arg))
+                ^
+/usr/local/include/range/v3/detail/config.hpp:25:17: note: expanded from macro 'RANGES_DECLTYPE_AUTO_RETURN'
+    -> decltype(__VA_ARGS__)                                    \
+                ^
+/usr/local/include/range/v3/utility/functional.hpp:511:13: note: while substituting deduced template arguments into function template 'pipe' [with Arg = ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, Pipe = ranges::v3::detail::pipeable_binder<(lambda at main.cpp:279:26)>]
+            pipeable_access::impl<Pipe>::pipe(std::forward<Arg>(arg), pipe)
+            ^
+/usr/local/include/range/v3/detail/config.hpp:25:17: note: expanded from macro 'RANGES_DECLTYPE_AUTO_RETURN'
+    -> decltype(__VA_ARGS__)                                    \
+                ^
+main.cpp:334:33: note: while substituting deduced template arguments into function template 'operator|' [with Arg = ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, Pipe = ranges::v3::detail::pipeable_binder<(lambda at main.cpp:279:26)>, _concept_requires_507 = (no value), $3 = (no value)]
+        copy(dates(start, stop) | format_calendar(months_per_line),
+                                ^
+In file included from main.cpp:59:
+In file included from /usr/local/include/boost/format.hpp:38:
+In file included from /usr/local/include/boost/format/internals.hpp:20:
+In file included from /usr/local/include/boost/optional.hpp:15:
+In file included from /usr/local/include/boost/optional/optional.hpp:36:
+In file included from /usr/local/include/boost/type_traits/decay.hpp:18:
+/usr/local/include/boost/mpl/eval_if.hpp:60:26: error: no type named 'type' in 'boost::range_mutable_iterator<ranges::v3::group_by_view<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, (lambda at main.cpp:105:27)>, void>'
+    typedef typename f_::type type;
+            ~~~~~~~~~~~~~^~~~
+/usr/local/include/boost/range/iterator.hpp:65:31: note: in instantiation of template class 'boost::mpl::eval_if_c<false, boost::range_const_iterator<ranges::v3::group_by_view<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, (lambda at main.cpp:105:27)>, void>, boost::range_mutable_iterator<ranges::v3::group_by_view<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, (lambda at main.cpp:105:27)>, void> >' requested here
+        typedef typename mpl::eval_if_c<
+                              ^
+/usr/local/include/boost/range/difference_type.hpp:28:40: note: in instantiation of template class 'boost::range_iterator<ranges::v3::group_by_view<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, (lambda at main.cpp:105:27)>, void>' requested here
+                BOOST_DEDUCED_TYPENAME range_iterator<
+                                       ^
+/usr/local/include/boost/range/size_type.hpp:57:40: note: in instantiation of template class 'boost::range_difference<ranges::v3::group_by_view<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, (lambda at main.cpp:105:27)> >' requested here
+                BOOST_DEDUCED_TYPENAME range_difference<C>::type
+                                       ^
+/usr/local/include/boost/range/size_type.hpp:87:11: note: in instantiation of template class 'boost::detail::range_size<ranges::v3::group_by_view<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, (lambda at main.cpp:105:27)>, void>' requested here
+        : detail::range_size<T>
+          ^
+/usr/local/include/boost/range/size.hpp:54:21: note: in instantiation of template class 'boost::range_size<const ranges::v3::group_by_view<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, (lambda at main.cpp:105:27)> >' requested here
+    inline typename range_size<const SinglePassRange>::type
+                    ^
+/usr/local/include/range/v3/size.hpp:91:30: note: (skipping 18 contexts in backtrace; use -ftemplate-backtrace-limit=0 to see all)
+                    decltype(size(detail::forward<Rng>(rng)))
+                             ^
+/usr/local/include/range/v3/utility/functional.hpp:511:13: note: while substituting deduced template arguments into function template 'pipe' [with Rng = ranges::v3::group_by_view<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, (lambda at main.cpp:105:27)>, Vw = ranges::v3::view::view<ranges::v3::detail::pipeable_binder<std::_Bind<ranges::v3::view::transform_fn (std::_Placeholder<1>, (lambda at main.cpp:141:28))> > > &, _concept_requires_91 = (no value), $3 = (no value)]
+            pipeable_access::impl<Pipe>::pipe(std::forward<Arg>(arg), pipe)
+            ^
+/usr/local/include/range/v3/detail/config.hpp:25:17: note: expanded from macro 'RANGES_DECLTYPE_AUTO_RETURN'
+    -> decltype(__VA_ARGS__)                                    \
+                ^
+main.cpp:285:11: note: while substituting deduced template arguments into function template 'operator|' [with Arg = ranges::v3::group_by_view<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, (lambda at main.cpp:105:27)>, Pipe = ranges::v3::view::view<ranges::v3::detail::pipeable_binder<std::_Bind<ranges::v3::view::transform_fn (std::_Placeholder<1>, (lambda at main.cpp:141:28))> > >, _concept_requires_507 = (no value), $3 = (no value)]
+          | layout_months()
+          ^
+/usr/local/include/range/v3/utility/functional.hpp:501:17: note: in instantiation of function template specialization 'format_calendar(std::size_t)::(anonymous class)::operator()<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date> >' requested here
+                pipe(std::forward<Arg>(arg))
+                ^
+/usr/local/include/range/v3/detail/config.hpp:25:17: note: expanded from macro 'RANGES_DECLTYPE_AUTO_RETURN'
+    -> decltype(__VA_ARGS__)                                    \
+                ^
+/usr/local/include/range/v3/utility/functional.hpp:511:13: note: while substituting deduced template arguments into function template 'pipe' [with Arg = ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, Pipe = ranges::v3::detail::pipeable_binder<(lambda at main.cpp:279:26)>]
+            pipeable_access::impl<Pipe>::pipe(std::forward<Arg>(arg), pipe)
+            ^
+/usr/local/include/range/v3/detail/config.hpp:25:17: note: expanded from macro 'RANGES_DECLTYPE_AUTO_RETURN'
+    -> decltype(__VA_ARGS__)                                    \
+                ^
+main.cpp:334:33: note: while substituting deduced template arguments into function template 'operator|' [with Arg = ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, Pipe = ranges::v3::detail::pipeable_binder<(lambda at main.cpp:279:26)>, _concept_requires_507 = (no value), $3 = (no value)]
+        copy(dates(start, stop) | format_calendar(months_per_line),
+                                ^
+In file included from main.cpp:59:
+In file included from /usr/local/include/boost/format.hpp:38:
+In file included from /usr/local/include/boost/format/internals.hpp:20:
+In file included from /usr/local/include/boost/optional.hpp:15:
+In file included from /usr/local/include/boost/optional/optional.hpp:36:
+In file included from /usr/local/include/boost/type_traits/decay.hpp:18:
+/usr/local/include/boost/mpl/eval_if.hpp:60:26: error: no type named 'type' in 'boost::range_const_iterator<ranges::v3::group_by_view<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, (lambda at main.cpp:105:27)>, void>'
+    typedef typename f_::type type;
+            ~~~~~~~~~~~~~^~~~
+/usr/local/include/boost/range/iterator.hpp:65:31: note: in instantiation of template class 'boost::mpl::eval_if_c<true, boost::range_const_iterator<ranges::v3::group_by_view<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, (lambda at main.cpp:105:27)>, void>, boost::range_mutable_iterator<const ranges::v3::group_by_view<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, (lambda at main.cpp:105:27)>, void> >' requested here
+        typedef typename mpl::eval_if_c<
+                              ^
+/usr/local/include/boost/range/concepts.hpp:270:40: note: in instantiation of template class 'boost::range_iterator<const ranges::v3::group_by_view<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, (lambda at main.cpp:105:27)>, void>' requested here
+        typedef BOOST_DEDUCED_TYPENAME range_iterator<
+                                       ^
+/usr/local/include/boost/concept/detail/has_constraints.hpp:32:63: note: in instantiation of template class 'boost::SinglePassRangeConcept<ranges::v3::group_by_view<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, (lambda at main.cpp:105:27)> >' requested here
+  inline yes has_constraints_(Model*, wrap_constraints<Model,&Model::constraints>* = 0);
+                                                              ^
+/usr/local/include/boost/concept/detail/has_constraints.hpp:44:25: note: while substituting deduced template arguments into function template 'has_constraints_' [with Model = boost::SinglePassRangeConcept<ranges::v3::group_by_view<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, (lambda at main.cpp:105:27)> >]
+      , value = sizeof( detail::has_constraints_((Model*)0) ) == sizeof(detail::yes) );
+                        ^
+/usr/local/include/boost/config/suffix.hpp:394:72: note: expanded from macro 'BOOST_STATIC_CONSTANT'
+#     define BOOST_STATIC_CONSTANT(type, assignment) static const type assignment
+                                                                       ^
+/usr/local/include/boost/mpl/if.hpp:63:68: note: in instantiation of template class 'boost::concepts::not_satisfied<boost::SinglePassRangeConcept<ranges::v3::group_by_view<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, (lambda at main.cpp:105:27)> > >' requested here
+          BOOST_MPL_AUX_STATIC_CAST(bool, BOOST_MPL_AUX_VALUE_WKND(T1)::value)
+                                                                   ^
+/usr/local/include/boost/mpl/aux_/value_wknd.hpp:57:40: note: expanded from macro 'BOOST_MPL_AUX_VALUE_WKND'
+#   define BOOST_MPL_AUX_VALUE_WKND(C) C
+                                       ^
+/usr/local/include/boost/mpl/aux_/static_cast.hpp:24:62: note: expanded from macro 'BOOST_MPL_AUX_STATIC_CAST'
+#   define BOOST_MPL_AUX_STATIC_CAST(T, expr) static_cast<T>(expr)
+                                                             ^
+/usr/local/include/boost/concept/detail/general.hpp:51:10: note: (skipping 21 contexts in backtrace; use -ftemplate-backtrace-limit=0 to see all)
+  : mpl::if_<
+         ^
+/usr/local/include/range/v3/utility/functional.hpp:511:13: note: while substituting deduced template arguments into function template 'pipe' [with Rng = ranges::v3::group_by_view<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, (lambda at main.cpp:105:27)>, Vw = ranges::v3::view::view<ranges::v3::detail::pipeable_binder<std::_Bind<ranges::v3::view::transform_fn (std::_Placeholder<1>, (lambda at main.cpp:141:28))> > > &, _concept_requires_91 = (no value), $3 = (no value)]
+            pipeable_access::impl<Pipe>::pipe(std::forward<Arg>(arg), pipe)
+            ^
+/usr/local/include/range/v3/detail/config.hpp:25:17: note: expanded from macro 'RANGES_DECLTYPE_AUTO_RETURN'
+    -> decltype(__VA_ARGS__)                                    \
+                ^
+main.cpp:285:11: note: while substituting deduced template arguments into function template 'operator|' [with Arg = ranges::v3::group_by_view<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, (lambda at main.cpp:105:27)>, Pipe = ranges::v3::view::view<ranges::v3::detail::pipeable_binder<std::_Bind<ranges::v3::view::transform_fn (std::_Placeholder<1>, (lambda at main.cpp:141:28))> > >, _concept_requires_507 = (no value), $3 = (no value)]
+          | layout_months()
+          ^
+/usr/local/include/range/v3/utility/functional.hpp:501:17: note: in instantiation of function template specialization 'format_calendar(std::size_t)::(anonymous class)::operator()<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date> >' requested here
+                pipe(std::forward<Arg>(arg))
+                ^
+/usr/local/include/range/v3/detail/config.hpp:25:17: note: expanded from macro 'RANGES_DECLTYPE_AUTO_RETURN'
+    -> decltype(__VA_ARGS__)                                    \
+                ^
+/usr/local/include/range/v3/utility/functional.hpp:511:13: note: while substituting deduced template arguments into function template 'pipe' [with Arg = ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, Pipe = ranges::v3::detail::pipeable_binder<(lambda at main.cpp:279:26)>]
+            pipeable_access::impl<Pipe>::pipe(std::forward<Arg>(arg), pipe)
+            ^
+/usr/local/include/range/v3/detail/config.hpp:25:17: note: expanded from macro 'RANGES_DECLTYPE_AUTO_RETURN'
+    -> decltype(__VA_ARGS__)                                    \
+                ^
+main.cpp:334:33: note: while substituting deduced template arguments into function template 'operator|' [with Arg = ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, Pipe = ranges::v3::detail::pipeable_binder<(lambda at main.cpp:279:26)>, _concept_requires_507 = (no value), $3 = (no value)]
+        copy(dates(start, stop) | format_calendar(months_per_line),
+                                ^
+In file included from main.cpp:59:
+In file included from /usr/local/include/boost/format.hpp:38:
+In file included from /usr/local/include/boost/format/internals.hpp:20:
+In file included from /usr/local/include/boost/optional.hpp:15:
+In file included from /usr/local/include/boost/optional/optional.hpp:36:
+In file included from /usr/local/include/boost/type_traits/decay.hpp:18:
+/usr/local/include/boost/mpl/eval_if.hpp:60:26: error: no type named 'type' in 'boost::range_mutable_iterator<chunk_view<ranges::v3::transform_view<ranges::v3::group_by_view<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, (lambda at main.cpp:105:27)>, (lambda at main.cpp:141:28)> >, void>'
+    typedef typename f_::type type;
+            ~~~~~~~~~~~~~^~~~
+/usr/local/include/boost/range/iterator.hpp:65:31: note: in instantiation of template class 'boost::mpl::eval_if_c<false, boost::range_const_iterator<chunk_view<ranges::v3::transform_view<ranges::v3::group_by_view<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, (lambda at main.cpp:105:27)>, (lambda at main.cpp:141:28)> >, void>, boost::range_mutable_iterator<chunk_view<ranges::v3::transform_view<ranges::v3::group_by_view<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, (lambda at main.cpp:105:27)>, (lambda at main.cpp:141:28)> >, void> >' requested here
+        typedef typename mpl::eval_if_c<
+                              ^
+/usr/local/include/boost/range/difference_type.hpp:28:40: note: in instantiation of template class 'boost::range_iterator<chunk_view<ranges::v3::transform_view<ranges::v3::group_by_view<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, (lambda at main.cpp:105:27)>, (lambda at main.cpp:141:28)> >, void>' requested here
+                BOOST_DEDUCED_TYPENAME range_iterator<
+                                       ^
+/usr/local/include/boost/range/size_type.hpp:57:40: note: in instantiation of template class 'boost::range_difference<chunk_view<ranges::v3::transform_view<ranges::v3::group_by_view<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, (lambda at main.cpp:105:27)>, (lambda at main.cpp:141:28)> > >' requested here
+                BOOST_DEDUCED_TYPENAME range_difference<C>::type
+                                       ^
+/usr/local/include/boost/range/size_type.hpp:87:11: note: in instantiation of template class 'boost::detail::range_size<chunk_view<ranges::v3::transform_view<ranges::v3::group_by_view<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, (lambda at main.cpp:105:27)>, (lambda at main.cpp:141:28)> >, void>' requested here
+        : detail::range_size<T>
+          ^
+/usr/local/include/boost/range/size.hpp:54:21: note: in instantiation of template class 'boost::range_size<const chunk_view<ranges::v3::transform_view<ranges::v3::group_by_view<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, (lambda at main.cpp:105:27)>, (lambda at main.cpp:141:28)> > >' requested here
+    inline typename range_size<const SinglePassRange>::type
+                    ^
+/usr/local/include/range/v3/size.hpp:91:30: note: (skipping 18 contexts in backtrace; use -ftemplate-backtrace-limit=0 to see all)
+                    decltype(size(detail::forward<Rng>(rng)))
+                             ^
+/usr/local/include/range/v3/utility/functional.hpp:511:13: note: while substituting deduced template arguments into function template 'pipe' [with Rng = chunk_view<ranges::v3::transform_view<ranges::v3::group_by_view<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, (lambda at main.cpp:105:27)>, (lambda at main.cpp:141:28)> >, Vw = ranges::v3::view::view<ranges::v3::detail::pipeable_binder<std::_Bind<ranges::v3::view::transform_fn (std::_Placeholder<1>, (lambda at main.cpp:263:28))> > > &, _concept_requires_91 = (no value), $3 = (no value)]
+            pipeable_access::impl<Pipe>::pipe(std::forward<Arg>(arg), pipe)
+            ^
+/usr/local/include/range/v3/detail/config.hpp:25:17: note: expanded from macro 'RANGES_DECLTYPE_AUTO_RETURN'
+    -> decltype(__VA_ARGS__)                                    \
+                ^
+main.cpp:289:11: note: while substituting deduced template arguments into function template 'operator|' [with Arg = chunk_view<ranges::v3::transform_view<ranges::v3::group_by_view<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, (lambda at main.cpp:105:27)>, (lambda at main.cpp:141:28)> >, Pipe = ranges::v3::view::view<ranges::v3::detail::pipeable_binder<std::_Bind<ranges::v3::view::transform_fn (std::_Placeholder<1>, (lambda at main.cpp:263:28))> > >, _concept_requires_507 = (no value), $3 = (no value)]
+          | transpose_months()
+          ^
+/usr/local/include/range/v3/utility/functional.hpp:501:17: note: in instantiation of function template specialization 'format_calendar(std::size_t)::(anonymous class)::operator()<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date> >' requested here
+                pipe(std::forward<Arg>(arg))
+                ^
+/usr/local/include/range/v3/detail/config.hpp:25:17: note: expanded from macro 'RANGES_DECLTYPE_AUTO_RETURN'
+    -> decltype(__VA_ARGS__)                                    \
+                ^
+/usr/local/include/range/v3/utility/functional.hpp:511:13: note: while substituting deduced template arguments into function template 'pipe' [with Arg = ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, Pipe = ranges::v3::detail::pipeable_binder<(lambda at main.cpp:279:26)>]
+            pipeable_access::impl<Pipe>::pipe(std::forward<Arg>(arg), pipe)
+            ^
+/usr/local/include/range/v3/detail/config.hpp:25:17: note: expanded from macro 'RANGES_DECLTYPE_AUTO_RETURN'
+    -> decltype(__VA_ARGS__)                                    \
+                ^
+main.cpp:334:33: note: while substituting deduced template arguments into function template 'operator|' [with Arg = ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, Pipe = ranges::v3::detail::pipeable_binder<(lambda at main.cpp:279:26)>, _concept_requires_507 = (no value), $3 = (no value)]
+        copy(dates(start, stop) | format_calendar(months_per_line),
+                                ^
+In file included from main.cpp:59:
+In file included from /usr/local/include/boost/format.hpp:38:
+In file included from /usr/local/include/boost/format/internals.hpp:20:
+In file included from /usr/local/include/boost/optional.hpp:15:
+In file included from /usr/local/include/boost/optional/optional.hpp:36:
+In file included from /usr/local/include/boost/type_traits/decay.hpp:18:
+/usr/local/include/boost/mpl/eval_if.hpp:60:26: error: no type named 'type' in 'boost::range_const_iterator<chunk_view<ranges::v3::transform_view<ranges::v3::group_by_view<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, (lambda at main.cpp:105:27)>, (lambda at main.cpp:141:28)> >, void>'
+    typedef typename f_::type type;
+            ~~~~~~~~~~~~~^~~~
+/usr/local/include/boost/range/iterator.hpp:65:31: note: in instantiation of template class 'boost::mpl::eval_if_c<true, boost::range_const_iterator<chunk_view<ranges::v3::transform_view<ranges::v3::group_by_view<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, (lambda at main.cpp:105:27)>, (lambda at main.cpp:141:28)> >, void>, boost::range_mutable_iterator<const chunk_view<ranges::v3::transform_view<ranges::v3::group_by_view<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, (lambda at main.cpp:105:27)>, (lambda at main.cpp:141:28)> >, void> >' requested here
+        typedef typename mpl::eval_if_c<
+                              ^
+/usr/local/include/boost/range/concepts.hpp:270:40: note: in instantiation of template class 'boost::range_iterator<const chunk_view<ranges::v3::transform_view<ranges::v3::group_by_view<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, (lambda at main.cpp:105:27)>, (lambda at main.cpp:141:28)> >, void>' requested here
+        typedef BOOST_DEDUCED_TYPENAME range_iterator<
+                                       ^
+/usr/local/include/boost/concept/detail/has_constraints.hpp:32:63: note: in instantiation of template class 'boost::SinglePassRangeConcept<chunk_view<ranges::v3::transform_view<ranges::v3::group_by_view<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, (lambda at main.cpp:105:27)>, (lambda at main.cpp:141:28)> > >' requested here
+  inline yes has_constraints_(Model*, wrap_constraints<Model,&Model::constraints>* = 0);
+                                                              ^
+/usr/local/include/boost/concept/detail/has_constraints.hpp:44:25: note: while substituting deduced template arguments into function template 'has_constraints_' [with Model = boost::SinglePassRangeConcept<chunk_view<ranges::v3::transform_view<ranges::v3::group_by_view<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, (lambda at main.cpp:105:27)>, (lambda at main.cpp:141:28)> > >]
+      , value = sizeof( detail::has_constraints_((Model*)0) ) == sizeof(detail::yes) );
+                        ^
+/usr/local/include/boost/config/suffix.hpp:394:72: note: expanded from macro 'BOOST_STATIC_CONSTANT'
+#     define BOOST_STATIC_CONSTANT(type, assignment) static const type assignment
+                                                                       ^
+/usr/local/include/boost/mpl/if.hpp:63:68: note: in instantiation of template class 'boost::concepts::not_satisfied<boost::SinglePassRangeConcept<chunk_view<ranges::v3::transform_view<ranges::v3::group_by_view<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, (lambda at main.cpp:105:27)>, (lambda at main.cpp:141:28)> > > >' requested here
+          BOOST_MPL_AUX_STATIC_CAST(bool, BOOST_MPL_AUX_VALUE_WKND(T1)::value)
+                                                                   ^
+/usr/local/include/boost/mpl/aux_/value_wknd.hpp:57:40: note: expanded from macro 'BOOST_MPL_AUX_VALUE_WKND'
+#   define BOOST_MPL_AUX_VALUE_WKND(C) C
+                                       ^
+/usr/local/include/boost/mpl/aux_/static_cast.hpp:24:62: note: expanded from macro 'BOOST_MPL_AUX_STATIC_CAST'
+#   define BOOST_MPL_AUX_STATIC_CAST(T, expr) static_cast<T>(expr)
+                                                             ^
+/usr/local/include/boost/concept/detail/general.hpp:51:10: note: (skipping 21 contexts in backtrace; use -ftemplate-backtrace-limit=0 to see all)
+  : mpl::if_<
+         ^
+/usr/local/include/range/v3/utility/functional.hpp:511:13: note: while substituting deduced template arguments into function template 'pipe' [with Rng = chunk_view<ranges::v3::transform_view<ranges::v3::group_by_view<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, (lambda at main.cpp:105:27)>, (lambda at main.cpp:141:28)> >, Vw = ranges::v3::view::view<ranges::v3::detail::pipeable_binder<std::_Bind<ranges::v3::view::transform_fn (std::_Placeholder<1>, (lambda at main.cpp:263:28))> > > &, _concept_requires_91 = (no value), $3 = (no value)]
+            pipeable_access::impl<Pipe>::pipe(std::forward<Arg>(arg), pipe)
+            ^
+/usr/local/include/range/v3/detail/config.hpp:25:17: note: expanded from macro 'RANGES_DECLTYPE_AUTO_RETURN'
+    -> decltype(__VA_ARGS__)                                    \
+                ^
+main.cpp:289:11: note: while substituting deduced template arguments into function template 'operator|' [with Arg = chunk_view<ranges::v3::transform_view<ranges::v3::group_by_view<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, (lambda at main.cpp:105:27)>, (lambda at main.cpp:141:28)> >, Pipe = ranges::v3::view::view<ranges::v3::detail::pipeable_binder<std::_Bind<ranges::v3::view::transform_fn (std::_Placeholder<1>, (lambda at main.cpp:263:28))> > >, _concept_requires_507 = (no value), $3 = (no value)]
+          | transpose_months()
+          ^
+/usr/local/include/range/v3/utility/functional.hpp:501:17: note: in instantiation of function template specialization 'format_calendar(std::size_t)::(anonymous class)::operator()<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date> >' requested here
+                pipe(std::forward<Arg>(arg))
+                ^
+/usr/local/include/range/v3/detail/config.hpp:25:17: note: expanded from macro 'RANGES_DECLTYPE_AUTO_RETURN'
+    -> decltype(__VA_ARGS__)                                    \
+                ^
+/usr/local/include/range/v3/utility/functional.hpp:511:13: note: while substituting deduced template arguments into function template 'pipe' [with Arg = ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, Pipe = ranges::v3::detail::pipeable_binder<(lambda at main.cpp:279:26)>]
+            pipeable_access::impl<Pipe>::pipe(std::forward<Arg>(arg), pipe)
+            ^
+/usr/local/include/range/v3/detail/config.hpp:25:17: note: expanded from macro 'RANGES_DECLTYPE_AUTO_RETURN'
+    -> decltype(__VA_ARGS__)                                    \
+                ^
+main.cpp:334:33: note: while substituting deduced template arguments into function template 'operator|' [with Arg = ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, Pipe = ranges::v3::detail::pipeable_binder<(lambda at main.cpp:279:26)>, _concept_requires_507 = (no value), $3 = (no value)]
+        copy(dates(start, stop) | format_calendar(months_per_line),
+                                ^
+In file included from main.cpp:59:
+In file included from /usr/local/include/boost/format.hpp:38:
+In file included from /usr/local/include/boost/format/internals.hpp:20:
+In file included from /usr/local/include/boost/optional.hpp:15:
+In file included from /usr/local/include/boost/optional/optional.hpp:36:
+In file included from /usr/local/include/boost/type_traits/decay.hpp:18:
+/usr/local/include/boost/mpl/eval_if.hpp:60:26: error: no type named 'type' in 'boost::range_mutable_iterator<ranges::v3::join_view<ranges::v3::transform_view<chunk_view<ranges::v3::transform_view<ranges::v3::group_by_view<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, (lambda at main.cpp:105:27)>, (lambda at main.cpp:141:28)> >, (lambda at main.cpp:263:28)>, void>, void>'
+    typedef typename f_::type type;
+            ~~~~~~~~~~~~~^~~~
+/usr/local/include/boost/range/iterator.hpp:65:31: note: in instantiation of template class 'boost::mpl::eval_if_c<false, boost::range_const_iterator<ranges::v3::join_view<ranges::v3::transform_view<chunk_view<ranges::v3::transform_view<ranges::v3::group_by_view<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, (lambda at main.cpp:105:27)>, (lambda at main.cpp:141:28)> >, (lambda at main.cpp:263:28)>, void>, void>, boost::range_mutable_iterator<ranges::v3::join_view<ranges::v3::transform_view<chunk_view<ranges::v3::transform_view<ranges::v3::group_by_view<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, (lambda at main.cpp:105:27)>, (lambda at main.cpp:141:28)> >, (lambda at main.cpp:263:28)>, void>, void> >' requested here
+        typedef typename mpl::eval_if_c<
+                              ^
+/usr/local/include/boost/range/difference_type.hpp:28:40: note: in instantiation of template class 'boost::range_iterator<ranges::v3::join_view<ranges::v3::transform_view<chunk_view<ranges::v3::transform_view<ranges::v3::group_by_view<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, (lambda at main.cpp:105:27)>, (lambda at main.cpp:141:28)> >, (lambda at main.cpp:263:28)>, void>, void>' requested here
+                BOOST_DEDUCED_TYPENAME range_iterator<
+                                       ^
+/usr/local/include/boost/range/size_type.hpp:57:40: note: in instantiation of template class 'boost::range_difference<ranges::v3::join_view<ranges::v3::transform_view<chunk_view<ranges::v3::transform_view<ranges::v3::group_by_view<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, (lambda at main.cpp:105:27)>, (lambda at main.cpp:141:28)> >, (lambda at main.cpp:263:28)>, void> >' requested here
+                BOOST_DEDUCED_TYPENAME range_difference<C>::type
+                                       ^
+/usr/local/include/boost/range/size_type.hpp:87:11: note: in instantiation of template class 'boost::detail::range_size<ranges::v3::join_view<ranges::v3::transform_view<chunk_view<ranges::v3::transform_view<ranges::v3::group_by_view<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, (lambda at main.cpp:105:27)>, (lambda at main.cpp:141:28)> >, (lambda at main.cpp:263:28)>, void>, void>' requested here
+        : detail::range_size<T>
+          ^
+/usr/local/include/boost/range/size.hpp:54:21: note: in instantiation of template class 'boost::range_size<const ranges::v3::join_view<ranges::v3::transform_view<chunk_view<ranges::v3::transform_view<ranges::v3::group_by_view<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, (lambda at main.cpp:105:27)>, (lambda at main.cpp:141:28)> >, (lambda at main.cpp:263:28)>, void> >' requested here
+    inline typename range_size<const SinglePassRange>::type
+                    ^
+/usr/local/include/range/v3/size.hpp:91:30: note: (skipping 18 contexts in backtrace; use -ftemplate-backtrace-limit=0 to see all)
+                    decltype(size(detail::forward<Rng>(rng)))
+                             ^
+/usr/local/include/range/v3/utility/functional.hpp:511:13: note: while substituting deduced template arguments into function template 'pipe' [with Rng = ranges::v3::join_view<ranges::v3::transform_view<chunk_view<ranges::v3::transform_view<ranges::v3::group_by_view<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, (lambda at main.cpp:105:27)>, (lambda at main.cpp:141:28)> >, (lambda at main.cpp:263:28)>, void>, Vw = ranges::v3::view::view<ranges::v3::detail::pipeable_binder<std::_Bind<ranges::v3::view::transform_fn (std::_Placeholder<1>, (lambda at main.cpp:271:28))> > > &, _concept_requires_91 = (no value), $3 = (no value)]
+            pipeable_access::impl<Pipe>::pipe(std::forward<Arg>(arg), pipe)
+            ^
+/usr/local/include/range/v3/detail/config.hpp:25:17: note: expanded from macro 'RANGES_DECLTYPE_AUTO_RETURN'
+    -> decltype(__VA_ARGS__)                                    \
+                ^
+main.cpp:293:11: note: while substituting deduced template arguments into function template 'operator|' [with Arg = ranges::v3::join_view<ranges::v3::transform_view<chunk_view<ranges::v3::transform_view<ranges::v3::group_by_view<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, (lambda at main.cpp:105:27)>, (lambda at main.cpp:141:28)> >, (lambda at main.cpp:263:28)>, void>, Pipe = ranges::v3::view::view<ranges::v3::detail::pipeable_binder<std::_Bind<ranges::v3::view::transform_fn (std::_Placeholder<1>, (lambda at main.cpp:271:28))> > >, _concept_requires_507 = (no value), $3 = (no value)]
+          | join_months();
+          ^
+/usr/local/include/range/v3/utility/functional.hpp:501:17: note: in instantiation of function template specialization 'format_calendar(std::size_t)::(anonymous class)::operator()<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date> >' requested here
+                pipe(std::forward<Arg>(arg))
+                ^
+/usr/local/include/range/v3/detail/config.hpp:25:17: note: expanded from macro 'RANGES_DECLTYPE_AUTO_RETURN'
+    -> decltype(__VA_ARGS__)                                    \
+                ^
+/usr/local/include/range/v3/utility/functional.hpp:511:13: note: while substituting deduced template arguments into function template 'pipe' [with Arg = ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, Pipe = ranges::v3::detail::pipeable_binder<(lambda at main.cpp:279:26)>]
+            pipeable_access::impl<Pipe>::pipe(std::forward<Arg>(arg), pipe)
+            ^
+/usr/local/include/range/v3/detail/config.hpp:25:17: note: expanded from macro 'RANGES_DECLTYPE_AUTO_RETURN'
+    -> decltype(__VA_ARGS__)                                    \
+                ^
+main.cpp:334:33: note: while substituting deduced template arguments into function template 'operator|' [with Arg = ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, Pipe = ranges::v3::detail::pipeable_binder<(lambda at main.cpp:279:26)>, _concept_requires_507 = (no value), $3 = (no value)]
+        copy(dates(start, stop) | format_calendar(months_per_line),
+                                ^
+In file included from main.cpp:59:
+In file included from /usr/local/include/boost/format.hpp:38:
+In file included from /usr/local/include/boost/format/internals.hpp:20:
+In file included from /usr/local/include/boost/optional.hpp:15:
+In file included from /usr/local/include/boost/optional/optional.hpp:36:
+In file included from /usr/local/include/boost/type_traits/decay.hpp:18:
+/usr/local/include/boost/mpl/eval_if.hpp:60:26: error: no type named 'type' in 'boost::range_const_iterator<ranges::v3::join_view<ranges::v3::transform_view<chunk_view<ranges::v3::transform_view<ranges::v3::group_by_view<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, (lambda at main.cpp:105:27)>, (lambda at main.cpp:141:28)> >, (lambda at main.cpp:263:28)>, void>, void>'
+    typedef typename f_::type type;
+            ~~~~~~~~~~~~~^~~~
+/usr/local/include/boost/range/iterator.hpp:65:31: note: in instantiation of template class 'boost::mpl::eval_if_c<true, boost::range_const_iterator<ranges::v3::join_view<ranges::v3::transform_view<chunk_view<ranges::v3::transform_view<ranges::v3::group_by_view<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, (lambda at main.cpp:105:27)>, (lambda at main.cpp:141:28)> >, (lambda at main.cpp:263:28)>, void>, void>, boost::range_mutable_iterator<const ranges::v3::join_view<ranges::v3::transform_view<chunk_view<ranges::v3::transform_view<ranges::v3::group_by_view<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, (lambda at main.cpp:105:27)>, (lambda at main.cpp:141:28)> >, (lambda at main.cpp:263:28)>, void>, void> >' requested here
+        typedef typename mpl::eval_if_c<
+                              ^
+/usr/local/include/boost/range/concepts.hpp:270:40: note: in instantiation of template class 'boost::range_iterator<const ranges::v3::join_view<ranges::v3::transform_view<chunk_view<ranges::v3::transform_view<ranges::v3::group_by_view<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, (lambda at main.cpp:105:27)>, (lambda at main.cpp:141:28)> >, (lambda at main.cpp:263:28)>, void>, void>' requested here
+        typedef BOOST_DEDUCED_TYPENAME range_iterator<
+                                       ^
+/usr/local/include/boost/concept/detail/has_constraints.hpp:32:63: note: in instantiation of template class 'boost::SinglePassRangeConcept<ranges::v3::join_view<ranges::v3::transform_view<chunk_view<ranges::v3::transform_view<ranges::v3::group_by_view<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, (lambda at main.cpp:105:27)>, (lambda at main.cpp:141:28)> >, (lambda at main.cpp:263:28)>, void> >' requested here
+  inline yes has_constraints_(Model*, wrap_constraints<Model,&Model::constraints>* = 0);
+                                                              ^
+/usr/local/include/boost/concept/detail/has_constraints.hpp:44:25: note: while substituting deduced template arguments into function template 'has_constraints_' [with Model = boost::SinglePassRangeConcept<ranges::v3::join_view<ranges::v3::transform_view<chunk_view<ranges::v3::transform_view<ranges::v3::group_by_view<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, (lambda at main.cpp:105:27)>, (lambda at main.cpp:141:28)> >, (lambda at main.cpp:263:28)>, void> >]
+      , value = sizeof( detail::has_constraints_((Model*)0) ) == sizeof(detail::yes) );
+                        ^
+/usr/local/include/boost/config/suffix.hpp:394:72: note: expanded from macro 'BOOST_STATIC_CONSTANT'
+#     define BOOST_STATIC_CONSTANT(type, assignment) static const type assignment
+                                                                       ^
+/usr/local/include/boost/mpl/if.hpp:63:68: note: in instantiation of template class 'boost::concepts::not_satisfied<boost::SinglePassRangeConcept<ranges::v3::join_view<ranges::v3::transform_view<chunk_view<ranges::v3::transform_view<ranges::v3::group_by_view<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, (lambda at main.cpp:105:27)>, (lambda at main.cpp:141:28)> >, (lambda at main.cpp:263:28)>, void> > >' requested here
+          BOOST_MPL_AUX_STATIC_CAST(bool, BOOST_MPL_AUX_VALUE_WKND(T1)::value)
+                                                                   ^
+/usr/local/include/boost/mpl/aux_/value_wknd.hpp:57:40: note: expanded from macro 'BOOST_MPL_AUX_VALUE_WKND'
+#   define BOOST_MPL_AUX_VALUE_WKND(C) C
+                                       ^
+/usr/local/include/boost/mpl/aux_/static_cast.hpp:24:62: note: expanded from macro 'BOOST_MPL_AUX_STATIC_CAST'
+#   define BOOST_MPL_AUX_STATIC_CAST(T, expr) static_cast<T>(expr)
+                                                             ^
+/usr/local/include/boost/concept/detail/general.hpp:51:10: note: (skipping 21 contexts in backtrace; use -ftemplate-backtrace-limit=0 to see all)
+  : mpl::if_<
+         ^
+/usr/local/include/range/v3/utility/functional.hpp:511:13: note: while substituting deduced template arguments into function template 'pipe' [with Rng = ranges::v3::join_view<ranges::v3::transform_view<chunk_view<ranges::v3::transform_view<ranges::v3::group_by_view<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, (lambda at main.cpp:105:27)>, (lambda at main.cpp:141:28)> >, (lambda at main.cpp:263:28)>, void>, Vw = ranges::v3::view::view<ranges::v3::detail::pipeable_binder<std::_Bind<ranges::v3::view::transform_fn (std::_Placeholder<1>, (lambda at main.cpp:271:28))> > > &, _concept_requires_91 = (no value), $3 = (no value)]
+            pipeable_access::impl<Pipe>::pipe(std::forward<Arg>(arg), pipe)
+            ^
+/usr/local/include/range/v3/detail/config.hpp:25:17: note: expanded from macro 'RANGES_DECLTYPE_AUTO_RETURN'
+    -> decltype(__VA_ARGS__)                                    \
+                ^
+main.cpp:293:11: note: while substituting deduced template arguments into function template 'operator|' [with Arg = ranges::v3::join_view<ranges::v3::transform_view<chunk_view<ranges::v3::transform_view<ranges::v3::group_by_view<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, (lambda at main.cpp:105:27)>, (lambda at main.cpp:141:28)> >, (lambda at main.cpp:263:28)>, void>, Pipe = ranges::v3::view::view<ranges::v3::detail::pipeable_binder<std::_Bind<ranges::v3::view::transform_fn (std::_Placeholder<1>, (lambda at main.cpp:271:28))> > >, _concept_requires_507 = (no value), $3 = (no value)]
+          | join_months();
+          ^
+/usr/local/include/range/v3/utility/functional.hpp:501:17: note: in instantiation of function template specialization 'format_calendar(std::size_t)::(anonymous class)::operator()<ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date> >' requested here
+                pipe(std::forward<Arg>(arg))
+                ^
+/usr/local/include/range/v3/detail/config.hpp:25:17: note: expanded from macro 'RANGES_DECLTYPE_AUTO_RETURN'
+    -> decltype(__VA_ARGS__)                                    \
+                ^
+/usr/local/include/range/v3/utility/functional.hpp:511:13: note: while substituting deduced template arguments into function template 'pipe' [with Arg = ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, Pipe = ranges::v3::detail::pipeable_binder<(lambda at main.cpp:279:26)>]
+            pipeable_access::impl<Pipe>::pipe(std::forward<Arg>(arg), pipe)
+            ^
+/usr/local/include/range/v3/detail/config.hpp:25:17: note: expanded from macro 'RANGES_DECLTYPE_AUTO_RETURN'
+    -> decltype(__VA_ARGS__)                                    \
+                ^
+main.cpp:334:33: note: while substituting deduced template arguments into function template 'operator|' [with Arg = ranges::v3::iota_view<boost::gregorian::date, boost::gregorian::date>, Pipe = ranges::v3::detail::pipeable_binder<(lambda at main.cpp:279:26)>, _concept_requires_507 = (no value), $3 = (no value)]
+        copy(dates(start, stop) | format_calendar(months_per_line),
+                                ^
