@@ -1,0 +1,150 @@
+main.cpp: In member function 'void Stack2::Ethernet::pop(Stack2::ReceivedData)':
+main.cpp:75:9: error: 'EthernetDecoder' was not declared in this scope
+         EthernetDecoder dec(data);
+         ^
+main.cpp:76:13: error: 'dec' was not declared in this scope
+         if (dec.getEtherType() == EtherType::IPv4)
+             ^
+main.cpp:76:35: error: 'EtherType' has not been declared
+         if (dec.getEtherType() == EtherType::IPv4)
+                                   ^
+main.cpp:80:30: error: invalid use of incomplete type 'struct Stack2::IPv4Protocol'
+                 mIPv4Protocol->pop(GetPayload(dec));
+                              ^
+main.cpp:18:8: note: forward declaration of 'struct Stack2::IPv4Protocol'
+ struct IPv4Protocol;
+        ^
+main.cpp:80:50: error: 'GetPayload' was not declared in this scope
+                 mIPv4Protocol->pop(GetPayload(dec));
+                                                  ^
+main.cpp: In member function 'void Stack2::IPv4Protocol::pop(Stack2::ReceivedData)':
+main.cpp:104:9: error: 'IPv4Decoder' was not declared in this scope
+         IPv4Decoder dec(data);
+         ^
+main.cpp:105:13: error: 'dec' was not declared in this scope
+         if (dec.getProtocol() == IPProtNum::TCP)
+             ^
+main.cpp:105:34: error: 'IPProtNum' has not been declared
+         if (dec.getProtocol() == IPProtNum::TCP)
+                                  ^
+main.cpp:109:29: error: invalid use of incomplete type 'struct Stack2::TCPProtocol'
+                 mTCPProtocol->pop(dec);
+                             ^
+main.cpp:19:8: note: forward declaration of 'struct Stack2::TCPProtocol'
+ struct TCPProtocol;
+        ^
+main.cpp: At global scope:
+main.cpp:131:29: error: expected ')' before 'tcpdec'
+     SocketBuffer(TCPDecoder tcpdec, IPv4Decoder ipdec) :
+                             ^
+main.cpp:144:16: error: 'uint8_t' in namespace 'std' does not name a type
+     const std::uint8_t* begin() const { return mStorage.data(); }
+                ^
+main.cpp:146:16: error: 'uint8_t' in namespace 'std' does not name a type
+     const std::uint8_t* ip_begin() const { return mStorage.data() + mL2Length; }
+                ^
+main.cpp:147:16: error: 'uint8_t' in namespace 'std' does not name a type
+     const std::uint8_t* ip_end()   const { return ip_begin() + mIPLength; }
+                ^
+main.cpp:149:16: error: 'uint8_t' in namespace 'std' does not name a type
+     const std::uint8_t* tcp_begin() const { return ip_end(); }
+                ^
+main.cpp:150:16: error: 'uint8_t' in namespace 'std' does not name a type
+     const std::uint8_t* tcp_end()   const { return tcp_begin() + mTCPLength; }
+                ^
+main.cpp:152:16: error: 'uint8_t' in namespace 'std' does not name a type
+     const std::uint8_t* l5_begin() const { return tcp_end(); }
+                ^
+main.cpp:153:16: error: 'uint8_t' in namespace 'std' does not name a type
+     const std::uint8_t* l5_end() const { return mStorage.end(); }
+                ^
+main.cpp:156:5: error: 'DynamicBuffer' does not name a type
+     DynamicBuffer mStorage;
+     ^
+main.cpp:158:5: error: 'TCPHeader' does not name a type
+     TCPHeader* mTCP;
+     ^
+main.cpp:159:5: error: 'IPv4Header' does not name a type
+     IPv4Header* mIPv4;
+     ^
+main.cpp:160:5: error: 'EthernetHeader' does not name a type
+     EthernetHeader* mEth;
+     ^
+main.cpp:169:36: error: 'TCPDecoder' has not been declared
+     TCPSession(IPv4Protocol& inIP, TCPDecoder tcpdec, IPv4Decoder ipdec) :
+                                    ^
+main.cpp:169:55: error: 'IPv4Decoder' has not been declared
+     TCPSession(IPv4Protocol& inIP, TCPDecoder tcpdec, IPv4Decoder ipdec) :
+                                                       ^
+main.cpp:175:26: error: 'string' in namespace 'std' does not name a type
+     void send(const std::string& s)
+                          ^
+main.cpp:187:10: error: 'vector' in namespace 'std' does not name a template type
+     std::vector<SocketBuffer> mSocketBuffer;
+          ^
+main.cpp: In constructor 'Stack2::TCPSession::TCPSession(Stack2::IPv4Protocol&, int, int)':
+main.cpp:171:9: error: class 'Stack2::TCPSession' does not have any field named 'mSocketBuffer'
+         mSocketBuffer(1, SocketBuffer(tcpdec, ipdec))
+         ^
+main.cpp:171:52: error: no matching function for call to 'Stack2::SocketBuffer::SocketBuffer(int&, int&)'
+         mSocketBuffer(1, SocketBuffer(tcpdec, ipdec))
+                                                    ^
+main.cpp:129:8: note: candidate: Stack2::SocketBuffer::SocketBuffer()
+ struct SocketBuffer
+        ^
+main.cpp:129:8: note:   candidate expects 0 arguments, 2 provided
+main.cpp:129:8: note: candidate: constexpr Stack2::SocketBuffer::SocketBuffer(const Stack2::SocketBuffer&)
+main.cpp:129:8: note:   candidate expects 1 argument, 2 provided
+main.cpp:129:8: note: candidate: constexpr Stack2::SocketBuffer::SocketBuffer(Stack2::SocketBuffer&&)
+main.cpp:129:8: note:   candidate expects 1 argument, 2 provided
+main.cpp: In member function 'void Stack2::TCPSession::send(const int&)':
+main.cpp:177:29: error: 'mSocketBuffer' was not declared in this scope
+         SocketBuffer& buf = mSocketBuffer.back();
+                             ^
+main.cpp:180:27: error: 'struct Stack2::SocketBuffer' has no member named 'begin'
+         Packet packet(buf.begin(), buf.l5_begin() + s.size());
+                           ^
+main.cpp:180:40: error: 'struct Stack2::SocketBuffer' has no member named 'l5_begin'
+         Packet packet(buf.begin(), buf.l5_begin() + s.size());
+                                        ^
+main.cpp:180:55: error: request for member 'size' in 's', which is of non-class type 'const int'
+         Packet packet(buf.begin(), buf.l5_begin() + s.size());
+                                                       ^
+main.cpp:181:23: error: 'struct Stack2::Packet' has no member named 'data'
+         memcpy(packet.data() - s.size(), s.data(), s.size());
+                       ^
+main.cpp:181:34: error: request for member 'size' in 's', which is of non-class type 'const int'
+         memcpy(packet.data() - s.size(), s.data(), s.size());
+                                  ^
+main.cpp:181:44: error: request for member 'data' in 's', which is of non-class type 'const int'
+         memcpy(packet.data() - s.size(), s.data(), s.size());
+                                            ^
+main.cpp:181:54: error: request for member 'size' in 's', which is of non-class type 'const int'
+         memcpy(packet.data() - s.size(), s.data(), s.size());
+                                                      ^
+main.cpp:181:60: error: 'memcpy' was not declared in this scope
+         memcpy(packet.data() - s.size(), s.data(), s.size());
+                                                            ^
+main.cpp: At global scope:
+main.cpp:199:14: error: 'IPv4Decoder' has not been declared
+     void pop(IPv4Decoder ipdec)
+              ^
+main.cpp:208:5: error: 'boost' does not name a type
+     boost::container::flat_map<RemotePort, TCPSession> mMap;
+     ^
+main.cpp: In member function 'void Stack2::TCPProtocol::pop(int)':
+main.cpp:201:9: error: 'TCPDecoder' was not declared in this scope
+         TCPDecoder dec(ipdec);
+         ^
+main.cpp:202:31: error: 'mMap' was not declared in this scope
+         TCPSession& session = mMap[dec.getSourcePort()];
+                               ^
+main.cpp:202:36: error: 'dec' was not declared in this scope
+         TCPSession& session = mMap[dec.getSourcePort()];
+                                    ^
+main.cpp:203:28: error: invalid conversion from 'const char*' to 'int' [-fpermissive]
+         session.send("test");
+                            ^
+main.cpp:175:10: note:   initializing argument 1 of 'void Stack2::TCPSession::send(const int&)'
+     void send(const std::string& s)
+          ^
