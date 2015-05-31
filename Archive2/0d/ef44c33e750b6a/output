@@ -1,0 +1,7 @@
+main.cpp:19:14: warning: binary constants are a C++14 feature or GCC extension
+     az[1] |= 0b1; 
+              ^
+time is Sun May 31 05:07:11 2015
+time_t size: 8 long int size: 8
+
+00000000000000000000000000000001 32  az char:000000001111111100000000
