@@ -1,0 +1,8 @@
+main.cpp: In instantiation of 'bool Tuple<T, n>::operator>(const Tuple<T, n>&) const [with T = int; int n = 5]':
+main.cpp:40:16:   required from here
+main.cpp:26:4: error: increment of member 'Tuple<int, 5>::data' in read-only object
+    ++data; ++t.data;
+    ^
+main.cpp:26:12: error: increment of member 'Tuple<int, 5>::data' in read-only object
+    ++data; ++t.data;
+            ^
