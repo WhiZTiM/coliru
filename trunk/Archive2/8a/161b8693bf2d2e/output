@@ -1,0 +1,58 @@
+In file included from main.cpp:1:
+In file included from /usr/local/include/range/v3/all.hpp:21:
+In file included from /usr/local/include/range/v3/view.hpp:36:
+/usr/local/include/range/v3/view/group_by.hpp:142:21: error: static_assert failed "The function passed to view::group_by must be callable with two arguments of the range's common reference type, and its return type must be convertible to bool."
+                    CONCEPT_ASSERT_MSG(IndirectCallablePredicate<Fun, range_iterator_t<Rng>,
+                    ^                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/local/include/range/v3/utility/concepts.hpp:744:28: note: expanded from macro 'CONCEPT_ASSERT_MSG'
+#define CONCEPT_ASSERT_MSG static_assert
+                           ^
+/usr/include/c++/v1/__functional_base:413:12: note: in instantiation of function template specialization 'ranges::v3::view::group_by_fn::operator()<ranges::v3::group_by_view<ranges::v3::take_exactly_view<ranges::v3::iota_view<unsigned long, void> >, (lambda at main.cpp:30:27)> &, (lambda at main.cpp:37:27), 42, 0>' requested here
+    return _VSTD::forward<_Fp>(__f)(_VSTD::forward<_Args>(__args)...);
+           ^
+/usr/include/c++/v1/__config:358:15: note: expanded from macro '_VSTD'
+#define _VSTD std::_LIBCPP_NAMESPACE
+              ^
+/usr/include/c++/v1/functional:2023:12: note: in instantiation of function template specialization 'std::__1::__invoke<ranges::v3::view::group_by_fn &, ranges::v3::group_by_view<ranges::v3::take_exactly_view<ranges::v3::iota_view<unsigned long, void> >, (lambda at main.cpp:30:27)> &, (lambda at main.cpp:37:27) &>' requested here
+    return __invoke(__f, __mu(_VSTD::get<_Indx>(__bound_args), __args)...);
+           ^
+/usr/include/c++/v1/functional:2086:20: note: in instantiation of function template specialization 'std::__1::__apply_functor<ranges::v3::view::group_by_fn, std::__1::tuple<std::__1::placeholders::__ph<1>, (lambda at main.cpp:37:27)>, 0, 1, std::__1::tuple<ranges::v3::group_by_view<ranges::v3::take_exactly_view<ranges::v3::iota_view<unsigned long, void> >, (lambda at main.cpp:30:27)> &> >' requested here
+            return __apply_functor(__f_, __bound_args_, __indices(),
+                   ^
+/usr/local/include/range/v3/view/view.hpp:95:21: note: in instantiation of function template specialization 'std::__1::__bind<ranges::v3::view::group_by_fn &, std::__1::placeholders::__ph<1> &, (lambda at main.cpp:37:27)>::operator()<ranges::v3::group_by_view<ranges::v3::take_exactly_view<ranges::v3::iota_view<unsigned long, void> >, (lambda at main.cpp:30:27)> &>' requested here
+                    v.view_(std::forward<Rng>(rng))
+                    ^
+/usr/local/include/range/v3/detail/config.hpp:26:15: note: expanded from macro 'RANGES_DECLTYPE_AUTO_RETURN'
+    { return (__VA_ARGS__); }                                   \
+              ^
+/usr/local/include/range/v3/utility/functional.hpp:511:42: note: in instantiation of function template specialization 'ranges::v3::view::view<ranges::v3::detail::pipeable_binder<std::__1::__bind<ranges::v3::view::group_by_fn &, std::__1::placeholders::__ph<1> &, (lambda at main.cpp:37:27)> > >::pipe<ranges::v3::group_by_view<ranges::v3::take_exactly_view<ranges::v3::iota_view<unsigned long, void> >, (lambda at main.cpp:30:27)> &, ranges::v3::view::view<ranges::v3::detail::pipeable_binder<std::__1::__bind<ranges::v3::view::group_by_fn &, std::__1::placeholders::__ph<1> &, (lambda at main.cpp:37:27)> > > &, 42, 0>' requested here
+            pipeable_access::impl<Pipe>::pipe(std::forward<Arg>(arg), pipe)
+                                         ^
+/usr/local/include/range/v3/detail/config.hpp:26:15: note: expanded from macro 'RANGES_DECLTYPE_AUTO_RETURN'
+    { return (__VA_ARGS__); }                                   \
+              ^
+main.cpp:45:22: note: in instantiation of function template specialization 'ranges::v3::operator|<ranges::v3::group_by_view<ranges::v3::take_exactly_view<ranges::v3::iota_view<unsigned long, void> >, (lambda at main.cpp:30:27)> &, ranges::v3::view::view<ranges::v3::detail::pipeable_binder<std::__1::__bind<ranges::v3::view::group_by_fn &, std::__1::placeholders::__ph<1> &, (lambda at main.cpp:37:27)> > >, 42, 0>' requested here
+        return month | by_week();
+                     ^
+/usr/include/c++/v1/functional:2086:20: note: in instantiation of function template specialization 'std::__1::__apply_functor<ranges::v3::view::transform_fn, std::__1::tuple<std::__1::placeholders::__ph<1>, (lambda at main.cpp:44:28)>, 0, 1, std::__1::tuple<ranges::v3::group_by_view<ranges::v3::take_exactly_view<ranges::v3::iota_view<unsigned long, void> >, (lambda at main.cpp:30:27)> &&> >' requested here
+            return __apply_functor(__f_, __bound_args_, __indices(),
+                   ^
+/usr/local/include/range/v3/view/view.hpp:95:21: note: in instantiation of function template specialization 'std::__1::__bind<ranges::v3::view::transform_fn &, std::__1::placeholders::__ph<1> &, (lambda at main.cpp:44:28)>::operator()<ranges::v3::group_by_view<ranges::v3::take_exactly_view<ranges::v3::iota_view<unsigned long, void> >, (lambda at main.cpp:30:27)> >' requested here
+                    v.view_(std::forward<Rng>(rng))
+                    ^
+/usr/local/include/range/v3/detail/config.hpp:26:15: note: expanded from macro 'RANGES_DECLTYPE_AUTO_RETURN'
+    { return (__VA_ARGS__); }                                   \
+              ^
+/usr/local/include/range/v3/utility/functional.hpp:511:42: note: in instantiation of function template specialization 'ranges::v3::view::view<ranges::v3::detail::pipeable_binder<std::__1::__bind<ranges::v3::view::transform_fn &, std::__1::placeholders::__ph<1> &, (lambda at main.cpp:44:28)> > >::pipe<ranges::v3::group_by_view<ranges::v3::take_exactly_view<ranges::v3::iota_view<unsigned long, void> >, (lambda at main.cpp:30:27)>, ranges::v3::view::view<ranges::v3::detail::pipeable_binder<std::__1::__bind<ranges::v3::view::transform_fn &, std::__1::placeholders::__ph<1> &, (lambda at main.cpp:44:28)> > > &, 42, 0>' requested here
+            pipeable_access::impl<Pipe>::pipe(std::forward<Arg>(arg), pipe)
+                                         ^
+/usr/local/include/range/v3/detail/config.hpp:26:15: note: expanded from macro 'RANGES_DECLTYPE_AUTO_RETURN'
+    { return (__VA_ARGS__); }                                   \
+              ^
+main.cpp:53:42: note: in instantiation of function template specialization 'ranges::v3::operator|<ranges::v3::group_by_view<ranges::v3::take_exactly_view<ranges::v3::iota_view<unsigned long, void> >, (lambda at main.cpp:30:27)>, ranges::v3::view::view<ranges::v3::detail::pipeable_binder<std::__1::__bind<ranges::v3::view::transform_fn &, std::__1::placeholders::__ph<1> &, (lambda at main.cpp:44:28)> > >, 42, 0>' requested here
+    RANGES_FOR(auto m, year | by_month() | month_by_week()) {
+                                         ^
+/usr/local/include/range/v3/range_for.hpp:25:39: note: expanded from macro 'RANGES_FOR'
+    else for(auto && _range_v3_rng = (__VA_ARGS__); !_range_v3_done;)                           \
+                                      ^
+1 error generated.
