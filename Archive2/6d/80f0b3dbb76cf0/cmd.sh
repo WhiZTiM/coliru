@@ -1,0 +1,1 @@
+clang++ -std=c++14 -stdlib=libc++ -Weverything -Wno-c++98-compat -Wno-missing-prototypes -DRANGES_SUPPRESS_IOTA_WARNING -pthread main.cpp && ./a.out
