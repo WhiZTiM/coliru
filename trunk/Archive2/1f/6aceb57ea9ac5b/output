@@ -1,0 +1,14 @@
+file 'example.txt' contains 46 characters
+file 'example.txt' contains 46 bytes
+after seek to end: 46
+after writing 24 dots: 70
+after writing more stuff: 106
+
+====== contents of file 'example.txt' ==========
+
+first sentence
+second sentence
+third sentence
+........................should add this text from offset 70
+
+=========================
