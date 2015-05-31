@@ -1,0 +1,5 @@
+main.cpp: In instantiation of 'bool Tuple<T>::operator<(const Tuple<T>&) const [with T = int]':
+main.cpp:33:16:   required from here
+main.cpp:19:12: error: no match for 'operator<' (operand types are 'const int' and 'const Tuple<int>')
+   if (data < t)
+            ^
