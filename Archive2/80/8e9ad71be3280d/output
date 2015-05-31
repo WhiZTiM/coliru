@@ -1,0 +1,41 @@
+In file included from main.cpp:1:
+In file included from /usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.1.0/../../../../include/c++/5.1.0/iostream:39:
+In file included from /usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.1.0/../../../../include/c++/5.1.0/ostream:38:
+In file included from /usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.1.0/../../../../include/c++/5.1.0/ios:42:
+In file included from /usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.1.0/../../../../include/c++/5.1.0/bits/ios_base.h:41:
+In file included from /usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.1.0/../../../../include/c++/5.1.0/bits/locale_classes.h:40:
+In file included from /usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.1.0/../../../../include/c++/5.1.0/string:48:
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.1.0/../../../../include/c++/5.1.0/bits/stl_function.h:387:20: error: invalid operands to binary expression ('const foo' and 'const foo')
+      { return __x < __y; }
+               ~~~ ^ ~~~
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.1.0/../../../../include/c++/5.1.0/bits/stl_tree.h:1923:11: note: in instantiation of member function 'std::less<foo>::operator()' requested here
+              && _M_impl._M_key_compare(_S_key(_M_rightmost()), __k))
+                 ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.1.0/../../../../include/c++/5.1.0/bits/stl_tree.h:1983:4: note: in instantiation of member function 'std::_Rb_tree<foo, foo, std::_Identity<foo>, std::less<foo>, std::allocator<foo> >::_M_get_insert_hint_unique_pos' requested here
+        = _M_get_insert_hint_unique_pos(__position, _KeyOfValue()(__v));
+          ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.1.0/../../../../include/c++/5.1.0/bits/stl_tree.h:2234:4: note: in instantiation of function template specialization 'std::_Rb_tree<foo, foo, std::_Identity<foo>, std::less<foo>, std::allocator<foo> >::_M_insert_unique_<const foo &, std::_Rb_tree<foo, foo, std::_Identity<foo>, std::less<foo>, std::allocator<foo> >::_Alloc_node>' requested here
+          _M_insert_unique_(end(), *__first, __an);
+          ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.1.0/../../../../include/c++/5.1.0/bits/stl_set.h:225:14: note: in instantiation of function template specialization 'std::_Rb_tree<foo, foo, std::_Identity<foo>, std::less<foo>, std::allocator<foo> >::_M_insert_unique<const foo *>' requested here
+      { _M_t._M_insert_unique(__l.begin(), __l.end()); }
+             ^
+main.cpp:13:19: note: in instantiation of member function 'std::set<foo, std::less<foo>, std::allocator<foo> >::set' requested here
+    std::set<foo> seq{f};
+                  ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.1.0/../../../../include/c++/5.1.0/bits/stl_pair.h:220:5: note: candidate template ignored: could not match 'pair<type-parameter-0-0, type-parameter-0-1>' against 'const foo'
+    operator<(const pair<_T1, _T2>& __x, const pair<_T1, _T2>& __y)
+    ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.1.0/../../../../include/c++/5.1.0/bits/stl_iterator.h:298:5: note: candidate template ignored: could not match 'reverse_iterator<type-parameter-0-0>' against 'const foo'
+    operator<(const reverse_iterator<_Iterator>& __x,
+    ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.1.0/../../../../include/c++/5.1.0/bits/stl_iterator.h:348:5: note: candidate template ignored: could not match 'reverse_iterator<type-parameter-0-0>' against 'const foo'
+    operator<(const reverse_iterator<_IteratorL>& __x,
+    ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.1.0/../../../../include/c++/5.1.0/bits/stl_iterator.h:1089:5: note: candidate template ignored: could not match 'move_iterator<type-parameter-0-0>' against 'const foo'
+    operator<(const move_iterator<_IteratorL>& __x,
+    ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.1.0/../../../../include/c++/5.1.0/bits/stl_iterator.h:1095:5: note: candidate template ignored: could not match 'move_iterator<type-parameter-0-0>' against 'const foo'
+    operator<(const move_iterator<_Iterator>& __x,
+    ^
+1 error generated.
