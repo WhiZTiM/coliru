@@ -1,0 +1,10 @@
+main.cpp: In constructor 'A::A()':
+main.cpp:7:5: error: uninitialized const member in 'const int' [-fpermissive]
+     A()
+     ^
+main.cpp:5:15: note: 'const int A::a' should be initialized
+     const int a;
+               ^
+main.cpp:9:11: error: assignment of read-only member 'A::a'
+         a = 4;
+           ^
