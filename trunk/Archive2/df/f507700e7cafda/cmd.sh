@@ -1,0 +1,1 @@
+clang++ -o test main.cpp -std=c++11 -pedantic -Wall && ./test
