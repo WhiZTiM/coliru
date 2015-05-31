@@ -1,0 +1,10 @@
+main.cpp:13:13: error: unknown type name 'shared_ptr'
+            shared_ptr<float> f;
+            ^
+main.cpp:13:23: error: expected member name or ';' after declaration specifiers
+            shared_ptr<float> f;
+            ~~~~~~~~~~^
+main.cpp:17:38: error: excess elements in struct initializer
+            0,{},nullptr,{ 1,2,3,4 },{}
+                                     ^~
+3 errors generated.
