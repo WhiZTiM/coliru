@@ -1,0 +1,18 @@
+main.cpp: In function 'int main(int, char**)':
+main.cpp:22:5: error: 'ExampleFunct' was not declared in this scope
+     ExampleFunct
+     ^
+main.cpp:23:5: error: expected ';' before 'ion'
+     ion f = std::bind(&Object::hello, &instance, 
+     ^
+main.cpp:27:10: error: 'f' was not declared in this scope
+     f(str);
+          ^
+main.cpp:21:12: warning: unused variable 'instance' [-Wunused-variable]
+     Object instance;std::string str("World");
+            ^
+main.cpp: At global scope:
+main.cpp:18:5: warning: unused parameter 'argc' [-Wunused-parameter]
+ int main(int argc, char* argv[])
+     ^
+main.cpp:18:5: warning: unused parameter 'argv' [-Wunused-parameter]
