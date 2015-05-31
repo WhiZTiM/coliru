@@ -1,0 +1,22 @@
++ for LS in 50 100
++ g++ -DLIST_SIZE=50 -std=c++1y -O2 -Wall -Wextra -pedantic main.cpp
+
+real	0m1.105s
+user	0m0.812s
+sys	0m0.260s
++ g++ -DLIST_SIZE=50 -DUSE_INDEXER -std=c++1y -O2 -Wall -Wextra -pedantic main.cpp
+
+real	0m0.692s
+user	0m0.536s
+sys	0m0.132s
++ for LS in 50 100
++ g++ -DLIST_SIZE=100 -std=c++1y -O2 -Wall -Wextra -pedantic main.cpp
+
+real	0m3.398s
+user	0m2.664s
+sys	0m0.656s
++ g++ -DLIST_SIZE=100 -DUSE_INDEXER -std=c++1y -O2 -Wall -Wextra -pedantic main.cpp
+
+real	0m0.850s
+user	0m0.580s
+sys	0m0.148s
