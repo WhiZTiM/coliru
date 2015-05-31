@@ -1,0 +1,18 @@
++ g++ -std=c++1y -O2 -Wall -Wextra -pedantic -pthread main.cpp
+
+real	0m0.559s
+user	0m0.420s
+sys	0m0.132s
++ ./a.out
++ clang++ -std=c++1y -O2 -Wall -Wextra -pedantic -pthread -lcxxrt -ldl main.cpp
+
+real	0m0.390s
+user	0m0.280s
+sys	0m0.100s
++ ./a.out
++ clang++ -stdlib=libc++ -std=c++1y -O2 -Wall -Wextra -pedantic -pthread -lcxxrt -ldl main.cpp
+
+real	0m0.171s
+user	0m0.100s
+sys	0m0.060s
++ ./a.out
