@@ -1,0 +1,3 @@
+main.cpp: In function 'int main()':
+main.cpp:46:16: error: unable to find string literal operator 'operator"" _tagged' with 'const char [4]', 'long unsigned int' arguments
+main.cpp:46:16: error: unable to deduce 'auto' from '<expression error>'
