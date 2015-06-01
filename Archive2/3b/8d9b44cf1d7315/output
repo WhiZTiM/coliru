@@ -1,0 +1,14 @@
+parce
+got 3
+parce2
+got +
+parce3
+parcef 4
+dgot: 4
+parce4
+dgot: *
+parcef 2
+dgot: 2
+leaving parce4 on end
+3 + 4 * 2 
+11
