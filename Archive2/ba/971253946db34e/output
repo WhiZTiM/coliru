@@ -1,0 +1,4 @@
+main.cpp:5:10: warning: unused type alias 'iter' [-Wunused-local-typedef]
+   using iter = decltype(std::begin(a));
+         ^
+1 warning generated.
