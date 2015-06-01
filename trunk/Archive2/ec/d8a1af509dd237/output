@@ -1,0 +1,6 @@
+bigger( 30, 25 ) is: 30
+bigger( 30.23, 30.56 ) is: 30.56
+bigger( malaga, jaen ) is: malaga
+bigger( malaga, jaen ) is: malaga
+bigger( jaen, jaenn ) is: jaenn
+bigger( jaen, jaenn ) is: jaenn
