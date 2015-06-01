@@ -1,0 +1,1 @@
+g++ -I. -std=c++11 -I/usr/include -lboost_thread -lboost_system -O2 -Wall -pedantic -pthread main.cpp && ./a.out
