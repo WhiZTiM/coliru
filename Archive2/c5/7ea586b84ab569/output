@@ -1,0 +1,15 @@
+emplace_back:
+I am being constructed.
+
+push_back:
+I am being constructed.
+I am being moved.
+
+e_b:
+I am being constructed.
+I am being moved.
+
+Contents:
+Nelson Mandela was elected president of South Africa in 1994.
+Nuu Nuu was elected president of Tappimaa in 2007.
+Franklin Delano Roosevelt was re-elected president of the USA in 1936.
