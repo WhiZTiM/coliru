@@ -1,0 +1,7 @@
+main.cpp:3:24: warning: private field 'i' is not used [-Wunused-private-field]
+struct A {private: int i;}; // SL
+                       ^
+1 warning generated.
+main.cpp:5:8: warning: direct base 'A' inaccessible in 'C' due to ambiguity
+ struct C : B, A {}; // Kein SL: Zwei Basisklassen vom Typ A
+        ^
