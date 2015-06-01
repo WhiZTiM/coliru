@@ -1,0 +1,4 @@
+main.cpp:9:14: error: use of 'auto c::f()' before deduction of 'auto'
+     decltype(f()) i;
+              ^
+main.cpp:9:14: error: use of 'auto c::f()' before deduction of 'auto'
