@@ -1,0 +1,4 @@
+main.cpp:22:5: warning: expression result unused [-Wunused-value]
+    Y<indent<10>, int>{};
+    ^                 ~~
+1 warning generated.
