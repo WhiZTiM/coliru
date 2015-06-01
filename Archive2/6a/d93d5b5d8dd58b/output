@@ -1,0 +1,10 @@
+main.cpp: In function 'int main()':
+main.cpp:6:9: warning: comparisons like 'X<=Y<=Z' do not have their mathematical meaning [-Wparentheses]
+    d = c<b < a;
+         ^
+main.cpp:8:8: warning: comparisons like 'X<=Y<=Z' do not have their mathematical meaning [-Wparentheses]
+  f = a > b >c; 
+        ^
+main.cpp:9:11: error: unable to find string literal operator 'operator""d' with 'const char [18]', 'long unsigned int' arguments
+    printf("c:%i, f:%i, g:%i,"d,f,f);
+           ^
