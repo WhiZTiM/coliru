@@ -1,0 +1,4 @@
+main.cpp:24:99: error: use of undeclared identifier 'argv'
+    boost::system_time const timeout = boost::get_system_time() + boost::posix_time::seconds(atoi(argv[1]));
+                                                                                                  ^
+1 error generated.
