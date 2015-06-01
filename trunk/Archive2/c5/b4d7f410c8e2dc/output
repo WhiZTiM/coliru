@@ -1,0 +1,4 @@
+main.cpp:10:13: warning: unused variable 'i' [-Wunused-variable]
+    A::iter i;
+            ^
+1 warning generated.
