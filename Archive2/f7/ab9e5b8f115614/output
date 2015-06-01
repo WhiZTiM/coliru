@@ -1,0 +1,5 @@
+bigger( 30, 25 ) is: 30
+bigger( 30.23, 30.56 ) is: 30.56
+bigger( malaga, jaen ) is: malaga
+bigger( malaga, jaennnnn ) is: jaennnnn
+bigger( c-string, bigger-c-string ) is: bigger-c-string
