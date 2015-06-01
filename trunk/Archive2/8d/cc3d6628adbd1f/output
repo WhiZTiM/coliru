@@ -1,0 +1,52 @@
+g++ (GCC) 5.1.0
+Copyright (C) 2015 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+main.cpp: In function 'int main()':
+main.cpp:80:24: error: no matching function for call to 'Date::Date(int, const char [6])'
+     Date d3(42, "hello"); // Refused thanks to SFINAE
+                        ^
+main.cpp:58:5: note: candidate: template<class ... Ts, std::enable_if_t<detail::is_included<std::tuple<_Elements ...>, std::tuple<Year, Month, Day> >::value>* <anonymous> > Date::Date(const Ts& ...)
+     Date(const Ts&... ts) :
+     ^
+main.cpp:58:5: note:   template argument deduction/substitution failed:
+main.cpp:57:139: note: invalid template non-type parameter
+     template <typename ... Ts, typename std::enable_if_t<detail::is_included<std::tuple<Ts...>, std::tuple<Year, Month, Day>> ::value>* = nullptr>
+                                                                                                                                           ^
+main.cpp:53:5: note: candidate: Date::Date(const Year&, const Month&, const Day&)
+     Date(const Year& year, const Month& month, const Day& day) :
+     ^
+main.cpp:53:5: note:   candidate expects 3 arguments, 2 provided
+main.cpp:51:8: note: candidate: constexpr Date::Date(const Date&)
+ struct Date {
+        ^
+main.cpp:51:8: note:   candidate expects 1 argument, 2 provided
+main.cpp:51:8: note: candidate: constexpr Date::Date(Date&&)
+main.cpp:51:8: note:   candidate expects 1 argument, 2 provided
+clang version 3.6.0 (tags/RELEASE_360/final 235480)
+Target: x86_64-unknown-linux-gnu
+Thread model: posix
+main.cpp:80:10: error: no matching constructor for initialization of 'Date'
+    Date d3(42, "hello"); // Refused thanks to SFINAE
+         ^  ~~~~~~~~~~~
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.1.0/../../../../include/c++/5.1.0/type_traits:2388:44: note: candidate template ignored: disabled by 'enable_if' [with Ts = <int, char [6]>]
+    using enable_if_t = typename enable_if<_Cond, _Tp>::type;
+                                           ^
+main.cpp:51:8: note: candidate constructor (the implicit copy constructor) not viable: requires 1 argument, but 2 were provided
+struct Date {
+       ^
+main.cpp:51:8: note: candidate constructor (the implicit move constructor) not viable: requires 1 argument, but 2 were provided
+main.cpp:53:5: note: candidate constructor not viable: requires 3 arguments, but 2 were provided
+    Date(const Year& year, const Month& month, const Day& day) :
+    ^
+main.cpp:65:9: warning: private field 'd' is not used [-Wunused-private-field]
+    Day d;
+        ^
+main.cpp:66:11: warning: private field 'm' is not used [-Wunused-private-field]
+    Month m;
+          ^
+main.cpp:67:10: warning: private field 'y' is not used [-Wunused-private-field]
+    Year y;
+         ^
+3 warnings and 1 error generated.
