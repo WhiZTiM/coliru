@@ -1,0 +1,7 @@
+main.cpp:22:5: error: function 'foo' with deduced return type cannot be used before it is defined
+    foo(X<10>{});
+    ^
+main.cpp:8:17: note: 'foo' declared here
+    friend auto foo(X<N>);
+                ^
+1 error generated.
