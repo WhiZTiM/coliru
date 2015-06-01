@@ -1,0 +1,7 @@
+main.cpp:5:21: warning: unused variable 'a' [-Wunused-variable]
+    X<struct hello> a;
+                    ^
+main.cpp:6:21: warning: unused variable 'b' [-Wunused-variable]
+    X<struct world> b;  
+                    ^
+2 warnings generated.
