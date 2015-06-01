@@ -1,0 +1,15 @@
+opening parenthesis
+ parenthesis
+inhither
+aquiiit
+implied mult
+got *
+looping (
+opening parenthesis
+ parenthesis
+inhither
+opening parenthesis
+2
+looping7: 0*0
+results: 1 0 0 0
+bash: line 7: 30453 Segmentation fault      (core dumped) ./a.out
