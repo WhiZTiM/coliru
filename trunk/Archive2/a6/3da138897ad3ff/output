@@ -1,0 +1,4 @@
+enter y to interrupt
+x = 'y'
+thread interrupt
+thread interrupted
