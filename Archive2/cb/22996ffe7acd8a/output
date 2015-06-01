@@ -1,0 +1,4 @@
+main.cpp: In function 'int main()':
+main.cpp:20:35: error: conversion from 'compatible_types {aka boost::mpl::v_item<mpl_::bool_<true>, boost::mpl::v_item<mpl_::bool_<false>, boost::mpl::v_item<mpl_::bool_<true>, boost::mpl::vector0<mpl_::na>, 0>, 0>, 0>}' to non-scalar type 'main()::<anonymous struct>' requested
+     struct{} _ = compatible_types();
+                                   ^
