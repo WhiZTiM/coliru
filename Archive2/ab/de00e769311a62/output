@@ -1,0 +1,5 @@
+main.cpp: In instantiation of 'void test() [with TypeList = boost::mpl::vector<int, char, int>; T = int]':
+main.cpp:24:44:   required from here
+main.cpp:19:35: error: conversion from 'compatible_types {aka boost::mpl::v_item<mpl_::bool_<true>, boost::mpl::v_item<mpl_::bool_<false>, boost::mpl::v_item<mpl_::bool_<true>, boost::mpl::vector0<mpl_::na>, 0>, 0>, 0>}' to non-scalar type 'test() [with TypeList = boost::mpl::vector<int, char, int>; T = int]::<anonymous struct>' requested
+     struct{} _ = compatible_types();
+                                   ^
