@@ -1,0 +1,7 @@
+crazy
+crazy
+Exception caught: param can't be 5
+Exception caught: myfunc(): exception param can't be 5
+crazy
+Exception caught: unknown
+Exception caught: myfunc(): exception unknown
