@@ -1,0 +1,39 @@
+main.cpp:6:41: error: 'chrono' in namespace 'std' does not name a type
+         using min_frame_duration = std::chrono::duration<uint32_t, std::ratio<1,240>>; 
+                                         ^
+main.cpp:9:9: error: 'D3D11Device' does not name a type
+         D3D11Device& device_;
+         ^
+main.cpp:10:9: error: 'Stage' does not name a type
+         Stage& stage_;
+         ^
+main.cpp:12:9: error: 'gthread' does not name a type
+         gthread::task_queue task_queue_;
+         ^
+main.cpp:14:14: error: 'thread' in namespace 'std' does not name a type
+         std::thread thread_;
+              ^
+main.cpp:15:14: error: 'atomic_flag' in namespace 'std' does not name a type
+         std::atomic_flag quit_flag_;
+              ^
+main.cpp:16:14: error: 'condition_variable' in namespace 'std' does not name a type
+         std::condition_variable condition_var_;
+              ^
+main.cpp:17:14: error: 'mutex' in namespace 'std' does not name a type
+         std::mutex mutex_;
+              ^
+main.cpp:18:14: error: 'atomic_bool' in namespace 'std' does not name a type
+         std::atomic_bool thread_started_;
+              ^
+main.cpp:19:14: error: 'atomic' in namespace 'std' does not name a template type
+         std::atomic<ID3D11CommandList*> command_list_{}; 
+              ^
+main.cpp:21:9: error: 'game_utils' does not name a type
+         game_utils::Ticker t; // debugging       
+         ^
+main.cpp:24:14: error: 'unique_lock' in namespace 'std' does not name a template type
+         std::unique_lock<std::mutex> clear_waiting_frame();
+              ^
+main.cpp:28:34: error: expected ')' before '&' token
+         RenderManager(D3D11Device& device_, Stage& stage_);
+                                  ^
