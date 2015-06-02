@@ -1,0 +1,1 @@
+set -x ; clang++ -std=c++14 main.cpp -stdlib=libc++ -lsupc++ -lboost_filesystem -lboost_system  -lboost_locale && ./a.out
