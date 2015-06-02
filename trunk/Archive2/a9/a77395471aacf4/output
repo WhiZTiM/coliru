@@ -1,0 +1,4 @@
+main.cpp:22:16: warning: unused variable 'y' [-Wunused-variable]
+    Y<10, int> y;
+               ^
+1 warning generated.
