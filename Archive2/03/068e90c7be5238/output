@@ -1,0 +1,5 @@
+regex use C locale.
+Positive match found in "Student".
+NO match found in "Élève".
+Positive match found in "E".
+NO match found in "É".
