@@ -1,0 +1,7 @@
+/tmp/ccuZD9kQ.o: In function `main':
+main.cpp:(.text.startup+0xa): undefined reference to `std::cout'
+main.cpp:(.text.startup+0xf): undefined reference to `std::basic_ostream<char, std::char_traits<char> >& std::operator<< <std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*)'
+/tmp/ccuZD9kQ.o: In function `_GLOBAL__sub_I_main':
+main.cpp:(.text.startup+0x2a): undefined reference to `std::ios_base::Init::Init()'
+main.cpp:(.text.startup+0x39): undefined reference to `std::ios_base::Init::~Init()'
+collect2: error: ld returned 1 exit status
