@@ -1,0 +1,15 @@
+main.cpp: In function 'int main()':
+main.cpp:43:20: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for(int i=0; i < xz.size(); ++i)
+                    ^
+time is Tue Jun  2 04:26:22 2015
+time_t size: 8 long int size: 8
+
+3
+24
+0xee6c4cpoop:00000000000000000000000000000001 2 32
+1
+2
+3
+0
+0
