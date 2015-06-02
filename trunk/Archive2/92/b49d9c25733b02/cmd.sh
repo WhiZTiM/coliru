@@ -1,0 +1,1 @@
+clang++ -std=c++98 -O2 -Wall -pedantic -Wno-unused-variable main.cpp && ./a.out
