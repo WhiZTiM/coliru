@@ -1,0 +1,9 @@
+Foo::Foo() private constructor
+	 Hello from Singleton
+	 Hello from Singleton
+	 Hello from Singleton
+Foo::Foo() private constructor
+	 Hello from Singleton
+	 Hello from Singleton
+Foo::~Foo() private destructor
+Foo::~Foo() private destructor
