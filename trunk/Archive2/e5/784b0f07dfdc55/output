@@ -1,0 +1,4 @@
+main.cpp: In function 'int main(int, char**)':
+main.cpp:8:9: warning: overflow in implicit constant conversion [-Woverflow]
+     str += 1234;
+         ^
