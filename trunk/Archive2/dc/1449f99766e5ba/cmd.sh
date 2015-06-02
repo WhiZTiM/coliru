@@ -1,0 +1,1 @@
+g++ -Wconversion main.cpp && ./a.out
