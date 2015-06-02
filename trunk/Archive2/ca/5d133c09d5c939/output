@@ -1,0 +1,23 @@
+main.cpp:9:22: error: expected ',' or '...' before '&&' token
+     protect_wrapper(T&& t) : T(std::move(t))
+                      ^
+main.cpp: In constructor 'protect_wrapper<T>::protect_wrapper(T)':
+main.cpp:9:32: error: 'move' is not a member of 'std'
+     protect_wrapper(T&& t) : T(std::move(t))
+                                ^
+main.cpp:9:42: error: 't' was not declared in this scope
+     protect_wrapper(T&& t) : T(std::move(t))
+                                          ^
+main.cpp: At global scope:
+main.cpp:16:15: error: 'enable_if' in namespace 'std' does not name a template type
+ typename std::enable_if< !std::is_bind_expression< typename std::decay<T>::type >::value,
+               ^
+main.cpp:16:24: error: expected unqualified-id before '<' token
+ typename std::enable_if< !std::is_bind_expression< typename std::decay<T>::type >::value,
+                        ^
+main.cpp:24:15: error: 'enable_if' in namespace 'std' does not name a template type
+ typename std::enable_if< std::is_bind_expression< typename std::decay<T>::type >::value,
+               ^
+main.cpp:24:24: error: expected unqualified-id before '<' token
+ typename std::enable_if< std::is_bind_expression< typename std::decay<T>::type >::value,
+                        ^
