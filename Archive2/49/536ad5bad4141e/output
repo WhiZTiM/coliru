@@ -1,0 +1,106 @@
+
+
+g++ -O0 ######################################################################################################
+
+	.file	"main.cpp"
+	.text
+	.globl	_Z20my_ordinary_functionv
+	.type	_Z20my_ordinary_functionv, @function
+_Z20my_ordinary_functionv:
+.LFB1:
+	.cfi_startproc
+	pushq	%rbp
+	.cfi_def_cfa_offset 16
+	.cfi_offset 6, -16
+	movq	%rsp, %rbp
+	.cfi_def_cfa_register 6
+	nop
+	popq	%rbp
+	.cfi_def_cfa 7, 8
+	ret
+	.cfi_endproc
+.LFE1:
+	.size	_Z20my_ordinary_functionv, .-_Z20my_ordinary_functionv
+	.globl	main
+	.type	main, @function
+main:
+.LFB2:
+	.cfi_startproc
+	pushq	%rbp
+	.cfi_def_cfa_offset 16
+	.cfi_offset 6, -16
+	movq	%rsp, %rbp
+	.cfi_def_cfa_register 6
+	call	_Z20my_function_templateIiEvv
+	call	_Z20my_ordinary_functionv
+	movl	$0, %eax
+	popq	%rbp
+	.cfi_def_cfa 7, 8
+	ret
+	.cfi_endproc
+.LFE2:
+	.size	main, .-main
+	.section	.text._Z20my_function_templateIiEvv,"axG",@progbits,_Z20my_function_templateIiEvv,comdat
+	.weak	_Z20my_function_templateIiEvv
+	.type	_Z20my_function_templateIiEvv, @function
+_Z20my_function_templateIiEvv:
+.LFB3:
+	.cfi_startproc
+	pushq	%rbp
+	.cfi_def_cfa_offset 16
+	.cfi_offset 6, -16
+	movq	%rsp, %rbp
+	.cfi_def_cfa_register 6
+	nop
+	popq	%rbp
+	.cfi_def_cfa 7, 8
+	ret
+	.cfi_endproc
+.LFE3:
+	.size	_Z20my_function_templateIiEvv, .-_Z20my_function_templateIiEvv
+	.ident	"GCC: (GNU) 5.1.0"
+	.section	.note.GNU-stack,"",@progbits
+
+
+g++ -O3 ######################################################################################################
+
+	.file	"main.cpp"
+	.section	.text.unlikely,"ax",@progbits
+.LCOLDB0:
+	.text
+.LHOTB0:
+	.p2align 4,,15
+	.globl	_Z20my_ordinary_functionv
+	.type	_Z20my_ordinary_functionv, @function
+_Z20my_ordinary_functionv:
+.LFB1:
+	.cfi_startproc
+	rep; ret
+	.cfi_endproc
+.LFE1:
+	.size	_Z20my_ordinary_functionv, .-_Z20my_ordinary_functionv
+	.section	.text.unlikely
+.LCOLDE0:
+	.text
+.LHOTE0:
+	.section	.text.unlikely
+.LCOLDB1:
+	.section	.text.startup,"ax",@progbits
+.LHOTB1:
+	.p2align 4,,15
+	.globl	main
+	.type	main, @function
+main:
+.LFB2:
+	.cfi_startproc
+	xorl	%eax, %eax
+	ret
+	.cfi_endproc
+.LFE2:
+	.size	main, .-main
+	.section	.text.unlikely
+.LCOLDE1:
+	.section	.text.startup
+.LHOTE1:
+	.ident	"GCC: (GNU) 5.1.0"
+	.section	.note.GNU-stack,"",@progbits
