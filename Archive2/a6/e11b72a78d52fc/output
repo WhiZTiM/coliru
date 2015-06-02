@@ -1,0 +1,18 @@
++ g++ -std=c++11 -O2 -Wall -pedantic -pthread main.cpp
+main.cpp:20:8: error: template argument 'IsComplex<std::complex<_Tp> >::value' involves template parameter(s)
+ struct IsAoS< std::complex<T> >: std::true_type{};
+        ^
++ clang++ -std=c++11 -O2 -Wall -pedantic -pthread main.cpp
+main.cpp:20:8: error: non-type template argument depends on a template parameter of the partial specialization
+struct IsAoS< std::complex<T> >: std::true_type{};
+       ^
+main.cpp:10:42: note: template parameter is used in default argument declared here
+template< typename T, bool T_isComplex = IsComplex<T>::value >
+                                         ^~~~~~~~~~~~~~~~~~~
+main.cpp:25:19: error: implicit instantiation of undefined template 'IsAoS<std::complex<double>, true>'
+    static_assert(IsAoS<std::complex<double>>::value , "");
+                  ^
+main.cpp:11:8: note: template is declared here
+struct IsAoS;
+       ^
+2 errors generated.
