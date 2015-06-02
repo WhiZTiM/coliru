@@ -1,0 +1,8 @@
+main.cpp: In function 'int main()':
+main.cpp:128:34: error: no matching function for call to 'UtlThreadSafeQueue<BaseMessage>::push(std::shared_ptr<DerivedMessage>&)'
+     dataLoadSessionQ.push(message);    
+                                  ^
+main.cpp:56:17: note: candidate: void UtlThreadSafeQueue<T>::push(T&&) [with T = BaseMessage]
+     inline void push(T&& value) {
+                 ^
+main.cpp:56:17: note:   no known conversion for argument 1 from 'std::shared_ptr<DerivedMessage>' to 'BaseMessage&&'
