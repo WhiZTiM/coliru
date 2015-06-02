@@ -1,0 +1,8 @@
+main.cpp: In function 'int main()':
+main.cpp:9:6: warning: unused variable 'A' [-Wunused-variable]
+  int A[5];
+      ^
+main.cpp:10:6: warning: variable 'B' set but not used [-Wunused-but-set-variable]
+  int B[5];
+      ^
+Enter the A[0] value: Enter the A[1] value: Enter the A[2] value: Enter the A[3] value: Enter the A[4] value: Enter the B[0] value: Enter the B[1] value: Enter the B[2] value: Enter the B[3] value: Enter the B[4] value: 0 , 0, 4195724, 0, 27558896 
