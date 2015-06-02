@@ -1,0 +1,32 @@
+{
+    "TokenNo": "ABC123456",
+    "CPUID": "ABC123456",
+    "CommandID": "09",
+    "IsEncrypted": "0",
+    "CommandString": [
+        {
+            "ADD": "97",
+            "ESTBCODE": "99999999",
+            "EID": "XY",
+            "CID": "0154400000",
+            "DATE": "14042015",
+            "TIME": "1835",
+            "IOMODE": "I",
+            "REASONCODE": "55",
+            "LAT": "87",
+            "LONG": "90"
+        },
+        {
+            "ADD": "87",
+            "ESTBCODE": "99999998",
+            "EID": "XX",
+            "CID": "0154300000",
+            "DATE": "15052015",
+            "TIME": "1947",
+            "IOMODE": "O",
+            "REASONCODE": "54",
+            "LAT": "89",
+            "LONG": "91"
+        }
+    ]
+}
