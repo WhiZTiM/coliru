@@ -1,0 +1,5 @@
+main.cpp: In function 'int main()':
+main.cpp:86:15: warning: ISO C++ forbids converting a string constant to 'char*' [-Wpedantic]
+     char *p = "J'aime la programmation! ";
+               ^
+m'DLPHODSURJUDPPDWLR
