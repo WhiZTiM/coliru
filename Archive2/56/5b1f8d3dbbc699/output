@@ -1,0 +1,34 @@
+main.cpp:8:23: error: expected ',' or '...' before '&&' token
+     protect_wrapper(T &&t) : T(std::move(t)) {}
+                       ^
+main.cpp: In constructor 'std_ext::protect_wrapper<T>::protect_wrapper(T)':
+main.cpp:8:32: error: 'move' is not a member of 'std'
+     protect_wrapper(T &&t) : T(std::move(t)) {}
+                                ^
+main.cpp:8:42: error: 't' was not declared in this scope
+     protect_wrapper(T &&t) : T(std::move(t)) {}
+                                          ^
+main.cpp: At global scope:
+main.cpp:12:15: error: 'enable_if' in namespace 'std' does not name a template type
+ typename std::enable_if<!std::is_bind_expression<typename std::decay<T>::type>::value, T && >::type protect(T &&t) {
+               ^
+main.cpp:12:24: error: expected unqualified-id before '<' token
+ typename std::enable_if<!std::is_bind_expression<typename std::decay<T>::type>::value, T && >::type protect(T &&t) {
+                        ^
+main.cpp:17:15: error: 'enable_if' in namespace 'std' does not name a template type
+ typename std::enable_if<std::is_bind_expression<typename std::decay<T>::type>::value,
+               ^
+main.cpp:17:24: error: expected unqualified-id before '<' token
+ typename std::enable_if<std::is_bind_expression<typename std::decay<T>::type>::value,
+                        ^
+main.cpp: In member function 'void B::run(H)':
+main.cpp:36:26: error: 'bind' is not a member of 'std'
+         m_a.call_handler(std::bind(handler_caller_f(), this, std_ext::protect(handler)));
+                          ^
+main.cpp:36:62: error: 'protect' is not a member of 'std_ext'
+         m_a.call_handler(std::bind(handler_caller_f(), this, std_ext::protect(handler)));
+                                                              ^
+main.cpp: In function 'int main()':
+main.cpp:50:11: error: 'bind' is not a member of 'std'
+     b.run(std::bind(&Test::handler, &t));
+           ^
