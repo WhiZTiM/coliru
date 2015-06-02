@@ -1,0 +1,1 @@
+g++ -std=c++1z -O3 -Wall -lboost_system -lboost_timer main.cpp && ./a.out
