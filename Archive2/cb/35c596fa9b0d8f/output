@@ -1,0 +1,6 @@
+{
+    "TokenNo": "ABC123456",
+    "CPUID": "ABC123456",
+    "CommandID": "09",
+    "IsEncrypted": "{\n    \"\": {\n        \"ADD\": \"97\",\n        \"ESTBCODE\": \"99999999\",\n        \"EID\": \"XY\",\n        \"CID\": \"0154400000\",\n        \"DATE\": \"14042015\",\n        \"TIME\": \"1835\",\n        \"IOMODE\": \"I\",\n        \"REASONCODE\": \"55\",\n        \"LAT\": \"87\",\n        \"LONG\": \"90\"\n    },\n    \"\": {\n        \"ADD\": \"87\",\n        \"ESTBCODE\": \"99999998\",\n        \"EID\": \"XX\",\n        \"CID\": \"0154300000\",\n        \"DATE\": \"15052015\",\n        \"TIME\": \"1947\",\n        \"IOMODE\": \"O\",\n        \"REASONCODE\": \"54\",\n        \"LAT\": \"89\",\n        \"LONG\": \"91\"\n    }\n}\n"
+}
