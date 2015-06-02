@@ -1,0 +1,4 @@
+main.cpp: In function 'int& dangling()':
+main.cpp:5:9: warning: reference to local variable 'i' returned [-Wreturn-local-addr]
+     int i = 5;
+         ^
