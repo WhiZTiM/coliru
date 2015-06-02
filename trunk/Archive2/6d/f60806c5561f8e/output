@@ -1,0 +1,8 @@
+main.cpp:17:20: warning: 'str3' initialized and declared 'extern'
+ extern const char* str3 = "Test 3";  // (3) doesn't work
+                    ^
+main.cpp:19:24: warning: ISO C++ forbids converting a string constant to 'char*' [-Wpedantic]
+ constexpr char* str4 = "Test 4"; // (4)
+                        ^
+Test 1
+Test 2
