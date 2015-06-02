@@ -1,0 +1,24 @@
+allocate 8 element(s) of size 8
+ allocated at: 0x1720c20
+allocate 128 element(s) of size 4
+ allocated at: 0x1720c70
+allocate 8 element(s) of size 8
+ allocated at: 0x1720e80
+allocate 128 element(s) of size 4
+ allocated at: 0x1720ed0
+allocate 8 element(s) of size 8
+ allocated at: 0x17210e0
+allocate 128 element(s) of size 4
+ allocated at: 0x1721130
+allocate 1 element(s) of size 4
+ allocated at: 0x1721340
+allocate 1 element(s) of size 24
+ allocated at: 0x1721360
+deallocate 128 element(s) of size 4 at: 0x1721130
+deallocate 8 element(s) of size 8 at: 0x17210e0
+deallocate 128 element(s) of size 4 at: 0x1720ed0
+deallocate 8 element(s) of size 8 at: 0x1720e80
+deallocate 1 element(s) of size 24 at: 0x1721360
+deallocate 128 element(s) of size 4 at: 0x1720c70
+deallocate 8 element(s) of size 8 at: 0x1720c20
+deallocate 1 element(s) of size 4 at: 0x1721340
