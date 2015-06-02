@@ -1,0 +1,31 @@
+In file included from /usr/local/include/c++/5.1.0/x86_64-unknown-linux-gnu/bits/c++allocator.h:33:0,
+                 from /usr/local/include/c++/5.1.0/bits/allocator.h:46,
+                 from /usr/local/include/c++/5.1.0/string:41,
+                 from /usr/local/include/c++/5.1.0/bits/locale_classes.h:40,
+                 from /usr/local/include/c++/5.1.0/bits/ios_base.h:41,
+                 from /usr/local/include/c++/5.1.0/ios:42,
+                 from /usr/local/include/c++/5.1.0/ostream:38,
+                 from /usr/local/include/c++/5.1.0/iostream:39,
+                 from main.cpp:1:
+/usr/local/include/c++/5.1.0/ext/new_allocator.h: In instantiation of 'void __gnu_cxx::new_allocator<_Tp>::construct(_Up*, _Args&& ...) [with _Up = BaseMessage; _Args = {std::shared_ptr<BaseMessage>&}; _Tp = BaseMessage]':
+/usr/local/include/c++/5.1.0/bits/alloc_traits.h:256:4:   required from 'static std::_Require<std::allocator_traits<_Alloc>::__has_construct<_Tp, _Args ...> > std::allocator_traits<_Alloc>::_S_construct(_Alloc&, _Tp*, _Args&& ...) [with _Tp = BaseMessage; _Args = {std::shared_ptr<BaseMessage>&}; _Alloc = std::allocator<BaseMessage>; std::_Require<std::allocator_traits<_Alloc>::__has_construct<_Tp, _Args ...> > = void]'
+/usr/local/include/c++/5.1.0/bits/alloc_traits.h:402:16:   required from 'static decltype (_S_construct(__a, __p, (forward<_Args>)(std::allocator_traits::construct::__args)...)) std::allocator_traits<_Alloc>::construct(_Alloc&, _Tp*, _Args&& ...) [with _Tp = BaseMessage; _Args = {std::shared_ptr<BaseMessage>&}; _Alloc = std::allocator<BaseMessage>; decltype (_S_construct(__a, __p, (forward<_Args>)(std::allocator_traits::construct::__args)...)) = <type error>]'
+/usr/local/include/c++/5.1.0/bits/shared_ptr_base.h:522:39:   required from 'std::_Sp_counted_ptr_inplace<_Tp, _Alloc, _Lp>::_Sp_counted_ptr_inplace(_Alloc, _Args&& ...) [with _Args = {std::shared_ptr<BaseMessage>&}; _Tp = BaseMessage; _Alloc = std::allocator<BaseMessage>; __gnu_cxx::_Lock_policy _Lp = (__gnu_cxx::_Lock_policy)2u]'
+/usr/local/include/c++/5.1.0/bits/shared_ptr_base.h:617:4:   required from 'std::__shared_count<_Lp>::__shared_count(std::_Sp_make_shared_tag, _Tp*, const _Alloc&, _Args&& ...) [with _Tp = BaseMessage; _Alloc = std::allocator<BaseMessage>; _Args = {std::shared_ptr<BaseMessage>&}; __gnu_cxx::_Lock_policy _Lp = (__gnu_cxx::_Lock_policy)2u]'
+/usr/local/include/c++/5.1.0/bits/shared_ptr_base.h:1097:35:   required from 'std::__shared_ptr<_Tp, _Lp>::__shared_ptr(std::_Sp_make_shared_tag, const _Alloc&, _Args&& ...) [with _Alloc = std::allocator<BaseMessage>; _Args = {std::shared_ptr<BaseMessage>&}; _Tp = BaseMessage; __gnu_cxx::_Lock_policy _Lp = (__gnu_cxx::_Lock_policy)2u]'
+/usr/local/include/c++/5.1.0/bits/shared_ptr.h:319:64:   required from 'std::shared_ptr<_Tp>::shared_ptr(std::_Sp_make_shared_tag, const _Alloc&, _Args&& ...) [with _Alloc = std::allocator<BaseMessage>; _Args = {std::shared_ptr<BaseMessage>&}; _Tp = BaseMessage]'
+/usr/local/include/c++/5.1.0/bits/shared_ptr.h:614:39:   required from 'std::shared_ptr<_Tp1> std::allocate_shared(const _Alloc&, _Args&& ...) [with _Tp = BaseMessage; _Alloc = std::allocator<BaseMessage>; _Args = {std::shared_ptr<BaseMessage>&}]'
+/usr/local/include/c++/5.1.0/bits/shared_ptr.h:629:39:   required from 'std::shared_ptr<_Tp1> std::make_shared(_Args&& ...) [with _Tp = BaseMessage; _Args = {std::shared_ptr<BaseMessage>&}]'
+main.cpp:91:55:   required from 'std::shared_ptr<_Tp1> UtlThreadSafeQueue<T>::wait_and_pop() [with T = BaseMessage]'
+main.cpp:140:56:   required from here
+/usr/local/include/c++/5.1.0/ext/new_allocator.h:120:4: error: no matching function for call to 'BaseMessage::BaseMessage(std::shared_ptr<BaseMessage>&)'
+  { ::new((void *)__p) _Up(std::forward<_Args>(__args)...); }
+    ^
+main.cpp:11:8: note: candidate: constexpr BaseMessage::BaseMessage()
+ struct BaseMessage {
+        ^
+main.cpp:11:8: note:   candidate expects 0 arguments, 1 provided
+main.cpp:11:8: note: candidate: constexpr BaseMessage::BaseMessage(const BaseMessage&)
+main.cpp:11:8: note:   no known conversion for argument 1 from 'std::shared_ptr<BaseMessage>' to 'const BaseMessage&'
+main.cpp:11:8: note: candidate: constexpr BaseMessage::BaseMessage(BaseMessage&&)
+main.cpp:11:8: note:   no known conversion for argument 1 from 'std::shared_ptr<BaseMessage>' to 'BaseMessage&&'
