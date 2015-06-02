@@ -1,0 +1,9 @@
+main.cpp: In instantiation of 'decltype(auto) Wrapper<T>::operator()() const [with T = main()::<lambda()>]':
+main.cpp:43:9:   required from here
+main.cpp:6:16: error: no match for call to '(const main()::<lambda()>) ()'
+     return m_t();
+                ^
+main.cpp:38:33: note: candidate: main()::<lambda()> mutable <near match>
+   auto fun = [foo]() mutable -> decltype(auto) { return foo(); };
+                                 ^
+main.cpp:38:33: note:   passing 'const main()::<lambda()>*' as 'this' argument discards qualifiers
