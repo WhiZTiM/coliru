@@ -1,0 +1,36 @@
++ g++ -std=c++11 -O -Wall -Wextra -pedantic main.cpp
+main.cpp: In member function 'void Derived3<T>::z()':
+main.cpp:35:9: error: 'NestedDef' was not declared in this scope
+         NestedDef nd; (void)nd;
+         ^
+main.cpp:35:29: error: 'nd' was not declared in this scope
+         NestedDef nd; (void)nd;
+                             ^
+main.cpp:36:9: error: 'NestedDefOnT' was not declared in this scope
+         NestedDefOnT ndt; (void)ndt;
+         ^
+main.cpp:36:33: error: 'ndt' was not declared in this scope
+         NestedDefOnT ndt; (void)ndt;
+                                 ^
+main.cpp:37:9: error: 'field' was not declared in this scope
+         field = 0.0f;
+         ^
++ clang++ -std=c++11 -stdlib=libc++ -O -Wall -Wextra -pedantic main.cpp
+main.cpp:35:9: error: unknown type name 'NestedDef'; did you mean 'Derived::NestedDef'?
+        NestedDef nd; (void)nd;
+        ^~~~~~~~~
+        Derived::NestedDef
+main.cpp:7:17: note: 'Derived::NestedDef' declared here
+    typedef int NestedDef;
+                ^
+main.cpp:36:9: error: unknown type name 'NestedDefOnT'; did you mean 'Derived::NestedDefOnT'?
+        NestedDefOnT ndt; (void)ndt;
+        ^~~~~~~~~~~~
+        Derived::NestedDefOnT
+main.cpp:8:15: note: 'Derived::NestedDefOnT' declared here
+    typedef T NestedDefOnT;
+              ^
+main.cpp:37:9: error: use of undeclared identifier 'field'
+        field = 0.0f;
+        ^
+3 errors generated.
