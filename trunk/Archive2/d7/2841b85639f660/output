@@ -1,0 +1,6 @@
+allocate 8 element(s) of size 8
+ allocated at: 0x790c20
+allocate 128 element(s) of size 4
+ allocated at: 0x790c70
+deallocate 128 element(s) of size 4 at: 0x790c70
+deallocate 8 element(s) of size 8 at: 0x790c20
