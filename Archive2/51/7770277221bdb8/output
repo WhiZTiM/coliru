@@ -1,0 +1,13 @@
+main.cpp: In function 'int main()':
+main.cpp:21:29: error: wrong number of template arguments (2, should be 1)
+     FeaturePoint<Point,Point> fp;
+                             ^
+main.cpp:15:7: error: provided for 'template<class T> class FeaturePoint'
+ class FeaturePoint : public FeatureGeneric<T>
+       ^
+main.cpp:21:33: error: invalid type in declaration before ';' token
+     FeaturePoint<Point,Point> fp;
+                                 ^
+main.cpp:21:31: warning: unused variable 'fp' [-Wunused-variable]
+     FeaturePoint<Point,Point> fp;
+                               ^
