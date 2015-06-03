@@ -1,0 +1,30 @@
+main.cpp:1:16: error: 'nigmoo' is not a namespace-name
+ namespace ng = nigmoo; // redacted
+                ^
+main.cpp:1:22: error: expected namespace-name before ';' token
+ namespace ng = nigmoo; // redacted
+                      ^
+main.cpp:5:9: error: 'ng' has not been declared
+         ng::ISOPose3D<T> &out, const ng::Vector3D<T> &point, const ng::Vector3D<T> &normal, T tolerance = ng::Defaults<T>::getTolerance()
+         ^
+main.cpp:5:24: error: expected primary-expression before '>' token
+         ng::ISOPose3D<T> &out, const ng::Vector3D<T> &point, const ng::Vector3D<T> &normal, T tolerance = ng::Defaults<T>::getTolerance()
+                        ^
+main.cpp:5:27: error: 'out' was not declared in this scope
+         ng::ISOPose3D<T> &out, const ng::Vector3D<T> &point, const ng::Vector3D<T> &normal, T tolerance = ng::Defaults<T>::getTolerance()
+                           ^
+main.cpp:5:32: error: expected primary-expression before 'const'
+         ng::ISOPose3D<T> &out, const ng::Vector3D<T> &point, const ng::Vector3D<T> &normal, T tolerance = ng::Defaults<T>::getTolerance()
+                                ^
+main.cpp:5:62: error: expected primary-expression before 'const'
+         ng::ISOPose3D<T> &out, const ng::Vector3D<T> &point, const ng::Vector3D<T> &normal, T tolerance = ng::Defaults<T>::getTolerance()
+                                                              ^
+main.cpp:5:95: error: expected primary-expression before 'tolerance'
+         ng::ISOPose3D<T> &out, const ng::Vector3D<T> &point, const ng::Vector3D<T> &normal, T tolerance = ng::Defaults<T>::getTolerance()
+                                                                                               ^
+main.cpp:6:5: error: expression list treated as compound expression in initializer [-fpermissive]
+     )
+     ^
+main.cpp:7:1: error: expected ';' before '{' token
+ {
+ ^
