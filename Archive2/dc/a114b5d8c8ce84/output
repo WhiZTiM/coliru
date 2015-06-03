@@ -1,0 +1,149 @@
+main.cpp:11:22: error: 'STORAGE_METHOD_CALL' declared as a 'virtual' field
+  virtual const char* STORAGE_METHOD_CALL url() const = 0;
+                      ^
+main.cpp:11:22: error: expected ';' at end of member declaration
+main.cpp:11:56: error: ISO C++ forbids declaration of 'url' with no type [-fpermissive]
+  virtual const char* STORAGE_METHOD_CALL url() const = 0;
+                                                        ^
+main.cpp:13:19: error: 'STORAGE_METHOD_CALL' declared as a 'virtual' field
+  virtual uint64_t STORAGE_METHOD_CALL size() const = 0;
+                   ^
+main.cpp:13:19: error: expected ';' at end of member declaration
+main.cpp:13:19: error: redeclaration of 'uint64_t FileInfo::STORAGE_METHOD_CALL'
+main.cpp:11:22: note: previous declaration 'const char* FileInfo::STORAGE_METHOD_CALL'
+  virtual const char* STORAGE_METHOD_CALL url() const = 0;
+                      ^
+main.cpp:13:54: error: ISO C++ forbids declaration of 'size' with no type [-fpermissive]
+  virtual uint64_t STORAGE_METHOD_CALL size() const = 0;
+                                                      ^
+main.cpp:15:14: error: 'STORAGE_METHOD_CALL' declared as a 'virtual' field
+  virtual int STORAGE_METHOD_CALL type() const = 0;
+              ^
+main.cpp:15:14: error: expected ';' at end of member declaration
+main.cpp:15:14: error: redeclaration of 'int FileInfo::STORAGE_METHOD_CALL'
+main.cpp:11:22: note: previous declaration 'const char* FileInfo::STORAGE_METHOD_CALL'
+  virtual const char* STORAGE_METHOD_CALL url() const = 0;
+                      ^
+main.cpp:15:49: error: ISO C++ forbids declaration of 'type' with no type [-fpermissive]
+  virtual int STORAGE_METHOD_CALL type() const = 0;
+                                                 ^
+main.cpp:18:16: error: variable or field 'STORAGE_METHOD_CALL' declared void
+   virtual void STORAGE_METHOD_CALL release() = 0;
+                ^
+main.cpp:18:16: error: expected ';' at end of member declaration
+main.cpp:18:48: error: ISO C++ forbids declaration of 'release' with no type [-fpermissive]
+   virtual void STORAGE_METHOD_CALL release() = 0;
+                                                ^
+main.cpp:11:42: error: initializer specified for non-virtual method 'int FileInfo::url() const'
+  virtual const char* STORAGE_METHOD_CALL url() const = 0;
+                                          ^
+main.cpp:13:39: error: initializer specified for non-virtual method 'int FileInfo::size() const'
+  virtual uint64_t STORAGE_METHOD_CALL size() const = 0;
+                                       ^
+main.cpp:15:34: error: initializer specified for non-virtual method 'int FileInfo::type() const'
+  virtual int STORAGE_METHOD_CALL type() const = 0;
+                                  ^
+main.cpp:18:36: error: initializer specified for non-virtual method 'int FileInfo::release()'
+   virtual void STORAGE_METHOD_CALL release() = 0;
+                                    ^
+main.cpp:24:15: error: variable or field 'STORAGE_METHOD_CALL' declared void
+  virtual void STORAGE_METHOD_CALL reset() = 0;
+               ^
+main.cpp:24:15: error: expected ';' at end of member declaration
+main.cpp:24:45: error: ISO C++ forbids declaration of 'reset' with no type [-fpermissive]
+  virtual void STORAGE_METHOD_CALL reset() = 0;
+                                             ^
+main.cpp:26:20: error: 'STORAGE_METHOD_CALL' declared as a 'virtual' field
+  virtual FileInfo* STORAGE_METHOD_CALL get() const = 0;
+                    ^
+main.cpp:26:20: error: expected ';' at end of member declaration
+main.cpp:26:54: error: ISO C++ forbids declaration of 'get' with no type [-fpermissive]
+  virtual FileInfo* STORAGE_METHOD_CALL get() const = 0;
+                                                      ^
+main.cpp:28:15: error: variable or field 'STORAGE_METHOD_CALL' declared void
+  virtual void STORAGE_METHOD_CALL next() const = 0;
+               ^
+main.cpp:28:15: error: expected ';' at end of member declaration
+main.cpp:28:50: error: ISO C++ forbids declaration of 'next' with no type [-fpermissive]
+  virtual void STORAGE_METHOD_CALL next() const = 0;
+                                                  ^
+main.cpp:30:14: error: 'STORAGE_METHOD_CALL' declared as a 'virtual' field
+  virtual int STORAGE_METHOD_CALL eos() const = 0;
+              ^
+main.cpp:30:14: error: expected ';' at end of member declaration
+main.cpp:30:14: error: redeclaration of 'int FileInfoIterator::STORAGE_METHOD_CALL'
+main.cpp:26:20: note: previous declaration 'FileInfo* FileInfoIterator::STORAGE_METHOD_CALL'
+  virtual FileInfo* STORAGE_METHOD_CALL get() const = 0;
+                    ^
+main.cpp:30:48: error: ISO C++ forbids declaration of 'eos' with no type [-fpermissive]
+  virtual int STORAGE_METHOD_CALL eos() const = 0;
+                                                ^
+main.cpp:33:15: error: variable or field 'STORAGE_METHOD_CALL' declared void
+  virtual void STORAGE_METHOD_CALL release() = 0;
+               ^
+main.cpp:33:15: error: expected ';' at end of member declaration
+main.cpp:33:47: error: ISO C++ forbids declaration of 'release' with no type [-fpermissive]
+  virtual void STORAGE_METHOD_CALL release() = 0;
+                                               ^
+main.cpp:24:35: error: initializer specified for non-virtual method 'int FileInfoIterator::reset()'
+  virtual void STORAGE_METHOD_CALL reset() = 0;
+                                   ^
+main.cpp:26:40: error: initializer specified for non-virtual method 'int FileInfoIterator::get() const'
+  virtual FileInfo* STORAGE_METHOD_CALL get() const = 0;
+                                        ^
+main.cpp:28:35: error: initializer specified for non-virtual method 'int FileInfoIterator::next() const'
+  virtual void STORAGE_METHOD_CALL next() const = 0;
+                                   ^
+main.cpp:30:34: error: initializer specified for non-virtual method 'int FileInfoIterator::eos() const'
+  virtual int STORAGE_METHOD_CALL eos() const = 0;
+                                  ^
+main.cpp:33:35: error: initializer specified for non-virtual method 'int FileInfoIterator::release()'
+  virtual void STORAGE_METHOD_CALL release() = 0;
+                                   ^
+main.cpp: In function 'void workWithFileInfoClass(FileInfoIterator*)':
+main.cpp:38:28: error: invalid conversion from 'int' to 'FileInfo*' [-fpermissive]
+     FileInfo* fi = fit->get();
+                            ^
+main.cpp:44:5: warning: format '%s' expects argument of type 'char*', but argument 2 has type 'int' [-Wformat=]
+     );
+     ^
+main.cpp:46:1: error: expected ';' before '}' token
+ }
+ ^
+main.cpp: At global scope:
+main.cpp:59:7: error: redefinition of 'class FileInfoIterator'
+ class FileInfoIterator
+       ^
+main.cpp:21:7: error: previous definition of 'class FileInfoIterator'
+ class FileInfoIterator
+       ^
+main.cpp: In function 'void workWithFileInfoClass(FileInfoIterator*)':
+main.cpp:75:6: error: redefinition of 'void workWithFileInfoClass(FileInfoIterator*)'
+ void workWithFileInfoClass(FileInfoIterator* fit)
+      ^
+main.cpp:36:6: note: 'void workWithFileInfoClass(FileInfoIterator*)' previously defined here
+ void workWithFileInfoClass(FileInfoIterator* fit)
+      ^
+main.cpp:78:41: error: no matching function for call to 'FileInfoIterator::get(std::nullptr_t)'
+     uint32_t url_size = fit->get(nullptr);
+                                         ^
+main.cpp:26:40: note: candidate: int FileInfoIterator::get() const
+  virtual FileInfo* STORAGE_METHOD_CALL get() const = 0;
+                                        ^
+main.cpp:26:40: note:   candidate expects 0 arguments, 1 provided
+main.cpp:80:12: error: invalid use of member function (did you forget the '()' ?)
+     fi.url = static_cast<char*>(malloc(url_size));
+            ^
+main.cpp:81:17: error: no matching function for call to 'FileInfoIterator::get(FileInfo*)'
+     fit->get(&fi);
+                 ^
+main.cpp:26:40: note: candidate: int FileInfoIterator::get() const
+  virtual FileInfo* STORAGE_METHOD_CALL get() const = 0;
+                                        ^
+main.cpp:26:40: note:   candidate expects 0 arguments, 1 provided
+main.cpp:88:5: error: invalid use of non-static member function
+     );
+     ^
+main.cpp:89:16: error: invalid use of non-static member function
+     free(fi.url);    
+                ^
