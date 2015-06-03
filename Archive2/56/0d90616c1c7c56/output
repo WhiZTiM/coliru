@@ -1,0 +1,3 @@
+bash: line 13: using: command not found
+bash: -c: line 15: syntax error near unexpected token `('
+bash: -c: line 15: `int main() {'
