@@ -1,0 +1,4 @@
+main.cpp:9:12: error: call to non-static member function without an object argument
+  decltype(silly()) l = silly();
+           ^~~~~
+1 error generated.
