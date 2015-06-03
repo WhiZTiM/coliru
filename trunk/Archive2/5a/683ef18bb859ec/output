@@ -1,0 +1,4 @@
+main.cpp:9:18: error: cannot call member function 'int S::silly()' without object
+   decltype(silly()) l;  
+                  ^
+main.cpp:9:18: error: cannot call member function 'int S::silly()' without object
