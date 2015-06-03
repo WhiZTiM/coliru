@@ -1,0 +1,24 @@
+A::myclass<int>(30,25).resolve(): 30
+
+A::myclass<std::string>( "malaga", "jaennnn" ).resolve(): jaennnn
+
+-------------------------
+
+B::myclass<int>(30,25).resolve(): 30
+
+B::myclass<std::string>( "malaga", "jaennnn" ).resolve(): malaga
+
+( B::myclass< std::string, detail::bigger_size >( "malaga", "jaennnn" ) ).resolve(): jaennnn
+
+-------------------------
+
+C::myclass<int>(30,25).resolve(): 30
+
+C::myclass<int>(30,25).resolve( [] ( int a, int b ) { return a%10 > b%10 ? a : b ; } ): 25
+
+mc.resolve(): malaga
+
+mc.resolve<detail::bigger_size>(): jaennnn
+
+mc.resolve( detail::bigger_size() ): jaennnn
+
