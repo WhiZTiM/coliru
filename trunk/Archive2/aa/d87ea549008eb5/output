@@ -1,0 +1,5 @@
+main.cpp: In function 'bool isPow2(unsigned int)':
+main.cpp:11:10: warning: unused variable 'res' [-Wunused-variable]
+     bool res = 0;
+          ^
+12 is NOT a power of 2
