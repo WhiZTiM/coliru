@@ -1,0 +1,7 @@
+main.cpp: In function 'int main()':
+main.cpp:45:7: warning: variable 'a' set but not used [-Wunused-but-set-variable]
+     A a = foo();
+       ^
+main.cpp:46:12: warning: variable 'b' set but not used [-Wunused-but-set-variable]
+     B<int> b = bar();
+            ^
