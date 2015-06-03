@@ -1,0 +1,11 @@
+main.cpp: In function 'int main()':
+main.cpp:7:11: error: no matching function for call to 'next(int&)'
+     next(i);
+           ^
+main.cpp:1:51: note: candidate: template<class Itr, class SizeT> Itr next(Itr, SizeT)
+ template<typename Itr, typename SizeT> inline Itr next(Itr it, SizeT /*n*/ = 1)
+                                                   ^
+main.cpp:1:51: note:   template argument deduction/substitution failed:
+main.cpp:7:11: note:   couldn't deduce template parameter 'SizeT'
+     next(i);
+           ^
