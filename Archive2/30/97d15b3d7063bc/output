@@ -1,0 +1,36 @@
+In file included from /usr/local/include/c++/5.1.0/vector:62:0,
+                 from main.cpp:2:
+/usr/local/include/c++/5.1.0/bits/stl_construct.h: In instantiation of 'void std::_Construct(_T1*, _Args&& ...) [with _T1 = Point3D<double>; _Args = {}]':
+/usr/local/include/c++/5.1.0/bits/stl_uninitialized.h:519:18:   required from 'static _ForwardIterator std::__uninitialized_default_n_1<_TrivialValueType>::__uninit_default_n(_ForwardIterator, _Size) [with _ForwardIterator = Point3D<double>*; _Size = long unsigned int; bool _TrivialValueType = false]'
+/usr/local/include/c++/5.1.0/bits/stl_uninitialized.h:575:20:   required from '_ForwardIterator std::__uninitialized_default_n(_ForwardIterator, _Size) [with _ForwardIterator = Point3D<double>*; _Size = long unsigned int]'
+/usr/local/include/c++/5.1.0/bits/stl_uninitialized.h:637:44:   required from '_ForwardIterator std::__uninitialized_default_n_a(_ForwardIterator, _Size, std::allocator<_Tp>&) [with _ForwardIterator = Point3D<double>*; _Size = long unsigned int; _Tp = Point3D<double>]'
+/usr/local/include/c++/5.1.0/bits/stl_vector.h:1311:36:   required from 'void std::vector<_Tp, _Alloc>::_M_default_initialize(std::vector<_Tp, _Alloc>::size_type) [with _Tp = Point3D<double>; _Alloc = std::allocator<Point3D<double> >; std::vector<_Tp, _Alloc>::size_type = long unsigned int]'
+/usr/local/include/c++/5.1.0/bits/stl_vector.h:279:30:   required from 'std::vector<_Tp, _Alloc>::vector(std::vector<_Tp, _Alloc>::size_type, const allocator_type&) [with _Tp = Point3D<double>; _Alloc = std::allocator<Point3D<double> >; std::vector<_Tp, _Alloc>::size_type = long unsigned int; std::vector<_Tp, _Alloc>::allocator_type = std::allocator<Point3D<double> >]'
+main.cpp:100:49:   required from here
+/usr/local/include/c++/5.1.0/bits/stl_construct.h:75:7: error: no matching function for call to 'Point3D<double>::Point3D()'
+     { ::new(static_cast<void*>(__p)) _T1(std::forward<_Args>(__args)...); }
+       ^
+main.cpp:36:5: note: candidate: template<class U> Point3D<T>::Point3D(const Point3D<U>&)
+     Point3D(const Point3D<U>& rhs) : x(rhs.x), y(rhs.y), z(rhs.z)
+     ^
+main.cpp:36:5: note:   template argument deduction/substitution failed:
+In file included from /usr/local/include/c++/5.1.0/vector:62:0,
+                 from main.cpp:2:
+/usr/local/include/c++/5.1.0/bits/stl_construct.h:75:7: note:   candidate expects 1 argument, 0 provided
+     { ::new(static_cast<void*>(__p)) _T1(std::forward<_Args>(__args)...); }
+       ^
+main.cpp:31:5: note: candidate: template<class U> Point3D<T>::Point3D(U, U, U)
+     Point3D(U x, U y, U z) : x(x), y(y), z(z)
+     ^
+main.cpp:31:5: note:   template argument deduction/substitution failed:
+In file included from /usr/local/include/c++/5.1.0/vector:62:0,
+                 from main.cpp:2:
+/usr/local/include/c++/5.1.0/bits/stl_construct.h:75:7: note:   candidate expects 3 arguments, 0 provided
+     { ::new(static_cast<void*>(__p)) _T1(std::forward<_Args>(__args)...); }
+       ^
+main.cpp:24:8: note: candidate: constexpr Point3D<double>::Point3D(const Point3D<double>&)
+ struct Point3D
+        ^
+main.cpp:24:8: note:   candidate expects 1 argument, 0 provided
+main.cpp:24:8: note: candidate: constexpr Point3D<double>::Point3D(Point3D<double>&&)
+main.cpp:24:8: note:   candidate expects 1 argument, 0 provided
