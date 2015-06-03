@@ -1,0 +1,7 @@
+main.cpp:52:59: error: implicit instantiation of undefined template 'TD<typelist<typelist<typelist<int, int>, typelist<int, char>, typelist<int, bool> >, typelist<typelist<char, int>, typelist<char, char>, typelist<char, bool> >, typelist<typelist<bool, int>, typelist<bool, char>, typelist<bool, bool> > > >'
+    TD<typename cartesian<typelist<int,char,bool>>::type> t1;
+                                                          ^
+main.cpp:48:7: note: template is declared here
+class TD;
+      ^
+1 error generated.
