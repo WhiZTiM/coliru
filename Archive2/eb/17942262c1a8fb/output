@@ -1,0 +1,13 @@
++ g++-4.8 -std=c++11 -O2 -Wall -pedantic -pthread main.cpp
+main.cpp: In function 'int main()':
+main.cpp:8:9: error: 'cout' was not declared in this scope
+     std:cout << "1234124123!!! !!! ___ !!!";
+         ^
+main.cpp:8:9: note: suggested alternative:
+In file included from main.cpp:3:0:
+/usr/include/c++/4.8/iostream:61:18: note:   'std::cout'
+   extern ostream cout;  /// Linked to standard output
+                  ^
+main.cpp:8:5: warning: label 'std' defined but not used [-Wunused-label]
+     std:cout << "1234124123!!! !!! ___ !!!";
+     ^
