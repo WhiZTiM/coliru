@@ -1,0 +1,1 @@
+clang -std=c++14 -O3 -pedantic -lstdc++ main.cpp -lboost_system && ./a.out |& c++filt -t
