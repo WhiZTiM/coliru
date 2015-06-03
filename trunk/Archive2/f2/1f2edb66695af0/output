@@ -1,0 +1,38 @@
+main.cpp:80:31: warning: expression result unused [-Wunused-value]
+        AutoRegister():INTERFACE() { &s_type; }
+                                     ^~~~~~~
+main.cpp:80:31: warning: expression result unused [-Wunused-value]
+        AutoRegister():INTERFACE() { &s_type; }
+                                     ^~~~~~~
+main.cpp:172:7: note: in instantiation of member function 'AutoRegister<Base, BaseInterface>::AutoRegister' requested here
+class Base:public AutoRegister<Base, BaseInterface>
+      ^
+main.cpp:152:135: note: in instantiation of member function 'AutoRegister<Base, BaseInterface>::create' requested here
+InterfaceFactory::registerType(TypeName<CLASS>::get(), AutoRegister<CLASS, INTERFACE>::getBaseIds(), &AutoRegister<CLASS, INTERFACE>::create);
+                                                                                                                                      ^
+main.cpp:190:21: note: in instantiation of static data member 'AutoRegister<Base, BaseInterface>::s_type' requested here
+        std::cout << Base::s_type.id;
+                           ^
+main.cpp:80:31: warning: expression result unused [-Wunused-value]
+        AutoRegister():INTERFACE() { &s_type; }
+                                     ^~~~~~~
+main.cpp:175:7: note: in instantiation of member function 'AutoRegister<Derived, Base>::AutoRegister' requested here
+class Derived:public AutoRegister<Derived, Base>
+      ^
+main.cpp:152:135: note: in instantiation of member function 'AutoRegister<Derived, Base>::create' requested here
+InterfaceFactory::registerType(TypeName<CLASS>::get(), AutoRegister<CLASS, INTERFACE>::getBaseIds(), &AutoRegister<CLASS, INTERFACE>::create);
+                                                                                                                                      ^
+main.cpp:196:24: note: in instantiation of static data member 'AutoRegister<Derived, Base>::s_type' requested here
+        std::cout << Derived::s_type.id;
+                              ^
+3 warnings generated.
+true
+true
+false
+true
+true
+
+Base:
+0
+Derived:
+1, 0
