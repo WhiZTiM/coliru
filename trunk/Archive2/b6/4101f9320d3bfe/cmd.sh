@@ -1,0 +1,1 @@
+clang++ -std=c++1z -Wall -fsanitize=address main.cpp && ./a.out
