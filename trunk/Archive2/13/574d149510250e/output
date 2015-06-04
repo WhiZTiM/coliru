@@ -1,0 +1,7 @@
+main.cpp:5:23: warning: unused parameter 'array' [-Wunused-parameter]
+void functiona(char (&array)[a][b][c]){}
+                      ^
+main.cpp:6:23: warning: unused parameter 'array' [-Wunused-parameter]
+void functionb(char (&array)[a][b][c]){}
+                      ^
+2 warnings generated.
