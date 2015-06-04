@@ -1,0 +1,24 @@
+main.cpp: In constructor 'threadpool::threadpool(int)':
+main.cpp:26:48: warning: narrowing conversion of 'size' from 'int' to 'std::vector<worker>::size_type {aka long unsigned int}' inside { } [-Wnarrowing]
+ threadpool::threadpool(int size) : workers{size}
+                                                ^
+boo
+boo
+boo
+boo
+boo
+boo
+boo
+boo
+boo
+boo
+boo
+boo
+boo
+boo
+boo
+boo
+boo
+boo
+boo
+boo
