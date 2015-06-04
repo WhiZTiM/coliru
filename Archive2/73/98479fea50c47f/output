@@ -1,0 +1,10 @@
+/tmp/cc4Gm1Hx.o: In function `Expression<double, unsigned int, int>::Variable::VariableStorage::VariableStorage(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, Expression<double, unsigned int, int>::OperatorStorage*)':
+main.cpp:(.text._ZN10ExpressionIdjiE8Variable15VariableStorageC2ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEPNS0_15OperatorStorageE[_ZN10ExpressionIdjiE8Variable15VariableStorageC5ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEPNS0_15OperatorStorageE]+0x37): undefined reference to `Expression<double, unsigned int, int>::Variable::VariableStorage::variablesd'
+main.cpp:(.text._ZN10ExpressionIdjiE8Variable15VariableStorageC2ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEPNS0_15OperatorStorageE[_ZN10ExpressionIdjiE8Variable15VariableStorageC5ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEPNS0_15OperatorStorageE]+0xe1): undefined reference to `Expression<double, unsigned int, int>::Variable::VariableStorage::variablesd'
+/tmp/cc4Gm1Hx.o: In function `Expression<double, unsigned int, int>::Variable::set()':
+main.cpp:(.text._ZN10ExpressionIdjiE8Variable3setEv[_ZN10ExpressionIdjiE8Variable3setEv]+0xb): undefined reference to `Expression<double, unsigned int, int>::Variable::VariableStorage::variablesd'
+/tmp/cc4Gm1Hx.o: In function `Expression<double, unsigned int, int>::Variable::expression() const':
+main.cpp:(.text._ZNK10ExpressionIdjiE8Variable10expressionEv[_ZNK10ExpressionIdjiE8Variable10expressionEv]+0xb): undefined reference to `Expression<double, unsigned int, int>::Variable::VariableStorage::variablesd'
+main.cpp:(.text._ZNK10ExpressionIdjiE8Variable10expressionEv[_ZNK10ExpressionIdjiE8Variable10expressionEv]+0xbf): undefined reference to `Expression<double, unsigned int, int>::Variable::VariableStorage::variablesd'
+/tmp/cc4Gm1Hx.o:main.cpp:(.text._ZN10ExpressionIdjiE8Variable13setExpressionEv[_ZN10ExpressionIdjiE8Variable13setExpressionEv]+0xb): more undefined references to `Expression<double, unsigned int, int>::Variable::VariableStorage::variablesd' follow
+collect2: error: ld returned 1 exit status
