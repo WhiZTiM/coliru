@@ -1,0 +1,290 @@
+main.cpp:1:15: error: expected '{' before 'template'
+ namespace std template <typename _Tp, _Tp __v> struct integral_constant {
+               ^
+main.cpp:2:32: error: expected ';' at end of member declaration
+   static constexpr _Tp value = __v
+                                ^
+main.cpp:7:1: error: expected ';' after struct definition
+ } template <typename _Tp>
+ ^
+main.cpp:9:1: error: expected ';' after struct definition
+ } struct is_same : false_type {
+ ^
+main.cpp:10:1: error: expected ';' after struct definition
+ } template <typename> struct remove_cv {
+ ^
+main.cpp:11:20: error: expected nested-name-specifier before 'type'
+   typedef typename type
+                    ^
+main.cpp:11:20: error: expected ';' at end of member declaration
+main.cpp:12:1: error: expected ';' after struct definition
+ } template <, typename, typename _Iffalse> struct conditional {
+ ^
+main.cpp:12:13: error: expected identifier before ',' token
+ } template <, typename, typename _Iffalse> struct conditional {
+             ^
+main.cpp:13:20: error: expected ';' at end of member declaration
+   typedef _Iffalse type
+                    ^
+main.cpp:14:1: error: expected ';' after struct definition
+ } template <bool _Cond, typename _Iftrue, typename _Iffalse>
+ ^
+main.cpp:15:21: error: expected '=' before 'typename'
+ using conditional_t typename conditional<_Cond, _Iftrue, _Iffalse>::type;
+                     ^
+main.cpp:16:11: error: expected identifier before '...' token
+ template <... _Indexes> struct _Index_tuple {
+           ^
+main.cpp:17:34: error: 'sizeof...' argument must be surrounded by parentheses [-fpermissive]
+   typedef _Index_tuple<sizeof... _Indexes> __next
+                                  ^
+main.cpp:17:44: error: expected ';' at end of member declaration
+   typedef _Index_tuple<sizeof... _Indexes> __next
+                                            ^
+main.cpp:18:1: error: expected ';' after struct definition
+ } template <size_t _Num> struct _Build_index_tuple {
+ ^
+main.cpp:18:13: error: 'size_t' has not been declared
+ } template <size_t _Num> struct _Build_index_tuple {
+             ^
+main.cpp:19:65: error: expected ';' at end of member declaration
+   typedef typename _Build_index_tuple<_Num - 1>::__type::__next __type
+                                                                 ^
+main.cpp:20:1: error: expected ';' after struct definition
+ } struct _Build_index_tuple < 0 {
+ ^
+main.cpp:20:10: error: parse error in template argument list
+ } struct _Build_index_tuple < 0 {
+          ^
+main.cpp:20:10: error: an explicit specialization must be preceded by 'template <>'
+main.cpp:21:26: error: expected ';' at end of member declaration
+   typedef _Index_tuple<> __type
+                          ^
+main.cpp:22:1: error: expected ';' after struct definition
+ } template <typename, ...> struct integer_sequence;
+ ^
+main.cpp:22:23: error: expected identifier before '...' token
+ } template <typename, ...> struct integer_sequence;
+                       ^
+main.cpp:23:21: error: '_Tp' has not been declared
+ template <typename, _Tp _Num,
+                     ^
+main.cpp:26:35: error: expected identifier before '...' token
+ template <typename _Tp, _Tp _Num, ... _Idx>
+                                   ^
+main.cpp:28:42: error: expected ';' at end of member declaration
+   typedef integer_sequence<_Tp, _Idx...> __type
+                                          ^
+main.cpp:29:1: error: expected ';' after struct definition
+ } template <typename _Tp, _Tp _Num>
+ ^
+main.cpp:30:29: error: expected '=' before 'typename'
+ using make_integer_sequence typename _Make_integer_sequence<_Tp, _Num>::__type;
+                             ^
+main.cpp:32:46: error: expected '=' before 'typename'
+ template <typename Computation> using eval_t typename Computation : type;
+                                              ^
+main.cpp:32:67: error: found ':' in nested-name-specifier, expected '::'
+ template <typename Computation> using eval_t typename Computation : type;
+                                                                   ^
+main.cpp:35:1: error: expected ';' after struct definition
+ } template <typename> using unqualified_t struct deduced;
+ ^
+main.cpp:35:43: error: expected '=' before 'struct'
+ } template <typename> using unqualified_t struct deduced;
+                                           ^
+main.cpp:39:1: error: expected ';' after struct definition
+ } template <typename Cond, typename Then, typename Else>
+ ^
+main.cpp:40:27: error: expected '=' before 'conditional_t'
+       using conditional_t conditional_t < Cond : value,
+                           ^
+main.cpp:40:48: error: found ':' in nested-name-specifier, expected '::'
+       using conditional_t conditional_t < Cond : value,
+                                                ^
+main.cpp:43:26: error: expected '=' before 'eval_t'
+ using eval_conditional_t eval_t<conditional_t<Cond, Then, Else>>;
+                          ^
+main.cpp:44:11: error: expected identifier before 'template'
+ namespace template <typename... Types> struct list {
+           ^
+main.cpp:45:48: error: expected '=' before 'list'
+   template <typename... Suffix> using append_t list < Types..., Suffix...;
+                                                ^
+main.cpp:45:48: error: parse error in template argument list
+main.cpp:46:1: error: expected ';' after struct definition
+ } template <typename Type> struct depend_on : identity<Type> {
+ ^
+main.cpp:47:1: error: expected ';' after struct definition
+ } template <typename Type, typename> using depend_on_t eval_t<depend_on<Type>>;
+ ^
+main.cpp:47:56: error: expected '=' before 'eval_t'
+ } template <typename Type, typename> using depend_on_t eval_t<depend_on<Type>>;
+                                                        ^
+main.cpp:49:18: error: expected '{' before 'template'
+ namespace detail template <typename> struct to_zip_list;
+                  ^
+main.cpp:50:50: error: expected '=' before 'eval_t'
+ template <typename Sequence> using to_zip_list_t eval_t<to_zip_list<Sequence>>;
+                                                  ^
+main.cpp:53:19: error: to refer to a type member of a template parameter, use 'typename Acc:: append_t<list<> >' [-fpermissive]
+     Acc::template append_t<list<>> {}
+                   ^
+main.cpp:52:18: error: parse error in template argument list
+     struct zip : zip < void,
+                  ^
+main.cpp:53:37: error: expected ';' after struct definition
+     Acc::template append_t<list<>> {}
+                                     ^
+main.cpp:56:26: error: parse error in template argument list
+     struct zip : detail::zip < void,
+                          ^
+main.cpp:58:1: error: expected ';' after struct definition
+ } template <typename... Sequences> using zip_t eval_t<zip<Sequences...>>;
+ ^
+main.cpp:58:48: error: expected '=' before 'eval_t'
+ } template <typename... Sequences> using zip_t eval_t<zip<Sequences...>>;
+                                                ^
+main.cpp:60:11: error: expected identifier before '...' token
+ template <... Indices> using indices integer_sequence < int, Indices...;
+           ^
+main.cpp:60:38: error: expected '=' before 'integer_sequence'
+ template <... Indices> using indices integer_sequence < int, Indices...;
+                                      ^
+main.cpp:60:38: error: parse error in template argument list
+main.cpp:61:40: error: expected '=' before 'make_integer_sequence'
+ template <int Size> using indices_to_t make_integer_sequence < int, Size;
+                                        ^
+main.cpp:61:40: error: parse error in template argument list
+main.cpp:62:55: error: 'sizeof...' argument must be surrounded by parentheses [-fpermissive]
+ template < typename ... T > indices_to_t < sizeof ... T >
+                                                       ^
+main.cpp:63:34: error: expected ')' before ';' token
+ indices_for_implementation (T ...;
+                                  ^
+main.cpp:64:39: error: expected identifier before 'template'
+                             namespace template < typename Type >
+                                       ^
+main.cpp:68:1: error: expected ';' after struct definition
+ }
+ ^
+main.cpp:70:21: error: expected '=' before 'eval_t'
+ using indices_for_t eval_t <
+                     ^
+main.cpp:76:26: error: expected '{' before 'struct'
+ namespace variant_detail struct
+                          ^
+main.cpp:79:1: error: expected ';' after struct definition
+ }
+ ^
+main.cpp:81:20: error: expected '=' before 'eval_t'
+ using to_zip_arg_t eval_t < to_zip_arg >;
+                    ^
+main.cpp:83:1: error: expected unqualified-id before '}' token
+ }
+ ^
+main.cpp:84:140: error: found ':' in nested-name-specifier, expected '::'
+ template < typename Request = deduced, typename Functor, typename ... Vs, typename Result = eval_conditional_t < is_deduced, variant_detail:deduce_zip, conditional < is_void < Request >,
+                                                                                                                                            ^
+main.cpp:89:37: error: expected ')' before ';' token
+                               && ...;
+                                     ^
+main.cpp:92:31: error: expected '{' before 'template'
+                               template <
+                               ^
+main.cpp:93:45: error: expected identifier before ',' token
+                               typename Self,,
+                                             ^
+main.cpp:104:5: error: expected ')' before '{' token
+     {
+     ^
+main.cpp:104:5: error: ISO C++ forbids declaration of 'operator=' with no type [-fpermissive]
+main.cpp:108:1: error: expected ';' after struct definition
+ }
+ ^
+main.cpp: In member function 'int std::{anonymous}::variant_detail::variant_initialization<Self, <anonymous>, T>::operator=(std::{anonymous}::depend_on_t<T, D>)':
+main.cpp:105:29: error: expected '<' before 'Self'
+     auto self = static_cast Self & > *this;
+                             ^
+main.cpp:105:38: error: expected '(' before '*' token
+     auto self = static_cast Self & > *this;
+                                      ^
+main.cpp:105:43: error: expected ')' before ';' token
+     auto self = static_cast Self & > *this;
+                                           ^
+main.cpp:107:5: error: expected ';' before '}' token
+     }
+     ^
+main.cpp: At global scope:
+main.cpp:125:1: error: expected identifier before '...' token
+ ... Indices >
+ ^
+main.cpp:139:1: error: expected ';' before '}' token
+ }
+ ^
+main.cpp:139:1: error: expected ';' after struct definition
+main.cpp:145:16: error: expected ';' at end of member declaration
+   void destroy()
+                ^
+main.cpp:146:1: error: expected ';' after struct definition
+ }
+ ^
+main.cpp: In member function 'void std::{anonymous}::variant_detail::variant_base< <template-parameter-1-1> >::destroy()':
+main.cpp:156:1: error: expected ';' before '}' token
+ }
+ ^
+main.cpp: At global scope:
+main.cpp:163:32: error: found ':' in nested-name-specifier, expected '::'
+   using inits = variant_detail : variant_initializations<variant, list<T...>>;
+                                ^
+main.cpp:165:1: error: expected ';' before '}' token
+ }
+ ^
+main.cpp:165:1: error: expected ';' after struct definition
+main.cpp:168:1: error: 'struct std::{anonymous}::deduced' is not a valid type for a template non-type parameter
+ deduced,
+ ^
+main.cpp:180:1: error: expected ')' before '{' token
+ {
+ ^
+main.cpp: In function 'Result std::{anonymous}::unchecked_zip_with(std::{anonymous}::sum_context_tag, Functor&&, Vs&& ...)':
+main.cpp:181:43: error: found ':' in nested-name-specifier, expected '::'
+   using ArgLists = zip_t < variant_detail : to_zip_arg_t<Vs>...;
+                                           ^
+main.cpp:181:20: error: parse error in template argument list
+   using ArgLists = zip_t < variant_detail : to_zip_arg_t<Vs>...;
+                    ^
+main.cpp: At global scope:
+main.cpp:183:14: error: ISO C++ forbids declaration of 'test_method' with no type [-fpermissive]
+ test_method ()
+              ^
+main.cpp: In function 'int std::{anonymous}::test_method()':
+main.cpp:186:8: error: expected ';' at end of input
+ left = 2
+        ^
+main.cpp:186:8: error: expected '}' at end of input
+main.cpp: At global scope:
+main.cpp:186:8: error: expected '}' at end of input
+main.cpp:186:8: error: expected '}' at end of input
+main.cpp: In instantiation of 'void std::{anonymous}::variant_detail::variant_base< <template-parameter-1-1> >::destroy() [with <template-parameter-1-1> = {}]':
+main.cpp:106:5:   required from 'int std::{anonymous}::variant_detail::variant_initialization<Self, <anonymous>, T>::operator=(std::{anonymous}::depend_on_t<T, D>) [with D = void; Self = std::{anonymous}::variant<long int>; int <anonymous> = 0; T = long int; std::{anonymous}::depend_on_t<T, D> = long int]'
+main.cpp:186:6:   required from here
+main.cpp:155:21: error: invalid use of incomplete type 'struct std::{anonymous}::deduced'
+   unchecked_zip_with(sum_context, this)
+                     ^
+main.cpp:35:50: note: forward declaration of 'struct std::{anonymous}::deduced'
+ } template <typename> using unqualified_t struct deduced;
+                                                  ^
+main.cpp: In instantiation of 'Result std::{anonymous}::unchecked_zip_with(std::{anonymous}::sum_context_tag, Functor&&, Vs&& ...) [with Request = std::{anonymous}::deduced; Functor = std::{anonymous}::variant_detail::variant_base<>*; Vs = {}; Result = std::{anonymous}::deduced]':
+main.cpp:155:21:   required from 'void std::{anonymous}::variant_detail::variant_base< <template-parameter-1-1> >::destroy() [with <template-parameter-1-1> = {}]'
+main.cpp:106:5:   required from 'int std::{anonymous}::variant_detail::variant_initialization<Self, <anonymous>, T>::operator=(std::{anonymous}::depend_on_t<T, D>) [with D = void; Self = std::{anonymous}::variant<long int>; int <anonymous> = 0; T = long int; std::{anonymous}::depend_on_t<T, D> = long int]'
+main.cpp:186:6:   required from here
+main.cpp:176:1: error: return type 'struct std::{anonymous}::deduced' is incomplete
+ unchecked_zip_with
+ ^
+'
+Internal compiler error: Error reporting routines re-entered.
+libbacktrace could not find executable to open
+Please submit a full bug report,
+with preprocessed source if appropriate.
+See <http://gcc.gnu.org/bugs.html> for instructions.
