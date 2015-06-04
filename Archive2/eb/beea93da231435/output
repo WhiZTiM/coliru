@@ -1,0 +1,45 @@
+In file included from /usr/local/include/c++/5.1.0/cassert:43:0,
+                 from main.cpp:5:
+main.cpp: In function 'int main()':
+main.cpp:56:18: error: request for member 'operator()' is ambiguous
+     assert(xy(A{}) == 1);
+                  ^
+main.cpp:50:18: note: candidates are: int main()::<anonymous struct>::operator()(main()::B)
+     struct { int operator () (B) { return 2; } } y;
+                  ^
+main.cpp:49:18: note:                 int main()::<anonymous struct>::operator()(main()::A)
+     struct { int operator () (A) { return 1; } } x;
+                  ^
+In file included from /usr/local/include/c++/5.1.0/cassert:43:0,
+                 from main.cpp:5:
+main.cpp:57:18: error: request for member 'operator()' is ambiguous
+     assert(xy(B{}) == 2);
+                  ^
+main.cpp:50:18: note: candidates are: int main()::<anonymous struct>::operator()(main()::B)
+     struct { int operator () (B) { return 2; } } y;
+                  ^
+main.cpp:49:18: note:                 int main()::<anonymous struct>::operator()(main()::A)
+     struct { int operator () (A) { return 1; } } x;
+                  ^
+In file included from /usr/local/include/c++/5.1.0/cassert:43:0,
+                 from main.cpp:5:
+main.cpp:59:25: error: request for member 'operator()' is ambiguous
+     assert(xy.operator () (A{}) == 1); // error: member 'operator()' found in multiple base classes of different types
+                         ^
+main.cpp:50:18: note: candidates are: int main()::<anonymous struct>::operator()(main()::B)
+     struct { int operator () (B) { return 2; } } y;
+                  ^
+main.cpp:49:18: note:                 int main()::<anonymous struct>::operator()(main()::A)
+     struct { int operator () (A) { return 1; } } x;
+                  ^
+In file included from /usr/local/include/c++/5.1.0/cassert:43:0,
+                 from main.cpp:5:
+main.cpp:60:25: error: request for member 'operator()' is ambiguous
+     assert(xy.operator () (B{}) == 2);
+                         ^
+main.cpp:50:18: note: candidates are: int main()::<anonymous struct>::operator()(main()::B)
+     struct { int operator () (B) { return 2; } } y;
+                  ^
+main.cpp:49:18: note:                 int main()::<anonymous struct>::operator()(main()::A)
+     struct { int operator () (A) { return 1; } } x;
+                  ^
