@@ -1,0 +1,5 @@
+1.0/0.0 is Inf
+0.0/0.0 is NaN
+DBL_MIN/2 is subnormal
+-0.0 is zero
+1.0 is normal
