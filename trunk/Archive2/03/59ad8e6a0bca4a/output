@@ -1,0 +1,3 @@
+main.cpp:1:1: error: 'Here' does not name a type
+ Here is some text for you. Use it
+ ^
