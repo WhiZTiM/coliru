@@ -1,0 +1,12 @@
+Table set up complete
+Test data set up complete
+Table contains:500000 elements
+Hash Map contains:500000 elements
+Using vector...,took:107ms
+Using hash map...,took:107ms
+Using vector...,took:105ms
+Using hash map...,took:107ms
+Using hash map...,took:106ms
+Using vector...,took:105ms
+Using hash map...,took:106ms
+Using vector...,took:105ms
