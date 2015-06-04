@@ -1,0 +1,33 @@
+main.cpp: In instantiation of 'std::enable_if_t<std::is_base_of<_Tp, _Up>::value> UtlThreadSafeQueue<T>::push(std::shared_ptr<_Tp1>&&) [with U = DataLoadSessionMsg; T = UtlMessage; std::enable_if_t<std::is_base_of<_Tp, _Up>::value> = void]':
+main.cpp:279:49:   required from here
+main.cpp:200:43: error: no matching function for call to 'forward(std::shared_ptr<DataLoadSessionMsg>&)'
+         data_queue.emplace(std::forward<U>(ptr)); // move the pointer
+                                           ^
+In file included from /usr/local/include/c++/5.1.0/bits/stl_pair.h:59:0,
+                 from /usr/local/include/c++/5.1.0/bits/stl_algobase.h:64,
+                 from /usr/local/include/c++/5.1.0/bits/char_traits.h:39,
+                 from /usr/local/include/c++/5.1.0/ios:40,
+                 from /usr/local/include/c++/5.1.0/ostream:38,
+                 from /usr/local/include/c++/5.1.0/iostream:39,
+                 from main.cpp:1:
+/usr/local/include/c++/5.1.0/bits/move.h:76:5: note: candidate: template<class _Tp> constexpr _Tp&& std::forward(typename std::remove_reference<_From>::type&)
+     forward(typename std::remove_reference<_Tp>::type& __t) noexcept
+     ^
+/usr/local/include/c++/5.1.0/bits/move.h:76:5: note:   template argument deduction/substitution failed:
+main.cpp:200:43: note:   cannot convert 'ptr' (type 'std::shared_ptr<DataLoadSessionMsg>') to type 'std::remove_reference<DataLoadSessionMsg>::type& {aka DataLoadSessionMsg&}'
+         data_queue.emplace(std::forward<U>(ptr)); // move the pointer
+                                           ^
+In file included from /usr/local/include/c++/5.1.0/bits/stl_pair.h:59:0,
+                 from /usr/local/include/c++/5.1.0/bits/stl_algobase.h:64,
+                 from /usr/local/include/c++/5.1.0/bits/char_traits.h:39,
+                 from /usr/local/include/c++/5.1.0/ios:40,
+                 from /usr/local/include/c++/5.1.0/ostream:38,
+                 from /usr/local/include/c++/5.1.0/iostream:39,
+                 from main.cpp:1:
+/usr/local/include/c++/5.1.0/bits/move.h:87:5: note: candidate: template<class _Tp> constexpr _Tp&& std::forward(typename std::remove_reference<_From>::type&&)
+     forward(typename std::remove_reference<_Tp>::type&& __t) noexcept
+     ^
+/usr/local/include/c++/5.1.0/bits/move.h:87:5: note:   template argument deduction/substitution failed:
+main.cpp:200:43: note:   cannot convert 'ptr' (type 'std::shared_ptr<DataLoadSessionMsg>') to type 'std::remove_reference<DataLoadSessionMsg>::type&& {aka DataLoadSessionMsg&&}'
+         data_queue.emplace(std::forward<U>(ptr)); // move the pointer
+                                           ^
