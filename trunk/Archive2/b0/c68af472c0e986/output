@@ -1,0 +1,4 @@
+user before allocation  Original code No buffer overflow
+user before allocation 
+
+strncpy alternate No buffer overflow
