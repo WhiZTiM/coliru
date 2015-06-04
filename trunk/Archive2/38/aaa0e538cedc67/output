@@ -1,0 +1,4 @@
+main.cpp:22:11: warning: unused variable 'fnPtr' [-Wunused-variable]
+    void(*fnPtr)(RapidDog); // Pointer to incomplete type, fine
+          ^
+1 warning generated.
