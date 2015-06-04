@@ -1,0 +1,70 @@
+main.cpp: In function 'char* extraire(char*)':
+main.cpp:83:52: warning: ISO C++ forbids converting a string constant to 'char*' [-Wpedantic]
+      int limite =rechercher(texte,"</DIV></BODY>",0);
+                                                    ^
+main.cpp:86:93: warning: ISO C++ forbids converting a string constant to 'char*' [-Wpedantic]
+           if(copier(texte,destination,"    value=",&avancement_texte,&avancement_destination)==-1)
+                                                                                             ^
+main.cpp:90:109: warning: ISO C++ forbids converting a string constant to 'char*' [-Wpedantic]
+           copier(texte,destination,"dossiersTraitesUi_dateContact",&avancement_texte,&avancement_destination);
+                                                                                                             ^
+main.cpp:91:115: warning: ISO C++ forbids converting a string constant to 'char*' [-Wpedantic]
+           copier(texte,destination,"dossiersTraitesUi_dateEmmenagement1",&avancement_texte,&avancement_destination);
+                                                                                                                   ^
+main.cpp:92:115: warning: ISO C++ forbids converting a string constant to 'char*' [-Wpedantic]
+           copier(texte,destination,"dossiersTraitesUi_dateEmmenagement2",&avancement_texte,&avancement_destination);
+                                                                                                                   ^
+main.cpp:93:115: warning: ISO C++ forbids converting a string constant to 'char*' [-Wpedantic]
+           copier(texte,destination,"dossiersTraitesUi_dateDossierPrisUi",&avancement_texte,&avancement_destination);
+                                                                                                                   ^
+main.cpp:94:105: warning: ISO C++ forbids converting a string constant to 'char*' [-Wpedantic]
+           copier(texte,destination,"dossiersTraitesUi_agentUi",&avancement_texte,&avancement_destination);
+                                                                                                         ^
+main.cpp:95:109: warning: ISO C++ forbids converting a string constant to 'char*' [-Wpedantic]
+           copier(texte,destination,"dossiersTraitesUi_departement",&avancement_texte,&avancement_destination);
+                                                                                                             ^
+main.cpp:96:105: warning: ISO C++ forbids converting a string constant to 'char*' [-Wpedantic]
+           copier(texte,destination,"dossiersTraitesUi_commune",&avancement_texte,&avancement_destination);
+                                                                                                         ^
+main.cpp:97:105: warning: ISO C++ forbids converting a string constant to 'char*' [-Wpedantic]
+           copier(texte,destination,"dossiersTraitesUi_adresse",&avancement_texte,&avancement_destination);
+                                                                                                         ^
+main.cpp:98:108: warning: ISO C++ forbids converting a string constant to 'char*' [-Wpedantic]
+           copier(texte,destination,"dossiersTraitesUi_mandataire",&avancement_texte,&avancement_destination);
+                                                                                                            ^
+main.cpp:99:101: warning: ISO C++ forbids converting a string constant to 'char*' [-Wpedantic]
+           copier(texte,destination,"dossiersTraitesUi_moa",&avancement_texte,&avancement_destination);
+                                                                                                     ^
+main.cpp:100:104: warning: ISO C++ forbids converting a string constant to 'char*' [-Wpedantic]
+           copier(texte,destination,"dossiersTraitesUi_42cNum",&avancement_texte,&avancement_destination);
+                                                                                                        ^
+main.cpp:101:105: warning: ISO C++ forbids converting a string constant to 'char*' [-Wpedantic]
+           copier(texte,destination,"dossiersTraitesUi_42cEtat",&avancement_texte,&avancement_destination);
+                                                                                                         ^
+main.cpp:102:103: warning: ISO C++ forbids converting a string constant to 'char*' [-Wpedantic]
+           copier(texte,destination,"dossiersTraitesUi_oeie_",&avancement_texte,&avancement_destination);
+                                                                                                       ^
+main.cpp:103:106: warning: ISO C++ forbids converting a string constant to 'char*' [-Wpedantic]
+           copier(texte,destination,"dossiersTraitesUi_oeieEtat",&avancement_texte,&avancement_destination);
+                                                                                                          ^
+main.cpp:104:105: warning: ISO C++ forbids converting a string constant to 'char*' [-Wpedantic]
+           copier(texte,destination,"dossiersTraitesUi_bdcNum_",&avancement_texte,&avancement_destination);
+                                                                                                         ^
+main.cpp:105:111: warning: ISO C++ forbids converting a string constant to 'char*' [-Wpedantic]
+           copier(texte,destination,"dossiersTraitesUi_devisTactEtat",&avancement_texte,&avancement_destination);
+                                                                                                               ^
+main.cpp:106:109: warning: ISO C++ forbids converting a string constant to 'char*' [-Wpedantic]
+           copier(texte,destination,"dossiersTraitesUi_dossierErdf",&avancement_texte,&avancement_destination);
+                                                                                                             ^
+main.cpp:107:105: warning: ISO C++ forbids converting a string constant to 'char*' [-Wpedantic]
+           copier(texte,destination,"dossiersTraitesUi_oetpNum",&avancement_texte,&avancement_destination);
+                                                                                                         ^
+main.cpp: In function 'int main()':
+main.cpp:124:33: error: incomplete universal character name \U
+      char* texte = lire_fichier("C:\Users\spfk9109\Desktop\2 extraction.htm");
+                                 ^
+main.cpp:124:33: warning: unknown escape sequence: '\s'
+main.cpp:124:33: warning: unknown escape sequence: '\D'
+main.cpp:124:77: warning: ISO C++ forbids converting a string constant to 'char*' [-Wpedantic]
+      char* texte = lire_fichier("C:\Users\spfk9109\Desktop\2 extraction.htm");
+                                                                             ^
