@@ -1,0 +1,3 @@
+main.cpp:47:27: error: 'constexpr const bind_wrap<void(), ulong_ip_tag>::<lambda(void (*)(), ulong_ip_tag)> bind_wrap<void(), ulong_ip_tag>::deduce', declared using local type 'const bind_wrap<void(), ulong_ip_tag>::<lambda(void (*)(), ulong_ip_tag)>', is used but never defined [-fpermissive]
+     constexpr static auto deduce = [](_Args...params){handler(params...);};
+                           ^
