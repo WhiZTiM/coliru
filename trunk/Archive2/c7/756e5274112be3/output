@@ -1,0 +1,7 @@
+Base ctor
+derived ctor
+Derived Foo!
+Derived bar!
+Derived bar!
+derived dtor
+Base dtor
