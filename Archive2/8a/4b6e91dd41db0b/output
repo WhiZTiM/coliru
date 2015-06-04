@@ -1,0 +1,374 @@
+main.cpp:105:34: warning: function 'atch::(anonymous namespace)::adl_lookup' has internal linkage but is not defined [-Wundefined-internal]
+      friend constexpr size_type adl_lookup (ident<N>);
+                                 ^
+main.cpp:122:33: note: used here
+    template<size_type N, int = adl_lookup (ident<N> {})>
+                                ^
+main.cpp:105:34: warning: function 'atch::(anonymous namespace)::adl_lookup' has internal linkage but is not defined [-Wundefined-internal]
+      friend constexpr size_type adl_lookup (ident<N>);
+                                 ^
+main.cpp:122:33: note: used here
+    template<size_type N, int = adl_lookup (ident<N> {})>
+                                ^
+main.cpp:105:34: warning: function 'atch::(anonymous namespace)::adl_lookup' has internal linkage but is not defined [-Wundefined-internal]
+      friend constexpr size_type adl_lookup (ident<N>);
+                                 ^
+main.cpp:122:33: note: used here
+    template<size_type N, int = adl_lookup (ident<N> {})>
+                                ^
+main.cpp:105:34: warning: function 'atch::(anonymous namespace)::adl_lookup' has internal linkage but is not defined [-Wundefined-internal]
+      friend constexpr size_type adl_lookup (ident<N>);
+                                 ^
+main.cpp:122:33: note: used here
+    template<size_type N, int = adl_lookup (ident<N> {})>
+                                ^
+main.cpp:105:34: warning: function 'atch::(anonymous namespace)::adl_lookup' has internal linkage but is not defined [-Wundefined-internal]
+      friend constexpr size_type adl_lookup (ident<N>);
+                                 ^
+main.cpp:122:33: note: used here
+    template<size_type N, int = adl_lookup (ident<N> {})>
+                                ^
+main.cpp:105:34: warning: function 'atch::(anonymous namespace)::adl_lookup' has internal linkage but is not defined [-Wundefined-internal]
+      friend constexpr size_type adl_lookup (ident<N>);
+                                 ^
+main.cpp:122:33: note: used here
+    template<size_type N, int = adl_lookup (ident<N> {})>
+                                ^
+main.cpp:105:34: warning: function 'atch::(anonymous namespace)::adl_lookup' has internal linkage but is not defined [-Wundefined-internal]
+      friend constexpr size_type adl_lookup (ident<N>);
+                                 ^
+main.cpp:122:33: note: used here
+    template<size_type N, int = adl_lookup (ident<N> {})>
+                                ^
+main.cpp:105:34: warning: function 'atch::(anonymous namespace)::adl_lookup' has internal linkage but is not defined [-Wundefined-internal]
+      friend constexpr size_type adl_lookup (ident<N>);
+                                 ^
+main.cpp:122:33: note: used here
+    template<size_type N, int = adl_lookup (ident<N> {})>
+                                ^
+main.cpp:105:34: warning: function 'atch::(anonymous namespace)::adl_lookup' has internal linkage but is not defined [-Wundefined-internal]
+      friend constexpr size_type adl_lookup (ident<N>);
+                                 ^
+main.cpp:122:33: note: used here
+    template<size_type N, int = adl_lookup (ident<N> {})>
+                                ^
+main.cpp:105:34: warning: function 'atch::(anonymous namespace)::adl_lookup' has internal linkage but is not defined [-Wundefined-internal]
+      friend constexpr size_type adl_lookup (ident<N>);
+                                 ^
+main.cpp:122:33: note: used here
+    template<size_type N, int = adl_lookup (ident<N> {})>
+                                ^
+main.cpp:105:34: warning: function 'atch::(anonymous namespace)::adl_lookup' has internal linkage but is not defined [-Wundefined-internal]
+      friend constexpr size_type adl_lookup (ident<N>);
+                                 ^
+main.cpp:122:33: note: used here
+    template<size_type N, int = adl_lookup (ident<N> {})>
+                                ^
+main.cpp:105:34: warning: function 'atch::(anonymous namespace)::adl_lookup' has internal linkage but is not defined [-Wundefined-internal]
+      friend constexpr size_type adl_lookup (ident<N>);
+                                 ^
+main.cpp:122:33: note: used here
+    template<size_type N, int = adl_lookup (ident<N> {})>
+                                ^
+main.cpp:105:34: warning: function 'atch::(anonymous namespace)::adl_lookup' has internal linkage but is not defined [-Wundefined-internal]
+      friend constexpr size_type adl_lookup (ident<N>);
+                                 ^
+main.cpp:122:33: note: used here
+    template<size_type N, int = adl_lookup (ident<N> {})>
+                                ^
+main.cpp:105:34: warning: function 'atch::(anonymous namespace)::adl_lookup' has internal linkage but is not defined [-Wundefined-internal]
+      friend constexpr size_type adl_lookup (ident<N>);
+                                 ^
+main.cpp:122:33: note: used here
+    template<size_type N, int = adl_lookup (ident<N> {})>
+                                ^
+main.cpp:105:34: warning: function 'atch::(anonymous namespace)::adl_lookup' has internal linkage but is not defined [-Wundefined-internal]
+      friend constexpr size_type adl_lookup (ident<N>);
+                                 ^
+main.cpp:122:33: note: used here
+    template<size_type N, int = adl_lookup (ident<N> {})>
+                                ^
+main.cpp:105:34: warning: function 'atch::(anonymous namespace)::adl_lookup' has internal linkage but is not defined [-Wundefined-internal]
+      friend constexpr size_type adl_lookup (ident<N>);
+                                 ^
+main.cpp:122:33: note: used here
+    template<size_type N, int = adl_lookup (ident<N> {})>
+                                ^
+main.cpp:105:34: warning: function 'atch::(anonymous namespace)::adl_lookup' has internal linkage but is not defined [-Wundefined-internal]
+      friend constexpr size_type adl_lookup (ident<N>);
+                                 ^
+main.cpp:122:33: note: used here
+    template<size_type N, int = adl_lookup (ident<N> {})>
+                                ^
+main.cpp:105:34: warning: function 'atch::(anonymous namespace)::adl_lookup' has internal linkage but is not defined [-Wundefined-internal]
+      friend constexpr size_type adl_lookup (ident<N>);
+                                 ^
+main.cpp:122:33: note: used here
+    template<size_type N, int = adl_lookup (ident<N> {})>
+                                ^
+main.cpp:105:34: warning: function 'atch::(anonymous namespace)::adl_lookup' has internal linkage but is not defined [-Wundefined-internal]
+      friend constexpr size_type adl_lookup (ident<N>);
+                                 ^
+main.cpp:122:33: note: used here
+    template<size_type N, int = adl_lookup (ident<N> {})>
+                                ^
+main.cpp:105:34: warning: function 'atch::(anonymous namespace)::adl_lookup' has internal linkage but is not defined [-Wundefined-internal]
+      friend constexpr size_type adl_lookup (ident<N>);
+                                 ^
+main.cpp:122:33: note: used here
+    template<size_type N, int = adl_lookup (ident<N> {})>
+                                ^
+main.cpp:105:34: warning: function 'atch::(anonymous namespace)::adl_lookup' has internal linkage but is not defined [-Wundefined-internal]
+      friend constexpr size_type adl_lookup (ident<N>);
+                                 ^
+main.cpp:122:33: note: used here
+    template<size_type N, int = adl_lookup (ident<N> {})>
+                                ^
+main.cpp:105:34: warning: function 'atch::(anonymous namespace)::adl_lookup' has internal linkage but is not defined [-Wundefined-internal]
+      friend constexpr size_type adl_lookup (ident<N>);
+                                 ^
+main.cpp:122:33: note: used here
+    template<size_type N, int = adl_lookup (ident<N> {})>
+                                ^
+main.cpp:105:34: warning: function 'atch::(anonymous namespace)::adl_lookup' has internal linkage but is not defined [-Wundefined-internal]
+      friend constexpr size_type adl_lookup (ident<N>);
+                                 ^
+main.cpp:122:33: note: used here
+    template<size_type N, int = adl_lookup (ident<N> {})>
+                                ^
+main.cpp:105:34: warning: function 'atch::(anonymous namespace)::adl_lookup' has internal linkage but is not defined [-Wundefined-internal]
+      friend constexpr size_type adl_lookup (ident<N>);
+                                 ^
+main.cpp:122:33: note: used here
+    template<size_type N, int = adl_lookup (ident<N> {})>
+                                ^
+main.cpp:105:34: warning: function 'atch::(anonymous namespace)::adl_lookup' has internal linkage but is not defined [-Wundefined-internal]
+      friend constexpr size_type adl_lookup (ident<N>);
+                                 ^
+main.cpp:122:33: note: used here
+    template<size_type N, int = adl_lookup (ident<N> {})>
+                                ^
+main.cpp:105:34: warning: function 'atch::(anonymous namespace)::adl_lookup' has internal linkage but is not defined [-Wundefined-internal]
+      friend constexpr size_type adl_lookup (ident<N>);
+                                 ^
+main.cpp:122:33: note: used here
+    template<size_type N, int = adl_lookup (ident<N> {})>
+                                ^
+main.cpp:105:34: warning: function 'atch::(anonymous namespace)::adl_lookup' has internal linkage but is not defined [-Wundefined-internal]
+      friend constexpr size_type adl_lookup (ident<N>);
+                                 ^
+main.cpp:122:33: note: used here
+    template<size_type N, int = adl_lookup (ident<N> {})>
+                                ^
+main.cpp:105:34: warning: function 'atch::(anonymous namespace)::adl_lookup' has internal linkage but is not defined [-Wundefined-internal]
+      friend constexpr size_type adl_lookup (ident<N>);
+                                 ^
+main.cpp:122:33: note: used here
+    template<size_type N, int = adl_lookup (ident<N> {})>
+                                ^
+main.cpp:105:34: warning: function 'atch::(anonymous namespace)::adl_lookup' has internal linkage but is not defined [-Wundefined-internal]
+      friend constexpr size_type adl_lookup (ident<N>);
+                                 ^
+main.cpp:122:33: note: used here
+    template<size_type N, int = adl_lookup (ident<N> {})>
+                                ^
+main.cpp:105:34: warning: function 'atch::(anonymous namespace)::adl_lookup' has internal linkage but is not defined [-Wundefined-internal]
+      friend constexpr size_type adl_lookup (ident<N>);
+                                 ^
+main.cpp:122:33: note: used here
+    template<size_type N, int = adl_lookup (ident<N> {})>
+                                ^
+main.cpp:105:34: warning: function 'atch::(anonymous namespace)::adl_lookup' has internal linkage but is not defined [-Wundefined-internal]
+      friend constexpr size_type adl_lookup (ident<N>);
+                                 ^
+main.cpp:122:33: note: used here
+    template<size_type N, int = adl_lookup (ident<N> {})>
+                                ^
+main.cpp:105:34: warning: function 'atch::(anonymous namespace)::adl_lookup' has internal linkage but is not defined [-Wundefined-internal]
+      friend constexpr size_type adl_lookup (ident<N>);
+                                 ^
+main.cpp:122:33: note: used here
+    template<size_type N, int = adl_lookup (ident<N> {})>
+                                ^
+main.cpp:105:34: warning: function 'atch::(anonymous namespace)::adl_lookup' has internal linkage but is not defined [-Wundefined-internal]
+      friend constexpr size_type adl_lookup (ident<N>);
+                                 ^
+main.cpp:122:33: note: used here
+    template<size_type N, int = adl_lookup (ident<N> {})>
+                                ^
+main.cpp:105:34: warning: function 'atch::(anonymous namespace)::adl_lookup' has internal linkage but is not defined [-Wundefined-internal]
+      friend constexpr size_type adl_lookup (ident<N>);
+                                 ^
+main.cpp:122:33: note: used here
+    template<size_type N, int = adl_lookup (ident<N> {})>
+                                ^
+main.cpp:105:34: warning: function 'atch::(anonymous namespace)::adl_lookup' has internal linkage but is not defined [-Wundefined-internal]
+      friend constexpr size_type adl_lookup (ident<N>);
+                                 ^
+main.cpp:122:33: note: used here
+    template<size_type N, int = adl_lookup (ident<N> {})>
+                                ^
+main.cpp:105:34: warning: function 'atch::(anonymous namespace)::adl_lookup' has internal linkage but is not defined [-Wundefined-internal]
+      friend constexpr size_type adl_lookup (ident<N>);
+                                 ^
+main.cpp:122:33: note: used here
+    template<size_type N, int = adl_lookup (ident<N> {})>
+                                ^
+main.cpp:105:34: warning: function 'atch::(anonymous namespace)::adl_lookup' has internal linkage but is not defined [-Wundefined-internal]
+      friend constexpr size_type adl_lookup (ident<N>);
+                                 ^
+main.cpp:122:33: note: used here
+    template<size_type N, int = adl_lookup (ident<N> {})>
+                                ^
+main.cpp:105:34: warning: function 'atch::(anonymous namespace)::adl_lookup' has internal linkage but is not defined [-Wundefined-internal]
+      friend constexpr size_type adl_lookup (ident<N>);
+                                 ^
+main.cpp:122:33: note: used here
+    template<size_type N, int = adl_lookup (ident<N> {})>
+                                ^
+main.cpp:105:34: warning: function 'atch::(anonymous namespace)::adl_lookup' has internal linkage but is not defined [-Wundefined-internal]
+      friend constexpr size_type adl_lookup (ident<N>);
+                                 ^
+main.cpp:122:33: note: used here
+    template<size_type N, int = adl_lookup (ident<N> {})>
+                                ^
+main.cpp:105:34: warning: function 'atch::(anonymous namespace)::adl_lookup' has internal linkage but is not defined [-Wundefined-internal]
+      friend constexpr size_type adl_lookup (ident<N>);
+                                 ^
+main.cpp:122:33: note: used here
+    template<size_type N, int = adl_lookup (ident<N> {})>
+                                ^
+main.cpp:105:34: warning: function 'atch::(anonymous namespace)::adl_lookup' has internal linkage but is not defined [-Wundefined-internal]
+      friend constexpr size_type adl_lookup (ident<N>);
+                                 ^
+main.cpp:122:33: note: used here
+    template<size_type N, int = adl_lookup (ident<N> {})>
+                                ^
+main.cpp:105:34: warning: function 'atch::(anonymous namespace)::adl_lookup' has internal linkage but is not defined [-Wundefined-internal]
+      friend constexpr size_type adl_lookup (ident<N>);
+                                 ^
+main.cpp:122:33: note: used here
+    template<size_type N, int = adl_lookup (ident<N> {})>
+                                ^
+main.cpp:105:34: warning: function 'atch::(anonymous namespace)::adl_lookup' has internal linkage but is not defined [-Wundefined-internal]
+      friend constexpr size_type adl_lookup (ident<N>);
+                                 ^
+main.cpp:122:33: note: used here
+    template<size_type N, int = adl_lookup (ident<N> {})>
+                                ^
+main.cpp:105:34: warning: function 'atch::(anonymous namespace)::adl_lookup' has internal linkage but is not defined [-Wundefined-internal]
+      friend constexpr size_type adl_lookup (ident<N>);
+                                 ^
+main.cpp:122:33: note: used here
+    template<size_type N, int = adl_lookup (ident<N> {})>
+                                ^
+main.cpp:105:34: warning: function 'atch::(anonymous namespace)::adl_lookup' has internal linkage but is not defined [-Wundefined-internal]
+      friend constexpr size_type adl_lookup (ident<N>);
+                                 ^
+main.cpp:122:33: note: used here
+    template<size_type N, int = adl_lookup (ident<N> {})>
+                                ^
+main.cpp:105:34: warning: function 'atch::(anonymous namespace)::adl_lookup' has internal linkage but is not defined [-Wundefined-internal]
+      friend constexpr size_type adl_lookup (ident<N>);
+                                 ^
+main.cpp:122:33: note: used here
+    template<size_type N, int = adl_lookup (ident<N> {})>
+                                ^
+main.cpp:105:34: warning: function 'atch::(anonymous namespace)::adl_lookup' has internal linkage but is not defined [-Wundefined-internal]
+      friend constexpr size_type adl_lookup (ident<N>);
+                                 ^
+main.cpp:122:33: note: used here
+    template<size_type N, int = adl_lookup (ident<N> {})>
+                                ^
+main.cpp:105:34: warning: function 'atch::(anonymous namespace)::adl_lookup' has internal linkage but is not defined [-Wundefined-internal]
+      friend constexpr size_type adl_lookup (ident<N>);
+                                 ^
+main.cpp:122:33: note: used here
+    template<size_type N, int = adl_lookup (ident<N> {})>
+                                ^
+main.cpp:105:34: warning: function 'atch::(anonymous namespace)::adl_lookup' has internal linkage but is not defined [-Wundefined-internal]
+      friend constexpr size_type adl_lookup (ident<N>);
+                                 ^
+main.cpp:122:33: note: used here
+    template<size_type N, int = adl_lookup (ident<N> {})>
+                                ^
+main.cpp:105:34: warning: function 'atch::(anonymous namespace)::adl_lookup' has internal linkage but is not defined [-Wundefined-internal]
+      friend constexpr size_type adl_lookup (ident<N>);
+                                 ^
+main.cpp:122:33: note: used here
+    template<size_type N, int = adl_lookup (ident<N> {})>
+                                ^
+main.cpp:105:34: warning: function 'atch::(anonymous namespace)::adl_lookup' has internal linkage but is not defined [-Wundefined-internal]
+      friend constexpr size_type adl_lookup (ident<N>);
+                                 ^
+main.cpp:122:33: note: used here
+    template<size_type N, int = adl_lookup (ident<N> {})>
+                                ^
+main.cpp:105:34: warning: function 'atch::(anonymous namespace)::adl_lookup' has internal linkage but is not defined [-Wundefined-internal]
+      friend constexpr size_type adl_lookup (ident<N>);
+                                 ^
+main.cpp:122:33: note: used here
+    template<size_type N, int = adl_lookup (ident<N> {})>
+                                ^
+main.cpp:105:34: warning: function 'atch::(anonymous namespace)::adl_lookup' has internal linkage but is not defined [-Wundefined-internal]
+      friend constexpr size_type adl_lookup (ident<N>);
+                                 ^
+main.cpp:122:33: note: used here
+    template<size_type N, int = adl_lookup (ident<N> {})>
+                                ^
+main.cpp:105:34: warning: function 'atch::(anonymous namespace)::adl_lookup' has internal linkage but is not defined [-Wundefined-internal]
+      friend constexpr size_type adl_lookup (ident<N>);
+                                 ^
+main.cpp:122:33: note: used here
+    template<size_type N, int = adl_lookup (ident<N> {})>
+                                ^
+main.cpp:105:34: warning: function 'atch::(anonymous namespace)::adl_lookup' has internal linkage but is not defined [-Wundefined-internal]
+      friend constexpr size_type adl_lookup (ident<N>);
+                                 ^
+main.cpp:122:33: note: used here
+    template<size_type N, int = adl_lookup (ident<N> {})>
+                                ^
+main.cpp:105:34: warning: function 'atch::(anonymous namespace)::adl_lookup' has internal linkage but is not defined [-Wundefined-internal]
+      friend constexpr size_type adl_lookup (ident<N>);
+                                 ^
+main.cpp:122:33: note: used here
+    template<size_type N, int = adl_lookup (ident<N> {})>
+                                ^
+main.cpp:105:34: warning: function 'atch::(anonymous namespace)::adl_lookup' has internal linkage but is not defined [-Wundefined-internal]
+      friend constexpr size_type adl_lookup (ident<N>);
+                                 ^
+main.cpp:122:33: note: used here
+    template<size_type N, int = adl_lookup (ident<N> {})>
+                                ^
+main.cpp:105:34: warning: function 'atch::(anonymous namespace)::adl_lookup' has internal linkage but is not defined [-Wundefined-internal]
+      friend constexpr size_type adl_lookup (ident<N>);
+                                 ^
+main.cpp:122:33: note: used here
+    template<size_type N, int = adl_lookup (ident<N> {})>
+                                ^
+main.cpp:105:34: warning: function 'atch::(anonymous namespace)::adl_lookup' has internal linkage but is not defined [-Wundefined-internal]
+      friend constexpr size_type adl_lookup (ident<N>);
+                                 ^
+main.cpp:122:33: note: used here
+    template<size_type N, int = adl_lookup (ident<N> {})>
+                                ^
+main.cpp:105:34: warning: function 'atch::(anonymous namespace)::adl_lookup' has internal linkage but is not defined [-Wundefined-internal]
+      friend constexpr size_type adl_lookup (ident<N>);
+                                 ^
+main.cpp:122:33: note: used here
+    template<size_type N, int = adl_lookup (ident<N> {})>
+                                ^
+main.cpp:105:34: warning: function 'atch::(anonymous namespace)::adl_lookup' has internal linkage but is not defined [-Wundefined-internal]
+      friend constexpr size_type adl_lookup (ident<N>);
+                                 ^
+main.cpp:122:33: note: used here
+    template<size_type N, int = adl_lookup (ident<N> {})>
+                                ^
+main.cpp:105:34: warning: function 'atch::(anonymous namespace)::adl_lookup' has internal linkage but is not defined [-Wundefined-internal]
+      friend constexpr size_type adl_lookup (ident<N>);
+                                 ^
+main.cpp:122:33: note: used here
+    template<size_type N, int = adl_lookup (ident<N> {})>
+                                ^
+62 warnings generated.
+void print_type() [T = atch::type_list<member<foo, float, 0>, member<foo, float, 0>, member<foo, bool, 0> >]
