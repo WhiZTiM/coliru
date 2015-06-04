@@ -1,0 +1,15 @@
+main.cpp: In function 'int main()':
+main.cpp:257:38: error: no matching function for call to 'UtlThreadSafeQueue<UtlMessage>::push(std::shared_ptr<DataLoadSessionMsg>&)'
+     dataLoadSessionQ.push(pDLSMessage);
+                                      ^
+main.cpp:174:73: note: candidate: std::enable_if_t<std::is_base_of<T, std::decay_t<U> >::value> UtlThreadSafeQueue<T>::push(std::shared_ptr<_Tp1>&&) [with U = DataLoadSessionMsg; T = UtlMessage; std::enable_if_t<std::is_base_of<T, std::decay_t<U> >::value> = void] <near match>
+     inline std::enable_if_t<std::is_base_of<T, std::decay_t<U>>::value> push(std::shared_ptr<U>&& value) {
+                                                                         ^
+main.cpp:174:73: note:   conversion of argument 1 would be ill-formed:
+main.cpp:257:38: error: cannot bind 'std::shared_ptr<DataLoadSessionMsg>' lvalue to 'std::shared_ptr<DataLoadSessionMsg>&&'
+     dataLoadSessionQ.push(pDLSMessage);
+                                      ^
+main.cpp:186:73: note: candidate: template<class U> std::enable_if_t<std::is_base_of<T, std::decay_t<U> >::value> UtlThreadSafeQueue<T>::push(U&&) [with U = U; T = UtlMessage]
+     inline std::enable_if_t<std::is_base_of<T, std::decay_t<U>>::value> push(U&& value) {
+                                                                         ^
+main.cpp:186:73: note:   template argument deduction/substitution failed:
