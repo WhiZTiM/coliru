@@ -1,0 +1,3 @@
+Caller2::test() calling callback
+Callee2::doWork() inside callback
+Caller2::test() result: 40
