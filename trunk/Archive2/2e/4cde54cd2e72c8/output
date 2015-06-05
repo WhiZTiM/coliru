@@ -1,0 +1,13 @@
++ g++ -std=c++1y -O0 -Wall -pedantic -pthread main.cpp
+main.cpp: In function 'int main()':
+main.cpp:147:11: error: aggregate 'TD<type_list<edge<Start, Point1>, edge<Point1, Point2>, edge<Point2, End> > > t' has incomplete type and cannot be defined
+     TD<T> t;
+           ^
++ clang++ -std=c++1y -O0 -Wall -pedantic -pthread main.cpp
+main.cpp:147:11: error: implicit instantiation of undefined template 'TD<type_list<edge<Start, Point1>, edge<Point1, Point2>, edge<Point2, End> > >'
+    TD<T> t;
+          ^
+main.cpp:143:23: note: template is declared here
+template<class> class TD;
+                      ^
+1 error generated.
