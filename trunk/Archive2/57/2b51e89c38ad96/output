@@ -1,0 +1,10 @@
+main.cpp:11:3: warning: expression result unused [-Wunused-value]
+                sizeof (*ptr);
+                ^~~~~~~~~~~~~
+main.cpp:10:7: warning: unused variable 'v' [-Wunused-variable]
+        auto v = [](){
+             ^
+main.cpp:5:8: warning: private field 'ptr' is not used [-Wunused-private-field]
+        char *ptr;
+              ^
+3 warnings generated.
