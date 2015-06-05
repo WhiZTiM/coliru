@@ -1,0 +1,14 @@
+main.cpp: In member function 'Distance Distance::operator+(const Distance&)':
+main.cpp:15:65: error: passing 'const Distance' as 'this' argument discards qualifiers [-fpermissive]
+         return Distance(get_kilometers() + other.get_kilometers());
+                                                                 ^
+main.cpp:12:17: note:   in call to 'long double Distance::get_kilometers()'
+     long double get_kilometers() { return kilometers; }
+                 ^
+main.cpp: At global scope:
+main.cpp:31:14: warning: unused parameter 'argc' [-Wunused-parameter]
+ int main(int argc, char* argv[])
+              ^
+main.cpp:31:31: warning: unused parameter 'argv' [-Wunused-parameter]
+ int main(int argc, char* argv[])
+                               ^
