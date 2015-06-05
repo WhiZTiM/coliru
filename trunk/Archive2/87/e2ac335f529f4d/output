@@ -1,0 +1,10 @@
+main.cpp:10:13: warning: unused parameter 'i' [-Wunused-parameter]
+ void g(int* i)
+             ^
+Usage: ping [-LRUbdfnqrvVaAD] [-c count] [-i interval] [-w deadline]
+            [-p pattern] [-s packetsize] [-t ttl] [-I interface]
+            [-M pmtudisc-hint] [-m mark] [-S sndbuf]
+            [-T tstamp-options] [-Q tos] [hop1 ...] destination
+Function g called
+Function g called
+Function g called
