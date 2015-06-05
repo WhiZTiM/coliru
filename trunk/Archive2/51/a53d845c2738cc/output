@@ -1,0 +1,10 @@
+main.cpp: In instantiation of 'class MyClass_2<bool>':
+main.cpp:11:19:   required from 'class MyClass<bool>'
+main.cpp:14:19:   required from here
+main.cpp:7:3: error: static assertion failed: Failure
+   static_assert(get_false<T>::val, "Failure");
+   ^
+main.cpp: In function 'int main()':
+main.cpp:14:19: warning: unused variable 'obj' [-Wunused-variable]
+     MyClass<bool> obj; // I suppose this isn't instantiated
+                   ^
