@@ -1,0 +1,9 @@
+main.cpp: In instantiation of 'struct testing<int []>':
+main.cpp:13:15:   required from here
+main.cpp:7:23: error: static assertion failed: Failure!
+ struct testing<T[]> { static_assert(dependent_false<T>::value, "Failure!"); typedef int dummy; };
+                       ^
+main.cpp: In function 'int main()':
+main.cpp:13:17: warning: unused variable 'x' [-Wunused-variable]
+     test<int[]> x; // no failure
+                 ^
