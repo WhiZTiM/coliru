@@ -1,0 +1,36 @@
+main.cpp: In instantiation of 'Expression<Number_t, uintt, intt>::OperatorStorage* const& Expression<Number_t, uintt, intt>::Variable::expression() const [with Number_t = double; uintt = unsigned int; intt = int]':
+main.cpp:750:48:   required from 'void Expression<Number_t, uintt, intt>::Variable::printInfo(std::ostream&) const [with Number_t = double; uintt = unsigned int; intt = int; std::ostream = std::basic_ostream<char>]'
+main.cpp:1441:54:   required from 'bool Expression<Number_t, uintt, intt>::Parenthesis::parce(std::__cxx11::basic_string<char>::const_iterator&, const string_t&, Exar<Expression<Number_t, uintt, intt>::Parenthesis>&) [with Number_t = double; uintt = unsigned int; intt = int; std::__cxx11::basic_string<char>::const_iterator = __gnu_cxx::__normal_iterator<const char*, std::__cxx11::basic_string<char> >; string_t = std::__cxx11::basic_string<char>]'
+main.cpp:1315:21:   required from 'void Expression<Number_t, uintt, intt>::parce(const string_t&) [with Number_t = double; uintt = unsigned int; intt = int; string_t = std::__cxx11::basic_string<char>]'
+main.cpp:1664:22:   required from here
+main.cpp:704:53: warning: no return statement in function returning non-void [-Wreturn-type]
+         OperatorStorage * const &expression() const{}
+                                                     ^
+main.cpp: In instantiation of 'Expression<Number_t, uintt, intt>::OperatorStorage*& Expression<Number_t, uintt, intt>::Variable::setExpression() [with Number_t = double; uintt = unsigned int; intt = int]':
+main.cpp:746:30:   required from 'void Expression<Number_t, uintt, intt>::Variable::traversef(FN) [with FN = Expression<Number_t, uintt, intt>::OperatorBase<Truet>::printExp(std::ostream&) const [with Truet = Expression<>::BinaryOperator<Expression<>::Add>; Number_t = double; uintt = unsigned int; intt = int; std::ostream = std::basic_ostream<char>]::<lambda(const Expression<>::OperatorStorage&)>; Number_t = double; uintt = unsigned int; intt = int]'
+main.cpp:1043:17:   required from 'void Expression<Number_t, uintt, intt>::BinaryOperator<TrueT>::traversef(FN) [with FN = Expression<Number_t, uintt, intt>::OperatorBase<Truet>::printExp(std::ostream&) const [with Truet = Expression<>::BinaryOperator<Expression<>::Add>; Number_t = double; uintt = unsigned int; intt = int; std::ostream = std::basic_ostream<char>]::<lambda(const Expression<>::OperatorStorage&)>; TrueT = Expression<>::Add; Number_t = double; uintt = unsigned int; intt = int]'
+main.cpp:1016:18:   required from 'void Expression<Number_t, uintt, intt>::BinaryOperator<TrueT>::traversef(FN) const [with FN = Expression<Number_t, uintt, intt>::OperatorBase<Truet>::printExp(std::ostream&) const [with Truet = Expression<>::BinaryOperator<Expression<>::Add>; Number_t = double; uintt = unsigned int; intt = int; std::ostream = std::basic_ostream<char>]::<lambda(const Expression<>::OperatorStorage&)>; TrueT = Expression<>::Add; Number_t = double; uintt = unsigned int; intt = int]'
+main.cpp:566:13:   required from 'void Expression<Number_t, uintt, intt>::OperatorBase<Truet>::traverse(FN) const [with FN = Expression<Number_t, uintt, intt>::OperatorBase<Truet>::printExp(std::ostream&) const [with Truet = Expression<>::BinaryOperator<Expression<>::Add>; Number_t = double; uintt = unsigned int; intt = int; std::ostream = std::basic_ostream<char>]::<lambda(const Expression<>::OperatorStorage&)>; Truet = Expression<>::BinaryOperator<Expression<>::Add>; Number_t = double; uintt = unsigned int; intt = int]'
+main.cpp:576:21:   required from 'void Expression<Number_t, uintt, intt>::OperatorBase<Truet>::printExp(std::ostream&) const [with Truet = Expression<>::BinaryOperator<Expression<>::Add>; Number_t = double; uintt = unsigned int; intt = int; std::ostream = std::basic_ostream<char>]'
+main.cpp:583:13:   required from 'std::ostream& operator<<(std::ostream&, const Expression<>::OperatorBase<Expression<>::BinaryOperator<Expression<>::Add> >&)'
+/Archive2/4e/e8fc626df40d51/main.cpp:15:23:   required from '__hidden__::print& __hidden__::print::operator,(const T&) [with T = Expression<>::BinaryOperator<Expression<>::Add>]'
+main.cpp:1349:21:   required from 'void Expression<Number_t, uintt, intt>::parce(const string_t&) [with Number_t = double; uintt = unsigned int; intt = int; string_t = std::__cxx11::basic_string<char>]'
+main.cpp:1664:22:   required from here
+main.cpp:707:43: warning: no return statement in function returning non-void [-Wreturn-type]
+         OperatorStorage *&setExpression(){}
+                                           ^
+main.cpp:301:28: warning: 'const string_t& unnamedVariable()' defined but not used [-Wunused-function]
+     static const string_t &unnamedVariable(){
+                            ^
+main.cpp:304:22: warning: 'string_t& setUnnamedVariable()' defined but not used [-Wunused-function]
+     static string_t &setUnnamedVariable() {
+                      ^
+main.cpp:308:26: warning: 'const size_t& unnamedVariableNum()' defined but not used [-Wunused-function]
+     static const size_t &unnamedVariableNum(){
+                          ^
+main.cpp:311:20: warning: 'size_t& setUnnamedVariableNum()' defined but not used [-Wunused-function]
+     static size_t &setUnnamedVariableNum() {
+                    ^
+/tmp/ccPe01JR.o: In function `main':
+main.cpp:(.text.startup+0xcb): undefined reference to `Expression<double, unsigned int, int>::variablesd'
+collect2: error: ld returned 1 exit status
