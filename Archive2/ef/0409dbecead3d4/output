@@ -1,0 +1,40 @@
+{
+    "TokenNo": "Deb123456",
+    "CPUID": "Deb123456",
+    "CommandID": "05",
+    "IsEncrypted": "0",
+    "CommandString": [
+        {
+            "ADD": "97",
+            "ESTBCODE": "99999999",
+            "EID": "XY",
+            "CID": "0154400000",
+            "DATE": "14042015",
+            "TIME": "1835",
+            "IOMODE": "I",
+            "REASONCODE": "55",
+            "LAT": "87",
+            "LONG": "90",
+            "ADD": "87",
+            "ESTBCODE": "99999998",
+            "EID": "XX",
+            "CID": "0154300000",
+            "DATE": "15052015",
+            "TIME": "1946",
+            "IOMODE": "I",
+            "REASONCODE": "56",
+            "LAT": "88",
+            "LONG": "91",
+            "ADD": "88",
+            "ESTBCODE": "99999998",
+            "EID": "XX",
+            "CID": "0154300000",
+            "DATE": "15052015",
+            "TIME": "1946",
+            "IOMODE": "I",
+            "REASONCODE": "56",
+            "LAT": "88",
+            "LONG": "91"
+        }
+    ]
+}
