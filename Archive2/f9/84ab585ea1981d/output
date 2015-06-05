@@ -1,0 +1,4 @@
+main.cpp:14:19: warning: unused variable 'obj' [-Wunused-variable]
+    MyClass<bool> obj;
+                  ^
+1 warning generated.
