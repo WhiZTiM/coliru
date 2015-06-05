@@ -1,0 +1,28 @@
+main.cpp:17:45: error: call to 'promoted' is ambiguous
+    std::cout << sizeof(i) << " " << sizeof(promoted(i);
+                                            ^~~~~~~~
+main.cpp:5:5: note: candidate function
+int promoted(char);
+    ^
+main.cpp:6:5: note: candidate function
+int promoted(short);
+    ^
+main.cpp:7:5: note: candidate function
+int promoted(int);
+    ^
+main.cpp:8:6: note: candidate function
+long promoted(long);
+     ^
+main.cpp:9:11: note: candidate function
+long long promoted(long long);
+          ^
+main.cpp:10:8: note: candidate function
+double promoted(float);
+       ^
+main.cpp:11:8: note: candidate function
+double promoted(double);
+       ^
+main.cpp:12:13: note: candidate function
+long double promoted(long double);
+            ^
+1 error generated.
