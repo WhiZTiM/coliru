@@ -1,0 +1,4 @@
+func(const Struct& s)
+named var
+func(Struct&& s)
+unamed temp
