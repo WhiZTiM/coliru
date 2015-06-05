@@ -1,0 +1,27 @@
++ clang++ -c -std=c++11 -Wall -Wextra -pedantic main.cpp
+main.cpp:5:17: error: reference to 'tuple' is ambiguous
+typedef vector< tuple<int, int> > tuple_list;
+                ^
+main.cpp:4:14: note: candidate found by name lookup is 'tuple'
+using boost::tuple;
+             ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.1.0/../../../../include/c++/5.1.0/bits/stl_pair.h:83:11: note: candidate found by name lookup is 'std::tuple'
+    class tuple;
+          ^
+main.cpp:5:26: error: expected '(' for function-style cast or type construction
+typedef vector< tuple<int, int> > tuple_list;
+                      ~~~^
+main.cpp:5:33: error: expected unqualified-id
+typedef vector< tuple<int, int> > tuple_list;
+                                ^
+main.cpp:8:5: error: use of undeclared identifier 'tuple_list'; did you mean 'tuple_size'?
+    tuple_list foo;
+    ^~~~~~~~~~
+    tuple_size
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.1.0/../../../../include/c++/5.1.0/utility:82:11: note: 'tuple_size' declared here
+    class tuple_size;
+          ^
+main.cpp:8:5: error: unknown type name 'tuple_list'
+    tuple_list foo;
+    ^
+5 errors generated.
