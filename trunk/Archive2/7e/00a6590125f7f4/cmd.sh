@@ -1,0 +1,1 @@
+g++ -std=c++1z -O3 -mtune=native -Wall -pedantic -pthread main.cpp -lboost_timer -lboost_system && ./a.out
