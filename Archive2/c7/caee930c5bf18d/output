@@ -1,0 +1,20 @@
+main.cpp:4:107: error: two or more data types in declaration of 'cal_average'
+ void float cal_average( float num1, float num2 , float num3 , float num4, float *ptr_suma, float *ptr_avg ); // function prototype for average 
+                                                                                                           ^
+main.cpp: In function 'int main()':
+main.cpp:15:53: error: 'Printf' was not declared in this scope
+     Printf("There was an error, no 4 float number\n");
+                                                     ^
+main.cpp:19:37: error: 'cal_average' was not declared in this scope
+   cal_average(a,b,c,d,&suma,&average);
+                                     ^
+main.cpp:22:54: error: 'Printf' was not declared in this scope
+        "  Y el average es %3.f", a,b,c,d,suma,average);
+                                                      ^
+main.cpp: At global scope:
+main.cpp:29:106: error: two or more data types in declaration of 'cal_average'
+ void float cal_average( float num1, float num2 , float num3 , float num4, float *ptr_suma, float *ptr_avg);
+                                                                                                          ^
+main.cpp:30:1: error: expected unqualified-id before '{' token
+ {
+ ^
