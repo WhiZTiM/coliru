@@ -1,0 +1,7 @@
+main.cpp:6:12: error: two or more data types in declaration of 'f'
+ int f(int a) { return -a; }
+            ^
+main.cpp: In function 'int main()':
+main.cpp:10:33: error: 'f' was not declared in this scope
+     std::function<int(int)> fn1(f),
+                                 ^
