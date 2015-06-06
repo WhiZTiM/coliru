@@ -1,0 +1,6 @@
+std::vector<int, std::allocator<int> >:  0.003773s wall, 0.000000s user + 0.000000s system = 0.000000s CPU (n/a%)
+std::__cxx11::list<int, std::allocator<int> >:  0.630096s wall, 0.630000s user + 0.000000s system = 0.630000s CPU (100.0%)
+boost::range_detail::indirected_range<std::vector<int*, std::allocator<int*> > >:  0.097298s wall, 0.100000s user + 0.000000s system = 0.100000s CPU (102.8%)
+std::vector<int, std::allocator<int> >:  0.003778s wall, 0.000000s user + 0.000000s system = 0.000000s CPU (n/a%)
+std::__cxx11::list<int, std::allocator<int> >:  0.590247s wall, 0.590000s user + 0.000000s system = 0.590000s CPU (100.0%)
+boost::range_detail::indirected_range<std::vector<int*, std::allocator<int*> > >:  0.097835s wall, 0.100000s user + 0.000000s system = 0.100000s CPU (102.2%)
