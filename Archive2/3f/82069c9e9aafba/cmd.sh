@@ -1,0 +1,1 @@
+{ find /usr/bin ; find /usr/local/bin ; } | grep 'g++'
