@@ -1,0 +1,12 @@
+main.cpp:12:4: error: expected '}' at end of input
+   };
+    ^
+main.cpp: In member function 'void LinkedList<T, Comparer>::insert(T&)':
+main.cpp:11:24: error: 'current_item' was not declared in this scope
+       if ( comp(value, current_item) ) // tests if value > current_item
+                        ^
+main.cpp:12:3: error: expected primary-expression before '}' token
+   };
+   ^
+main.cpp: At global scope:
+main.cpp:12:3: error: expected unqualified-id at end of input
