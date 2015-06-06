@@ -1,0 +1,9 @@
+@asio|1433606055.382022|0*1|io_service@0x62dc70.dispatch
+@asio|1433606055.382202|>1|
+before run()
+@asio|1433606055.382280|<1|
+after run()
+@asio|1433606060.381921|0|socket@0x62dd80.cancel
+@asio|1433606060.382056|0|socket@0x62dd80.close
+socket is closed
+exiting...
