@@ -1,0 +1,197 @@
+main.cpp: In function 'int main(int, char**)':
+main.cpp:9:47: error: 'DirectedS' was not declared in this scope
+     typedef boost::adjacency_list<setS, setS, DirectedS> Graph;
+                                               ^
+main.cpp:9:56: error: template argument 3 is invalid
+     typedef boost::adjacency_list<setS, setS, DirectedS> Graph;
+                                                        ^
+In file included from /usr/local/include/boost/graph/graphviz.hpp:21:0,
+                 from main.cpp:1:
+/usr/local/include/boost/graph/graph_traits.hpp: In instantiation of 'struct boost::graph_traits<int>':
+/usr/local/include/boost/graph/random.hpp:173:8:   required by substitution of 'template<class MutableGraph, class RandNumGen> void boost::generate_random_graph(MutableGraph&, typename boost::graph_traits<Graph>::vertices_size_type, typename boost::graph_traits<Graph>::vertices_size_type, RandNumGen&, bool, bool) [with MutableGraph = int; RandNumGen = std::mersenne_twister_engine<long unsigned int, 32ul, 624ul, 397ul, 31ul, 2567483615ul, 11ul, 4294967295ul, 7ul, 2636928640ul, 15ul, 4022730752ul, 18ul, 1812433253ul>]'
+main.cpp:13:40:   required from here
+/usr/local/include/boost/graph/graph_traits.hpp:57:52: error: 'int' is not a class, struct, or union type
+         typedef typename G::vertex_descriptor      vertex_descriptor;
+                                                    ^
+/usr/local/include/boost/graph/graph_traits.hpp:58:52: error: 'int' is not a class, struct, or union type
+         typedef typename G::edge_descriptor        edge_descriptor;
+                                                    ^
+/usr/local/include/boost/graph/graph_traits.hpp:65:52: error: 'int' is not a class, struct, or union type
+         typedef typename G::directed_category      directed_category;
+                                                    ^
+/usr/local/include/boost/graph/graph_traits.hpp:66:52: error: 'int' is not a class, struct, or union type
+         typedef typename G::edge_parallel_category edge_parallel_category;
+                                                    ^
+/usr/local/include/boost/graph/graph_traits.hpp:67:52: error: 'int' is not a class, struct, or union type
+         typedef typename G::traversal_category     traversal_category;
+                                                    ^
+main.cpp:13:40: error: no matching function for call to 'generate_random_graph(Graph&, int, int, std::mt19937&)'
+     generate_random_graph(g, 3, 5, prng);
+                                        ^
+In file included from main.cpp:2:0:
+/usr/local/include/boost/graph/random.hpp:173:8: note: candidate: template<class MutableGraph, class RandNumGen> void boost::generate_random_graph(MutableGraph&, typename boost::graph_traits<Graph>::vertices_size_type, typename boost::graph_traits<Graph>::vertices_size_type, RandNumGen&, bool, bool)
+   void generate_random_graph
+        ^
+/usr/local/include/boost/graph/random.hpp:173:8: note:   substitution of deduced template arguments resulted in errors seen above
+/usr/local/include/boost/graph/random.hpp:186:8: note: candidate: template<class MutableGraph, class RandNumGen, class VertexOutputIterator, class EdgeOutputIterator> void boost::generate_random_graph(MutableGraph&, typename boost::graph_traits<Graph>::vertices_size_type, typename boost::graph_traits<Graph>::vertices_size_type, RandNumGen&, VertexOutputIterator, EdgeOutputIterator, bool)
+   void generate_random_graph
+        ^
+/usr/local/include/boost/graph/random.hpp:186:8: note:   template argument deduction/substitution failed:
+main.cpp:13:40: note:   candidate expects 7 arguments, 4 provided
+     generate_random_graph(g, 3, 5, prng);
+                                        ^
+main.cpp:15:46: error: wrong number of template arguments (1, should be at least 2)
+     std::map<Graph::vertex_descriptor, size_t> ids;
+                                              ^
+In file included from /usr/local/include/c++/5.1.0/map:61:0,
+                 from /usr/local/include/boost/graph/graphviz.hpp:15,
+                 from main.cpp:1:
+/usr/local/include/c++/5.1.0/bits/stl_map.h:96:11: note: provided for 'template<class _Key, class _Tp, class _Compare, class _Alloc> class std::map'
+     class map
+           ^
+main.cpp:17:49: error: no matching function for call to 'vertices(Graph&)'
+     for (auto u : make_iterator_range(vertices(g)))
+                                                 ^
+In file included from /usr/local/include/boost/graph/graphviz.hpp:23:0,
+                 from main.cpp:1:
+/usr/local/include/boost/graph/subgraph.hpp:476:1: note: candidate: template<class G> std::pair<typename boost::subgraph<Graph>::vertex_iterator, typename boost::subgraph<Graph>::vertex_iterator> boost::vertices(const boost::subgraph<Graph>&)
+ vertices(const subgraph<G>& g)
+ ^
+/usr/local/include/boost/graph/subgraph.hpp:476:1: note:   template argument deduction/substitution failed:
+main.cpp:17:49: note:   mismatched types 'const boost::subgraph<Graph>' and 'Graph {aka int}'
+     for (auto u : make_iterator_range(vertices(g)))
+                                                 ^
+In file included from /usr/local/include/boost/graph/detail/adjacency_list.hpp:32:0,
+                 from /usr/local/include/boost/graph/adjacency_list.hpp:246,
+                 from /usr/local/include/boost/graph/graphviz.hpp:24,
+                 from main.cpp:1:
+/usr/local/include/boost/graph/graph_concepts.hpp:47:48: note: candidate: template<class T> typename T::ThereReallyIsNoMemberByThisNameInT boost::vertices(const T&)
+ typename T::ThereReallyIsNoMemberByThisNameInT vertices(T const&);
+                                                ^
+/usr/local/include/boost/graph/graph_concepts.hpp:47:48: note:   template argument deduction/substitution failed:
+/usr/local/include/boost/graph/graph_concepts.hpp: In substitution of 'template<class T> typename T::ThereReallyIsNoMemberByThisNameInT boost::vertices(const T&) [with T = int]':
+main.cpp:17:49:   required from here
+/usr/local/include/boost/graph/graph_concepts.hpp:47:48: error: 'int' is not a class, struct, or union type
+In file included from /usr/local/include/boost/graph/adjacency_list.hpp:246:0,
+                 from /usr/local/include/boost/graph/graphviz.hpp:24,
+                 from main.cpp:1:
+/usr/local/include/boost/graph/detail/adjacency_list.hpp:1601:5: note: candidate: template<class Config, class Base> std::pair<typename Config::vertex_iterator, typename Config::vertex_iterator> boost::vertices(const boost::adj_list_helper<Config, Base>&)
+     vertices(const adj_list_helper<Config, Base>& g_)
+     ^
+/usr/local/include/boost/graph/detail/adjacency_list.hpp:1601:5: note:   template argument deduction/substitution failed:
+main.cpp:17:49: note:   mismatched types 'const boost::adj_list_helper<Config, Base>' and 'Graph {aka int}'
+     for (auto u : make_iterator_range(vertices(g)))
+                                                 ^
+In file included from /usr/local/include/boost/graph/compressed_sparse_row_graph.hpp:27:0,
+                 from /usr/local/include/boost/graph/graphviz.hpp:28,
+                 from main.cpp:1:
+/usr/local/include/boost/graph/filtered_graph.hpp:282:3: note: candidate: template<class G, class EP, class VP> std::pair<typename boost::filtered_graph<Graph, EdgePredicate, VertexPredicate>::vertex_iterator, typename boost::filtered_graph<Graph, EdgePredicate, VertexPredicate>::vertex_iterator> boost::vertices(const boost::filtered_graph<Graph, EdgePredicate, VertexPredicate>&)
+   vertices(const filtered_graph<G, EP, VP>& g)
+   ^
+/usr/local/include/boost/graph/filtered_graph.hpp:282:3: note:   template argument deduction/substitution failed:
+main.cpp:17:49: note:   mismatched types 'const boost::filtered_graph<Graph, EdgePredicate, VertexPredicate>' and 'Graph {aka int}'
+     for (auto u : make_iterator_range(vertices(g)))
+                                                 ^
+In file included from /usr/local/include/boost/graph/graphviz.hpp:28:0,
+                 from main.cpp:1:
+/usr/local/include/boost/graph/compressed_sparse_row_graph.hpp:1119:8: note: candidate: template<class Directed, class VertexProperty, class EdgeProperty, class GraphProperty, class Vertex, class EdgeIndex> std::pair<boost::iterators::counting_iterator<EdgeIndex>, boost::iterators::counting_iterator<EdgeIndex> > boost::vertices(const boost::compressed_sparse_row_graph<Directed, VertexProperty, EdgeProperty, GraphProperty, Vertex, EdgeIndex>&)
+ inline vertices(const BOOST_CSR_GRAPH_TYPE& g) {
+        ^
+/usr/local/include/boost/graph/compressed_sparse_row_graph.hpp:1119:8: note:   template argument deduction/substitution failed:
+main.cpp:17:49: note:   mismatched types 'const boost::compressed_sparse_row_graph<Directed, VertexProperty, EdgeProperty, GraphProperty, Vertex, EdgeIndex>' and 'Graph {aka int}'
+     for (auto u : make_iterator_range(vertices(g)))
+                                                 ^
+In file included from /usr/local/include/boost/graph/copy.hpp:47:0,
+                 from /usr/local/include/boost/graph/random.hpp:24,
+                 from main.cpp:2:
+/usr/local/include/boost/graph/reverse_graph.hpp:216:1: note: candidate: template<class BidirectionalGraph, class GRef> std::pair<typename boost::reverse_graph<BidirectionalGraph>::vertex_iterator, typename boost::reverse_graph<BidirectionalGraph>::vertex_iterator> boost::vertices(const boost::reverse_graph<BidirectionalGraph, GraphRef>&)
+ vertices(const reverse_graph<BidirectionalGraph,GRef>& g)
+ ^
+/usr/local/include/boost/graph/reverse_graph.hpp:216:1: note:   template argument deduction/substitution failed:
+main.cpp:17:49: note:   mismatched types 'const boost::reverse_graph<BidirectionalGraph, GraphRef>' and 'Graph {aka int}'
+     for (auto u : make_iterator_range(vertices(g)))
+                                                 ^
+main.cpp:18:22: error: request for member 'size' in 'ids', which is of non-class type 'int'
+         ids[u] = ids.size();
+                      ^
+In file included from /usr/local/include/boost/graph/graphviz.hpp:19:0,
+                 from main.cpp:1:
+/usr/local/include/boost/property_map/property_map.hpp: In instantiation of 'class boost::associative_property_map<int>':
+main.cpp:22:70:   required from here
+/usr/local/include/boost/property_map/property_map.hpp:431:9: error: 'int' is not a class, struct, or union type
+   class associative_property_map
+         ^
+/usr/local/include/boost/property_map/property_map.hpp:438:34: error: 'boost::associative_property_map<int>::C {aka int}' is not a class, struct, or union type
+     typedef typename C::key_type key_type;
+                                  ^
+/usr/local/include/boost/property_map/property_map.hpp:439:49: error: 'boost::associative_property_map<int>::C {aka int}' is not a class, struct, or union type
+     typedef typename C::value_type::second_type value_type;
+                                                 ^
+main.cpp:22:71: error: no matching function for call to 'write_graphviz(std::ostream&, Graph&, boost::default_writer&, boost::default_writer&, boost::default_writer&, boost::associative_property_map<int>)'
+     write_graphviz(std::cout, g, w, w, w, make_assoc_property_map(ids));
+                                                                       ^
+In file included from main.cpp:1:0:
+/usr/local/include/boost/graph/graphviz.hpp:249:3: note: candidate: template<class Graph, class VertexPropertiesWriter, class EdgePropertiesWriter, class GraphPropertiesWriter, class VertexID> void boost::write_graphviz(std::ostream&, const Graph&, VertexPropertiesWriter, EdgePropertiesWriter, GraphPropertiesWriter, VertexID, typename boost::enable_if_c<boost::is_base_and_derived<boost::vertex_list_graph_tag, typename boost::graph_traits<Graph>::traversal_category>::value, boost::graph::detail::no_parameter>::type)
+   write_graphviz
+   ^
+/usr/local/include/boost/graph/graphviz.hpp:249:3: note:   template argument deduction/substitution failed:
+In file included from main.cpp:1:0:
+/usr/local/include/boost/graph/graphviz.hpp:285:3: note: candidate: template<class Graph, class VertexPropertiesWriter, class EdgePropertiesWriter, class GraphPropertiesWriter> void boost::write_graphviz(std::ostream&, const Graph&, VertexPropertiesWriter, EdgePropertiesWriter, GraphPropertiesWriter, typename boost::enable_if_c<boost::is_base_and_derived<boost::vertex_list_graph_tag, typename boost::graph_traits<Graph>::traversal_category>::value, boost::graph::detail::no_parameter>::type)
+   write_graphviz(std::ostream& out, const Graph& g,
+   ^
+/usr/local/include/boost/graph/graphviz.hpp:285:3: note:   template argument deduction/substitution failed:
+/usr/local/include/boost/graph/graphviz.hpp:294:3: note: candidate: template<class Graph> void boost::write_graphviz(std::ostream&, const Graph&, typename boost::enable_if_c<boost::is_base_and_derived<boost::vertex_list_graph_tag, typename boost::graph_traits<Graph>::traversal_category>::value, boost::graph::detail::no_parameter>::type)
+   write_graphviz(std::ostream& out, const Graph& g
+   ^
+/usr/local/include/boost/graph/graphviz.hpp:294:3: note:   template argument deduction/substitution failed:
+main.cpp:22:71: note:   candidate expects 3 arguments, 6 provided
+     write_graphviz(std::cout, g, w, w, w, make_assoc_property_map(ids));
+                                                                       ^
+In file included from main.cpp:1:0:
+/usr/local/include/boost/graph/graphviz.hpp:304:3: note: candidate: template<class Graph, class VertexWriter> void boost::write_graphviz(std::ostream&, const Graph&, VertexWriter, typename boost::enable_if_c<boost::is_base_and_derived<boost::vertex_list_graph_tag, typename boost::graph_traits<Graph>::traversal_category>::value, boost::graph::detail::no_parameter>::type)
+   write_graphviz(std::ostream& out, const Graph& g, VertexWriter vw
+   ^
+/usr/local/include/boost/graph/graphviz.hpp:304:3: note:   template argument deduction/substitution failed:
+main.cpp:22:71: note:   candidate expects 4 arguments, 6 provided
+     write_graphviz(std::cout, g, w, w, w, make_assoc_property_map(ids));
+                                                                       ^
+In file included from main.cpp:1:0:
+/usr/local/include/boost/graph/graphviz.hpp:314:3: note: candidate: template<class Graph, class VertexWriter, class EdgeWriter> void boost::write_graphviz(std::ostream&, const Graph&, VertexWriter, EdgeWriter, typename boost::enable_if_c<boost::is_base_and_derived<boost::vertex_list_graph_tag, typename boost::graph_traits<Graph>::traversal_category>::value, boost::graph::detail::no_parameter>::type)
+   write_graphviz(std::ostream& out, const Graph& g,
+   ^
+/usr/local/include/boost/graph/graphviz.hpp:314:3: note:   template argument deduction/substitution failed:
+main.cpp:22:71: note:   candidate expects 5 arguments, 6 provided
+     write_graphviz(std::cout, g, w, w, w, make_assoc_property_map(ids));
+                                                                       ^
+In file included from main.cpp:1:0:
+/usr/local/include/boost/graph/graphviz.hpp:391:8: note: candidate: template<class Graph> void boost::write_graphviz(std::ostream&, const boost::subgraph<Graph>&)
+   void write_graphviz(std::ostream& out, const subgraph<Graph>& g) {
+        ^
+/usr/local/include/boost/graph/graphviz.hpp:391:8: note:   template argument deduction/substitution failed:
+main.cpp:22:71: note:   mismatched types 'const boost::subgraph<Graph>' and 'Graph {aka int}'
+     write_graphviz(std::cout, g, w, w, w, make_assoc_property_map(ids));
+                                                                       ^
+In file included from main.cpp:1:0:
+/usr/local/include/boost/graph/graphviz.hpp:402:8: note: candidate: template<class Graph> void boost::write_graphviz(const string&, const boost::subgraph<Graph>&)
+   void write_graphviz(const std::string& filename, const subgraph<Graph>& g) {
+        ^
+/usr/local/include/boost/graph/graphviz.hpp:402:8: note:   template argument deduction/substitution failed:
+main.cpp:22:71: note:   cannot convert 'std::cout' (type 'std::ostream {aka std::basic_ostream<char>}') to type 'const string& {aka const std::__cxx11::basic_string<char>&}'
+     write_graphviz(std::cout, g, w, w, w, make_assoc_property_map(ids));
+                                                                       ^
+In file included from main.cpp:1:0:
+/usr/local/include/boost/graph/graphviz.hpp:414:8: note: candidate: template<class Graph, class VertexID> void boost::write_graphviz(std::ostream&, const boost::subgraph<Graph>&, VertexID)
+   void write_graphviz(std::ostream& out, const subgraph<Graph>& g,
+        ^
+/usr/local/include/boost/graph/graphviz.hpp:414:8: note:   template argument deduction/substitution failed:
+main.cpp:22:71: note:   mismatched types 'const boost::subgraph<Graph>' and 'Graph {aka int}'
+     write_graphviz(std::cout, g, w, w, w, make_assoc_property_map(ids));
+                                                                       ^
+In file included from main.cpp:1:0:
+/usr/local/include/boost/graph/graphviz.hpp:427:8: note: candidate: template<class Graph, class VertexID> void boost::write_graphviz(const string&, const boost::subgraph<Graph>&, VertexID)
+   void write_graphviz(const std::string& filename, const subgraph<Graph>& g,
+        ^
+/usr/local/include/boost/graph/graphviz.hpp:427:8: note:   template argument deduction/substitution failed:
+main.cpp:22:71: note:   cannot convert 'std::cout' (type 'std::ostream {aka std::basic_ostream<char>}') to type 'const string& {aka const std::__cxx11::basic_string<char>&}'
+     write_graphviz(std::cout, g, w, w, w, make_assoc_property_map(ids));
+                                                                       ^
