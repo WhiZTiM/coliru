@@ -1,0 +1,21 @@
+main.cpp:4:69: error: two or more data types in declaration of 'average'
+ void float average( float , float , float , float, float *, float * ); // function prototype for average 
+                                                                     ^
+main.cpp: In function 'int main()':
+main.cpp:13:29: error: invalid operands of types 'const char [14]' and 'float' to binary 'operator&'
+  if (scanf(" %f,%f,%f,%f," &a,&b,&c,&d) !=4) 
+                             ^
+main.cpp:15:53: error: 'Printf' was not declared in this scope
+     Printf("There was an error, no 4 float number\n");
+                                                     ^
+main.cpp:19:34: error: expected primary-expression before ')' token
+   average(a,b,c,d,&suma,&average,);
+                                  ^
+main.cpp:19:34: error: 'average' cannot be used as a function
+main.cpp:22:54: error: 'Printf' was not declared in this scope
+        "  Y el average es %3.f", a,b,c,d,suma,average);
+                                                      ^
+main.cpp: In function 'float average(float, float, float, float, float*, float*)':
+main.cpp:34:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
