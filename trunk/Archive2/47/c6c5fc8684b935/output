@@ -1,0 +1,10 @@
++ g++ -std=c++1y -O2 -Wall -pedantic -pthread main.cpp
++ ./a.out
+static void Step<Start, Point1>::doAction()
+static void Step<Point1, Point2>::doAction()
+static void Step<Point2, End>::doAction()
++ clang++ -std=c++1y -O2 -Wall -pedantic -pthread main.cpp
++ ./a.out
+static void Step<Start, Point1>::doAction()
+static void Step<Point1, Point2>::doAction()
+static void Step<Point2, End>::doAction()
