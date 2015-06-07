@@ -1,0 +1,19 @@
+
+
+g++ libstdc++ ######################################################################################################
+
+main.cpp: In function 'int main()':
+main.cpp:6:22: error: taking address of xvalue (rvalue reference)
+     &derived{}.base::x;
+                      ^
+
+
+clang++ libc++ ######################################################################################################
+
+main.cpp:6:5: error: taking the address of a temporary object of type 'int' [-Waddress-of-temporary]
+    &derived{}.base::x;
+    ^~~~~~~~~~~~~~~~~~
+main.cpp:6:5: warning: expression result unused [-Wunused-value]
+    &derived{}.base::x;
+    ^~~~~~~~~~~~~~~~~~
+1 warning and 1 error generated.
