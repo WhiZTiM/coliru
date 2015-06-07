@@ -1,0 +1,102 @@
+#include <iostream>
+#include <vector>
+#include <algorithm>
+#include <thread>
+#include <random>
+#include <chrono>
+
+template <typename Iterator, typename Compare = std::less<typename Iterator::value_type>>
+void merge_sort(Iterator begin, Iterator end, Compare comp = Compare{})
+{
+    if (begin == end || std::next(begin) == end) return;
+
+	auto length = std::distance(begin, end);
+	
+	if (length <= 100)
+	{
+		for (auto i = begin; i != end; ++i) 
+		{
+        	std::rotate(std::upper_bound(begin, i, *i), i, std::next(i));
+    	}
+		return;
+	}
+
+	auto middle = begin;	
+	std::advance(middle, length / 2);
+
+	merge_sort(begin, middle, comp);
+	merge_sort(middle, end, comp);
+
+	std::inplace_merge(begin, middle, end);
+}
+
+template <typename Iterator, typename Compare = std::less<typename Iterator::value_type>>
+void parallel_merge_sort(Iterator begin, Iterator end, int threads = std::thread::hardware_concurrency(), Compare comp = Compare{})
+{
+	if (begin == end || std::next(begin) == end) return;
+
+	auto length = std::distance(begin, end);
+
+	if (length <= 100)
+	{
+		for (auto i = begin; i != end; ++i) 
+		{
+            std::rotate(std::upper_bound(begin, i, *i), i, std::next(i));
+    	}
+		return;
+	}
+
+	auto middle = begin;	
+	std::advance(middle, length / 2);
+
+	bool out_of_threads = (threads <= 0);
+
+	std::thread thread;
+
+	if (!out_of_threads)
+	{
+		thread = std::thread{parallel_merge_sort<Iterator>, begin, middle, threads/2 - 1, comp};
+		out_of_threads = ((threads + 1) <= 0);
+	}
+	else
+	{
+    	merge_sort(begin, middle, comp);
+	}
+
+	if (!out_of_threads)
+	{
+	    parallel_merge_sort(middle, end, threads/2 - 1, comp);
+	}
+	else
+	{
+		merge_sort(middle, end, comp);
+	}
+	
+	if (thread.joinable()) thread.join();
+	
+	std::inplace_merge(begin, middle, end);
+}
+
+int main()
+{
+	std::default_random_engine generator;
+	std::uniform_int_distribution<int> distribution(1,100000);
+
+	std::vector<int> v;
+	v.reserve(10000000);
+	for (int i = 0; i < 10000000; ++i)
+	{
+		v.push_back(distribution(generator));
+	}
+
+	auto start = std::chrono::high_resolution_clock::now();
+    
+	parallel_merge_sort(v.begin(), v.end(), 4);
+	
+	auto end = std::chrono::high_resolution_clock::now();
+
+	std::cout << std::chrono::duration<double, std::milli>(end - start).count() << std::endl;
+
+	return 0;
+}
+	
