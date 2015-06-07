@@ -1,0 +1,2 @@
+foo.setA(23) returns 23
+foo.setA(10)->setB(20) returns 20
