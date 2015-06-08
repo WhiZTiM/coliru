@@ -1,0 +1,6 @@
+main.cpp:1:2: error: expected constructor, destructor, or type conversion before '(' token
+ g(obj x) { 
+  ^
+main.cpp:6:2: error: expected constructor, destructor, or type conversion before '(' token
+ g(obj x) {
+  ^
