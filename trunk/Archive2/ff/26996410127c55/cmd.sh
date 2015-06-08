@@ -1,0 +1,1 @@
+g++ -std=c++1z -O3  -m64 -mavx512f -ffast-math -ftree-vectorize -ftree-vectorizer-verbose=3 -Wall -pedantic -pthread main.cpp -S  && cat main.s

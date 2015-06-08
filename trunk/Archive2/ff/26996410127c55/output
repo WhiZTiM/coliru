@@ -1,0 +1,109 @@
+	.file	"main.cpp"
+	.section	.text.unlikely,"ax",@progbits
+.LCOLDB0:
+	.text
+.LHOTB0:
+	.p2align 4,,15
+	.globl	_Z6testttPjS_jj
+	.type	_Z6testttPjS_jj, @function
+_Z6testttPjS_jj:
+.LFB0:
+	.cfi_startproc
+	testl	%ecx, %ecx
+	je	.L20
+	pushq	%rbx
+	.cfi_def_cfa_offset 16
+	.cfi_offset 3, -16
+	xorl	%r10d, %r10d
+.L17:
+	movl	$3839, %r9d
+	.p2align 4,,10
+	.p2align 3
+.L5:
+	leal	-1918(%r9), %r11d
+	.p2align 4,,10
+	.p2align 3
+.L4:
+	movl	%r11d, %r8d
+	leal	1(%r11), %edx
+	cmpl	$16777215, (%rdi,%r8,4)
+	je	.L3
+	leal	-1(%r11), %ebx
+	leal	-1920(%r11), %eax
+	movl	(%rdi,%rax,4), %eax
+	addl	(%rdi,%rbx,4), %eax
+	leal	-1921(%r11), %ebx
+	addl	(%rdi,%rbx,4), %eax
+	leal	-1919(%r11), %ebx
+	addl	(%rdi,%rbx,4), %eax
+	leal	1919(%r11), %ebx
+	addl	(%rdi,%rbx,4), %eax
+	leal	1920(%r11), %ebx
+	addl	$1921, %r11d
+	addl	(%rdi,%rbx,4), %eax
+	movl	%edx, %ebx
+	addl	(%rdi,%rbx,4), %eax
+	addl	(%rdi,%r11,4), %eax
+	shrl	$3, %eax
+	movl	%eax, (%rsi,%r8,4)
+.L3:
+	cmpl	%edx, %r9d
+	movl	%edx, %r11d
+	jne	.L4
+	addl	$1920, %r9d
+	cmpl	$2073599, %r9d
+	jne	.L5
+	movl	$3839, %r9d
+	.p2align 4,,10
+	.p2align 3
+.L8:
+	leal	-1918(%r9), %r11d
+	.p2align 4,,10
+	.p2align 3
+.L7:
+	movl	%r11d, %r8d
+	leal	1(%r11), %edx
+	cmpl	$16777215, (%rsi,%r8,4)
+	je	.L6
+	leal	-1(%r11), %ebx
+	leal	-1920(%r11), %eax
+	movl	(%rsi,%rax,4), %eax
+	addl	(%rsi,%rbx,4), %eax
+	leal	-1921(%r11), %ebx
+	addl	(%rsi,%rbx,4), %eax
+	leal	-1919(%r11), %ebx
+	addl	(%rsi,%rbx,4), %eax
+	leal	1919(%r11), %ebx
+	addl	(%rsi,%rbx,4), %eax
+	leal	1920(%r11), %ebx
+	addl	$1921, %r11d
+	addl	(%rsi,%rbx,4), %eax
+	movl	%edx, %ebx
+	addl	(%rsi,%rbx,4), %eax
+	addl	(%rsi,%r11,4), %eax
+	shrl	$3, %eax
+	movl	%eax, (%rdi,%r8,4)
+.L6:
+	cmpl	%r9d, %edx
+	movl	%edx, %r11d
+	jne	.L7
+	leal	1920(%rdx), %r9d
+	cmpl	$2073599, %r9d
+	jne	.L8
+	addl	$1, %r10d
+	cmpl	%r10d, %ecx
+	jne	.L17
+	popq	%rbx
+	.cfi_restore 3
+	.cfi_def_cfa_offset 8
+.L20:
+	ret
+	.cfi_endproc
+.LFE0:
+	.size	_Z6testttPjS_jj, .-_Z6testttPjS_jj
+	.section	.text.unlikely
+.LCOLDE0:
+	.text
+.LHOTE0:
+	.ident	"GCC: (GNU) 5.1.0"
+	.section	.note.GNU-stack,"",@progbits
