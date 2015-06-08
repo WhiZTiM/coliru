@@ -1,0 +1,73 @@
+	.file	"main.cpp"
+	.section	.text.unlikely,"ax",@progbits
+.LCOLDB0:
+	.text
+.LHOTB0:
+	.p2align 5,,31
+	.globl	_Z6testttPjS_jj
+	.type	_Z6testttPjS_jj, @function
+_Z6testttPjS_jj:
+.LFB0:
+	.cfi_startproc
+	testl	%ecx, %ecx
+	je	.L15
+	pushq	%rbx
+	.cfi_def_cfa_offset 16
+	.cfi_offset 3, -16
+	xorl	%r9d, %r9d
+.L11:
+	movl	$3839, %r8d
+	.p2align 5,,24
+	.p2align 3
+.L5:
+	leal	-1918(%r8), %r10d
+	.p2align 5,,24
+	.p2align 3
+.L4:
+	movl	%r10d, %edx
+	leal	1(%r10), %r11d
+	cmpl	$16777215, (%rdi,%rdx,4)
+	je	.L3
+	leal	-1920(%r10), %r11d
+	leal	-1(%r10), %eax
+	leal	1(%r10), %ebx
+	movl	(%rdi,%rax,4), %eax
+	addl	(%rdi,%r11,4), %eax
+	leal	-1921(%r10), %r11d
+	addl	(%rdi,%r11,4), %eax
+	leal	-1919(%r10), %r11d
+	addl	(%rdi,%r11,4), %eax
+	leal	1919(%r10), %r11d
+	addl	(%rdi,%r11,4), %eax
+	leal	1920(%r10), %r11d
+	addl	$1921, %r10d
+	addl	(%rdi,%r11,4), %eax
+	movq	%rbx, %r11
+	addl	(%rdi,%rbx,4), %eax
+	addl	(%rdi,%r10,4), %eax
+	shrl	$3, %eax
+	movl	%eax, (%rsi,%rdx,4)
+.L3:
+	cmpl	%r8d, %r11d
+	movl	%r11d, %r10d
+	jne	.L4
+	leal	1920(%r11), %r8d
+	cmpl	$2073599, %r8d
+	jne	.L5
+	incl	%r9d
+	cmpl	%r9d, %ecx
+	jne	.L11
+	popq	%rbx
+	.cfi_restore 3
+	.cfi_def_cfa_offset 8
+.L15:
+	ret
+	.cfi_endproc
+.LFE0:
+	.size	_Z6testttPjS_jj, .-_Z6testttPjS_jj
+	.section	.text.unlikely
+.LCOLDE0:
+	.text
+.LHOTE0:
+	.ident	"GCC: (GNU) 5.1.0"
+	.section	.note.GNU-stack,"",@progbits
