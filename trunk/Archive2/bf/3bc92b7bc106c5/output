@@ -1,0 +1,3 @@
+void Test<T>::aFunction(const Address&, const T&) [with T = std::__cxx11::basic_string<char>; Address = double]
+PN4TestINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEE7key_idxE
+PN4TestINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEE9value_idxE
