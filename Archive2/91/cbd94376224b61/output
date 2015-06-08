@@ -1,0 +1,10 @@
+Serial for size 1000: 0.15881
+Parallel for size 1000: 0.456194
+Serial for size 10000: 1.61317
+Parallel for size 10000: 0.936537
+Serial for size 100000: 18.9669
+Parallel for size 100000: 10.2109
+Serial for size 1000000: 191.257
+Parallel for size 1000000: 101.973
+Serial for size 10000000: 2104.63
+Parallel for size 10000000: 1180.06
