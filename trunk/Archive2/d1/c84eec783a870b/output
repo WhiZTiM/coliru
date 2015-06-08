@@ -1,0 +1,4 @@
+main.cpp:13:10: fatal error: 'boost/fusion/include/std_tuple.hpp' file not found
+#include <boost/fusion/include/std_tuple.hpp>
+         ^
+1 error generated.
