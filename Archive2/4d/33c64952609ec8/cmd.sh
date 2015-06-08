@@ -1,0 +1,1 @@
+g++ -std=c++1z -O3 -mtune=native -ffast-math -ftree-vectorize -Wall -pedantic -pthread main.cpp -S && cat main.s
