@@ -1,0 +1,4 @@
+main.cpp:1:1: error: use of undeclared identifier 'std'
+std::reverse(string.begin(), string.end());
+^
+1 error generated.
