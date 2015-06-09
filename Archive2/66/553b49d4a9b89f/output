@@ -1,0 +1,18 @@
+{
+    "TokenNo": "Deb123456",
+    "CPUID": "Deb123456",
+    "CommandID": "05",
+    "CommandStatus": "null",
+    "IsEncrypted": "0",
+    "CommandString": {
+        "Add": "97",
+        "EstbCD": "99999999",
+        "EID": "XY",
+        "CID": "0154400000",
+        "DATE": "14042015",
+        "TIME": "1835",
+        "IOMODE": "I",
+        "REASONCODE": "55",
+        "LAT": "87"
+    }
+}
