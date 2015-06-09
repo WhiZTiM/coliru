@@ -1,0 +1,7 @@
+Foo::Foo
+Foo::bar
+f(const Foo&)
+destroying p2...
+Foo::~Foo
+Foo::bar
+Foo::bar
