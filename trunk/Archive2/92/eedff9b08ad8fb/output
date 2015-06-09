@@ -1,0 +1,7 @@
+main.cpp:8:6: warning: the program should also define 'void operator delete(void*, long unsigned int)' [-Wsized-deallocation]
+ void operator delete(void* ptr) noexcept
+      ^
+global op new called, size = 4
+global op delete called
+global op new called, size = 40
+global op delete called
