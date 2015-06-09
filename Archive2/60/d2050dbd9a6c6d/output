@@ -1,0 +1,5 @@
+INT64
+assert(INT64 == INT64)
+terminate called after throwing an instance of 'std::experimental::fundamentals_v1::bad_any_cast'
+  what():  bad any_cast
+bash: line 7: 13225 Aborted                 (core dumped) ./a.out
