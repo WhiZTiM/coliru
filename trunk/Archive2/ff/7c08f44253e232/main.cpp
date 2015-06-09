@@ -1,0 +1,1 @@
+std::reverse(string.begin(), string.end());
