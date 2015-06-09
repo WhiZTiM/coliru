@@ -1,0 +1,129 @@
+In file included from main.cpp:2:
+/usr/include/c++/v1/algorithm:2357:16: error: array initializer must be an initializer list
+    value_type __tmp = _VSTD::move(*__first);
+               ^
+/usr/include/c++/v1/algorithm:2501:27: note: in instantiation of function template specialization 'std::__1::__rotate_left<int (*)[4]>' requested here
+            return _VSTD::__rotate_left(__first, __last);
+                          ^
+/usr/include/c++/v1/algorithm:2518:19: note: in instantiation of function template specialization 'std::__1::__rotate<int (*)[4]>' requested here
+    return _VSTD::__rotate(__first, __middle, __last,
+                  ^
+main.cpp:11:10: note: in instantiation of function template specialization 'std::__1::rotate<int (*)[4]>' requested here
+    std::rotate( p, p + 1, p + 3 ); // *** error: array type 'int [4]' is not assignable (LLVM)
+         ^
+In file included from main.cpp:2:
+/usr/include/c++/v1/algorithm:1876:19: error: array type 'int [4]' is not assignable
+        *__result = _VSTD::move(*__first);
+        ~~~~~~~~~ ^
+/usr/include/c++/v1/algorithm:1900:19: note: in instantiation of function template specialization 'std::__1::__move<int (*)[4], int (*)[4]>' requested here
+    return _VSTD::__move(__unwrap_iter(__first), __unwrap_iter(__last), __unwrap_iter(__result));
+                  ^
+/usr/include/c++/v1/algorithm:2358:37: note: in instantiation of function template specialization 'std::__1::move<int (*)[4], int (*)[4]>' requested here
+    _ForwardIterator __lm1 = _VSTD::move(_VSTD::next(__first), __last, __first);
+                                    ^
+/usr/include/c++/v1/algorithm:2501:27: note: in instantiation of function template specialization 'std::__1::__rotate_left<int (*)[4]>' requested here
+            return _VSTD::__rotate_left(__first, __last);
+                          ^
+/usr/include/c++/v1/algorithm:2518:19: note: in instantiation of function template specialization 'std::__1::__rotate<int (*)[4]>' requested here
+    return _VSTD::__rotate(__first, __middle, __last,
+                  ^
+main.cpp:11:10: note: in instantiation of function template specialization 'std::__1::rotate<int (*)[4]>' requested here
+    std::rotate( p, p + 1, p + 3 ); // *** error: array type 'int [4]' is not assignable (LLVM)
+         ^
+In file included from main.cpp:2:
+/usr/include/c++/v1/algorithm:2369:16: error: array initializer must be an initializer list
+    value_type __tmp = _VSTD::move(*__lm1);
+               ^
+/usr/include/c++/v1/algorithm:2503:27: note: in instantiation of function template specialization 'std::__1::__rotate_right<int (*)[4]>' requested here
+            return _VSTD::__rotate_right(__first, __last);
+                          ^
+/usr/include/c++/v1/algorithm:2518:19: note: in instantiation of function template specialization 'std::__1::__rotate<int (*)[4]>' requested here
+    return _VSTD::__rotate(__first, __middle, __last,
+                  ^
+main.cpp:11:10: note: in instantiation of function template specialization 'std::__1::rotate<int (*)[4]>' requested here
+    std::rotate( p, p + 1, p + 3 ); // *** error: array type 'int [4]' is not assignable (LLVM)
+         ^
+In file included from main.cpp:2:
+/usr/include/c++/v1/algorithm:1911:21: error: array type 'int [4]' is not assignable
+        *--__result = _VSTD::move(*--__last);
+        ~~~~~~~~~~~ ^
+/usr/include/c++/v1/algorithm:1937:19: note: in instantiation of function template specialization 'std::__1::__move_backward<int (*)[4], int (*)[4]>' requested here
+    return _VSTD::__move_backward(__unwrap_iter(__first), __unwrap_iter(__last), __unwrap_iter(__result));
+                  ^
+/usr/include/c++/v1/algorithm:2370:43: note: in instantiation of function template specialization 'std::__1::move_backward<int (*)[4], int (*)[4]>' requested here
+    _BidirectionalIterator __fp1 = _VSTD::move_backward(__first, __lm1, __last);
+                                          ^
+/usr/include/c++/v1/algorithm:2503:27: note: in instantiation of function template specialization 'std::__1::__rotate_right<int (*)[4]>' requested here
+            return _VSTD::__rotate_right(__first, __last);
+                          ^
+/usr/include/c++/v1/algorithm:2518:19: note: in instantiation of function template specialization 'std::__1::__rotate<int (*)[4]>' requested here
+    return _VSTD::__rotate(__first, __middle, __last,
+                  ^
+main.cpp:11:10: note: in instantiation of function template specialization 'std::__1::rotate<int (*)[4]>' requested here
+    std::rotate( p, p + 1, p + 3 ); // *** error: array type 'int [4]' is not assignable (LLVM)
+         ^
+In file included from main.cpp:2:
+/usr/include/c++/v1/algorithm:2441:20: error: array initializer must be an initializer list
+        value_type __t(_VSTD::move(*--__p));
+                   ^
+/usr/include/c++/v1/algorithm:2504:23: note: in instantiation of function template specialization 'std::__1::__rotate_gcd<int (*)[4]>' requested here
+        return _VSTD::__rotate_gcd(__first, __middle, __last);
+                      ^
+/usr/include/c++/v1/algorithm:2518:19: note: in instantiation of function template specialization 'std::__1::__rotate<int (*)[4]>' requested here
+    return _VSTD::__rotate(__first, __middle, __last,
+                  ^
+main.cpp:11:10: note: in instantiation of function template specialization 'std::__1::rotate<int (*)[4]>' requested here
+    std::rotate( p, p + 1, p + 3 ); // *** error: array type 'int [4]' is not assignable (LLVM)
+         ^
+In file included from main.cpp:2:
+/usr/include/c++/v1/algorithm:2446:19: error: array type 'int [4]' is not assignable
+            *__p1 = _VSTD::move(*__p2);
+            ~~~~~ ^
+In file included from main.cpp:2:
+In file included from /usr/include/c++/v1/algorithm:627:
+/usr/include/c++/v1/utility:211:9: error: call to function 'swap' that is neither visible in the template definition nor found by argument-dependent lookup
+        swap(*__first1, *__first2);
+        ^
+/usr/include/c++/v1/algorithm:2435:16: note: in instantiation of function template specialization 'std::__1::swap_ranges<int (*)[4], int (*)[4]>' requested here
+        _VSTD::swap_ranges(__first, __middle, __middle);
+               ^
+/usr/include/c++/v1/algorithm:2504:23: note: in instantiation of function template specialization 'std::__1::__rotate_gcd<int (*)[4]>' requested here
+        return _VSTD::__rotate_gcd(__first, __middle, __last);
+                      ^
+/usr/include/c++/v1/algorithm:2518:19: note: in instantiation of function template specialization 'std::__1::__rotate<int (*)[4]>' requested here
+    return _VSTD::__rotate(__first, __middle, __last,
+                  ^
+main.cpp:11:10: note: in instantiation of function template specialization 'std::__1::rotate<int (*)[4]>' requested here
+    std::rotate( p, p + 1, p + 3 ); // *** error: array type 'int [4]' is not assignable (LLVM)
+         ^
+/usr/include/c++/v1/utility:218:1: note: 'swap' should be declared prior to the call site
+swap(_Tp (&__a)[_Np], _Tp (&__b)[_Np]) _NOEXCEPT_(__is_nothrow_swappable<_Tp>::value)
+^
+7 errors generated.
+error
+------------
+In file included from /usr/local/include/c++/5.1.0/bits/stl_iterator.h:65:0,
+                 from /usr/local/include/c++/5.1.0/iterator:63,
+                 from main.cpp:1:
+/usr/local/include/c++/5.1.0/bits/stl_algo.h: In instantiation of '_RandomAccessIterator std::_V2::__rotate(_RandomAccessIterator, _RandomAccessIterator, _RandomAccessIterator, std::random_access_iterator_tag) [with _RandomAccessIterator = int (*)[4]]':
+/usr/local/include/c++/5.1.0/bits/stl_algo.h:1440:27:   required from '_FIter std::_V2::rotate(_FIter, _FIter, _FIter) [with _FIter = int (*)[4]]'
+main.cpp:11:34:   required from here
+/usr/local/include/c++/5.1.0/bits/stl_algo.h:1362:22: error: array must be initialized with a brace-enclosed initializer
+     _ValueType __t = _GLIBCXX_MOVE(*__p);
+                      ^
+In file included from /usr/local/include/c++/5.1.0/algorithm:62:0,
+                 from main.cpp:2:
+/usr/local/include/c++/5.1.0/bits/stl_algo.h:1364:22: error: invalid array assignment
+     *(__p + __n - 1) = _GLIBCXX_MOVE(__t);
+                      ^
+In file included from /usr/local/include/c++/5.1.0/bits/stl_iterator.h:65:0,
+                 from /usr/local/include/c++/5.1.0/iterator:63,
+                 from main.cpp:1:
+/usr/local/include/c++/5.1.0/bits/stl_algo.h:1385:22: error: array must be initialized with a brace-enclosed initializer
+     _ValueType __t = _GLIBCXX_MOVE(*(__p + __n - 1));
+                      ^
+In file included from /usr/local/include/c++/5.1.0/algorithm:62:0,
+                 from main.cpp:2:
+/usr/local/include/c++/5.1.0/bits/stl_algo.h:1387:10: error: invalid array assignment
+     *__p = _GLIBCXX_MOVE(__t);
+          ^
