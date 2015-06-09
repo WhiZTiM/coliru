@@ -1,0 +1,1 @@
+gcc -O2 -Wall -Wno-unused-variable main.cpp && ./a.out
