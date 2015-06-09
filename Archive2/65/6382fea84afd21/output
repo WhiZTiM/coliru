@@ -1,0 +1,10 @@
+main.cpp:26:49: error: macro "assert" passed 2 arguments, but takes just 1
+       assert(index  < Size, "Index out of range");
+                                                 ^
+main.cpp:10:27: error: expected ')' before '<' token
+    myarray(intializer_list<TArray>values)
+                           ^
+main.cpp:41:1: error: expected '}' at end of input
+ }
+ ^
+main.cpp:41:1: error: expected unqualified-id at end of input
