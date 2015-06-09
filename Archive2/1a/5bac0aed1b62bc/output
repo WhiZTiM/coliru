@@ -1,0 +1,4 @@
+main.cpp: In function 'void f(int, const double*)':
+main.cpp:6:6: error: increment of read-only parameter 'a'
+     a++; // This should not compile
+      ^
