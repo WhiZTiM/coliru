@@ -1,0 +1,8 @@
+{
+    "TokenNo": "Deb123456",
+    "CPUID": "Deb123456",
+    "CommandID": "05",
+    "CommandStatus": "null",
+    "IsEncrypted": "0",
+    "CommandString": "{\n    \"Add\": \"97\",\n    \"EstbCD\": \"99999999\",\n    \"EID\": \"XY\",\n    \"CID\": \"0154400000\",\n    \"DATE\": \"14042015\",\n    \"TIME\": \"1835\",\n    \"IOMODE\": \"I\",\n    \"REASONCODE\": \"55\",\n    \"LAT\": \"87\"\n}\n"
+}
