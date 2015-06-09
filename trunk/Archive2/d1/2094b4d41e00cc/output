@@ -1,0 +1,16 @@
+main.cpp:1:21: error: use of undeclared identifier 'std'
+auto foo = [](const std::string &s) {
+                    ^
+main.cpp:2:23: error: unknown type name 'Building'
+    return [&s](const Building &b) {
+                      ^
+main.cpp:2:33: warning: unused parameter 'b' [-Wunused-parameter]
+    return [&s](const Building &b) {
+                                ^
+main.cpp:1:34: warning: unused parameter 's' [-Wunused-parameter]
+auto foo = [](const std::string &s) {
+                                 ^
+main.cpp:7:1: error: use of undeclared identifier 'std'
+std::find_if(begin(nodes_), end(nodes_), foo(code));
+^
+2 warnings and 3 errors generated.
