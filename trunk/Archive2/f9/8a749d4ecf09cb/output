@@ -1,0 +1,11 @@
+main.cpp:3:14: error: expected unqualified-id
+    float f, const c =9.9;
+             ^
+main.cpp:3:13: error: expected ';' at end of declaration
+    float f, const c =9.9;
+            ^
+            ;
+main.cpp:3:20: error: C++ requires a type specifier for all declarations
+    float f, const c =9.9;
+             ~~~~~ ^
+3 errors generated.
