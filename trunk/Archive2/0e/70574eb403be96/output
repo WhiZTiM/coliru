@@ -1,0 +1,4 @@
+main.cpp: In function 'int main(int, char**)':
+main.cpp:2:14: error: expected unqualified-id before 'const'
+     float f, const c = 9.9;
+              ^
