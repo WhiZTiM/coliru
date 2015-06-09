@@ -1,0 +1,8 @@
+Sleep 4 secs
+Try to have the lock
+1
+2
+3
+4
+I have the lock !
+It works with g++-4.9 (c++11) but not with g++-4.8 (c++11)
