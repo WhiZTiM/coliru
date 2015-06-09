@@ -1,0 +1,3 @@
+void HasEmpty::EMPTY()
+void EMPTY_detail::EMPTY(T&, ...) [with T = HasNoEmpty]
+void EMPTY_detail::EMPTY(T&, ...) [with T = int]
