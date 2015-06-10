@@ -1,0 +1,5648 @@
+StackAllocator::allocate n=1 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=0
+StackAllocator::allocate n=2 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=8
+StackAllocator::allocate n=3 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=16
+StackAllocator::allocate n=1 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=24
+StackAllocator::allocate n=2 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=32
+StackAllocator::deallocate n=1 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=40
+pointer_in_buffer: p=0
+BORING Freed=8 Unfreed=32
+StackAllocator::allocate n=4 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=40
+StackAllocator::deallocate n=2 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=48
+pointer_in_buffer: p=8
+BORING Freed=16 Unfreed=32
+StackAllocator::allocate n=6 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=48
+StackAllocator::deallocate n=3 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=56
+pointer_in_buffer: p=16
+BORING Freed=24 Unfreed=32
+==== BEGIN CLEANUP ====
+StackAllocator::deallocate n=1 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=56
+pointer_in_buffer: p=24
+BORING Freed=32 Unfreed=24
+StackAllocator::deallocate n=2 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=56
+pointer_in_buffer: p=32
+BORING Freed=40 Unfreed=16
+StackAllocator::deallocate n=4 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=56
+pointer_in_buffer: p=40
+BORING Freed=48 Unfreed=8
+StackAllocator::deallocate n=6 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=56
+pointer_in_buffer: p=48
+Lucky all freed
+==== END CLEANUP ====
+StackAllocator::allocate n=1 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=0
+StackAllocator::allocate n=1 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=8
+StackAllocator::allocate n=1 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=16
+StackAllocator::allocate n=1 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=24
+StackAllocator::allocate n=2 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=32
+StackAllocator::deallocate n=1 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=40
+pointer_in_buffer: p=0
+BORING Freed=8 Unfreed=32
+StackAllocator::allocate n=2 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=40
+StackAllocator::deallocate n=1 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=48
+pointer_in_buffer: p=8
+BORING Freed=16 Unfreed=32
+StackAllocator::allocate n=2 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=48
+StackAllocator::deallocate n=1 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=56
+pointer_in_buffer: p=16
+BORING Freed=24 Unfreed=32
+StackAllocator::allocate n=2 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=56
+StackAllocator::deallocate n=1 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=64
+pointer_in_buffer: p=24
+BORING Freed=32 Unfreed=32
+StackAllocator::allocate n=4 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=64
+StackAllocator::deallocate n=2 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=72
+pointer_in_buffer: p=32
+BORING Freed=40 Unfreed=32
+StackAllocator::allocate n=4 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=72
+StackAllocator::deallocate n=2 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=80
+pointer_in_buffer: p=40
+BORING Freed=48 Unfreed=32
+StackAllocator::allocate n=4 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=80
+StackAllocator::deallocate n=2 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=88
+pointer_in_buffer: p=48
+BORING Freed=56 Unfreed=32
+StackAllocator::allocate n=4 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=88
+StackAllocator::deallocate n=2 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=96
+pointer_in_buffer: p=56
+BORING Freed=64 Unfreed=32
+StackAllocator::allocate n=8 sizeof(T)=1 alloc_size=8 index=1
+pointer_in_buffer: p=0
+StackAllocator::deallocate n=4 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=96
+pointer_in_buffer: p=64
+BORING Freed=72 Unfreed=24
+StackAllocator::allocate n=8 sizeof(T)=1 alloc_size=8 index=1
+pointer_in_buffer: p=8
+StackAllocator::deallocate n=4 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=96
+pointer_in_buffer: p=72
+BORING Freed=80 Unfreed=16
+StackAllocator::allocate n=8 sizeof(T)=1 alloc_size=8 index=1
+pointer_in_buffer: p=16
+StackAllocator::deallocate n=4 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=96
+pointer_in_buffer: p=80
+BORING Freed=88 Unfreed=8
+StackAllocator::allocate n=8 sizeof(T)=1 alloc_size=8 index=1
+pointer_in_buffer: p=24
+StackAllocator::deallocate n=4 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=96
+pointer_in_buffer: p=88
+Lucky all freed
+StackAllocator::allocate n=16 sizeof(T)=1 alloc_size=16 index=2
+pointer_in_buffer: p=0
+StackAllocator::deallocate n=8 sizeof(T)=1 alloc_size=8 index=1
+deallocate
+pointer_in_buffer: p=32
+pointer_in_buffer: p=0
+BORING Freed=8 Unfreed=24
+StackAllocator::allocate n=16 sizeof(T)=1 alloc_size=16 index=2
+pointer_in_buffer: p=16
+StackAllocator::deallocate n=8 sizeof(T)=1 alloc_size=8 index=1
+deallocate
+pointer_in_buffer: p=32
+pointer_in_buffer: p=8
+BORING Freed=16 Unfreed=16
+StackAllocator::allocate n=16 sizeof(T)=1 alloc_size=16 index=2
+pointer_in_buffer: p=32
+StackAllocator::deallocate n=8 sizeof(T)=1 alloc_size=8 index=1
+deallocate
+pointer_in_buffer: p=32
+pointer_in_buffer: p=16
+BORING Freed=24 Unfreed=8
+StackAllocator::allocate n=16 sizeof(T)=1 alloc_size=16 index=2
+pointer_in_buffer: p=48
+StackAllocator::deallocate n=8 sizeof(T)=1 alloc_size=8 index=1
+deallocate
+pointer_in_buffer: p=32
+pointer_in_buffer: p=24
+Lucky all freed
+==== BEGIN CLEANUP ====
+StackAllocator::deallocate n=16 sizeof(T)=1 alloc_size=16 index=2
+deallocate
+pointer_in_buffer: p=64
+pointer_in_buffer: p=0
+BORING Freed=16 Unfreed=48
+StackAllocator::deallocate n=16 sizeof(T)=1 alloc_size=16 index=2
+deallocate
+pointer_in_buffer: p=64
+pointer_in_buffer: p=16
+BORING Freed=32 Unfreed=32
+StackAllocator::deallocate n=16 sizeof(T)=1 alloc_size=16 index=2
+deallocate
+pointer_in_buffer: p=64
+pointer_in_buffer: p=32
+BORING Freed=48 Unfreed=16
+StackAllocator::deallocate n=16 sizeof(T)=1 alloc_size=16 index=2
+deallocate
+pointer_in_buffer: p=64
+pointer_in_buffer: p=48
+Lucky all freed
+==== END CLEANUP ====
+StackAllocator::allocate n=1 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=0
+StackAllocator::allocate n=1 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=8
+StackAllocator::allocate n=1 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=16
+StackAllocator::allocate n=1 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=24
+StackAllocator::allocate n=2 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=32
+StackAllocator::deallocate n=1 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=40
+pointer_in_buffer: p=0
+BORING Freed=8 Unfreed=32
+StackAllocator::allocate n=2 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=40
+StackAllocator::deallocate n=1 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=48
+pointer_in_buffer: p=8
+BORING Freed=16 Unfreed=32
+StackAllocator::allocate n=2 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=48
+StackAllocator::deallocate n=1 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=56
+pointer_in_buffer: p=16
+BORING Freed=24 Unfreed=32
+StackAllocator::allocate n=2 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=56
+StackAllocator::deallocate n=1 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=64
+pointer_in_buffer: p=24
+BORING Freed=32 Unfreed=32
+StackAllocator::allocate n=4 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=64
+StackAllocator::deallocate n=2 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=72
+pointer_in_buffer: p=32
+BORING Freed=40 Unfreed=32
+StackAllocator::allocate n=4 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=72
+StackAllocator::deallocate n=2 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=80
+pointer_in_buffer: p=40
+BORING Freed=48 Unfreed=32
+StackAllocator::allocate n=4 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=80
+StackAllocator::deallocate n=2 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=88
+pointer_in_buffer: p=48
+BORING Freed=56 Unfreed=32
+StackAllocator::allocate n=4 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=88
+StackAllocator::deallocate n=2 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=96
+pointer_in_buffer: p=56
+BORING Freed=64 Unfreed=32
+StackAllocator::allocate n=8 sizeof(T)=1 alloc_size=8 index=1
+pointer_in_buffer: p=0
+StackAllocator::deallocate n=4 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=96
+pointer_in_buffer: p=64
+BORING Freed=72 Unfreed=24
+StackAllocator::allocate n=8 sizeof(T)=1 alloc_size=8 index=1
+pointer_in_buffer: p=8
+StackAllocator::deallocate n=4 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=96
+pointer_in_buffer: p=72
+BORING Freed=80 Unfreed=16
+StackAllocator::allocate n=8 sizeof(T)=1 alloc_size=8 index=1
+pointer_in_buffer: p=16
+StackAllocator::deallocate n=4 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=96
+pointer_in_buffer: p=80
+BORING Freed=88 Unfreed=8
+StackAllocator::allocate n=8 sizeof(T)=1 alloc_size=8 index=1
+pointer_in_buffer: p=24
+StackAllocator::deallocate n=4 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=96
+pointer_in_buffer: p=88
+Lucky all freed
+StackAllocator::allocate n=16 sizeof(T)=1 alloc_size=16 index=2
+pointer_in_buffer: p=0
+StackAllocator::deallocate n=8 sizeof(T)=1 alloc_size=8 index=1
+deallocate
+pointer_in_buffer: p=32
+pointer_in_buffer: p=0
+BORING Freed=8 Unfreed=24
+StackAllocator::allocate n=16 sizeof(T)=1 alloc_size=16 index=2
+pointer_in_buffer: p=16
+StackAllocator::deallocate n=8 sizeof(T)=1 alloc_size=8 index=1
+deallocate
+pointer_in_buffer: p=32
+pointer_in_buffer: p=8
+BORING Freed=16 Unfreed=16
+StackAllocator::allocate n=16 sizeof(T)=1 alloc_size=16 index=2
+pointer_in_buffer: p=32
+StackAllocator::deallocate n=8 sizeof(T)=1 alloc_size=8 index=1
+deallocate
+pointer_in_buffer: p=32
+pointer_in_buffer: p=16
+BORING Freed=24 Unfreed=8
+StackAllocator::allocate n=16 sizeof(T)=1 alloc_size=16 index=2
+pointer_in_buffer: p=48
+StackAllocator::deallocate n=8 sizeof(T)=1 alloc_size=8 index=1
+deallocate
+pointer_in_buffer: p=32
+pointer_in_buffer: p=24
+Lucky all freed
+==== BEGIN CLEANUP ====
+StackAllocator::deallocate n=16 sizeof(T)=1 alloc_size=16 index=2
+deallocate
+pointer_in_buffer: p=64
+pointer_in_buffer: p=0
+BORING Freed=16 Unfreed=48
+StackAllocator::deallocate n=16 sizeof(T)=1 alloc_size=16 index=2
+deallocate
+pointer_in_buffer: p=64
+pointer_in_buffer: p=16
+BORING Freed=32 Unfreed=32
+StackAllocator::deallocate n=16 sizeof(T)=1 alloc_size=16 index=2
+deallocate
+pointer_in_buffer: p=64
+pointer_in_buffer: p=32
+BORING Freed=48 Unfreed=16
+StackAllocator::deallocate n=16 sizeof(T)=1 alloc_size=16 index=2
+deallocate
+pointer_in_buffer: p=64
+pointer_in_buffer: p=48
+Lucky all freed
+==== END CLEANUP ====
+StackAllocator::allocate n=1 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=0
+StackAllocator::allocate n=1 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=8
+StackAllocator::allocate n=1 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=16
+StackAllocator::allocate n=1 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=24
+StackAllocator::allocate n=2 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=32
+StackAllocator::deallocate n=1 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=40
+pointer_in_buffer: p=0
+BORING Freed=8 Unfreed=32
+StackAllocator::allocate n=2 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=40
+StackAllocator::deallocate n=1 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=48
+pointer_in_buffer: p=8
+BORING Freed=16 Unfreed=32
+StackAllocator::allocate n=2 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=48
+StackAllocator::deallocate n=1 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=56
+pointer_in_buffer: p=16
+BORING Freed=24 Unfreed=32
+StackAllocator::allocate n=2 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=56
+StackAllocator::deallocate n=1 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=64
+pointer_in_buffer: p=24
+BORING Freed=32 Unfreed=32
+StackAllocator::allocate n=4 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=64
+StackAllocator::deallocate n=2 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=72
+pointer_in_buffer: p=32
+BORING Freed=40 Unfreed=32
+StackAllocator::allocate n=4 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=72
+StackAllocator::deallocate n=2 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=80
+pointer_in_buffer: p=40
+BORING Freed=48 Unfreed=32
+StackAllocator::allocate n=4 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=80
+StackAllocator::deallocate n=2 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=88
+pointer_in_buffer: p=48
+BORING Freed=56 Unfreed=32
+StackAllocator::allocate n=4 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=88
+StackAllocator::deallocate n=2 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=96
+pointer_in_buffer: p=56
+BORING Freed=64 Unfreed=32
+StackAllocator::allocate n=8 sizeof(T)=1 alloc_size=8 index=1
+pointer_in_buffer: p=0
+StackAllocator::deallocate n=4 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=96
+pointer_in_buffer: p=64
+BORING Freed=72 Unfreed=24
+StackAllocator::allocate n=8 sizeof(T)=1 alloc_size=8 index=1
+pointer_in_buffer: p=8
+StackAllocator::deallocate n=4 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=96
+pointer_in_buffer: p=72
+BORING Freed=80 Unfreed=16
+StackAllocator::allocate n=8 sizeof(T)=1 alloc_size=8 index=1
+pointer_in_buffer: p=16
+StackAllocator::deallocate n=4 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=96
+pointer_in_buffer: p=80
+BORING Freed=88 Unfreed=8
+StackAllocator::allocate n=8 sizeof(T)=1 alloc_size=8 index=1
+pointer_in_buffer: p=24
+StackAllocator::deallocate n=4 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=96
+pointer_in_buffer: p=88
+Lucky all freed
+StackAllocator::allocate n=16 sizeof(T)=1 alloc_size=16 index=2
+pointer_in_buffer: p=0
+StackAllocator::deallocate n=8 sizeof(T)=1 alloc_size=8 index=1
+deallocate
+pointer_in_buffer: p=32
+pointer_in_buffer: p=0
+BORING Freed=8 Unfreed=24
+StackAllocator::allocate n=16 sizeof(T)=1 alloc_size=16 index=2
+pointer_in_buffer: p=16
+StackAllocator::deallocate n=8 sizeof(T)=1 alloc_size=8 index=1
+deallocate
+pointer_in_buffer: p=32
+pointer_in_buffer: p=8
+BORING Freed=16 Unfreed=16
+StackAllocator::allocate n=16 sizeof(T)=1 alloc_size=16 index=2
+pointer_in_buffer: p=32
+StackAllocator::deallocate n=8 sizeof(T)=1 alloc_size=8 index=1
+deallocate
+pointer_in_buffer: p=32
+pointer_in_buffer: p=16
+BORING Freed=24 Unfreed=8
+StackAllocator::allocate n=16 sizeof(T)=1 alloc_size=16 index=2
+pointer_in_buffer: p=48
+StackAllocator::deallocate n=8 sizeof(T)=1 alloc_size=8 index=1
+deallocate
+pointer_in_buffer: p=32
+pointer_in_buffer: p=24
+Lucky all freed
+==== BEGIN CLEANUP ====
+StackAllocator::deallocate n=16 sizeof(T)=1 alloc_size=16 index=2
+deallocate
+pointer_in_buffer: p=64
+pointer_in_buffer: p=0
+BORING Freed=16 Unfreed=48
+StackAllocator::deallocate n=16 sizeof(T)=1 alloc_size=16 index=2
+deallocate
+pointer_in_buffer: p=64
+pointer_in_buffer: p=16
+BORING Freed=32 Unfreed=32
+StackAllocator::deallocate n=16 sizeof(T)=1 alloc_size=16 index=2
+deallocate
+pointer_in_buffer: p=64
+pointer_in_buffer: p=32
+BORING Freed=48 Unfreed=16
+StackAllocator::deallocate n=16 sizeof(T)=1 alloc_size=16 index=2
+deallocate
+pointer_in_buffer: p=64
+pointer_in_buffer: p=48
+Lucky all freed
+==== END CLEANUP ====
+StackAllocator::allocate n=1 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=0
+StackAllocator::allocate n=1 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=8
+StackAllocator::allocate n=1 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=16
+StackAllocator::allocate n=1 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=24
+StackAllocator::allocate n=2 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=32
+StackAllocator::deallocate n=1 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=40
+pointer_in_buffer: p=0
+BORING Freed=8 Unfreed=32
+StackAllocator::allocate n=2 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=40
+StackAllocator::deallocate n=1 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=48
+pointer_in_buffer: p=8
+BORING Freed=16 Unfreed=32
+StackAllocator::allocate n=2 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=48
+StackAllocator::deallocate n=1 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=56
+pointer_in_buffer: p=16
+BORING Freed=24 Unfreed=32
+StackAllocator::allocate n=2 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=56
+StackAllocator::deallocate n=1 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=64
+pointer_in_buffer: p=24
+BORING Freed=32 Unfreed=32
+StackAllocator::allocate n=4 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=64
+StackAllocator::deallocate n=2 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=72
+pointer_in_buffer: p=32
+BORING Freed=40 Unfreed=32
+StackAllocator::allocate n=4 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=72
+StackAllocator::deallocate n=2 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=80
+pointer_in_buffer: p=40
+BORING Freed=48 Unfreed=32
+StackAllocator::allocate n=4 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=80
+StackAllocator::deallocate n=2 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=88
+pointer_in_buffer: p=48
+BORING Freed=56 Unfreed=32
+StackAllocator::allocate n=4 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=88
+StackAllocator::deallocate n=2 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=96
+pointer_in_buffer: p=56
+BORING Freed=64 Unfreed=32
+StackAllocator::allocate n=8 sizeof(T)=1 alloc_size=8 index=1
+pointer_in_buffer: p=0
+StackAllocator::deallocate n=4 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=96
+pointer_in_buffer: p=64
+BORING Freed=72 Unfreed=24
+StackAllocator::allocate n=8 sizeof(T)=1 alloc_size=8 index=1
+pointer_in_buffer: p=8
+StackAllocator::deallocate n=4 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=96
+pointer_in_buffer: p=72
+BORING Freed=80 Unfreed=16
+StackAllocator::allocate n=8 sizeof(T)=1 alloc_size=8 index=1
+pointer_in_buffer: p=16
+StackAllocator::deallocate n=4 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=96
+pointer_in_buffer: p=80
+BORING Freed=88 Unfreed=8
+StackAllocator::allocate n=8 sizeof(T)=1 alloc_size=8 index=1
+pointer_in_buffer: p=24
+StackAllocator::deallocate n=4 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=96
+pointer_in_buffer: p=88
+Lucky all freed
+StackAllocator::allocate n=16 sizeof(T)=1 alloc_size=16 index=2
+pointer_in_buffer: p=0
+StackAllocator::deallocate n=8 sizeof(T)=1 alloc_size=8 index=1
+deallocate
+pointer_in_buffer: p=32
+pointer_in_buffer: p=0
+BORING Freed=8 Unfreed=24
+StackAllocator::allocate n=16 sizeof(T)=1 alloc_size=16 index=2
+pointer_in_buffer: p=16
+StackAllocator::deallocate n=8 sizeof(T)=1 alloc_size=8 index=1
+deallocate
+pointer_in_buffer: p=32
+pointer_in_buffer: p=8
+BORING Freed=16 Unfreed=16
+StackAllocator::allocate n=16 sizeof(T)=1 alloc_size=16 index=2
+pointer_in_buffer: p=32
+StackAllocator::deallocate n=8 sizeof(T)=1 alloc_size=8 index=1
+deallocate
+pointer_in_buffer: p=32
+pointer_in_buffer: p=16
+BORING Freed=24 Unfreed=8
+StackAllocator::allocate n=16 sizeof(T)=1 alloc_size=16 index=2
+pointer_in_buffer: p=48
+StackAllocator::deallocate n=8 sizeof(T)=1 alloc_size=8 index=1
+deallocate
+pointer_in_buffer: p=32
+pointer_in_buffer: p=24
+Lucky all freed
+==== BEGIN CLEANUP ====
+StackAllocator::deallocate n=16 sizeof(T)=1 alloc_size=16 index=2
+deallocate
+pointer_in_buffer: p=64
+pointer_in_buffer: p=0
+BORING Freed=16 Unfreed=48
+StackAllocator::deallocate n=16 sizeof(T)=1 alloc_size=16 index=2
+deallocate
+pointer_in_buffer: p=64
+pointer_in_buffer: p=16
+BORING Freed=32 Unfreed=32
+StackAllocator::deallocate n=16 sizeof(T)=1 alloc_size=16 index=2
+deallocate
+pointer_in_buffer: p=64
+pointer_in_buffer: p=32
+BORING Freed=48 Unfreed=16
+StackAllocator::deallocate n=16 sizeof(T)=1 alloc_size=16 index=2
+deallocate
+pointer_in_buffer: p=64
+pointer_in_buffer: p=48
+Lucky all freed
+==== END CLEANUP ====
+StackAllocator::allocate n=1 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=0
+StackAllocator::allocate n=1 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=8
+StackAllocator::allocate n=1 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=16
+StackAllocator::allocate n=1 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=24
+StackAllocator::allocate n=2 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=32
+StackAllocator::deallocate n=1 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=40
+pointer_in_buffer: p=0
+BORING Freed=8 Unfreed=32
+StackAllocator::allocate n=2 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=40
+StackAllocator::deallocate n=1 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=48
+pointer_in_buffer: p=8
+BORING Freed=16 Unfreed=32
+StackAllocator::allocate n=2 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=48
+StackAllocator::deallocate n=1 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=56
+pointer_in_buffer: p=16
+BORING Freed=24 Unfreed=32
+StackAllocator::allocate n=2 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=56
+StackAllocator::deallocate n=1 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=64
+pointer_in_buffer: p=24
+BORING Freed=32 Unfreed=32
+StackAllocator::allocate n=4 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=64
+StackAllocator::deallocate n=2 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=72
+pointer_in_buffer: p=32
+BORING Freed=40 Unfreed=32
+StackAllocator::allocate n=4 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=72
+StackAllocator::deallocate n=2 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=80
+pointer_in_buffer: p=40
+BORING Freed=48 Unfreed=32
+StackAllocator::allocate n=4 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=80
+StackAllocator::deallocate n=2 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=88
+pointer_in_buffer: p=48
+BORING Freed=56 Unfreed=32
+StackAllocator::allocate n=4 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=88
+StackAllocator::deallocate n=2 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=96
+pointer_in_buffer: p=56
+BORING Freed=64 Unfreed=32
+StackAllocator::allocate n=8 sizeof(T)=1 alloc_size=8 index=1
+pointer_in_buffer: p=0
+StackAllocator::deallocate n=4 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=96
+pointer_in_buffer: p=64
+BORING Freed=72 Unfreed=24
+StackAllocator::allocate n=8 sizeof(T)=1 alloc_size=8 index=1
+pointer_in_buffer: p=8
+StackAllocator::deallocate n=4 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=96
+pointer_in_buffer: p=72
+BORING Freed=80 Unfreed=16
+StackAllocator::allocate n=8 sizeof(T)=1 alloc_size=8 index=1
+pointer_in_buffer: p=16
+StackAllocator::deallocate n=4 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=96
+pointer_in_buffer: p=80
+BORING Freed=88 Unfreed=8
+StackAllocator::allocate n=8 sizeof(T)=1 alloc_size=8 index=1
+pointer_in_buffer: p=24
+StackAllocator::deallocate n=4 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=96
+pointer_in_buffer: p=88
+Lucky all freed
+StackAllocator::allocate n=16 sizeof(T)=1 alloc_size=16 index=2
+pointer_in_buffer: p=0
+StackAllocator::deallocate n=8 sizeof(T)=1 alloc_size=8 index=1
+deallocate
+pointer_in_buffer: p=32
+pointer_in_buffer: p=0
+BORING Freed=8 Unfreed=24
+StackAllocator::allocate n=16 sizeof(T)=1 alloc_size=16 index=2
+pointer_in_buffer: p=16
+StackAllocator::deallocate n=8 sizeof(T)=1 alloc_size=8 index=1
+deallocate
+pointer_in_buffer: p=32
+pointer_in_buffer: p=8
+BORING Freed=16 Unfreed=16
+StackAllocator::allocate n=16 sizeof(T)=1 alloc_size=16 index=2
+pointer_in_buffer: p=32
+StackAllocator::deallocate n=8 sizeof(T)=1 alloc_size=8 index=1
+deallocate
+pointer_in_buffer: p=32
+pointer_in_buffer: p=16
+BORING Freed=24 Unfreed=8
+StackAllocator::allocate n=16 sizeof(T)=1 alloc_size=16 index=2
+pointer_in_buffer: p=48
+StackAllocator::deallocate n=8 sizeof(T)=1 alloc_size=8 index=1
+deallocate
+pointer_in_buffer: p=32
+pointer_in_buffer: p=24
+Lucky all freed
+==== BEGIN CLEANUP ====
+StackAllocator::deallocate n=16 sizeof(T)=1 alloc_size=16 index=2
+deallocate
+pointer_in_buffer: p=64
+pointer_in_buffer: p=0
+BORING Freed=16 Unfreed=48
+StackAllocator::deallocate n=16 sizeof(T)=1 alloc_size=16 index=2
+deallocate
+pointer_in_buffer: p=64
+pointer_in_buffer: p=16
+BORING Freed=32 Unfreed=32
+StackAllocator::deallocate n=16 sizeof(T)=1 alloc_size=16 index=2
+deallocate
+pointer_in_buffer: p=64
+pointer_in_buffer: p=32
+BORING Freed=48 Unfreed=16
+StackAllocator::deallocate n=16 sizeof(T)=1 alloc_size=16 index=2
+deallocate
+pointer_in_buffer: p=64
+pointer_in_buffer: p=48
+Lucky all freed
+==== END CLEANUP ====
+StackAllocator::allocate n=1 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=0
+StackAllocator::allocate n=1 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=8
+StackAllocator::allocate n=1 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=16
+StackAllocator::allocate n=1 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=24
+StackAllocator::allocate n=2 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=32
+StackAllocator::deallocate n=1 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=40
+pointer_in_buffer: p=0
+BORING Freed=8 Unfreed=32
+StackAllocator::allocate n=2 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=40
+StackAllocator::deallocate n=1 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=48
+pointer_in_buffer: p=8
+BORING Freed=16 Unfreed=32
+StackAllocator::allocate n=2 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=48
+StackAllocator::deallocate n=1 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=56
+pointer_in_buffer: p=16
+BORING Freed=24 Unfreed=32
+StackAllocator::allocate n=2 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=56
+StackAllocator::deallocate n=1 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=64
+pointer_in_buffer: p=24
+BORING Freed=32 Unfreed=32
+StackAllocator::allocate n=4 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=64
+StackAllocator::deallocate n=2 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=72
+pointer_in_buffer: p=32
+BORING Freed=40 Unfreed=32
+StackAllocator::allocate n=4 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=72
+StackAllocator::deallocate n=2 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=80
+pointer_in_buffer: p=40
+BORING Freed=48 Unfreed=32
+StackAllocator::allocate n=4 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=80
+StackAllocator::deallocate n=2 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=88
+pointer_in_buffer: p=48
+BORING Freed=56 Unfreed=32
+StackAllocator::allocate n=4 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=88
+StackAllocator::deallocate n=2 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=96
+pointer_in_buffer: p=56
+BORING Freed=64 Unfreed=32
+StackAllocator::allocate n=8 sizeof(T)=1 alloc_size=8 index=1
+pointer_in_buffer: p=0
+StackAllocator::deallocate n=4 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=96
+pointer_in_buffer: p=64
+BORING Freed=72 Unfreed=24
+StackAllocator::allocate n=8 sizeof(T)=1 alloc_size=8 index=1
+pointer_in_buffer: p=8
+StackAllocator::deallocate n=4 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=96
+pointer_in_buffer: p=72
+BORING Freed=80 Unfreed=16
+StackAllocator::allocate n=8 sizeof(T)=1 alloc_size=8 index=1
+pointer_in_buffer: p=16
+StackAllocator::deallocate n=4 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=96
+pointer_in_buffer: p=80
+BORING Freed=88 Unfreed=8
+StackAllocator::allocate n=8 sizeof(T)=1 alloc_size=8 index=1
+pointer_in_buffer: p=24
+StackAllocator::deallocate n=4 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=96
+pointer_in_buffer: p=88
+Lucky all freed
+StackAllocator::allocate n=16 sizeof(T)=1 alloc_size=16 index=2
+pointer_in_buffer: p=0
+StackAllocator::deallocate n=8 sizeof(T)=1 alloc_size=8 index=1
+deallocate
+pointer_in_buffer: p=32
+pointer_in_buffer: p=0
+BORING Freed=8 Unfreed=24
+StackAllocator::allocate n=16 sizeof(T)=1 alloc_size=16 index=2
+pointer_in_buffer: p=16
+StackAllocator::deallocate n=8 sizeof(T)=1 alloc_size=8 index=1
+deallocate
+pointer_in_buffer: p=32
+pointer_in_buffer: p=8
+BORING Freed=16 Unfreed=16
+StackAllocator::allocate n=16 sizeof(T)=1 alloc_size=16 index=2
+pointer_in_buffer: p=32
+StackAllocator::deallocate n=8 sizeof(T)=1 alloc_size=8 index=1
+deallocate
+pointer_in_buffer: p=32
+pointer_in_buffer: p=16
+BORING Freed=24 Unfreed=8
+StackAllocator::allocate n=16 sizeof(T)=1 alloc_size=16 index=2
+pointer_in_buffer: p=48
+StackAllocator::deallocate n=8 sizeof(T)=1 alloc_size=8 index=1
+deallocate
+pointer_in_buffer: p=32
+pointer_in_buffer: p=24
+Lucky all freed
+==== BEGIN CLEANUP ====
+StackAllocator::deallocate n=16 sizeof(T)=1 alloc_size=16 index=2
+deallocate
+pointer_in_buffer: p=64
+pointer_in_buffer: p=0
+BORING Freed=16 Unfreed=48
+StackAllocator::deallocate n=16 sizeof(T)=1 alloc_size=16 index=2
+deallocate
+pointer_in_buffer: p=64
+pointer_in_buffer: p=16
+BORING Freed=32 Unfreed=32
+StackAllocator::deallocate n=16 sizeof(T)=1 alloc_size=16 index=2
+deallocate
+pointer_in_buffer: p=64
+pointer_in_buffer: p=32
+BORING Freed=48 Unfreed=16
+StackAllocator::deallocate n=16 sizeof(T)=1 alloc_size=16 index=2
+deallocate
+pointer_in_buffer: p=64
+pointer_in_buffer: p=48
+Lucky all freed
+==== END CLEANUP ====
+StackAllocator::allocate n=1 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=0
+StackAllocator::allocate n=1 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=8
+StackAllocator::allocate n=1 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=16
+StackAllocator::allocate n=1 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=24
+StackAllocator::allocate n=2 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=32
+StackAllocator::deallocate n=1 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=40
+pointer_in_buffer: p=0
+BORING Freed=8 Unfreed=32
+StackAllocator::allocate n=2 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=40
+StackAllocator::deallocate n=1 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=48
+pointer_in_buffer: p=8
+BORING Freed=16 Unfreed=32
+StackAllocator::allocate n=2 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=48
+StackAllocator::deallocate n=1 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=56
+pointer_in_buffer: p=16
+BORING Freed=24 Unfreed=32
+StackAllocator::allocate n=2 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=56
+StackAllocator::deallocate n=1 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=64
+pointer_in_buffer: p=24
+BORING Freed=32 Unfreed=32
+StackAllocator::allocate n=4 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=64
+StackAllocator::deallocate n=2 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=72
+pointer_in_buffer: p=32
+BORING Freed=40 Unfreed=32
+StackAllocator::allocate n=4 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=72
+StackAllocator::deallocate n=2 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=80
+pointer_in_buffer: p=40
+BORING Freed=48 Unfreed=32
+StackAllocator::allocate n=4 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=80
+StackAllocator::deallocate n=2 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=88
+pointer_in_buffer: p=48
+BORING Freed=56 Unfreed=32
+StackAllocator::allocate n=4 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=88
+StackAllocator::deallocate n=2 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=96
+pointer_in_buffer: p=56
+BORING Freed=64 Unfreed=32
+StackAllocator::allocate n=8 sizeof(T)=1 alloc_size=8 index=1
+pointer_in_buffer: p=0
+StackAllocator::deallocate n=4 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=96
+pointer_in_buffer: p=64
+BORING Freed=72 Unfreed=24
+StackAllocator::allocate n=8 sizeof(T)=1 alloc_size=8 index=1
+pointer_in_buffer: p=8
+StackAllocator::deallocate n=4 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=96
+pointer_in_buffer: p=72
+BORING Freed=80 Unfreed=16
+StackAllocator::allocate n=8 sizeof(T)=1 alloc_size=8 index=1
+pointer_in_buffer: p=16
+StackAllocator::deallocate n=4 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=96
+pointer_in_buffer: p=80
+BORING Freed=88 Unfreed=8
+StackAllocator::allocate n=8 sizeof(T)=1 alloc_size=8 index=1
+pointer_in_buffer: p=24
+StackAllocator::deallocate n=4 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=96
+pointer_in_buffer: p=88
+Lucky all freed
+StackAllocator::allocate n=16 sizeof(T)=1 alloc_size=16 index=2
+pointer_in_buffer: p=0
+StackAllocator::deallocate n=8 sizeof(T)=1 alloc_size=8 index=1
+deallocate
+pointer_in_buffer: p=32
+pointer_in_buffer: p=0
+BORING Freed=8 Unfreed=24
+StackAllocator::allocate n=16 sizeof(T)=1 alloc_size=16 index=2
+pointer_in_buffer: p=16
+StackAllocator::deallocate n=8 sizeof(T)=1 alloc_size=8 index=1
+deallocate
+pointer_in_buffer: p=32
+pointer_in_buffer: p=8
+BORING Freed=16 Unfreed=16
+StackAllocator::allocate n=16 sizeof(T)=1 alloc_size=16 index=2
+pointer_in_buffer: p=32
+StackAllocator::deallocate n=8 sizeof(T)=1 alloc_size=8 index=1
+deallocate
+pointer_in_buffer: p=32
+pointer_in_buffer: p=16
+BORING Freed=24 Unfreed=8
+StackAllocator::allocate n=16 sizeof(T)=1 alloc_size=16 index=2
+pointer_in_buffer: p=48
+StackAllocator::deallocate n=8 sizeof(T)=1 alloc_size=8 index=1
+deallocate
+pointer_in_buffer: p=32
+pointer_in_buffer: p=24
+Lucky all freed
+==== BEGIN CLEANUP ====
+StackAllocator::deallocate n=16 sizeof(T)=1 alloc_size=16 index=2
+deallocate
+pointer_in_buffer: p=64
+pointer_in_buffer: p=0
+BORING Freed=16 Unfreed=48
+StackAllocator::deallocate n=16 sizeof(T)=1 alloc_size=16 index=2
+deallocate
+pointer_in_buffer: p=64
+pointer_in_buffer: p=16
+BORING Freed=32 Unfreed=32
+StackAllocator::deallocate n=16 sizeof(T)=1 alloc_size=16 index=2
+deallocate
+pointer_in_buffer: p=64
+pointer_in_buffer: p=32
+BORING Freed=48 Unfreed=16
+StackAllocator::deallocate n=16 sizeof(T)=1 alloc_size=16 index=2
+deallocate
+pointer_in_buffer: p=64
+pointer_in_buffer: p=48
+Lucky all freed
+==== END CLEANUP ====
+StackAllocator::allocate n=1 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=0
+StackAllocator::allocate n=1 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=8
+StackAllocator::allocate n=1 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=16
+StackAllocator::allocate n=1 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=24
+StackAllocator::allocate n=2 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=32
+StackAllocator::deallocate n=1 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=40
+pointer_in_buffer: p=0
+BORING Freed=8 Unfreed=32
+StackAllocator::allocate n=2 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=40
+StackAllocator::deallocate n=1 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=48
+pointer_in_buffer: p=8
+BORING Freed=16 Unfreed=32
+StackAllocator::allocate n=2 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=48
+StackAllocator::deallocate n=1 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=56
+pointer_in_buffer: p=16
+BORING Freed=24 Unfreed=32
+StackAllocator::allocate n=2 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=56
+StackAllocator::deallocate n=1 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=64
+pointer_in_buffer: p=24
+BORING Freed=32 Unfreed=32
+StackAllocator::allocate n=4 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=64
+StackAllocator::deallocate n=2 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=72
+pointer_in_buffer: p=32
+BORING Freed=40 Unfreed=32
+StackAllocator::allocate n=4 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=72
+StackAllocator::deallocate n=2 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=80
+pointer_in_buffer: p=40
+BORING Freed=48 Unfreed=32
+StackAllocator::allocate n=4 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=80
+StackAllocator::deallocate n=2 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=88
+pointer_in_buffer: p=48
+BORING Freed=56 Unfreed=32
+StackAllocator::allocate n=4 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=88
+StackAllocator::deallocate n=2 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=96
+pointer_in_buffer: p=56
+BORING Freed=64 Unfreed=32
+StackAllocator::allocate n=8 sizeof(T)=1 alloc_size=8 index=1
+pointer_in_buffer: p=0
+StackAllocator::deallocate n=4 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=96
+pointer_in_buffer: p=64
+BORING Freed=72 Unfreed=24
+StackAllocator::allocate n=8 sizeof(T)=1 alloc_size=8 index=1
+pointer_in_buffer: p=8
+StackAllocator::deallocate n=4 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=96
+pointer_in_buffer: p=72
+BORING Freed=80 Unfreed=16
+StackAllocator::allocate n=8 sizeof(T)=1 alloc_size=8 index=1
+pointer_in_buffer: p=16
+StackAllocator::deallocate n=4 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=96
+pointer_in_buffer: p=80
+BORING Freed=88 Unfreed=8
+StackAllocator::allocate n=8 sizeof(T)=1 alloc_size=8 index=1
+pointer_in_buffer: p=24
+StackAllocator::deallocate n=4 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=96
+pointer_in_buffer: p=88
+Lucky all freed
+StackAllocator::allocate n=16 sizeof(T)=1 alloc_size=16 index=2
+pointer_in_buffer: p=0
+StackAllocator::deallocate n=8 sizeof(T)=1 alloc_size=8 index=1
+deallocate
+pointer_in_buffer: p=32
+pointer_in_buffer: p=0
+BORING Freed=8 Unfreed=24
+StackAllocator::allocate n=16 sizeof(T)=1 alloc_size=16 index=2
+pointer_in_buffer: p=16
+StackAllocator::deallocate n=8 sizeof(T)=1 alloc_size=8 index=1
+deallocate
+pointer_in_buffer: p=32
+pointer_in_buffer: p=8
+BORING Freed=16 Unfreed=16
+StackAllocator::allocate n=16 sizeof(T)=1 alloc_size=16 index=2
+pointer_in_buffer: p=32
+StackAllocator::deallocate n=8 sizeof(T)=1 alloc_size=8 index=1
+deallocate
+pointer_in_buffer: p=32
+pointer_in_buffer: p=16
+BORING Freed=24 Unfreed=8
+StackAllocator::allocate n=16 sizeof(T)=1 alloc_size=16 index=2
+pointer_in_buffer: p=48
+StackAllocator::deallocate n=8 sizeof(T)=1 alloc_size=8 index=1
+deallocate
+pointer_in_buffer: p=32
+pointer_in_buffer: p=24
+Lucky all freed
+==== BEGIN CLEANUP ====
+StackAllocator::deallocate n=16 sizeof(T)=1 alloc_size=16 index=2
+deallocate
+pointer_in_buffer: p=64
+pointer_in_buffer: p=0
+BORING Freed=16 Unfreed=48
+StackAllocator::deallocate n=16 sizeof(T)=1 alloc_size=16 index=2
+deallocate
+pointer_in_buffer: p=64
+pointer_in_buffer: p=16
+BORING Freed=32 Unfreed=32
+StackAllocator::deallocate n=16 sizeof(T)=1 alloc_size=16 index=2
+deallocate
+pointer_in_buffer: p=64
+pointer_in_buffer: p=32
+BORING Freed=48 Unfreed=16
+StackAllocator::deallocate n=16 sizeof(T)=1 alloc_size=16 index=2
+deallocate
+pointer_in_buffer: p=64
+pointer_in_buffer: p=48
+Lucky all freed
+==== END CLEANUP ====
+StackAllocator::allocate n=1 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=0
+StackAllocator::allocate n=1 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=8
+StackAllocator::allocate n=1 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=16
+StackAllocator::allocate n=1 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=24
+StackAllocator::allocate n=2 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=32
+StackAllocator::deallocate n=1 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=40
+pointer_in_buffer: p=0
+BORING Freed=8 Unfreed=32
+StackAllocator::allocate n=2 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=40
+StackAllocator::deallocate n=1 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=48
+pointer_in_buffer: p=8
+BORING Freed=16 Unfreed=32
+StackAllocator::allocate n=2 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=48
+StackAllocator::deallocate n=1 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=56
+pointer_in_buffer: p=16
+BORING Freed=24 Unfreed=32
+StackAllocator::allocate n=2 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=56
+StackAllocator::deallocate n=1 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=64
+pointer_in_buffer: p=24
+BORING Freed=32 Unfreed=32
+StackAllocator::allocate n=4 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=64
+StackAllocator::deallocate n=2 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=72
+pointer_in_buffer: p=32
+BORING Freed=40 Unfreed=32
+StackAllocator::allocate n=4 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=72
+StackAllocator::deallocate n=2 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=80
+pointer_in_buffer: p=40
+BORING Freed=48 Unfreed=32
+StackAllocator::allocate n=4 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=80
+StackAllocator::deallocate n=2 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=88
+pointer_in_buffer: p=48
+BORING Freed=56 Unfreed=32
+StackAllocator::allocate n=4 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=88
+StackAllocator::deallocate n=2 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=96
+pointer_in_buffer: p=56
+BORING Freed=64 Unfreed=32
+StackAllocator::allocate n=8 sizeof(T)=1 alloc_size=8 index=1
+pointer_in_buffer: p=0
+StackAllocator::deallocate n=4 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=96
+pointer_in_buffer: p=64
+BORING Freed=72 Unfreed=24
+StackAllocator::allocate n=8 sizeof(T)=1 alloc_size=8 index=1
+pointer_in_buffer: p=8
+StackAllocator::deallocate n=4 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=96
+pointer_in_buffer: p=72
+BORING Freed=80 Unfreed=16
+StackAllocator::allocate n=8 sizeof(T)=1 alloc_size=8 index=1
+pointer_in_buffer: p=16
+StackAllocator::deallocate n=4 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=96
+pointer_in_buffer: p=80
+BORING Freed=88 Unfreed=8
+StackAllocator::allocate n=8 sizeof(T)=1 alloc_size=8 index=1
+pointer_in_buffer: p=24
+StackAllocator::deallocate n=4 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=96
+pointer_in_buffer: p=88
+Lucky all freed
+StackAllocator::allocate n=16 sizeof(T)=1 alloc_size=16 index=2
+pointer_in_buffer: p=0
+StackAllocator::deallocate n=8 sizeof(T)=1 alloc_size=8 index=1
+deallocate
+pointer_in_buffer: p=32
+pointer_in_buffer: p=0
+BORING Freed=8 Unfreed=24
+StackAllocator::allocate n=16 sizeof(T)=1 alloc_size=16 index=2
+pointer_in_buffer: p=16
+StackAllocator::deallocate n=8 sizeof(T)=1 alloc_size=8 index=1
+deallocate
+pointer_in_buffer: p=32
+pointer_in_buffer: p=8
+BORING Freed=16 Unfreed=16
+StackAllocator::allocate n=16 sizeof(T)=1 alloc_size=16 index=2
+pointer_in_buffer: p=32
+StackAllocator::deallocate n=8 sizeof(T)=1 alloc_size=8 index=1
+deallocate
+pointer_in_buffer: p=32
+pointer_in_buffer: p=16
+BORING Freed=24 Unfreed=8
+StackAllocator::allocate n=16 sizeof(T)=1 alloc_size=16 index=2
+pointer_in_buffer: p=48
+StackAllocator::deallocate n=8 sizeof(T)=1 alloc_size=8 index=1
+deallocate
+pointer_in_buffer: p=32
+pointer_in_buffer: p=24
+Lucky all freed
+==== BEGIN CLEANUP ====
+StackAllocator::deallocate n=16 sizeof(T)=1 alloc_size=16 index=2
+deallocate
+pointer_in_buffer: p=64
+pointer_in_buffer: p=0
+BORING Freed=16 Unfreed=48
+StackAllocator::deallocate n=16 sizeof(T)=1 alloc_size=16 index=2
+deallocate
+pointer_in_buffer: p=64
+pointer_in_buffer: p=16
+BORING Freed=32 Unfreed=32
+StackAllocator::deallocate n=16 sizeof(T)=1 alloc_size=16 index=2
+deallocate
+pointer_in_buffer: p=64
+pointer_in_buffer: p=32
+BORING Freed=48 Unfreed=16
+StackAllocator::deallocate n=16 sizeof(T)=1 alloc_size=16 index=2
+deallocate
+pointer_in_buffer: p=64
+pointer_in_buffer: p=48
+Lucky all freed
+==== END CLEANUP ====
+StackAllocator::allocate n=1 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=0
+StackAllocator::allocate n=1 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=8
+StackAllocator::allocate n=1 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=16
+StackAllocator::allocate n=1 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=24
+StackAllocator::allocate n=2 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=32
+StackAllocator::deallocate n=1 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=40
+pointer_in_buffer: p=0
+BORING Freed=8 Unfreed=32
+StackAllocator::allocate n=2 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=40
+StackAllocator::deallocate n=1 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=48
+pointer_in_buffer: p=8
+BORING Freed=16 Unfreed=32
+StackAllocator::allocate n=2 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=48
+StackAllocator::deallocate n=1 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=56
+pointer_in_buffer: p=16
+BORING Freed=24 Unfreed=32
+StackAllocator::allocate n=2 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=56
+StackAllocator::deallocate n=1 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=64
+pointer_in_buffer: p=24
+BORING Freed=32 Unfreed=32
+StackAllocator::allocate n=4 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=64
+StackAllocator::deallocate n=2 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=72
+pointer_in_buffer: p=32
+BORING Freed=40 Unfreed=32
+StackAllocator::allocate n=4 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=72
+StackAllocator::deallocate n=2 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=80
+pointer_in_buffer: p=40
+BORING Freed=48 Unfreed=32
+StackAllocator::allocate n=4 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=80
+StackAllocator::deallocate n=2 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=88
+pointer_in_buffer: p=48
+BORING Freed=56 Unfreed=32
+StackAllocator::allocate n=4 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=88
+StackAllocator::deallocate n=2 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=96
+pointer_in_buffer: p=56
+BORING Freed=64 Unfreed=32
+StackAllocator::allocate n=8 sizeof(T)=1 alloc_size=8 index=1
+pointer_in_buffer: p=0
+StackAllocator::deallocate n=4 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=96
+pointer_in_buffer: p=64
+BORING Freed=72 Unfreed=24
+StackAllocator::allocate n=8 sizeof(T)=1 alloc_size=8 index=1
+pointer_in_buffer: p=8
+StackAllocator::deallocate n=4 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=96
+pointer_in_buffer: p=72
+BORING Freed=80 Unfreed=16
+StackAllocator::allocate n=8 sizeof(T)=1 alloc_size=8 index=1
+pointer_in_buffer: p=16
+StackAllocator::deallocate n=4 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=96
+pointer_in_buffer: p=80
+BORING Freed=88 Unfreed=8
+StackAllocator::allocate n=8 sizeof(T)=1 alloc_size=8 index=1
+pointer_in_buffer: p=24
+StackAllocator::deallocate n=4 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=96
+pointer_in_buffer: p=88
+Lucky all freed
+StackAllocator::allocate n=16 sizeof(T)=1 alloc_size=16 index=2
+pointer_in_buffer: p=0
+StackAllocator::deallocate n=8 sizeof(T)=1 alloc_size=8 index=1
+deallocate
+pointer_in_buffer: p=32
+pointer_in_buffer: p=0
+BORING Freed=8 Unfreed=24
+StackAllocator::allocate n=16 sizeof(T)=1 alloc_size=16 index=2
+pointer_in_buffer: p=16
+StackAllocator::deallocate n=8 sizeof(T)=1 alloc_size=8 index=1
+deallocate
+pointer_in_buffer: p=32
+pointer_in_buffer: p=8
+BORING Freed=16 Unfreed=16
+StackAllocator::allocate n=16 sizeof(T)=1 alloc_size=16 index=2
+pointer_in_buffer: p=32
+StackAllocator::deallocate n=8 sizeof(T)=1 alloc_size=8 index=1
+deallocate
+pointer_in_buffer: p=32
+pointer_in_buffer: p=16
+BORING Freed=24 Unfreed=8
+StackAllocator::allocate n=16 sizeof(T)=1 alloc_size=16 index=2
+pointer_in_buffer: p=48
+StackAllocator::deallocate n=8 sizeof(T)=1 alloc_size=8 index=1
+deallocate
+pointer_in_buffer: p=32
+pointer_in_buffer: p=24
+Lucky all freed
+==== BEGIN CLEANUP ====
+StackAllocator::deallocate n=16 sizeof(T)=1 alloc_size=16 index=2
+deallocate
+pointer_in_buffer: p=64
+pointer_in_buffer: p=0
+BORING Freed=16 Unfreed=48
+StackAllocator::deallocate n=16 sizeof(T)=1 alloc_size=16 index=2
+deallocate
+pointer_in_buffer: p=64
+pointer_in_buffer: p=16
+BORING Freed=32 Unfreed=32
+StackAllocator::deallocate n=16 sizeof(T)=1 alloc_size=16 index=2
+deallocate
+pointer_in_buffer: p=64
+pointer_in_buffer: p=32
+BORING Freed=48 Unfreed=16
+StackAllocator::deallocate n=16 sizeof(T)=1 alloc_size=16 index=2
+deallocate
+pointer_in_buffer: p=64
+pointer_in_buffer: p=48
+Lucky all freed
+==== END CLEANUP ====
+StackAllocator::allocate n=1 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=0
+StackAllocator::allocate n=1 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=8
+StackAllocator::allocate n=1 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=16
+StackAllocator::allocate n=1 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=24
+StackAllocator::allocate n=2 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=32
+StackAllocator::deallocate n=1 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=40
+pointer_in_buffer: p=0
+BORING Freed=8 Unfreed=32
+StackAllocator::allocate n=2 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=40
+StackAllocator::deallocate n=1 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=48
+pointer_in_buffer: p=8
+BORING Freed=16 Unfreed=32
+StackAllocator::allocate n=2 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=48
+StackAllocator::deallocate n=1 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=56
+pointer_in_buffer: p=16
+BORING Freed=24 Unfreed=32
+StackAllocator::allocate n=2 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=56
+StackAllocator::deallocate n=1 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=64
+pointer_in_buffer: p=24
+BORING Freed=32 Unfreed=32
+StackAllocator::allocate n=4 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=64
+StackAllocator::deallocate n=2 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=72
+pointer_in_buffer: p=32
+BORING Freed=40 Unfreed=32
+StackAllocator::allocate n=4 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=72
+StackAllocator::deallocate n=2 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=80
+pointer_in_buffer: p=40
+BORING Freed=48 Unfreed=32
+StackAllocator::allocate n=4 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=80
+StackAllocator::deallocate n=2 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=88
+pointer_in_buffer: p=48
+BORING Freed=56 Unfreed=32
+StackAllocator::allocate n=4 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=88
+StackAllocator::deallocate n=2 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=96
+pointer_in_buffer: p=56
+BORING Freed=64 Unfreed=32
+StackAllocator::allocate n=8 sizeof(T)=1 alloc_size=8 index=1
+pointer_in_buffer: p=0
+StackAllocator::deallocate n=4 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=96
+pointer_in_buffer: p=64
+BORING Freed=72 Unfreed=24
+StackAllocator::allocate n=8 sizeof(T)=1 alloc_size=8 index=1
+pointer_in_buffer: p=8
+StackAllocator::deallocate n=4 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=96
+pointer_in_buffer: p=72
+BORING Freed=80 Unfreed=16
+StackAllocator::allocate n=8 sizeof(T)=1 alloc_size=8 index=1
+pointer_in_buffer: p=16
+StackAllocator::deallocate n=4 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=96
+pointer_in_buffer: p=80
+BORING Freed=88 Unfreed=8
+StackAllocator::allocate n=8 sizeof(T)=1 alloc_size=8 index=1
+pointer_in_buffer: p=24
+StackAllocator::deallocate n=4 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=96
+pointer_in_buffer: p=88
+Lucky all freed
+StackAllocator::allocate n=16 sizeof(T)=1 alloc_size=16 index=2
+pointer_in_buffer: p=0
+StackAllocator::deallocate n=8 sizeof(T)=1 alloc_size=8 index=1
+deallocate
+pointer_in_buffer: p=32
+pointer_in_buffer: p=0
+BORING Freed=8 Unfreed=24
+StackAllocator::allocate n=16 sizeof(T)=1 alloc_size=16 index=2
+pointer_in_buffer: p=16
+StackAllocator::deallocate n=8 sizeof(T)=1 alloc_size=8 index=1
+deallocate
+pointer_in_buffer: p=32
+pointer_in_buffer: p=8
+BORING Freed=16 Unfreed=16
+StackAllocator::allocate n=16 sizeof(T)=1 alloc_size=16 index=2
+pointer_in_buffer: p=32
+StackAllocator::deallocate n=8 sizeof(T)=1 alloc_size=8 index=1
+deallocate
+pointer_in_buffer: p=32
+pointer_in_buffer: p=16
+BORING Freed=24 Unfreed=8
+StackAllocator::allocate n=16 sizeof(T)=1 alloc_size=16 index=2
+pointer_in_buffer: p=48
+StackAllocator::deallocate n=8 sizeof(T)=1 alloc_size=8 index=1
+deallocate
+pointer_in_buffer: p=32
+pointer_in_buffer: p=24
+Lucky all freed
+==== BEGIN CLEANUP ====
+StackAllocator::deallocate n=16 sizeof(T)=1 alloc_size=16 index=2
+deallocate
+pointer_in_buffer: p=64
+pointer_in_buffer: p=0
+BORING Freed=16 Unfreed=48
+StackAllocator::deallocate n=16 sizeof(T)=1 alloc_size=16 index=2
+deallocate
+pointer_in_buffer: p=64
+pointer_in_buffer: p=16
+BORING Freed=32 Unfreed=32
+StackAllocator::deallocate n=16 sizeof(T)=1 alloc_size=16 index=2
+deallocate
+pointer_in_buffer: p=64
+pointer_in_buffer: p=32
+BORING Freed=48 Unfreed=16
+StackAllocator::deallocate n=16 sizeof(T)=1 alloc_size=16 index=2
+deallocate
+pointer_in_buffer: p=64
+pointer_in_buffer: p=48
+Lucky all freed
+==== END CLEANUP ====
+StackAllocator::allocate n=1 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=0
+StackAllocator::allocate n=1 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=8
+StackAllocator::allocate n=1 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=16
+StackAllocator::allocate n=1 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=24
+StackAllocator::allocate n=2 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=32
+StackAllocator::deallocate n=1 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=40
+pointer_in_buffer: p=0
+BORING Freed=8 Unfreed=32
+StackAllocator::allocate n=2 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=40
+StackAllocator::deallocate n=1 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=48
+pointer_in_buffer: p=8
+BORING Freed=16 Unfreed=32
+StackAllocator::allocate n=2 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=48
+StackAllocator::deallocate n=1 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=56
+pointer_in_buffer: p=16
+BORING Freed=24 Unfreed=32
+StackAllocator::allocate n=2 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=56
+StackAllocator::deallocate n=1 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=64
+pointer_in_buffer: p=24
+BORING Freed=32 Unfreed=32
+StackAllocator::allocate n=4 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=64
+StackAllocator::deallocate n=2 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=72
+pointer_in_buffer: p=32
+BORING Freed=40 Unfreed=32
+StackAllocator::allocate n=4 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=72
+StackAllocator::deallocate n=2 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=80
+pointer_in_buffer: p=40
+BORING Freed=48 Unfreed=32
+StackAllocator::allocate n=4 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=80
+StackAllocator::deallocate n=2 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=88
+pointer_in_buffer: p=48
+BORING Freed=56 Unfreed=32
+StackAllocator::allocate n=4 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=88
+StackAllocator::deallocate n=2 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=96
+pointer_in_buffer: p=56
+BORING Freed=64 Unfreed=32
+StackAllocator::allocate n=8 sizeof(T)=1 alloc_size=8 index=1
+pointer_in_buffer: p=0
+StackAllocator::deallocate n=4 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=96
+pointer_in_buffer: p=64
+BORING Freed=72 Unfreed=24
+StackAllocator::allocate n=8 sizeof(T)=1 alloc_size=8 index=1
+pointer_in_buffer: p=8
+StackAllocator::deallocate n=4 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=96
+pointer_in_buffer: p=72
+BORING Freed=80 Unfreed=16
+StackAllocator::allocate n=8 sizeof(T)=1 alloc_size=8 index=1
+pointer_in_buffer: p=16
+StackAllocator::deallocate n=4 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=96
+pointer_in_buffer: p=80
+BORING Freed=88 Unfreed=8
+StackAllocator::allocate n=8 sizeof(T)=1 alloc_size=8 index=1
+pointer_in_buffer: p=24
+StackAllocator::deallocate n=4 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=96
+pointer_in_buffer: p=88
+Lucky all freed
+StackAllocator::allocate n=16 sizeof(T)=1 alloc_size=16 index=2
+pointer_in_buffer: p=0
+StackAllocator::deallocate n=8 sizeof(T)=1 alloc_size=8 index=1
+deallocate
+pointer_in_buffer: p=32
+pointer_in_buffer: p=0
+BORING Freed=8 Unfreed=24
+StackAllocator::allocate n=16 sizeof(T)=1 alloc_size=16 index=2
+pointer_in_buffer: p=16
+StackAllocator::deallocate n=8 sizeof(T)=1 alloc_size=8 index=1
+deallocate
+pointer_in_buffer: p=32
+pointer_in_buffer: p=8
+BORING Freed=16 Unfreed=16
+StackAllocator::allocate n=16 sizeof(T)=1 alloc_size=16 index=2
+pointer_in_buffer: p=32
+StackAllocator::deallocate n=8 sizeof(T)=1 alloc_size=8 index=1
+deallocate
+pointer_in_buffer: p=32
+pointer_in_buffer: p=16
+BORING Freed=24 Unfreed=8
+StackAllocator::allocate n=16 sizeof(T)=1 alloc_size=16 index=2
+pointer_in_buffer: p=48
+StackAllocator::deallocate n=8 sizeof(T)=1 alloc_size=8 index=1
+deallocate
+pointer_in_buffer: p=32
+pointer_in_buffer: p=24
+Lucky all freed
+==== BEGIN CLEANUP ====
+StackAllocator::deallocate n=16 sizeof(T)=1 alloc_size=16 index=2
+deallocate
+pointer_in_buffer: p=64
+pointer_in_buffer: p=0
+BORING Freed=16 Unfreed=48
+StackAllocator::deallocate n=16 sizeof(T)=1 alloc_size=16 index=2
+deallocate
+pointer_in_buffer: p=64
+pointer_in_buffer: p=16
+BORING Freed=32 Unfreed=32
+StackAllocator::deallocate n=16 sizeof(T)=1 alloc_size=16 index=2
+deallocate
+pointer_in_buffer: p=64
+pointer_in_buffer: p=32
+BORING Freed=48 Unfreed=16
+StackAllocator::deallocate n=16 sizeof(T)=1 alloc_size=16 index=2
+deallocate
+pointer_in_buffer: p=64
+pointer_in_buffer: p=48
+Lucky all freed
+==== END CLEANUP ====
+StackAllocator::allocate n=1 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=0
+StackAllocator::allocate n=1 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=8
+StackAllocator::allocate n=1 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=16
+StackAllocator::allocate n=1 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=24
+StackAllocator::allocate n=2 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=32
+StackAllocator::deallocate n=1 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=40
+pointer_in_buffer: p=0
+BORING Freed=8 Unfreed=32
+StackAllocator::allocate n=2 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=40
+StackAllocator::deallocate n=1 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=48
+pointer_in_buffer: p=8
+BORING Freed=16 Unfreed=32
+StackAllocator::allocate n=2 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=48
+StackAllocator::deallocate n=1 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=56
+pointer_in_buffer: p=16
+BORING Freed=24 Unfreed=32
+StackAllocator::allocate n=2 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=56
+StackAllocator::deallocate n=1 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=64
+pointer_in_buffer: p=24
+BORING Freed=32 Unfreed=32
+StackAllocator::allocate n=4 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=64
+StackAllocator::deallocate n=2 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=72
+pointer_in_buffer: p=32
+BORING Freed=40 Unfreed=32
+StackAllocator::allocate n=4 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=72
+StackAllocator::deallocate n=2 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=80
+pointer_in_buffer: p=40
+BORING Freed=48 Unfreed=32
+StackAllocator::allocate n=4 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=80
+StackAllocator::deallocate n=2 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=88
+pointer_in_buffer: p=48
+BORING Freed=56 Unfreed=32
+StackAllocator::allocate n=4 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=88
+StackAllocator::deallocate n=2 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=96
+pointer_in_buffer: p=56
+BORING Freed=64 Unfreed=32
+StackAllocator::allocate n=8 sizeof(T)=1 alloc_size=8 index=1
+pointer_in_buffer: p=0
+StackAllocator::deallocate n=4 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=96
+pointer_in_buffer: p=64
+BORING Freed=72 Unfreed=24
+StackAllocator::allocate n=8 sizeof(T)=1 alloc_size=8 index=1
+pointer_in_buffer: p=8
+StackAllocator::deallocate n=4 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=96
+pointer_in_buffer: p=72
+BORING Freed=80 Unfreed=16
+StackAllocator::allocate n=8 sizeof(T)=1 alloc_size=8 index=1
+pointer_in_buffer: p=16
+StackAllocator::deallocate n=4 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=96
+pointer_in_buffer: p=80
+BORING Freed=88 Unfreed=8
+StackAllocator::allocate n=8 sizeof(T)=1 alloc_size=8 index=1
+pointer_in_buffer: p=24
+StackAllocator::deallocate n=4 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=96
+pointer_in_buffer: p=88
+Lucky all freed
+StackAllocator::allocate n=16 sizeof(T)=1 alloc_size=16 index=2
+pointer_in_buffer: p=0
+StackAllocator::deallocate n=8 sizeof(T)=1 alloc_size=8 index=1
+deallocate
+pointer_in_buffer: p=32
+pointer_in_buffer: p=0
+BORING Freed=8 Unfreed=24
+StackAllocator::allocate n=16 sizeof(T)=1 alloc_size=16 index=2
+pointer_in_buffer: p=16
+StackAllocator::deallocate n=8 sizeof(T)=1 alloc_size=8 index=1
+deallocate
+pointer_in_buffer: p=32
+pointer_in_buffer: p=8
+BORING Freed=16 Unfreed=16
+StackAllocator::allocate n=16 sizeof(T)=1 alloc_size=16 index=2
+pointer_in_buffer: p=32
+StackAllocator::deallocate n=8 sizeof(T)=1 alloc_size=8 index=1
+deallocate
+pointer_in_buffer: p=32
+pointer_in_buffer: p=16
+BORING Freed=24 Unfreed=8
+StackAllocator::allocate n=16 sizeof(T)=1 alloc_size=16 index=2
+pointer_in_buffer: p=48
+StackAllocator::deallocate n=8 sizeof(T)=1 alloc_size=8 index=1
+deallocate
+pointer_in_buffer: p=32
+pointer_in_buffer: p=24
+Lucky all freed
+==== BEGIN CLEANUP ====
+StackAllocator::deallocate n=16 sizeof(T)=1 alloc_size=16 index=2
+deallocate
+pointer_in_buffer: p=64
+pointer_in_buffer: p=0
+BORING Freed=16 Unfreed=48
+StackAllocator::deallocate n=16 sizeof(T)=1 alloc_size=16 index=2
+deallocate
+pointer_in_buffer: p=64
+pointer_in_buffer: p=16
+BORING Freed=32 Unfreed=32
+StackAllocator::deallocate n=16 sizeof(T)=1 alloc_size=16 index=2
+deallocate
+pointer_in_buffer: p=64
+pointer_in_buffer: p=32
+BORING Freed=48 Unfreed=16
+StackAllocator::deallocate n=16 sizeof(T)=1 alloc_size=16 index=2
+deallocate
+pointer_in_buffer: p=64
+pointer_in_buffer: p=48
+Lucky all freed
+==== END CLEANUP ====
+StackAllocator::allocate n=1 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=0
+StackAllocator::allocate n=1 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=8
+StackAllocator::allocate n=1 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=16
+StackAllocator::allocate n=1 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=24
+StackAllocator::allocate n=2 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=32
+StackAllocator::deallocate n=1 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=40
+pointer_in_buffer: p=0
+BORING Freed=8 Unfreed=32
+StackAllocator::allocate n=2 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=40
+StackAllocator::deallocate n=1 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=48
+pointer_in_buffer: p=8
+BORING Freed=16 Unfreed=32
+StackAllocator::allocate n=2 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=48
+StackAllocator::deallocate n=1 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=56
+pointer_in_buffer: p=16
+BORING Freed=24 Unfreed=32
+StackAllocator::allocate n=2 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=56
+StackAllocator::deallocate n=1 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=64
+pointer_in_buffer: p=24
+BORING Freed=32 Unfreed=32
+StackAllocator::allocate n=4 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=64
+StackAllocator::deallocate n=2 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=72
+pointer_in_buffer: p=32
+BORING Freed=40 Unfreed=32
+StackAllocator::allocate n=4 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=72
+StackAllocator::deallocate n=2 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=80
+pointer_in_buffer: p=40
+BORING Freed=48 Unfreed=32
+StackAllocator::allocate n=4 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=80
+StackAllocator::deallocate n=2 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=88
+pointer_in_buffer: p=48
+BORING Freed=56 Unfreed=32
+StackAllocator::allocate n=4 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=88
+StackAllocator::deallocate n=2 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=96
+pointer_in_buffer: p=56
+BORING Freed=64 Unfreed=32
+StackAllocator::allocate n=8 sizeof(T)=1 alloc_size=8 index=1
+pointer_in_buffer: p=0
+StackAllocator::deallocate n=4 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=96
+pointer_in_buffer: p=64
+BORING Freed=72 Unfreed=24
+StackAllocator::allocate n=8 sizeof(T)=1 alloc_size=8 index=1
+pointer_in_buffer: p=8
+StackAllocator::deallocate n=4 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=96
+pointer_in_buffer: p=72
+BORING Freed=80 Unfreed=16
+StackAllocator::allocate n=8 sizeof(T)=1 alloc_size=8 index=1
+pointer_in_buffer: p=16
+StackAllocator::deallocate n=4 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=96
+pointer_in_buffer: p=80
+BORING Freed=88 Unfreed=8
+StackAllocator::allocate n=8 sizeof(T)=1 alloc_size=8 index=1
+pointer_in_buffer: p=24
+StackAllocator::deallocate n=4 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=96
+pointer_in_buffer: p=88
+Lucky all freed
+StackAllocator::allocate n=16 sizeof(T)=1 alloc_size=16 index=2
+pointer_in_buffer: p=0
+StackAllocator::deallocate n=8 sizeof(T)=1 alloc_size=8 index=1
+deallocate
+pointer_in_buffer: p=32
+pointer_in_buffer: p=0
+BORING Freed=8 Unfreed=24
+StackAllocator::allocate n=16 sizeof(T)=1 alloc_size=16 index=2
+pointer_in_buffer: p=16
+StackAllocator::deallocate n=8 sizeof(T)=1 alloc_size=8 index=1
+deallocate
+pointer_in_buffer: p=32
+pointer_in_buffer: p=8
+BORING Freed=16 Unfreed=16
+StackAllocator::allocate n=16 sizeof(T)=1 alloc_size=16 index=2
+pointer_in_buffer: p=32
+StackAllocator::deallocate n=8 sizeof(T)=1 alloc_size=8 index=1
+deallocate
+pointer_in_buffer: p=32
+pointer_in_buffer: p=16
+BORING Freed=24 Unfreed=8
+StackAllocator::allocate n=16 sizeof(T)=1 alloc_size=16 index=2
+pointer_in_buffer: p=48
+StackAllocator::deallocate n=8 sizeof(T)=1 alloc_size=8 index=1
+deallocate
+pointer_in_buffer: p=32
+pointer_in_buffer: p=24
+Lucky all freed
+==== BEGIN CLEANUP ====
+StackAllocator::deallocate n=16 sizeof(T)=1 alloc_size=16 index=2
+deallocate
+pointer_in_buffer: p=64
+pointer_in_buffer: p=0
+BORING Freed=16 Unfreed=48
+StackAllocator::deallocate n=16 sizeof(T)=1 alloc_size=16 index=2
+deallocate
+pointer_in_buffer: p=64
+pointer_in_buffer: p=16
+BORING Freed=32 Unfreed=32
+StackAllocator::deallocate n=16 sizeof(T)=1 alloc_size=16 index=2
+deallocate
+pointer_in_buffer: p=64
+pointer_in_buffer: p=32
+BORING Freed=48 Unfreed=16
+StackAllocator::deallocate n=16 sizeof(T)=1 alloc_size=16 index=2
+deallocate
+pointer_in_buffer: p=64
+pointer_in_buffer: p=48
+Lucky all freed
+==== END CLEANUP ====
+StackAllocator::allocate n=1 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=0
+StackAllocator::allocate n=1 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=8
+StackAllocator::allocate n=1 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=16
+StackAllocator::allocate n=1 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=24
+StackAllocator::allocate n=2 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=32
+StackAllocator::deallocate n=1 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=40
+pointer_in_buffer: p=0
+BORING Freed=8 Unfreed=32
+StackAllocator::allocate n=2 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=40
+StackAllocator::deallocate n=1 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=48
+pointer_in_buffer: p=8
+BORING Freed=16 Unfreed=32
+StackAllocator::allocate n=2 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=48
+StackAllocator::deallocate n=1 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=56
+pointer_in_buffer: p=16
+BORING Freed=24 Unfreed=32
+StackAllocator::allocate n=2 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=56
+StackAllocator::deallocate n=1 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=64
+pointer_in_buffer: p=24
+BORING Freed=32 Unfreed=32
+StackAllocator::allocate n=4 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=64
+StackAllocator::deallocate n=2 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=72
+pointer_in_buffer: p=32
+BORING Freed=40 Unfreed=32
+StackAllocator::allocate n=4 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=72
+StackAllocator::deallocate n=2 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=80
+pointer_in_buffer: p=40
+BORING Freed=48 Unfreed=32
+StackAllocator::allocate n=4 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=80
+StackAllocator::deallocate n=2 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=88
+pointer_in_buffer: p=48
+BORING Freed=56 Unfreed=32
+StackAllocator::allocate n=4 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=88
+StackAllocator::deallocate n=2 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=96
+pointer_in_buffer: p=56
+BORING Freed=64 Unfreed=32
+StackAllocator::allocate n=8 sizeof(T)=1 alloc_size=8 index=1
+pointer_in_buffer: p=0
+StackAllocator::deallocate n=4 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=96
+pointer_in_buffer: p=64
+BORING Freed=72 Unfreed=24
+StackAllocator::allocate n=8 sizeof(T)=1 alloc_size=8 index=1
+pointer_in_buffer: p=8
+StackAllocator::deallocate n=4 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=96
+pointer_in_buffer: p=72
+BORING Freed=80 Unfreed=16
+StackAllocator::allocate n=8 sizeof(T)=1 alloc_size=8 index=1
+pointer_in_buffer: p=16
+StackAllocator::deallocate n=4 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=96
+pointer_in_buffer: p=80
+BORING Freed=88 Unfreed=8
+StackAllocator::allocate n=8 sizeof(T)=1 alloc_size=8 index=1
+pointer_in_buffer: p=24
+StackAllocator::deallocate n=4 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=96
+pointer_in_buffer: p=88
+Lucky all freed
+StackAllocator::allocate n=16 sizeof(T)=1 alloc_size=16 index=2
+pointer_in_buffer: p=0
+StackAllocator::deallocate n=8 sizeof(T)=1 alloc_size=8 index=1
+deallocate
+pointer_in_buffer: p=32
+pointer_in_buffer: p=0
+BORING Freed=8 Unfreed=24
+StackAllocator::allocate n=16 sizeof(T)=1 alloc_size=16 index=2
+pointer_in_buffer: p=16
+StackAllocator::deallocate n=8 sizeof(T)=1 alloc_size=8 index=1
+deallocate
+pointer_in_buffer: p=32
+pointer_in_buffer: p=8
+BORING Freed=16 Unfreed=16
+StackAllocator::allocate n=16 sizeof(T)=1 alloc_size=16 index=2
+pointer_in_buffer: p=32
+StackAllocator::deallocate n=8 sizeof(T)=1 alloc_size=8 index=1
+deallocate
+pointer_in_buffer: p=32
+pointer_in_buffer: p=16
+BORING Freed=24 Unfreed=8
+StackAllocator::allocate n=16 sizeof(T)=1 alloc_size=16 index=2
+pointer_in_buffer: p=48
+StackAllocator::deallocate n=8 sizeof(T)=1 alloc_size=8 index=1
+deallocate
+pointer_in_buffer: p=32
+pointer_in_buffer: p=24
+Lucky all freed
+==== BEGIN CLEANUP ====
+StackAllocator::deallocate n=16 sizeof(T)=1 alloc_size=16 index=2
+deallocate
+pointer_in_buffer: p=64
+pointer_in_buffer: p=0
+BORING Freed=16 Unfreed=48
+StackAllocator::deallocate n=16 sizeof(T)=1 alloc_size=16 index=2
+deallocate
+pointer_in_buffer: p=64
+pointer_in_buffer: p=16
+BORING Freed=32 Unfreed=32
+StackAllocator::deallocate n=16 sizeof(T)=1 alloc_size=16 index=2
+deallocate
+pointer_in_buffer: p=64
+pointer_in_buffer: p=32
+BORING Freed=48 Unfreed=16
+StackAllocator::deallocate n=16 sizeof(T)=1 alloc_size=16 index=2
+deallocate
+pointer_in_buffer: p=64
+pointer_in_buffer: p=48
+Lucky all freed
+==== END CLEANUP ====
+StackAllocator::allocate n=1 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=0
+StackAllocator::allocate n=1 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=8
+StackAllocator::allocate n=1 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=16
+StackAllocator::allocate n=1 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=24
+StackAllocator::allocate n=2 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=32
+StackAllocator::deallocate n=1 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=40
+pointer_in_buffer: p=0
+BORING Freed=8 Unfreed=32
+StackAllocator::allocate n=2 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=40
+StackAllocator::deallocate n=1 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=48
+pointer_in_buffer: p=8
+BORING Freed=16 Unfreed=32
+StackAllocator::allocate n=2 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=48
+StackAllocator::deallocate n=1 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=56
+pointer_in_buffer: p=16
+BORING Freed=24 Unfreed=32
+StackAllocator::allocate n=2 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=56
+StackAllocator::deallocate n=1 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=64
+pointer_in_buffer: p=24
+BORING Freed=32 Unfreed=32
+StackAllocator::allocate n=4 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=64
+StackAllocator::deallocate n=2 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=72
+pointer_in_buffer: p=32
+BORING Freed=40 Unfreed=32
+StackAllocator::allocate n=4 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=72
+StackAllocator::deallocate n=2 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=80
+pointer_in_buffer: p=40
+BORING Freed=48 Unfreed=32
+StackAllocator::allocate n=4 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=80
+StackAllocator::deallocate n=2 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=88
+pointer_in_buffer: p=48
+BORING Freed=56 Unfreed=32
+StackAllocator::allocate n=4 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=88
+StackAllocator::deallocate n=2 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=96
+pointer_in_buffer: p=56
+BORING Freed=64 Unfreed=32
+StackAllocator::allocate n=8 sizeof(T)=1 alloc_size=8 index=1
+pointer_in_buffer: p=0
+StackAllocator::deallocate n=4 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=96
+pointer_in_buffer: p=64
+BORING Freed=72 Unfreed=24
+StackAllocator::allocate n=8 sizeof(T)=1 alloc_size=8 index=1
+pointer_in_buffer: p=8
+StackAllocator::deallocate n=4 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=96
+pointer_in_buffer: p=72
+BORING Freed=80 Unfreed=16
+StackAllocator::allocate n=8 sizeof(T)=1 alloc_size=8 index=1
+pointer_in_buffer: p=16
+StackAllocator::deallocate n=4 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=96
+pointer_in_buffer: p=80
+BORING Freed=88 Unfreed=8
+StackAllocator::allocate n=8 sizeof(T)=1 alloc_size=8 index=1
+pointer_in_buffer: p=24
+StackAllocator::deallocate n=4 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=96
+pointer_in_buffer: p=88
+Lucky all freed
+StackAllocator::allocate n=16 sizeof(T)=1 alloc_size=16 index=2
+pointer_in_buffer: p=0
+StackAllocator::deallocate n=8 sizeof(T)=1 alloc_size=8 index=1
+deallocate
+pointer_in_buffer: p=32
+pointer_in_buffer: p=0
+BORING Freed=8 Unfreed=24
+StackAllocator::allocate n=16 sizeof(T)=1 alloc_size=16 index=2
+pointer_in_buffer: p=16
+StackAllocator::deallocate n=8 sizeof(T)=1 alloc_size=8 index=1
+deallocate
+pointer_in_buffer: p=32
+pointer_in_buffer: p=8
+BORING Freed=16 Unfreed=16
+StackAllocator::allocate n=16 sizeof(T)=1 alloc_size=16 index=2
+pointer_in_buffer: p=32
+StackAllocator::deallocate n=8 sizeof(T)=1 alloc_size=8 index=1
+deallocate
+pointer_in_buffer: p=32
+pointer_in_buffer: p=16
+BORING Freed=24 Unfreed=8
+StackAllocator::allocate n=16 sizeof(T)=1 alloc_size=16 index=2
+pointer_in_buffer: p=48
+StackAllocator::deallocate n=8 sizeof(T)=1 alloc_size=8 index=1
+deallocate
+pointer_in_buffer: p=32
+pointer_in_buffer: p=24
+Lucky all freed
+==== BEGIN CLEANUP ====
+StackAllocator::deallocate n=16 sizeof(T)=1 alloc_size=16 index=2
+deallocate
+pointer_in_buffer: p=64
+pointer_in_buffer: p=0
+BORING Freed=16 Unfreed=48
+StackAllocator::deallocate n=16 sizeof(T)=1 alloc_size=16 index=2
+deallocate
+pointer_in_buffer: p=64
+pointer_in_buffer: p=16
+BORING Freed=32 Unfreed=32
+StackAllocator::deallocate n=16 sizeof(T)=1 alloc_size=16 index=2
+deallocate
+pointer_in_buffer: p=64
+pointer_in_buffer: p=32
+BORING Freed=48 Unfreed=16
+StackAllocator::deallocate n=16 sizeof(T)=1 alloc_size=16 index=2
+deallocate
+pointer_in_buffer: p=64
+pointer_in_buffer: p=48
+Lucky all freed
+==== END CLEANUP ====
+StackAllocator::allocate n=1 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=0
+StackAllocator::allocate n=1 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=8
+StackAllocator::allocate n=1 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=16
+StackAllocator::allocate n=1 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=24
+StackAllocator::allocate n=2 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=32
+StackAllocator::deallocate n=1 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=40
+pointer_in_buffer: p=0
+BORING Freed=8 Unfreed=32
+StackAllocator::allocate n=2 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=40
+StackAllocator::deallocate n=1 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=48
+pointer_in_buffer: p=8
+BORING Freed=16 Unfreed=32
+StackAllocator::allocate n=2 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=48
+StackAllocator::deallocate n=1 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=56
+pointer_in_buffer: p=16
+BORING Freed=24 Unfreed=32
+StackAllocator::allocate n=2 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=56
+StackAllocator::deallocate n=1 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=64
+pointer_in_buffer: p=24
+BORING Freed=32 Unfreed=32
+StackAllocator::allocate n=4 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=64
+StackAllocator::deallocate n=2 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=72
+pointer_in_buffer: p=32
+BORING Freed=40 Unfreed=32
+StackAllocator::allocate n=4 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=72
+StackAllocator::deallocate n=2 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=80
+pointer_in_buffer: p=40
+BORING Freed=48 Unfreed=32
+StackAllocator::allocate n=4 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=80
+StackAllocator::deallocate n=2 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=88
+pointer_in_buffer: p=48
+BORING Freed=56 Unfreed=32
+StackAllocator::allocate n=4 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=88
+StackAllocator::deallocate n=2 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=96
+pointer_in_buffer: p=56
+BORING Freed=64 Unfreed=32
+StackAllocator::allocate n=8 sizeof(T)=1 alloc_size=8 index=1
+pointer_in_buffer: p=0
+StackAllocator::deallocate n=4 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=96
+pointer_in_buffer: p=64
+BORING Freed=72 Unfreed=24
+StackAllocator::allocate n=8 sizeof(T)=1 alloc_size=8 index=1
+pointer_in_buffer: p=8
+StackAllocator::deallocate n=4 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=96
+pointer_in_buffer: p=72
+BORING Freed=80 Unfreed=16
+StackAllocator::allocate n=8 sizeof(T)=1 alloc_size=8 index=1
+pointer_in_buffer: p=16
+StackAllocator::deallocate n=4 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=96
+pointer_in_buffer: p=80
+BORING Freed=88 Unfreed=8
+StackAllocator::allocate n=8 sizeof(T)=1 alloc_size=8 index=1
+pointer_in_buffer: p=24
+StackAllocator::deallocate n=4 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=96
+pointer_in_buffer: p=88
+Lucky all freed
+StackAllocator::allocate n=16 sizeof(T)=1 alloc_size=16 index=2
+pointer_in_buffer: p=0
+StackAllocator::deallocate n=8 sizeof(T)=1 alloc_size=8 index=1
+deallocate
+pointer_in_buffer: p=32
+pointer_in_buffer: p=0
+BORING Freed=8 Unfreed=24
+StackAllocator::allocate n=16 sizeof(T)=1 alloc_size=16 index=2
+pointer_in_buffer: p=16
+StackAllocator::deallocate n=8 sizeof(T)=1 alloc_size=8 index=1
+deallocate
+pointer_in_buffer: p=32
+pointer_in_buffer: p=8
+BORING Freed=16 Unfreed=16
+StackAllocator::allocate n=16 sizeof(T)=1 alloc_size=16 index=2
+pointer_in_buffer: p=32
+StackAllocator::deallocate n=8 sizeof(T)=1 alloc_size=8 index=1
+deallocate
+pointer_in_buffer: p=32
+pointer_in_buffer: p=16
+BORING Freed=24 Unfreed=8
+StackAllocator::allocate n=16 sizeof(T)=1 alloc_size=16 index=2
+pointer_in_buffer: p=48
+StackAllocator::deallocate n=8 sizeof(T)=1 alloc_size=8 index=1
+deallocate
+pointer_in_buffer: p=32
+pointer_in_buffer: p=24
+Lucky all freed
+==== BEGIN CLEANUP ====
+StackAllocator::deallocate n=16 sizeof(T)=1 alloc_size=16 index=2
+deallocate
+pointer_in_buffer: p=64
+pointer_in_buffer: p=0
+BORING Freed=16 Unfreed=48
+StackAllocator::deallocate n=16 sizeof(T)=1 alloc_size=16 index=2
+deallocate
+pointer_in_buffer: p=64
+pointer_in_buffer: p=16
+BORING Freed=32 Unfreed=32
+StackAllocator::deallocate n=16 sizeof(T)=1 alloc_size=16 index=2
+deallocate
+pointer_in_buffer: p=64
+pointer_in_buffer: p=32
+BORING Freed=48 Unfreed=16
+StackAllocator::deallocate n=16 sizeof(T)=1 alloc_size=16 index=2
+deallocate
+pointer_in_buffer: p=64
+pointer_in_buffer: p=48
+Lucky all freed
+==== END CLEANUP ====
+StackAllocator::allocate n=1 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=0
+StackAllocator::allocate n=1 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=8
+StackAllocator::allocate n=1 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=16
+StackAllocator::allocate n=1 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=24
+StackAllocator::allocate n=2 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=32
+StackAllocator::deallocate n=1 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=40
+pointer_in_buffer: p=0
+BORING Freed=8 Unfreed=32
+StackAllocator::allocate n=2 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=40
+StackAllocator::deallocate n=1 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=48
+pointer_in_buffer: p=8
+BORING Freed=16 Unfreed=32
+StackAllocator::allocate n=2 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=48
+StackAllocator::deallocate n=1 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=56
+pointer_in_buffer: p=16
+BORING Freed=24 Unfreed=32
+StackAllocator::allocate n=2 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=56
+StackAllocator::deallocate n=1 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=64
+pointer_in_buffer: p=24
+BORING Freed=32 Unfreed=32
+StackAllocator::allocate n=4 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=64
+StackAllocator::deallocate n=2 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=72
+pointer_in_buffer: p=32
+BORING Freed=40 Unfreed=32
+StackAllocator::allocate n=4 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=72
+StackAllocator::deallocate n=2 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=80
+pointer_in_buffer: p=40
+BORING Freed=48 Unfreed=32
+StackAllocator::allocate n=4 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=80
+StackAllocator::deallocate n=2 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=88
+pointer_in_buffer: p=48
+BORING Freed=56 Unfreed=32
+StackAllocator::allocate n=4 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=88
+StackAllocator::deallocate n=2 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=96
+pointer_in_buffer: p=56
+BORING Freed=64 Unfreed=32
+StackAllocator::allocate n=8 sizeof(T)=1 alloc_size=8 index=1
+pointer_in_buffer: p=0
+StackAllocator::deallocate n=4 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=96
+pointer_in_buffer: p=64
+BORING Freed=72 Unfreed=24
+StackAllocator::allocate n=8 sizeof(T)=1 alloc_size=8 index=1
+pointer_in_buffer: p=8
+StackAllocator::deallocate n=4 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=96
+pointer_in_buffer: p=72
+BORING Freed=80 Unfreed=16
+StackAllocator::allocate n=8 sizeof(T)=1 alloc_size=8 index=1
+pointer_in_buffer: p=16
+StackAllocator::deallocate n=4 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=96
+pointer_in_buffer: p=80
+BORING Freed=88 Unfreed=8
+StackAllocator::allocate n=8 sizeof(T)=1 alloc_size=8 index=1
+pointer_in_buffer: p=24
+StackAllocator::deallocate n=4 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=96
+pointer_in_buffer: p=88
+Lucky all freed
+StackAllocator::allocate n=16 sizeof(T)=1 alloc_size=16 index=2
+pointer_in_buffer: p=0
+StackAllocator::deallocate n=8 sizeof(T)=1 alloc_size=8 index=1
+deallocate
+pointer_in_buffer: p=32
+pointer_in_buffer: p=0
+BORING Freed=8 Unfreed=24
+StackAllocator::allocate n=16 sizeof(T)=1 alloc_size=16 index=2
+pointer_in_buffer: p=16
+StackAllocator::deallocate n=8 sizeof(T)=1 alloc_size=8 index=1
+deallocate
+pointer_in_buffer: p=32
+pointer_in_buffer: p=8
+BORING Freed=16 Unfreed=16
+StackAllocator::allocate n=16 sizeof(T)=1 alloc_size=16 index=2
+pointer_in_buffer: p=32
+StackAllocator::deallocate n=8 sizeof(T)=1 alloc_size=8 index=1
+deallocate
+pointer_in_buffer: p=32
+pointer_in_buffer: p=16
+BORING Freed=24 Unfreed=8
+StackAllocator::allocate n=16 sizeof(T)=1 alloc_size=16 index=2
+pointer_in_buffer: p=48
+StackAllocator::deallocate n=8 sizeof(T)=1 alloc_size=8 index=1
+deallocate
+pointer_in_buffer: p=32
+pointer_in_buffer: p=24
+Lucky all freed
+==== BEGIN CLEANUP ====
+StackAllocator::deallocate n=16 sizeof(T)=1 alloc_size=16 index=2
+deallocate
+pointer_in_buffer: p=64
+pointer_in_buffer: p=0
+BORING Freed=16 Unfreed=48
+StackAllocator::deallocate n=16 sizeof(T)=1 alloc_size=16 index=2
+deallocate
+pointer_in_buffer: p=64
+pointer_in_buffer: p=16
+BORING Freed=32 Unfreed=32
+StackAllocator::deallocate n=16 sizeof(T)=1 alloc_size=16 index=2
+deallocate
+pointer_in_buffer: p=64
+pointer_in_buffer: p=32
+BORING Freed=48 Unfreed=16
+StackAllocator::deallocate n=16 sizeof(T)=1 alloc_size=16 index=2
+deallocate
+pointer_in_buffer: p=64
+pointer_in_buffer: p=48
+Lucky all freed
+==== END CLEANUP ====
+StackAllocator::allocate n=1 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=0
+StackAllocator::allocate n=1 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=8
+StackAllocator::allocate n=1 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=16
+StackAllocator::allocate n=1 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=24
+StackAllocator::allocate n=2 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=32
+StackAllocator::deallocate n=1 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=40
+pointer_in_buffer: p=0
+BORING Freed=8 Unfreed=32
+StackAllocator::allocate n=2 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=40
+StackAllocator::deallocate n=1 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=48
+pointer_in_buffer: p=8
+BORING Freed=16 Unfreed=32
+StackAllocator::allocate n=2 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=48
+StackAllocator::deallocate n=1 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=56
+pointer_in_buffer: p=16
+BORING Freed=24 Unfreed=32
+StackAllocator::allocate n=2 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=56
+StackAllocator::deallocate n=1 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=64
+pointer_in_buffer: p=24
+BORING Freed=32 Unfreed=32
+StackAllocator::allocate n=4 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=64
+StackAllocator::deallocate n=2 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=72
+pointer_in_buffer: p=32
+BORING Freed=40 Unfreed=32
+StackAllocator::allocate n=4 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=72
+StackAllocator::deallocate n=2 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=80
+pointer_in_buffer: p=40
+BORING Freed=48 Unfreed=32
+StackAllocator::allocate n=4 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=80
+StackAllocator::deallocate n=2 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=88
+pointer_in_buffer: p=48
+BORING Freed=56 Unfreed=32
+StackAllocator::allocate n=4 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=88
+StackAllocator::deallocate n=2 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=96
+pointer_in_buffer: p=56
+BORING Freed=64 Unfreed=32
+StackAllocator::allocate n=8 sizeof(T)=1 alloc_size=8 index=1
+pointer_in_buffer: p=0
+StackAllocator::deallocate n=4 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=96
+pointer_in_buffer: p=64
+BORING Freed=72 Unfreed=24
+StackAllocator::allocate n=8 sizeof(T)=1 alloc_size=8 index=1
+pointer_in_buffer: p=8
+StackAllocator::deallocate n=4 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=96
+pointer_in_buffer: p=72
+BORING Freed=80 Unfreed=16
+StackAllocator::allocate n=8 sizeof(T)=1 alloc_size=8 index=1
+pointer_in_buffer: p=16
+StackAllocator::deallocate n=4 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=96
+pointer_in_buffer: p=80
+BORING Freed=88 Unfreed=8
+StackAllocator::allocate n=8 sizeof(T)=1 alloc_size=8 index=1
+pointer_in_buffer: p=24
+StackAllocator::deallocate n=4 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=96
+pointer_in_buffer: p=88
+Lucky all freed
+StackAllocator::allocate n=16 sizeof(T)=1 alloc_size=16 index=2
+pointer_in_buffer: p=0
+StackAllocator::deallocate n=8 sizeof(T)=1 alloc_size=8 index=1
+deallocate
+pointer_in_buffer: p=32
+pointer_in_buffer: p=0
+BORING Freed=8 Unfreed=24
+StackAllocator::allocate n=16 sizeof(T)=1 alloc_size=16 index=2
+pointer_in_buffer: p=16
+StackAllocator::deallocate n=8 sizeof(T)=1 alloc_size=8 index=1
+deallocate
+pointer_in_buffer: p=32
+pointer_in_buffer: p=8
+BORING Freed=16 Unfreed=16
+StackAllocator::allocate n=16 sizeof(T)=1 alloc_size=16 index=2
+pointer_in_buffer: p=32
+StackAllocator::deallocate n=8 sizeof(T)=1 alloc_size=8 index=1
+deallocate
+pointer_in_buffer: p=32
+pointer_in_buffer: p=16
+BORING Freed=24 Unfreed=8
+StackAllocator::allocate n=16 sizeof(T)=1 alloc_size=16 index=2
+pointer_in_buffer: p=48
+StackAllocator::deallocate n=8 sizeof(T)=1 alloc_size=8 index=1
+deallocate
+pointer_in_buffer: p=32
+pointer_in_buffer: p=24
+Lucky all freed
+==== BEGIN CLEANUP ====
+StackAllocator::deallocate n=16 sizeof(T)=1 alloc_size=16 index=2
+deallocate
+pointer_in_buffer: p=64
+pointer_in_buffer: p=0
+BORING Freed=16 Unfreed=48
+StackAllocator::deallocate n=16 sizeof(T)=1 alloc_size=16 index=2
+deallocate
+pointer_in_buffer: p=64
+pointer_in_buffer: p=16
+BORING Freed=32 Unfreed=32
+StackAllocator::deallocate n=16 sizeof(T)=1 alloc_size=16 index=2
+deallocate
+pointer_in_buffer: p=64
+pointer_in_buffer: p=32
+BORING Freed=48 Unfreed=16
+StackAllocator::deallocate n=16 sizeof(T)=1 alloc_size=16 index=2
+deallocate
+pointer_in_buffer: p=64
+pointer_in_buffer: p=48
+Lucky all freed
+==== END CLEANUP ====
+StackAllocator::allocate n=1 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=0
+StackAllocator::allocate n=1 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=8
+StackAllocator::allocate n=1 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=16
+StackAllocator::allocate n=1 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=24
+StackAllocator::allocate n=2 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=32
+StackAllocator::deallocate n=1 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=40
+pointer_in_buffer: p=0
+BORING Freed=8 Unfreed=32
+StackAllocator::allocate n=2 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=40
+StackAllocator::deallocate n=1 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=48
+pointer_in_buffer: p=8
+BORING Freed=16 Unfreed=32
+StackAllocator::allocate n=2 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=48
+StackAllocator::deallocate n=1 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=56
+pointer_in_buffer: p=16
+BORING Freed=24 Unfreed=32
+StackAllocator::allocate n=2 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=56
+StackAllocator::deallocate n=1 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=64
+pointer_in_buffer: p=24
+BORING Freed=32 Unfreed=32
+StackAllocator::allocate n=4 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=64
+StackAllocator::deallocate n=2 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=72
+pointer_in_buffer: p=32
+BORING Freed=40 Unfreed=32
+StackAllocator::allocate n=4 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=72
+StackAllocator::deallocate n=2 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=80
+pointer_in_buffer: p=40
+BORING Freed=48 Unfreed=32
+StackAllocator::allocate n=4 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=80
+StackAllocator::deallocate n=2 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=88
+pointer_in_buffer: p=48
+BORING Freed=56 Unfreed=32
+StackAllocator::allocate n=4 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=88
+StackAllocator::deallocate n=2 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=96
+pointer_in_buffer: p=56
+BORING Freed=64 Unfreed=32
+StackAllocator::allocate n=8 sizeof(T)=1 alloc_size=8 index=1
+pointer_in_buffer: p=0
+StackAllocator::deallocate n=4 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=96
+pointer_in_buffer: p=64
+BORING Freed=72 Unfreed=24
+StackAllocator::allocate n=8 sizeof(T)=1 alloc_size=8 index=1
+pointer_in_buffer: p=8
+StackAllocator::deallocate n=4 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=96
+pointer_in_buffer: p=72
+BORING Freed=80 Unfreed=16
+StackAllocator::allocate n=8 sizeof(T)=1 alloc_size=8 index=1
+pointer_in_buffer: p=16
+StackAllocator::deallocate n=4 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=96
+pointer_in_buffer: p=80
+BORING Freed=88 Unfreed=8
+StackAllocator::allocate n=8 sizeof(T)=1 alloc_size=8 index=1
+pointer_in_buffer: p=24
+StackAllocator::deallocate n=4 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=96
+pointer_in_buffer: p=88
+Lucky all freed
+StackAllocator::allocate n=16 sizeof(T)=1 alloc_size=16 index=2
+pointer_in_buffer: p=0
+StackAllocator::deallocate n=8 sizeof(T)=1 alloc_size=8 index=1
+deallocate
+pointer_in_buffer: p=32
+pointer_in_buffer: p=0
+BORING Freed=8 Unfreed=24
+StackAllocator::allocate n=16 sizeof(T)=1 alloc_size=16 index=2
+pointer_in_buffer: p=16
+StackAllocator::deallocate n=8 sizeof(T)=1 alloc_size=8 index=1
+deallocate
+pointer_in_buffer: p=32
+pointer_in_buffer: p=8
+BORING Freed=16 Unfreed=16
+StackAllocator::allocate n=16 sizeof(T)=1 alloc_size=16 index=2
+pointer_in_buffer: p=32
+StackAllocator::deallocate n=8 sizeof(T)=1 alloc_size=8 index=1
+deallocate
+pointer_in_buffer: p=32
+pointer_in_buffer: p=16
+BORING Freed=24 Unfreed=8
+StackAllocator::allocate n=16 sizeof(T)=1 alloc_size=16 index=2
+pointer_in_buffer: p=48
+StackAllocator::deallocate n=8 sizeof(T)=1 alloc_size=8 index=1
+deallocate
+pointer_in_buffer: p=32
+pointer_in_buffer: p=24
+Lucky all freed
+==== BEGIN CLEANUP ====
+StackAllocator::deallocate n=16 sizeof(T)=1 alloc_size=16 index=2
+deallocate
+pointer_in_buffer: p=64
+pointer_in_buffer: p=0
+BORING Freed=16 Unfreed=48
+StackAllocator::deallocate n=16 sizeof(T)=1 alloc_size=16 index=2
+deallocate
+pointer_in_buffer: p=64
+pointer_in_buffer: p=16
+BORING Freed=32 Unfreed=32
+StackAllocator::deallocate n=16 sizeof(T)=1 alloc_size=16 index=2
+deallocate
+pointer_in_buffer: p=64
+pointer_in_buffer: p=32
+BORING Freed=48 Unfreed=16
+StackAllocator::deallocate n=16 sizeof(T)=1 alloc_size=16 index=2
+deallocate
+pointer_in_buffer: p=64
+pointer_in_buffer: p=48
+Lucky all freed
+==== END CLEANUP ====
+StackAllocator::allocate n=1 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=0
+StackAllocator::allocate n=1 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=8
+StackAllocator::allocate n=1 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=16
+StackAllocator::allocate n=1 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=24
+StackAllocator::allocate n=2 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=32
+StackAllocator::deallocate n=1 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=40
+pointer_in_buffer: p=0
+BORING Freed=8 Unfreed=32
+StackAllocator::allocate n=2 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=40
+StackAllocator::deallocate n=1 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=48
+pointer_in_buffer: p=8
+BORING Freed=16 Unfreed=32
+StackAllocator::allocate n=2 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=48
+StackAllocator::deallocate n=1 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=56
+pointer_in_buffer: p=16
+BORING Freed=24 Unfreed=32
+StackAllocator::allocate n=2 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=56
+StackAllocator::deallocate n=1 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=64
+pointer_in_buffer: p=24
+BORING Freed=32 Unfreed=32
+StackAllocator::allocate n=4 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=64
+StackAllocator::deallocate n=2 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=72
+pointer_in_buffer: p=32
+BORING Freed=40 Unfreed=32
+StackAllocator::allocate n=4 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=72
+StackAllocator::deallocate n=2 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=80
+pointer_in_buffer: p=40
+BORING Freed=48 Unfreed=32
+StackAllocator::allocate n=4 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=80
+StackAllocator::deallocate n=2 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=88
+pointer_in_buffer: p=48
+BORING Freed=56 Unfreed=32
+StackAllocator::allocate n=4 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=88
+StackAllocator::deallocate n=2 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=96
+pointer_in_buffer: p=56
+BORING Freed=64 Unfreed=32
+StackAllocator::allocate n=8 sizeof(T)=1 alloc_size=8 index=1
+pointer_in_buffer: p=0
+StackAllocator::deallocate n=4 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=96
+pointer_in_buffer: p=64
+BORING Freed=72 Unfreed=24
+StackAllocator::allocate n=8 sizeof(T)=1 alloc_size=8 index=1
+pointer_in_buffer: p=8
+StackAllocator::deallocate n=4 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=96
+pointer_in_buffer: p=72
+BORING Freed=80 Unfreed=16
+StackAllocator::allocate n=8 sizeof(T)=1 alloc_size=8 index=1
+pointer_in_buffer: p=16
+StackAllocator::deallocate n=4 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=96
+pointer_in_buffer: p=80
+BORING Freed=88 Unfreed=8
+StackAllocator::allocate n=8 sizeof(T)=1 alloc_size=8 index=1
+pointer_in_buffer: p=24
+StackAllocator::deallocate n=4 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=96
+pointer_in_buffer: p=88
+Lucky all freed
+StackAllocator::allocate n=16 sizeof(T)=1 alloc_size=16 index=2
+pointer_in_buffer: p=0
+StackAllocator::deallocate n=8 sizeof(T)=1 alloc_size=8 index=1
+deallocate
+pointer_in_buffer: p=32
+pointer_in_buffer: p=0
+BORING Freed=8 Unfreed=24
+StackAllocator::allocate n=16 sizeof(T)=1 alloc_size=16 index=2
+pointer_in_buffer: p=16
+StackAllocator::deallocate n=8 sizeof(T)=1 alloc_size=8 index=1
+deallocate
+pointer_in_buffer: p=32
+pointer_in_buffer: p=8
+BORING Freed=16 Unfreed=16
+StackAllocator::allocate n=16 sizeof(T)=1 alloc_size=16 index=2
+pointer_in_buffer: p=32
+StackAllocator::deallocate n=8 sizeof(T)=1 alloc_size=8 index=1
+deallocate
+pointer_in_buffer: p=32
+pointer_in_buffer: p=16
+BORING Freed=24 Unfreed=8
+StackAllocator::allocate n=16 sizeof(T)=1 alloc_size=16 index=2
+pointer_in_buffer: p=48
+StackAllocator::deallocate n=8 sizeof(T)=1 alloc_size=8 index=1
+deallocate
+pointer_in_buffer: p=32
+pointer_in_buffer: p=24
+Lucky all freed
+==== BEGIN CLEANUP ====
+StackAllocator::deallocate n=16 sizeof(T)=1 alloc_size=16 index=2
+deallocate
+pointer_in_buffer: p=64
+pointer_in_buffer: p=0
+BORING Freed=16 Unfreed=48
+StackAllocator::deallocate n=16 sizeof(T)=1 alloc_size=16 index=2
+deallocate
+pointer_in_buffer: p=64
+pointer_in_buffer: p=16
+BORING Freed=32 Unfreed=32
+StackAllocator::deallocate n=16 sizeof(T)=1 alloc_size=16 index=2
+deallocate
+pointer_in_buffer: p=64
+pointer_in_buffer: p=32
+BORING Freed=48 Unfreed=16
+StackAllocator::deallocate n=16 sizeof(T)=1 alloc_size=16 index=2
+deallocate
+pointer_in_buffer: p=64
+pointer_in_buffer: p=48
+Lucky all freed
+==== END CLEANUP ====
+StackAllocator::allocate n=1 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=0
+StackAllocator::allocate n=1 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=8
+StackAllocator::allocate n=1 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=16
+StackAllocator::allocate n=1 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=24
+StackAllocator::allocate n=2 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=32
+StackAllocator::deallocate n=1 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=40
+pointer_in_buffer: p=0
+BORING Freed=8 Unfreed=32
+StackAllocator::allocate n=2 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=40
+StackAllocator::deallocate n=1 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=48
+pointer_in_buffer: p=8
+BORING Freed=16 Unfreed=32
+StackAllocator::allocate n=2 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=48
+StackAllocator::deallocate n=1 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=56
+pointer_in_buffer: p=16
+BORING Freed=24 Unfreed=32
+StackAllocator::allocate n=2 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=56
+StackAllocator::deallocate n=1 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=64
+pointer_in_buffer: p=24
+BORING Freed=32 Unfreed=32
+StackAllocator::allocate n=4 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=64
+StackAllocator::deallocate n=2 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=72
+pointer_in_buffer: p=32
+BORING Freed=40 Unfreed=32
+StackAllocator::allocate n=4 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=72
+StackAllocator::deallocate n=2 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=80
+pointer_in_buffer: p=40
+BORING Freed=48 Unfreed=32
+StackAllocator::allocate n=4 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=80
+StackAllocator::deallocate n=2 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=88
+pointer_in_buffer: p=48
+BORING Freed=56 Unfreed=32
+StackAllocator::allocate n=4 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=88
+StackAllocator::deallocate n=2 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=96
+pointer_in_buffer: p=56
+BORING Freed=64 Unfreed=32
+StackAllocator::allocate n=8 sizeof(T)=1 alloc_size=8 index=1
+pointer_in_buffer: p=0
+StackAllocator::deallocate n=4 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=96
+pointer_in_buffer: p=64
+BORING Freed=72 Unfreed=24
+StackAllocator::allocate n=8 sizeof(T)=1 alloc_size=8 index=1
+pointer_in_buffer: p=8
+StackAllocator::deallocate n=4 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=96
+pointer_in_buffer: p=72
+BORING Freed=80 Unfreed=16
+StackAllocator::allocate n=8 sizeof(T)=1 alloc_size=8 index=1
+pointer_in_buffer: p=16
+StackAllocator::deallocate n=4 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=96
+pointer_in_buffer: p=80
+BORING Freed=88 Unfreed=8
+StackAllocator::allocate n=8 sizeof(T)=1 alloc_size=8 index=1
+pointer_in_buffer: p=24
+StackAllocator::deallocate n=4 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=96
+pointer_in_buffer: p=88
+Lucky all freed
+StackAllocator::allocate n=16 sizeof(T)=1 alloc_size=16 index=2
+pointer_in_buffer: p=0
+StackAllocator::deallocate n=8 sizeof(T)=1 alloc_size=8 index=1
+deallocate
+pointer_in_buffer: p=32
+pointer_in_buffer: p=0
+BORING Freed=8 Unfreed=24
+StackAllocator::allocate n=16 sizeof(T)=1 alloc_size=16 index=2
+pointer_in_buffer: p=16
+StackAllocator::deallocate n=8 sizeof(T)=1 alloc_size=8 index=1
+deallocate
+pointer_in_buffer: p=32
+pointer_in_buffer: p=8
+BORING Freed=16 Unfreed=16
+StackAllocator::allocate n=16 sizeof(T)=1 alloc_size=16 index=2
+pointer_in_buffer: p=32
+StackAllocator::deallocate n=8 sizeof(T)=1 alloc_size=8 index=1
+deallocate
+pointer_in_buffer: p=32
+pointer_in_buffer: p=16
+BORING Freed=24 Unfreed=8
+StackAllocator::allocate n=16 sizeof(T)=1 alloc_size=16 index=2
+pointer_in_buffer: p=48
+StackAllocator::deallocate n=8 sizeof(T)=1 alloc_size=8 index=1
+deallocate
+pointer_in_buffer: p=32
+pointer_in_buffer: p=24
+Lucky all freed
+==== BEGIN CLEANUP ====
+StackAllocator::deallocate n=16 sizeof(T)=1 alloc_size=16 index=2
+deallocate
+pointer_in_buffer: p=64
+pointer_in_buffer: p=0
+BORING Freed=16 Unfreed=48
+StackAllocator::deallocate n=16 sizeof(T)=1 alloc_size=16 index=2
+deallocate
+pointer_in_buffer: p=64
+pointer_in_buffer: p=16
+BORING Freed=32 Unfreed=32
+StackAllocator::deallocate n=16 sizeof(T)=1 alloc_size=16 index=2
+deallocate
+pointer_in_buffer: p=64
+pointer_in_buffer: p=32
+BORING Freed=48 Unfreed=16
+StackAllocator::deallocate n=16 sizeof(T)=1 alloc_size=16 index=2
+deallocate
+pointer_in_buffer: p=64
+pointer_in_buffer: p=48
+Lucky all freed
+==== END CLEANUP ====
+StackAllocator::allocate n=1 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=0
+StackAllocator::allocate n=1 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=8
+StackAllocator::allocate n=1 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=16
+StackAllocator::allocate n=1 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=24
+StackAllocator::allocate n=2 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=32
+StackAllocator::deallocate n=1 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=40
+pointer_in_buffer: p=0
+BORING Freed=8 Unfreed=32
+StackAllocator::allocate n=2 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=40
+StackAllocator::deallocate n=1 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=48
+pointer_in_buffer: p=8
+BORING Freed=16 Unfreed=32
+StackAllocator::allocate n=2 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=48
+StackAllocator::deallocate n=1 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=56
+pointer_in_buffer: p=16
+BORING Freed=24 Unfreed=32
+StackAllocator::allocate n=2 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=56
+StackAllocator::deallocate n=1 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=64
+pointer_in_buffer: p=24
+BORING Freed=32 Unfreed=32
+StackAllocator::allocate n=4 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=64
+StackAllocator::deallocate n=2 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=72
+pointer_in_buffer: p=32
+BORING Freed=40 Unfreed=32
+StackAllocator::allocate n=4 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=72
+StackAllocator::deallocate n=2 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=80
+pointer_in_buffer: p=40
+BORING Freed=48 Unfreed=32
+StackAllocator::allocate n=4 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=80
+StackAllocator::deallocate n=2 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=88
+pointer_in_buffer: p=48
+BORING Freed=56 Unfreed=32
+StackAllocator::allocate n=4 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=88
+StackAllocator::deallocate n=2 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=96
+pointer_in_buffer: p=56
+BORING Freed=64 Unfreed=32
+StackAllocator::allocate n=8 sizeof(T)=1 alloc_size=8 index=1
+pointer_in_buffer: p=0
+StackAllocator::deallocate n=4 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=96
+pointer_in_buffer: p=64
+BORING Freed=72 Unfreed=24
+StackAllocator::allocate n=8 sizeof(T)=1 alloc_size=8 index=1
+pointer_in_buffer: p=8
+StackAllocator::deallocate n=4 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=96
+pointer_in_buffer: p=72
+BORING Freed=80 Unfreed=16
+StackAllocator::allocate n=8 sizeof(T)=1 alloc_size=8 index=1
+pointer_in_buffer: p=16
+StackAllocator::deallocate n=4 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=96
+pointer_in_buffer: p=80
+BORING Freed=88 Unfreed=8
+StackAllocator::allocate n=8 sizeof(T)=1 alloc_size=8 index=1
+pointer_in_buffer: p=24
+StackAllocator::deallocate n=4 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=96
+pointer_in_buffer: p=88
+Lucky all freed
+StackAllocator::allocate n=16 sizeof(T)=1 alloc_size=16 index=2
+pointer_in_buffer: p=0
+StackAllocator::deallocate n=8 sizeof(T)=1 alloc_size=8 index=1
+deallocate
+pointer_in_buffer: p=32
+pointer_in_buffer: p=0
+BORING Freed=8 Unfreed=24
+StackAllocator::allocate n=16 sizeof(T)=1 alloc_size=16 index=2
+pointer_in_buffer: p=16
+StackAllocator::deallocate n=8 sizeof(T)=1 alloc_size=8 index=1
+deallocate
+pointer_in_buffer: p=32
+pointer_in_buffer: p=8
+BORING Freed=16 Unfreed=16
+StackAllocator::allocate n=16 sizeof(T)=1 alloc_size=16 index=2
+pointer_in_buffer: p=32
+StackAllocator::deallocate n=8 sizeof(T)=1 alloc_size=8 index=1
+deallocate
+pointer_in_buffer: p=32
+pointer_in_buffer: p=16
+BORING Freed=24 Unfreed=8
+StackAllocator::allocate n=16 sizeof(T)=1 alloc_size=16 index=2
+pointer_in_buffer: p=48
+StackAllocator::deallocate n=8 sizeof(T)=1 alloc_size=8 index=1
+deallocate
+pointer_in_buffer: p=32
+pointer_in_buffer: p=24
+Lucky all freed
+==== BEGIN CLEANUP ====
+StackAllocator::deallocate n=16 sizeof(T)=1 alloc_size=16 index=2
+deallocate
+pointer_in_buffer: p=64
+pointer_in_buffer: p=0
+BORING Freed=16 Unfreed=48
+StackAllocator::deallocate n=16 sizeof(T)=1 alloc_size=16 index=2
+deallocate
+pointer_in_buffer: p=64
+pointer_in_buffer: p=16
+BORING Freed=32 Unfreed=32
+StackAllocator::deallocate n=16 sizeof(T)=1 alloc_size=16 index=2
+deallocate
+pointer_in_buffer: p=64
+pointer_in_buffer: p=32
+BORING Freed=48 Unfreed=16
+StackAllocator::deallocate n=16 sizeof(T)=1 alloc_size=16 index=2
+deallocate
+pointer_in_buffer: p=64
+pointer_in_buffer: p=48
+Lucky all freed
+==== END CLEANUP ====
+StackAllocator::allocate n=1 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=0
+StackAllocator::allocate n=1 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=8
+StackAllocator::allocate n=1 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=16
+StackAllocator::allocate n=1 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=24
+StackAllocator::allocate n=2 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=32
+StackAllocator::deallocate n=1 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=40
+pointer_in_buffer: p=0
+BORING Freed=8 Unfreed=32
+StackAllocator::allocate n=2 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=40
+StackAllocator::deallocate n=1 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=48
+pointer_in_buffer: p=8
+BORING Freed=16 Unfreed=32
+StackAllocator::allocate n=2 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=48
+StackAllocator::deallocate n=1 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=56
+pointer_in_buffer: p=16
+BORING Freed=24 Unfreed=32
+StackAllocator::allocate n=2 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=56
+StackAllocator::deallocate n=1 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=64
+pointer_in_buffer: p=24
+BORING Freed=32 Unfreed=32
+StackAllocator::allocate n=4 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=64
+StackAllocator::deallocate n=2 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=72
+pointer_in_buffer: p=32
+BORING Freed=40 Unfreed=32
+StackAllocator::allocate n=4 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=72
+StackAllocator::deallocate n=2 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=80
+pointer_in_buffer: p=40
+BORING Freed=48 Unfreed=32
+StackAllocator::allocate n=4 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=80
+StackAllocator::deallocate n=2 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=88
+pointer_in_buffer: p=48
+BORING Freed=56 Unfreed=32
+StackAllocator::allocate n=4 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=88
+StackAllocator::deallocate n=2 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=96
+pointer_in_buffer: p=56
+BORING Freed=64 Unfreed=32
+StackAllocator::allocate n=8 sizeof(T)=1 alloc_size=8 index=1
+pointer_in_buffer: p=0
+StackAllocator::deallocate n=4 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=96
+pointer_in_buffer: p=64
+BORING Freed=72 Unfreed=24
+StackAllocator::allocate n=8 sizeof(T)=1 alloc_size=8 index=1
+pointer_in_buffer: p=8
+StackAllocator::deallocate n=4 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=96
+pointer_in_buffer: p=72
+BORING Freed=80 Unfreed=16
+StackAllocator::allocate n=8 sizeof(T)=1 alloc_size=8 index=1
+pointer_in_buffer: p=16
+StackAllocator::deallocate n=4 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=96
+pointer_in_buffer: p=80
+BORING Freed=88 Unfreed=8
+StackAllocator::allocate n=8 sizeof(T)=1 alloc_size=8 index=1
+pointer_in_buffer: p=24
+StackAllocator::deallocate n=4 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=96
+pointer_in_buffer: p=88
+Lucky all freed
+StackAllocator::allocate n=16 sizeof(T)=1 alloc_size=16 index=2
+pointer_in_buffer: p=0
+StackAllocator::deallocate n=8 sizeof(T)=1 alloc_size=8 index=1
+deallocate
+pointer_in_buffer: p=32
+pointer_in_buffer: p=0
+BORING Freed=8 Unfreed=24
+StackAllocator::allocate n=16 sizeof(T)=1 alloc_size=16 index=2
+pointer_in_buffer: p=16
+StackAllocator::deallocate n=8 sizeof(T)=1 alloc_size=8 index=1
+deallocate
+pointer_in_buffer: p=32
+pointer_in_buffer: p=8
+BORING Freed=16 Unfreed=16
+StackAllocator::allocate n=16 sizeof(T)=1 alloc_size=16 index=2
+pointer_in_buffer: p=32
+StackAllocator::deallocate n=8 sizeof(T)=1 alloc_size=8 index=1
+deallocate
+pointer_in_buffer: p=32
+pointer_in_buffer: p=16
+BORING Freed=24 Unfreed=8
+StackAllocator::allocate n=16 sizeof(T)=1 alloc_size=16 index=2
+pointer_in_buffer: p=48
+StackAllocator::deallocate n=8 sizeof(T)=1 alloc_size=8 index=1
+deallocate
+pointer_in_buffer: p=32
+pointer_in_buffer: p=24
+Lucky all freed
+==== BEGIN CLEANUP ====
+StackAllocator::deallocate n=16 sizeof(T)=1 alloc_size=16 index=2
+deallocate
+pointer_in_buffer: p=64
+pointer_in_buffer: p=0
+BORING Freed=16 Unfreed=48
+StackAllocator::deallocate n=16 sizeof(T)=1 alloc_size=16 index=2
+deallocate
+pointer_in_buffer: p=64
+pointer_in_buffer: p=16
+BORING Freed=32 Unfreed=32
+StackAllocator::deallocate n=16 sizeof(T)=1 alloc_size=16 index=2
+deallocate
+pointer_in_buffer: p=64
+pointer_in_buffer: p=32
+BORING Freed=48 Unfreed=16
+StackAllocator::deallocate n=16 sizeof(T)=1 alloc_size=16 index=2
+deallocate
+pointer_in_buffer: p=64
+pointer_in_buffer: p=48
+Lucky all freed
+==== END CLEANUP ====
+StackAllocator::allocate n=1 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=0
+StackAllocator::allocate n=1 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=8
+StackAllocator::allocate n=1 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=16
+StackAllocator::allocate n=1 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=24
+StackAllocator::allocate n=2 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=32
+StackAllocator::deallocate n=1 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=40
+pointer_in_buffer: p=0
+BORING Freed=8 Unfreed=32
+StackAllocator::allocate n=2 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=40
+StackAllocator::deallocate n=1 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=48
+pointer_in_buffer: p=8
+BORING Freed=16 Unfreed=32
+StackAllocator::allocate n=2 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=48
+StackAllocator::deallocate n=1 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=56
+pointer_in_buffer: p=16
+BORING Freed=24 Unfreed=32
+StackAllocator::allocate n=2 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=56
+StackAllocator::deallocate n=1 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=64
+pointer_in_buffer: p=24
+BORING Freed=32 Unfreed=32
+StackAllocator::allocate n=4 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=64
+StackAllocator::deallocate n=2 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=72
+pointer_in_buffer: p=32
+BORING Freed=40 Unfreed=32
+StackAllocator::allocate n=4 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=72
+StackAllocator::deallocate n=2 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=80
+pointer_in_buffer: p=40
+BORING Freed=48 Unfreed=32
+StackAllocator::allocate n=4 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=80
+StackAllocator::deallocate n=2 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=88
+pointer_in_buffer: p=48
+BORING Freed=56 Unfreed=32
+StackAllocator::allocate n=4 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=88
+StackAllocator::deallocate n=2 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=96
+pointer_in_buffer: p=56
+BORING Freed=64 Unfreed=32
+StackAllocator::allocate n=8 sizeof(T)=1 alloc_size=8 index=1
+pointer_in_buffer: p=0
+StackAllocator::deallocate n=4 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=96
+pointer_in_buffer: p=64
+BORING Freed=72 Unfreed=24
+StackAllocator::allocate n=8 sizeof(T)=1 alloc_size=8 index=1
+pointer_in_buffer: p=8
+StackAllocator::deallocate n=4 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=96
+pointer_in_buffer: p=72
+BORING Freed=80 Unfreed=16
+StackAllocator::allocate n=8 sizeof(T)=1 alloc_size=8 index=1
+pointer_in_buffer: p=16
+StackAllocator::deallocate n=4 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=96
+pointer_in_buffer: p=80
+BORING Freed=88 Unfreed=8
+StackAllocator::allocate n=8 sizeof(T)=1 alloc_size=8 index=1
+pointer_in_buffer: p=24
+StackAllocator::deallocate n=4 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=96
+pointer_in_buffer: p=88
+Lucky all freed
+StackAllocator::allocate n=16 sizeof(T)=1 alloc_size=16 index=2
+pointer_in_buffer: p=0
+StackAllocator::deallocate n=8 sizeof(T)=1 alloc_size=8 index=1
+deallocate
+pointer_in_buffer: p=32
+pointer_in_buffer: p=0
+BORING Freed=8 Unfreed=24
+StackAllocator::allocate n=16 sizeof(T)=1 alloc_size=16 index=2
+pointer_in_buffer: p=16
+StackAllocator::deallocate n=8 sizeof(T)=1 alloc_size=8 index=1
+deallocate
+pointer_in_buffer: p=32
+pointer_in_buffer: p=8
+BORING Freed=16 Unfreed=16
+StackAllocator::allocate n=16 sizeof(T)=1 alloc_size=16 index=2
+pointer_in_buffer: p=32
+StackAllocator::deallocate n=8 sizeof(T)=1 alloc_size=8 index=1
+deallocate
+pointer_in_buffer: p=32
+pointer_in_buffer: p=16
+BORING Freed=24 Unfreed=8
+StackAllocator::allocate n=16 sizeof(T)=1 alloc_size=16 index=2
+pointer_in_buffer: p=48
+StackAllocator::deallocate n=8 sizeof(T)=1 alloc_size=8 index=1
+deallocate
+pointer_in_buffer: p=32
+pointer_in_buffer: p=24
+Lucky all freed
+==== BEGIN CLEANUP ====
+StackAllocator::deallocate n=16 sizeof(T)=1 alloc_size=16 index=2
+deallocate
+pointer_in_buffer: p=64
+pointer_in_buffer: p=0
+BORING Freed=16 Unfreed=48
+StackAllocator::deallocate n=16 sizeof(T)=1 alloc_size=16 index=2
+deallocate
+pointer_in_buffer: p=64
+pointer_in_buffer: p=16
+BORING Freed=32 Unfreed=32
+StackAllocator::deallocate n=16 sizeof(T)=1 alloc_size=16 index=2
+deallocate
+pointer_in_buffer: p=64
+pointer_in_buffer: p=32
+BORING Freed=48 Unfreed=16
+StackAllocator::deallocate n=16 sizeof(T)=1 alloc_size=16 index=2
+deallocate
+pointer_in_buffer: p=64
+pointer_in_buffer: p=48
+Lucky all freed
+==== END CLEANUP ====
+StackAllocator::allocate n=1 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=0
+StackAllocator::allocate n=1 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=8
+StackAllocator::allocate n=1 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=16
+StackAllocator::allocate n=1 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=24
+StackAllocator::allocate n=2 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=32
+StackAllocator::deallocate n=1 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=40
+pointer_in_buffer: p=0
+BORING Freed=8 Unfreed=32
+StackAllocator::allocate n=2 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=40
+StackAllocator::deallocate n=1 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=48
+pointer_in_buffer: p=8
+BORING Freed=16 Unfreed=32
+StackAllocator::allocate n=2 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=48
+StackAllocator::deallocate n=1 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=56
+pointer_in_buffer: p=16
+BORING Freed=24 Unfreed=32
+StackAllocator::allocate n=2 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=56
+StackAllocator::deallocate n=1 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=64
+pointer_in_buffer: p=24
+BORING Freed=32 Unfreed=32
+StackAllocator::allocate n=4 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=64
+StackAllocator::deallocate n=2 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=72
+pointer_in_buffer: p=32
+BORING Freed=40 Unfreed=32
+StackAllocator::allocate n=4 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=72
+StackAllocator::deallocate n=2 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=80
+pointer_in_buffer: p=40
+BORING Freed=48 Unfreed=32
+StackAllocator::allocate n=4 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=80
+StackAllocator::deallocate n=2 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=88
+pointer_in_buffer: p=48
+BORING Freed=56 Unfreed=32
+StackAllocator::allocate n=4 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=88
+StackAllocator::deallocate n=2 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=96
+pointer_in_buffer: p=56
+BORING Freed=64 Unfreed=32
+StackAllocator::allocate n=8 sizeof(T)=1 alloc_size=8 index=1
+pointer_in_buffer: p=0
+StackAllocator::deallocate n=4 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=96
+pointer_in_buffer: p=64
+BORING Freed=72 Unfreed=24
+StackAllocator::allocate n=8 sizeof(T)=1 alloc_size=8 index=1
+pointer_in_buffer: p=8
+StackAllocator::deallocate n=4 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=96
+pointer_in_buffer: p=72
+BORING Freed=80 Unfreed=16
+StackAllocator::allocate n=8 sizeof(T)=1 alloc_size=8 index=1
+pointer_in_buffer: p=16
+StackAllocator::deallocate n=4 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=96
+pointer_in_buffer: p=80
+BORING Freed=88 Unfreed=8
+StackAllocator::allocate n=8 sizeof(T)=1 alloc_size=8 index=1
+pointer_in_buffer: p=24
+StackAllocator::deallocate n=4 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=96
+pointer_in_buffer: p=88
+Lucky all freed
+StackAllocator::allocate n=16 sizeof(T)=1 alloc_size=16 index=2
+pointer_in_buffer: p=0
+StackAllocator::deallocate n=8 sizeof(T)=1 alloc_size=8 index=1
+deallocate
+pointer_in_buffer: p=32
+pointer_in_buffer: p=0
+BORING Freed=8 Unfreed=24
+StackAllocator::allocate n=16 sizeof(T)=1 alloc_size=16 index=2
+pointer_in_buffer: p=16
+StackAllocator::deallocate n=8 sizeof(T)=1 alloc_size=8 index=1
+deallocate
+pointer_in_buffer: p=32
+pointer_in_buffer: p=8
+BORING Freed=16 Unfreed=16
+StackAllocator::allocate n=16 sizeof(T)=1 alloc_size=16 index=2
+pointer_in_buffer: p=32
+StackAllocator::deallocate n=8 sizeof(T)=1 alloc_size=8 index=1
+deallocate
+pointer_in_buffer: p=32
+pointer_in_buffer: p=16
+BORING Freed=24 Unfreed=8
+StackAllocator::allocate n=16 sizeof(T)=1 alloc_size=16 index=2
+pointer_in_buffer: p=48
+StackAllocator::deallocate n=8 sizeof(T)=1 alloc_size=8 index=1
+deallocate
+pointer_in_buffer: p=32
+pointer_in_buffer: p=24
+Lucky all freed
+==== BEGIN CLEANUP ====
+StackAllocator::deallocate n=16 sizeof(T)=1 alloc_size=16 index=2
+deallocate
+pointer_in_buffer: p=64
+pointer_in_buffer: p=0
+BORING Freed=16 Unfreed=48
+StackAllocator::deallocate n=16 sizeof(T)=1 alloc_size=16 index=2
+deallocate
+pointer_in_buffer: p=64
+pointer_in_buffer: p=16
+BORING Freed=32 Unfreed=32
+StackAllocator::deallocate n=16 sizeof(T)=1 alloc_size=16 index=2
+deallocate
+pointer_in_buffer: p=64
+pointer_in_buffer: p=32
+BORING Freed=48 Unfreed=16
+StackAllocator::deallocate n=16 sizeof(T)=1 alloc_size=16 index=2
+deallocate
+pointer_in_buffer: p=64
+pointer_in_buffer: p=48
+Lucky all freed
+==== END CLEANUP ====
+StackAllocator::allocate n=1 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=0
+StackAllocator::allocate n=1 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=8
+StackAllocator::allocate n=1 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=16
+StackAllocator::allocate n=1 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=24
+StackAllocator::allocate n=2 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=32
+StackAllocator::deallocate n=1 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=40
+pointer_in_buffer: p=0
+BORING Freed=8 Unfreed=32
+StackAllocator::allocate n=2 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=40
+StackAllocator::deallocate n=1 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=48
+pointer_in_buffer: p=8
+BORING Freed=16 Unfreed=32
+StackAllocator::allocate n=2 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=48
+StackAllocator::deallocate n=1 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=56
+pointer_in_buffer: p=16
+BORING Freed=24 Unfreed=32
+StackAllocator::allocate n=2 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=56
+StackAllocator::deallocate n=1 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=64
+pointer_in_buffer: p=24
+BORING Freed=32 Unfreed=32
+StackAllocator::allocate n=4 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=64
+StackAllocator::deallocate n=2 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=72
+pointer_in_buffer: p=32
+BORING Freed=40 Unfreed=32
+StackAllocator::allocate n=4 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=72
+StackAllocator::deallocate n=2 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=80
+pointer_in_buffer: p=40
+BORING Freed=48 Unfreed=32
+StackAllocator::allocate n=4 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=80
+StackAllocator::deallocate n=2 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=88
+pointer_in_buffer: p=48
+BORING Freed=56 Unfreed=32
+StackAllocator::allocate n=4 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=88
+StackAllocator::deallocate n=2 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=96
+pointer_in_buffer: p=56
+BORING Freed=64 Unfreed=32
+StackAllocator::allocate n=8 sizeof(T)=1 alloc_size=8 index=1
+pointer_in_buffer: p=0
+StackAllocator::deallocate n=4 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=96
+pointer_in_buffer: p=64
+BORING Freed=72 Unfreed=24
+StackAllocator::allocate n=8 sizeof(T)=1 alloc_size=8 index=1
+pointer_in_buffer: p=8
+StackAllocator::deallocate n=4 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=96
+pointer_in_buffer: p=72
+BORING Freed=80 Unfreed=16
+StackAllocator::allocate n=8 sizeof(T)=1 alloc_size=8 index=1
+pointer_in_buffer: p=16
+StackAllocator::deallocate n=4 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=96
+pointer_in_buffer: p=80
+BORING Freed=88 Unfreed=8
+StackAllocator::allocate n=8 sizeof(T)=1 alloc_size=8 index=1
+pointer_in_buffer: p=24
+StackAllocator::deallocate n=4 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=96
+pointer_in_buffer: p=88
+Lucky all freed
+StackAllocator::allocate n=16 sizeof(T)=1 alloc_size=16 index=2
+pointer_in_buffer: p=0
+StackAllocator::deallocate n=8 sizeof(T)=1 alloc_size=8 index=1
+deallocate
+pointer_in_buffer: p=32
+pointer_in_buffer: p=0
+BORING Freed=8 Unfreed=24
+StackAllocator::allocate n=16 sizeof(T)=1 alloc_size=16 index=2
+pointer_in_buffer: p=16
+StackAllocator::deallocate n=8 sizeof(T)=1 alloc_size=8 index=1
+deallocate
+pointer_in_buffer: p=32
+pointer_in_buffer: p=8
+BORING Freed=16 Unfreed=16
+StackAllocator::allocate n=16 sizeof(T)=1 alloc_size=16 index=2
+pointer_in_buffer: p=32
+StackAllocator::deallocate n=8 sizeof(T)=1 alloc_size=8 index=1
+deallocate
+pointer_in_buffer: p=32
+pointer_in_buffer: p=16
+BORING Freed=24 Unfreed=8
+StackAllocator::allocate n=16 sizeof(T)=1 alloc_size=16 index=2
+pointer_in_buffer: p=48
+StackAllocator::deallocate n=8 sizeof(T)=1 alloc_size=8 index=1
+deallocate
+pointer_in_buffer: p=32
+pointer_in_buffer: p=24
+Lucky all freed
+==== BEGIN CLEANUP ====
+StackAllocator::deallocate n=16 sizeof(T)=1 alloc_size=16 index=2
+deallocate
+pointer_in_buffer: p=64
+pointer_in_buffer: p=0
+BORING Freed=16 Unfreed=48
+StackAllocator::deallocate n=16 sizeof(T)=1 alloc_size=16 index=2
+deallocate
+pointer_in_buffer: p=64
+pointer_in_buffer: p=16
+BORING Freed=32 Unfreed=32
+StackAllocator::deallocate n=16 sizeof(T)=1 alloc_size=16 index=2
+deallocate
+pointer_in_buffer: p=64
+pointer_in_buffer: p=32
+BORING Freed=48 Unfreed=16
+StackAllocator::deallocate n=16 sizeof(T)=1 alloc_size=16 index=2
+deallocate
+pointer_in_buffer: p=64
+pointer_in_buffer: p=48
+Lucky all freed
+==== END CLEANUP ====
+StackAllocator::allocate n=1 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=0
+StackAllocator::allocate n=1 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=8
+StackAllocator::allocate n=1 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=16
+StackAllocator::allocate n=1 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=24
+StackAllocator::allocate n=2 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=32
+StackAllocator::deallocate n=1 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=40
+pointer_in_buffer: p=0
+BORING Freed=8 Unfreed=32
+StackAllocator::allocate n=2 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=40
+StackAllocator::deallocate n=1 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=48
+pointer_in_buffer: p=8
+BORING Freed=16 Unfreed=32
+StackAllocator::allocate n=2 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=48
+StackAllocator::deallocate n=1 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=56
+pointer_in_buffer: p=16
+BORING Freed=24 Unfreed=32
+StackAllocator::allocate n=2 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=56
+StackAllocator::deallocate n=1 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=64
+pointer_in_buffer: p=24
+BORING Freed=32 Unfreed=32
+StackAllocator::allocate n=4 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=64
+StackAllocator::deallocate n=2 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=72
+pointer_in_buffer: p=32
+BORING Freed=40 Unfreed=32
+StackAllocator::allocate n=4 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=72
+StackAllocator::deallocate n=2 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=80
+pointer_in_buffer: p=40
+BORING Freed=48 Unfreed=32
+StackAllocator::allocate n=4 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=80
+StackAllocator::deallocate n=2 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=88
+pointer_in_buffer: p=48
+BORING Freed=56 Unfreed=32
+StackAllocator::allocate n=4 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=88
+StackAllocator::deallocate n=2 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=96
+pointer_in_buffer: p=56
+BORING Freed=64 Unfreed=32
+StackAllocator::allocate n=8 sizeof(T)=1 alloc_size=8 index=1
+pointer_in_buffer: p=0
+StackAllocator::deallocate n=4 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=96
+pointer_in_buffer: p=64
+BORING Freed=72 Unfreed=24
+StackAllocator::allocate n=8 sizeof(T)=1 alloc_size=8 index=1
+pointer_in_buffer: p=8
+StackAllocator::deallocate n=4 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=96
+pointer_in_buffer: p=72
+BORING Freed=80 Unfreed=16
+StackAllocator::allocate n=8 sizeof(T)=1 alloc_size=8 index=1
+pointer_in_buffer: p=16
+StackAllocator::deallocate n=4 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=96
+pointer_in_buffer: p=80
+BORING Freed=88 Unfreed=8
+StackAllocator::allocate n=8 sizeof(T)=1 alloc_size=8 index=1
+pointer_in_buffer: p=24
+StackAllocator::deallocate n=4 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=96
+pointer_in_buffer: p=88
+Lucky all freed
+StackAllocator::allocate n=16 sizeof(T)=1 alloc_size=16 index=2
+pointer_in_buffer: p=0
+StackAllocator::deallocate n=8 sizeof(T)=1 alloc_size=8 index=1
+deallocate
+pointer_in_buffer: p=32
+pointer_in_buffer: p=0
+BORING Freed=8 Unfreed=24
+StackAllocator::allocate n=16 sizeof(T)=1 alloc_size=16 index=2
+pointer_in_buffer: p=16
+StackAllocator::deallocate n=8 sizeof(T)=1 alloc_size=8 index=1
+deallocate
+pointer_in_buffer: p=32
+pointer_in_buffer: p=8
+BORING Freed=16 Unfreed=16
+StackAllocator::allocate n=16 sizeof(T)=1 alloc_size=16 index=2
+pointer_in_buffer: p=32
+StackAllocator::deallocate n=8 sizeof(T)=1 alloc_size=8 index=1
+deallocate
+pointer_in_buffer: p=32
+pointer_in_buffer: p=16
+BORING Freed=24 Unfreed=8
+StackAllocator::allocate n=16 sizeof(T)=1 alloc_size=16 index=2
+pointer_in_buffer: p=48
+StackAllocator::deallocate n=8 sizeof(T)=1 alloc_size=8 index=1
+deallocate
+pointer_in_buffer: p=32
+pointer_in_buffer: p=24
+Lucky all freed
+==== BEGIN CLEANUP ====
+StackAllocator::deallocate n=16 sizeof(T)=1 alloc_size=16 index=2
+deallocate
+pointer_in_buffer: p=64
+pointer_in_buffer: p=0
+BORING Freed=16 Unfreed=48
+StackAllocator::deallocate n=16 sizeof(T)=1 alloc_size=16 index=2
+deallocate
+pointer_in_buffer: p=64
+pointer_in_buffer: p=16
+BORING Freed=32 Unfreed=32
+StackAllocator::deallocate n=16 sizeof(T)=1 alloc_size=16 index=2
+deallocate
+pointer_in_buffer: p=64
+pointer_in_buffer: p=32
+BORING Freed=48 Unfreed=16
+StackAllocator::deallocate n=16 sizeof(T)=1 alloc_size=16 index=2
+deallocate
+pointer_in_buffer: p=64
+pointer_in_buffer: p=48
+Lucky all freed
+==== END CLEANUP ====
+StackAllocator::allocate n=1 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=0
+StackAllocator::allocate n=1 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=8
+StackAllocator::allocate n=1 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=16
+StackAllocator::allocate n=1 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=24
+StackAllocator::allocate n=2 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=32
+StackAllocator::deallocate n=1 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=40
+pointer_in_buffer: p=0
+BORING Freed=8 Unfreed=32
+StackAllocator::allocate n=2 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=40
+StackAllocator::deallocate n=1 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=48
+pointer_in_buffer: p=8
+BORING Freed=16 Unfreed=32
+StackAllocator::allocate n=2 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=48
+StackAllocator::deallocate n=1 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=56
+pointer_in_buffer: p=16
+BORING Freed=24 Unfreed=32
+StackAllocator::allocate n=2 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=56
+StackAllocator::deallocate n=1 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=64
+pointer_in_buffer: p=24
+BORING Freed=32 Unfreed=32
+StackAllocator::allocate n=4 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=64
+StackAllocator::deallocate n=2 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=72
+pointer_in_buffer: p=32
+BORING Freed=40 Unfreed=32
+StackAllocator::allocate n=4 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=72
+StackAllocator::deallocate n=2 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=80
+pointer_in_buffer: p=40
+BORING Freed=48 Unfreed=32
+StackAllocator::allocate n=4 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=80
+StackAllocator::deallocate n=2 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=88
+pointer_in_buffer: p=48
+BORING Freed=56 Unfreed=32
+StackAllocator::allocate n=4 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=88
+StackAllocator::deallocate n=2 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=96
+pointer_in_buffer: p=56
+BORING Freed=64 Unfreed=32
+StackAllocator::allocate n=8 sizeof(T)=1 alloc_size=8 index=1
+pointer_in_buffer: p=0
+StackAllocator::deallocate n=4 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=96
+pointer_in_buffer: p=64
+BORING Freed=72 Unfreed=24
+StackAllocator::allocate n=8 sizeof(T)=1 alloc_size=8 index=1
+pointer_in_buffer: p=8
+StackAllocator::deallocate n=4 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=96
+pointer_in_buffer: p=72
+BORING Freed=80 Unfreed=16
+StackAllocator::allocate n=8 sizeof(T)=1 alloc_size=8 index=1
+pointer_in_buffer: p=16
+StackAllocator::deallocate n=4 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=96
+pointer_in_buffer: p=80
+BORING Freed=88 Unfreed=8
+StackAllocator::allocate n=8 sizeof(T)=1 alloc_size=8 index=1
+pointer_in_buffer: p=24
+StackAllocator::deallocate n=4 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=96
+pointer_in_buffer: p=88
+Lucky all freed
+StackAllocator::allocate n=16 sizeof(T)=1 alloc_size=16 index=2
+pointer_in_buffer: p=0
+StackAllocator::deallocate n=8 sizeof(T)=1 alloc_size=8 index=1
+deallocate
+pointer_in_buffer: p=32
+pointer_in_buffer: p=0
+BORING Freed=8 Unfreed=24
+StackAllocator::allocate n=16 sizeof(T)=1 alloc_size=16 index=2
+pointer_in_buffer: p=16
+StackAllocator::deallocate n=8 sizeof(T)=1 alloc_size=8 index=1
+deallocate
+pointer_in_buffer: p=32
+pointer_in_buffer: p=8
+BORING Freed=16 Unfreed=16
+StackAllocator::allocate n=16 sizeof(T)=1 alloc_size=16 index=2
+pointer_in_buffer: p=32
+StackAllocator::deallocate n=8 sizeof(T)=1 alloc_size=8 index=1
+deallocate
+pointer_in_buffer: p=32
+pointer_in_buffer: p=16
+BORING Freed=24 Unfreed=8
+StackAllocator::allocate n=16 sizeof(T)=1 alloc_size=16 index=2
+pointer_in_buffer: p=48
+StackAllocator::deallocate n=8 sizeof(T)=1 alloc_size=8 index=1
+deallocate
+pointer_in_buffer: p=32
+pointer_in_buffer: p=24
+Lucky all freed
+==== BEGIN CLEANUP ====
+StackAllocator::deallocate n=16 sizeof(T)=1 alloc_size=16 index=2
+deallocate
+pointer_in_buffer: p=64
+pointer_in_buffer: p=0
+BORING Freed=16 Unfreed=48
+StackAllocator::deallocate n=16 sizeof(T)=1 alloc_size=16 index=2
+deallocate
+pointer_in_buffer: p=64
+pointer_in_buffer: p=16
+BORING Freed=32 Unfreed=32
+StackAllocator::deallocate n=16 sizeof(T)=1 alloc_size=16 index=2
+deallocate
+pointer_in_buffer: p=64
+pointer_in_buffer: p=32
+BORING Freed=48 Unfreed=16
+StackAllocator::deallocate n=16 sizeof(T)=1 alloc_size=16 index=2
+deallocate
+pointer_in_buffer: p=64
+pointer_in_buffer: p=48
+Lucky all freed
+==== END CLEANUP ====
+StackAllocator::allocate n=1 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=0
+StackAllocator::allocate n=1 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=8
+StackAllocator::allocate n=1 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=16
+StackAllocator::allocate n=1 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=24
+StackAllocator::allocate n=2 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=32
+StackAllocator::deallocate n=1 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=40
+pointer_in_buffer: p=0
+BORING Freed=8 Unfreed=32
+StackAllocator::allocate n=2 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=40
+StackAllocator::deallocate n=1 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=48
+pointer_in_buffer: p=8
+BORING Freed=16 Unfreed=32
+StackAllocator::allocate n=2 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=48
+StackAllocator::deallocate n=1 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=56
+pointer_in_buffer: p=16
+BORING Freed=24 Unfreed=32
+StackAllocator::allocate n=2 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=56
+StackAllocator::deallocate n=1 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=64
+pointer_in_buffer: p=24
+BORING Freed=32 Unfreed=32
+StackAllocator::allocate n=4 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=64
+StackAllocator::deallocate n=2 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=72
+pointer_in_buffer: p=32
+BORING Freed=40 Unfreed=32
+StackAllocator::allocate n=4 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=72
+StackAllocator::deallocate n=2 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=80
+pointer_in_buffer: p=40
+BORING Freed=48 Unfreed=32
+StackAllocator::allocate n=4 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=80
+StackAllocator::deallocate n=2 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=88
+pointer_in_buffer: p=48
+BORING Freed=56 Unfreed=32
+StackAllocator::allocate n=4 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=88
+StackAllocator::deallocate n=2 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=96
+pointer_in_buffer: p=56
+BORING Freed=64 Unfreed=32
+StackAllocator::allocate n=8 sizeof(T)=1 alloc_size=8 index=1
+pointer_in_buffer: p=0
+StackAllocator::deallocate n=4 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=96
+pointer_in_buffer: p=64
+BORING Freed=72 Unfreed=24
+StackAllocator::allocate n=8 sizeof(T)=1 alloc_size=8 index=1
+pointer_in_buffer: p=8
+StackAllocator::deallocate n=4 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=96
+pointer_in_buffer: p=72
+BORING Freed=80 Unfreed=16
+StackAllocator::allocate n=8 sizeof(T)=1 alloc_size=8 index=1
+pointer_in_buffer: p=16
+StackAllocator::deallocate n=4 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=96
+pointer_in_buffer: p=80
+BORING Freed=88 Unfreed=8
+StackAllocator::allocate n=8 sizeof(T)=1 alloc_size=8 index=1
+pointer_in_buffer: p=24
+StackAllocator::deallocate n=4 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=96
+pointer_in_buffer: p=88
+Lucky all freed
+StackAllocator::allocate n=16 sizeof(T)=1 alloc_size=16 index=2
+pointer_in_buffer: p=0
+StackAllocator::deallocate n=8 sizeof(T)=1 alloc_size=8 index=1
+deallocate
+pointer_in_buffer: p=32
+pointer_in_buffer: p=0
+BORING Freed=8 Unfreed=24
+StackAllocator::allocate n=16 sizeof(T)=1 alloc_size=16 index=2
+pointer_in_buffer: p=16
+StackAllocator::deallocate n=8 sizeof(T)=1 alloc_size=8 index=1
+deallocate
+pointer_in_buffer: p=32
+pointer_in_buffer: p=8
+BORING Freed=16 Unfreed=16
+StackAllocator::allocate n=16 sizeof(T)=1 alloc_size=16 index=2
+pointer_in_buffer: p=32
+StackAllocator::deallocate n=8 sizeof(T)=1 alloc_size=8 index=1
+deallocate
+pointer_in_buffer: p=32
+pointer_in_buffer: p=16
+BORING Freed=24 Unfreed=8
+StackAllocator::allocate n=16 sizeof(T)=1 alloc_size=16 index=2
+pointer_in_buffer: p=48
+StackAllocator::deallocate n=8 sizeof(T)=1 alloc_size=8 index=1
+deallocate
+pointer_in_buffer: p=32
+pointer_in_buffer: p=24
+Lucky all freed
+==== BEGIN CLEANUP ====
+StackAllocator::deallocate n=16 sizeof(T)=1 alloc_size=16 index=2
+deallocate
+pointer_in_buffer: p=64
+pointer_in_buffer: p=0
+BORING Freed=16 Unfreed=48
+StackAllocator::deallocate n=16 sizeof(T)=1 alloc_size=16 index=2
+deallocate
+pointer_in_buffer: p=64
+pointer_in_buffer: p=16
+BORING Freed=32 Unfreed=32
+StackAllocator::deallocate n=16 sizeof(T)=1 alloc_size=16 index=2
+deallocate
+pointer_in_buffer: p=64
+pointer_in_buffer: p=32
+BORING Freed=48 Unfreed=16
+StackAllocator::deallocate n=16 sizeof(T)=1 alloc_size=16 index=2
+deallocate
+pointer_in_buffer: p=64
+pointer_in_buffer: p=48
+Lucky all freed
+==== END CLEANUP ====
+StackAllocator::allocate n=1 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=0
+StackAllocator::allocate n=1 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=8
+StackAllocator::allocate n=1 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=16
+StackAllocator::allocate n=1 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=24
+StackAllocator::allocate n=2 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=32
+StackAllocator::deallocate n=1 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=40
+pointer_in_buffer: p=0
+BORING Freed=8 Unfreed=32
+StackAllocator::allocate n=2 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=40
+StackAllocator::deallocate n=1 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=48
+pointer_in_buffer: p=8
+BORING Freed=16 Unfreed=32
+StackAllocator::allocate n=2 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=48
+StackAllocator::deallocate n=1 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=56
+pointer_in_buffer: p=16
+BORING Freed=24 Unfreed=32
+StackAllocator::allocate n=2 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=56
+StackAllocator::deallocate n=1 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=64
+pointer_in_buffer: p=24
+BORING Freed=32 Unfreed=32
+StackAllocator::allocate n=4 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=64
+StackAllocator::deallocate n=2 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=72
+pointer_in_buffer: p=32
+BORING Freed=40 Unfreed=32
+StackAllocator::allocate n=4 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=72
+StackAllocator::deallocate n=2 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=80
+pointer_in_buffer: p=40
+BORING Freed=48 Unfreed=32
+StackAllocator::allocate n=4 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=80
+StackAllocator::deallocate n=2 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=88
+pointer_in_buffer: p=48
+BORING Freed=56 Unfreed=32
+StackAllocator::allocate n=4 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=88
+StackAllocator::deallocate n=2 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=96
+pointer_in_buffer: p=56
+BORING Freed=64 Unfreed=32
+StackAllocator::allocate n=8 sizeof(T)=1 alloc_size=8 index=1
+pointer_in_buffer: p=0
+StackAllocator::deallocate n=4 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=96
+pointer_in_buffer: p=64
+BORING Freed=72 Unfreed=24
+StackAllocator::allocate n=8 sizeof(T)=1 alloc_size=8 index=1
+pointer_in_buffer: p=8
+StackAllocator::deallocate n=4 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=96
+pointer_in_buffer: p=72
+BORING Freed=80 Unfreed=16
+StackAllocator::allocate n=8 sizeof(T)=1 alloc_size=8 index=1
+pointer_in_buffer: p=16
+StackAllocator::deallocate n=4 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=96
+pointer_in_buffer: p=80
+BORING Freed=88 Unfreed=8
+StackAllocator::allocate n=8 sizeof(T)=1 alloc_size=8 index=1
+pointer_in_buffer: p=24
+StackAllocator::deallocate n=4 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=96
+pointer_in_buffer: p=88
+Lucky all freed
+StackAllocator::allocate n=16 sizeof(T)=1 alloc_size=16 index=2
+pointer_in_buffer: p=0
+StackAllocator::deallocate n=8 sizeof(T)=1 alloc_size=8 index=1
+deallocate
+pointer_in_buffer: p=32
+pointer_in_buffer: p=0
+BORING Freed=8 Unfreed=24
+StackAllocator::allocate n=16 sizeof(T)=1 alloc_size=16 index=2
+pointer_in_buffer: p=16
+StackAllocator::deallocate n=8 sizeof(T)=1 alloc_size=8 index=1
+deallocate
+pointer_in_buffer: p=32
+pointer_in_buffer: p=8
+BORING Freed=16 Unfreed=16
+StackAllocator::allocate n=16 sizeof(T)=1 alloc_size=16 index=2
+pointer_in_buffer: p=32
+StackAllocator::deallocate n=8 sizeof(T)=1 alloc_size=8 index=1
+deallocate
+pointer_in_buffer: p=32
+pointer_in_buffer: p=16
+BORING Freed=24 Unfreed=8
+StackAllocator::allocate n=16 sizeof(T)=1 alloc_size=16 index=2
+pointer_in_buffer: p=48
+StackAllocator::deallocate n=8 sizeof(T)=1 alloc_size=8 index=1
+deallocate
+pointer_in_buffer: p=32
+pointer_in_buffer: p=24
+Lucky all freed
+==== BEGIN CLEANUP ====
+StackAllocator::deallocate n=16 sizeof(T)=1 alloc_size=16 index=2
+deallocate
+pointer_in_buffer: p=64
+pointer_in_buffer: p=0
+BORING Freed=16 Unfreed=48
+StackAllocator::deallocate n=16 sizeof(T)=1 alloc_size=16 index=2
+deallocate
+pointer_in_buffer: p=64
+pointer_in_buffer: p=16
+BORING Freed=32 Unfreed=32
+StackAllocator::deallocate n=16 sizeof(T)=1 alloc_size=16 index=2
+deallocate
+pointer_in_buffer: p=64
+pointer_in_buffer: p=32
+BORING Freed=48 Unfreed=16
+StackAllocator::deallocate n=16 sizeof(T)=1 alloc_size=16 index=2
+deallocate
+pointer_in_buffer: p=64
+pointer_in_buffer: p=48
+Lucky all freed
+==== END CLEANUP ====
+StackAllocator::allocate n=1 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=0
+StackAllocator::allocate n=1 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=8
+StackAllocator::allocate n=1 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=16
+StackAllocator::allocate n=1 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=24
+StackAllocator::allocate n=2 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=32
+StackAllocator::deallocate n=1 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=40
+pointer_in_buffer: p=0
+BORING Freed=8 Unfreed=32
+StackAllocator::allocate n=2 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=40
+StackAllocator::deallocate n=1 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=48
+pointer_in_buffer: p=8
+BORING Freed=16 Unfreed=32
+StackAllocator::allocate n=2 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=48
+StackAllocator::deallocate n=1 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=56
+pointer_in_buffer: p=16
+BORING Freed=24 Unfreed=32
+StackAllocator::allocate n=2 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=56
+StackAllocator::deallocate n=1 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=64
+pointer_in_buffer: p=24
+BORING Freed=32 Unfreed=32
+StackAllocator::allocate n=4 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=64
+StackAllocator::deallocate n=2 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=72
+pointer_in_buffer: p=32
+BORING Freed=40 Unfreed=32
+StackAllocator::allocate n=4 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=72
+StackAllocator::deallocate n=2 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=80
+pointer_in_buffer: p=40
+BORING Freed=48 Unfreed=32
+StackAllocator::allocate n=4 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=80
+StackAllocator::deallocate n=2 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=88
+pointer_in_buffer: p=48
+BORING Freed=56 Unfreed=32
+StackAllocator::allocate n=4 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=88
+StackAllocator::deallocate n=2 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=96
+pointer_in_buffer: p=56
+BORING Freed=64 Unfreed=32
+StackAllocator::allocate n=8 sizeof(T)=1 alloc_size=8 index=1
+pointer_in_buffer: p=0
+StackAllocator::deallocate n=4 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=96
+pointer_in_buffer: p=64
+BORING Freed=72 Unfreed=24
+StackAllocator::allocate n=8 sizeof(T)=1 alloc_size=8 index=1
+pointer_in_buffer: p=8
+StackAllocator::deallocate n=4 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=96
+pointer_in_buffer: p=72
+BORING Freed=80 Unfreed=16
+StackAllocator::allocate n=8 sizeof(T)=1 alloc_size=8 index=1
+pointer_in_buffer: p=16
+StackAllocator::deallocate n=4 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=96
+pointer_in_buffer: p=80
+BORING Freed=88 Unfreed=8
+StackAllocator::allocate n=8 sizeof(T)=1 alloc_size=8 index=1
+pointer_in_buffer: p=24
+StackAllocator::deallocate n=4 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=96
+pointer_in_buffer: p=88
+Lucky all freed
+StackAllocator::allocate n=16 sizeof(T)=1 alloc_size=16 index=2
+pointer_in_buffer: p=0
+StackAllocator::deallocate n=8 sizeof(T)=1 alloc_size=8 index=1
+deallocate
+pointer_in_buffer: p=32
+pointer_in_buffer: p=0
+BORING Freed=8 Unfreed=24
+StackAllocator::allocate n=16 sizeof(T)=1 alloc_size=16 index=2
+pointer_in_buffer: p=16
+StackAllocator::deallocate n=8 sizeof(T)=1 alloc_size=8 index=1
+deallocate
+pointer_in_buffer: p=32
+pointer_in_buffer: p=8
+BORING Freed=16 Unfreed=16
+StackAllocator::allocate n=16 sizeof(T)=1 alloc_size=16 index=2
+pointer_in_buffer: p=32
+StackAllocator::deallocate n=8 sizeof(T)=1 alloc_size=8 index=1
+deallocate
+pointer_in_buffer: p=32
+pointer_in_buffer: p=16
+BORING Freed=24 Unfreed=8
+StackAllocator::allocate n=16 sizeof(T)=1 alloc_size=16 index=2
+pointer_in_buffer: p=48
+StackAllocator::deallocate n=8 sizeof(T)=1 alloc_size=8 index=1
+deallocate
+pointer_in_buffer: p=32
+pointer_in_buffer: p=24
+Lucky all freed
+==== BEGIN CLEANUP ====
+StackAllocator::deallocate n=16 sizeof(T)=1 alloc_size=16 index=2
+deallocate
+pointer_in_buffer: p=64
+pointer_in_buffer: p=0
+BORING Freed=16 Unfreed=48
+StackAllocator::deallocate n=16 sizeof(T)=1 alloc_size=16 index=2
+deallocate
+pointer_in_buffer: p=64
+pointer_in_buffer: p=16
+BORING Freed=32 Unfreed=32
+StackAllocator::deallocate n=16 sizeof(T)=1 alloc_size=16 index=2
+deallocate
+pointer_in_buffer: p=64
+pointer_in_buffer: p=32
+BORING Freed=48 Unfreed=16
+StackAllocator::deallocate n=16 sizeof(T)=1 alloc_size=16 index=2
+deallocate
+pointer_in_buffer: p=64
+pointer_in_buffer: p=48
+Lucky all freed
+==== END CLEANUP ====
+StackAllocator::allocate n=1 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=0
+StackAllocator::allocate n=1 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=8
+StackAllocator::allocate n=1 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=16
+StackAllocator::allocate n=1 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=24
+StackAllocator::allocate n=2 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=32
+StackAllocator::deallocate n=1 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=40
+pointer_in_buffer: p=0
+BORING Freed=8 Unfreed=32
+StackAllocator::allocate n=2 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=40
+StackAllocator::deallocate n=1 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=48
+pointer_in_buffer: p=8
+BORING Freed=16 Unfreed=32
+StackAllocator::allocate n=2 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=48
+StackAllocator::deallocate n=1 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=56
+pointer_in_buffer: p=16
+BORING Freed=24 Unfreed=32
+StackAllocator::allocate n=2 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=56
+StackAllocator::deallocate n=1 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=64
+pointer_in_buffer: p=24
+BORING Freed=32 Unfreed=32
+StackAllocator::allocate n=4 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=64
+StackAllocator::deallocate n=2 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=72
+pointer_in_buffer: p=32
+BORING Freed=40 Unfreed=32
+StackAllocator::allocate n=4 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=72
+StackAllocator::deallocate n=2 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=80
+pointer_in_buffer: p=40
+BORING Freed=48 Unfreed=32
+StackAllocator::allocate n=4 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=80
+StackAllocator::deallocate n=2 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=88
+pointer_in_buffer: p=48
+BORING Freed=56 Unfreed=32
+StackAllocator::allocate n=4 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=88
+StackAllocator::deallocate n=2 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=96
+pointer_in_buffer: p=56
+BORING Freed=64 Unfreed=32
+StackAllocator::allocate n=8 sizeof(T)=1 alloc_size=8 index=1
+pointer_in_buffer: p=0
+StackAllocator::deallocate n=4 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=96
+pointer_in_buffer: p=64
+BORING Freed=72 Unfreed=24
+StackAllocator::allocate n=8 sizeof(T)=1 alloc_size=8 index=1
+pointer_in_buffer: p=8
+StackAllocator::deallocate n=4 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=96
+pointer_in_buffer: p=72
+BORING Freed=80 Unfreed=16
+StackAllocator::allocate n=8 sizeof(T)=1 alloc_size=8 index=1
+pointer_in_buffer: p=16
+StackAllocator::deallocate n=4 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=96
+pointer_in_buffer: p=80
+BORING Freed=88 Unfreed=8
+StackAllocator::allocate n=8 sizeof(T)=1 alloc_size=8 index=1
+pointer_in_buffer: p=24
+StackAllocator::deallocate n=4 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=96
+pointer_in_buffer: p=88
+Lucky all freed
+StackAllocator::allocate n=16 sizeof(T)=1 alloc_size=16 index=2
+pointer_in_buffer: p=0
+StackAllocator::deallocate n=8 sizeof(T)=1 alloc_size=8 index=1
+deallocate
+pointer_in_buffer: p=32
+pointer_in_buffer: p=0
+BORING Freed=8 Unfreed=24
+StackAllocator::allocate n=16 sizeof(T)=1 alloc_size=16 index=2
+pointer_in_buffer: p=16
+StackAllocator::deallocate n=8 sizeof(T)=1 alloc_size=8 index=1
+deallocate
+pointer_in_buffer: p=32
+pointer_in_buffer: p=8
+BORING Freed=16 Unfreed=16
+StackAllocator::allocate n=16 sizeof(T)=1 alloc_size=16 index=2
+pointer_in_buffer: p=32
+StackAllocator::deallocate n=8 sizeof(T)=1 alloc_size=8 index=1
+deallocate
+pointer_in_buffer: p=32
+pointer_in_buffer: p=16
+BORING Freed=24 Unfreed=8
+StackAllocator::allocate n=16 sizeof(T)=1 alloc_size=16 index=2
+pointer_in_buffer: p=48
+StackAllocator::deallocate n=8 sizeof(T)=1 alloc_size=8 index=1
+deallocate
+pointer_in_buffer: p=32
+pointer_in_buffer: p=24
+Lucky all freed
+==== BEGIN CLEANUP ====
+StackAllocator::deallocate n=16 sizeof(T)=1 alloc_size=16 index=2
+deallocate
+pointer_in_buffer: p=64
+pointer_in_buffer: p=0
+BORING Freed=16 Unfreed=48
+StackAllocator::deallocate n=16 sizeof(T)=1 alloc_size=16 index=2
+deallocate
+pointer_in_buffer: p=64
+pointer_in_buffer: p=16
+BORING Freed=32 Unfreed=32
+StackAllocator::deallocate n=16 sizeof(T)=1 alloc_size=16 index=2
+deallocate
+pointer_in_buffer: p=64
+pointer_in_buffer: p=32
+BORING Freed=48 Unfreed=16
+StackAllocator::deallocate n=16 sizeof(T)=1 alloc_size=16 index=2
+deallocate
+pointer_in_buffer: p=64
+pointer_in_buffer: p=48
+Lucky all freed
+==== END CLEANUP ====
+StackAllocator::allocate n=1 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=0
+StackAllocator::allocate n=1 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=8
+StackAllocator::allocate n=1 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=16
+StackAllocator::allocate n=1 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=24
+StackAllocator::allocate n=2 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=32
+StackAllocator::deallocate n=1 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=40
+pointer_in_buffer: p=0
+BORING Freed=8 Unfreed=32
+StackAllocator::allocate n=2 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=40
+StackAllocator::deallocate n=1 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=48
+pointer_in_buffer: p=8
+BORING Freed=16 Unfreed=32
+StackAllocator::allocate n=2 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=48
+StackAllocator::deallocate n=1 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=56
+pointer_in_buffer: p=16
+BORING Freed=24 Unfreed=32
+StackAllocator::allocate n=2 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=56
+StackAllocator::deallocate n=1 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=64
+pointer_in_buffer: p=24
+BORING Freed=32 Unfreed=32
+StackAllocator::allocate n=4 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=64
+StackAllocator::deallocate n=2 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=72
+pointer_in_buffer: p=32
+BORING Freed=40 Unfreed=32
+StackAllocator::allocate n=4 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=72
+StackAllocator::deallocate n=2 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=80
+pointer_in_buffer: p=40
+BORING Freed=48 Unfreed=32
+StackAllocator::allocate n=4 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=80
+StackAllocator::deallocate n=2 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=88
+pointer_in_buffer: p=48
+BORING Freed=56 Unfreed=32
+StackAllocator::allocate n=4 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=88
+StackAllocator::deallocate n=2 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=96
+pointer_in_buffer: p=56
+BORING Freed=64 Unfreed=32
+StackAllocator::allocate n=8 sizeof(T)=1 alloc_size=8 index=1
+pointer_in_buffer: p=0
+StackAllocator::deallocate n=4 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=96
+pointer_in_buffer: p=64
+BORING Freed=72 Unfreed=24
+StackAllocator::allocate n=8 sizeof(T)=1 alloc_size=8 index=1
+pointer_in_buffer: p=8
+StackAllocator::deallocate n=4 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=96
+pointer_in_buffer: p=72
+BORING Freed=80 Unfreed=16
+StackAllocator::allocate n=8 sizeof(T)=1 alloc_size=8 index=1
+pointer_in_buffer: p=16
+StackAllocator::deallocate n=4 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=96
+pointer_in_buffer: p=80
+BORING Freed=88 Unfreed=8
+StackAllocator::allocate n=8 sizeof(T)=1 alloc_size=8 index=1
+pointer_in_buffer: p=24
+StackAllocator::deallocate n=4 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=96
+pointer_in_buffer: p=88
+Lucky all freed
+StackAllocator::allocate n=16 sizeof(T)=1 alloc_size=16 index=2
+pointer_in_buffer: p=0
+StackAllocator::deallocate n=8 sizeof(T)=1 alloc_size=8 index=1
+deallocate
+pointer_in_buffer: p=32
+pointer_in_buffer: p=0
+BORING Freed=8 Unfreed=24
+StackAllocator::allocate n=16 sizeof(T)=1 alloc_size=16 index=2
+pointer_in_buffer: p=16
+StackAllocator::deallocate n=8 sizeof(T)=1 alloc_size=8 index=1
+deallocate
+pointer_in_buffer: p=32
+pointer_in_buffer: p=8
+BORING Freed=16 Unfreed=16
+StackAllocator::allocate n=16 sizeof(T)=1 alloc_size=16 index=2
+pointer_in_buffer: p=32
+StackAllocator::deallocate n=8 sizeof(T)=1 alloc_size=8 index=1
+deallocate
+pointer_in_buffer: p=32
+pointer_in_buffer: p=16
+BORING Freed=24 Unfreed=8
+StackAllocator::allocate n=16 sizeof(T)=1 alloc_size=16 index=2
+pointer_in_buffer: p=48
+StackAllocator::deallocate n=8 sizeof(T)=1 alloc_size=8 index=1
+deallocate
+pointer_in_buffer: p=32
+pointer_in_buffer: p=24
+Lucky all freed
+==== BEGIN CLEANUP ====
+StackAllocator::deallocate n=16 sizeof(T)=1 alloc_size=16 index=2
+deallocate
+pointer_in_buffer: p=64
+pointer_in_buffer: p=0
+BORING Freed=16 Unfreed=48
+StackAllocator::deallocate n=16 sizeof(T)=1 alloc_size=16 index=2
+deallocate
+pointer_in_buffer: p=64
+pointer_in_buffer: p=16
+BORING Freed=32 Unfreed=32
+StackAllocator::deallocate n=16 sizeof(T)=1 alloc_size=16 index=2
+deallocate
+pointer_in_buffer: p=64
+pointer_in_buffer: p=32
+BORING Freed=48 Unfreed=16
+StackAllocator::deallocate n=16 sizeof(T)=1 alloc_size=16 index=2
+deallocate
+pointer_in_buffer: p=64
+pointer_in_buffer: p=48
+Lucky all freed
+==== END CLEANUP ====
+StackAllocator::allocate n=1 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=0
+StackAllocator::allocate n=1 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=8
+StackAllocator::allocate n=1 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=16
+StackAllocator::allocate n=1 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=24
+StackAllocator::allocate n=2 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=32
+StackAllocator::deallocate n=1 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=40
+pointer_in_buffer: p=0
+BORING Freed=8 Unfreed=32
+StackAllocator::allocate n=2 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=40
+StackAllocator::deallocate n=1 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=48
+pointer_in_buffer: p=8
+BORING Freed=16 Unfreed=32
+StackAllocator::allocate n=2 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=48
+StackAllocator::deallocate n=1 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=56
+pointer_in_buffer: p=16
+BORING Freed=24 Unfreed=32
+StackAllocator::allocate n=2 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=56
+StackAllocator::deallocate n=1 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=64
+pointer_in_buffer: p=24
+BORING Freed=32 Unfreed=32
+StackAllocator::allocate n=4 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=64
+StackAllocator::deallocate n=2 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=72
+pointer_in_buffer: p=32
+BORING Freed=40 Unfreed=32
+StackAllocator::allocate n=4 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=72
+StackAllocator::deallocate n=2 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=80
+pointer_in_buffer: p=40
+BORING Freed=48 Unfreed=32
+StackAllocator::allocate n=4 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=80
+StackAllocator::deallocate n=2 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=88
+pointer_in_buffer: p=48
+BORING Freed=56 Unfreed=32
+StackAllocator::allocate n=4 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=88
+StackAllocator::deallocate n=2 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=96
+pointer_in_buffer: p=56
+BORING Freed=64 Unfreed=32
+StackAllocator::allocate n=8 sizeof(T)=1 alloc_size=8 index=1
+pointer_in_buffer: p=0
+StackAllocator::deallocate n=4 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=96
+pointer_in_buffer: p=64
+BORING Freed=72 Unfreed=24
+StackAllocator::allocate n=8 sizeof(T)=1 alloc_size=8 index=1
+pointer_in_buffer: p=8
+StackAllocator::deallocate n=4 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=96
+pointer_in_buffer: p=72
+BORING Freed=80 Unfreed=16
+StackAllocator::allocate n=8 sizeof(T)=1 alloc_size=8 index=1
+pointer_in_buffer: p=16
+StackAllocator::deallocate n=4 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=96
+pointer_in_buffer: p=80
+BORING Freed=88 Unfreed=8
+StackAllocator::allocate n=8 sizeof(T)=1 alloc_size=8 index=1
+pointer_in_buffer: p=24
+StackAllocator::deallocate n=4 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=96
+pointer_in_buffer: p=88
+Lucky all freed
+StackAllocator::allocate n=16 sizeof(T)=1 alloc_size=16 index=2
+pointer_in_buffer: p=0
+StackAllocator::deallocate n=8 sizeof(T)=1 alloc_size=8 index=1
+deallocate
+pointer_in_buffer: p=32
+pointer_in_buffer: p=0
+BORING Freed=8 Unfreed=24
+StackAllocator::allocate n=16 sizeof(T)=1 alloc_size=16 index=2
+pointer_in_buffer: p=16
+StackAllocator::deallocate n=8 sizeof(T)=1 alloc_size=8 index=1
+deallocate
+pointer_in_buffer: p=32
+pointer_in_buffer: p=8
+BORING Freed=16 Unfreed=16
+StackAllocator::allocate n=16 sizeof(T)=1 alloc_size=16 index=2
+pointer_in_buffer: p=32
+StackAllocator::deallocate n=8 sizeof(T)=1 alloc_size=8 index=1
+deallocate
+pointer_in_buffer: p=32
+pointer_in_buffer: p=16
+BORING Freed=24 Unfreed=8
+StackAllocator::allocate n=16 sizeof(T)=1 alloc_size=16 index=2
+pointer_in_buffer: p=48
+StackAllocator::deallocate n=8 sizeof(T)=1 alloc_size=8 index=1
+deallocate
+pointer_in_buffer: p=32
+pointer_in_buffer: p=24
+Lucky all freed
+==== BEGIN CLEANUP ====
+StackAllocator::deallocate n=16 sizeof(T)=1 alloc_size=16 index=2
+deallocate
+pointer_in_buffer: p=64
+pointer_in_buffer: p=0
+BORING Freed=16 Unfreed=48
+StackAllocator::deallocate n=16 sizeof(T)=1 alloc_size=16 index=2
+deallocate
+pointer_in_buffer: p=64
+pointer_in_buffer: p=16
+BORING Freed=32 Unfreed=32
+StackAllocator::deallocate n=16 sizeof(T)=1 alloc_size=16 index=2
+deallocate
+pointer_in_buffer: p=64
+pointer_in_buffer: p=32
+BORING Freed=48 Unfreed=16
+StackAllocator::deallocate n=16 sizeof(T)=1 alloc_size=16 index=2
+deallocate
+pointer_in_buffer: p=64
+pointer_in_buffer: p=48
+Lucky all freed
+==== END CLEANUP ====
+StackAllocator::allocate n=1 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=0
+StackAllocator::allocate n=1 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=8
+StackAllocator::allocate n=1 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=16
+StackAllocator::allocate n=1 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=24
+StackAllocator::allocate n=2 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=32
+StackAllocator::deallocate n=1 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=40
+pointer_in_buffer: p=0
+BORING Freed=8 Unfreed=32
+StackAllocator::allocate n=2 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=40
+StackAllocator::deallocate n=1 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=48
+pointer_in_buffer: p=8
+BORING Freed=16 Unfreed=32
+StackAllocator::allocate n=2 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=48
+StackAllocator::deallocate n=1 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=56
+pointer_in_buffer: p=16
+BORING Freed=24 Unfreed=32
+StackAllocator::allocate n=2 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=56
+StackAllocator::deallocate n=1 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=64
+pointer_in_buffer: p=24
+BORING Freed=32 Unfreed=32
+StackAllocator::allocate n=4 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=64
+StackAllocator::deallocate n=2 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=72
+pointer_in_buffer: p=32
+BORING Freed=40 Unfreed=32
+StackAllocator::allocate n=4 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=72
+StackAllocator::deallocate n=2 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=80
+pointer_in_buffer: p=40
+BORING Freed=48 Unfreed=32
+StackAllocator::allocate n=4 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=80
+StackAllocator::deallocate n=2 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=88
+pointer_in_buffer: p=48
+BORING Freed=56 Unfreed=32
+StackAllocator::allocate n=4 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=88
+StackAllocator::deallocate n=2 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=96
+pointer_in_buffer: p=56
+BORING Freed=64 Unfreed=32
+StackAllocator::allocate n=8 sizeof(T)=1 alloc_size=8 index=1
+pointer_in_buffer: p=0
+StackAllocator::deallocate n=4 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=96
+pointer_in_buffer: p=64
+BORING Freed=72 Unfreed=24
+StackAllocator::allocate n=8 sizeof(T)=1 alloc_size=8 index=1
+pointer_in_buffer: p=8
+StackAllocator::deallocate n=4 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=96
+pointer_in_buffer: p=72
+BORING Freed=80 Unfreed=16
+StackAllocator::allocate n=8 sizeof(T)=1 alloc_size=8 index=1
+pointer_in_buffer: p=16
+StackAllocator::deallocate n=4 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=96
+pointer_in_buffer: p=80
+BORING Freed=88 Unfreed=8
+StackAllocator::allocate n=8 sizeof(T)=1 alloc_size=8 index=1
+pointer_in_buffer: p=24
+StackAllocator::deallocate n=4 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=96
+pointer_in_buffer: p=88
+Lucky all freed
+StackAllocator::allocate n=16 sizeof(T)=1 alloc_size=16 index=2
+pointer_in_buffer: p=0
+StackAllocator::deallocate n=8 sizeof(T)=1 alloc_size=8 index=1
+deallocate
+pointer_in_buffer: p=32
+pointer_in_buffer: p=0
+BORING Freed=8 Unfreed=24
+StackAllocator::allocate n=16 sizeof(T)=1 alloc_size=16 index=2
+pointer_in_buffer: p=16
+StackAllocator::deallocate n=8 sizeof(T)=1 alloc_size=8 index=1
+deallocate
+pointer_in_buffer: p=32
+pointer_in_buffer: p=8
+BORING Freed=16 Unfreed=16
+StackAllocator::allocate n=16 sizeof(T)=1 alloc_size=16 index=2
+pointer_in_buffer: p=32
+StackAllocator::deallocate n=8 sizeof(T)=1 alloc_size=8 index=1
+deallocate
+pointer_in_buffer: p=32
+pointer_in_buffer: p=16
+BORING Freed=24 Unfreed=8
+StackAllocator::allocate n=16 sizeof(T)=1 alloc_size=16 index=2
+pointer_in_buffer: p=48
+StackAllocator::deallocate n=8 sizeof(T)=1 alloc_size=8 index=1
+deallocate
+pointer_in_buffer: p=32
+pointer_in_buffer: p=24
+Lucky all freed
+==== BEGIN CLEANUP ====
+StackAllocator::deallocate n=16 sizeof(T)=1 alloc_size=16 index=2
+deallocate
+pointer_in_buffer: p=64
+pointer_in_buffer: p=0
+BORING Freed=16 Unfreed=48
+StackAllocator::deallocate n=16 sizeof(T)=1 alloc_size=16 index=2
+deallocate
+pointer_in_buffer: p=64
+pointer_in_buffer: p=16
+BORING Freed=32 Unfreed=32
+StackAllocator::deallocate n=16 sizeof(T)=1 alloc_size=16 index=2
+deallocate
+pointer_in_buffer: p=64
+pointer_in_buffer: p=32
+BORING Freed=48 Unfreed=16
+StackAllocator::deallocate n=16 sizeof(T)=1 alloc_size=16 index=2
+deallocate
+pointer_in_buffer: p=64
+pointer_in_buffer: p=48
+Lucky all freed
+==== END CLEANUP ====
+StackAllocator::allocate n=1 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=0
+StackAllocator::allocate n=1 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=8
+StackAllocator::allocate n=1 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=16
+StackAllocator::allocate n=1 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=24
+StackAllocator::allocate n=2 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=32
+StackAllocator::deallocate n=1 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=40
+pointer_in_buffer: p=0
+BORING Freed=8 Unfreed=32
+StackAllocator::allocate n=2 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=40
+StackAllocator::deallocate n=1 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=48
+pointer_in_buffer: p=8
+BORING Freed=16 Unfreed=32
+StackAllocator::allocate n=2 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=48
+StackAllocator::deallocate n=1 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=56
+pointer_in_buffer: p=16
+BORING Freed=24 Unfreed=32
+StackAllocator::allocate n=2 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=56
+StackAllocator::deallocate n=1 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=64
+pointer_in_buffer: p=24
+BORING Freed=32 Unfreed=32
+StackAllocator::allocate n=4 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=64
+StackAllocator::deallocate n=2 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=72
+pointer_in_buffer: p=32
+BORING Freed=40 Unfreed=32
+StackAllocator::allocate n=4 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=72
+StackAllocator::deallocate n=2 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=80
+pointer_in_buffer: p=40
+BORING Freed=48 Unfreed=32
+StackAllocator::allocate n=4 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=80
+StackAllocator::deallocate n=2 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=88
+pointer_in_buffer: p=48
+BORING Freed=56 Unfreed=32
+StackAllocator::allocate n=4 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=88
+StackAllocator::deallocate n=2 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=96
+pointer_in_buffer: p=56
+BORING Freed=64 Unfreed=32
+StackAllocator::allocate n=8 sizeof(T)=1 alloc_size=8 index=1
+pointer_in_buffer: p=0
+StackAllocator::deallocate n=4 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=96
+pointer_in_buffer: p=64
+BORING Freed=72 Unfreed=24
+StackAllocator::allocate n=8 sizeof(T)=1 alloc_size=8 index=1
+pointer_in_buffer: p=8
+StackAllocator::deallocate n=4 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=96
+pointer_in_buffer: p=72
+BORING Freed=80 Unfreed=16
+StackAllocator::allocate n=8 sizeof(T)=1 alloc_size=8 index=1
+pointer_in_buffer: p=16
+StackAllocator::deallocate n=4 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=96
+pointer_in_buffer: p=80
+BORING Freed=88 Unfreed=8
+StackAllocator::allocate n=8 sizeof(T)=1 alloc_size=8 index=1
+pointer_in_buffer: p=24
+StackAllocator::deallocate n=4 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=96
+pointer_in_buffer: p=88
+Lucky all freed
+StackAllocator::allocate n=16 sizeof(T)=1 alloc_size=16 index=2
+pointer_in_buffer: p=0
+StackAllocator::deallocate n=8 sizeof(T)=1 alloc_size=8 index=1
+deallocate
+pointer_in_buffer: p=32
+pointer_in_buffer: p=0
+BORING Freed=8 Unfreed=24
+StackAllocator::allocate n=16 sizeof(T)=1 alloc_size=16 index=2
+pointer_in_buffer: p=16
+StackAllocator::deallocate n=8 sizeof(T)=1 alloc_size=8 index=1
+deallocate
+pointer_in_buffer: p=32
+pointer_in_buffer: p=8
+BORING Freed=16 Unfreed=16
+StackAllocator::allocate n=16 sizeof(T)=1 alloc_size=16 index=2
+pointer_in_buffer: p=32
+StackAllocator::deallocate n=8 sizeof(T)=1 alloc_size=8 index=1
+deallocate
+pointer_in_buffer: p=32
+pointer_in_buffer: p=16
+BORING Freed=24 Unfreed=8
+StackAllocator::allocate n=16 sizeof(T)=1 alloc_size=16 index=2
+pointer_in_buffer: p=48
+StackAllocator::deallocate n=8 sizeof(T)=1 alloc_size=8 index=1
+deallocate
+pointer_in_buffer: p=32
+pointer_in_buffer: p=24
+Lucky all freed
+==== BEGIN CLEANUP ====
+StackAllocator::deallocate n=16 sizeof(T)=1 alloc_size=16 index=2
+deallocate
+pointer_in_buffer: p=64
+pointer_in_buffer: p=0
+BORING Freed=16 Unfreed=48
+StackAllocator::deallocate n=16 sizeof(T)=1 alloc_size=16 index=2
+deallocate
+pointer_in_buffer: p=64
+pointer_in_buffer: p=16
+BORING Freed=32 Unfreed=32
+StackAllocator::deallocate n=16 sizeof(T)=1 alloc_size=16 index=2
+deallocate
+pointer_in_buffer: p=64
+pointer_in_buffer: p=32
+BORING Freed=48 Unfreed=16
+StackAllocator::deallocate n=16 sizeof(T)=1 alloc_size=16 index=2
+deallocate
+pointer_in_buffer: p=64
+pointer_in_buffer: p=48
+Lucky all freed
+==== END CLEANUP ====
+StackAllocator::allocate n=1 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=0
+StackAllocator::allocate n=1 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=8
+StackAllocator::allocate n=1 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=16
+StackAllocator::allocate n=1 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=24
+StackAllocator::allocate n=2 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=32
+StackAllocator::deallocate n=1 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=40
+pointer_in_buffer: p=0
+BORING Freed=8 Unfreed=32
+StackAllocator::allocate n=2 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=40
+StackAllocator::deallocate n=1 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=48
+pointer_in_buffer: p=8
+BORING Freed=16 Unfreed=32
+StackAllocator::allocate n=2 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=48
+StackAllocator::deallocate n=1 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=56
+pointer_in_buffer: p=16
+BORING Freed=24 Unfreed=32
+StackAllocator::allocate n=2 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=56
+StackAllocator::deallocate n=1 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=64
+pointer_in_buffer: p=24
+BORING Freed=32 Unfreed=32
+StackAllocator::allocate n=4 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=64
+StackAllocator::deallocate n=2 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=72
+pointer_in_buffer: p=32
+BORING Freed=40 Unfreed=32
+StackAllocator::allocate n=4 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=72
+StackAllocator::deallocate n=2 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=80
+pointer_in_buffer: p=40
+BORING Freed=48 Unfreed=32
+StackAllocator::allocate n=4 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=80
+StackAllocator::deallocate n=2 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=88
+pointer_in_buffer: p=48
+BORING Freed=56 Unfreed=32
+StackAllocator::allocate n=4 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=88
+StackAllocator::deallocate n=2 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=96
+pointer_in_buffer: p=56
+BORING Freed=64 Unfreed=32
+StackAllocator::allocate n=8 sizeof(T)=1 alloc_size=8 index=1
+pointer_in_buffer: p=0
+StackAllocator::deallocate n=4 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=96
+pointer_in_buffer: p=64
+BORING Freed=72 Unfreed=24
+StackAllocator::allocate n=8 sizeof(T)=1 alloc_size=8 index=1
+pointer_in_buffer: p=8
+StackAllocator::deallocate n=4 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=96
+pointer_in_buffer: p=72
+BORING Freed=80 Unfreed=16
+StackAllocator::allocate n=8 sizeof(T)=1 alloc_size=8 index=1
+pointer_in_buffer: p=16
+StackAllocator::deallocate n=4 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=96
+pointer_in_buffer: p=80
+BORING Freed=88 Unfreed=8
+StackAllocator::allocate n=8 sizeof(T)=1 alloc_size=8 index=1
+pointer_in_buffer: p=24
+StackAllocator::deallocate n=4 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=96
+pointer_in_buffer: p=88
+Lucky all freed
+StackAllocator::allocate n=16 sizeof(T)=1 alloc_size=16 index=2
+pointer_in_buffer: p=0
+StackAllocator::deallocate n=8 sizeof(T)=1 alloc_size=8 index=1
+deallocate
+pointer_in_buffer: p=32
+pointer_in_buffer: p=0
+BORING Freed=8 Unfreed=24
+StackAllocator::allocate n=16 sizeof(T)=1 alloc_size=16 index=2
+pointer_in_buffer: p=16
+StackAllocator::deallocate n=8 sizeof(T)=1 alloc_size=8 index=1
+deallocate
+pointer_in_buffer: p=32
+pointer_in_buffer: p=8
+BORING Freed=16 Unfreed=16
+StackAllocator::allocate n=16 sizeof(T)=1 alloc_size=16 index=2
+pointer_in_buffer: p=32
+StackAllocator::deallocate n=8 sizeof(T)=1 alloc_size=8 index=1
+deallocate
+pointer_in_buffer: p=32
+pointer_in_buffer: p=16
+BORING Freed=24 Unfreed=8
+StackAllocator::allocate n=16 sizeof(T)=1 alloc_size=16 index=2
+pointer_in_buffer: p=48
+StackAllocator::deallocate n=8 sizeof(T)=1 alloc_size=8 index=1
+deallocate
+pointer_in_buffer: p=32
+pointer_in_buffer: p=24
+Lucky all freed
+==== BEGIN CLEANUP ====
+StackAllocator::deallocate n=16 sizeof(T)=1 alloc_size=16 index=2
+deallocate
+pointer_in_buffer: p=64
+pointer_in_buffer: p=0
+BORING Freed=16 Unfreed=48
+StackAllocator::deallocate n=16 sizeof(T)=1 alloc_size=16 index=2
+deallocate
+pointer_in_buffer: p=64
+pointer_in_buffer: p=16
+BORING Freed=32 Unfreed=32
+StackAllocator::deallocate n=16 sizeof(T)=1 alloc_size=16 index=2
+deallocate
+pointer_in_buffer: p=64
+pointer_in_buffer: p=32
+BORING Freed=48 Unfreed=16
+StackAllocator::deallocate n=16 sizeof(T)=1 alloc_size=16 index=2
+deallocate
+pointer_in_buffer: p=64
+pointer_in_buffer: p=48
+Lucky all freed
+==== END CLEANUP ====
+StackAllocator::allocate n=1 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=0
+StackAllocator::allocate n=1 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=8
+StackAllocator::allocate n=1 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=16
+StackAllocator::allocate n=1 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=24
+StackAllocator::allocate n=2 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=32
+StackAllocator::deallocate n=1 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=40
+pointer_in_buffer: p=0
+BORING Freed=8 Unfreed=32
+StackAllocator::allocate n=2 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=40
+StackAllocator::deallocate n=1 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=48
+pointer_in_buffer: p=8
+BORING Freed=16 Unfreed=32
+StackAllocator::allocate n=2 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=48
+StackAllocator::deallocate n=1 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=56
+pointer_in_buffer: p=16
+BORING Freed=24 Unfreed=32
+StackAllocator::allocate n=2 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=56
+StackAllocator::deallocate n=1 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=64
+pointer_in_buffer: p=24
+BORING Freed=32 Unfreed=32
+StackAllocator::allocate n=4 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=64
+StackAllocator::deallocate n=2 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=72
+pointer_in_buffer: p=32
+BORING Freed=40 Unfreed=32
+StackAllocator::allocate n=4 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=72
+StackAllocator::deallocate n=2 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=80
+pointer_in_buffer: p=40
+BORING Freed=48 Unfreed=32
+StackAllocator::allocate n=4 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=80
+StackAllocator::deallocate n=2 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=88
+pointer_in_buffer: p=48
+BORING Freed=56 Unfreed=32
+StackAllocator::allocate n=4 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=88
+StackAllocator::deallocate n=2 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=96
+pointer_in_buffer: p=56
+BORING Freed=64 Unfreed=32
+StackAllocator::allocate n=8 sizeof(T)=1 alloc_size=8 index=1
+pointer_in_buffer: p=0
+StackAllocator::deallocate n=4 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=96
+pointer_in_buffer: p=64
+BORING Freed=72 Unfreed=24
+StackAllocator::allocate n=8 sizeof(T)=1 alloc_size=8 index=1
+pointer_in_buffer: p=8
+StackAllocator::deallocate n=4 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=96
+pointer_in_buffer: p=72
+BORING Freed=80 Unfreed=16
+StackAllocator::allocate n=8 sizeof(T)=1 alloc_size=8 index=1
+pointer_in_buffer: p=16
+StackAllocator::deallocate n=4 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=96
+pointer_in_buffer: p=80
+BORING Freed=88 Unfreed=8
+StackAllocator::allocate n=8 sizeof(T)=1 alloc_size=8 index=1
+pointer_in_buffer: p=24
+StackAllocator::deallocate n=4 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=96
+pointer_in_buffer: p=88
+Lucky all freed
+StackAllocator::allocate n=16 sizeof(T)=1 alloc_size=16 index=2
+pointer_in_buffer: p=0
+StackAllocator::deallocate n=8 sizeof(T)=1 alloc_size=8 index=1
+deallocate
+pointer_in_buffer: p=32
+pointer_in_buffer: p=0
+BORING Freed=8 Unfreed=24
+StackAllocator::allocate n=16 sizeof(T)=1 alloc_size=16 index=2
+pointer_in_buffer: p=16
+StackAllocator::deallocate n=8 sizeof(T)=1 alloc_size=8 index=1
+deallocate
+pointer_in_buffer: p=32
+pointer_in_buffer: p=8
+BORING Freed=16 Unfreed=16
+StackAllocator::allocate n=16 sizeof(T)=1 alloc_size=16 index=2
+pointer_in_buffer: p=32
+StackAllocator::deallocate n=8 sizeof(T)=1 alloc_size=8 index=1
+deallocate
+pointer_in_buffer: p=32
+pointer_in_buffer: p=16
+BORING Freed=24 Unfreed=8
+StackAllocator::allocate n=16 sizeof(T)=1 alloc_size=16 index=2
+pointer_in_buffer: p=48
+StackAllocator::deallocate n=8 sizeof(T)=1 alloc_size=8 index=1
+deallocate
+pointer_in_buffer: p=32
+pointer_in_buffer: p=24
+Lucky all freed
+==== BEGIN CLEANUP ====
+StackAllocator::deallocate n=16 sizeof(T)=1 alloc_size=16 index=2
+deallocate
+pointer_in_buffer: p=64
+pointer_in_buffer: p=0
+BORING Freed=16 Unfreed=48
+StackAllocator::deallocate n=16 sizeof(T)=1 alloc_size=16 index=2
+deallocate
+pointer_in_buffer: p=64
+pointer_in_buffer: p=16
+BORING Freed=32 Unfreed=32
+StackAllocator::deallocate n=16 sizeof(T)=1 alloc_size=16 index=2
+deallocate
+pointer_in_buffer: p=64
+pointer_in_buffer: p=32
+BORING Freed=48 Unfreed=16
+StackAllocator::deallocate n=16 sizeof(T)=1 alloc_size=16 index=2
+deallocate
+pointer_in_buffer: p=64
+pointer_in_buffer: p=48
+Lucky all freed
+==== END CLEANUP ====
+StackAllocator::allocate n=1 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=0
+StackAllocator::allocate n=1 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=8
+StackAllocator::allocate n=1 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=16
+StackAllocator::allocate n=1 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=24
+StackAllocator::allocate n=2 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=32
+StackAllocator::deallocate n=1 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=40
+pointer_in_buffer: p=0
+BORING Freed=8 Unfreed=32
+StackAllocator::allocate n=2 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=40
+StackAllocator::deallocate n=1 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=48
+pointer_in_buffer: p=8
+BORING Freed=16 Unfreed=32
+StackAllocator::allocate n=2 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=48
+StackAllocator::deallocate n=1 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=56
+pointer_in_buffer: p=16
+BORING Freed=24 Unfreed=32
+StackAllocator::allocate n=2 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=56
+StackAllocator::deallocate n=1 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=64
+pointer_in_buffer: p=24
+BORING Freed=32 Unfreed=32
+StackAllocator::allocate n=4 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=64
+StackAllocator::deallocate n=2 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=72
+pointer_in_buffer: p=32
+BORING Freed=40 Unfreed=32
+StackAllocator::allocate n=4 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=72
+StackAllocator::deallocate n=2 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=80
+pointer_in_buffer: p=40
+BORING Freed=48 Unfreed=32
+StackAllocator::allocate n=4 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer: p=80
+StackAllocator::deallocate n=2 sizeof(T)=1 alloc_size=8 index=0
+deallocate
+pointer_in_buffer: p=88
+pointer_in_buffer: p=48
+BORING Freed=56 Unfreed=32
+StackAllocator::allocate n=4 sizeof(T)=1 alloc_size=8 index=0
+pointer_in_buffer
