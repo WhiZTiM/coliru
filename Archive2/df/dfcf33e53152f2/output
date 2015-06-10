@@ -1,0 +1,6 @@
+generic int
+generic str
+generic fallback
+specialized fallback
+specialized fallback
+specialized fallback
