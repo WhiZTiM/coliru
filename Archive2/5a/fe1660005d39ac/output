@@ -1,0 +1,59 @@
+<variable_group_>
+  <try>variable_group x, y,</try>
+  <genericvargp_>
+    <try> x, y, z; </try>
+    <new_variable_>
+      <try>x, y, z; </try>
+      <unencountered_symbol_>
+        <try>x, y, z; </try>
+        <valid_variable_name_>
+          <try>x, y, z; </try>
+          <success>, y, z; </success>
+          <attributes>[[x]]</attributes>
+        </valid_variable_name_>
+        <success>, y, z; </success>
+        <attributes>[[x]]</attributes>
+      </unencountered_symbol_>
+      <success>, y, z; </success>
+      <attributes>[0x11686c0]</attributes>
+    </new_variable_>
+    <new_variable_>
+      <try>y, z; </try>
+      <unencountered_symbol_>
+        <try>y, z; </try>
+        <valid_variable_name_>
+          <try>y, z; </try>
+          <success>, z; </success>
+          <attributes>[[y]]</attributes>
+        </valid_variable_name_>
+        <success>, z; </success>
+        <attributes>[[y]]</attributes>
+      </unencountered_symbol_>
+      <success>, z; </success>
+      <attributes>[0x1168700]</attributes>
+    </new_variable_>
+    <new_variable_>
+      <try>z; </try>
+      <unencountered_symbol_>
+        <try>z; </try>
+        <valid_variable_name_>
+          <try>z; </try>
+          <success>; </success>
+          <attributes>[[z]]</attributes>
+        </valid_variable_name_>
+        <success>; </success>
+        <attributes>[[z]]</attributes>
+      </unencountered_symbol_>
+      <success>; </success>
+      <attributes>[0x1168740]</attributes>
+    </new_variable_>
+    <success>; </success>
+    <attributes>[[0x11686c0, 0x1168700, 0x1168740]]</attributes>
+  </genericvargp_>
+  <success> </success>
+  <attributes>[[0x11686c0, 0x1168700, 0x1168740]]</attributes>
+</variable_group_>
+Parse succeeded: 3 variables
+ - 'x'
+ - 'y'
+ - 'z'
