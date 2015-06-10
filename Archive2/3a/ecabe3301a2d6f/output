@@ -1,0 +1,7 @@
+main.cpp:17:9: error: call to deleted constructor of 'Test'
+   Test obj2(std::move(obj));
+        ^    ~~~~~~~~~~~~~~
+main.cpp:11:3: note: 'Test' has been explicitly marked deleted here
+  Test(Test&& m) = delete;
+  ^
+1 error generated.
