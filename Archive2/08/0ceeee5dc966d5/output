@@ -1,0 +1,6 @@
+sizeof 
+ - int* : 8
+ - std::default_delete<int> : 1
+ - suboptimal::unique_ptr<int> : 16
+ - std::unique_ptr<int> : 8
+ - ideal::unique_ptr<int> : 8
