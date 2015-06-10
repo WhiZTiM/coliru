@@ -1,0 +1,9 @@
+B::func1()
+B::func2()
+A::func1()
+A::func2()
+use pointer for check override function
+A::func1()
+B::func2()
+B::func1()
+B::func2()
