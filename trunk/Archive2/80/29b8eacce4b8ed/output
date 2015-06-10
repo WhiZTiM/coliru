@@ -1,0 +1,83 @@
+main.cpp:1:10: error: #include expects "FILENAME" or <FILENAME>
+ #include 
+          ^
+main.cpp:2:10: error: #include expects "FILENAME" or <FILENAME>
+ #include 
+          ^
+main.cpp: In function 'int main()':
+main.cpp:17:40: error: 'printf' was not declared in this scope
+ printf ("RELATORIO DA ACADEMIA: \n\n\n");
+                                        ^
+main.cpp:23:17: error: 'scanf' was not declared in this scope
+ scanf ("%d",&num);
+                 ^
+main.cpp:128:4: error: 'numhidroginastica' was not declared in this scope
+ if(numhidroginastica)&&(natacao>ginasticaAerobica)&&(natacao>ginasticaLocalizada)&&(natacao>musculacao)&&(natacao>artesMarciais)){
+    ^
+main.cpp:128:24: error: expected identifier before '(' token
+ if(numhidroginastica)&&(natacao>ginasticaAerobica)&&(natacao>ginasticaLocalizada)&&(natacao>musculacao)&&(natacao>artesMarciais)){
+                        ^
+main.cpp:128:24: warning: taking the address of a label is non-standard [-Wpedantic]
+main.cpp:149:17: warning: suggest parentheses around comparison in operand of '==' [-Wparentheses]
+ else if (natacao==hidroginastica==ginasticaAerobica==ginasticaLocalizada==musculacao==artesMarciais){
+                 ^
+main.cpp:149:33: warning: suggest parentheses around comparison in operand of '==' [-Wparentheses]
+ else if (natacao==hidroginastica==ginasticaAerobica==ginasticaLocalizada==musculacao==artesMarciais){
+                                 ^
+main.cpp:149:52: warning: suggest parentheses around comparison in operand of '==' [-Wparentheses]
+ else if (natacao==hidroginastica==ginasticaAerobica==ginasticaLocalizada==musculacao==artesMarciais){
+                                                    ^
+main.cpp:149:73: warning: suggest parentheses around comparison in operand of '==' [-Wparentheses]
+ else if (natacao==hidroginastica==ginasticaAerobica==ginasticaLocalizada==musculacao==artesMarciais){
+                                                                         ^
+main.cpp:155:32: warning: suggest parentheses around comparison in operand of '==' [-Wparentheses]
+ else if (natacao=hidroginastica==ginasticaAerobica==ginasticaLocalizada==musculacao){
+                                ^
+main.cpp:155:51: warning: suggest parentheses around comparison in operand of '==' [-Wparentheses]
+ else if (natacao=hidroginastica==ginasticaAerobica==ginasticaLocalizada==musculacao){
+                                                   ^
+main.cpp:155:84: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+ else if (natacao=hidroginastica==ginasticaAerobica==ginasticaLocalizada==musculacao){
+                                                                                    ^
+main.cpp:161:42: warning: suggest parentheses around comparison in operand of '==' [-Wparentheses]
+ else if (hidroginastica=ginasticaAerobica==ginasticaLocalizada==musculacao==artesMarciais){
+                                          ^
+main.cpp:161:63: warning: suggest parentheses around comparison in operand of '==' [-Wparentheses]
+ else if (hidroginastica=ginasticaAerobica==ginasticaLocalizada==musculacao==artesMarciais){
+                                                               ^
+main.cpp:161:90: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+ else if (hidroginastica=ginasticaAerobica==ginasticaLocalizada==musculacao==artesMarciais){
+                                                                                          ^
+main.cpp:167:17: warning: suggest parentheses around comparison in operand of '==' [-Wparentheses]
+ else if (natacao==hidroginastica==ginasticaLocalizada==musculacao==artesMarciais){
+                 ^
+main.cpp:167:33: warning: suggest parentheses around comparison in operand of '==' [-Wparentheses]
+ else if (natacao==hidroginastica==ginasticaLocalizada==musculacao==artesMarciais){
+                                 ^
+main.cpp:167:54: warning: suggest parentheses around comparison in operand of '==' [-Wparentheses]
+ else if (natacao==hidroginastica==ginasticaLocalizada==musculacao==artesMarciais){
+                                                      ^
+main.cpp:172:32: warning: suggest parentheses around comparison in operand of '==' [-Wparentheses]
+ else if (natacao=hidroginastica==ginasticaAerobica==musculacao==artesMarciais){
+                                ^
+main.cpp:172:51: warning: suggest parentheses around comparison in operand of '==' [-Wparentheses]
+ else if (natacao=hidroginastica==ginasticaAerobica==musculacao==artesMarciais){
+                                                   ^
+main.cpp:172:78: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+ else if (natacao=hidroginastica==ginasticaAerobica==musculacao==artesMarciais){
+                                                                              ^
+main.cpp:178:32: warning: suggest parentheses around comparison in operand of '==' [-Wparentheses]
+ else if (natacao=hidroginastica==ginasticaAerobica==ginasticaLocalizada==artesMarciais){
+                                ^
+main.cpp:178:51: warning: suggest parentheses around comparison in operand of '==' [-Wparentheses]
+ else if (natacao=hidroginastica==ginasticaAerobica==ginasticaLocalizada==artesMarciais){
+                                                   ^
+main.cpp:178:87: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+ else if (natacao=hidroginastica==ginasticaAerobica==ginasticaLocalizada==artesMarciais){
+                                                                                       ^
+main.cpp:182:32: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+ else if (natacao=hidroginastica){
+                                ^
+main.cpp:188:16: error: 'system' was not declared in this scope
+ system ("PAUSE");
+                ^
