@@ -1,0 +1,9 @@
+main.cpp:17:12: error: invalid new-expression of abstract class type 'B'
+ A *a = new B;
+            ^
+main.cpp:12:8: note:   because the following virtual functions are pure within 'B':
+ struct B : A
+        ^
+main.cpp:9:6: note: 	virtual void A::foo()
+ void A::foo(){ }
+      ^
