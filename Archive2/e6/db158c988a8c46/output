@@ -1,0 +1,40 @@
+main.cpp: In instantiation of 'void boost::serialization::serialize(Archive&, fruit_basket&, unsigned int) [with Archive = boost::archive::xml_oarchive]':
+/usr/local/include/boost/serialization/serialization.hpp:128:18:   required from 'void boost::serialization::serialize_adl(Archive&, T&, unsigned int) [with Archive = boost::archive::xml_oarchive; T = fruit_basket]'
+/usr/local/include/boost/archive/detail/oserializer.hpp:148:40:   required from 'void boost::archive::detail::oserializer<Archive, T>::save_object_data(boost::archive::detail::basic_oarchive&, const void*) const [with Archive = boost::archive::xml_oarchive; T = fruit_basket]'
+/usr/local/include/boost/archive/detail/oserializer.hpp:101:1:   required from 'class boost::archive::detail::oserializer<boost::archive::xml_oarchive, fruit_basket>'
+/usr/local/include/boost/archive/detail/oserializer.hpp:253:13:   required from 'static void boost::archive::detail::save_non_pointer_type<Archive>::save_standard::invoke(Archive&, const T&) [with T = fruit_basket; Archive = boost::archive::xml_oarchive]'
+/usr/local/include/boost/archive/detail/oserializer.hpp:308:22:   required from 'static void boost::archive::detail::save_non_pointer_type<Archive>::invoke(Archive&, const T&) [with T = fruit_basket; Archive = boost::archive::xml_oarchive]'
+/usr/local/include/boost/archive/detail/oserializer.hpp:525:18:   required from 'void boost::archive::save(Archive&, T&) [with Archive = boost::archive::xml_oarchive; T = const fruit_basket]'
+/usr/local/include/boost/archive/detail/common_oarchive.hpp:69:22:   required from 'void boost::archive::detail::common_oarchive<Archive>::save_override(T&, int) [with T = const fruit_basket; Archive = boost::archive::xml_oarchive]'
+/usr/local/include/boost/archive/basic_xml_oarchive.hpp:112:9:   required from 'void boost::archive::basic_xml_oarchive<Archive>::save_override(const boost::serialization::nvp<T>&, int) [with T = fruit_basket; Archive = boost::archive::xml_oarchive]'
+/usr/local/include/boost/archive/detail/interface_oarchive.hpp:63:9:   required from 'Archive& boost::archive::detail::interface_oarchive<Archive>::operator<<(T&) [with T = const boost::serialization::nvp<fruit_basket>; Archive = boost::archive::xml_oarchive]'
+main.cpp:71:10:   required from here
+main.cpp:54:67: warning: unused parameter 'version' [-Wunused-parameter]
+ void serialize(Archive & ar, fruit_basket & b, const unsigned int version)
+                                                                   ^
+main.cpp: In instantiation of 'void enum_wrapper<T>::save(Archive&, unsigned int) const [with Archive = boost::archive::xml_oarchive; T = e_fruit]':
+/usr/local/include/boost/serialization/access.hpp:93:9:   required from 'static void boost::serialization::access::member_save(Archive&, T&, unsigned int) [with Archive = boost::archive::xml_oarchive; T = const enum_wrapper<e_fruit>]'
+/usr/local/include/boost/serialization/split_member.hpp:43:32:   required from 'static void boost::serialization::detail::member_saver<Archive, T>::invoke(Archive&, const T&, unsigned int) [with Archive = boost::archive::xml_oarchive; T = enum_wrapper<e_fruit>]'
+/usr/local/include/boost/serialization/split_member.hpp:69:18:   required from 'void boost::serialization::split_member(Archive&, T&, unsigned int) [with Archive = boost::archive::xml_oarchive; T = enum_wrapper<e_fruit>]'
+main.cpp:44:5:   required from 'void enum_wrapper<T>::serialize(Archive&, unsigned int) [with Archive = boost::archive::xml_oarchive; T = e_fruit]'
+/usr/local/include/boost/serialization/access.hpp:118:9:   required from 'static void boost::serialization::access::serialize(Archive&, T&, unsigned int) [with Archive = boost::archive::xml_oarchive; T = enum_wrapper<e_fruit>]'
+/usr/local/include/boost/serialization/serialization.hpp:69:22:   [ skipping 16 instantiation contexts, use -ftemplate-backtrace-limit=0 to disable ]
+/usr/local/include/boost/archive/detail/oserializer.hpp:308:22:   required from 'static void boost::archive::detail::save_non_pointer_type<Archive>::invoke(Archive&, const T&) [with T = fruit_basket; Archive = boost::archive::xml_oarchive]'
+/usr/local/include/boost/archive/detail/oserializer.hpp:525:18:   required from 'void boost::archive::save(Archive&, T&) [with Archive = boost::archive::xml_oarchive; T = const fruit_basket]'
+/usr/local/include/boost/archive/detail/common_oarchive.hpp:69:22:   required from 'void boost::archive::detail::common_oarchive<Archive>::save_override(T&, int) [with T = const fruit_basket; Archive = boost::archive::xml_oarchive]'
+/usr/local/include/boost/archive/basic_xml_oarchive.hpp:112:9:   required from 'void boost::archive::basic_xml_oarchive<Archive>::save_override(const boost::serialization::nvp<T>&, int) [with T = fruit_basket; Archive = boost::archive::xml_oarchive]'
+/usr/local/include/boost/archive/detail/interface_oarchive.hpp:63:9:   required from 'Archive& boost::archive::detail::interface_oarchive<Archive>::operator<<(T&) [with T = const boost::serialization::nvp<fruit_basket>; Archive = boost::archive::xml_oarchive]'
+main.cpp:71:10:   required from here
+main.cpp:33:48: warning: unused parameter 'version' [-Wunused-parameter]
+     void save(Archive & ar, const unsigned int version) const  {
+                                                ^
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<!DOCTYPE boost_serialization>
+<boost_serialization signature="serialization::archive" version="11">
+<bsk class_id="0" tracking_level="0" version="0">
+	<w class_id="1" tracking_level="0" version="0">
+		<str_v>apple</str_v>
+	</w>
+	<b.num>5</b.num>
+</bsk>
+
