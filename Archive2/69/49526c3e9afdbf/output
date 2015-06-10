@@ -1,0 +1,8 @@
++ clang++ -std=c++14 -O2 -Wall -pedantic -pthread main.cpp
+main.cpp:4:5: warning: expression result unused [-Wunused-value]
+    std::nullptr_t{};
+    ^             ~~
+1 warning generated.
++ ./a.out
++ g++ -std=c++14 -O2 -Wall -pedantic -pthread main.cpp
++ ./a.out
