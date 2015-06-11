@@ -1,0 +1,2 @@
+void g(T &&) [T = int]
+void g(T &&) [T = int &]
