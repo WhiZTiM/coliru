@@ -1,0 +1,2 @@
+a.out: /usr/local/include/boost/multi_array/multi_array_ref.hpp:484: multi_array_ref<T, NumDims> &boost::multi_array_ref<int, 3>::operator=(const ConstMultiArray &) [T = int, NumDims = 3, ConstMultiArray = boost::multi_array<int, 3, std::allocator<int> >]: Assertion `std::equal(other.shape(),other.shape()+this->num_dimensions(), this->shape())' failed.
+bash: line 7: 20865 Aborted                 (core dumped) ./a.out
