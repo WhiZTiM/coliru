@@ -1,0 +1,1 @@
+gcc -x c -std=c99 -pedantic-errors main.cpp && ./a.out
