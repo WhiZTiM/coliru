@@ -1,0 +1,7 @@
+rvalue overload, n=2
+lvalue overload, n=1
+B
+rvalue overload, n=2
+lvalue overload, n=1
+rvalue overload, n=3
+[auto std_make_tuple(Types&& ...) [with Types = {int, int&, int, char, const char (&)[6]}]]void print(const std::tuple<_Elements ...>&) [with Args = {int, int, int, char, const char*}](2{int}, 1{int}, 3{int}, ?{char}, tuple{char const*})
