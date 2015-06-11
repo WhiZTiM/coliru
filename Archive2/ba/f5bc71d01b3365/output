@@ -1,0 +1,4 @@
+main.cpp:6:10: error: array initializer must be an initializer list
+  string s[5] = "hello";
+         ^
+1 error generated.
