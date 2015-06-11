@@ -1,0 +1,15 @@
+main.cpp: In instantiation of 'void network<iCount, neurons>::addLayer() [with int prev = 5; int nc = 7; int ...further = {}; int iCount = 1; int ...neurons = {3, 5, 7}]':
+main.cpp:12:33:   recursively required from 'void network<iCount, neurons>::addLayer() [with int prev = 3; int nc = 5; int ...further = {7}; int iCount = 1; int ...neurons = {3, 5, 7}]'
+main.cpp:12:33:   required from 'void network<iCount, neurons>::addLayer() [with int prev = 1; int nc = 3; int ...further = {5, 7}; int iCount = 1; int ...neurons = {3, 5, 7}]'
+main.cpp:8:37:   required from 'network<iCount, neurons>::network() [with int iCount = 1; int ...neurons = {3, 5, 7}]'
+main.cpp:18:25:   required from here
+main.cpp:12:33: error: no matching function for call to 'network<1, 3, 5, 7>::addLayer()'
+         addLayer<nc, further...>();
+                                 ^
+main.cpp:11:10: note: candidate: template<int prev, int nc, int ...further> void network<iCount, neurons>::addLayer() [with int prev = prev; int nc = nc; int ...further = {further ...}; int iCount = 1; int ...neurons = {3, 5, 7}]
+     void addLayer() {
+          ^
+main.cpp:11:10: note:   template argument deduction/substitution failed:
+main.cpp:12:33: note:   couldn't deduce template parameter 'nc'
+         addLayer<nc, further...>();
+                                 ^
