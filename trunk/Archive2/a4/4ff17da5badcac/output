@@ -1,0 +1,9 @@
+main.cpp:1:1: error: expected unqualified-id before 'for'
+ for(int i=0;i<tris.size();i++)
+ ^
+main.cpp:1:13: error: 'i' does not name a type
+ for(int i=0;i<tris.size();i++)
+             ^
+main.cpp:1:27: error: 'i' does not name a type
+ for(int i=0;i<tris.size();i++)
+                           ^
