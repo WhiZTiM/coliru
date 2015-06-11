@@ -1,0 +1,25 @@
+main.cpp: In function 'int main()':
+main.cpp:180:10: error: ambiguous overload for 'operator=' (operand types are 'std::vector<int>' and 'AttrValue')
+     vect = attrVect;
+          ^
+In file included from /usr/local/include/c++/5.1.0/vector:69:0,
+                 from /usr/local/include/c++/5.1.0/bits/random.h:34,
+                 from /usr/local/include/c++/5.1.0/random:49,
+                 from /usr/local/include/c++/5.1.0/bits/stl_algo.h:66,
+                 from /usr/local/include/c++/5.1.0/algorithm:62,
+                 from main.cpp:5:
+/usr/local/include/c++/5.1.0/bits/vector.tcc:167:5: note: candidate: std::vector<_Tp, _Alloc>& std::vector<_Tp, _Alloc>::operator=(const std::vector<_Tp, _Alloc>&) [with _Tp = int; _Alloc = std::allocator<int>]
+     vector<_Tp, _Alloc>::
+     ^
+In file included from /usr/local/include/c++/5.1.0/vector:64:0,
+                 from /usr/local/include/c++/5.1.0/bits/random.h:34,
+                 from /usr/local/include/c++/5.1.0/random:49,
+                 from /usr/local/include/c++/5.1.0/bits/stl_algo.h:66,
+                 from /usr/local/include/c++/5.1.0/algorithm:62,
+                 from main.cpp:5:
+/usr/local/include/c++/5.1.0/bits/stl_vector.h:448:7: note: candidate: std::vector<_Tp, _Alloc>& std::vector<_Tp, _Alloc>::operator=(std::vector<_Tp, _Alloc>&&) [with _Tp = int; _Alloc = std::allocator<int>]
+       operator=(vector&& __x) noexcept(_Alloc_traits::_S_nothrow_move())
+       ^
+/usr/local/include/c++/5.1.0/bits/stl_vector.h:470:7: note: candidate: std::vector<_Tp, _Alloc>& std::vector<_Tp, _Alloc>::operator=(std::initializer_list<_Tp>) [with _Tp = int; _Alloc = std::allocator<int>]
+       operator=(initializer_list<value_type> __l)
+       ^
