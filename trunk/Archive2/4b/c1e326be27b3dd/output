@@ -1,0 +1,94 @@
+main.cpp: In instantiation of 'variant_t MakeVariantOverEnum(Type, Args&& ...) [with Args = {const int&, const int&}; variant_t = boost::variant<A, B, C>]':
+main.cpp:44:100:   required from here
+main.cpp:24:59: error: no matching function for call to 'B::B(const int&, const int&)'
+         case Type::X: return B(std::forward<Args>(args)...); break;
+                                                           ^
+main.cpp:24:59: note: candidates are:
+main.cpp:9:2: note: B::B(int)
+  B(int) {}
+  ^
+main.cpp:9:2: note:   candidate expects 1 argument, 2 provided
+main.cpp:7:8: note: constexpr B::B(const B&)
+ struct B
+        ^
+main.cpp:7:8: note:   candidate expects 1 argument, 2 provided
+main.cpp:7:8: note: constexpr B::B(B&&)
+main.cpp:7:8: note:   candidate expects 1 argument, 2 provided
+main.cpp:27:59: error: no matching function for call to 'A::A(const int&, const int&)'
+         default:      return A(std::forward<Args>(args)...); break;
+                                                           ^
+main.cpp:27:59: note: candidates are:
+main.cpp:5:8: note: constexpr A::A()
+ struct A {};
+        ^
+main.cpp:5:8: note:   candidate expects 0 arguments, 2 provided
+main.cpp:5:8: note: constexpr A::A(const A&)
+main.cpp:5:8: note:   candidate expects 1 argument, 2 provided
+main.cpp:5:8: note: constexpr A::A(A&&)
+main.cpp:5:8: note:   candidate expects 1 argument, 2 provided
+main.cpp: In instantiation of 'variant_t MakeVariantOverEnum(Type, Args&& ...) [with Args = {const int&}; variant_t = boost::variant<A, B, C>]':
+main.cpp:45:89:   required from here
+main.cpp:25:59: error: no matching function for call to 'C::C(const int&)'
+         case Type::Z: return C(std::forward<Args>(args)...); break;
+                                                           ^
+main.cpp:25:59: note: candidates are:
+main.cpp:14:2: note: C::C(int, int)
+  C(int, int) {}
+  ^
+main.cpp:14:2: note:   candidate expects 2 arguments, 1 provided
+main.cpp:12:8: note: constexpr C::C(const C&)
+ struct C
+        ^
+main.cpp:12:8: note:   no known conversion for argument 1 from 'const int' to 'const C&'
+main.cpp:12:8: note: constexpr C::C(C&&)
+main.cpp:12:8: note:   no known conversion for argument 1 from 'const int' to 'C&&'
+main.cpp:27:59: error: no matching function for call to 'A::A(const int&)'
+         default:      return A(std::forward<Args>(args)...); break;
+                                                           ^
+main.cpp:27:59: note: candidates are:
+main.cpp:5:8: note: constexpr A::A()
+ struct A {};
+        ^
+main.cpp:5:8: note:   candidate expects 0 arguments, 1 provided
+main.cpp:5:8: note: constexpr A::A(const A&)
+main.cpp:5:8: note:   no known conversion for argument 1 from 'const int' to 'const A&'
+main.cpp:5:8: note: constexpr A::A(A&&)
+main.cpp:5:8: note:   no known conversion for argument 1 from 'const int' to 'A&&'
+main.cpp: In instantiation of 'variant_t MakeVariantOverEnum(Type, Args&& ...) [with Args = {}; variant_t = boost::variant<A, B, C>]':
+main.cpp:46:79:   required from here
+main.cpp:24:59: error: no matching function for call to 'B::B()'
+         case Type::X: return B(std::forward<Args>(args)...); break;
+                                                           ^
+main.cpp:24:59: note: candidates are:
+main.cpp:9:2: note: B::B(int)
+  B(int) {}
+  ^
+main.cpp:9:2: note:   candidate expects 1 argument, 0 provided
+main.cpp:7:8: note: constexpr B::B(const B&)
+ struct B
+        ^
+main.cpp:7:8: note:   candidate expects 1 argument, 0 provided
+main.cpp:7:8: note: constexpr B::B(B&&)
+main.cpp:7:8: note:   candidate expects 1 argument, 0 provided
+main.cpp:25:59: error: no matching function for call to 'C::C()'
+         case Type::Z: return C(std::forward<Args>(args)...); break;
+                                                           ^
+main.cpp:25:59: note: candidates are:
+main.cpp:14:2: note: C::C(int, int)
+  C(int, int) {}
+  ^
+main.cpp:14:2: note:   candidate expects 2 arguments, 0 provided
+main.cpp:12:8: note: constexpr C::C(const C&)
+ struct C
+        ^
+main.cpp:12:8: note:   candidate expects 1 argument, 0 provided
+main.cpp:12:8: note: constexpr C::C(C&&)
+main.cpp:12:8: note:   candidate expects 1 argument, 0 provided
+main.cpp: In function 'variant_t MakeVariantOverEnum(Type, Args&& ...) [with Args = {const int&, const int&}; variant_t = boost::variant<A, B, C>]':
+main.cpp:29:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+main.cpp: In function 'variant_t MakeVariantOverEnum(Type, Args&& ...) [with Args = {const int&}; variant_t = boost::variant<A, B, C>]':
+main.cpp:29:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
