@@ -1,0 +1,41 @@
+main.cpp:22:14: error: variable or field 'erase' declared void
+         void erase
+              ^
+main.cpp:22:14: error: expected ';' at end of member declaration
+main.cpp: In member function 'void SignalMonitoringServer::Unmonitor(const SignalDefinition&)':
+main.cpp:56:33: error: 'class fixed_vector<SignalDefinition, 64ul>' has no member named 'erase'
+             signal_definitions_.erase(
+                                 ^
+main.cpp:58:41: error: 'class fixed_vector<SignalDefinition, 64ul>' has no member named 'begin'
+                     signal_definitions_.begin(), 
+                                         ^
+main.cpp:59:41: error: 'class fixed_vector<SignalDefinition, 64ul>' has no member named 'end'
+                     signal_definitions_.end(), 
+                                         ^
+main.cpp:62:37: error: 'class fixed_vector<SignalDefinition, 64ul>' has no member named 'end'
+                 signal_definitions_.end()
+                                     ^
+main.cpp: In member function 'void SignalMonitoringServer::UnmonitorAll()':
+main.cpp:67:33: error: 'class fixed_vector<SignalDefinition, 64ul>' has no member named 'clear'
+             signal_definitions_.clear();
+                                 ^
+main.cpp: In instantiation of 'fixed_vector<T, kMaxCount>::fixed_vector() [with T = SignalDefinition; long unsigned int kMaxCount = 64ul]':
+main.cpp:45:7:   required from here
+main.cpp:12:34: error: use of deleted function 'std::array<SignalDefinition, 64ul>::array()'
+         fixed_vector() : count_(0) {}
+                                  ^
+In file included from main.cpp:3:0:
+/usr/local/include/c++/5.1.0/array:81:12: note: 'std::array<SignalDefinition, 64ul>::array()' is implicitly deleted because the default definition would be ill-formed:
+     struct array
+            ^
+/usr/local/include/c++/5.1.0/array:81:12: error: no matching function for call to 'SignalDefinition::SignalDefinition()'
+main.cpp:31:9: note: candidate: SignalDefinition::SignalDefinition(int)
+         SignalDefinition(int value) :
+         ^
+main.cpp:31:9: note:   candidate expects 1 argument, 0 provided
+main.cpp:29:7: note: candidate: constexpr SignalDefinition::SignalDefinition(const SignalDefinition&)
+ class SignalDefinition {
+       ^
+main.cpp:29:7: note:   candidate expects 1 argument, 0 provided
+main.cpp:29:7: note: candidate: constexpr SignalDefinition::SignalDefinition(SignalDefinition&&)
+main.cpp:29:7: note:   candidate expects 1 argument, 0 provided
