@@ -1,0 +1,7 @@
+call function with (0,5,3)
+call function with (2,5,3)
+call function with (1,4,3)
+call function with (1,6,3)
+call function with (1,5,2)
+call function with (1,5,4)
+call function with (1,5,3)
