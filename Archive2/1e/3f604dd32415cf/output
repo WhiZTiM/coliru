@@ -1,0 +1,6 @@
+main.cpp: In function 'void getFF(int, double*, std::function<double(int, int, double*)>)':
+main.cpp:25:9: warning: unused variable 'Force' [-Wunused-variable]
+  double Force = GetForce(rProbe, natom, Rs_);
+         ^
+getLJForceAtoms
+getCoulombForceAtoms
