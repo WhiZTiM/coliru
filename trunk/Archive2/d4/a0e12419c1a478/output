@@ -1,0 +1,4 @@
+desctruction
+terminate called after throwing an instance of 'std::exception'
+  what():  std::exception
+bash: line 7:  4146 Aborted                 (core dumped) ./a.out
