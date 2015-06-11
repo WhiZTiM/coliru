@@ -1,0 +1,5 @@
+time for vector = 5100000
+time for array = 0
+clang version 3.6.0 (tags/RELEASE_360/final 235480)
+Target: x86_64-unknown-linux-gnu
+Thread model: posix
