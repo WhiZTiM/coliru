@@ -1,0 +1,21 @@
+In file included from /usr/local/include/c++/5.1.0/x86_64-unknown-linux-gnu/bits/c++allocator.h:33:0,
+                 from /usr/local/include/c++/5.1.0/bits/allocator.h:46,
+                 from /usr/local/include/c++/5.1.0/string:41,
+                 from /usr/local/include/c++/5.1.0/bits/locale_classes.h:40,
+                 from /usr/local/include/c++/5.1.0/bits/ios_base.h:41,
+                 from /usr/local/include/c++/5.1.0/ios:42,
+                 from /usr/local/include/c++/5.1.0/ostream:38,
+                 from /usr/local/include/c++/5.1.0/iostream:39,
+                 from main.cpp:1:
+/usr/local/include/c++/5.1.0/ext/new_allocator.h: In instantiation of 'void __gnu_cxx::new_allocator<_Tp>::construct(_Up*, _Args&& ...) [with _Up = std::thread; _Args = {const std::thread&}; _Tp = std::thread]':
+/usr/local/include/c++/5.1.0/bits/alloc_traits.h:256:4:   required from 'static std::_Require<std::allocator_traits<_Alloc>::__has_construct<_Tp, _Args ...> > std::allocator_traits<_Alloc>::_S_construct(_Alloc&, _Tp*, _Args&& ...) [with _Tp = std::thread; _Args = {const std::thread&}; _Alloc = std::allocator<std::thread>; std::_Require<std::allocator_traits<_Alloc>::__has_construct<_Tp, _Args ...> > = void]'
+/usr/local/include/c++/5.1.0/bits/alloc_traits.h:402:16:   required from 'static decltype (_S_construct(__a, __p, (forward<_Args>)(std::allocator_traits::construct::__args)...)) std::allocator_traits<_Alloc>::construct(_Alloc&, _Tp*, _Args&& ...) [with _Tp = std::thread; _Args = {const std::thread&}; _Alloc = std::allocator<std::thread>; decltype (_S_construct(__a, __p, (forward<_Args>)(std::allocator_traits::construct::__args)...)) = <type error>]'
+/usr/local/include/c++/5.1.0/bits/stl_vector.h:917:30:   required from 'void std::vector<_Tp, _Alloc>::push_back(const value_type&) [with _Tp = std::thread; _Alloc = std::allocator<std::thread>; std::vector<_Tp, _Alloc>::value_type = std::thread]'
+main.cpp:37:30:   required from here
+/usr/local/include/c++/5.1.0/ext/new_allocator.h:120:4: error: use of deleted function 'std::thread::thread(const std::thread&)'
+  { ::new((void *)__p) _Up(std::forward<_Args>(__args)...); }
+    ^
+In file included from main.cpp:4:0:
+/usr/local/include/c++/5.1.0/thread:126:5: note: declared here
+     thread(const thread&) = delete;
+     ^
