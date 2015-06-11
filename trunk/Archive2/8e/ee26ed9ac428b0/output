@@ -1,0 +1,69 @@
+main.cpp:7:1: error: 'alloc' does not name a type
+ alloc:      reinterpret_cast<pointer>(::operator new () (cnt * sizeof (T)))
+ ^
+main.cpp:57:2: warning: extra ';' [-Wpedantic]
+ };
+  ^
+main.cpp:60:17: error: declaration of 'operator==' as non-function
+ bool operator==(MemoryPoolAllocator<T> const &lhs, MemoryPoolAllocator<T> const &rhs) {
+                 ^
+main.cpp:60:17: error: 'MemoryPoolAllocator' was not declared in this scope
+main.cpp:60:38: error: expected primary-expression before '>' token
+ bool operator==(MemoryPoolAllocator<T> const &lhs, MemoryPoolAllocator<T> const &rhs) {
+                                      ^
+main.cpp:60:40: error: expected primary-expression before 'const'
+ bool operator==(MemoryPoolAllocator<T> const &lhs, MemoryPoolAllocator<T> const &rhs) {
+                                        ^
+main.cpp:60:52: error: 'MemoryPoolAllocator' was not declared in this scope
+ bool operator==(MemoryPoolAllocator<T> const &lhs, MemoryPoolAllocator<T> const &rhs) {
+                                                    ^
+main.cpp:60:73: error: expected primary-expression before '>' token
+ bool operator==(MemoryPoolAllocator<T> const &lhs, MemoryPoolAllocator<T> const &rhs) {
+                                                                         ^
+main.cpp:60:75: error: expected primary-expression before 'const'
+ bool operator==(MemoryPoolAllocator<T> const &lhs, MemoryPoolAllocator<T> const &rhs) {
+                                                                           ^
+main.cpp:65:17: error: declaration of 'operator!=' as non-function
+ bool operator!=(MemoryPoolAllocator<T> const &lhs, MemoryPoolAllocator<T> const &rhs) {
+                 ^
+main.cpp:65:17: error: 'MemoryPoolAllocator' was not declared in this scope
+main.cpp:65:38: error: expected primary-expression before '>' token
+ bool operator!=(MemoryPoolAllocator<T> const &lhs, MemoryPoolAllocator<T> const &rhs) {
+                                      ^
+main.cpp:65:40: error: expected primary-expression before 'const'
+ bool operator!=(MemoryPoolAllocator<T> const &lhs, MemoryPoolAllocator<T> const &rhs) {
+                                        ^
+main.cpp:65:52: error: 'MemoryPoolAllocator' was not declared in this scope
+ bool operator!=(MemoryPoolAllocator<T> const &lhs, MemoryPoolAllocator<T> const &rhs) {
+                                                    ^
+main.cpp:65:73: error: expected primary-expression before '>' token
+ bool operator!=(MemoryPoolAllocator<T> const &lhs, MemoryPoolAllocator<T> const &rhs) {
+                                                                         ^
+main.cpp:65:75: error: expected primary-expression before 'const'
+ bool operator!=(MemoryPoolAllocator<T> const &lhs, MemoryPoolAllocator<T> const &rhs) {
+                                                                           ^
+main.cpp:113:40: error: 'Allocator' was not declared in this scope
+         std::vector< SignalDefinition, Allocator<SignalDefinition> > signal_definitions_;
+                                        ^
+main.cpp:113:66: error: template argument 2 is invalid
+         std::vector< SignalDefinition, Allocator<SignalDefinition> > signal_definitions_;
+                                                                  ^
+main.cpp:113:68: error: expected unqualified-id before '>' token
+         std::vector< SignalDefinition, Allocator<SignalDefinition> > signal_definitions_;
+                                                                    ^
+main.cpp: In member function 'unsigned int SignalMonitoringServer::signalCount() const':
+main.cpp:88:20: error: 'signal_definitions_' was not declared in this scope
+             return signal_definitions_.size();
+                    ^
+main.cpp: In member function 'void SignalMonitoringServer::Monitor(const SignalDefinition&)':
+main.cpp:92:13: error: 'signal_definitions_' was not declared in this scope
+             signal_definitions_.push_back(definition);
+             ^
+main.cpp: In member function 'void SignalMonitoringServer::Unmonitor(const SignalDefinition&)':
+main.cpp:96:13: error: 'signal_definitions_' was not declared in this scope
+             signal_definitions_.erase(
+             ^
+main.cpp: In member function 'void SignalMonitoringServer::UnmonitorAll()':
+main.cpp:107:13: error: 'signal_definitions_' was not declared in this scope
+             signal_definitions_.clear();
+             ^
