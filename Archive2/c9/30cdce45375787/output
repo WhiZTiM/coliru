@@ -1,0 +1,17 @@
+-------------------------
+1aaa
+Parsing failed
+-------------------------
+alias
+Parsing failed
+-------------------------
+alias filename
+Parsing failed
+-------------------------
+alias filename = file.name
+identifier: file.name
+Parsing succeeded
+-------------------------
+alias indexname = "my index name"
+literal: my index name
+Parsing succeeded
