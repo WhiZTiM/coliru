@@ -1,0 +1,23 @@
+main.cpp:7:23: error: expected ';' at end of declaration
+    std::vector<int> v{2, 4, 2, 0, 5, 10, 7, 3, 7, 1}; 
+                      ^
+                      ;
+main.cpp:10:15: error: range-based for loop is a C++11 extension [-Werror,-Wc++11-extensions]
+    for (int n: v)
+              ^
+main.cpp:15:10: error: 'auto' type specifier is a C++11 extension [-Werror,-Wc++11-extensions]
+    for (auto i = v.begin(); i != v.end(); ++i) {
+         ^
+main.cpp:20:15: error: range-based for loop is a C++11 extension [-Werror,-Wc++11-extensions]
+    for (int n: v)
+              ^
+main.cpp:28:15: error: range-based for loop is a C++11 extension [-Werror,-Wc++11-extensions]
+    for (int n: v)
+              ^
+main.cpp:36:15: error: range-based for loop is a C++11 extension [-Werror,-Wc++11-extensions]
+    for (int n: v)
+              ^
+main.cpp:40:2: error: no newline at end of file [-Werror,-Wnewline-eof]
+}
+ ^
+7 errors generated.
