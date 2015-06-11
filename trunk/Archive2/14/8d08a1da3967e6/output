@@ -1,0 +1,13 @@
+main.cpp: In function 'int main()':
+main.cpp:11:34: error: invalid static_cast from type 'int' to type 'int*'
+     intp = static_cast<int*>(thei);
+                                  ^
+main.cpp:15:33: error: invalid static_cast from type 'int*' to type 'int'
+     thei = static_cast<int>(intp);
+                                 ^
+main.cpp:16:38: error: cast from 'int*' to 'int' loses precision [-fpermissive]
+     thei = reinterpret_cast<int>(intp);
+                                      ^
+main.cpp:19:40: error: invalid static_cast from type 'int*' to type 'double*'
+     doublep = static_cast<double*>(intp);
+                                        ^
