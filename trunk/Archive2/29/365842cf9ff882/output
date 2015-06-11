@@ -1,0 +1,2 @@
+in A callFoo()
+bash: line 7: 20289 Segmentation fault      (core dumped) ./a.out
