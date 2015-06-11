@@ -1,0 +1,4 @@
+before sort:      2 4 2 0 5 10 7 3 7 1 
+after sort:       0 1 2 2 3 4 5 7 7 10 
+simple rotate left  : 1 2 2 3 4 5 7 7 10 0 
+simple rotate right : 0 1 2 2 3 4 5 7 7 10 
