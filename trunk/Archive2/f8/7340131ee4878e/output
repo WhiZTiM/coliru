@@ -1,0 +1,61 @@
+main.cpp: In instantiation of 'struct first_arg<main()::<lambda(auto:1)>, int>':
+main.cpp:49:35:   required from here
+main.cpp:40:33: error: call of overloaded 'test(<unresolved overloaded function type>)' is ambiguous
+     using result = decltype(test(&F::operator()));
+                                 ^
+main.cpp:18:26: note: candidate: static first_arg<F, A>::template_rref first_arg<F, A>::test(first_arg<F, A>::return_type (F::*)(A&&) const) [with F = main()::<lambda(auto:1)>; A = int; first_arg<F, A>::return_type = void]
+     static template_rref test(return_type (F::*)(A&&) const);
+                          ^
+main.cpp:19:26: note: candidate: static first_arg<F, A>::template_lref first_arg<F, A>::test(first_arg<F, A>::return_type (F::*)(A&) const) [with F = main()::<lambda(auto:1)>; A = int; first_arg<F, A>::return_type = void]
+     static template_lref test(return_type (F::*)(A&) const);
+                          ^
+main.cpp:20:25: note: candidate: static first_arg<F, A>::template_val first_arg<F, A>::test(first_arg<F, A>::return_type (F::*)(A) const) [with F = main()::<lambda(auto:1)>; A = int; first_arg<F, A>::return_type = void]
+     static template_val test(return_type (F::*)(A) const);
+                         ^
+main.cpp: In function 'int main()':
+main.cpp:49:43: error: template argument 1 is invalid
+     TD<first_arg<decltype(x), int>::result> t1;
+                                           ^
+main.cpp: In instantiation of 'struct first_arg<main()::<lambda(auto:2&&)>, int>':
+main.cpp:50:35:   required from here
+main.cpp:40:33: error: call of overloaded 'test(<unresolved overloaded function type>)' is ambiguous
+     using result = decltype(test(&F::operator()));
+                                 ^
+main.cpp:18:26: note: candidate: static first_arg<F, A>::template_rref first_arg<F, A>::test(first_arg<F, A>::return_type (F::*)(A&&) const) [with F = main()::<lambda(auto:2&&)>; A = int; first_arg<F, A>::return_type = void]
+     static template_rref test(return_type (F::*)(A&&) const);
+                          ^
+main.cpp:19:26: note: candidate: static first_arg<F, A>::template_lref first_arg<F, A>::test(first_arg<F, A>::return_type (F::*)(A&) const) [with F = main()::<lambda(auto:2&&)>; A = int; first_arg<F, A>::return_type = void]
+     static template_lref test(return_type (F::*)(A&) const);
+                          ^
+main.cpp:50:43: error: template argument 1 is invalid
+     TD<first_arg<decltype(y), int>::result> t2;
+                                           ^
+main.cpp: In instantiation of 'struct first_arg<main()::<lambda(auto:3&)>, int>':
+main.cpp:51:35:   required from here
+main.cpp:13:51: error: no match for call to '(main()::<lambda(auto:3&)>) (int)'
+     using return_type = decltype(std::declval<F>()(std::declval<A>()));
+                                                   ^
+main.cpp:13:51: note: candidate: decltype (((main()::<lambda(auto:3&)>)0u).main()::<lambda(auto:3&)>(<anonymous>)) (*)(auto:3&) <conversion>
+main.cpp:13:51: note:   candidate expects 2 arguments, 2 provided
+main.cpp:48:22: note: candidate: main()::<lambda(auto:3&)> [with auto:3 = int] <near match>
+     auto z = [](auto&){};
+                      ^
+main.cpp:48:22: note:   conversion of argument 1 would be ill-formed:
+main.cpp:13:51: error: invalid initialization of non-const reference of type 'int&' from an rvalue of type 'int'
+     using return_type = decltype(std::declval<F>()(std::declval<A>()));
+                                                   ^
+main.cpp:40:33: error: 'test' was not declared in this scope
+     using result = decltype(test(&F::operator()));
+                                 ^
+main.cpp:51:43: error: template argument 1 is invalid
+     TD<first_arg<decltype(z), int>::result> t3;
+                                           ^
+main.cpp:49:45: warning: unused variable 't1' [-Wunused-variable]
+     TD<first_arg<decltype(x), int>::result> t1;
+                                             ^
+main.cpp:50:45: warning: unused variable 't2' [-Wunused-variable]
+     TD<first_arg<decltype(y), int>::result> t2;
+                                             ^
+main.cpp:51:45: warning: unused variable 't3' [-Wunused-variable]
+     TD<first_arg<decltype(z), int>::result> t3;
+                                             ^
