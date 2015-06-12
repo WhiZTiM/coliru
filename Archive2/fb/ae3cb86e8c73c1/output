@@ -1,0 +1,10 @@
+main.cpp:14:5: error: use of undeclared identifier 'demo'
+    demo<std::string::const_iterator> par;
+    ^
+main.cpp:14:37: error: expected '(' for function-style cast or type construction
+    demo<std::string::const_iterator> par;
+         ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+main.cpp:14:39: error: use of undeclared identifier 'par'
+    demo<std::string::const_iterator> par;
+                                      ^
+3 errors generated.
