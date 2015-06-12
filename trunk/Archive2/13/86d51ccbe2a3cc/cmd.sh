@@ -1,0 +1,1 @@
+g++ -x c++ -frtti -std=c++14 -g -D_DEBUG -Wall -Wno-unused-variable -pedantic main.cpp && ./a.out
