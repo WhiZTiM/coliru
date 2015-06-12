@@ -1,0 +1,24 @@
+In file included from /usr/local/include/c++/5.1.0/functional:55:0,
+                 from /usr/local/include/c++/5.1.0/memory:79,
+                 from main.cpp:2:
+/usr/local/include/c++/5.1.0/tuple: In instantiation of 'struct std::_Head_base<1ul, MagicD<B, A>, false>':
+/usr/local/include/c++/5.1.0/tuple:339:12:   required from 'struct std::_Tuple_impl<1ul, MagicD<B, A> >'
+/usr/local/include/c++/5.1.0/tuple:180:12:   required from 'struct std::_Tuple_impl<0ul, A*, MagicD<B, A> >'
+/usr/local/include/c++/5.1.0/tuple:596:11:   required from 'class std::tuple<A*, MagicD<B, A> >'
+/usr/local/include/c++/5.1.0/bits/unique_ptr.h:147:57:   required from 'class std::unique_ptr<A, MagicD<B, A> >'
+main.cpp:32:40:   required from here
+/usr/local/include/c++/5.1.0/tuple:110:17: error: 'constexpr std::_Head_base<_Idx, _Head, false>::_Head_base(const std::_Head_base<_Idx, _Head, false>&) [with long unsigned int _Idx = 1ul; _Head = MagicD<B, A>]' declared to take const reference, but implicit declaration would take non-const
+       constexpr _Head_base(const _Head_base&) = default;
+                 ^
+/usr/local/include/c++/5.1.0/tuple: In instantiation of 'constexpr std::_Head_base<_Idx, _Head, false>::_Head_base(const _Head&) [with long unsigned int _Idx = 1ul; _Head = MagicD<B, A>]':
+/usr/local/include/c++/5.1.0/tuple:357:21:   required from 'constexpr std::_Tuple_impl<_Idx, _Head>::_Tuple_impl(const _Head&) [with long unsigned int _Idx = 1ul; _Head = MagicD<B, A>]'
+/usr/local/include/c++/5.1.0/tuple:206:44:   required from 'constexpr std::_Tuple_impl<_Idx, _Head, _Tail ...>::_Tuple_impl(const _Head&, const _Tail& ...) [with long unsigned int _Idx = 0ul; _Head = A*; _Tail = {MagicD<B, A>}]'
+/usr/local/include/c++/5.1.0/tuple:606:30:   required from 'constexpr std::tuple<_T1, _T2>::tuple(const _T1&, const _T2&) [with _T1 = A*; _T2 = MagicD<B, A>]'
+/usr/local/include/c++/5.1.0/bits/unique_ptr.h:195:44:   required from 'std::unique_ptr<_Tp, _Dp>::unique_ptr(std::unique_ptr<_Tp, _Dp>::pointer, typename std::remove_reference<_To>::type&&) [with _Tp = A; _Dp = MagicD<B, A>; std::unique_ptr<_Tp, _Dp>::pointer = A*; typename std::remove_reference<_To>::type = MagicD<B, A>]'
+main.cpp:32:76:   required from here
+/usr/local/include/c++/5.1.0/tuple:108:25: error: binding 'const MagicD<B, A>' to reference of type 'MagicD<B, A>&' discards qualifiers
+       : _M_head_impl(__h) { }
+                         ^
+main.cpp:20:5: note:   initializing argument 1 of 'MagicD<T1, T2>::MagicD(MagicD<T1, T2>&) [with T1 = B; T2 = A]'
+     MagicD(MagicD& other) : t1p(other.t1p) { other.t1p = 0; }
+     ^
