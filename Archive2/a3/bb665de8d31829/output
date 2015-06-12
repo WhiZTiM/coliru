@@ -1,0 +1,7 @@
+cc1plus: warning: command line option '-std=c99' is valid for C/ObjC but not for C++
+&a:0x7fff9752da88 &b:0x7fff9752da8c  p:0x7fff9752da88  q:0x7fff9752da8c
+&p:0x7fff9752da90 &q:0x7fff9752da98
+ r:0x7fff9752da90  s:0x7fff9752da98
+before: *r:0x7fff9752da88 *s:0x7fff9752da8c  t:0x7fff9752da88
+after:  *r:0x7fff9752da8c *s:0x7fff9752da88
+2,1
