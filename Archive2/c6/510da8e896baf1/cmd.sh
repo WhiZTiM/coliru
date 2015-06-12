@@ -1,0 +1,1 @@
+clang++ -std=c++11 -Wall -Wextra -O0 main.cpp && ./a.out
