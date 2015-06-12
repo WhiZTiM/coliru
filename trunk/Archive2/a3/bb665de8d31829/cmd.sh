@@ -1,0 +1,1 @@
+gcc -std=c99 -O2 -Wall main.cpp && ./a.out
