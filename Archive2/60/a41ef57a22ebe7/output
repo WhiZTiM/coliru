@@ -1,0 +1,4 @@
+main.cpp: In function 'int main()':
+main.cpp:11:69: error: conversion from 'std::chrono::_V2::steady_clock::time_point {aka std::chrono::time_point<std::chrono::_V2::steady_clock, std::chrono::duration<long int, std::ratio<1l, 1000000000l> > >}' to non-scalar type 'std::chrono::_V2::steady_clock' requested
+     std::chrono::steady_clock time_ = std::chrono::steady_clock::now();
+                                                                     ^
