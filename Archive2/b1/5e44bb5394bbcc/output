@@ -1,0 +1,5 @@
+main.cpp: In function 'int main()':
+main.cpp:5:22: warning: ISO C++ forbids converting a string constant to 'char*' [-Wpedantic]
+     char *multiple = "0.20,0.37,0.75,0.56";
+                      ^
+one 0.20, two , three , four 
