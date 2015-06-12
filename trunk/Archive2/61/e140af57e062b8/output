@@ -1,0 +1,5 @@
+main.cpp: In static member function 'static void B<Ts>::do_something()':
+main.cpp:19:24: error: expected primary-expression before 'int'
+         a.do_something<int>();
+                        ^
+main.cpp:19:24: error: expected ';' before 'int'
