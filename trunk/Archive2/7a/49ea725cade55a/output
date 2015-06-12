@@ -1,0 +1,32 @@
+# 1 "main.cpp"
+# 1 "<built-in>"
+# 1 "<command-line>"
+# 1 "main.cpp"
+# 23 "main.cpp"
+template<class A> std::string str(A a) { std::stringstream ss; ss<<a; return ss.str(); }
+template<class A, class ... B> std::string str(A a, B...b) { std::stringstream ss; ss<<a<<str(b...); return ss.str(); }
+template<class A, class X>
+void add(std::map<std::string,int> &m, X x, A a) { if(strncmp(a,x,(new std::string(a))->length())==0)m[a] += atoi(strchr(x,':')+1);}
+template<class A, class X, class ... B>
+void add(std::map<std::string,int> &m, X x, A a, B...b) { if(strncmp(a,x,(new std::string(a))->length())==0)m[a] += atoi(strchr(x,':')+1); add(m, x, b...); }
+
+const char* name() { return str("/proc/",getpid(),"/smaps").c_str(); }
+
+int main(int __attribute__((unused)) argc, char __attribute__((unused)) *args[])
+{
+    char b[256];
+    std::map<std::string,int> m;
+
+    FILE *fp = fopen(name(), "r");
+        while(fgets(b, 256, fp))
+            add(m,b,"Rss","Shared","Private","Swap","Pss","Referenced");
+
+        for(auto it : m) { auto a = it.first; auto b = it.second;
+            int value = b;
+            fprintf(stderr, "%s: %d\n", a.c_str(), b);
+        }
+    fclose(fp);
+
+    return 1;
+}
+main.cpp
