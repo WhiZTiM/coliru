@@ -1,0 +1,7 @@
+main.cpp: In function 'int main()':
+main.cpp:58:16: warning: unused variable 'a' [-Wunused-variable]
+         double a = s[0]; //should throw an exception, because predArray[0] = -1
+                ^
+throw exception
+ok
+throw exception
