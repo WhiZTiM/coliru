@@ -1,0 +1,2 @@
+void f(T &&) [X = 0, T = int]
+void f(T &&) [X = 20, T = int]
