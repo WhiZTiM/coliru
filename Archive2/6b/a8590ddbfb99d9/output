@@ -1,0 +1,43 @@
+main.cpp: In function 'int main()':
+main.cpp:58:45: error: aggregate 'TD<template_val> t1' has incomplete type and cannot be defined
+     TD<first_arg<decltype(x), int>::result> t1;
+                                             ^
+main.cpp:59:45: error: aggregate 'TD<template_rref> t2' has incomplete type and cannot be defined
+     TD<first_arg<decltype(y), int>::result> t2;
+                                             ^
+main.cpp:60:45: error: aggregate 'TD<template_lref> t3' has incomplete type and cannot be defined
+     TD<first_arg<decltype(z), int>::result> t3;
+                                             ^
+main.cpp:61:46: error: aggregate 'TD<template_lref> t4' has incomplete type and cannot be defined
+     TD<first_arg<decltype(z), int&>::result> t4;
+                                              ^
+main.cpp:62:46: error: aggregate 'TD<template_lref> t5' has incomplete type and cannot be defined
+     TD<first_arg<decltype(w), int&>::result> t5;
+                                              ^
+main.cpp:71:45: error: aggregate 'TD<normal_val> t1' has incomplete type and cannot be defined
+     TD<first_arg<decltype(x), int>::result> t1;
+                                             ^
+main.cpp:72:45: error: aggregate 'TD<normal_rref> t2' has incomplete type and cannot be defined
+     TD<first_arg<decltype(y), int>::result> t2;
+                                             ^
+main.cpp:73:45: error: aggregate 'TD<normal_lref> t3' has incomplete type and cannot be defined
+     TD<first_arg<decltype(z), int>::result> t3;
+                                             ^
+main.cpp:74:46: error: aggregate 'TD<normal_lref> t4' has incomplete type and cannot be defined
+     TD<first_arg<decltype(z), int&>::result> t4;
+                                              ^
+main.cpp:75:46: error: aggregate 'TD<normal_lref> t5' has incomplete type and cannot be defined
+     TD<first_arg<decltype(w), int&>::result> t5;
+                                              ^
+main.cpp:85:45: error: aggregate 'TD<normal_val> t1' has incomplete type and cannot be defined
+     TD<first_arg<decltype(x), int>::result> t1;
+                                             ^
+main.cpp:86:45: error: aggregate 'TD<normal_rref> t2' has incomplete type and cannot be defined
+     TD<first_arg<decltype(y), int>::result> t2;
+                                             ^
+main.cpp:87:45: error: aggregate 'TD<normal_lref> t3' has incomplete type and cannot be defined
+     TD<first_arg<decltype(z), int>::result> t3;
+                                             ^
+main.cpp:88:46: error: aggregate 'TD<normal_lref> t4' has incomplete type and cannot be defined
+     TD<first_arg<decltype(z), int&>::result> t4;
+                                              ^
