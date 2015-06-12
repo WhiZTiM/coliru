@@ -1,0 +1,1 @@
+mv main.c{pp,} && clang main.c && ./a.out
