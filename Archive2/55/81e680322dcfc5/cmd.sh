@@ -1,0 +1,1 @@
+g++ -x c++ -std=c++14 -g -D_DEBUG -Wall -pedantic main.cpp && ./a.out
