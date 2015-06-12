@@ -1,0 +1,17 @@
+/tmp/main-70f053.o: In function `main':
+main.cpp:(.text+0xef): undefined reference to `boost::system::system_category()'
+/tmp/main-70f053.o: In function `boost::asio::detail::task_io_service::run(boost::system::error_code&)':
+main.cpp:(.text._ZN5boost4asio6detail15task_io_service3runERNS_6system10error_codeE[_ZN5boost4asio6detail15task_io_service3runERNS_6system10error_codeE]+0x14): undefined reference to `boost::system::system_category()'
+/tmp/main-70f053.o: In function `boost::asio::detail::op_queue<boost::asio::detail::task_io_service_operation>::~op_queue()':
+main.cpp:(.text._ZN5boost4asio6detail8op_queueINS1_25task_io_service_operationEED2Ev[_ZN5boost4asio6detail8op_queueINS1_25task_io_service_operationEED2Ev]+0x42): undefined reference to `boost::system::system_category()'
+/tmp/main-70f053.o: In function `boost::asio::basic_io_object<boost::asio::stream_socket_service<boost::asio::ip::tcp>, true>::~basic_io_object()':
+main.cpp:(.text._ZN5boost4asio15basic_io_objectINS0_21stream_socket_serviceINS0_2ip3tcpEEELb1EED2Ev[_ZN5boost4asio15basic_io_objectINS0_21stream_socket_serviceINS0_2ip3tcpEEELb1EED2Ev]+0x32): undefined reference to `boost::system::system_category()'
+/tmp/main-70f053.o: In function `boost::asio::detail::epoll_reactor::deregister_descriptor(int, boost::asio::detail::epoll_reactor::descriptor_state*&, bool)':
+main.cpp:(.text._ZN5boost4asio6detail13epoll_reactor21deregister_descriptorEiRPNS2_16descriptor_stateEb[_ZN5boost4asio6detail13epoll_reactor21deregister_descriptorEiRPNS2_16descriptor_stateEb]+0xb1): undefined reference to `boost::system::system_category()'
+/tmp/main-70f053.o:main.cpp:(.text._ZN5boost4asio6detail10socket_ops5closeEiRhbRNS_6system10error_codeE[_ZN5boost4asio6detail10socket_ops5closeEiRhbRNS_6system10error_codeE]+0x34): more undefined references to `boost::system::system_category()' follow
+/tmp/main-70f053.o: In function `_GLOBAL__sub_I_main.cpp':
+main.cpp:(.text.startup+0x2): undefined reference to `boost::system::generic_category()'
+main.cpp:(.text.startup+0xe): undefined reference to `boost::system::generic_category()'
+main.cpp:(.text.startup+0x1a): undefined reference to `boost::system::system_category()'
+main.cpp:(.text.startup+0x26): undefined reference to `boost::system::system_category()'
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
