@@ -1,0 +1,30 @@
+main.cpp:1:7: error: duplicate 'const'
+ const const const int const const const * const const const Get(){ return new int(1); } const const const
+       ^
+main.cpp:1:13: error: duplicate 'const'
+ const const const int const const const * const const const Get(){ return new int(1); } const const const
+             ^
+main.cpp:1:23: error: duplicate 'const'
+ const const const int const const const * const const const Get(){ return new int(1); } const const const
+                       ^
+main.cpp:1:29: error: duplicate 'const'
+ const const const int const const const * const const const Get(){ return new int(1); } const const const
+                             ^
+main.cpp:1:35: error: duplicate 'const'
+ const const const int const const const * const const const Get(){ return new int(1); } const const const
+                                   ^
+main.cpp:1:49: error: duplicate cv-qualifier
+ const const const int const const const * const const const Get(){ return new int(1); } const const const
+                                                 ^
+main.cpp:1:55: error: duplicate cv-qualifier
+ const const const int const const const * const const const Get(){ return new int(1); } const const const
+                                                       ^
+main.cpp:1:95: error: duplicate 'const'
+ const const const int const const const * const const const Get(){ return new int(1); } const const const
+                                                                                               ^
+main.cpp:1:101: error: duplicate 'const'
+ const const const int const const const * const const const Get(){ return new int(1); } const const const
+                                                                                                     ^
+main.cpp:3:10: error: '::main' must return 'int'
+ int main() {
+          ^
