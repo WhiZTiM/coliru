@@ -1,0 +1,23 @@
+In file included from main.cpp:3:
+In file included from /usr/local/include/boost/spirit/include/qi.hpp:16:
+In file included from /usr/local/include/boost/spirit/home/qi.hpp:21:
+In file included from /usr/local/include/boost/spirit/home/qi/nonterminal.hpp:14:
+/usr/local/include/boost/spirit/home/qi/nonterminal/rule.hpp:304:21: error: no matching function for call to object of type 'const function_type' (aka 'const function<bool (__gnu_cxx::__normal_iterator<const char *, std::__cxx11::basic_string<char> > &, const __gnu_cxx::__normal_iterator<const char *, std::__cxx11::basic_string<char> > &, context_type &, const skipper_type &)>')
+                if (f(first, last, context, skipper))
+                    ^
+/usr/local/include/boost/spirit/home/qi/reference.hpp:43:30: note: in instantiation of function template specialization 'boost::spirit::qi::rule<__gnu_cxx::__normal_iterator<const char *, std::__cxx11::basic_string<char> >, std::__cxx11::basic_string<char> (), boost::proto::exprns_::expr<boost::proto::tagns_::tag::terminal, boost::proto::argsns_::term<boost::spirit::tag::char_code<boost::spirit::tag::space, boost::spirit::char_encoding::ascii> >, 0>, boost::spirit::unused_type, boost::spirit::unused_type>::parse<boost::spirit::context<boost::fusion::cons<std::__cxx11::basic_string<char> &, boost::fusion::nil_>, boost::spirit::locals<mpl_::na, mpl_::na, mpl_::na, mpl_::na, mpl_::na, mpl_::na, mpl_::na, mpl_::na, mpl_::na, mpl_::na> >, boost::spirit::qi::char_class<boost::spirit::tag::char_code<boost::spirit::tag::space, boost::spirit::char_encoding::standard> >, std::__cxx11::basic_string<char> >' requested here
+            return ref.get().parse(first, last, context, skipper, attr_);
+                             ^
+/usr/local/include/boost/spirit/home/qi/parse.hpp:164:40: note: in instantiation of function template specialization 'boost::spirit::qi::reference<const boost::spirit::qi::rule<__gnu_cxx::__normal_iterator<const char *, std::__cxx11::basic_string<char> >, std::__cxx11::basic_string<char> (), boost::proto::exprns_::expr<boost::proto::tagns_::tag::terminal, boost::proto::argsns_::term<boost::spirit::tag::char_code<boost::spirit::tag::space, boost::spirit::char_encoding::ascii> >, 0>, boost::spirit::unused_type, boost::spirit::unused_type> >::parse<__gnu_cxx::__normal_iterator<const char *, std::__cxx11::basic_string<char> >, boost::spirit::context<boost::fusion::cons<std::__cxx11::basic_string<char> &, boost::fusion::nil_>, boost::spirit::locals<mpl_::na, mpl_::na, mpl_::na, mpl_::na, mpl_::na, mpl_::na, mpl_::na, mpl_::na, mpl_::na, mpl_::na> >, boost::spirit::qi::char_class<boost::spirit::tag::char_code<boost::spirit::tag::space, boost::spirit::char_encoding::standard> >, std::__cxx11::basic_string<char> >' requested here
+        if (!compile<qi::domain>(expr).parse(
+                                       ^
+/usr/local/include/boost/spirit/home/qi/parse.hpp:197:20: note: in instantiation of function template specialization 'boost::spirit::qi::phrase_parse<__gnu_cxx::__normal_iterator<const char *, std::__cxx11::basic_string<char> >, demo<__gnu_cxx::__normal_iterator<const char *, std::__cxx11::basic_string<char> > >, boost::proto::exprns_::expr<boost::proto::tagns_::tag::terminal, boost::proto::argsns_::term<boost::spirit::tag::char_code<boost::spirit::tag::space, boost::spirit::char_encoding::standard> >, 0>, std::__cxx11::basic_string<char> >' requested here
+        return qi::phrase_parse(first, last, expr, skipper, skip_flag::postskip, attr);
+                   ^
+main.cpp:25:13: note: in instantiation of function template specialization 'boost::spirit::qi::phrase_parse<__gnu_cxx::__normal_iterator<const char *, std::__cxx11::basic_string<char> >, demo<__gnu_cxx::__normal_iterator<const char *, std::__cxx11::basic_string<char> > >, boost::proto::exprns_::expr<boost::proto::tagns_::tag::terminal, boost::proto::argsns_::term<boost::spirit::tag::char_code<boost::spirit::tag::space, boost::spirit::char_encoding::standard> >, 0>, std::__cxx11::basic_string<char> >' requested here
+    if (qi::phrase_parse(beg, end, par, qi::space, result))
+            ^
+/usr/local/include/boost/function/function_template.hpp:761:17: note: candidate function not viable: no known conversion from 'const char_class<char_code<[...], boost::spirit::char_encoding::standard>>' to 'const char_class<char_code<[...], boost::spirit::char_encoding::ascii>>' for 4th argument
+    result_type operator()(BOOST_FUNCTION_PARMS) const
+                ^
+1 error generated.
