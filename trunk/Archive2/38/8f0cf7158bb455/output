@@ -1,0 +1,6 @@
+main.cpp:13:11: warning: unused variable 'elementRef' [-Wunused-variable]
+    auto& elementRef = myObj().someOtherOperation();
+          ^
+1 warning generated.
+dtor called
+some stuff that uses elementRef
