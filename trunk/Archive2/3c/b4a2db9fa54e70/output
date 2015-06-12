@@ -1,0 +1,99 @@
+a
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+b
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+a
+2
+3
+4
+5
+6
+7
+8
+9
+10
+b
+3
+4
+5
+6
+7
+8
+9
+10
+a
+4
+5
+6
+7
+8
+9
+10
+b
+5
+6
+7
+8
+9
+10
+a
+6
+7
+8
+9
+10
+b
+7
+8
+9
+10
+a
+8
+9
+10
+b
+9
+10
+a
+10
+a - 6
+ab - 5
+aba - 5
+abab - 4
+ababa - 4
+ababab - 3
+abababa - 3
+abababab - 2
+ababababa - 2
+ababababab - 1
+abababababa - 1
+b - 5
+ba - 5
+bab - 4
+baba - 4
+babab - 3
+bababa - 3
+bababab - 2
+babababa - 2
+babababab - 1
+bababababa - 1
+OK
