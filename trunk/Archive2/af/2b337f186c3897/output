@@ -1,0 +1,4 @@
+main.cpp:5:32: error: no type named 'blank' in 'std::ctype_base'
+    using t = std::ctype_base::blank;
+              ~~~~~~~~~~~~~~~~~^
+1 error generated.
