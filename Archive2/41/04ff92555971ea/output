@@ -1,0 +1,45 @@
+array_slice<int> is move constructible? true
+array_slice<int> is move assignable? true
+file_descriptor is move constructible? true
+file_descriptor is move assignable? true
+input_file is move constructible? true
+input_file is move assignable? true
+
+----------------
+
+3 4 5 6 7 
+----------------
+
+#include <iostream>
+#include <stdexcept>
+#include <iterator>
+#include <sys/types.h>
+#include <unistd.h>
+#include <fcntl.h>
+#include <type_traits>
+
+// this class contains pointer members, but it does not own any resources
+// rule of zero may be app
+===========
+array_slice<int> is move constructible? true
+array_slice<int> is move assignable? true
+file_descriptor is move constructible? true
+file_descriptor is move assignable? true
+input_file is move constructible? true
+input_file is move assignable? true
+
+----------------
+
+3 4 5 6 7 
+----------------
+
+#include <iostream>
+#include <stdexcept>
+#include <iterator>
+#include <sys/types.h>
+#include <unistd.h>
+#include <fcntl.h>
+#include <type_traits>
+
+// this class contains pointer members, but it does not own any resources
+// rule of zero may be app
