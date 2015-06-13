@@ -1,0 +1,14 @@
+*** glibc detected *** ./a.out: free(): invalid next size (fast): 0x0000000000a79c20 ***
+======= Backtrace: =========
+/lib/x86_64-linux-gnu/libc.so.6(+0x7e846)[0x7f1f47914846]
+./a.out[0x40147e]
+./a.out[0x401374]
+./a.out[0x401152]
+./a.out[0x400e0b]
+./a.out[0x400d03]
+./a.out[0x400c82]
+./a.out[0x400b87]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xed)[0x7f1f478b776d]
+./a.out[0x400a39]
+======= Memory map: ========
+bash: line 7:  2337 Aborted                 (core dumped) ./a.out
