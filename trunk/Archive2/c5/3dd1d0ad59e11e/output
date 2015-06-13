@@ -1,0 +1,16 @@
+main.cpp:6:15: error: expected ')'
+    (std::cin >> ... >> args);
+              ^
+main.cpp:6:5: note: to match this '('
+    (std::cin >> ... >> args);
+    ^
+main.cpp:6:6: warning: expression result unused [-Wunused-value]
+    (std::cin >> ... >> args);
+     ^~~~~~~~
+main.cpp:6:6: warning: expression result unused [-Wunused-value]
+    (std::cin >> ... >> args);
+     ^~~~~~~~
+main.cpp:13:5: note: in instantiation of function template specialization 'test<int, int, int, int, int>' requested here
+    test(i, j, k, l, m);
+    ^
+2 warnings and 1 error generated.
