@@ -1,0 +1,1 @@
+clang++ -std=c++1z -W{all,extra,pedantic} main.cpp && (echo 1 2 3 4 5 | ./a.out)
