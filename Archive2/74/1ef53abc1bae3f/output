@@ -1,0 +1,13 @@
+main.cpp:22:36: error: 'C<7>::pred(int)::lambda::operator()(int)::lambda::n_' is not a member of class 'const lambda'
+                            return n_ * x_ + y;
+                                   ^
+main.cpp:6:12: note: in instantiation of member function 'C<7>::pred(int)::lambda::operator()' requested here
+    return pred(1) <= M;
+           ^
+main.cpp:26:20: note: in instantiation of function template specialization 'fun<7, lambda>' requested here
+            return fun<M>(lambda{N, x});
+                   ^
+main.cpp:32:41: note: in instantiation of function template specialization 'C<7>::pred<2>' requested here
+    constexpr auto res = C<7>::template pred<2>(3);
+                                        ^
+1 error generated.
