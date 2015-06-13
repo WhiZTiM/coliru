@@ -1,0 +1,4 @@
+main.cpp:24:6: error: use of undeclared identifier 'error'
+     error();
+     ^
+1 error generated.
