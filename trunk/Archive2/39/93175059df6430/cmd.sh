@@ -1,0 +1,1 @@
+g++ -std=c++14 -O2 -Wall -pedantic -pthread -fopenmp main.cpp && OMP_NUM_THREADS=1 ./a.out 100000000
