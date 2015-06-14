@@ -1,0 +1,6 @@
+main.cpp:10:10: warning: variable length arrays are a C99 feature [-Wvla-extension]
+    int x[y];   // I declared an array using a variable size instead of a constant expression
+         ^
+main.cpp:10:10: warning: variable length array used [-Wvla]
+2 warnings generated.
+Enter number of elements of array: 3
