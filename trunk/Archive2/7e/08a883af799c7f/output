@@ -1,0 +1,5 @@
+main.cpp: In function 'int main()':
+main.cpp:10:12: warning: ISO C++ forbids variable length array 'x' [-Wvla]
+     int x[y];   // I declared an array using a variable size instead of a constant expression
+            ^
+Enter number of elements of array: 3
