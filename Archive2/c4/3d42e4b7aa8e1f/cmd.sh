@@ -1,0 +1,1 @@
+g++ -std=c++11 -O2 -Wall -pedantic -pedantic-errors -Wno-unused-variable main.cpp && ./a.out
