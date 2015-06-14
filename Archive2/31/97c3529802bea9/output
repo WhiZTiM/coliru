@@ -1,0 +1,31 @@
+main.cpp:70:26: warning: unused parameter 'args' [-Wunused-parameter]
+    OutType( Types&& ... args ) {}
+                         ^
+main.cpp:189:12: error: redefinition of 'print'
+      void print(const T&& t, Args&&... args) 
+           ^
+main.cpp:180:12: note: previous definition is here
+      void print(const T&& t, Args&&... args) 
+           ^
+main.cpp:209:5: error: no matching function for call to 'print'
+    print( t );
+    ^~~~~
+main.cpp:189:12: note: candidate template ignored: substitution failure [with T = std::unique_ptr<B, std::default_delete<B> >, Args = <>]
+      void print(const T&& t, Args&&... args) 
+           ^
+main.cpp:168:12: note: candidate template ignored: could not match 'tuple' against 'unique_ptr'
+      void print(const std::tuple<Args...>& t) 
+           ^
+main.cpp:210:12: error: multi-character character constant [-Werror,-Wfour-char-constants]
+    print( 'help', 1.2f );
+           ^
+main.cpp:210:5: error: no matching function for call to 'print'
+    print( 'help', 1.2f );
+    ^~~~~
+main.cpp:189:12: note: candidate template ignored: substitution failure [with T = int, Args = <float>]
+      void print(const T&& t, Args&&... args) 
+           ^
+main.cpp:168:12: note: candidate function template not viable: requires single argument 't', but 2 arguments were provided
+      void print(const std::tuple<Args...>& t) 
+           ^
+1 warning and 4 errors generated.
