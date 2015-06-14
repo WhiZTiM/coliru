@@ -1,0 +1,14 @@
+main.cpp:40:30: warning: unused parameter 'arg' [-Wunused-parameter]
+ void TaskFunctionTest (void *arg) {
+                              ^
+main.cpp:43:38: warning: unused parameter 'arg' [-Wunused-parameter]
+ void * start_routine_producer (void *arg) {
+                                      ^
+main.cpp:61:38: warning: unused parameter 'arg' [-Wunused-parameter]
+ void * start_routine_consumer (void *arg) {
+                                      ^
+总时间：7.35978 s
+单次时间：3.67989e-07 s
+push操作数量：10000000
+pop操作数量：10000000
+每秒执行的push、pop操作数量：2.71747e+06
