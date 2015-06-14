@@ -1,0 +1,4 @@
+argv[0] = ./a.out|
+argv[1] = --aaa-a|
+argv[2] = --bbb-b|
+argv[3] = --ccc-c|
