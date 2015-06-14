@@ -1,0 +1,1 @@
+echo "*****juste avant la compilation sans avertissement****" && clang++ main.cpp -o myProg -std=c++14 &&echo "*****après compil sans avertissement et avant la compilation avec avertissements ****" && clang++ main.cpp -o myProg  -std=c++14  -Wall -Wextra -pedantic -O2 && echo "*****l'éxecution est proche / Will john Snow die ? !*****" && ./myProg
