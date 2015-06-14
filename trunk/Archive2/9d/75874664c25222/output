@@ -1,0 +1,10 @@
+main.cpp:8:12: error: template template argument has different template parameters than its corresponding template template parameter
+    A<std::map> x;
+           ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.1.0/../../../../include/c++/5.1.0/bits/stl_map.h:94:3: note: too many template parameters in template template argument
+  template <typename _Key, typename _Tp, typename _Compare = std::less<_Key>,
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+main.cpp:4:11: note: previous template template parameter is here
+template <template <typename, typename> class C>
+          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+1 error generated.
