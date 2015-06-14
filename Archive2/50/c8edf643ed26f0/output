@@ -1,0 +1,23 @@
+main.cpp:5:21: error: expected template parameter
+template <template<T, ALLOC> CONT> 
+                    ^
+main.cpp:5:23: error: unknown type name 'ALLOC'
+template <template<T, ALLOC> CONT> 
+                      ^
+main.cpp:5:30: error: template template parameter requires 'class' after the parameter list
+template <template<T, ALLOC> CONT> 
+                             ^
+                             class 
+main.cpp:6:23: error: use of undeclared identifier 'T'
+void Print(const CONT<T, ALLOC> &c) {
+                      ^
+main.cpp:8:16: error: unknown type name 'T'
+    for (const T &elem : c) std::cout << elem << " ";
+               ^
+main.cpp:16:5: error: no matching function for call to 'Print'
+    Print(intlist);
+    ^~~~~
+main.cpp:17:5: error: no matching function for call to 'Print'
+    Print(floatvec);
+    ^~~~~
+7 errors generated.
