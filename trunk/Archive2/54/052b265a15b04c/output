@@ -1,0 +1,10 @@
+main.cpp: In function 'int main()':
+main.cpp:14:9: error: call of overloaded 'f(<brace-enclosed initializer list>)' is ambiguous
+     f({});
+         ^
+main.cpp:9:6: note: candidate: void f(std::array<int, 1ul>)
+ void f(std::array<int, 1>) {}
+      ^
+main.cpp:10:6: note: candidate: void f(Bob)
+ void f(Bob) {}
+      ^
