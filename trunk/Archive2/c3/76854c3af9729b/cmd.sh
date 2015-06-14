@@ -1,0 +1,1 @@
+clang++ -std=c++11 -Os -Wall -pedantic main.cpp && ./a.out <<< "3 5 NNNYY 6 NNINNI 4 NNNN"
