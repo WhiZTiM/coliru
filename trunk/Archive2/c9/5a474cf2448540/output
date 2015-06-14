@@ -1,0 +1,11 @@
+main.cpp: In constructor 'B::B()':
+main.cpp:13:9: warning: 'B::b' will be initialized after [-Wreorder]
+     int b;
+         ^
+main.cpp:14:23: warning:   base 'A' [-Wreorder]
+     B(): b(9), A(foo()) { }
+                       ^
+main.cpp:14:5: warning:   when initialized here [-Wreorder]
+     B(): b(9), A(foo()) { }
+     ^
+derived
