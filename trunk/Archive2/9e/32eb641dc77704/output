@@ -1,0 +1,8 @@
+main.cpp: In function 'int main()':
+main.cpp:7:14: warning: ISO C++ forbids converting a string constant to 'char*' [-Wpedantic]
+     char* c= "abc";
+              ^
+main.cpp:9:44: warning: format '%s' expects argument of type 'char*', but argument 3 has type 'int' [-Wformat=]
+     printf("%s %s", *(char**) p, *(char*) p);
+                                            ^
+bash: line 7:  3881 Segmentation fault      (core dumped) ./a.out
