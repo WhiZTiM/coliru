@@ -1,0 +1,17 @@
+main.cpp: In function 'int main()':
+main.cpp:7:21: warning: variable 'row' set but not used [-Wunused-but-set-variable]
+ int k, seed, mines, row, column, boom;
+                     ^
+main.cpp:7:26: warning: variable 'column' set but not used [-Wunused-but-set-variable]
+ int k, seed, mines, row, column, boom;
+                          ^
+main.cpp:7:34: warning: unused variable 'boom' [-Wunused-variable]
+ int k, seed, mines, row, column, boom;
+                                  ^
+main.cpp:8:5: warning: unused variable 'board' [-Wunused-variable]
+ int board[9][10];
+     ^
+main.cpp:12:14: warning: 'mines' may be used uninitialized in this function [-Wmaybe-uninitialized]
+ for(k = 1; k <= mines; k++) {
+              ^
+Please enter your seed: 
