@@ -1,0 +1,26 @@
+main.cpp:24:1: error: 'ostream' does not name a type
+ ostream& operator<<(ostream& os, const par<T1,T2>& op)
+ ^
+main.cpp:37:61: error: postfix 'racional operator++(const racional&, const racional&)' must take 'int' as its second argument
+ racional operator++(racional const& op1, racional const& op2)
+                                                             ^
+main.cpp:49:38: error: expected ',' or '...' before '&' token
+     complejo operator+=(complejo cons& op)
+                                      ^
+main.cpp: In member function 'complejo complejo::operator+=(complejo)':
+main.cpp:51:30: error: 'op' was not declared in this scope
+         primero()= primero()+op.primero();
+                              ^
+main.cpp: In function 'int main()':
+main.cpp:62:23: error: expected ';' before 'ab'
+     par<int,int>(a,b) ab;
+                       ^
+main.cpp:60:17: warning: unused variable 'c' [-Wunused-variable]
+     int a=1,b=2,c=3;
+                 ^
+main.cpp:61:12: warning: unused variable 'd' [-Wunused-variable]
+     double d=3.5,e=4.8;
+            ^
+main.cpp:61:18: warning: unused variable 'e' [-Wunused-variable]
+     double d=3.5,e=4.8;
+                  ^
