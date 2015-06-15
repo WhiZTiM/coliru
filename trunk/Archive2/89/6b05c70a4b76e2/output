@@ -1,0 +1,18 @@
+main.cpp:70:26: warning: unused parameter 'args' [-Wunused-parameter]
+    OutType( Types&& ... args ) {}
+                         ^
+main.cpp:203:10: warning: unused variable 't2' [-Wunused-variable]
+    auto t2 = std_make_tuple( 2, i, 3, '?', "tuple" );
+         ^
+2 warnings generated.
+rvalue overload, n=2
+lvalue overload, n=1
+B
+rvalue overload, n=2
+lvalue overload, n=1
+rvalue overload, n=3
+[auto std_make_tuple(Types &&...) [Types = <int, int &, int, char, char const (&)[6]>]]{void print(T &&, const Args &&...) [T = std::unique_ptr<B, std::default_delete<B> > &, Args = <>]}({void print1(std::unique_ptr<T> &) [T = B]}B{2,1,3}
+)
+{void print(T &&, const Args &&...) [T = char, Args = <float>]}({void print1(T &&) [T = char]}H{void print(T &&, const Args &&...) [T = const float &, Args = <>]}({void print1(T &&) [T = const float &]}1.2
+)
+)
