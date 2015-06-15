@@ -1,0 +1,7 @@
+In file included from main.cpp:1:0:
+/usr/local/include/c++/5.1.0/type_traits: In substitution of 'template<bool _Cond, class _Tp> using enable_if_t = typename std::enable_if::type [with bool _Cond = has_parenthesis_operator<std::vector<int> >::value; _Tp = void]':
+main.cpp:46:10:   required from 'struct VectorWrapper<std::vector<int> >'
+main.cpp:59:38:   required from here
+/usr/local/include/c++/5.1.0/type_traits:2388:61: error: no type named 'type' in 'struct std::enable_if<false, void>'
+     using enable_if_t = typename enable_if<_Cond, _Tp>::type;
+                                                             ^
