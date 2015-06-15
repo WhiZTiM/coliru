@@ -1,0 +1,3 @@
+sigmon_server.signalCount() = 0
+sigmon_server_2.signalCount() = 3
+sigmon_server.signalCount() = 2
