@@ -1,0 +1,5 @@
+main.cpp: In function 'int main()':
+main.cpp:6:18: warning: operation on 'i' may be undefined [-Wsequence-point]
+    i += ++i + ++i;
+                  ^
+6
