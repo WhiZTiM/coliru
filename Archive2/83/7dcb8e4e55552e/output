@@ -1,0 +1,15 @@
+main.cpp: In function 'int main()':
+main.cpp:19:10: warning: 'auto' changes meaning in C++11; please remove it [-Wc++0x-compat]
+     for (auto needle : needles) {
+          ^
+main.cpp:19:15: error: 'needle' does not name a type
+     for (auto needle : needles) {
+               ^
+main.cpp:27:1: error: expected ';' before '}' token
+ }
+ ^
+main.cpp:27:1: error: expected primary-expression before '}' token
+main.cpp:27:1: error: expected ';' before '}' token
+main.cpp:27:1: error: expected primary-expression before '}' token
+main.cpp:27:1: error: expected ')' before '}' token
+main.cpp:27:1: error: expected primary-expression before '}' token
