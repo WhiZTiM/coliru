@@ -1,0 +1,36 @@
+main.cpp: In function 'int main()':
+main.cpp:89:12: warning: deleting object of abstract class type 'V' which has non-virtual destructor will cause undefined behaviour [-Wdelete-non-virtual-dtor]
+     delete pb;
+            ^
+==========================
+f() externa
+f() de V
+g() de W
+h() de V
+----------------------
+f() externa
+f() de V
+g() de Y
+h() de V
+----------------------
+f() externa
+f() de V
+g() de W
+h() de V
+----------------------
+==========================
+f() de V
+g() de W
+g() de V
+==========================
+f() de V
+g() de W
+h() de V
+*** glibc detected *** ./a.out: free(): invalid pointer: 0x0000000000e96c40 ***
+======= Backtrace: =========
+/lib/x86_64-linux-gnu/libc.so.6(+0x7e846)[0x7f9aa5a3a846]
+./a.out[0x400d50]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xed)[0x7f9aa59dd76d]
+./a.out[0x400db1]
+======= Memory map: ========
+bash: line 7:  7801 Aborted                 (core dumped) ./a.out
