@@ -1,0 +1,8 @@
+main.cpp:4:14: error: default initialization of an object of const type 'const T1' without a user-provided default constructor
+    const T1 nd;    //  error: const class type with implicit ctor
+             ^
+main.cpp:4:16: note: add an explicit initializer to initialize 'nd'
+    const T1 nd;    //  error: const class type with implicit ctor
+               ^
+               {}
+1 error generated.
