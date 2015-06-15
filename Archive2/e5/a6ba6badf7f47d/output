@@ -1,0 +1,8 @@
+(detect<foo, bar_t>{}): 1
+(detect<foo, bar_int_t>{}): 1
+(detect<foo, bar_string_t>{}): 0
+(detect<foo, type_t>{}): 1
+(detect<baz, bar_t>{}): 0
+(detect<baz, bar_int_t>{}): 1
+(detect<baz, bar_string_t>{}): 1
+(detect<baz, type_t>{}): 0
