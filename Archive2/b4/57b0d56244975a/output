@@ -1,0 +1,42 @@
+init structs:
+empty
+empty
+empty
+
+push_back copy:
+copy
+
+push_back move:
+move
+move
+destructor
+
+push_back move:
+move
+move
+move
+destructor
+destructor
+
+push_back move:
+move
+
+push_back move:
+move
+move
+move
+move
+move
+destructor
+destructor
+destructor
+destructor
+
+destructor
+destructor
+destructor
+destructor
+destructor
+destructor
+destructor
+destructor
