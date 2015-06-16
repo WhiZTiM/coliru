@@ -1,0 +1,14 @@
+main.cpp:6:0: warning: ignoring #pragma STDC FENV_ACCESS [-Wunknown-pragmas]
+ #pragma STDC FENV_ACCESS ON
+ ^
+main.cpp: In function ‘main’:
+main.cpp:10:5: error: expected declaration specifiers before ‘printf’
+     printf("pow(2, 10) = %f\n", pow(2,10));
+     ^
+main.cpp:11:5: error: expected declaration specifiers before ‘printf’
+     printf("pow(2, 0.5) = %f\n", pow(2,0.5));
+     ^
+main.cpp:11:5: error: expected ‘{’ at end of input
+main.cpp:11:5: warning: control reaches end of non-void function [-Wreturn-type]
+     printf("pow(2, 0.5) = %f\n", pow(2,0.5));
+     ^
