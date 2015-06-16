@@ -1,0 +1,192 @@
+main.cpp:19:5: note: step unknown.
+main.cpp:19:5: note: step unknown.
+main.cpp:19:5: note: step unknown.
+main.cpp:19:5: note: step unknown.
+main.cpp:19:5: note: Unknown misalignment, is_packed = 0
+main.cpp:19:5: note: Unknown misalignment, is_packed = 0
+main.cpp:19:5: note: Unknown misalignment, is_packed = 0
+main.cpp:19:5: note: Unknown misalignment, is_packed = 0
+main.cpp:19:5: note: reduc phi. skip.
+main.cpp:19:5: note: reduc phi. skip.
+main.cpp:19:5: note: reduc phi. skip.
+main.cpp:19:5: note: reduc phi. skip.
+main.cpp:19:5: note: Build SLP failed: not grouped load _23 = *_22;
+
+main.cpp:19:5: note: not ssa-name.
+main.cpp:19:5: note: use not simple.
+main.cpp:19:5: note: not ssa-name.
+main.cpp:19:5: note: use not simple.
+main.cpp:19:5: note: no optab.
+main.cpp:19:5: note: reduc op not supported by target.
+main.cpp:19:5: note: not ssa-name.
+main.cpp:19:5: note: use not simple.
+main.cpp:19:5: note: not ssa-name.
+main.cpp:19:5: note: use not simple.
+main.cpp:19:5: note: no optab.
+main.cpp:19:5: note: reduc op not supported by target.
+main.cpp:19:5: note: not ssa-name.
+main.cpp:19:5: note: use not simple.
+main.cpp:19:5: note: not ssa-name.
+main.cpp:19:5: note: use not simple.
+main.cpp:19:5: note: no optab.
+main.cpp:19:5: note: reduc op not supported by target.
+main.cpp:19:5: note: not ssa-name.
+main.cpp:19:5: note: use not simple.
+main.cpp:19:5: note: not ssa-name.
+main.cpp:19:5: note: use not simple.
+main.cpp:19:5: note: no optab.
+main.cpp:19:5: note: reduc op not supported by target.
+main.cpp:19:5: note: reduc op not supported by target.
+main.cpp:19:5: note: reduc op not supported by target.
+main.cpp:19:5: note: reduc op not supported by target.
+main.cpp:19:5: note: reduc op not supported by target.
+main.cpp:7:10: note: not vectorized: not enough data-refs in basic block.
+main.cpp:21:22: note: not vectorized: no vectype for stmt: vect__11.5_72 = MEM[(int *)vectp_data.3_33];
+ scalar_type: vector(4) int
+main.cpp:21:22: note: not vectorized: not enough data-refs in basic block.
+main.cpp:7:10: note: not vectorized: not enough data-refs in basic block.
+main.cpp:27:32: note: not vectorized: not enough data-refs in basic block.
+	.file	"main.cpp"
+	.intel_syntax noprefix
+	.section	.text.unlikely,"ax",@progbits
+.LCOLDB0:
+	.text
+.LHOTB0:
+	.p2align 5,,31
+	.globl	_Z4sum3Pi
+	.type	_Z4sum3Pi, @function
+_Z4sum3Pi:
+.LFB12:
+	.cfi_startproc
+	pxor	xmm3, xmm3
+	lea	rdx, [rdi+4000]
+	movdqa	xmm2, xmm3
+	movdqa	xmm1, xmm3
+	movdqa	xmm0, xmm3
+.L2:
+	movdqu	xmm4, XMMWORD PTR [rdi]
+	movdqu	xmm5, XMMWORD PTR [rdi+4000]
+	add	rdi, 160
+	movdqu	xmm6, XMMWORD PTR [rdi+7840]
+	movdqu	xmm7, XMMWORD PTR [rdi+11840]
+	movdqu	xmm11, XMMWORD PTR [rdi+11856]
+	movdqu	xmm8, XMMWORD PTR [rdi-144]
+	paddd	xmm0, xmm4
+	movdqu	xmm9, XMMWORD PTR [rdi+3856]
+	movdqu	xmm10, XMMWORD PTR [rdi+7856]
+	paddd	xmm1, xmm5
+	movdqu	xmm12, XMMWORD PTR [rdi-128]
+	movdqu	xmm13, XMMWORD PTR [rdi+3872]
+	paddd	xmm2, xmm6
+	movdqu	xmm14, XMMWORD PTR [rdi+7872]
+	movdqu	xmm15, XMMWORD PTR [rdi+11872]
+	paddd	xmm3, xmm7
+	movdqu	xmm4, XMMWORD PTR [rdi-112]
+	movdqu	xmm5, XMMWORD PTR [rdi+3888]
+	paddd	xmm3, xmm11
+	movdqu	xmm6, XMMWORD PTR [rdi+7888]
+	movdqu	xmm7, XMMWORD PTR [rdi+11888]
+	paddd	xmm0, xmm8
+	movdqu	xmm11, XMMWORD PTR [rdi+11904]
+	movdqu	xmm8, XMMWORD PTR [rdi-96]
+	paddd	xmm1, xmm9
+	paddd	xmm2, xmm10
+	movdqu	xmm9, XMMWORD PTR [rdi+3904]
+	movdqu	xmm10, XMMWORD PTR [rdi+7904]
+	paddd	xmm0, xmm12
+	paddd	xmm1, xmm13
+	movdqu	xmm12, XMMWORD PTR [rdi-80]
+	movdqu	xmm13, XMMWORD PTR [rdi+3920]
+	paddd	xmm2, xmm14
+	paddd	xmm3, xmm15
+	movdqu	xmm14, XMMWORD PTR [rdi+7920]
+	movdqu	xmm15, XMMWORD PTR [rdi+11920]
+	paddd	xmm0, xmm4
+	paddd	xmm1, xmm5
+	movdqu	xmm4, XMMWORD PTR [rdi-64]
+	movdqu	xmm5, XMMWORD PTR [rdi+3936]
+	paddd	xmm2, xmm6
+	paddd	xmm3, xmm7
+	movdqu	xmm6, XMMWORD PTR [rdi+7936]
+	movdqu	xmm7, XMMWORD PTR [rdi+11936]
+	paddd	xmm3, xmm11
+	movdqu	xmm11, XMMWORD PTR [rdi+11952]
+	paddd	xmm0, xmm8
+	paddd	xmm1, xmm9
+	movdqu	xmm8, XMMWORD PTR [rdi-48]
+	movdqu	xmm9, XMMWORD PTR [rdi+3952]
+	paddd	xmm2, xmm10
+	paddd	xmm0, xmm12
+	movdqu	xmm10, XMMWORD PTR [rdi+7952]
+	movdqu	xmm12, XMMWORD PTR [rdi-32]
+	paddd	xmm1, xmm13
+	paddd	xmm2, xmm14
+	movdqu	xmm13, XMMWORD PTR [rdi+3968]
+	paddd	xmm3, xmm15
+	movdqu	xmm14, XMMWORD PTR [rdi+7968]
+	movdqu	xmm15, XMMWORD PTR [rdi+11968]
+	paddd	xmm0, xmm4
+	paddd	xmm1, xmm5
+	movdqu	xmm4, XMMWORD PTR [rdi+3984]
+	paddd	xmm2, xmm6
+	paddd	xmm3, xmm7
+	movdqu	xmm6, XMMWORD PTR [rdi+7984]
+	movdqu	xmm7, XMMWORD PTR [rdi+11984]
+	paddd	xmm3, xmm11
+	movdqa	xmm5, xmm3
+	movdqu	xmm3, XMMWORD PTR [rdi-16]
+	cmp	rdi, rdx
+	paddd	xmm0, xmm8
+	paddd	xmm1, xmm9
+	paddd	xmm2, xmm10
+	paddd	xmm0, xmm12
+	paddd	xmm1, xmm13
+	paddd	xmm2, xmm14
+	paddd	xmm5, xmm15
+	paddd	xmm0, xmm3
+	paddd	xmm5, xmm7
+	paddd	xmm1, xmm4
+	paddd	xmm2, xmm6
+	movdqa	xmm3, xmm5
+	jne	.L2
+	movdqa	xmm8, xmm5
+	movdqa	xmm10, xmm2
+	psrldq	xmm8, 8
+	psrldq	xmm10, 8
+	paddd	xmm3, xmm8
+	paddd	xmm2, xmm10
+	movdqa	xmm9, xmm3
+	movdqa	xmm11, xmm2
+	psrldq	xmm9, 4
+	psrldq	xmm11, 4
+	paddd	xmm3, xmm9
+	paddd	xmm2, xmm11
+	movd	eax, xmm3
+	movd	ecx, xmm2
+	add	ecx, eax
+	movdqa	xmm12, xmm1
+	psrldq	xmm12, 8
+	paddd	xmm1, xmm12
+	movdqa	xmm13, xmm1
+	psrldq	xmm13, 4
+	paddd	xmm1, xmm13
+	movd	esi, xmm1
+	add	ecx, esi
+	movdqa	xmm14, xmm0
+	psrldq	xmm14, 8
+	paddd	xmm0, xmm14
+	movdqa	xmm15, xmm0
+	psrldq	xmm15, 4
+	paddd	xmm0, xmm15
+	movd	eax, xmm0
+	add	eax, ecx
+	ret
+	.cfi_endproc
+.LFE12:
+	.size	_Z4sum3Pi, .-_Z4sum3Pi
+	.section	.text.unlikely
+.LCOLDE0:
+	.text
+.LHOTE0:
+	.ident	"GCC: (GNU) 4.9.2"
+	.section	.note.GNU-stack,"",@progbits
