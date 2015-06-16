@@ -1,0 +1,7 @@
+main.cpp:7:5: error: functions that differ only in their return type cannot be overloaded
+int f(char const *p) {
+~~~ ^
+main.cpp:4:6: note: previous definition is here
+void f(char const *const p) {
+~~~~ ^
+1 error generated.
