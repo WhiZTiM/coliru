@@ -1,0 +1,52 @@
+main.cpp:19:5: note: step unknown.
+main.cpp:19:5: note: step unknown.
+main.cpp:19:5: note: step unknown.
+main.cpp:19:5: note: step unknown.
+main.cpp:19:5: note: vector alignment may not be reachable
+main.cpp:19:5: note: reduc phi. skip.
+main.cpp:19:5: note: reduc phi. skip.
+main.cpp:19:5: note: reduc phi. skip.
+main.cpp:19:5: note: reduc phi. skip.
+main.cpp:19:5: note: Build SLP failed: different interleaving chains in one node _19 = *_18;
+
+main.cpp:19:5: note: Build SLP failed: different interleaving chains in one node _15 = *_14;
+
+main.cpp:19:5: note: Build SLP failed: different interleaving chains in one node _11 = *_9;
+
+main.cpp:19:5: note: not ssa-name.
+main.cpp:19:5: note: use not simple.
+main.cpp:19:5: note: not ssa-name.
+main.cpp:19:5: note: use not simple.
+main.cpp:19:5: note: no array mode for V4SI[4]
+main.cpp:19:5: note: no optab.
+main.cpp:19:5: note: reduc op not supported by target.
+main.cpp:19:5: note: not ssa-name.
+main.cpp:19:5: note: use not simple.
+main.cpp:19:5: note: not ssa-name.
+main.cpp:19:5: note: use not simple.
+main.cpp:19:5: note: no array mode for V4SI[4]
+main.cpp:19:5: note: no optab.
+main.cpp:19:5: note: reduc op not supported by target.
+main.cpp:19:5: note: not ssa-name.
+main.cpp:19:5: note: use not simple.
+main.cpp:19:5: note: not ssa-name.
+main.cpp:19:5: note: use not simple.
+main.cpp:19:5: note: no array mode for V4SI[4]
+main.cpp:19:5: note: no optab.
+main.cpp:19:5: note: reduc op not supported by target.
+main.cpp:19:5: note: not ssa-name.
+main.cpp:19:5: note: use not simple.
+main.cpp:19:5: note: not ssa-name.
+main.cpp:19:5: note: use not simple.
+main.cpp:19:5: note: no array mode for V4SI[4]
+main.cpp:19:5: note: no optab.
+main.cpp:19:5: note: reduc op not supported by target.
+main.cpp:19:5: note: cost model: the vector iteration cost = 48 divided by the scalar iteration cost = 12 is greater or equal to the vectorization factor = 4.
+main.cpp:19:5: note: not vectorized: vectorization not profitable.
+main.cpp:19:5: note: not vectorized: vector version will never be profitable.
+main.cpp:19:5: note: bad operation or unsupported loop bound.
+main.cpp:7:10: note: not vectorized: not enough data-refs in basic block.
+main.cpp:21:22: note: Failed to SLP the basic block.
+main.cpp:21:22: note: not vectorized: failed to find SLP opportunities in basic block.
+main.cpp:7:10: note: not vectorized: not enough data-refs in basic block.
+main.cpp:27:32: note: not vectorized: not enough data-refs in basic block.

@@ -1,0 +1,6 @@
+main.cpp:46:23: warning: if statement has empty body [-Wempty-body]
+    if (iss >> a >> b);
+                      ^
+main.cpp:46:23: note: put the semicolon on a separate line to silence this warning
+1 warning generated.
+a:(1.240000000000000, 9001.000000000000000, 0.000000000000000), b:(75.332229999999996, 1234.000000000000000, 0.000000134000000)
