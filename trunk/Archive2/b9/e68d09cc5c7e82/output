@@ -1,0 +1,48 @@
++ g++-5.1 -std=c++14 -O3 -Wall -Wextra -pedantic -Wno-unused-variable -Wno-unused-parameter -pthread main.cpp
+main.cpp: In function ‘int main(int, char**)’:
+main.cpp:42:33: error: no matching function for call to ‘Vector<int>::Vector(OutputIter&, OutputIter&)’
+     Vector<int> c(output, output);
+                                 ^
+main.cpp:22:5: note: candidate: template<class InputIt, decltype ((input_iterator_tag)(typename InputIt::iterator_category{}))* <anonymous> > Vector<T>::Vector(InputIt, InputIt)
+     Vector(InputIt, InputIt)
+     ^
+main.cpp:22:5: note:   template argument deduction/substitution failed:
+main.cpp:21:86: error: no matching function for call to ‘input_iterator_tag::input_iterator_tag(OutputIter::iterator_category)’
+               decltype(input_iterator_tag(typename InputIt::iterator_category{}))* = nullptr>
+                                                                                      ^
+main.cpp:4:8: note: candidate: constexpr input_iterator_tag::input_iterator_tag()
+ struct input_iterator_tag {};
+        ^
+main.cpp:4:8: note:   candidate expects 0 arguments, 1 provided
+main.cpp:4:8: note: candidate: constexpr input_iterator_tag::input_iterator_tag(const input_iterator_tag&)
+main.cpp:4:8: note:   no known conversion for argument 1 from ‘OutputIter::iterator_category {aka output_iterator_tag}’ to ‘const input_iterator_tag&’
+main.cpp:4:8: note: candidate: constexpr input_iterator_tag::input_iterator_tag(input_iterator_tag&&)
+main.cpp:4:8: note:   no known conversion for argument 1 from ‘OutputIter::iterator_category {aka output_iterator_tag}’ to ‘input_iterator_tag&&’
+main.cpp:21:86: note: invalid template non-type parameter
+               decltype(input_iterator_tag(typename InputIt::iterator_category{}))* = nullptr>
+                                                                                      ^
+main.cpp:29:1: note: candidate: Vector<T>::Vector(size_t, T) [with T = int; size_t = long unsigned int]
+ Vector<T>::Vector(size_t, T)
+ ^
+main.cpp:29:1: note:   no known conversion for argument 1 from ‘OutputIter’ to ‘size_t {aka long unsigned int}’
+main.cpp:16:7: note: candidate: constexpr Vector<int>::Vector(const Vector<int>&)
+ class Vector {
+       ^
+main.cpp:16:7: note:   candidate expects 1 argument, 2 provided
+main.cpp:16:7: note: candidate: constexpr Vector<int>::Vector(Vector<int>&&)
+main.cpp:16:7: note:   candidate expects 1 argument, 2 provided
++ clang++ -std=c++14 -O3 -Wall -Wextra -pedantic -Wno-unused-variable -Wno-unused-parameter -pthread main.cpp
+main.cpp:42:17: error: no matching constructor for initialization of 'Vector<int>'
+    Vector<int> c(output, output);
+                ^ ~~~~~~~~~~~~~~
+main.cpp:18:14: note: candidate constructor not viable: no known conversion from 'OutputIter' to 'size_t' (aka 'unsigned long') for 1st argument
+    explicit Vector(size_t, T=T());
+             ^
+main.cpp:22:5: note: candidate template ignored: substitution failure [with InputIt = OutputIter]: no matching conversion for functional-style cast from 'typename OutputIter::iterator_category' (aka 'output_iterator_tag') to 'input_iterator_tag'
+    Vector(InputIt, InputIt)
+    ^
+main.cpp:16:7: note: candidate constructor (the implicit copy constructor) not viable: requires 1 argument, but 2 were provided
+class Vector {
+      ^
+main.cpp:16:7: note: candidate constructor (the implicit move constructor) not viable: requires 1 argument, but 2 were provided
+1 error generated.
