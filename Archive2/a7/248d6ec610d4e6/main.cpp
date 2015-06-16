@@ -1,0 +1,89 @@
+#include <iostream>
+
+
+class a_class{
+    public:
+    
+    a_class(){
+      
+    }
+    
+    ~a_class(){
+        std::cout << "a_class destructor" << std::endl; // this is being called
+    }
+    
+    
+};
+
+class b_class: public a_class{
+  public:
+  
+  b_class(){
+      data = new int(25);
+  }
+  
+  void kill(){
+      delete data;
+      std::cout << "b_class kill method" << std::endl; // this being called
+  }
+  
+  ~b_class(){
+      kill();
+      std::cout << "b_class destructor" << std::endl; // this is not being called
+  }
+  
+  int* data;
+};
+
+
+class c_class{
+  public:
+  c_class(){
+      
+  }
+  
+  void free_mem(b_class* b_object){
+        b_object->kill();   
+  }
+  
+  ~c_class(){
+      std::cout << "c_class destructor" << std::endl; // this is being called
+  }
+};
+
+// memory should look like this:
+
+///////////////////////////// 
+//               A         //
+//                         //
+//                         //
+/////////////////////////////
+/////////////////////////////
+//               B         //
+/////////////////////////////
+
+// after delete
+
+/////////////////////////////
+//               B         //
+/////////////////////////////
+
+// what does happen with B?
+
+
+int main() {
+    
+    b_class* b_object = new b_class();
+    
+//    a_class* a_object = static_cast<a_class*>(b_object);
+//    delete a_object;
+    
+    c_class* c_object = reinterpret_cast<c_class*>(b_object);
+    c_object->free_mem(b_object);
+    delete c_object;
+    
+    
+    //delete b_chunk;
+            
+    return 0;
+}
