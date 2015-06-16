@@ -1,0 +1,1 @@
+g++ -std=c++11 -O3 -Wall -Wextra -pedantic -pthread main.cpp -lboost_serialization -lboost_system -lboost_filesystem && ./a.out
