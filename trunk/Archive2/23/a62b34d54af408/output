@@ -1,0 +1,5 @@
+main.cpp:8:17: warning: ISO C++11 does not allow conversion from string literal to 'char *' [-Wwritable-strings]
+    char *str = "12a3";
+                ^
+1 warning generated.
+0
