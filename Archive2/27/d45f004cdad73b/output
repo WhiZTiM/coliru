@@ -1,0 +1,54 @@
+SIZE = 120, array_size = 4, sizeof(INTERNAL) = 4
+1
+a change on: byte_index = 0 and bit_index = 1
+6
+a change on: byte_index = 0 and bit_index = 6
+7
+a change on: byte_index = 0 and bit_index = 7
+8
+a change on: byte_index = 0 and bit_index = 8
+25
+a change on: byte_index = 0 and bit_index = 25
+63
+a change on: byte_index = 1 and bit_index = 31
+64
+a change on: byte_index = 2 and bit_index = 0
+65
+a change on: byte_index = 2 and bit_index = 1
+119
+a change on: byte_index = 3 and bit_index = 23
+125
+a change on: byte_index = 3 and bit_index = 29
+127
+a change on: byte_index = 3 and bit_index = 31
+print: 
+in print SIZE: 120
+1
+6
+7
+8
+25
+63
+64
+65
+119
+print<130>: 
+in c'tor from other, OTHER_SIZE = 120, my SIZE = 130, physical size_to_clone in bits = 128
+in print SIZE: 130
+1
+6
+7
+8
+25
+63
+64
+65
+119
+125
+127
+in c'tor from other, OTHER_SIZE = 120, my SIZE = 10, physical size_to_clone in bits = 32
+in print SIZE: 10
+1
+6
+7
+8
