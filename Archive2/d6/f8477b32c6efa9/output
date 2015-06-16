@@ -1,0 +1,5 @@
+main.cpp:10:7: warning: unused variable 'b' [-Wunused-variable]
+; int b = a
+      ^
+1 warning generated.
+35
