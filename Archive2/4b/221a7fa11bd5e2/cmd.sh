@@ -1,0 +1,1 @@
+gcc -std=c++14 -O2 -Wall -Wextra -Wfatal-errors -pedantic main.cpp -lstdc++ && ./a.out
