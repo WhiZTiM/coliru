@@ -1,0 +1,4 @@
+main.cpp:20:28: warning: unused variable 'a' [-Wunused-variable]
+        bar< foo<int,char,char> > a;
+                                  ^
+1 warning generated.
