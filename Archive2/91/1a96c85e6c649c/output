@@ -1,0 +1,17 @@
+true
+true
+MyType without Alloc: testing
+custom_allocator::allocate
+custom_allocator::construct
+MyType copy constructor with Alloc
+MyType without Alloc: another test
+custom_allocator::allocate
+custom_allocator::construct
+MyType copy constructor with Alloc
+custom_allocator::construct
+MyType copy constructor with Alloc
+custom_allocator::destroy
+custom_allocator::deallocate
+custom_allocator::destroy
+custom_allocator::destroy
+custom_allocator::deallocate
