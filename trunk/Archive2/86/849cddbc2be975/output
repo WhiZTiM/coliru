@@ -1,0 +1,11 @@
+main.cpp:2:22: warning: typedef requires a name [-Wmissing-declarations]
+template<typename T> typedef struct S{};
+                     ^~~~~~~
+1 warning generated.
+----------------------
+main.cpp:2:22: error: template declaration of ‘typedef’
+ template<typename T> typedef struct S{};
+                      ^
+main.cpp:2:39: warning: ‘typedef’ was ignored in this declaration
+ template<typename T> typedef struct S{};
+                                       ^
