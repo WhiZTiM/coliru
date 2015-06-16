@@ -1,0 +1,4 @@
+main.cpp: In function ‘auto init_tuple(T&&, std::index_sequence<I ...>)’:
+main.cpp:16:31: error: expansion pattern ‘t’ contains no argument packs
+         return init_tuple((t) ...);
+                               ^
