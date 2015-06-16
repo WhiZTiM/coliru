@@ -1,0 +1,214 @@
+	.file	"main.cpp"
+	.intel_syntax noprefix
+	.section	.text.unlikely,"ax",@progbits
+.LCOLDB0:
+	.text
+.LHOTB0:
+	.globl	_Z4sum3Ps
+	.type	_Z4sum3Ps, @function
+_Z4sum3Ps:
+.LFB12:
+	pxor	xmm7, xmm7
+	lea	rdx, [rdi+1984]
+	pxor	xmm3, xmm3
+	mov	rax, rdi
+	movdqa	xmm6, xmm7
+	movdqa	xmm5, xmm7
+	movdqa	xmm4, xmm7
+.L2:
+	movdqu	xmm2, XMMWORD PTR [rax+16]
+	add	rax, 64
+	movdqa	xmm15, xmm3
+	movdqu	xmm10, XMMWORD PTR [rax-16]
+	movdqu	xmm0, XMMWORD PTR [rax-64]
+	movdqu	xmm9, XMMWORD PTR [rax-32]
+	movdqa	xmm1, xmm0
+	punpcklwd	xmm0, xmm2
+	movdqa	xmm11, xmm9
+	punpcklwd	xmm9, xmm10
+	punpckhwd	xmm1, xmm2
+	movdqa	xmm8, xmm0
+	punpckhwd	xmm11, xmm10
+	movdqa	xmm12, xmm9
+	movdqu	xmm10, XMMWORD PTR [rax+1968]
+	punpckhwd	xmm8, xmm1
+	punpckhwd	xmm12, xmm11
+	punpcklwd	xmm0, xmm1
+	punpcklwd	xmm9, xmm11
+	movdqu	xmm11, XMMWORD PTR [rax+1984]
+	punpcklwd	xmm0, xmm8
+	punpcklwd	xmm9, xmm12
+	movdqu	xmm8, XMMWORD PTR [rax+1952]
+	movdqa	xmm12, xmm10
+	movdqa	xmm13, xmm0
+	punpcklwd	xmm10, xmm11
+	punpcklwd	xmm0, xmm9
+	punpckhwd	xmm13, xmm9
+	punpckhwd	xmm12, xmm11
+	movdqu	xmm11, XMMWORD PTR [rax+3968]
+	movdqa	xmm14, xmm0
+	punpcklwd	xmm0, xmm13
+	punpckhwd	xmm14, xmm13
+	movdqa	xmm13, xmm10
+	punpcklwd	xmm10, xmm12
+	punpckhwd	xmm13, xmm12
+	movdqu	xmm12, XMMWORD PTR [rax+3984]
+	punpcklwd	xmm0, xmm14
+	punpcklwd	xmm10, xmm13
+	pcmpgtw	xmm15, xmm0
+	movdqa	xmm2, xmm0
+	movdqa	xmm13, xmm11
+	punpcklwd	xmm2, xmm15
+	punpckhwd	xmm0, xmm15
+	punpcklwd	xmm11, xmm12
+	paddd	xmm4, xmm2
+	movdqa	xmm2, xmm3
+	punpckhwd	xmm13, xmm12
+	paddd	xmm4, xmm0
+	movdqu	xmm0, XMMWORD PTR [rax+1936]
+	movdqa	xmm1, xmm0
+	punpcklwd	xmm0, xmm8
+	punpckhwd	xmm1, xmm8
+	movdqa	xmm9, xmm0
+	punpcklwd	xmm0, xmm1
+	punpckhwd	xmm9, xmm1
+	movdqu	xmm1, XMMWORD PTR [rax+3952]
+	punpcklwd	xmm0, xmm9
+	movdqu	xmm9, XMMWORD PTR [rax+3936]
+	movdqa	xmm14, xmm0
+	punpcklwd	xmm0, xmm10
+	punpckhwd	xmm14, xmm10
+	movdqa	xmm15, xmm0
+	punpcklwd	xmm0, xmm14
+	punpckhwd	xmm15, xmm14
+	movdqa	xmm14, xmm11
+	punpcklwd	xmm11, xmm13
+	punpckhwd	xmm14, xmm13
+	movdqu	xmm13, XMMWORD PTR [rax+5968]
+	punpcklwd	xmm0, xmm15
+	punpcklwd	xmm11, xmm14
+	pcmpgtw	xmm2, xmm0
+	movdqa	xmm8, xmm0
+	movdqu	xmm14, XMMWORD PTR [rax+5984]
+	punpcklwd	xmm8, xmm2
+	punpckhwd	xmm0, xmm2
+	paddd	xmm5, xmm8
+	paddd	xmm5, xmm0
+	movdqa	xmm0, xmm9
+	punpcklwd	xmm9, xmm1
+	punpckhwd	xmm0, xmm1
+	movdqa	xmm10, xmm9
+	punpcklwd	xmm9, xmm0
+	punpckhwd	xmm10, xmm0
+	punpcklwd	xmm9, xmm10
+	movdqu	xmm10, XMMWORD PTR [rax+5936]
+	movdqa	xmm15, xmm9
+	punpcklwd	xmm9, xmm11
+	movdqa	xmm0, xmm10
+	punpckhwd	xmm15, xmm11
+	movdqu	xmm11, XMMWORD PTR [rax+5952]
+	cmp	rax, rdx
+	movdqa	xmm2, xmm9
+	punpcklwd	xmm9, xmm15
+	punpckhwd	xmm2, xmm15
+	movdqa	xmm15, xmm13
+	punpcklwd	xmm10, xmm11
+	punpcklwd	xmm13, xmm14
+	movdqa	xmm8, xmm9
+	punpckhwd	xmm0, xmm11
+	punpckhwd	xmm15, xmm14
+	movdqa	xmm12, xmm10
+	punpcklwd	xmm8, xmm2
+	movdqa	xmm2, xmm13
+	movdqa	xmm9, xmm3
+	punpckhwd	xmm12, xmm0
+	punpcklwd	xmm10, xmm0
+	pcmpgtw	xmm9, xmm8
+	punpckhwd	xmm2, xmm15
+	movdqa	xmm1, xmm8
+	punpcklwd	xmm13, xmm15
+	punpcklwd	xmm1, xmm9
+	movdqa	xmm11, xmm3
+	punpckhwd	xmm8, xmm9
+	punpcklwd	xmm10, xmm12
+	punpcklwd	xmm13, xmm2
+	paddd	xmm6, xmm1
+	paddd	xmm6, xmm8
+	movdqa	xmm8, xmm10
+	punpcklwd	xmm10, xmm13
+	punpckhwd	xmm8, xmm13
+	movdqa	xmm9, xmm10
+	punpcklwd	xmm10, xmm8
+	punpckhwd	xmm9, xmm8
+	punpcklwd	xmm10, xmm9
+	movdqa	xmm1, xmm10
+	pcmpgtw	xmm11, xmm10
+	punpcklwd	xmm10, xmm11
+	punpckhwd	xmm1, xmm11
+	paddd	xmm7, xmm10
+	paddd	xmm7, xmm1
+	jne	.L2
+	movsx	esi, WORD PTR [rdi+1984]
+	movsx	ecx, WORD PTR [rdi+3984]
+	movsx	r8d, WORD PTR [rdi+5984]
+	movsx	r9d, WORD PTR [rdi+7984]
+	movsx	r10d, WORD PTR [rdi+1992]
+	movsx	r11d, WORD PTR [rdi+3992]
+	movsx	eax, WORD PTR [rdi+5992]
+	movsx	edx, WORD PTR [rdi+7992]
+	add	ecx, esi
+	movsx	esi, WORD PTR [rdi+2000]
+	add	ecx, r8d
+	movsx	r8d, WORD PTR [rdi+4000]
+	add	ecx, r9d
+	movdqa	xmm10, xmm7
+	add	ecx, r10d
+	movsx	r9d, WORD PTR [rdi+6000]
+	movsx	edi, WORD PTR [rdi+8000]
+	add	ecx, r11d
+	movdqa	xmm3, xmm6
+	psrldq	xmm10, 8
+	add	ecx, eax
+	paddd	xmm10, xmm7
+	movdqa	xmm12, xmm5
+	add	ecx, edx
+	movdqa	xmm7, xmm10
+	psrldq	xmm3, 8
+	add	ecx, esi
+	paddd	xmm6, xmm3
+	movdqa	xmm0, xmm6
+	add	ecx, r8d
+	psrldq	xmm7, 4
+	psrldq	xmm12, 8
+	movdqa	xmm14, xmm4
+	paddd	xmm5, xmm12
+	add	ecx, r9d
+	movdqa	xmm13, xmm5
+	paddd	xmm10, xmm7
+	movd	r10d, xmm10
+	psrldq	xmm0, 4
+	add	ecx, edi
+	paddd	xmm6, xmm0
+	movd	r11d, xmm6
+	psrldq	xmm13, 4
+	psrldq	xmm14, 8
+	add	ecx, r10d
+	paddd	xmm4, xmm14
+	paddd	xmm5, xmm13
+	movdqa	xmm15, xmm4
+	movd	eax, xmm5
+	add	ecx, r11d
+	add	ecx, eax
+	psrldq	xmm15, 4
+	paddd	xmm4, xmm15
+	movd	eax, xmm4
+	add	eax, ecx
+	ret
+.LFE12:
+	.size	_Z4sum3Ps, .-_Z4sum3Ps
+	.section	.text.unlikely
+.LCOLDE0:
+	.text
+.LHOTE0:
+	.ident	"GCC: (GNU) 4.9.2"
+	.section	.note.GNU-stack,"",@progbits
