@@ -1,0 +1,7 @@
+outside f()
+in f() - start
+in g() - start
+in g() - end
+outside g()
+in f() - end
+42
