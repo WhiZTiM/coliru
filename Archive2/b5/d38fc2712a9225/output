@@ -1,0 +1,10 @@
+
+Before:
+	second	fourth	first	third
+	2nd	4th	1st	3rd
+	2nd	4th	1st	3rd
+
+After:
+	first	second	third	fourth
+	1st	2nd	3rd	4th
+	1st	2nd	3rd	4th
