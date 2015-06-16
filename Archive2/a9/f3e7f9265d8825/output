@@ -1,0 +1,8 @@
+main.cpp: In function ‘int main(int, char**)’:
+main.cpp:8:17: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wpedantic]
+     char *str = "12a3";
+                 ^
+main.cpp:11:12: warning: ‘i’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+     if(!ss >> i){
+            ^
+0
