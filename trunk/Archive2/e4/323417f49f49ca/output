@@ -1,0 +1,5 @@
+main.cpp: In function ‘int main(int, char**)’:
+main.cpp:8:17: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wpedantic]
+     char *str = "12a3";
+                 ^
+12
