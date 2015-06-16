@@ -1,0 +1,2 @@
+#title Vectorization: short* vs int*?
+g++-4.9 -c -std=c++11 -O2 -Wall -pedantic -pthread main.cpp -masm=intel -funroll-loops -ftree-vectorize -ftree-vectorizer-verbose=2 -S -masm=intel -o - | grep -v '\.cfi' | grep -v p2align
