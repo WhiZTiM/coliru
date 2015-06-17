@@ -1,0 +1,16 @@
+main.cpp: In function 'int main()':
+main.cpp:7:5: error: 'result_of' is not a member of 'std'
+     std::result_of<S(char, int&)>::type f = 3.14; // f has type double
+     ^
+main.cpp:7:21: error: expected primary-expression before '(' token
+     std::result_of<S(char, int&)>::type f = 3.14; // f has type double
+                     ^
+main.cpp:7:22: error: expected primary-expression before 'char'
+     std::result_of<S(char, int&)>::type f = 3.14; // f has type double
+                      ^
+main.cpp:7:28: error: expected primary-expression before 'int'
+     std::result_of<S(char, int&)>::type f = 3.14; // f has type double
+                            ^
+main.cpp:7:34: error: '::type' has not been declared
+     std::result_of<S(char, int&)>::type f = 3.14; // f has type double
+                                  ^
