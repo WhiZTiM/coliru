@@ -1,0 +1,11 @@
+main.cpp: In function 'int main()':
+main.cpp:17:47: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+     std::cout << *reinterpret_cast<size_t*>(&a) << std::endl;
+                                               ^
+main.cpp:19:63: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+     std::cout << std::bitset<64>(*reinterpret_cast<size_t*>(&a)) << std::endl;  
+                                                               ^
+-0x1.359b8bef77538p-9
+bf6359b8bef77538
+0000000000000000000000000000000000000000000000000000000000000000
+1011111101100011010110011011100010111110111101110111010100111000
