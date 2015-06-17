@@ -1,0 +1,17 @@
+main.cpp:94:16: error: no matching conversion for static_cast from 'Node *' to 'NodeD'
+    NodeD nn = static_cast<NodeD>(clone);
+               ^~~~~~~~~~~~~~~~~~~~~~~~~
+main.cpp:66:7: note: candidate constructor (the implicit move constructor) not viable: no known conversion from 'Node *' to 'NodeD' for 1st argument
+class NodeD : public NodeWrap<InheritBases<NodeB,NodeC>, NodeD>
+      ^
+main.cpp:66:7: note: candidate constructor (the implicit copy constructor) not viable: no known conversion from 'Node *' to 'const NodeD' for 1st argument
+class NodeD : public NodeWrap<InheritBases<NodeB,NodeC>, NodeD>
+      ^
+main.cpp:71:2: note: candidate constructor not viable: requires 0 arguments, but 1 was provided
+        NodeD() { }
+        ^
+main.cpp:95:7: error: member reference type 'NodeD' is not a pointer; maybe you meant to use '.'?
+    nn->pij();
+    ~~^~
+      .
+2 errors generated.
