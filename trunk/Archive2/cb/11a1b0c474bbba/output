@@ -1,0 +1,32 @@
+In file included from /usr/local/include/c++/5.1.0/algorithm:62:0,
+                 from /usr/local/include/boost/core/swap.hpp:25,
+                 from /usr/local/include/boost/utility/swap.hpp:15,
+                 from /usr/local/include/boost/tuple/detail/tuple_basic.hpp:40,
+                 from /usr/local/include/boost/tuple/tuple.hpp:28,
+                 from /usr/local/include/boost/iterator/zip_iterator.hpp:19,
+                 from main.cpp:4:
+/usr/local/include/c++/5.1.0/bits/stl_algo.h: In instantiation of '_Funct std::for_each(_IIter, _IIter, _Funct) [with _IIter = boost::iterators::zip_iterator<boost::tuples::tuple<__gnu_cxx::__normal_iterator<int*, std::vector<int> >, __gnu_cxx::__normal_iterator<float*, std::vector<float> >, boost::tuples::null_type, boost::tuples::null_type, boost::tuples::null_type, boost::tuples::null_type, boost::tuples::null_type, boost::tuples::null_type, boost::tuples::null_type, boost::tuples::null_type> >; _Funct = zip_func]':
+main.cpp:33:1:   required from here
+/usr/local/include/c++/5.1.0/bits/stl_algo.h:3767:5: error: no match for call to '(zip_func) (boost::iterators::detail::iterator_facade_base<boost::iterators::zip_iterator<boost::tuples::tuple<__gnu_cxx::__normal_iterator<int*, std::vector<int> >, __gnu_cxx::__normal_iterator<float*, std::vector<float> >, boost::tuples::null_type, boost::tuples::null_type, boost::tuples::null_type, boost::tuples::null_type, boost::tuples::null_type, boost::tuples::null_type, boost::tuples::null_type, boost::tuples::null_type> >, boost::tuples::cons<int&, boost::tuples::cons<float&, boost::tuples::null_type> >, boost::iterators::random_access_traversal_tag, boost::tuples::cons<int&, boost::tuples::cons<float&, boost::tuples::null_type> >, long int, false, false>::reference)'
+  __f(*__first);
+     ^
+main.cpp:11:8: note: candidate: void zip_func::operator()(EntryTuple&) const <near match>
+   void operator()(EntryTuple& t) const
+        ^
+main.cpp:11:8: note:   conversion of argument 1 would be ill-formed:
+In file included from /usr/local/include/c++/5.1.0/algorithm:62:0,
+                 from /usr/local/include/boost/core/swap.hpp:25,
+                 from /usr/local/include/boost/utility/swap.hpp:15,
+                 from /usr/local/include/boost/tuple/detail/tuple_basic.hpp:40,
+                 from /usr/local/include/boost/tuple/tuple.hpp:28,
+                 from /usr/local/include/boost/iterator/zip_iterator.hpp:19,
+                 from main.cpp:4:
+/usr/local/include/c++/5.1.0/bits/stl_algo.h:3767:5: error: invalid initialization of non-const reference of type 'EntryTuple& {aka boost::tuples::tuple<int&, float&>&}' from an rvalue of type 'EntryTuple {aka boost::tuples::tuple<int&, float&>}'
+  __f(*__first);
+     ^
+In file included from /usr/local/include/boost/tuple/tuple.hpp:28:0,
+                 from /usr/local/include/boost/iterator/zip_iterator.hpp:19,
+                 from main.cpp:4:
+/usr/local/include/boost/tuple/detail/tuple_basic.hpp:576:3: note:   after user-defined conversion: boost::tuples::tuple<T0, T1, T2, T3, T4, T5, T6, T7, T8, T9>::tuple(const boost::tuples::cons<HT2, TT2>&) [with U1 = int&; U2 = boost::tuples::cons<float&, boost::tuples::null_type>; T0 = int&; T1 = float&; T2 = boost::tuples::null_type; T3 = boost::tuples::null_type; T4 = boost::tuples::null_type; T5 = boost::tuples::null_type; T6 = boost::tuples::null_type; T7 = boost::tuples::null_type; T8 = boost::tuples::null_type; T9 = boost::tuples::null_type]
+   tuple(const cons<U1, U2>& p) : inherited(p) {}
+   ^
