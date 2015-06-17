@@ -1,0 +1,13 @@
+main.cpp:9:12: error: overloaded 'operator+' must have at least one parameter of class or enumeration type
+    double operator+ (double d, T a) {return d;}
+           ^
+main.cpp:17:18: note: in instantiation of function template specialization 'N::operator+<double>' requested here
+    double y = a + x;
+                 ^
+main.cpp:6:12: error: overloaded 'operator+' must have at least one parameter of class or enumeration type
+    double operator+ (T a, double d) {return d;}
+           ^
+main.cpp:18:18: note: in instantiation of function template specialization 'N::operator+<double>' requested here
+    double z = x + a;
+                 ^
+2 errors generated.
