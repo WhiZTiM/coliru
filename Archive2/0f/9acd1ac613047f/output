@@ -1,0 +1,5 @@
+main.cpp:19:29: warning: unused parameter 'm' [-Wunused-parameter]
+ std::string open2(int n,int m)
+                             ^
+open: 3
+close: Hello
