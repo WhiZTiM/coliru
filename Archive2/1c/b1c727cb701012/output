@@ -1,0 +1,4 @@
+main.cpp: In function 'int main(int, char**)':
+main.cpp:12:10: warning: unused variable 'ptr' [-Wunused-variable]
+     TPtr ptr = nullptr;
+          ^
