@@ -1,0 +1,10 @@
+*** glibc detected *** ./a.out: free(): invalid pointer: 0x0000000000675a98 ***
+======= Backtrace: =========
+/lib/x86_64-linux-gnu/libc.so.6(+0x7e846)[0x7f32de4be846]
+./a.out[0x401028]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xed)[0x7f32de46176d]
+./a.out[0x400df9]
+======= Memory map: ========
+0000000: 4375 7272 656e 7420 6c6f 6361 6c65 2020  Current locale  
+0000010: 2020 2020 3a20 656e 5f55 532e 5554 4638      : en_US.UTF8
+0000020: 0a                                       .
