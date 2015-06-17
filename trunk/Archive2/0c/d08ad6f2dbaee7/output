@@ -1,0 +1,12 @@
+main.cpp: In function 'int main()':
+main.cpp:26:19: error: ISO C++ forbids comparison between pointer and integer [-fpermissive]
+     assert(ip1 == ip2);
+                   ^
+main.cpp:26:22: error: 'assert' was not declared in this scope
+     assert(ip1 == ip2);
+                      ^
+main.cpp: In instantiation of 'MockPointer<T>::operator intptr_t() [with T = int; intptr_t = long int]':
+main.cpp:23:20:   required from here
+main.cpp:13:63: error: invalid static_cast from type 'int*' to type 'intptr_t {aka long int}'
+         operator intptr_t() { return static_cast<intptr_t>(ptr); }
+                                                               ^
