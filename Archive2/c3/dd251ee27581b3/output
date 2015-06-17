@@ -1,0 +1,13 @@
+main.cpp:4:8: error: overloaded 'operator+' must have at least one parameter of class or enumeration type
+double operator+(T, double d) { return d; }
+       ^
+main.cpp:16:18: note: in instantiation of function template specialization 'operator+<double>' requested here
+    double z = x + a;
+                 ^
+main.cpp:16:18: error: invalid operands to binary expression ('double' and 'A')
+    double z = x + a;
+               ~ ^ ~
+main.cpp:4:8: note: candidate template ignored: substitution failure [with T = double]
+double operator+(T, double d) { return d; }
+       ^
+2 errors generated.
