@@ -1,0 +1,3 @@
+/tmp/main-a6903b.o: In function `std::__1::pair<S*, long> std::__1::get_temporary_buffer<S>(long)':
+main.cpp:(.text._ZNSt3__120get_temporary_bufferI1SEENS_4pairIPT_lEEl[_ZNSt3__120get_temporary_bufferI1SEENS_4pairIPT_lEEl]+0x9c): undefined reference to `operator new(unsigned long, std::nothrow_t const&)'
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
