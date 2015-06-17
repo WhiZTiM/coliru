@@ -1,0 +1,1 @@
+set -x ; clang++ -std=c++11 -O0 -Wall -pedantic main.cpp -lboost_thread && ./a.out
