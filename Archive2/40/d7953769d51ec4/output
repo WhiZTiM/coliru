@@ -1,0 +1,8 @@
+main.cpp:31:30: error: template argument for template type parameter must be a type; did you forget 'typename'?
+                return std::numeric_limits<Container::value_type >::max();
+                                           ^
+                                           typename 
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.1.0/../../../../include/c++/5.1.0/limits:314:21: note: template parameter is declared here
+  template<typename _Tp>
+                    ^
+1 error generated.
