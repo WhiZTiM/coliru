@@ -1,0 +1,93 @@
+In file included from /usr/local/include/c++/5.1.0/initializer_list:36:0,
+                 from main.cpp:3:
+/usr/local/include/c++/5.1.0/bits/c++0x_warning.h:32:2: error: #error This file requires compiler and library support for the ISO C++ 2011 standard. This support is currently experimental, and must be enabled with the -std=c++11 or -std=gnu++11 compiler options.
+ #error This file requires compiler and library support for the \
+  ^
+main.cpp:8:28: error: expected ')' before '<' token
+     S(std::initializer_list<T> l) : v(l) {
+                            ^
+main.cpp:11:22: error: 'std::initializer_list' has not been declared
+     void append(std::initializer_list<T> l) {
+                      ^
+main.cpp:11:38: error: expected ',' or '...' before '<' token
+     void append(std::initializer_list<T> l) {
+                                      ^
+main.cpp: In member function 'void S<T>::append(int)':
+main.cpp:12:27: error: 'l' was not declared in this scope
+         v.insert(v.end(), l.begin(), l.end());
+                           ^
+main.cpp: In member function 'std::pair<const T*, long unsigned int> S<T>::c_arr() const':
+main.cpp:15:16: error: extended initializer lists only available with -std=c++11 or -std=gnu++11
+         return {&v[0], v.size()};  // copy-list-initialization in return statement
+                ^
+main.cpp: In function 'int main()':
+main.cpp:25:30: error: too many initializers for 'S<int>'
+     S<int> s = {1, 2, 3, 4, 5}; // copy list-initialization
+                              ^
+main.cpp:25:30: error: could not convert '1' from 'int' to 'std::vector<int, std::allocator<int> >'
+main.cpp:26:14: error: extended initializer lists only available with -std=c++11 or -std=gnu++11
+     s.append({6, 7, 8});      // list-initialization in function call
+              ^
+main.cpp:26:23: error: no matching function for call to 'S<int>::append(<brace-enclosed initializer list>)'
+     s.append({6, 7, 8});      // list-initialization in function call
+                       ^
+main.cpp:11:10: note: candidate: void S<T>::append(int) [with T = int]
+     void append(std::initializer_list<T> l) {
+          ^
+main.cpp:11:10: note:   no known conversion for argument 1 from '<brace-enclosed initializer list>' to 'int'
+main.cpp:30:10: warning: 'auto' changes meaning in C++11; please remove it [-Wc++0x-compat]
+     for (auto n : s.v) std::cout << ' ' << n;
+          ^
+main.cpp:30:15: error: 'n' does not name a type
+     for (auto n : s.v) std::cout << ' ' << n;
+               ^
+main.cpp:32:5: error: expected ';' before 'std'
+     std::cout << '\n';
+     ^
+main.cpp:34:54: error: expected ')' before ';' token
+     std::cout << "range-for over brace-init-list: \n";
+                                                      ^
+main.cpp:36:18: error: range-based 'for' loops only available with -std=c++11 or -std=gnu++11
+     for (int x : {-1, -2, -3}) // the rule for auto makes this ranged for work
+                  ^
+main.cpp:40:5: warning: 'auto' changes meaning in C++11; please remove it [-Wc++0x-compat]
+     auto al = {10, 11, 12};   // special rule for auto
+     ^
+main.cpp:40:10: error: 'al' does not name a type
+     auto al = {10, 11, 12};   // special rule for auto
+          ^
+main.cpp:42:60: error: 'al' was not declared in this scope
+     std::cout << "The list bound to auto has size() = " << al.size() << '\n';
+                                                            ^
+main.cpp:46:18: error: 'initializer_list' is not a member of 'std'
+     templated_fn<std::initializer_list<int>>({1, 2, 3}); // OK
+                  ^
+main.cpp:46:18: error: 'initializer_list' is not a member of 'std'
+main.cpp:46:5: error: parse error in template argument list
+     templated_fn<std::initializer_list<int>>({1, 2, 3}); // OK
+     ^
+main.cpp:46:46: error: expected ';' before '{' token
+     templated_fn<std::initializer_list<int>>({1, 2, 3}); // OK
+                                              ^
+main.cpp:46:54: error: statement cannot resolve address of overloaded function
+     templated_fn<std::initializer_list<int>>({1, 2, 3}); // OK
+                                                      ^
+main.cpp:46:55: error: expected primary-expression before ')' token
+     templated_fn<std::initializer_list<int>>({1, 2, 3}); // OK
+                                                       ^
+main.cpp:47:33: error: '>>' should be '> >' within a nested template argument list
+     templated_fn<std::vector<int>>({1, 2, 3});           // also OK
+                                 ^
+main.cpp:47:36: error: extended initializer lists only available with -std=c++11 or -std=gnu++11
+     templated_fn<std::vector<int>>({1, 2, 3});           // also OK
+                                    ^
+main.cpp:47:45: error: no matching function for call to 'templated_fn(<brace-enclosed initializer list>)'
+     templated_fn<std::vector<int>>({1, 2, 3});           // also OK
+                                             ^
+main.cpp:21:6: note: candidate: template<class T> void templated_fn(T)
+ void templated_fn(T) {}
+      ^
+main.cpp:21:6: note:   template argument deduction/substitution failed:
+main.cpp:47:45: note:   cannot convert '{1, 2, 3}' (type '<brace-enclosed initializer list>') to type 'std::vector<int, std::allocator<int> >'
+     templated_fn<std::vector<int>>({1, 2, 3});           // also OK
+                                             ^
