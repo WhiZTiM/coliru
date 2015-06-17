@@ -1,0 +1,30 @@
+main.cpp:8:6: error: ‘vector’ in namespace ‘std’ does not name a template type
+ std::vector<BlockPtr> blockss[128]
+      ^
+main.cpp: In function ‘void* Allocate(std::size_t)’:
+main.cpp:21:16: error: ‘align’ was not declared in this scope
+     n = align(n);
+                ^
+main.cpp:22:20: error: ‘blockss’ was not declared in this scope
+     auto& blocks = blockss[n];
+                    ^
+main.cpp:25:23: error: ‘storage_offset’ was not declared in this scope
+         auto result = storage_offset + n;
+                       ^
+main.cpp:32:9: error: ‘storage_offset’ was not declared in this scope
+     if (storage_offset == 
+         ^
+main.cpp:33:5: error: expected primary-expression before ‘auto’
+     auto result = &storage[storage_offset];
+     ^
+main.cpp:33:5: error: expected ‘)’ before ‘auto’
+main.cpp:34:5: error: ‘storage_offset’ was not declared in this scope
+     storage_offset += n;
+     ^
+main.cpp:35:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+main.cpp: In function ‘void Deallocate(void*, std::size_t)’:
+main.cpp:40:16: error: ‘align’ was not declared in this scope
+     n = align(n);
+                ^

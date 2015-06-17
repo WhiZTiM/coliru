@@ -1,0 +1,7 @@
+main.cpp: In function 'int main()':
+main.cpp:8:36: error: 'ene' is not a member of 'std'
+     std::cout << "Hello waiter" << std::ene
+                                    ^
+main.cpp:13:61: error: 'start' was not declared in this scope
+     std::chrono::duration<double, std::milli> elapsed = end-start;
+                                                             ^
