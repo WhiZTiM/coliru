@@ -1,0 +1,18 @@
+Anything()
+Anything(T&& value)
+Anything(T&& value)
+Anything(T&& value)
+Anything(T&& value)
+operator=(Anything&& rhs)
+~Anything()
+!
+anything_cast(const Anything& anything)
+anything.as<T>()
+Anything(const Anything& rhs)
+Anything(const Anything& rhs)
+Anything(const Anything& rhs)
+!
+anything_cast(const Anything& anything)
+anything.as<T>()
+a.out: main.cpp:80: T Anything::as() const [with T = int]: Assertion `dynamic_cast<Derived<T>*>(ptr) != nullptr' failed.
+bash: line 7: 15832 Aborted                 (core dumped) ./a.out
