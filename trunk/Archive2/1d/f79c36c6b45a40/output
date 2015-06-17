@@ -1,0 +1,6 @@
++ gcc -x c -std=c99 -Wconversion main.cpp
+main.cpp: In function 'func':
+main.cpp:5:12: warning: conversion to 'char' from 'int' may alter its value [-Wconversion]
+     return x ;
+            ^
++ ./a.out
