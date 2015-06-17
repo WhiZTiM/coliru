@@ -1,0 +1,4 @@
+main.cpp: In function 'int main()':
+main.cpp:25:16: error: invalid conversion from 'T*' to 'B*' [-fpermissive]
+     b = t.clone(       );
+                ^
