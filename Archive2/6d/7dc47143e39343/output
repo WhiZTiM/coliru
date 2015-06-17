@@ -1,0 +1,7 @@
+main.cpp:16:18: error: class template specialization of 'metafunc' not in a namespace enclosing 'ajlb'
+    struct ajlb::metafunc<s> {
+                 ^
+main.cpp:6:8: note: explicitly specialized declaration is here
+struct metafunc {
+       ^
+1 error generated.
