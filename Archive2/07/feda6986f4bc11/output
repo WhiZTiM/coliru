@@ -1,0 +1,6 @@
+main.cpp:16:12: error: 'metafunc' is not a class template
+     struct metafunc<s> {
+            ^
+main.cpp:16:24: error: explicit specialization of non-template 'plop::metafunc'
+     struct metafunc<s> {
+                        ^
