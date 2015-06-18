@@ -1,0 +1,27 @@
+-----  bad  -----
+1. This is line #1
+2. This is line #2
+3. This is line #3
+----------------
+4 lines were read
+
+-----  good  -----
+1. This is line #1
+2. This is line #2
+3. This is line #3
+----------------
+3 lines were read
+=======================
+-----  bad  -----
+1. This is line #1
+2. This is line #2
+3. This is line #3
+----------------
+4 lines were read
+
+-----  good  -----
+1. This is line #1
+2. This is line #2
+3. This is line #3
+----------------
+3 lines were read
