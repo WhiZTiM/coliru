@@ -1,0 +1,8 @@
+main.cpp: In function 'int main()':
+main.cpp:13:13: error: no matching function for call to 'foo(int, int)'
+     foo(0, 0);
+             ^
+main.cpp:8:25: note: candidate: template<class ... Xs> constexpr result<Xs ...> foo(Xs ...)
+ constexpr result<Xs...> foo(Xs...)
+                         ^
+main.cpp:8:25: note:   template argument deduction/substitution failed:
