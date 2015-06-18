@@ -1,0 +1,7 @@
+main.cpp: In function 'int main()':
+main.cpp:7:5: error: static assertion failed: 0 is not the same type as '\0'
+     static_assert(std::is_same<decltype(0),decltype('\0')>::value, "0 is not the same type as '\\0'");
+     ^
+main.cpp:10:5: error: static assertion failed: 0 changed types going into a
+     static_assert(std::is_same<decltype(a),decltype(0)>::value, "0 changed types going into a");
+     ^
