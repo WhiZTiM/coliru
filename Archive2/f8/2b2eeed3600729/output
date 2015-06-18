@@ -1,0 +1,7 @@
+main.cpp:19:12: warning: unused variable 'y' [-Wunused-variable]
+    double y = a + x;
+           ^
+main.cpp:20:12: warning: unused variable 'z' [-Wunused-variable]
+    double z = x + a;
+           ^
+2 warnings generated.
