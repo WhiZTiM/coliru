@@ -1,0 +1,16 @@
+Expression: +50years
+  mathOperator : +
+  value        : 50
+  timeUnit     : years
+Expression: -4months
+  mathOperator : -
+  value        : 4
+  timeUnit     : months
+Expression: +3weeks
+  mathOperator : +
+  value        : 3
+  timeUnit     : weeks
+Expression: +5minutes
+  mathOperator : +
+  value        : 5
+  timeUnit     : minutes
