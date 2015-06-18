@@ -1,0 +1,22 @@
+In file included from /usr/local/include/c++/5.1.0/memory:64:0,
+                 from main.cpp:1:
+/usr/local/include/c++/5.1.0/bits/stl_construct.h: In instantiation of 'void std::_Construct(_T1*, _Args&& ...) [with _T1 = Foo; _Args = {Foo}]':
+/usr/local/include/c++/5.1.0/bits/stl_uninitialized.h:75:18:   required from 'static _ForwardIterator std::__uninitialized_copy<_TrivialValueTypes>::__uninit_copy(_InputIterator, _InputIterator, _ForwardIterator) [with _InputIterator = std::move_iterator<Foo*>; _ForwardIterator = Foo*; bool _TrivialValueTypes = false]'
+/usr/local/include/c++/5.1.0/bits/stl_uninitialized.h:126:15:   required from '_ForwardIterator std::uninitialized_copy(_InputIterator, _InputIterator, _ForwardIterator) [with _InputIterator = std::move_iterator<Foo*>; _ForwardIterator = Foo*]'
+/usr/local/include/c++/5.1.0/bits/stl_uninitialized.h:281:37:   required from '_ForwardIterator std::__uninitialized_copy_a(_InputIterator, _InputIterator, _ForwardIterator, std::allocator<_Tp>&) [with _InputIterator = std::move_iterator<Foo*>; _ForwardIterator = Foo*; _Tp = Foo]'
+/usr/local/include/c++/5.1.0/bits/stl_uninitialized.h:303:2:   required from '_ForwardIterator std::__uninitialized_move_if_noexcept_a(_InputIterator, _InputIterator, _ForwardIterator, _Allocator&) [with _InputIterator = Foo*; _ForwardIterator = Foo*; _Allocator = std::allocator<Foo>]'
+/usr/local/include/c++/5.1.0/bits/vector.tcc:563:7:   required from 'void std::vector<_Tp, _Alloc>::_M_default_append(std::vector<_Tp, _Alloc>::size_type) [with _Tp = Foo; _Alloc = std::allocator<Foo>; std::vector<_Tp, _Alloc>::size_type = long unsigned int]'
+/usr/local/include/c++/5.1.0/bits/stl_vector.h:676:21:   required from 'void std::vector<_Tp, _Alloc>::resize(std::vector<_Tp, _Alloc>::size_type) [with _Tp = Foo; _Alloc = std::allocator<Foo>; std::vector<_Tp, _Alloc>::size_type = long unsigned int]'
+main.cpp:19:21:   required from here
+/usr/local/include/c++/5.1.0/bits/stl_construct.h:75:7: error: use of deleted function 'Foo::Foo(const Foo&)'
+     { ::new(static_cast<void*>(__p)) _T1(std::forward<_Args>(__args)...); }
+       ^
+main.cpp:8:7: note: 'Foo::Foo(const Foo&)' is implicitly deleted because the default definition would be ill-formed:
+ class Foo
+       ^
+main.cpp:8:7: error: use of deleted function 'std::unique_ptr<_Tp, _Dp>::unique_ptr(const std::unique_ptr<_Tp, _Dp>&) [with _Tp = FooImpl; _Dp = std::default_delete<FooImpl>]'
+In file included from /usr/local/include/c++/5.1.0/memory:81:0,
+                 from main.cpp:1:
+/usr/local/include/c++/5.1.0/bits/unique_ptr.h:356:7: note: declared here
+       unique_ptr(const unique_ptr&) = delete;
+       ^
