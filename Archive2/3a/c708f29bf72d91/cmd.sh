@@ -1,0 +1,1 @@
+clang++ -Wall -Wextra -pedantic -pedantic-errors main.cpp && ./a.out
