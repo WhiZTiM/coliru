@@ -1,0 +1,5 @@
+before allocate n: 2 m: 3
+allocate n: 2 m: 3
+after allocate n: 2 m: 3
+initialize n: 2 m: 3
+Enter value for position [0][0]: Enter value for position [0][1]: Enter value for position [0][2]: Enter value for position [1][0]: Enter value for position [1][1]: Enter value for position [1][2]: 
