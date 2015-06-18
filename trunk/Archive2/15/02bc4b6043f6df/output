@@ -1,0 +1,21 @@
+main.cpp:13:8: error: 'vector' in namespace 'std' does not name a template type
+   std::vector<MyObj> vec;
+        ^
+main.cpp: In member function 'void MyContainer::push(MyObj&&)':
+main.cpp:9:5: error: 'vec' was not declared in this scope
+     vec.push_back(std::move(obj));
+     ^
+main.cpp:9:19: error: 'move' is not a member of 'std'
+     vec.push_back(std::move(obj));
+                   ^
+main.cpp: In function 'void func()':
+main.cpp:18:9: error: no matching function for call to 'MyObj::MyObj()'
+   MyObj mo;
+         ^
+main.cpp:2:3: note: candidate: MyObj::MyObj(const MyObj&) <deleted>
+   MyObj(const MyObj& other) = delete;
+   ^
+main.cpp:2:3: note:   candidate expects 1 argument, 0 provided
+main.cpp:19:11: error: 'move' is not a member of 'std'
+   mc.push(std::move(mo));
+           ^
