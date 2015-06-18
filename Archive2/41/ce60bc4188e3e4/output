@@ -1,0 +1,21 @@
+In file included from main.cpp:2:0:
+/usr/local/include/c++/5.1.0/experimental/optional: In instantiation of 'class std::experimental::fundamentals_v1::_Optional_base<int&, false>':
+/usr/local/include/c++/5.1.0/experimental/optional:471:11:   required from 'class std::experimental::fundamentals_v1::optional<int&>'
+main.cpp:5:39:   required from here
+/usr/local/include/c++/5.1.0/experimental/optional:355:17: error: 'constexpr std::experimental::fundamentals_v1::_Optional_base<_Tp, false>::_Optional_base(_Tp&&) [with _Tp = int&]' cannot be overloaded
+       constexpr _Optional_base(_Tp&& __t)
+                 ^
+/usr/local/include/c++/5.1.0/experimental/optional:352:17: error: with 'constexpr std::experimental::fundamentals_v1::_Optional_base<_Tp, false>::_Optional_base(const _Tp&) [with _Tp = int&]'
+       constexpr _Optional_base(const _Tp& __t)
+                 ^
+/usr/local/include/c++/5.1.0/experimental/optional: In instantiation of 'class std::experimental::fundamentals_v1::optional<int&>':
+main.cpp:5:39:   required from here
+/usr/local/include/c++/5.1.0/experimental/optional:485:7: error: static assertion failed: Invalid instantiation of optional<T>
+       static_assert(__and_<__not_<is_same<remove_cv_t<_Tp>, nullopt_t>>,
+       ^
+/usr/local/include/c++/5.1.0/experimental/optional:569:7: error: forming pointer to reference type 'int&'
+       operator->() const
+       ^
+/usr/local/include/c++/5.1.0/experimental/optional:573:7: error: forming pointer to reference type 'int&'
+       operator->()
+       ^
