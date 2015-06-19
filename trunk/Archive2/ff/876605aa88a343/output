@@ -1,0 +1,15 @@
+foo
+before
+lambda inside
+after
+before
+foo() inside
+after
+
+bar
+before
+lambda inside
+after
+before
+foo() inside
+after
