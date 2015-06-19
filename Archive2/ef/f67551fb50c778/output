@@ -1,0 +1,8 @@
++ g++-5.1 -std=c++11 -O3 -Wall -pedantic -Wextra -pthread -Wno-unused-variable -Wno-unused-parameter -pthread main.cpp
+/tmp/cciBVvpH.o: In function `main':
+main.cpp:(.text.startup+0x5): undefined reference to `A::a'
+collect2: error: ld returned 1 exit status
++ clang++ -std=c++11 -O3 -Wall -pedantic -Wextra -pthread -Wno-unused-variable -Wno-unused-parameter -pthread main.cpp -stdlib=libc++ -lsupc++
+/tmp/main-ec81ab.o: In function `main':
+main.cpp:(.text+0x7): undefined reference to `A::a'
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
