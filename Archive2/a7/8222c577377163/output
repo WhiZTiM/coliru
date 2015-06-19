@@ -1,0 +1,3 @@
+A<One, B<int, int, int> >
+A<Two, B<int, int, int> >
+B<int, int, int>
