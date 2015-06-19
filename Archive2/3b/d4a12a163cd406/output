@@ -1,0 +1,7 @@
+main.cpp: In function 'bool comp(int, int)':
+main.cpp:8:6: warning: no return statement in function returning non-void [-Wreturn-type]
+      }
+      ^
+smaller of 1 and 9999: 1
+smaller of 'a', and 'b': a
+shortest of "foo", "bar", and "hello": foo
