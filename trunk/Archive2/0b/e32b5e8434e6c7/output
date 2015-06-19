@@ -1,0 +1,19 @@
+main.cpp:5:2: error: invalid preprocessing directive #i
+ #i
+  ^
+main.cpp: In function 'void thr(std::shared_ptr<Base>)':
+main.cpp:25:19: error: 'mutex' in namespace 'std' does not name a type
+       static std::mutex io_mutex;
+                   ^
+main.cpp:26:7: error: 'lock_guard' is not a member of 'std'
+       std::lock_guard<std::mutex> lk(io_mutex);
+       ^
+main.cpp:26:23: error: 'mutex' is not a member of 'std'
+       std::lock_guard<std::mutex> lk(io_mutex);
+                       ^
+main.cpp:26:38: error: 'io_mutex' was not declared in this scope
+       std::lock_guard<std::mutex> lk(io_mutex);
+                                      ^
+main.cpp:26:46: error: 'lk' was not declared in this scope
+       std::lock_guard<std::mutex> lk(io_mutex);
+                                              ^
