@@ -1,0 +1,7 @@
+main.cpp: In function 'Vector* vector_init(int)':
+main.cpp:30:17: error: 'key' was not declared in this scope
+     v->setArray(key);
+                 ^
+main.cpp:31:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
