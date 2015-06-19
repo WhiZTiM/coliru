@@ -1,0 +1,4 @@
+main.cpp:10:9: warning: implicit conversion from 'uint64_t' (aka 'unsigned long') to 'uint8_t' (aka 'unsigned char') changes value from 10000 to 16 [-Wconstant-conversion]
+ return uint64_t(10000);
+ ~~~~~~ ^~~~~~~~~~~~~~~
+1 warning generated.
