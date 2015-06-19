@@ -1,0 +1,1 @@
+g++ -std=c++14 -O3 -Wall -pedantic -pthread main.cpp -DARGV_PARAMS && ./a.out 2.0 3.5

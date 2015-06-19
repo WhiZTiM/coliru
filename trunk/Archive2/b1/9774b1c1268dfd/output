@@ -1,0 +1,42 @@
+r = 3.72058 [3.72058]
+r' = 4.88051 [4.88051]
+r'' = 2.51474 [2.51621]
+r depends on these tags:
+Z4testddE1X
+
+w = 0.5 [0.5]
+w' = -0.5 [-0.5]
+w'' = 0.75 [0.749845]
+w depends on these tags:
+Z4testddE1X
+
+z = 124.935 [124.935]
+z' = 558.502 [558.502]
+z'' = 2580.27 [2580.44]
+z depends on these tags:
+Z4testddE1X
+
+zz = 3.84726 [3.84726]
+zz' = 1 [1]
+zz'' = 0.923632 [0.923706]
+zz depends on these tags:
+Z4testddE1X
+
+t = 33.5577 [33.5577]
+dt/dx = -1.27886 [-1.27886]
+dt/dy = 20.5577 [20.5577]
+dt/dxx = 8.27886 [8.27072]
+dt/dyy = 16.5577 [16.5556]
+dt/dxy = -6.27886 [-6.27942]
+dt/dyx = -6.27886 [-6.27942]
+t depends on these tags:
+Z4testddE1Y
+Z4testddE1X
+
+z = 33.5577
+dz/dx = -1.27886
+dz/dy = 20.5577
+deriv(z) wrt adouble at address [0x7fffea9269d0] = 20.5577
+deriv(z) wrt adouble at address [0x7fffea926600] = -1.27886
+&x = 0x7fffea926600
+&y = 0x7fffea9269d0
