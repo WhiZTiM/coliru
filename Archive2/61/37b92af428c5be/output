@@ -1,0 +1,7 @@
+main.cpp:19:5: error: static_assert failed "Typ T musi byc typem calkowitoliczbowym!"
+    static_assert(is_integral<T>::value, "Typ T musi byc typem calkowitoliczbowym!");
+    ^             ~~~~~~~~~~~~~~~~~~~~~
+main.cpp:25:15: note: in instantiation of template class 'A<double>' requested here
+    A<double> b; // Błąd!
+              ^
+1 error generated.
