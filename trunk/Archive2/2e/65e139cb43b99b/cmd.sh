@@ -1,0 +1,1 @@
+echo $"congrats that's $(bc <<<"hundredpct=100.0; obase=10; ibase=3; scale=100; (1.2/10)*hundredpct")%"
