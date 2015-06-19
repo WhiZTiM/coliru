@@ -1,0 +1,11 @@
+main.cpp: In function 'int _tmain(int, char**)':
+main.cpp:46:17: error: use of deleted function 'std::basic_ifstream<_CharT, _Traits>::basic_ifstream(const std::basic_ifstream<_CharT, _Traits>&) [with _CharT = char; _Traits = std::char_traits<char>]'
+  validator(listf); // cannot convert std::ifstream to std::ifstream
+                 ^
+In file included from main.cpp:6:0:
+/usr/local/include/c++/5.1.0/fstream:519:7: note: declared here
+       basic_ifstream(const basic_ifstream&) = delete;
+       ^
+main.cpp:9:5: note:   initializing argument 1 of 'int validator(std::ifstream)'
+ int validator(std::ifstream file) // file is supposed to be listf from _tmain
+     ^
