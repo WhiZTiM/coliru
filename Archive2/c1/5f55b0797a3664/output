@@ -1,0 +1,12 @@
+main.cpp:10:5: error: use 'template' keyword to treat 'B' as a dependent template name
+        T::B<int> a; // Błąd!
+           ^
+           template 
+main.cpp:10:6: error: expected ';' after expression
+        T::B<int> a; // Błąd!
+            ^
+            ;
+main.cpp:10:12: error: use of undeclared identifier 'a'
+        T::B<int> a; // Błąd!
+                  ^
+3 errors generated.
