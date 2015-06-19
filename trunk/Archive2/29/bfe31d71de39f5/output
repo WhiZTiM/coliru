@@ -1,0 +1,22 @@
+varArr[0] = 1 (N3Var7IntDataE@0x1f8ec20)
+varArr[1] = 2 (N3Var10StringDataE@0x1f8ec40)
+varArr[2] = 3 (N3Var10StringDataE@0x1f8ec70)
+varArr[3] = 4 (N3Var7IntDataE@0x1f8eca0)
+varArr[4] = 5 (N3Var7IntDataE@0x1f8ecc0)
+
+varArr[0] + varArr[1] = 1 (N3Var7IntDataE@0x1f8ec20) + 2 (N3Var10StringDataE@0x1f8ec40) = 12 (N3Var10StringDataE@0x1f8ece0)
+varArr[1] + varArr[2] = 2 (N3Var10StringDataE@0x1f8ec40) + 3 (N3Var10StringDataE@0x1f8ec70) = 23 (N3Var10StringDataE@0x1f8ece0)
+varArr[2] + varArr[3] = 3 (N3Var10StringDataE@0x1f8ec70) + 4 (N3Var7IntDataE@0x1f8eca0) = 34 (N3Var10StringDataE@0x1f8ece0)
+varArr[3] + varArr[4] = 4 (N3Var7IntDataE@0x1f8eca0) + 5 (N3Var7IntDataE@0x1f8ecc0) = 9 (N3Var7IntDataE@0x1f8ed10)
+
+
+varArr[0] = 1 (N3Var7IntDataE@0x1f8ec20)
+varArr[1] = 2 (N3Var10StringDataE@0x1f8ed30)
+varArr[2] = 3 (N3Var10StringDataE@0x1f8ed50)
+varArr[3] = 4 (N3Var7IntDataE@0x1f8ec40)
+varArr[4] = 5 (N3Var7IntDataE@0x1f8ecc0)
+
+varArr[0] + varArr[1] = 1 (N3Var7IntDataE@0x1f8ec20) + 2 (N3Var10StringDataE@0x1f8ed30) = 3 (N3Var7IntDataE@0x1f8eca0)
+varArr[1] + varArr[2] = 2 (N3Var10StringDataE@0x1f8ed30) + 3 (N3Var10StringDataE@0x1f8ed50) = 5 (N3Var7IntDataE@0x1f8eca0)
+varArr[2] + varArr[3] = 3 (N3Var10StringDataE@0x1f8ed50) + 4 (N3Var7IntDataE@0x1f8ec40) = 34 (N3Var10StringDataE@0x1f8ec70)
+varArr[3] + varArr[4] = 4 (N3Var7IntDataE@0x1f8ec40) + 5 (N3Var7IntDataE@0x1f8ecc0) = 45 (N3Var10StringDataE@0x1f8ec70)
