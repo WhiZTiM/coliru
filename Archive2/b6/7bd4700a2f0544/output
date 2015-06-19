@@ -1,0 +1,14 @@
+
+String 'XYZ124f5sf' was matched.
+
+String 'xyz12345' was matched.
+
+String 'XY38fsj dfENDING' was matched.
+
+String 'xy4 dfhd ending' was matched.
+
+String 'XYZ' was matched.
+
+String 'XY345kENDI' was not matched.
+
+String 'xy56NDING' was not matched.
