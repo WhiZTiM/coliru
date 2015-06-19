@@ -1,0 +1,35 @@
+SIZE = 120, sizeof(INTERNAL) = 8, array_size = 2, physical size = 128
+0
+a change on: byte_index = 0 and bit_index = 0
+63
+a change on: byte_index = 0 and bit_index = 63
+64
+a change on: byte_index = 1 and bit_index = 0
+65
+a change on: byte_index = 1 and bit_index = 1
+119
+a change on: byte_index = 1 and bit_index = 55
+125
+a change on: byte_index = 1 and bit_index = 61
+127
+a change on: byte_index = 1 and bit_index = 63
+0
+63
+64
+65
+119
+63
+a change on: byte_index = 0 and bit_index = 63
+7
+a change on: byte_index = 0 and bit_index = 7
+12
+a change on: byte_index = 0 and bit_index = 12
+110
+a change on: byte_index = 1 and bit_index = 46
+119
+a change on: byte_index = 1 and bit_index = 55
+0
+12
+64
+65
+110
