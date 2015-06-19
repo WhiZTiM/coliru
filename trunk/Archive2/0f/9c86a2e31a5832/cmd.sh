@@ -1,0 +1,1 @@
+g++ -std=c++11 -Wall -lboost_system -l boost_program_options main.cpp && ./a.out -s 1
