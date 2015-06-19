@@ -1,0 +1,4 @@
+main.cpp:4:29: warning: unused variable 'p' [-Wunused-variable]
+    void foo(){ const int * p = &a; }
+                            ^
+1 warning generated.
