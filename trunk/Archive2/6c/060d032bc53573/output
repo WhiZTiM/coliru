@@ -1,0 +1,21 @@
+on_entry: MainSM_::Started
+on_exit: MainSM_::Started
+on_entry: SubSM_::Orthogonal1
+on_entry: SubSM_::Orthogonal2
+on_entry: SubSM_::Orthogonal3
+on_exit: SubSM_::Orthogonal3
+on_entry: SubSM_::Join
+on_exit: SubSM_::Join
+on_entry: JoinSM<SubSM_, SubSM_::Join, SubSM_::Exit>::Waiting
+on_exit: SubSM_::Orthogonal1
+on_entry: SubSM_::Join
+on_exit: SubSM_::Join
+on_entry: JoinSM<SubSM_, SubSM_::Join, SubSM_::Exit>::Waiting
+on_exit: SubSM_::Orthogonal2
+on_entry: SubSM_::Join
+on_exit: SubSM_::Join
+on_entry: JoinSM<SubSM_, SubSM_::Join, SubSM_::Exit>::Waiting
+on_exit: JoinSM<SubSM_, SubSM_::Join, SubSM_::Exit>::Waiting
+on_exit: JoinSM<SubSM_, SubSM_::Join, SubSM_::Exit>::Waiting
+on_exit: JoinSM<SubSM_, SubSM_::Join, SubSM_::Exit>::Waiting
+on_entry: MainSM_::AfterJoin
