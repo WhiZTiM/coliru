@@ -1,0 +1,1 @@
+gcc -O2 -Wall -Wextra -Wfatal-errors -x c main.cpp -o a.out && ./a.out
