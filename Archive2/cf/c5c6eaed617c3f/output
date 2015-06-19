@@ -1,0 +1,13 @@
+main.cpp:1:1: error: expected unqualified-id
+public:
+^
+main.cpp:3:1: error: expected unqualified-id
+private:
+^
+main.cpp:5:1: error: extraneous closing brace ('}')
+};
+^
+main.cpp:9:5: error: unknown type name 'A'
+    A a;
+    ^
+4 errors generated.
