@@ -1,0 +1,14 @@
+main.cpp: In member function 'Polygon::iterator Polygon::begin()':
+main.cpp:26:27: error: invalid initialization of non-const reference of type 'Polygon::iterator&' from an rvalue of type 'Polygon::iterator'
+   return iterator(0, *this);
+                           ^
+main.cpp:20:3: note:   initializing argument 1 of 'Polygon::iterator::iterator(Polygon::iterator&)'
+   iterator(iterator &copy);
+   ^
+main.cpp: In member function 'Polygon::iterator Polygon::end()':
+main.cpp:30:28: error: invalid initialization of non-const reference of type 'Polygon::iterator&' from an rvalue of type 'Polygon::iterator'
+   return iterator(-1, *this);
+                            ^
+main.cpp:20:3: note:   initializing argument 1 of 'Polygon::iterator::iterator(Polygon::iterator&)'
+   iterator(iterator &copy);
+   ^
