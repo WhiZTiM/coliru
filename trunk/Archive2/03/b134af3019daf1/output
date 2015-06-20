@@ -1,0 +1,16 @@
+main.cpp:12:48: error: cannot initialize a parameter of type 'std::index_sequence<> *' (aka 'std::__1::integer_sequence<unsigned long> *') with an rvalue of type 'std::make_index_sequence<3UL> *' (aka 'std::__1::integer_sequence<unsigned long, 0, 1, 2> *')
+    operator () (std::index_sequence< i... > * = new std::make_index_sequence< M >{}) const
+                                               ^ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+main.cpp:40:19: note: in instantiation of default function argument expression for 'operator()<>' required here
+    test< 3, 3 >{}(); // hard error
+                  ^
+main.cpp:12:48: note: passing argument to parameter here
+    operator () (std::index_sequence< i... > * = new std::make_index_sequence< M >{}) const
+                                               ^
+main.cpp:41:5: error: no matching function for call to object of type 'test<3, 3>'
+    test< 3, 3 >{}(std::make_index_sequence< 3 >{});
+    ^~~~~~~~~~~~~~
+main.cpp:12:5: note: candidate template ignored: could not match 'std::index_sequence<i...> *' (aka 'integer_sequence<unsigned long, _Ip...> *') against 'std::make_index_sequence<3>' (aka 'std::__1::integer_sequence<unsigned long, 0, 1, 2>')
+    operator () (std::index_sequence< i... > * = new std::make_index_sequence< M >{}) const
+    ^
+2 errors generated.
