@@ -1,0 +1,11 @@
+main.cpp:10:38: error: unknown escape sequence: '\040'
+               << random_variable <<  ' \ n ' ; 
+                                      ^
+main.cpp:10:38: warning: multi-character character constant [-Wmultichar]
+main.cpp: In function 'int principal()':
+main.cpp:7:20: error: 'vez' is not a member of 'std'
+     std :: srand ( std :: vez ( 0 ) ) ;  // utilizar el tiempo actual como semilla para el generador aleatorio 
+                    ^
+main.cpp:11:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
