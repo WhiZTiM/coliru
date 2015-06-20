@@ -1,0 +1,83 @@
+main.cpp:6:0: warning: ignoring #pragma STDC FENV_ACCESS [-Wunknown-pragmas]
+ #pragma STDC FENV_ACCESS NA 
+ ^
+main.cpp:7:1: error: unknown type name 'pustych'
+ pustych show_fe_exceptions ( void ) 
+ ^
+main.cpp: In function 'show_fe_exceptions':
+main.cpp:10:5: error: stray '\305' in program
+     jeśli ( fetestexcept ( FE_DIVBYZERO ) )  printf ( "FE_DIVBYZERO" ) , 
+     ^
+main.cpp:10:5: error: stray '\233' in program
+main.cpp:10:5: error: unknown type name 'je'
+main.cpp:10:14: error: expected declaration specifiers or '...' before 'fetestexcept'
+     jeśli ( fetestexcept ( FE_DIVBYZERO ) )  printf ( "FE_DIVBYZERO" ) , 
+              ^
+main.cpp:11:5: error: stray '\305' in program
+     jeśli ( fetestexcept ( FE_INEXACT ) )    printf ( "FE_INEXACT" ) , 
+     ^
+main.cpp:11:5: error: stray '\233' in program
+main.cpp:12:5: error: stray '\305' in program
+     jeśli ( fetestexcept ( FE_INVALID ) )    printf ( "FE_INVALID" ) , 
+     ^
+main.cpp:12:5: error: stray '\233' in program
+main.cpp:13:5: error: stray '\305' in program
+     jeśli ( fetestexcept ( FE_OVERFLOW ) )   printf ( "FE_OVERFLOW" ) , 
+     ^
+main.cpp:13:5: error: stray '\233' in program
+main.cpp:14:5: error: stray '\305' in program
+     jeśli ( fetestexcept ( FE_UNDERFLOW ) )  printf ( "FE_UNDERFLOW" ) ; 
+     ^
+main.cpp:14:5: error: stray '\233' in program
+main.cpp:16:14: error: unknown escape sequence: '\040'
+     printf ( " \ n " ) ; 
+              ^
+main.cpp: In function 'main':
+main.cpp:21:14: error: unknown escape sequence: '\040'
+     printf ( "MATH_ERREXCEPT% s \ n " ,
+              ^
+main.cpp:22:12: warning: ' ' flag used with '%s' gnu_printf format [-Wformat=]
+            math_errhandling & MATH_ERREXCEPT ?  "zestaw"  :  "nie jest ustawiona" ) ;
+            ^
+main.cpp:24:14: error: unknown escape sequence: '\040'
+     printf ( "0.0 / 0.0 =% f \ n " , 0,0 / 0,0 ) ; 
+              ^
+main.cpp:24:42: warning: division by zero [-Wdiv-by-zero]
+     printf ( "0.0 / 0.0 =% f \ n " , 0,0 / 0,0 ) ; 
+                                          ^
+main.cpp:24:5: warning: format '%f' expects argument of type 'double', but argument 2 has type 'int' [-Wformat=]
+     printf ( "0.0 / 0.0 =% f \ n " , 0,0 / 0,0 ) ; 
+     ^
+main.cpp:24:5: warning: too many arguments for format [-Wformat-extra-args]
+main.cpp:27:14: error: unknown escape sequence: '\040'
+     printf ( "1,0 / 0,0 =% f \ n " , 1,0 / 0,0 ) ; 
+              ^
+main.cpp:27:42: warning: division by zero [-Wdiv-by-zero]
+     printf ( "1,0 / 0,0 =% f \ n " , 1,0 / 0,0 ) ; 
+                                          ^
+main.cpp:27:5: warning: format '%f' expects argument of type 'double', but argument 2 has type 'int' [-Wformat=]
+     printf ( "1,0 / 0,0 =% f \ n " , 1,0 / 0,0 ) ; 
+     ^
+main.cpp:27:5: warning: too many arguments for format [-Wformat-extra-args]
+main.cpp:30:14: error: unknown escape sequence: '\040'
+     printf ( "1,0 / 10,0 =% f \ n " , 1.0 / 10.0 ) ; 
+              ^
+main.cpp:33:14: error: unknown escape sequence: '\040'
+     printf ( "sqrt (-1) =% f \ n " , sqrt ( - 1 ) ) ; 
+              ^
+main.cpp:36:14: error: unknown escape sequence: '\040'
+     printf ( "DBL_MAX * = 2,0% f \ n " , DBL_MAX * 2,0 ) ; 
+              ^
+main.cpp:36:5: warning: too many arguments for format [-Wformat-extra-args]
+     printf ( "DBL_MAX * = 2,0% f \ n " , DBL_MAX * 2,0 ) ; 
+     ^
+main.cpp:39:14: error: unknown escape sequence: '\040'
+     printf ( "nextafter (DBL_MIN / pow (2.0,52), 0,0) =% .1f \ n " ,
+              ^
+main.cpp:40:24: error: too many arguments to function 'nextafter'
+                        nextafter ( DBL_MIN / pow ( 2.0 , 52 ) , 0,0 ) ) ; 
+                        ^
+main.cpp: In function 'show_fe_exceptions':
+main.cpp:17:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
