@@ -1,0 +1,4 @@
+main.cpp: In function 'T f(T&&, T&&)':
+main.cpp:7:12: error: 'c' was not declared in this scope
+     return c;
+            ^
