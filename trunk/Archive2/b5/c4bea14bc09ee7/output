@@ -1,0 +1,12 @@
+
+2147483647 < 2147483648, builtin false, special imprecisely in integer range true
+-2147483648 < -2147483648, builtin false, special imprecisely in integer range false
+-2147483200 < -2147483136, builtin false, special imprecisely in integer range true
+-2147483648 < -2147484160, builtin false, special outside integer range false
+-16777217 < -16777216, builtin false, special imprecisely in integer range true
+33554431 < 33554432, builtin false, special imprecisely in integer range true
+8388607 < 8388608, builtin true, special imprecisely in integer range true
+8388607 < 8388607, builtin false, special native comparison false
+-8388609 < -8388608, builtin true, special imprecisely in integer range true
+-8388608 < -8388607, builtin true, special native comparison true
+-8388607 < -8388608, builtin false, special imprecisely in integer range false
