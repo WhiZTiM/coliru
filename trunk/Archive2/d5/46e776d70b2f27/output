@@ -1,0 +1,27 @@
+main.cpp:19:17: error: 'ptrdiff_t' does not name a type
+         typedef ptrdiff_t                             difference_type;
+                 ^
+main.cpp: In member function 'void dynarray<T>::check(dynarray<T>::size_type)':
+main.cpp:29:58: error: there are no arguments to 'out_of_range' that depend on a template parameter, so a declaration of 'out_of_range' must be available [-fpermissive]
+             if (n >= count) throw out_of_range("dynarray");
+                                                          ^
+main.cpp:29:58: note: (if you use '-fpermissive', G++ will accept your code, but allowing the use of an undeclared name is deprecated)
+main.cpp: In member function 'T* dynarray<T>::alloc(dynarray<T>::size_type)':
+main.cpp:33:21: error: 'numeric_limits' is not a member of 'std'
+             if (n > std::numeric_limits<size_type>::max() / sizeof(T))
+                     ^
+main.cpp:33:50: error: expected primary-expression before '>' token
+             if (n > std::numeric_limits<size_type>::max() / sizeof(T))
+                                                  ^
+main.cpp:33:51: error: '::max' has not been declared
+             if (n > std::numeric_limits<size_type>::max() / sizeof(T))
+                                                   ^
+main.cpp:33:51: note: suggested alternative:
+In file included from /usr/local/include/c++/5.1.0/bits/char_traits.h:39:0,
+                 from /usr/local/include/c++/5.1.0/ios:40,
+                 from /usr/local/include/c++/5.1.0/ostream:38,
+                 from /usr/local/include/c++/5.1.0/iterator:64,
+                 from main.cpp:1:
+/usr/local/include/c++/5.1.0/bits/stl_algobase.h:265:5: note:   'std::max'
+     max(const _Tp& __a, const _Tp& __b, _Compare __comp)
+     ^
