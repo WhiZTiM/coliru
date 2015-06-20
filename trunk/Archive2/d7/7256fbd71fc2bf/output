@@ -1,0 +1,6 @@
+main.cpp:9:2: warning: extraneous template parameter list in template specialization
+        template<>
+        ^~~~~~~~~~
+1 warning generated.
+1
+0
