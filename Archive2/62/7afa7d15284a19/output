@@ -1,0 +1,7 @@
+main.cpp: In function 'T f(T&&, T&&)':
+main.cpp:6:12: error: expected unqualified-id before 'if'
+     static if(decltype(a) == const T& && decltype(b) == const T&){
+            ^
+main.cpp:9:5: error: 'else' without a previous 'if'
+     else{
+     ^
