@@ -1,0 +1,7 @@
+main.cpp: In function 'void tree_get_minmax_height(const node<T>*, int&, int&)':
+main.cpp:23:34: error: expected initializer before ')' token
+         size_t rightmin, rightmax);
+                                  ^
+main.cpp:24:55: error: 'rightmax' was not declared in this scope
+         tree_get_minmax_height(root->right, rightmin, rightmax);
+                                                       ^
