@@ -1,0 +1,19 @@
+main.cpp:14:46: error: no viable conversion from 'I' to 'std::index_sequence<>' (aka 'std::__1::integer_sequence<unsigned long>')
+    operator () (std::index_sequence< i... > = I{}) const
+                                             ^ ~~~
+main.cpp:42:19: note: in instantiation of default function argument expression for 'operator()<>' required here
+    test< 3, 3 >{}(); // hard error
+                  ^
+/usr/include/c++/v1/utility:672:30: note: candidate constructor (the implicit copy constructor) not viable: no known conversion from 'I' to 'const std::__1::integer_sequence<unsigned long> &' for 1st argument
+struct _LIBCPP_TYPE_VIS_ONLY integer_sequence
+                             ^
+/usr/include/c++/v1/utility:672:30: note: candidate constructor (the implicit move constructor) not viable: no known conversion from 'I' to 'std::__1::integer_sequence<unsigned long> &&' for 1st argument
+struct _LIBCPP_TYPE_VIS_ONLY integer_sequence
+                             ^
+main.cpp:6:22: note: candidate function
+struct I { constexpr operator std::index_sequence< 0, 1, 2 > () const { return {}; } };
+                     ^
+main.cpp:14:46: note: passing argument to parameter here
+    operator () (std::index_sequence< i... > = I{}) const
+                                             ^
+1 error generated.
