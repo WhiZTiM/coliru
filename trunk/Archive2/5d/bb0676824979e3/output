@@ -1,0 +1,25 @@
+main.cpp:2:33: error: '::main' must return 'int'
+ void main(int argc, char *argv[])
+                                 ^
+main.cpp: In function 'int main(int, char**)':
+main.cpp:5:14: error: 'fork' was not declared in this scope
+     pid=fork();
+              ^
+main.cpp:6:36: error: 'fprint' was not declared in this scope
+     if(pid<0){fprint(stderr, "ciao");exit(-1)}
+                                    ^
+main.cpp:6:45: error: 'exit' was not declared in this scope
+     if(pid<0){fprint(stderr, "ciao");exit(-1)}
+                                             ^
+main.cpp:6:46: error: expected ';' before '}' token
+     if(pid<0){fprint(stderr, "ciao");exit(-1)}
+                                              ^
+main.cpp:7:48: error: 'execlp' was not declared in this scope
+     else if(pid==0){execlp("/bin/ls","ls", NULL);}
+                                                ^
+main.cpp:8:20: error: 'wiat' was not declared in this scope
+     else{ wiat(NULL);
+                    ^
+main.cpp:9:28: error: 'exit' was not declared in this scope
+     printf("HELLO"); exit(0);}
+                            ^
