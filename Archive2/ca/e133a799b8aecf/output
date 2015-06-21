@@ -1,0 +1,4 @@
+main.cpp: In function 'int main()':
+main.cpp:41:1: error: expected unqualified-id before '}' token
+ }
+ ^
