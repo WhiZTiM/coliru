@@ -1,0 +1,41 @@
+SIZE = 10, array_size = 1, sizeof(INTERNAL) = 4, actual_physical_size = 4
+0
+a change on: byte_index = 0 and bit_index = 0
+1
+a change on: byte_index = 0 and bit_index = 1
+2
+a change on: byte_index = 0 and bit_index = 2
+3
+a change on: byte_index = 0 and bit_index = 3
+4
+a change on: byte_index = 0 and bit_index = 4
+5
+a change on: byte_index = 0 and bit_index = 5
+0
+3
+4
+5
+in c'tor from other, OTHER_SIZE = 10, my SIZE = 4, physical size_to_clone in bits = 32
+0
+3
+SIZE = 3, array_size = 1, sizeof(INTERNAL) = 4, actual_physical_size = 4
+0
+a change on: byte_index = 0 and bit_index = 0
+1
+a change on: byte_index = 0 and bit_index = 1
+2
+a change on: byte_index = 0 and bit_index = 2
+0
+1
+2
+2
+3
+4
+found at index: 2
+SIZE = 3, array_size = 1, sizeof(INTERNAL) = 4, actual_physical_size = 4
+0
+a change on: byte_index = 0 and bit_index = 0
+2
+a change on: byte_index = 0 and bit_index = 2
+0
+2
