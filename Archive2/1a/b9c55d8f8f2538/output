@@ -1,0 +1,5 @@
+main.cpp:9:10: warning: multiple unsequenced modifications to 'i' [-Wunsequenced]
+    i = i++;
+      ~  ^
+1 warning generated.
+1
