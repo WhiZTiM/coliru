@@ -1,0 +1,27 @@
+main.cpp: In function 'int main()':
+main.cpp:98:13: warning: array subscript is above array bounds [-Warray-bounds]
+  boolArr[125] = true; // outside the array but in the physical size
+             ^
+main.cpp:99:13: warning: array subscript is above array bounds [-Warray-bounds]
+  boolArr[127] = true; // outside the array but in the physical size
+             ^
+a change on: byte_index = 0 and bit_index = 0
+a change on: byte_index = 0 and bit_index = 63
+a change on: byte_index = 1 and bit_index = 0
+a change on: byte_index = 1 and bit_index = 1
+a change on: byte_index = 1 and bit_index = 55
+0
+63
+64
+65
+119
+a change on: byte_index = 0 and bit_index = 0
+a change on: byte_index = 0 and bit_index = 12
+a change on: byte_index = 1 and bit_index = 0
+a change on: byte_index = 1 and bit_index = 1
+a change on: byte_index = 1 and bit_index = 46
+0
+12
+64
+65
+110
