@@ -1,0 +1,10 @@
+main.cpp: In constructor 'C::C(int, int, int)':
+main.cpp:19:16: error: cannot allocate an object of abstract type 'D1'
+         D2(0, 0)  // <-- regular braces, no error
+                ^
+main.cpp:6:8: note:   because the following virtual functions are pure within 'D1':
+ struct D1 : public virtual V {
+        ^
+main.cpp:3:18: note: 	virtual void V::f() const
+     virtual void f() const = 0;
+                  ^
