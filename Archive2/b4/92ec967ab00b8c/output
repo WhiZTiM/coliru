@@ -1,0 +1,10 @@
+main.cpp: In constructor 'Test::Test()':
+main.cpp:33:39: warning: 'Test::m_CachedValue' will be initialized after [-Wreorder]
+     std::shared_ptr<CachedValue<int>> m_CachedValue;
+                                       ^
+main.cpp:35:85: warning:   base 'Base<int>' [-Wreorder]
+     Test() : m_CachedValue(std::make_shared<CachedValue<int>>()), Base(m_CachedValue) {}
+                                                                                     ^
+main.cpp:35:5: warning:   when initialized here [-Wreorder]
+     Test() : m_CachedValue(std::make_shared<CachedValue<int>>()), Base(m_CachedValue) {}
+     ^
