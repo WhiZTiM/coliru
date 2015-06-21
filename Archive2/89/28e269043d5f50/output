@@ -1,0 +1,10 @@
+main.cpp:7:27: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+  std::array<int, 2> a = {1, 2};
+                          ^~~~
+                          {   }
+main.cpp:8:27: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+  std::array<int, 2> b = {2, 1};
+                          ^~~~
+                          {   }
+2 warnings generated.
+2 2 
