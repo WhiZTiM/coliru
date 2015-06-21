@@ -1,0 +1,1 @@
+gcc -O2 -W{all,extra} -pedantic -pthread main.cpp && ./a.out
