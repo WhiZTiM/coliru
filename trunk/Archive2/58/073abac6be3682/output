@@ -1,0 +1,73 @@
+In file included from main.cpp:3:
+In file included from /usr/local/include/range/v3/all.hpp:21:
+In file included from /usr/local/include/range/v3/view.hpp:33:
+In file included from /usr/local/include/range/v3/view/for_each.hpp:22:
+/usr/local/include/range/v3/view/join.hpp:159:13: error: static_assert failed "Concept check failed"
+            CONCEPT_ASSERT(Common<range_value_t<range_value_t<Rng>>, range_value_t<ValRng>>());
+            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/local/include/range/v3/utility/concepts.hpp:741:29: note: expanded from macro 'CONCEPT_ASSERT'
+#define CONCEPT_ASSERT(...) static_assert((__VA_ARGS__), "Concept check failed")
+                            ^             ~~~~~~~~~~~~~
+/usr/local/include/range/v3/utility/concepts.hpp:558:44: note: in instantiation of template class 'ranges::v3::join_view<ranges::v3::take_exactly_view<ranges::v3::range<__gnu_cxx::__normal_iterator<std::__cxx11::basic_string<char> *, std::vector<std::__cxx11::basic_string<char>, std::allocator<std::__cxx11::basic_string<char> > > >, __gnu_cxx::__normal_iterator<std::__cxx11::basic_string<char> *, std::vector<std::__cxx11::basic_string<char>, std::allocator<std::__cxx11::basic_string<char> > > > > >, ranges::v3::take_exactly_view<ranges::v3::range<__gnu_cxx::__normal_iterator<std::__cxx11::basic_string<char> *, std::vector<std::__cxx11::basic_string<char>, std::allocator<std::__cxx11::basic_string<char> > > >, __gnu_cxx::__normal_iterator<std::__cxx11::basic_string<char> *, std::vector<std::__cxx11::basic_string<char>, std::allocator<std::__cxx11::basic_string<char> > > > > > >' requested here
+                        (static_cast<void>(val<Fun>()(val<Args>()...)), 42)
+                                           ^
+/usr/local/include/range/v3/utility/concepts.hpp:109:72: note: while substituting deduced template arguments into function template 'requires_' [with Fun = ranges::v3::view::join_fn, Args = <ranges::v3::take_exactly_view<ranges::v3::range<__gnu_cxx::__normal_iterator<std::__cxx11::basic_string<char> *, std::vector<std::__cxx11::basic_string<char>, std::allocator<std::__cxx11::basic_string<char> > > >, __gnu_cxx::__normal_iterator<std::__cxx11::basic_string<char> *, std::vector<std::__cxx11::basic_string<char>, std::allocator<std::__cxx11::basic_string<char> > > > > >, ranges::v3::take_exactly_view<ranges::v3::range<__gnu_cxx::__normal_iterator<std::__cxx11::basic_string<char> *, std::vector<std::__cxx11::basic_string<char>, std::allocator<std::__cxx11::basic_string<char> > > >, __gnu_cxx::__normal_iterator<std::__cxx11::basic_string<char> *, std::vector<std::__cxx11::basic_string<char>, std::allocator<std::__cxx11::basic_string<char> > > > > >>, UnRefFun = (no value), UnCvRefFun = (no value)]
+                typename = decltype(std::declval<Concept &>().template requires_<Ts...>(std::declval<Ts>()...))>
+                                                                       ^
+/usr/local/include/range/v3/utility/concepts.hpp:110:18: note: in instantiation of default argument for 'models_<ranges::v3::view::join_fn, ranges::v3::take_exactly_view<ranges::v3::range<__gnu_cxx::__normal_iterator<std::__cxx11::basic_string<char> *, std::vector<std::__cxx11::basic_string<char>, std::allocator<std::__cxx11::basic_string<char> > > >, __gnu_cxx::__normal_iterator<std::__cxx11::basic_string<char> *, std::vector<std::__cxx11::basic_string<char>, std::allocator<std::__cxx11::basic_string<char> > > > > >, ranges::v3::take_exactly_view<ranges::v3::range<__gnu_cxx::__normal_iterator<std::__cxx11::basic_string<char> *, std::vector<std::__cxx11::basic_string<char>, std::allocator<std::__cxx11::basic_string<char> > > >, __gnu_cxx::__normal_iterator<std::__cxx11::basic_string<char> *, std::vector<std::__cxx11::basic_string<char>, std::allocator<std::__cxx11::basic_string<char> > > > > > , ranges::v3::concepts::Function>' required here
+            auto models_(Concept *) ->
+                 ^~~~~~~~~~~~~~~~~~~~~
+/usr/local/include/range/v3/utility/concepts.hpp:191:38: note: while substituting deduced template arguments into function template 'models_' [with Ts = (no value), Concept = ranges::v3::concepts::Function, $2 = (no value)]
+              : meta::bool_<decltype(detail::models_<Ts...>(_nullptr_v<Concept>()))::type::value>
+                                     ^
+/usr/local/include/meta/meta.hpp:854:25: note: in instantiation of template class 'ranges::v3::concepts::models<ranges::v3::concepts::Function, ranges::v3::view::join_fn, ranges::v3::take_exactly_view<ranges::v3::range<__gnu_cxx::__normal_iterator<std::__cxx11::basic_string<char> *, std::vector<std::__cxx11::basic_string<char>, std::allocator<std::__cxx11::basic_string<char> > > >, __gnu_cxx::__normal_iterator<std::__cxx11::basic_string<char> *, std::vector<std::__cxx11::basic_string<char>, std::allocator<std::__cxx11::basic_string<char> > > > > >, ranges::v3::take_exactly_view<ranges::v3::range<__gnu_cxx::__normal_iterator<std::__cxx11::basic_string<char> *, std::vector<std::__cxx11::basic_string<char>, std::allocator<std::__cxx11::basic_string<char> > > >, __gnu_cxx::__normal_iterator<std::__cxx11::basic_string<char> *, std::vector<std::__cxx11::basic_string<char>, std::allocator<std::__cxx11::basic_string<char> > > > > > >' requested here
+                : if_c<!Bool::type::value, std::false_type, _and_<Bools...>>
+                        ^
+/usr/local/include/meta/meta.hpp:854:19: note: (skipping 19 contexts in backtrace; use -ftemplate-backtrace-limit=0 to see all)
+                : if_c<!Bool::type::value, std::false_type, _and_<Bools...>>
+                  ^
+/usr/local/include/meta/meta.hpp:899:9: note: in instantiation of template type alias 'eval' requested here
+        using and_ = eval<detail::_and_<Bools...>>;
+        ^
+/usr/local/include/range/v3/view/zip_with.hpp:337:17: note: in instantiation of template type alias 'and_' requested here
+                using Concept = meta::and_<
+                ^
+/usr/local/include/range/v3/view/zip_with.hpp:342:39: note: in instantiation of template type alias 'Concept' requested here
+                    CONCEPT_REQUIRES_(Concept<Fun, Rngs...>())>
+                                      ^
+/usr/local/include/range/v3/utility/concepts.hpp:727:66: note: expanded from macro 'CONCEPT_REQUIRES_'
+        (CONCEPT_PP_CAT(_concept_requires_, __LINE__) == 43) || (__VA_ARGS__),      \
+                                                                 ^
+/usr/local/include/range/v3/view/zip_with.hpp:343:52: note: while substituting prior template arguments into non-type template parameter [with Rngs = <ranges::v3::chunk_view<ranges::v3::range<__gnu_cxx::__normal_iterator<std::__cxx11::basic_string<char> *, std::vector<std::__cxx11::basic_string<char>, std::allocator<std::__cxx11::basic_string<char> > > >, __gnu_cxx::__normal_iterator<std::__cxx11::basic_string<char> *, std::vector<std::__cxx11::basic_string<char>, std::allocator<std::__cxx11::basic_string<char> > > > > >, ranges::v3::chunk_view<ranges::v3::range<__gnu_cxx::__normal_iterator<std::__cxx11::basic_string<char> *, std::vector<std::__cxx11::basic_string<char>, std::allocator<std::__cxx11::basic_string<char> > > >, __gnu_cxx::__normal_iterator<std::__cxx11::basic_string<char> *, std::vector<std::__cxx11::basic_string<char>, std::allocator<std::__cxx11::basic_string<char> > > > > >>, Fun = ranges::v3::view::view<ranges::v3::view::join_fn>, _concept_requires_342 = 42]
+                zip_with_view<Fun, all_t<Rngs>...> operator()(Fun fun, Rngs &&... rngs) const
+                                                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+main.cpp:10:59: note: while substituting deduced template arguments into function template 'operator()' [with Rngs = <ranges::v3::chunk_view<ranges::v3::range<__gnu_cxx::__normal_iterator<std::__cxx11::basic_string<char> *, std::vector<std::__cxx11::basic_string<char>, std::allocator<std::__cxx11::basic_string<char> > > >, __gnu_cxx::__normal_iterator<std::__cxx11::basic_string<char> *, std::vector<std::__cxx11::basic_string<char>, std::allocator<std::__cxx11::basic_string<char> > > > > >, ranges::v3::chunk_view<ranges::v3::range<__gnu_cxx::__normal_iterator<std::__cxx11::basic_string<char> *, std::vector<std::__cxx11::basic_string<char>, std::allocator<std::__cxx11::basic_string<char> > > >, __gnu_cxx::__normal_iterator<std::__cxx11::basic_string<char> *, std::vector<std::__cxx11::basic_string<char>, std::allocator<std::__cxx11::basic_string<char> > > > > >>, Fun = ranges::v3::view::view<ranges::v3::view::join_fn>, _concept_requires_342 = (no value), $3 = (no value)]
+    std::vector<std::string> interpolated = view::zip_with(view::join, positions | view::chunk(3), normals | view::chunk(3));
+                                                          ^
+main.cpp:10:30: error: no viable conversion from 'void' to 'std::vector<std::string>'
+    std::vector<std::string> interpolated = view::zip_with(view::join, positions | view::chunk(3), normals | view::chunk(3));
+                             ^              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.1.0/../../../../include/c++/5.1.0/bits/stl_vector.h:318:7: note: candidate constructor not viable: cannot convert argument of incomplete type 'void' to 'const std::vector<std::__cxx11::basic_string<char>, std::allocator<std::__cxx11::basic_string<char> > > &'
+      vector(const vector& __x)
+      ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.1.0/../../../../include/c++/5.1.0/bits/stl_vector.h:335:7: note: candidate constructor not viable: cannot convert argument of incomplete type 'void' to 'std::vector<std::__cxx11::basic_string<char>, std::allocator<std::__cxx11::basic_string<char> > > &&'
+      vector(vector&& __x) noexcept
+      ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.1.0/../../../../include/c++/5.1.0/bits/stl_vector.h:373:7: note: candidate constructor not viable: cannot convert argument of incomplete type 'void' to 'initializer_list<value_type>'
+      vector(initializer_list<value_type> __l,
+      ^
+In file included from main.cpp:3:
+In file included from /usr/local/include/range/v3/all.hpp:19:
+In file included from /usr/local/include/range/v3/action.hpp:28:
+In file included from /usr/local/include/range/v3/action/split.hpp:28:
+In file included from /usr/local/include/range/v3/view/transform.hpp:34:
+/usr/local/include/range/v3/view/zip_with.hpp:359:21: error: static_assert failed "The function passed to view::zip_with must be callable with arguments of the ranges' reference types."
+                    CONCEPT_ASSERT_MSG(
+                    ^
+/usr/local/include/range/v3/utility/concepts.hpp:744:28: note: expanded from macro 'CONCEPT_ASSERT_MSG'
+#define CONCEPT_ASSERT_MSG static_assert
+                           ^
+main.cpp:10:59: note: in instantiation of function template specialization 'ranges::v3::view::zip_with_fn::operator()<ranges::v3::view::view<ranges::v3::view::join_fn>, ranges::v3::chunk_view<ranges::v3::range<__gnu_cxx::__normal_iterator<std::__cxx11::basic_string<char> *, std::vector<std::__cxx11::basic_string<char>, std::allocator<std::__cxx11::basic_string<char> > > >, __gnu_cxx::__normal_iterator<std::__cxx11::basic_string<char> *, std::vector<std::__cxx11::basic_string<char>, std::allocator<std::__cxx11::basic_string<char> > > > > >, ranges::v3::chunk_view<ranges::v3::range<__gnu_cxx::__normal_iterator<std::__cxx11::basic_string<char> *, std::vector<std::__cxx11::basic_string<char>, std::allocator<std::__cxx11::basic_string<char> > > >, __gnu_cxx::__normal_iterator<std::__cxx11::basic_string<char> *, std::vector<std::__cxx11::basic_string<char>, std::allocator<std::__cxx11::basic_string<char> > > > > > , 42, 0>' requested here
+    std::vector<std::string> interpolated = view::zip_with(view::join, positions | view::chunk(3), normals | view::chunk(3));
+                                                          ^
+3 errors generated.
