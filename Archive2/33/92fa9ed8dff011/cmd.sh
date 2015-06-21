@@ -1,0 +1,1 @@
+cat main.cpp | cat >> main.cpp && cat main.cpp
