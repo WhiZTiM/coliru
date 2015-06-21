@@ -1,0 +1,2 @@
+a.out: /usr/local/include/boost/optional/optional.hpp:992: boost::optional<T>::reference_type boost::optional<T>::get() [with T = int; boost::optional<T>::reference_type = int&]: Assertion `this->is_initialized()' failed.
+bash: line 7:  4502 Aborted                 (core dumped) ./a.out
