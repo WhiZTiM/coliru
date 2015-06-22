@@ -1,0 +1,10 @@
+main.cpp:31:18: error: two or more data types in declaration of 'uint16_t'
+     static const uint16_t headerSize = 3;//sizeof(uint16_t) + sizeof(uint8_t);
+                  ^
+main.cpp:31:18: error: expected ';' at end of member declaration
+main.cpp:31:27: error: 'headerSize' does not name a type
+     static const uint16_t headerSize = 3;//sizeof(uint16_t) + sizeof(uint8_t);
+                           ^
+main.cpp:33:37: error: expected ';' at end of member declaration
+     static const uint16_t minSize = 7//headerSize * 2 + overhead;
+                                     ^
