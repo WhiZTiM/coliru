@@ -1,0 +1,4 @@
+virtual void main()::printer::visitGraphicComponent(const GraphicComponent&)
+virtual void main()::printer::visitPositionComponent(const PositionComponent&)
+virtual void main()::printer::visitPositionComponent(const PositionComponent&)
+virtual void main()::printer::visitGraphicComponent(const GraphicComponent&)
