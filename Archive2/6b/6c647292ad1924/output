@@ -1,0 +1,22 @@
++ g++ main.cpp -Wall -Wextra -pedantic-errors
+main.cpp: In function 'void fstr(char*&)':
+main.cpp:4:10: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+     strf = "strf";
+          ^
+main.cpp: At global scope:
+main.cpp:6:14: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+ char * ptr = "";
+              ^
+main.cpp: In function 'int main(int, char**)':
+main.cpp:10:13: warning: the address of 'void fstr(char*&)' will always evaluate as 'true' [-Waddress]
+     cout << fstr;
+             ^
+main.cpp: At global scope:
+main.cpp:8:14: warning: unused parameter 'argc' [-Wunused-parameter]
+ int main(int argc, char** argv){
+              ^
+main.cpp:8:27: warning: unused parameter 'argv' [-Wunused-parameter]
+ int main(int argc, char** argv){
+                           ^
++ ./a.out
+1

@@ -1,0 +1,1 @@
+set -x ; g++ main.cpp -Wall -Wextra -pedantic-errors && ./a.out
