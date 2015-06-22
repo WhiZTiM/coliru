@@ -1,0 +1,4 @@
+main.cpp: In function 'int main()':
+main.cpp:5:9: error: taking address of temporary [-fpermissive]
+     &a[0];
+         ^
