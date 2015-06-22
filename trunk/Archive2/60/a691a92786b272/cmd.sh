@@ -1,0 +1,1 @@
+g++-4.8 -std=c++0x -O3 -Wall -DHAVE_HANDY_MODULE_CACHE=0 -pedantic -pthread main.cpp -lrt && ./a.out --config server.json
