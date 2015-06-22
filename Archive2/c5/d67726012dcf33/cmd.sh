@@ -1,0 +1,1 @@
+set -x ; clang++ main.cpp -Wall -Wextra -pedantic-errors && ./a.out
