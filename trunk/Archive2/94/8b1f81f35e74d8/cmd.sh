@@ -1,0 +1,1 @@
+clang++ -std=c++14 -O2 -pthread -DRANGES_SUPPRESS_IOTA_WARNING main.cpp && ./a.out
