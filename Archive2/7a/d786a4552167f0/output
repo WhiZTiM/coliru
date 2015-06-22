@@ -1,0 +1,14 @@
++ clang++ --std=c++11 main.cpp
+main.cpp:6:29: error: expected ')'
+std::vector<T> arr2vec(T[N] const & a)
+                            ^
+main.cpp:6:23: note: to match this '('
+std::vector<T> arr2vec(T[N] const & a)
+                      ^
+main.cpp:16:14: error: no matching function for call to 'arr2vec'
+    auto x = arr2vec(arr);
+             ^~~~~~~
+main.cpp:6:16: note: candidate template ignored: couldn't infer template argument 'N'
+std::vector<T> arr2vec(T[N] const & a)
+               ^
+2 errors generated.
