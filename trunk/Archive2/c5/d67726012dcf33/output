@@ -1,0 +1,23 @@
++ clang++ main.cpp -Wall -Wextra -pedantic-errors
+main.cpp:4:12: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+    strf = "strf";
+           ^
+main.cpp:6:14: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+char * ptr = "";
+             ^
+main.cpp:10:13: warning: address of function 'fstr' will always evaluate to 'true' [-Wpointer-bool-conversion]
+    cout << fstr;
+    ~~~~    ^~~~
+main.cpp:10:13: note: prefix with the address-of operator to silence this warning
+    cout << fstr;
+            ^
+            &
+main.cpp:8:14: warning: unused parameter 'argc' [-Wunused-parameter]
+int main(int argc, char** argv){
+             ^
+main.cpp:8:27: warning: unused parameter 'argv' [-Wunused-parameter]
+int main(int argc, char** argv){
+                          ^
+5 warnings generated.
++ ./a.out
+1
