@@ -1,0 +1,1 @@
+clang++ -std=c++14 -stdlib=libstdc++ -fsanitize=undefined -Wall -pedantic -pthread main.cpp && ./a.out
