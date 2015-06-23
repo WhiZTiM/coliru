@@ -1,0 +1,10 @@
+main.cpp:28:9: warning: unused variable 's2' [-Wunused-variable]
+  S<E1> s2;
+        ^
+main.cpp:29:9: warning: unused variable 's3' [-Wunused-variable]
+  S<E2> s3;
+        ^
+main.cpp:27:15: warning: unused variable 's1' [-Wunused-variable]
+  S<unsigned> s1;
+              ^
+3 warnings generated.
