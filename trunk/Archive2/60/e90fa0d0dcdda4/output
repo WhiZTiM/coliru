@@ -1,0 +1,30 @@
+main.cpp: In function 'int main()':
+main.cpp:67:6: error: request for member 'setReal' in 'c2', which is of non-class type 'Complex()'
+   c2.setReal(2.2);
+      ^
+main.cpp:68:6: error: request for member 'setImaginary' in 'c2', which is of non-class type 'Complex()'
+   c2.setImaginary(2.5);
+      ^
+main.cpp:69:6: error: request for member 'getReal' in 'c2', which is of non-class type 'Complex()'
+   c2.getReal();
+      ^
+main.cpp:70:6: error: request for member 'getImaginary' in 'c2', which is of non-class type 'Complex()'
+   c2.getImaginary();
+      ^
+main.cpp:71:19: error: no matching function for call to 'Complex::addComplex(Complex (&)())'
+   c1.addComplex(c2);
+                   ^
+main.cpp:53:6: note: candidate: void Complex::addComplex(Complex&)
+ void Complex::addComplex(Complex &comp)
+      ^
+main.cpp:53:6: note:   no known conversion for argument 1 from 'Complex()' to 'Complex&'
+main.cpp:72:24: error: no matching function for call to 'Complex::subtractComplex(Complex (&)())'
+   c1.subtractComplex(c2);
+                        ^
+main.cpp:58:6: note: candidate: void Complex::subtractComplex(Complex&)
+ void Complex::subtractComplex(Complex &comp)
+      ^
+main.cpp:58:6: note:   no known conversion for argument 1 from 'Complex()' to 'Complex&'
+main.cpp:74:6: error: request for member 'printComplex' in 'c2', which is of non-class type 'Complex()'
+   c2.printComplex();
+      ^
