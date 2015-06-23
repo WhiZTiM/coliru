@@ -1,0 +1,5 @@
+main.cpp: In instantiation of 'void FuncN<N>::operator()(T&& ...) [with T = {int, int, int}; int N = 4]':
+main.cpp:36:21:   required from here
+main.cpp:26:9: error: static assertion failed: Not allowed.
+         static_assert(is_n_ints<N, T...>::value, "Not allowed.");
+         ^
