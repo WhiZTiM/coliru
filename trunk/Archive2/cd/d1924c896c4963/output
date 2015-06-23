@@ -1,0 +1,29 @@
+main.cpp:10:22: error: 'ptr' has not been declared
+     Node(int myData, ptr = NULL) : data(myData),
+                      ^
+main.cpp:10:28: warning: converting to non-pointer type 'int' from NULL [-Wconversion-null]
+     Node(int myData, ptr = NULL) : data(myData),
+                            ^
+main.cpp: In constructor 'Node::Node(int, int)':
+main.cpp:11:31: error: 'ptr' was not declared in this scope
+                        p_next(ptr)  
+                               ^
+main.cpp: In function 'int main()':
+main.cpp:19:14: warning: converting to non-pointer type 'int' from NULL [-Wconversion-null]
+     Node n4(4);
+              ^
+main.cpp:20:19: error: invalid conversion from 'Node*' to 'int' [-fpermissive]
+     Node n3(3, &n4)
+                   ^
+main.cpp:10:5: note:   initializing argument 2 of 'Node::Node(int, int)'
+     Node(int myData, ptr = NULL) : data(myData),
+     ^
+main.cpp:21:5: error: expected ',' or ';' before 'Node'
+     Node n2(2, &n3);
+     ^
+main.cpp:22:17: error: 'n2' was not declared in this scope
+     Node n1(1, &n2);
+                 ^
+main.cpp:24:11: warning: unused variable 'head' [-Wunused-variable]
+     Node* head = &n1;
+           ^
