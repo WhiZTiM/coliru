@@ -1,0 +1,13 @@
+main.cpp:4:43: error: implicit instantiation of undefined template 'BitMaskTraits<SyntaxAttr>'
+template <typename T, typename = typename BitMaskTraits<T>::enabled>
+                                          ^
+main.cpp:95:3: note: in instantiation of default argument for 'BitMask<SyntaxAttr>' required here
+  BitMask<SyntaxAttr> MSA = SyntaxAttr::CXX;
+  ^~~~~~~~~~~~~~~~~~~
+main.cpp:2:8: note: template is declared here
+struct BitMaskTraits;
+       ^
+main.cpp:96:13: error: invalid argument type 'SyntaxAttr' to unary expression
+  if (MSA & ~SyntaxAttr::GNU)
+            ^~~~~~~~~~~~~~~~
+2 errors generated.
