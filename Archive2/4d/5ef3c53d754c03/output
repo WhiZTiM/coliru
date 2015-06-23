@@ -1,0 +1,11 @@
+main.cpp: In function 'int main()':
+main.cpp:15:12: error: no match for 'operator[]' (operand types are 'obj' and 'int')
+     cout<<a[4];
+            ^
+main.cpp:7:13: note: candidate: template<class varname> varname obj::operator[](int)
+     varname operator[] (int n){
+             ^
+main.cpp:7:13: note:   template argument deduction/substitution failed:
+main.cpp:15:14: note:   couldn't deduce template parameter 'varname'
+     cout<<a[4];
+              ^
