@@ -1,0 +1,1 @@
+clang++ -std=c++1z -O3 main.cpp -lpthread -Wall -lboost_system -lboost_timer && ./a.out
