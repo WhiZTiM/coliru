@@ -1,0 +1,7 @@
+main.cpp:95:15: error: invalid argument type 'SyntaxAttr' to unary expression
+    if (MSA & ~SyntaxAttr::GNU)
+              ^~~~~~~~~~~~~~~~
+main.cpp:97:12: error: invalid argument type 'SyntaxAttr' to unary expression
+    MSA &= ~SyntaxAttr::GNU;
+           ^~~~~~~~~~~~~~~~
+2 errors generated.
