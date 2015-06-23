@@ -1,0 +1,25 @@
++ g++-5.1 -std=c++11 -O3 -Wall -pedantic -Wextra -pthread -Wno-unused-variable -Wno-unused-parameter -pthread main.cpp
+main.cpp: In function 'int main()':
+main.cpp:28:7: error: request for member 'foo' is ambiguous
+     d.foo();    // error - ambiguous
+       ^
+main.cpp:14:16: note: candidates are: virtual void B2::foo()
+   virtual void foo() { cout << "Good riddance, B2!\n"; }
+                ^
+main.cpp:19:16: note:                 virtual void D2::foo()
+   virtual void foo() override { cout << __PRETTY_FUNCTION__ << '\n'; }
+                ^
+main.cpp:8:16: note:                 virtual void B1::foo()
+   virtual void foo() final { cout << "Hello, B1\n"; }
+                ^
++ clang++ -std=c++11 -O3 -Wall -pedantic -Wextra -pthread -Wno-unused-variable -Wno-unused-parameter -pthread main.cpp -stdlib=libc++ -lsupc++
+main.cpp:28:7: error: member 'foo' found in multiple base classes of different types
+    d.foo();    // error - ambiguous
+      ^
+main.cpp:8:16: note: member found by ambiguous name lookup
+  virtual void foo() final { cout << "Hello, B1\n"; }
+               ^
+main.cpp:19:16: note: member found by ambiguous name lookup
+  virtual void foo() override { cout << __PRETTY_FUNCTION__ << '\n'; }
+               ^
+1 error generated.
