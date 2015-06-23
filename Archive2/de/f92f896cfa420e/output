@@ -1,0 +1,17 @@
+g++
+
+main.cpp: In member function 'void A::B::bf()':
+main.cpp:16:12: error: 'f' was not declared in this scope
+         f(1);  // calls A::f(int);
+            ^
+main.cpp:16:12: note: suggested alternatives:
+main.cpp:5:6: note:   'f'
+ void f(char) LOUD()
+      ^
+main.cpp:10:21: note:   'A::f'
+         friend void f(int);    // A::f(int) is a friend
+                     ^
+clang++
+
+void f(char)
+void f(char)
