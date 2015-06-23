@@ -1,0 +1,16 @@
+main.cpp:1:11: error: '::main' must return 'int'
+ void main()
+           ^
+main.cpp: In function 'int main()':
+main.cpp:4:29: error: 'TEXT' was not declared in this scope
+     PlaySound(TEXT("036.wav"), NULL, SND_SYNC);
+                             ^
+main.cpp:4:32: error: 'NULL' was not declared in this scope
+     PlaySound(TEXT("036.wav"), NULL, SND_SYNC);
+                                ^
+main.cpp:4:38: error: 'SND_SYNC' was not declared in this scope
+     PlaySound(TEXT("036.wav"), NULL, SND_SYNC);
+                                      ^
+main.cpp:4:46: error: 'PlaySound' was not declared in this scope
+     PlaySound(TEXT("036.wav"), NULL, SND_SYNC);
+                                              ^
