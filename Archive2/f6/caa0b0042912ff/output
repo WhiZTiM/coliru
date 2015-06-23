@@ -1,0 +1,8 @@
+main.cpp: In function 'uint64_t hash(Key)':
+main.cpp:17:33: error: 'f' was not declared in this scope
+     result ^= (key.members[0] % f[0]) * f[0];
+                                 ^
+main.cpp: At global scope:
+main.cpp:26:6: error: 'vector' in namespace 'std' does not name a template type
+ std::vector<Key> keys;
+      ^
