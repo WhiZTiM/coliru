@@ -1,0 +1,4 @@
+main.cpp: In function 'int main()':
+main.cpp:8:13: error: cannot convert 'char (*)[8]' to 'char*' for argument '1' to 'void func(char*)'
+     func(arp);
+             ^
