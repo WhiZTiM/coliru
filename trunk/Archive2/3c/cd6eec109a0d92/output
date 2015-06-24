@@ -1,0 +1,14 @@
+main.cpp:13:65: error: only virtual member functions can be marked 'override'
+        streambuf* setbufdicksasdf(float a, float b, float c, float d) override;
+                                                                       ^~~~~~~~
+main.cpp:17:18: error: no matching constructor for initialization of 'vecbuf<char>'
+    vecbuf<char> v;
+                 ^
+main.cpp:12:2: note: candidate constructor not viable: requires 1 argument, but 0 were provided
+        vecbuf(shared_ptr<vector<T>>);
+        ^
+main.cpp:8:7: note: candidate constructor (the implicit move constructor) not viable: requires 1 argument, but 0 were provided
+class vecbuf : public streambuf{
+      ^
+main.cpp:8:7: note: candidate constructor (the implicit copy constructor) not viable: requires 1 argument, but 0 were provided
+2 errors generated.
