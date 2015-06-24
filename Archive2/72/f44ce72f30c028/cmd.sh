@@ -1,0 +1,1 @@
+echo compiling: && time clang++ -std=c++1z -O3 -ftemplate-depth-1024 main.cpp && echo running: && time ./a.out
