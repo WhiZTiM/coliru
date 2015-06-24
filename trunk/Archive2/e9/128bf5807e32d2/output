@@ -1,0 +1,4 @@
+x=20000000 y=20000000 average cost of notifying change to another core: 105.882ns
+x=20000000 y=20000000 average cost of notifying change to another core: 104.706ns
+x=20000000 y=20000000 average cost of notifying change to another core: 103.93ns
+on my pc it returns ~25ns
