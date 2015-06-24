@@ -1,0 +1,10 @@
+compiling:
+
+real	0m0.454s
+user	0m0.368s
+sys	0m0.080s
+running:
+15**15 = 437893890380859375
+real	0m0.005s
+user	0m0.000s
+sys	0m0.004s
