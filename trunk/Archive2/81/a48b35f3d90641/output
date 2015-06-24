@@ -1,0 +1,7 @@
+pointer to const member object
+pointer to (non-const) member object
+pointer to member function
+=======================
+pointer to const member object
+pointer to (non-const) member object
+pointer to member function
