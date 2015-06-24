@@ -1,0 +1,5 @@
+main.cpp:8:15: error: missing 'typename' prior to dependent type name 'std::vector<T>::iterator'
+using v_itt = std::vector<T>::iterator;
+              ^~~~~~~~~~~~~~~~~~~~~~~~
+              typename 
+1 error generated.
