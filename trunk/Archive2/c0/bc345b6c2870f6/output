@@ -1,0 +1,12 @@
+main.cpp:34:29: warning: unused parameter 'm' [-Wunused-parameter]
+ std::string open2(int n,int m)
+                             ^
+main.cpp:52:56: warning: unused parameter 'a' [-Wunused-parameter]
+     std::function<int(std::string)> s = [](std::string a) { return 5;  };   
+                                                        ^
+main.cpp: In function 'int main()':
+main.cpp:49:10: warning: variable 't' set but not used [-Wunused-but-set-variable]
+     auto t = [](std::string a) { return a.size();  };
+          ^
+open: 3
+close: Hello
