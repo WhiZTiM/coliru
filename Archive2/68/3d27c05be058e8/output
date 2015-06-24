@@ -1,0 +1,14 @@
+main.cpp: In member function 'void C<T>::g() [with T = A::C]':
+main.cpp:5:26: error: 'class A::C' is private
+ class A { class B; class C; };
+                          ^
+main.cpp:8:18: error: within this context
+ template <> void C<A::C>::g(); // Error 
+                  ^
+main.cpp:8:23: error: 'C' is a private member of 'A'
+template <> void C<A::C>::g(); // Error 
+                      ^
+main.cpp:5:26: note: implicitly declared private here
+class A { class B; class C; };
+                         ^
+1 error generated.
