@@ -1,0 +1,25 @@
+main.cpp: In function 'int main()':
+main.cpp:16:18: error: no matching function for call to 'test(Y&, double (Y::*)(int))'
+     test(y, &Y::f);
+                  ^
+main.cpp:4:6: note: candidate: template<class C, class F> decltype (((void)(test::c.*test::f()), void())) test(C, F)
+ auto test(C c, F f) -> decltype((void)(c.*f)(), void())
+      ^
+main.cpp:4:6: note:   template argument deduction/substitution failed:
+main.cpp: In substitution of 'template<class C, class F> decltype (((void)(test::c.*test::f()), void())) test(C, F) [with C = Y; F = double (Y::*)(int)]':
+main.cpp:16:18:   required from here
+main.cpp:4:45: error: too few arguments to function
+ auto test(C c, F f) -> decltype((void)(c.*f)(), void())
+                                             ^
+main.cpp:17:15: error: no matching function for call to 'test(Y&, int)'
+     test(y, 99);
+               ^
+main.cpp:4:6: note: candidate: template<class C, class F> decltype (((void)(test::c.*test::f()), void())) test(C, F)
+ auto test(C c, F f) -> decltype((void)(c.*f)(), void())
+      ^
+main.cpp:4:6: note:   template argument deduction/substitution failed:
+main.cpp: In substitution of 'template<class C, class F> decltype (((void)(test::c.*test::f()), void())) test(C, F) [with C = Y; F = int]':
+main.cpp:17:15:   required from here
+main.cpp:4:41: error: 'f' cannot be used as a member pointer, since it is of type 'int'
+ auto test(C c, F f) -> decltype((void)(c.*f)(), void())
+                                         ^
