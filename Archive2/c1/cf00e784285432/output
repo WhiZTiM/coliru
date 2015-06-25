@@ -1,0 +1,16 @@
+main.cpp:12:33: warning: ISO C++ prohibits anonymous structs [-Wpedantic]
+     struct {TNumeric    Numeric;};
+                                 ^
+main.cpp:12:25: error: member 'TNumeric TValue::<anonymous struct>::Numeric' with constructor not allowed in anonymous aggregate
+     struct {TNumeric    Numeric;};
+                         ^
+main.cpp:12:25: error: member 'TNumeric TValue::<anonymous struct>::Numeric' with destructor not allowed in anonymous aggregate
+main.cpp:12:25: error: member 'TNumeric TValue::<anonymous struct>::Numeric' with copy assignment operator not allowed in anonymous aggregate
+main.cpp:13:29: warning: ISO C++ prohibits anonymous structs [-Wpedantic]
+     struct {string     Text;};
+                             ^
+main.cpp:13:24: error: member 'std::__cxx11::string TValue::<anonymous struct>::Text' with constructor not allowed in anonymous aggregate
+     struct {string     Text;};
+                        ^
+main.cpp:13:24: error: member 'std::__cxx11::string TValue::<anonymous struct>::Text' with destructor not allowed in anonymous aggregate
+main.cpp:13:24: error: member 'std::__cxx11::string TValue::<anonymous struct>::Text' with copy assignment operator not allowed in anonymous aggregate
