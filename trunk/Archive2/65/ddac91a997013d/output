@@ -1,0 +1,10 @@
+main.cpp: In function 'int main()':
+main.cpp:25:9: warning: variable 'temp2' set but not used [-Wunused-but-set-variable]
+     Bar temp2 = Foo(10);
+         ^
+in Foo constructor
+in Foo copy constructor
+in Bar constructor
+in Foo constructor
+in Foo copy constructor
+in Bar constructor
