@@ -1,0 +1,7 @@
+main.cpp:23:5: warning: identifier 'nullptr' will become a keyword in C++0x [-Wc++0x-compat]
+main.cpp: In function 'int main()':
+main.cpp:7:10: error: extended initializer lists only available with -std=c++0x or -std=gnu++0x
+main.cpp:11:13: error: extended initializer lists only available with -std=c++0x or -std=gnu++0x
+main.cpp:23:9: error: 'nullptr' was not declared in this scope
+main.cpp:26:20: error: extended initializer lists only available with -std=c++0x or -std=gnu++0x
+main.cpp:26:20: error: extended initializer lists only available with -std=c++0x or -std=gnu++0x
