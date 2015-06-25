@@ -1,0 +1,6 @@
+main.cpp:19:35: error: could not convert template argument 'quasi_closure{}' to 'void (*)()'
+ using C = carrier<quasi_closure {}> {};
+                                   ^
+main.cpp:19:39: warning: extra ';' [-Wpedantic]
+ using C = carrier<quasi_closure {}> {};
+                                       ^
