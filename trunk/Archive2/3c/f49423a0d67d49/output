@@ -1,0 +1,26 @@
+g++ (GCC) 5.1.0
+Copyright (C) 2015 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+main.cpp: In function 'int main()':
+main.cpp:6:16: error: no matching function for call to 'foo(float, int)'
+     foo(42.f, 4);
+                ^
+main.cpp:2:6: note: candidate: template<class ... Ts> void foo(Ts ..., int)
+ void foo(Ts..., int) {}
+      ^
+main.cpp:2:6: note:   template argument deduction/substitution failed:
+main.cpp:6:16: note:   candidate expects 1 argument, 2 provided
+     foo(42.f, 4);
+                ^
+clang version 3.6.0 (tags/RELEASE_360/final 235480)
+Target: x86_64-unknown-linux-gnu
+Thread model: posix
+main.cpp:6:5: error: no matching function for call to 'foo'
+    foo(42.f, 4);
+    ^~~
+main.cpp:2:6: note: candidate function not viable: requires 1 argument, but 2 were provided
+void foo(Ts..., int) {}
+     ^
+1 error generated.
