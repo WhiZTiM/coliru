@@ -1,0 +1,1 @@
+echo lol clang++ main.cpp -o MonProgramme -std=c++14 -Wall -Wextra -pedantic -O2 && ./MonProgramme
