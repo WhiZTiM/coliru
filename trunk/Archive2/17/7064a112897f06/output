@@ -1,0 +1,86 @@
+main.cpp:7:28: error: a brace-enclosed initializer is not allowed here before '{' token
+main.cpp:7:34: error: ISO C++ forbids initialization of member 'mem' [-fpermissive]
+main.cpp:7:34: error: making 'mem' static [-fpermissive]
+main.cpp:7:34: error: invalid in-class initialization of static data member of non-integral type 'std::vector<int>'
+main.cpp: In constructor 'Foo::Foo()':
+main.cpp:9:13: error: extended initializer lists only available with -std=c++0x or -std=gnu++0x
+main.cpp:9:28: error: no matching function for call to 'std::vector<int>::vector(<brace-enclosed initializer list>)'
+main.cpp:9:28: note: candidates are:
+/usr/include/c++/4.6/bits/stl_vector.h:334:9: note: template<class _InputIterator> std::vector::vector(_InputIterator, _InputIterator, const allocator_type&)
+/usr/include/c++/4.6/bits/stl_vector.h:278:7: note: std::vector<_Tp, _Alloc>::vector(const std::vector<_Tp, _Alloc>&) [with _Tp = int, _Alloc = std::allocator<int>, std::vector<_Tp, _Alloc> = std::vector<int>]
+/usr/include/c++/4.6/bits/stl_vector.h:278:7: note:   candidate expects 1 argument, 3 provided
+/usr/include/c++/4.6/bits/stl_vector.h:263:7: note: std::vector<_Tp, _Alloc>::vector(std::vector<_Tp, _Alloc>::size_type, const value_type&, const allocator_type&) [with _Tp = int, _Alloc = std::allocator<int>, std::vector<_Tp, _Alloc>::size_type = long unsigned int, std::vector<_Tp, _Alloc>::value_type = int, std::vector<_Tp, _Alloc>::allocator_type = std::allocator<int>]
+/usr/include/c++/4.6/bits/stl_vector.h:263:7: note:   no known conversion for argument 3 from 'int' to 'const allocator_type& {aka const std::allocator<int>&}'
+/usr/include/c++/4.6/bits/stl_vector.h:225:7: note: std::vector<_Tp, _Alloc>::vector(const allocator_type&) [with _Tp = int, _Alloc = std::allocator<int>, std::vector<_Tp, _Alloc>::allocator_type = std::allocator<int>]
+/usr/include/c++/4.6/bits/stl_vector.h:225:7: note:   candidate expects 1 argument, 3 provided
+/usr/include/c++/4.6/bits/stl_vector.h:217:7: note: std::vector<_Tp, _Alloc>::vector() [with _Tp = int, _Alloc = std::allocator<int>]
+/usr/include/c++/4.6/bits/stl_vector.h:217:7: note:   candidate expects 0 arguments, 3 provided
+main.cpp: In function 'std::pair<std::basic_string<char>, std::basic_string<char> > f(std::pair<std::basic_string<char>, std::basic_string<char> >)':
+main.cpp:14:5: error: extended initializer lists only available with -std=c++0x or -std=gnu++0x
+main.cpp: In function 'int main()':
+main.cpp:19:9: error: extended initializer lists only available with -std=c++0x or -std=gnu++0x
+main.cpp:19:12: error: extended initializer lists only available with -std=c++0x or -std=gnu++0x
+main.cpp:20:9: error: extended initializer lists only available with -std=c++0x or -std=gnu++0x
+main.cpp:21:17: error: extended initializer lists only available with -std=c++0x or -std=gnu++0x
+main.cpp:21:38: error: in C++98 's1' must be initialized by constructor, not by '{...}'
+main.cpp:21:38: error: no matching function for call to 'std::basic_string<char>::basic_string(<brace-enclosed initializer list>)'
+main.cpp:21:38: note: candidates are:
+/usr/include/c++/4.6/bits/basic_string.h:527:9: note: template<class _InputIterator> std::basic_string::basic_string(_InputIterator, _InputIterator, const _Alloc&)
+/usr/include/c++/4.6/bits/basic_string.tcc:221:5: note: std::basic_string<_CharT, _Traits, _Alloc>::basic_string(std::basic_string<_CharT, _Traits, _Alloc>::size_type, _CharT, const _Alloc&) [with _CharT = char, _Traits = std::char_traits<char>, _Alloc = std::allocator<char>, std::basic_string<_CharT, _Traits, _Alloc>::size_type = long unsigned int]
+/usr/include/c++/4.6/bits/basic_string.tcc:221:5: note:   candidate expects 3 arguments, 4 provided
+/usr/include/c++/4.6/bits/basic_string.tcc:214:5: note: std::basic_string<_CharT, _Traits, _Alloc>::basic_string(const _CharT*, const _Alloc&) [with _CharT = char, _Traits = std::char_traits<char>, _Alloc = std::allocator<char>]
+/usr/include/c++/4.6/bits/basic_string.tcc:214:5: note:   candidate expects 2 arguments, 4 provided
+/usr/include/c++/4.6/bits/basic_string.tcc:207:5: note: std::basic_string<_CharT, _Traits, _Alloc>::basic_string(const _CharT*, std::basic_string<_CharT, _Traits, _Alloc>::size_type, const _Alloc&) [with _CharT = char, _Traits = std::char_traits<char>, _Alloc = std::allocator<char>, std::basic_string<_CharT, _Traits, _Alloc>::size_type = long unsigned int]
+/usr/include/c++/4.6/bits/basic_string.tcc:207:5: note:   candidate expects 3 arguments, 4 provided
+/usr/include/c++/4.6/bits/basic_string.tcc:195:5: note: std::basic_string<_CharT, _Traits, _Alloc>::basic_string(const std::basic_string<_CharT, _Traits, _Alloc>&, std::basic_string<_CharT, _Traits, _Alloc>::size_type, std::basic_string<_CharT, _Traits, _Alloc>::size_type, const _Alloc&) [with _CharT = char, _Traits = std::char_traits<char>, _Alloc = std::allocator<char>, std::basic_string<_CharT, _Traits, _Alloc> = std::basic_string<char>, std::basic_string<_CharT, _Traits, _Alloc>::size_type = long unsigned int]
+/usr/include/c++/4.6/bits/basic_string.tcc:195:5: note:   no known conversion for argument 1 from 'char' to 'const std::basic_string<char>&'
+/usr/include/c++/4.6/bits/basic_string.tcc:185:5: note: std::basic_string<_CharT, _Traits, _Alloc>::basic_string(const std::basic_string<_CharT, _Traits, _Alloc>&, std::basic_string<_CharT, _Traits, _Alloc>::size_type, std::basic_string<_CharT, _Traits, _Alloc>::size_type) [with _CharT = char, _Traits = std::char_traits<char>, _Alloc = std::allocator<char>, std::basic_string<_CharT, _Traits, _Alloc> = std::basic_string<char>, std::basic_string<_CharT, _Traits, _Alloc>::size_type = long unsigned int]
+/usr/include/c++/4.6/bits/basic_string.tcc:185:5: note:   candidate expects 3 arguments, 4 provided
+/usr/include/c++/4.6/bits/basic_string.tcc:171:5: note: std::basic_string<_CharT, _Traits, _Alloc>::basic_string(const std::basic_string<_CharT, _Traits, _Alloc>&) [with _CharT = char, _Traits = std::char_traits<char>, _Alloc = std::allocator<char>, std::basic_string<_CharT, _Traits, _Alloc> = std::basic_string<char>]
+/usr/include/c++/4.6/bits/basic_string.tcc:171:5: note:   candidate expects 1 argument, 4 provided
+/usr/include/c++/4.6/bits/basic_string.tcc:179:5: note: std::basic_string<_CharT, _Traits, _Alloc>::basic_string(const _Alloc&) [with _CharT = char, _Traits = std::char_traits<char>, _Alloc = std::allocator<char>]
+/usr/include/c++/4.6/bits/basic_string.tcc:179:5: note:   candidate expects 1 argument, 4 provided
+/usr/include/c++/4.6/bits/basic_string.h:432:7: note: std::basic_string<_CharT, _Traits, _Alloc>::basic_string() [with _CharT = char, _Traits = std::char_traits<char>, _Alloc = std::allocator<char>]
+/usr/include/c++/4.6/bits/basic_string.h:432:7: note:   candidate expects 0 arguments, 4 provided
+main.cpp:22:17: error: extended initializer lists only available with -std=c++0x or -std=gnu++0x
+main.cpp:22:28: error: in C++98 's2' must be initialized by constructor, not by '{...}'
+main.cpp:23:17: error: extended initializer lists only available with -std=c++0x or -std=gnu++0x
+main.cpp:23:29: error: in C++98 's3' must be initialized by constructor, not by '{...}'
+main.cpp:26:16: error: extended initializer lists only available with -std=c++0x or -std=gnu++0x
+main.cpp:32:5: error: in C++98 'm' must be initialized by constructor, not by '{...}'
+main.cpp:32:5: error: deducing from brace-enclosed initializer list requires #include <initializer_list>
+main.cpp:32:5: error: deducing from brace-enclosed initializer list requires #include <initializer_list>
+main.cpp:32:5: error: deducing from brace-enclosed initializer list requires #include <initializer_list>
+main.cpp:32:5: error: deducing from brace-enclosed initializer list requires #include <initializer_list>
+main.cpp:32:5: error: extended initializer lists only available with -std=c++0x or -std=gnu++0x
+main.cpp:32:5: error: could not convert '{{1, "a"}, {2, {'a', 'b', 'c'}}, {3, s1}}' from '<brace-enclosed initializer list>' to 'std::map<int, std::basic_string<char> >'
+main.cpp:34:19: error: extended initializer lists only available with -std=c++0x or -std=gnu++0x
+main.cpp:37:30: error: extended initializer lists only available with -std=c++0x or -std=gnu++0x
+main.cpp:38:8: error: expected unqualified-id before '&&' token
+main.cpp:42:19: error: extended initializer lists only available with -std=c++0x or -std=gnu++0x
+main.cpp:49:9: warning: 'auto' will change meaning in C++0x; please remove it [-Wc++0x-compat]
+main.cpp:49:14: error: 'p' does not name a type
+main.cpp:51:5: error: expected ';' before 'for'
+main.cpp:51:5: error: expected primary-expression before 'for'
+main.cpp:51:5: error: expected ';' before 'for'
+main.cpp:51:5: error: expected primary-expression before 'for'
+main.cpp:51:5: error: expected ')' before 'for'
+main.cpp:51:9: warning: 'auto' will change meaning in C++0x; please remove it [-Wc++0x-compat]
+main.cpp:51:14: error: 'n' does not name a type
+main.cpp:53:5: error: expected ';' before 'for'
+main.cpp:53:5: error: expected primary-expression before 'for'
+main.cpp:53:5: error: expected ';' before 'for'
+main.cpp:53:5: error: expected primary-expression before 'for'
+main.cpp:53:5: error: expected ')' before 'for'
+main.cpp:53:9: warning: 'auto' will change meaning in C++0x; please remove it [-Wc++0x-compat]
+main.cpp:53:14: error: 'n' does not name a type
+main.cpp:55:1: error: expected ';' before '}' token
+main.cpp:55:1: error: expected primary-expression before '}' token
+main.cpp:55:1: error: expected ';' before '}' token
+main.cpp:55:1: error: expected primary-expression before '}' token
+main.cpp:55:1: error: expected ')' before '}' token
+main.cpp:55:1: error: expected primary-expression before '}' token
+main.cpp:55:1: error: expected ';' before '}' token
+main.cpp:26:12: warning: unused variable 'd' [-Wunused-variable]
+main.cpp:37:17: warning: unused variable 'ar' [-Wunused-variable]
+main.cpp:42:19: warning: unused variable 'uc1' [-Wunused-variable]
