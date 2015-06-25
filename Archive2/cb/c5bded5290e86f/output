@@ -1,0 +1,7 @@
+main.cpp: In function 'int main()':
+main.cpp:9:11: error: use of deleted function 'constexpr eh::eh(const eh&)'
+     eh h{e}; //Ill-formed - copy constructor explicitly deleted (gotten rid of)
+           ^
+main.cpp:2:8: note: 'constexpr eh::eh(const eh&)' is implicitly declared as deleted because 'eh' declares a move constructor or move assignment operator
+ struct eh {
+        ^
