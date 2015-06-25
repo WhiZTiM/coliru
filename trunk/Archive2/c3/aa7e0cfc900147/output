@@ -1,0 +1,8 @@
+clang version 3.6.0 (tags/RELEASE_360/final 235480)
+clang++ ok
+=======================
+g++ (GCC) 5.1.0
+main.cpp: In function 'int main()':
+main.cpp:23:62: error: cannot convert 'void (main()::example::*)(int) &' to 'void (main()::example::*)(int)' in initialization
+     ref_qualified_member_fn_type example::*pmfnr = &example::ref_qualified_member_function ;
+                                                              ^
