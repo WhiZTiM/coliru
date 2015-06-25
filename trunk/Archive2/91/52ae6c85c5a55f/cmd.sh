@@ -1,0 +1,1 @@
+(time clang++ -stdlib=libc++ -std=gnu++1z -Ofast -w -Weverything -pedantic -Wno-c++98-compat -Wno-c++98-compat-pedantic -Wno-newline-eof -Wno-padded -ftemplate-depth=101325 main.cpp -D__extern_always_inline=inline -o test) && ./test
