@@ -1,0 +1,12 @@
++ mv main.cpp main.c
++ gcc -std=c99 -O0 -Wall -Wextra -pedantic -pthread main.c
+main.c:5:19: error: expected ':', ',', ';', '}' or '__attribute__' before '=' token
+     char name[20] = { 0 };
+                   ^
+main.c:4:8: warning: struct has no members [-Wpedantic]
+ struct site{
+        ^
+main.c: In function 'main':
+main.c:12:17: warning: unused variable 'a' [-Wunused-variable]
+     struct site a;
+                 ^
