@@ -1,0 +1,6 @@
+sizeof(Empty) 1
+sizeof(Derived1) 1
+sizeof(Derived2) 8
+sizeof(Derived3) 1
+sizeof(Derived4) 16
+sizeof(Dummy) 1
