@@ -1,0 +1,4 @@
+main.cpp:8:29: error: 'gibe_f()' is not a valid template argument for type 'void (*)()'
+ using lol = carrier<gibe_f()>;
+                             ^
+main.cpp:8:29: error: it must be the address of a function with external linkage
