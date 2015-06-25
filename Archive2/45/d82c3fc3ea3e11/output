@@ -1,0 +1,3 @@
+lari
+fs.is_open() = true
+fs.good() = true
