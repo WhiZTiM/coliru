@@ -1,0 +1,22 @@
++ mv main.cpp main.c
++ gcc -std=c89 -O0 -Wall -Wextra -pedantic -pthread main.c
+main.c:6:5: error: unknown type name 'node'
+     node *next;
+     ^
+main.c: In function 'newBeg':
+main.c:16:23: error: request for member 'value' in something not a structure or union
+         if(temp1->next->value == value){
+                       ^
+main.c:18:20: warning: return from incompatible pointer type [-Wincompatible-pointer-types]
+             return temp1->next;
+                    ^
+main.c:12:19: warning: unused variable 'temp2' [-Wunused-variable]
+     node *temp1, *temp2;
+                   ^
+main.c: In function 'main':
+main.c:29:12: error: request for member 'value' in something not a structure or union
+     l->next->value = 3;
+            ^
+main.c:30:12: error: request for member 'next' in something not a structure or union
+     l->next->next = NULL;
+            ^
