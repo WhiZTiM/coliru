@@ -1,0 +1,2 @@
+terminate called after throwing an instance of 'eh'
+bash: line 7: 16537 Aborted                 (core dumped) ./a.out
