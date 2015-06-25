@@ -1,0 +1,8 @@
+main.cpp: In function 'int main()':
+main.cpp:44:36: error: ambiguous overload for 'operator+' (operand types are '{anonymous}::Number' and 'double')
+     std::cout << x + 3 << " " << x + 3.4 << std::endl; 
+                                    ^
+main.cpp:44:36: note: candidate: operator+(double, double) <built-in>
+main.cpp:13:16: note: candidate: {anonymous}::Number {anonymous}::Number::operator+(int) const
+         Number operator + (int value) const
+                ^
