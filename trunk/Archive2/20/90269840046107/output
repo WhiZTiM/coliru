@@ -1,0 +1,8 @@
++ mv main.cpp main.c
++ gcc -std=c89 -O0 -Wall -Wextra -pedantic -pthread main.c
+main.c: In function 'newBeg':
+main.c:12:19: warning: unused variable 'temp2' [-Wunused-variable]
+     node *temp1, *temp2;
+                   ^
++ ./a.out
+bash: line 7: 12390 Segmentation fault      (core dumped) ./a.out <<< "a\nb\n.\n"
