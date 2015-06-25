@@ -1,0 +1,2 @@
+lol clang++ main.cpp -o MonProgramme -std=c++14 -Wall -Wextra -pedantic -O2
+bash: line 7: ./MonProgramme: No such file or directory
