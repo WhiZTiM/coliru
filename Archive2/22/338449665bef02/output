@@ -1,0 +1,18 @@
++ clang++ -O3 -std=c++11 main.cpp -Wall -Wextra -pedantic-errors -stdlib=libc++ -lsupc++
+main.cpp:11:9: error: no matching constructor for initialization of 'foo'
+    foo f{1,"hello"};
+        ^~~~~~~~~~~~
+main.cpp:2:8: note: candidate constructor (the implicit move constructor) not viable: requires 1 argument, but 2 were provided
+struct foo
+       ^
+main.cpp:2:8: note: candidate constructor (the implicit copy constructor) not viable: requires 1 argument, but 2 were provided
+main.cpp:2:8: note: candidate constructor (the implicit default constructor) not viable: requires 0 arguments, but 2 were provided
+main.cpp:12:9: error: no matching constructor for initialization of 'foo'
+    foo f2{1,"world",5.0};
+        ^ ~~~~~~~~~~~~~~~
+main.cpp:2:8: note: candidate constructor (the implicit move constructor) not viable: requires 1 argument, but 3 were provided
+struct foo
+       ^
+main.cpp:2:8: note: candidate constructor (the implicit copy constructor) not viable: requires 1 argument, but 3 were provided
+main.cpp:2:8: note: candidate constructor (the implicit default constructor) not viable: requires 0 arguments, but 3 were provided
+2 errors generated.
