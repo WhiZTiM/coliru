@@ -1,0 +1,8 @@
+main.cpp: In instantiation of 'void fn(const A<T>&) [with T = double]':
+main.cpp:43:10:   required from here
+main.cpp:12:7: error: 'double A<double>::d_priv' is private
+     T d_priv;
+       ^
+main.cpp:34:15: error: within this context
+     std::cout << a.d_priv << std::endl;
+               ^
