@@ -1,0 +1,30 @@
+main.cpp: In constructor 'TextNode::TextNode(std::__cxx11::string)':
+main.cpp:12:5: error: expected '{' before 'TextNode'
+     TextNode(const char* text) : _text(text)
+     ^
+main.cpp: At global scope:
+main.cpp:15:30: error: expected '{' before ';' token
+ class PlainTextNode: TextNode;
+                              ^
+main.cpp:16:1: error: expected unqualified-id before '{' token
+ {
+ ^
+main.cpp:20:29: error: expected '{' before ';' token
+ class BoldTextNode: TextNode;
+                             ^
+main.cpp:21:1: error: expected unqualified-id before '{' token
+ {
+ ^
+main.cpp:25:31: error: expected '{' before ';' token
+ class ItalicTextNode: TextNode;
+                               ^
+main.cpp:26:1: error: expected unqualified-id before '{' token
+ {
+ ^
+main.cpp:49:1: error: expected ';' after class definition
+ }
+ ^
+main.cpp: In function 'int main()':
+main.cpp:54:13: error: expected '}' at end of input
+     r.Read();
+             ^
