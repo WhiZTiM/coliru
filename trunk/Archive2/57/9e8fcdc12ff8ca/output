@@ -1,0 +1,9 @@
+main.cpp: In function 'int main()':
+main.cpp:9:30: warning: '<anonymous>' may be used uninitialized in this function [-Wmaybe-uninitialized]
+         std::cout << "b " << x_ << std::endl;
+                              ^
+main.cpp:16:12: note: '<anonymous>' was declared here
+     Foo f(2);
+            ^
+a 2
+b 0
