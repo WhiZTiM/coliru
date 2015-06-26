@@ -1,0 +1,4 @@
+main.cpp: In function 'int main()':
+main.cpp:12:10: warning: variable 'point' set but not used [-Wunused-but-set-variable]
+     auto point = C{}.get_point();
+          ^
