@@ -1,0 +1,24 @@
++ g++ -O3 -std=c++11 main.cpp -Wall -Wextra -pedantic-errors
+main.cpp: In function 'int main()':
+main.cpp:11:20: error: no matching function for call to 'foo::foo(<brace-enclosed initializer list>)'
+     foo f{1,"hello"};
+                    ^
+main.cpp:2:8: note: candidate: foo::foo()
+ struct foo
+        ^
+main.cpp:2:8: note:   candidate expects 0 arguments, 2 provided
+main.cpp:2:8: note: candidate: foo::foo(const foo&)
+main.cpp:2:8: note:   candidate expects 1 argument, 2 provided
+main.cpp:2:8: note: candidate: foo::foo(foo&&)
+main.cpp:2:8: note:   candidate expects 1 argument, 2 provided
+main.cpp:12:25: error: no matching function for call to 'foo::foo(<brace-enclosed initializer list>)'
+     foo f2{1,"world",5.0};
+                         ^
+main.cpp:2:8: note: candidate: foo::foo()
+ struct foo
+        ^
+main.cpp:2:8: note:   candidate expects 0 arguments, 3 provided
+main.cpp:2:8: note: candidate: foo::foo(const foo&)
+main.cpp:2:8: note:   candidate expects 1 argument, 3 provided
+main.cpp:2:8: note: candidate: foo::foo(foo&&)
+main.cpp:2:8: note:   candidate expects 1 argument, 3 provided
