@@ -1,0 +1,1 @@
+ls -l /usr/local/bin
