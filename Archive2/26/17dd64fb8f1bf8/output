@@ -1,0 +1,3 @@
+terminate called after throwing an instance of 'invalid_input_exception'
+  what():  
+bash: line 7: 13542 Aborted                 (core dumped) ./a.out AD
