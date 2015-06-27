@@ -1,0 +1,5 @@
+main.cpp: In lambda function:
+main.cpp:25:23: warning: unused variable 'very_big_array' [-Wunused-variable]
+             long long very_big_array[100000]; // tail call opted.
+                       ^
+1346269
