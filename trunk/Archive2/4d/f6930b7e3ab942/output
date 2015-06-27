@@ -1,0 +1,160 @@
+main.cpp:76:13: error: no matching constructor for initialization of 'box' (aka 'box<point>')
+        box query_box({cii->x - delta, cii->y - delta}, {cii->x + delta, cii->y + delta});
+            ^         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/local/include/boost/geometry/geometries/box.hpp:58:12: note: candidate constructor not viable: cannot convert initializer list argument to 'const boost::geometry::model::point<double, 2, boost::geometry::cs::cartesian>'
+    inline box(Point const& min_corner, Point const& max_corner)
+           ^
+/usr/local/include/boost/geometry/geometries/box.hpp:47:7: note: candidate constructor (the implicit copy constructor) not viable: requires 1 argument, but 2 were provided
+class box
+      ^
+/usr/local/include/boost/geometry/geometries/box.hpp:47:7: note: candidate constructor (the implicit move constructor) not viable: requires 1 argument, but 2 were provided
+/usr/local/include/boost/geometry/geometries/box.hpp:53:12: note: candidate constructor not viable: requires 0 arguments, but 2 were provided
+    inline box() {}
+           ^
+In file included from main.cpp:8:
+In file included from /usr/local/include/boost/geometry/geometry.hpp:19:
+In file included from /usr/local/include/boost/geometry/core/closure.hpp:24:
+In file included from /usr/local/include/boost/range/value_type.hpp:19:
+In file included from /usr/local/include/boost/range/iterator.hpp:24:
+/usr/local/include/boost/mpl/eval_if.hpp:60:26: error: no type named 'type' in 'boost::range_mutable_iterator<particle, void>'
+    typedef typename f_::type type;
+            ~~~~~~~~~~~~~^~~~
+/usr/local/include/boost/range/iterator.hpp:65:31: note: in instantiation of template class 'boost::mpl::eval_if_c<false, boost::range_const_iterator<particle, void>, boost::range_mutable_iterator<particle, void> >' requested here
+        typedef typename mpl::eval_if_c<
+                              ^
+/usr/local/include/boost/mpl/aux_/has_type.hpp:20:1: note: in instantiation of template class 'boost::range_iterator<particle, void>' requested here
+BOOST_MPL_HAS_XXX_TRAIT_NAMED_DEF(has_type, type, true)
+^
+/usr/local/include/boost/mpl/has_xxx.hpp:245:65: note: expanded from macro 'BOOST_MPL_HAS_XXX_TRAIT_NAMED_DEF'
+            , boost::mpl::aux::type_wrapper<BOOST_MSVC_TYPENAME U::name>* = 0 \
+                                                                ^
+/usr/local/include/boost/mpl/aux_/has_type.hpp:20:1: note: while substituting deduced template arguments into function template 'test' [with U = boost::range_iterator<particle, void>]
+BOOST_MPL_HAS_XXX_TRAIT_NAMED_DEF(has_type, type, true)
+^
+/usr/local/include/boost/mpl/has_xxx.hpp:253:18: note: expanded from macro 'BOOST_MPL_HAS_XXX_TRAIT_NAMED_DEF'
+          sizeof(gcc_3_2_wknd::test(static_cast<t_*>(0))) \
+                 ^
+/usr/local/include/boost/config/suffix.hpp:394:72: note: expanded from macro 'BOOST_STATIC_CONSTANT'
+#     define BOOST_STATIC_CONSTANT(type, assignment) static const type assignment
+                                                                       ^
+/usr/local/include/boost/geometry/index/detail/meta.hpp:22:7: note: in instantiation of template class 'boost::mpl::aux::has_type<boost::range_iterator<particle, void>, mpl_::bool_<true> >' requested here
+    : ::boost::mpl::aux::has_type< ::boost::range_iterator<T> >
+      ^
+/usr/local/include/boost/geometry/index/rtree.hpp:1403:39: note: in instantiation of template class 'boost::geometry::index::detail::is_range<particle>' requested here
+        BOOST_MPL_ASSERT_MSG((detail::is_range<Range>::value),
+                                      ^
+/usr/local/include/boost/mpl/assert.hpp:436:56: note: expanded from macro 'BOOST_MPL_ASSERT_MSG'
+BOOST_MPL_ASSERT_MSG_IMPL( BOOST_MPL_AUX_PP_COUNTER(), c, msg, types_ ) \
+                                                       ^
+/usr/local/include/boost/mpl/assert.hpp:429:39: note: expanded from macro '\
+BOOST_MPL_ASSERT_MSG_IMPL'
+        boost::mpl::assertion_failed<(c)>( BOOST_PP_CAT(mpl_assert_arg,counter)::assert_arg() ) \
+                                      ^
+/usr/local/include/boost/mpl/assert.hpp:60:58: note: expanded from macro '\
+BOOST_MPL_AUX_ASSERT_CONSTANT'
+#   define BOOST_MPL_AUX_ASSERT_CONSTANT(T, expr) enum { expr }
+                                                         ^
+/usr/local/include/boost/geometry/index/rtree.hpp:615:15: note: in instantiation of function template specialization 'boost::geometry::index::rtree<boost::geometry::model::point<double, 2, boost::geometry::cs::cartesian>, boost::geometry::index::quadratic<16, 4>, boost::geometry::index::indexable<boost::geometry::model::point<double, 2, boost::geometry::cs::cartesian> >, boost::geometry::index::equal_to<boost::geometry::model::point<double, 2, boost::geometry::cs::cartesian> >, std::allocator<boost::geometry::model::point<double, 2, boost::geometry::cs::cartesian> > >::insert_dispatch<particle>' requested here
+        this->insert_dispatch(conv_or_rng, is_conv_t());
+              ^
+main.cpp:55:15: note: in instantiation of function template specialization 'boost::geometry::index::rtree<boost::geometry::model::point<double, 2, boost::geometry::cs::cartesian>, boost::geometry::index::quadratic<16, 4>, boost::geometry::index::indexable<boost::geometry::model::point<double, 2, boost::geometry::cs::cartesian> >, boost::geometry::index::equal_to<boost::geometry::model::point<double, 2, boost::geometry::cs::cartesian> >, std::allocator<boost::geometry::model::point<double, 2, boost::geometry::cs::cartesian> > >::insert<particle>' requested here
+        rtree.insert(particle {p.x, p.y});
+              ^
+In file included from main.cpp:8:
+In file included from /usr/local/include/boost/geometry/geometry.hpp:48:
+In file included from /usr/local/include/boost/geometry/algorithms/buffer.hpp:32:
+In file included from /usr/local/include/boost/geometry/algorithms/detail/buffer/buffer_inserter.hpp:27:
+In file included from /usr/local/include/boost/geometry/algorithms/detail/buffer/buffered_piece_collection.hpp:32:
+In file included from /usr/local/include/boost/geometry/algorithms/detail/buffer/turn_in_piece_visitor.hpp:24:
+In file included from /usr/local/include/boost/geometry/algorithms/comparable_distance.hpp:23:
+In file included from /usr/local/include/boost/geometry/algorithms/detail/comparable_distance/implementation.hpp:22:
+In file included from /usr/local/include/boost/geometry/algorithms/detail/distance/implementation.hpp:25:
+In file included from /usr/local/include/boost/geometry/algorithms/detail/distance/multipoint_to_geometry.hpp:26:
+In file included from /usr/local/include/boost/geometry/algorithms/detail/distance/range_to_geometry_rtree.hpp:26:
+In file included from /usr/local/include/boost/geometry/algorithms/detail/closest_feature/range_to_range.hpp:23:
+/usr/local/include/boost/geometry/index/rtree.hpp:1403:9: error: no matching function for call to 'assertion_failed'
+        BOOST_MPL_ASSERT_MSG((detail::is_range<Range>::value),
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/local/include/boost/mpl/assert.hpp:435:48: note: expanded from macro 'BOOST_MPL_ASSERT_MSG'
+#define BOOST_MPL_ASSERT_MSG( c, msg, types_ ) \
+                                               ^
+/usr/local/include/boost/mpl/assert.hpp:429:9: note: expanded from macro '\
+BOOST_MPL_ASSERT_MSG_IMPL'
+        boost::mpl::assertion_failed<(c)>( BOOST_PP_CAT(mpl_assert_arg,counter)::assert_arg() ) \
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/local/include/boost/mpl/assert.hpp:60:58: note: expanded from macro '\
+BOOST_MPL_AUX_ASSERT_CONSTANT'
+#   define BOOST_MPL_AUX_ASSERT_CONSTANT(T, expr) enum { expr }
+                                                         ^
+/usr/local/include/boost/geometry/index/rtree.hpp:615:15: note: in instantiation of function template specialization 'boost::geometry::index::rtree<boost::geometry::model::point<double, 2, boost::geometry::cs::cartesian>, boost::geometry::index::quadratic<16, 4>, boost::geometry::index::indexable<boost::geometry::model::point<double, 2, boost::geometry::cs::cartesian> >, boost::geometry::index::equal_to<boost::geometry::model::point<double, 2, boost::geometry::cs::cartesian> >, std::allocator<boost::geometry::model::point<double, 2, boost::geometry::cs::cartesian> > >::insert_dispatch<particle>' requested here
+        this->insert_dispatch(conv_or_rng, is_conv_t());
+              ^
+main.cpp:55:15: note: in instantiation of function template specialization 'boost::geometry::index::rtree<boost::geometry::model::point<double, 2, boost::geometry::cs::cartesian>, boost::geometry::index::quadratic<16, 4>, boost::geometry::index::indexable<boost::geometry::model::point<double, 2, boost::geometry::cs::cartesian> >, boost::geometry::index::equal_to<boost::geometry::model::point<double, 2, boost::geometry::cs::cartesian> >, std::allocator<boost::geometry::model::point<double, 2, boost::geometry::cs::cartesian> > >::insert<particle>' requested here
+        rtree.insert(particle {p.x, p.y});
+              ^
+/usr/local/include/boost/mpl/assert.hpp:83:5: note: candidate function [with C = false] not viable: no known conversion from 'boost::mpl::failed ************(PASSED_OBJECT_IS_NOT_CONVERTIBLE_TO_VALUE_NOR_A_RANGE::************)(particle)' to 'typename assert<false>::type' (aka 'mpl_::assert<false>') for 1st argument
+int assertion_failed( typename assert<C>::type );
+    ^
+In file included from main.cpp:8:
+In file included from /usr/local/include/boost/geometry/geometry.hpp:48:
+In file included from /usr/local/include/boost/geometry/algorithms/buffer.hpp:32:
+In file included from /usr/local/include/boost/geometry/algorithms/detail/buffer/buffer_inserter.hpp:27:
+In file included from /usr/local/include/boost/geometry/algorithms/detail/buffer/buffered_piece_collection.hpp:32:
+In file included from /usr/local/include/boost/geometry/algorithms/detail/buffer/turn_in_piece_visitor.hpp:24:
+In file included from /usr/local/include/boost/geometry/algorithms/comparable_distance.hpp:23:
+In file included from /usr/local/include/boost/geometry/algorithms/detail/comparable_distance/implementation.hpp:22:
+In file included from /usr/local/include/boost/geometry/algorithms/detail/distance/implementation.hpp:25:
+In file included from /usr/local/include/boost/geometry/algorithms/detail/distance/multipoint_to_geometry.hpp:26:
+In file included from /usr/local/include/boost/geometry/algorithms/detail/distance/range_to_geometry_rtree.hpp:26:
+In file included from /usr/local/include/boost/geometry/algorithms/detail/closest_feature/range_to_range.hpp:23:
+/usr/local/include/boost/geometry/index/rtree.hpp:1410:62: error: no type named 'type' in 'boost::range_const_iterator<particle, void>'
+        typedef typename boost::range_const_iterator<Range>::type It;
+                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~
+In file included from main.cpp:8:
+In file included from /usr/local/include/boost/geometry/geometry.hpp:19:
+In file included from /usr/local/include/boost/geometry/core/closure.hpp:24:
+In file included from /usr/local/include/boost/range/value_type.hpp:19:
+In file included from /usr/local/include/boost/range/iterator.hpp:24:
+/usr/local/include/boost/mpl/eval_if.hpp:60:26: error: no type named 'type' in 'boost::range_const_iterator<particle, void>'
+    typedef typename f_::type type;
+            ~~~~~~~~~~~~~^~~~
+/usr/local/include/boost/range/iterator.hpp:65:31: note: in instantiation of template class 'boost::mpl::eval_if_c<true, boost::range_const_iterator<particle, void>, boost::range_mutable_iterator<const particle, void> >' requested here
+        typedef typename mpl::eval_if_c<
+                              ^
+/usr/local/include/boost/range/begin.hpp:124:39: note: in instantiation of template class 'boost::range_iterator<const particle, void>' requested here
+        inline BOOST_DEDUCED_TYPENAME range_iterator<const T>::type
+                                      ^
+/usr/local/include/boost/geometry/index/rtree.hpp:1411:23: note: while substituting deduced template arguments into function template 'const_begin' [with T = particle]
+        for ( It it = boost::const_begin(rng); it != boost::const_end(rng) ; ++it )
+                      ^
+/usr/local/include/boost/geometry/index/rtree.hpp:615:15: note: in instantiation of function template specialization 'boost::geometry::index::rtree<boost::geometry::model::point<double, 2, boost::geometry::cs::cartesian>, boost::geometry::index::quadratic<16, 4>, boost::geometry::index::indexable<boost::geometry::model::point<double, 2, boost::geometry::cs::cartesian> >, boost::geometry::index::equal_to<boost::geometry::model::point<double, 2, boost::geometry::cs::cartesian> >, std::allocator<boost::geometry::model::point<double, 2, boost::geometry::cs::cartesian> > >::insert_dispatch<particle>' requested here
+        this->insert_dispatch(conv_or_rng, is_conv_t());
+              ^
+main.cpp:55:15: note: in instantiation of function template specialization 'boost::geometry::index::rtree<boost::geometry::model::point<double, 2, boost::geometry::cs::cartesian>, boost::geometry::index::quadratic<16, 4>, boost::geometry::index::indexable<boost::geometry::model::point<double, 2, boost::geometry::cs::cartesian> >, boost::geometry::index::equal_to<boost::geometry::model::point<double, 2, boost::geometry::cs::cartesian> >, std::allocator<boost::geometry::model::point<double, 2, boost::geometry::cs::cartesian> > >::insert<particle>' requested here
+        rtree.insert(particle {p.x, p.y});
+              ^
+In file included from main.cpp:8:
+In file included from /usr/local/include/boost/geometry/geometry.hpp:48:
+In file included from /usr/local/include/boost/geometry/algorithms/buffer.hpp:32:
+In file included from /usr/local/include/boost/geometry/algorithms/detail/buffer/buffer_inserter.hpp:27:
+In file included from /usr/local/include/boost/geometry/algorithms/detail/buffer/buffered_piece_collection.hpp:32:
+In file included from /usr/local/include/boost/geometry/algorithms/detail/buffer/turn_in_piece_visitor.hpp:24:
+In file included from /usr/local/include/boost/geometry/algorithms/comparable_distance.hpp:23:
+In file included from /usr/local/include/boost/geometry/algorithms/detail/comparable_distance/implementation.hpp:22:
+In file included from /usr/local/include/boost/geometry/algorithms/detail/distance/implementation.hpp:25:
+In file included from /usr/local/include/boost/geometry/algorithms/detail/distance/multipoint_to_geometry.hpp:26:
+In file included from /usr/local/include/boost/geometry/algorithms/detail/distance/range_to_geometry_rtree.hpp:26:
+In file included from /usr/local/include/boost/geometry/algorithms/detail/closest_feature/range_to_range.hpp:23:
+/usr/local/include/boost/geometry/index/rtree.hpp:1411:23: error: no matching function for call to 'const_begin'
+        for ( It it = boost::const_begin(rng); it != boost::const_end(rng) ; ++it )
+                      ^~~~~~~~~~~~~~~~~~
+/usr/local/include/boost/geometry/index/rtree.hpp:615:15: note: in instantiation of function template specialization 'boost::geometry::index::rtree<boost::geometry::model::point<double, 2, boost::geometry::cs::cartesian>, boost::geometry::index::quadratic<16, 4>, boost::geometry::index::indexable<boost::geometry::model::point<double, 2, boost::geometry::cs::cartesian> >, boost::geometry::index::equal_to<boost::geometry::model::point<double, 2, boost::geometry::cs::cartesian> >, std::allocator<boost::geometry::model::point<double, 2, boost::geometry::cs::cartesian> > >::insert_dispatch<particle>' requested here
+        this->insert_dispatch(conv_or_rng, is_conv_t());
+              ^
+main.cpp:55:15: note: in instantiation of function template specialization 'boost::geometry::index::rtree<boost::geometry::model::point<double, 2, boost::geometry::cs::cartesian>, boost::geometry::index::quadratic<16, 4>, boost::geometry::index::indexable<boost::geometry::model::point<double, 2, boost::geometry::cs::cartesian> >, boost::geometry::index::equal_to<boost::geometry::model::point<double, 2, boost::geometry::cs::cartesian> >, std::allocator<boost::geometry::model::point<double, 2, boost::geometry::cs::cartesian> > >::insert<particle>' requested here
+        rtree.insert(particle {p.x, p.y});
+              ^
+/usr/local/include/boost/range/begin.hpp:125:9: note: candidate template ignored: substitution failure [with T = particle]
+        const_begin( const T& r )
+        ^
+6 errors generated.
