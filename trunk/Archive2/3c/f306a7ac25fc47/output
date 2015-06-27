@@ -1,0 +1,26 @@
++ g++ -std=c++1y -O2 -Wall -pedantic -pthread main.cpp
++ ./a.out
+void load(std::istream&, T&) [with T = Thing; std::istream = std::basic_istream<char>]
+void details::do_load(std::istream&, T&, std::true_type) [with T = Thing; std::istream = std::basic_istream<char>; std::true_type = std::integral_constant<bool, true>]
+void Thing::load(std::istream&)
+void load(std::istream&, T&) [with T = Object; std::istream = std::basic_istream<char>]
+void details::do_load(std::istream&, T&, std::true_type) [with T = Object; std::istream = std::basic_istream<char>; std::true_type = std::integral_constant<bool, true>]
+void Object::load(std::istream&)
+void load(std::istream&, T&) [with T = int; std::istream = std::basic_istream<char>]
+void details::do_load(std::istream&, T&, std::false_type) [with T = int; std::istream = std::basic_istream<char>; std::false_type = std::integral_constant<bool, false>]
+void load(std::istream&, T&) [with T = double; std::istream = std::basic_istream<char>]
+void details::do_load(std::istream&, T&, std::false_type) [with T = double; std::istream = std::basic_istream<char>; std::false_type = std::integral_constant<bool, false>]
+void load(std::istream&, std::__cxx11::string&)
++ clang++ -std=c++1y -O2 -Wall -pedantic -pthread main.cpp
++ ./a.out
+void load(std::istream &, T &) [T = Thing]
+void details::do_load(std::istream &, T &, std::true_type) [T = Thing]
+void Thing::load(std::istream &)
+void load(std::istream &, T &) [T = Object]
+void details::do_load(std::istream &, T &, std::true_type) [T = Object]
+void Object::load(std::istream &)
+void load(std::istream &, T &) [T = int]
+void details::do_load(std::istream &, T &, std::false_type) [T = int]
+void load(std::istream &, T &) [T = double]
+void details::do_load(std::istream &, T &, std::false_type) [T = double]
+void load(std::istream &, std::string &)
