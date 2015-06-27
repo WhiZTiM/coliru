@@ -1,0 +1,5 @@
+Time for building R tree 2101529662 nanoseconds
+Time for query 2982070 nanoseconds
+Average intersections: 99.69
+Standard deviation:    8.96069
+Expected mean:         100
