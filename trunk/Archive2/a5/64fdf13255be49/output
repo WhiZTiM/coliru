@@ -1,0 +1,24 @@
+Parse succeeded
+COL { 0 a type function true name }
+COL { 1 b type1 function1 false name2 }
+COL { 2 c type1 function2 true name2 }
+MAP 'a' {
+	1 -> 'blah'
+	3 -> 'foo'
+	4 -> 'muq'
+}
+MAP 'c' {
+	1 -> 'blah'
+	3 -> 'foo'
+	4 -> 'muq'
+}
+MAP 'b' {
+	1 -> 'blah'
+	3 -> 'foo'
+	4 -> 'muq'
+}
+
+data
+======================================
+ ''            0 'blah' 
+ 'blah'        4 'muq'  
