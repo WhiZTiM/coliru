@@ -1,0 +1,26 @@
+main.cpp:55:15: error: no matching member function for call to 'insert'
+        rtree.insert({p.x, p.y});
+        ~~~~~~^~~~~~
+/usr/local/include/boost/geometry/index/rtree.hpp:558:17: note: candidate function not viable: cannot convert initializer list argument to 'const value_type' (aka 'const boost::geometry::model::point<double, 2, boost::geometry::cs::cartesian>')
+    inline void insert(value_type const& value)
+                ^
+/usr/local/include/boost/geometry/index/rtree.hpp:608:17: note: candidate template ignored: couldn't infer template argument 'ConvertibleOrRange'
+    inline void insert(ConvertibleOrRange const& conv_or_rng)
+                ^
+/usr/local/include/boost/geometry/index/rtree.hpp:583:17: note: candidate function template not viable: requires 2 arguments, but 1 was provided
+    inline void insert(Iterator first, Iterator last)
+                ^
+main.cpp:76:13: error: no matching constructor for initialization of 'box' (aka 'box<point>')
+        box query_box({cii->x - delta, cii->y - delta}, {cii->x + delta, cii->y + delta});
+            ^         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/local/include/boost/geometry/geometries/box.hpp:58:12: note: candidate constructor not viable: cannot convert initializer list argument to 'const boost::geometry::model::point<double, 2, boost::geometry::cs::cartesian>'
+    inline box(Point const& min_corner, Point const& max_corner)
+           ^
+/usr/local/include/boost/geometry/geometries/box.hpp:47:7: note: candidate constructor (the implicit copy constructor) not viable: requires 1 argument, but 2 were provided
+class box
+      ^
+/usr/local/include/boost/geometry/geometries/box.hpp:47:7: note: candidate constructor (the implicit move constructor) not viable: requires 1 argument, but 2 were provided
+/usr/local/include/boost/geometry/geometries/box.hpp:53:12: note: candidate constructor not viable: requires 0 arguments, but 2 were provided
+    inline box() {}
+           ^
+2 errors generated.
