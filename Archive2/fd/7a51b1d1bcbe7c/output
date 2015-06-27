@@ -1,0 +1,45 @@
+main.cpp:12:25: error: 'is_trivially_constructible' is not a member of 'std'
+ typename std::enable_if<std::is_trivially_constructible<T,Args&&...>::value>::type 
+                         ^
+main.cpp:12:25: error: 'is_trivially_constructible' is not a member of 'std'
+main.cpp:12:68: error: template argument 1 is invalid
+ typename std::enable_if<std::is_trivially_constructible<T,Args&&...>::value>::type 
+                                                                    ^
+main.cpp:12:69: error: expected identifier before '::' token
+ typename std::enable_if<std::is_trivially_constructible<T,Args&&...>::value>::type 
+                                                                     ^
+main.cpp:12:76: error: expected initializer before '>' token
+ typename std::enable_if<std::is_trivially_constructible<T,Args&&...>::value>::type 
+                                                                            ^
+main.cpp:20:19: error: 'is_trivially_constructible' is not a member of 'std'
+ std::enable_if_t<!std::is_trivially_constructible<T,Args&&...>::value> //Using helper type
+                   ^
+main.cpp:20:62: error: pack expansion argument for non-pack parameter '_Tp' of alias template 'template<bool _Cond, class _Tp> using enable_if_t = typename std::enable_if::type'
+ std::enable_if_t<!std::is_trivially_constructible<T,Args&&...>::value> //Using helper type
+                                                              ^
+In file included from main.cpp:1:0:
+/usr/local/include/c++/4.9.2/type_traits:2233:24: note: declared here
+   template<bool _Cond, typename _Tp = void>
+                        ^
+main.cpp:20:70: error: expected initializer before '>' token
+ std::enable_if_t<!std::is_trivially_constructible<T,Args&&...>::value> //Using helper type
+                                                                      ^
+main.cpp: In function 'int main()':
+main.cpp:72:5: error: 'aligned_union_t' is not a member of 'std'
+     std::aligned_union_t<0,int,std::string> u;
+     ^
+main.cpp:72:28: error: expected primary-expression before 'int'
+     std::aligned_union_t<0,int,std::string> u;
+                            ^
+main.cpp:74:39: error: 'u' was not declared in this scope
+     construct(reinterpret_cast<int*>(&u));
+                                       ^
+main.cpp:74:41: error: 'construct' was not declared in this scope
+     construct(reinterpret_cast<int*>(&u));
+                                         ^
+main.cpp:80:12: warning: unused variable 'a1' [-Wunused-variable]
+     A<int> a1; // OK, matches the primary template
+            ^
+main.cpp:81:15: warning: unused variable 'a2' [-Wunused-variable]
+     A<double> a2; // OK, matches the partial specialization
+               ^
