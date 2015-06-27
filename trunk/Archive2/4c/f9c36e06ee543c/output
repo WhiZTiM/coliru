@@ -1,0 +1,59 @@
+main.cpp: In function 'int main()':
+main.cpp:8:56: error: no matching function for call to 'regex_match(std::string&, std::regex&, const char [5])'
+    std::cout << std::regex_match(text, vowel_re, "[$&]") << '\n';
+                                                        ^
+main.cpp:8:56: note: candidates are:
+In file included from /usr/local/include/c++/4.9.2/regex:58:0,
+                 from main.cpp:2:
+/usr/local/include/c++/4.9.2/bits/regex.h:1986:5: note: template<class _Bi_iter, class _Alloc, class _Ch_type, class _Rx_traits> bool std::regex_match(_Bi_iter, _Bi_iter, std::match_results<_BiIter, _Alloc>&, const std::basic_regex<_CharT, _TraitsT>&, std::regex_constants::match_flag_type)
+     regex_match(_Bi_iter                                 __s,
+     ^
+/usr/local/include/c++/4.9.2/bits/regex.h:1986:5: note:   template argument deduction/substitution failed:
+main.cpp:8:56: note:   deduced conflicting types for parameter '_Bi_iter' ('std::basic_string<char>' and 'std::basic_regex<char>')
+    std::cout << std::regex_match(text, vowel_re, "[$&]") << '\n';
+                                                        ^
+In file included from /usr/local/include/c++/4.9.2/regex:58:0,
+                 from main.cpp:2:
+/usr/local/include/c++/4.9.2/bits/regex.h:2014:5: note: template<class _Bi_iter, class _Ch_type, class _Rx_traits> bool std::regex_match(_Bi_iter, _Bi_iter, const std::basic_regex<_Ch_type, _Rx_traits>&, std::regex_constants::match_flag_type)
+     regex_match(_Bi_iter __first, _Bi_iter __last,
+     ^
+/usr/local/include/c++/4.9.2/bits/regex.h:2014:5: note:   template argument deduction/substitution failed:
+main.cpp:8:56: note:   deduced conflicting types for parameter '_Bi_iter' ('std::basic_string<char>' and 'std::basic_regex<char>')
+    std::cout << std::regex_match(text, vowel_re, "[$&]") << '\n';
+                                                        ^
+In file included from /usr/local/include/c++/4.9.2/regex:58:0,
+                 from main.cpp:2:
+/usr/local/include/c++/4.9.2/bits/regex.h:2039:5: note: template<class _Ch_type, class _Alloc, class _Rx_traits> bool std::regex_match(const _Ch_type*, std::match_results<const _Ch_type*, _Alloc>&, const std::basic_regex<_Ch_type, _Rx_traits>&, std::regex_constants::match_flag_type)
+     regex_match(const _Ch_type* __s,
+     ^
+/usr/local/include/c++/4.9.2/bits/regex.h:2039:5: note:   template argument deduction/substitution failed:
+main.cpp:8:56: note:   mismatched types 'const _Ch_type*' and 'std::basic_string<char>'
+    std::cout << std::regex_match(text, vowel_re, "[$&]") << '\n';
+                                                        ^
+In file included from /usr/local/include/c++/4.9.2/regex:58:0,
+                 from main.cpp:2:
+/usr/local/include/c++/4.9.2/bits/regex.h:2063:5: note: template<class _Ch_traits, class _Ch_alloc, class _Alloc, class _Ch_type, class _Rx_traits> bool std::regex_match(const std::basic_string<_Ch_type, _Ch_traits, _Ch_alloc>&, std::match_results<typename std::basic_string<_Ch_type, _Ch_traits, _Ch_alloc>::const_iterator, _Alloc>&, const std::basic_regex<_Ch_type, _Rx_traits>&, std::regex_constants::match_flag_type)
+     regex_match(const basic_string<_Ch_type, _Ch_traits, _Ch_alloc>& __s,
+     ^
+/usr/local/include/c++/4.9.2/bits/regex.h:2063:5: note:   template argument deduction/substitution failed:
+main.cpp:8:56: note:   'std::regex {aka std::basic_regex<char>}' is not derived from 'std::match_results<typename std::basic_string<_Ch_type, _Ch_traits, _Ch_alloc>::const_iterator, _Alloc>'
+    std::cout << std::regex_match(text, vowel_re, "[$&]") << '\n';
+                                                        ^
+In file included from /usr/local/include/c++/4.9.2/regex:58:0,
+                 from main.cpp:2:
+/usr/local/include/c++/4.9.2/bits/regex.h:2086:5: note: template<class _Ch_type, class _Rx_traits> bool std::regex_match(const _Ch_type*, const std::basic_regex<_Ch_type, _Rx_traits>&, std::regex_constants::match_flag_type)
+     regex_match(const _Ch_type* __s,
+     ^
+/usr/local/include/c++/4.9.2/bits/regex.h:2086:5: note:   template argument deduction/substitution failed:
+main.cpp:8:56: note:   mismatched types 'const _Ch_type*' and 'std::basic_string<char>'
+    std::cout << std::regex_match(text, vowel_re, "[$&]") << '\n';
+                                                        ^
+In file included from /usr/local/include/c++/4.9.2/regex:58:0,
+                 from main.cpp:2:
+/usr/local/include/c++/4.9.2/bits/regex.h:2108:5: note: template<class _Ch_traits, class _Str_allocator, class _Ch_type, class _Rx_traits> bool std::regex_match(const std::basic_string<_Ch_type, _Ch_traits, _Str_allocator>&, const std::basic_regex<_CharT, _TraitsT>&, std::regex_constants::match_flag_type)
+     regex_match(const basic_string<_Ch_type, _Ch_traits, _Str_allocator>& __s,
+     ^
+/usr/local/include/c++/4.9.2/bits/regex.h:2108:5: note:   template argument deduction/substitution failed:
+main.cpp:8:56: note:   cannot convert '"[$&]"' (type 'const char [5]') to type 'std::regex_constants::match_flag_type'
+    std::cout << std::regex_match(text, vowel_re, "[$&]") << '\n';
+                                                        ^
