@@ -1,0 +1,7 @@
+main.cpp: In member function 'void TheFriend::f()':
+main.cpp:7:25: error: 'const int Outer::Inner::i' is private
+        static const int i = -1;
+                         ^
+main.cpp:10:57: error: within this context
+ struct TheFriend{ void f() { std::cout << Outer::Inner::i << '\n'; } };
+                                                         ^
