@@ -1,0 +1,6 @@
+main.cpp:6:25: error: 'const int Outer::Inner::i' is private
+        static int const i = 0;
+                         ^
+main.cpp:9:37: error: within this context
+         static int const j = Inner::i;
+                                     ^
