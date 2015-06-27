@@ -1,0 +1,14 @@
+clang version 3.6.0 (tags/RELEASE_360/final 235480)
+main.cpp:22:22: error: cannot jump from this goto statement to its label
+        if( i < 10 ) goto label ; // *** cannot jump from this goto statement to its label
+                     ^
+main.cpp:24:13: note: jump bypasses variable initialization
+        int k = 6 ;
+            ^
+main.cpp:16:13: error: cannot jump from switch statement to this case label
+            case 7 : // *** error: cannot jump from switch statement to this case label
+            ^
+main.cpp:11:21: note: jump bypasses variable initialization
+                int j = 25 ;
+                    ^
+2 errors generated.
