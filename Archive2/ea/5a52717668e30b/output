@@ -1,0 +1,7 @@
++ clang -x c -O3 -std=c11 -Wall -pedantic-errors main.cpp
+main.cpp:7:5: warning: expression result unused [-Wunused-value]
+    *p++;
+    ^~~~
+1 warning generated.
++ ./a.out
+first=349364808 second= 4

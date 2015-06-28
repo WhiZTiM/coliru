@@ -1,0 +1,1 @@
+set -x ; clang -x c -O3 -std=c11 -Wall -pedantic-errors main.cpp  && ./a.out
