@@ -1,0 +1,6 @@
++ g++ -O3 -std=c++14 -Wall -pedantic-errors main.cpp
+main.cpp: In function 'std::__cxx11::string replace_str(std::__cxx11::string&, const string&, const string&)':
+main.cpp:22:15: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         if (d < sz)
+               ^
++ ./a.out
