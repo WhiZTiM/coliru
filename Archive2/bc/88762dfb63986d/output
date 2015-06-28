@@ -1,0 +1,29 @@
+main.cpp: In function 'void sum(uint64_t)':
+main.cpp:32:9: warning: unused variable 'start' [-Wunused-variable]
+  time_t start = time(0);
+         ^
+main.cpp:33:9: warning: unused variable 'time_passed' [-Wunused-variable]
+  double time_passed;
+         ^
+main.cpp:35:9: warning: unused variable 'sum' [-Wunused-variable]
+  double sum = 0;
+         ^
+main.cpp:37:9: warning: unused variable 'goal' [-Wunused-variable]
+  double goal = 40;      // Original goal was 40
+         ^
+main.cpp:38:15: warning: unused variable 'start_time' [-Wunused-variable]
+  unsigned int start_time = 0;   // Time from previouse runs
+               ^
+main.cpp: In function 'int main()':
+main.cpp:96:20: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for (int i = 0; i < numOfThreads; ++i)
+                    ^
+main.cpp:103:20: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for (int i = 0; i < numOfThreads; ++i)
+                    ^
+Create 1 threads...
+Synchronizing all threads...
+iter 0: 18.9979
+Result of iteration(0): 18.9979
+
+Global Result: 18.9979
