@@ -1,0 +1,10 @@
+main.cpp: In instantiation of 'class execute<Alpha>':
+main.cpp:47:30:   required from 'void executeBar(const Implementer&) [with Implementer = Alpha]'
+main.cpp:53:24:   required from here
+main.cpp:42:115: error: no type named 'type' in 'struct std::enable_if<false, void>'
+     static typename std::enable_if<inverter<std::is_base_of<CRTP<Implementer>, Implementer>::value>::value>::type Bar(const Implementer &impler){std::cout << "Not Implementer\n";}
+                                                                                                                   ^
+main.cpp: In instantiation of 'class execute<Beta>':
+main.cpp:47:30:   required from 'void executeBar(const Implementer&) [with Implementer = Beta]'
+main.cpp:54:20:   required from here
+main.cpp:42:115: error: no type named 'type' in 'struct std::enable_if<false, void>'
