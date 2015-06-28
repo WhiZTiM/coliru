@@ -1,0 +1,4 @@
+main.cpp:1:10: fatal error: 'SFML/Graphics.hpp' file not found
+#include <SFML/Graphics.hpp>
+         ^
+1 error generated.
