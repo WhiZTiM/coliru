@@ -1,0 +1,13 @@
+main.cpp:3:8: warning: struct 'A' does not declare any constructor to initialize its non-modifiable members
+struct A
+       ^
+main.cpp:5:15: note: const member 'a' will never be initialized
+    const int a;
+              ^
+main.cpp:15:7: error: variable type 'B' is an abstract class
+    B b;
+      ^
+main.cpp:6:18: note: unimplemented pure virtual method 'foo' in 'B'
+    virtual void foo() = 0;
+                 ^
+1 warning and 1 error generated.
