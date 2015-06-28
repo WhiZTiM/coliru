@@ -1,0 +1,64 @@
+GNU gdb (Ubuntu/Linaro 7.4-2012.04-0ubuntu2.1) 7.4-2012.04
+Copyright (C) 2012 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+For bug reporting instructions, please see:
+<http://bugs.launchpad.net/gdb-linaro/>...
+Reading symbols from /tmp/1435491583.90444/a.out...done.
+(gdb) Dump of assembler code for function main:
+16	{
+   0x0000000000400760 <+0>:	push   %rbp
+   0x0000000000400761 <+1>:	mov    %rsp,%rbp
+   0x0000000000400764 <+4>:	sub    $0x30,%rsp
+   0x0000000000400768 <+8>:	mov    $0x8,%eax
+   0x000000000040076d <+13>:	mov    %eax,%edi
+   0x000000000040076f <+15>:	movl   $0x0,-0x4(%rbp)
+
+17	    derived* d = new derived;
+   0x0000000000400776 <+22>:	callq  0x400630 <_Znwm@plt>
+   0x000000000040077b <+27>:	mov    %rax,%rdi
+   0x000000000040077e <+30>:	mov    %rax,-0x20(%rbp)
+   0x0000000000400782 <+34>:	callq  0x4007e0 <_ZN7derivedC2Ev>
+   0x0000000000400787 <+39>:	mov    -0x20(%rbp),%rax
+   0x000000000040078b <+43>:	mov    %rax,-0x10(%rbp)
+
+18	    base* b = dynamic_cast<base*>(d);
+   0x000000000040078f <+47>:	mov    -0x10(%rbp),%rdi
+   0x0000000000400793 <+51>:	mov    %rdi,-0x18(%rbp)
+
+19	    d->function1();
+   0x0000000000400797 <+55>:	mov    -0x10(%rbp),%rdi
+   0x000000000040079b <+59>:	mov    (%rdi),%rcx
+   0x000000000040079e <+62>:	callq  *(%rcx)
+
+20	    d->function2();
+   0x00000000004007a0 <+64>:	mov    -0x10(%rbp),%rdi
+   0x00000000004007a4 <+68>:	callq  0x400820 <_ZN7derived9function2Ev>
+
+21	    b->function1();
+   0x00000000004007a9 <+73>:	mov    -0x18(%rbp),%rax
+   0x00000000004007ad <+77>:	mov    (%rax),%rcx
+   0x00000000004007b0 <+80>:	mov    %rax,%rdi
+   0x00000000004007b3 <+83>:	callq  *(%rcx)
+
+22	    delete d;
+   0x00000000004007b5 <+85>:	mov    -0x10(%rbp),%rax
+   0x00000000004007b9 <+89>:	cmp    $0x0,%rax
+   0x00000000004007bf <+95>:	mov    %rax,-0x28(%rbp)
+   0x00000000004007c3 <+99>:	je     0x4007d6 <main+118>
+   0x00000000004007c9 <+105>:	mov    -0x28(%rbp),%rax
+   0x00000000004007cd <+109>:	mov    (%rax),%rcx
+   0x00000000004007d0 <+112>:	mov    %rax,%rdi
+   0x00000000004007d3 <+115>:	callq  *0x10(%rcx)
+
+23	}    
+   0x00000000004007d6 <+118>:	mov    -0x4(%rbp),%eax
+   0x00000000004007d9 <+121>:	add    $0x30,%rsp
+   0x00000000004007dd <+125>:	pop    %rbp
+   0x00000000004007de <+126>:	retq   
+
+End of assembler dump.
+(gdb) 
