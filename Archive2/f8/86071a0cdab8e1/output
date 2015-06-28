@@ -1,0 +1,7 @@
+main.cpp:3:9: error: "and" cannot be used as a macro name as it is an operator in C++
+ #define and &&
+         ^
+main.cpp:3:9: error: C++ operator 'and' (aka '&&') used as a macro name
+#define and &&
+        ^
+1 error generated.
