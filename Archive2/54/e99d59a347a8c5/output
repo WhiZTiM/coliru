@@ -1,0 +1,10 @@
++ g++-5.1 -std=c++14 -O0 -Wall -pedantic -Wextra -pthread -Wno-unused-variable -Wno-unused-parameter -pthread main.cpp
++ ./a.out
+HELLO, WORLD, IT'S A WONDERFUL DAY
+HELLO, WOR
+HELLO, WOR
++ clang++ -std=c++14 -O0 -Wall -pedantic -Wextra -pthread -Wno-unused-variable -Wno-unused-parameter -pthread main.cpp -stdlib=libc++ -lsupc++
++ ./a.out
+HELLO, WORLD, IT'S A WONDERFUL DAY
+HELLO, WOR
+HELLO, WOR
