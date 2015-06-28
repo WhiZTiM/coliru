@@ -1,0 +1,5 @@
+main.cpp: In function 'std::__cxx11::string& retStr()':
+main.cpp:7:17: warning: reference to local variable 'str' returned [-Wreturn-local-addr]
+     std::string str;
+                 ^
+bash: line 7: 18938 Segmentation fault      (core dumped) ./a.out
