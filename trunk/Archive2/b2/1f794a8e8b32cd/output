@@ -1,0 +1,9 @@
+main.cpp:83:40: error: ISO C++ forbids declaration of 'set_topology' with no type [-fpermissive]
+ Architecture::set_topology(Topology top){
+                                        ^
+main.cpp:83:1: error: prototype for 'int Architecture::set_topology(Topology)' does not match any in class 'Architecture'
+ Architecture::set_topology(Topology top){
+ ^
+main.cpp:71:14: error: candidate is: void Architecture::set_topology(Topology)
+         void set_topology(Topology top);
+              ^
