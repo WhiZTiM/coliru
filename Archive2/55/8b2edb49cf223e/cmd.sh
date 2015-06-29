@@ -1,0 +1,1 @@
+g++ -std=c++14 -O2 -Wall -pedantic -pthread -lboost_system -lboost_date_time main.cpp && ./a.out
