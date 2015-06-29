@@ -1,0 +1,5 @@
+Getting the value (which may wait)
+Throwing from thread
+Constructing
+Caught exception within thread
+Caught exception thrown by get()
