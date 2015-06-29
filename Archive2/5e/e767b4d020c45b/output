@@ -1,0 +1,10 @@
++ gcc -x c -O3 -std=c11 -Wall -pedantic-errors main.cpp
+main.cpp: In function 'main':
+main.cpp:7:5: warning: value computed is not used [-Wunused-value]
+     *p++;
+     ^
+main.cpp:8:10: warning: '*((void *)&x+4)' is used uninitialized in this function [-Wuninitialized]
+     c= c+*p;
+          ^
++ ./a.out
+first=7 second= 4
