@@ -1,0 +1,1 @@
+mkdir -p /tmp/log && clang++ -std=c++14 -stdlib=libc++ -O2 -Wall -Wextra -pedantic-errors main.cpp && ./a.out && rm -rf /tmp/log
