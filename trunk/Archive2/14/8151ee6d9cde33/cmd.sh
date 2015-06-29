@@ -1,0 +1,1 @@
+clang++ -std=c++1z -O3 main.cpp -Wall -lboost_system -DNDEBUG && ./a.out
