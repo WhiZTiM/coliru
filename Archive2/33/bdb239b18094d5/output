@@ -1,0 +1,16 @@
+
+-------------------
+input: 'str1'
+name: str1
+
+-------------------
+input: 'str1_str'
+name: str1_str
+
+-------------------
+input: 'str1_str/str'
+name: str1_str::str
+
+-------------------
+input: 'str1_str/str/*'
+name: str1_str::str::*
