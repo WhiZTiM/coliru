@@ -1,0 +1,4 @@
+main.cpp:2:16: warning: exception specification of '...' is a Microsoft extension [-Wmicrosoft]
+void f() throw(...)
+               ^
+1 warning generated.
