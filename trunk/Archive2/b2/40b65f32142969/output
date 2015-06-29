@@ -1,0 +1,49 @@
+main.cpp:2:6: error: 'Ctl4xxNmeaParser' has not been declared
+ void Ctl4xxNmeaParser::parseGAGSV(const std::string&, const token_list_t& tokens)
+      ^
+main.cpp:2:46: error: 'string' in namespace 'std' does not name a type
+ void Ctl4xxNmeaParser::parseGAGSV(const std::string&, const token_list_t& tokens)
+                                              ^
+main.cpp:2:61: error: 'token_list_t' does not name a type
+ void Ctl4xxNmeaParser::parseGAGSV(const std::string&, const token_list_t& tokens)
+                                                             ^
+main.cpp: In function 'void parseGAGSV(const int&, const int&)':
+main.cpp:4:16: error: request for member 'size' in 'tokens', which is of non-class type 'const int'
+     if (tokens.size() < 4)
+                ^
+main.cpp:5:9: error: 'runtime_error' is not a member of 'std'
+   throw std::runtime_error("Require at least 4 tokens for GAGSV");
+         ^
+main.cpp:14:35: error: 'fast_lexical_cast' was not declared in this scope
+  unsigned int number_messages   = fast_lexical_cast<unsigned int>(tokens[1]);
+                                   ^
+main.cpp:14:53: error: expected primary-expression before 'unsigned'
+  unsigned int number_messages   = fast_lexical_cast<unsigned int>(tokens[1]);
+                                                     ^
+main.cpp:15:53: error: expected primary-expression before 'unsigned'
+  unsigned int sequence_number   = fast_lexical_cast<unsigned int>(tokens[2]);
+                                                     ^
+main.cpp:16:53: error: expected primary-expression before 'unsigned'
+  unsigned int number_satellites = fast_lexical_cast<unsigned int>(tokens[3]);
+                                                     ^
+main.cpp:37:13: error: 'runtime_error' is not a member of 'std'
+  else throw std::runtime_error("Invalid number of messages stated in GAGSV");
+             ^
+main.cpp:40:13: error: request for member 'size' in 'tokens', which is of non-class type 'const int'
+  if (tokens.size() < 4 + (number_satellites_this_message * 4)) {
+             ^
+main.cpp:41:9: error: 'runtime_error' is not a member of 'std'
+   throw std::runtime_error(
+         ^
+main.cpp:42:17: error: 'boost' has not been declared
+    "Require " + boost::lexical_cast<std::string>(num_tokens) +
+                 ^
+main.cpp:42:37: error: 'string' is not a member of 'std'
+    "Require " + boost::lexical_cast<std::string>(num_tokens) +
+                                     ^
+main.cpp:47:13: error: 'line' was not declared in this scope
+  parseGPGSV(line, tokens);
+             ^
+main.cpp:47:25: error: 'parseGPGSV' was not declared in this scope
+  parseGPGSV(line, tokens);
+                         ^
