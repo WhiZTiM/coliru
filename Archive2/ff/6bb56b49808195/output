@@ -1,0 +1,10 @@
+In file included from /usr/local/include/c++/5.1.0/bits/stl_algobase.h:67:0,
+                 from /usr/local/include/c++/5.1.0/list:60,
+                 from main.cpp:1:
+/usr/local/include/c++/5.1.0/bits/stl_iterator.h: In instantiation of 'std::reverse_iterator<_Iterator>& std::reverse_iterator<_Iterator>::operator+=(std::reverse_iterator<_Iterator>::difference_type) [with _Iterator = std::_List_iterator<int>; std::reverse_iterator<_Iterator>::difference_type = long int]':
+/usr/local/include/boost/next_prior.hpp:73:11:   required from 'static T boost::next_prior_detail::next_impl1<T, Distance, true>::call(T, Distance) [with T = std::reverse_iterator<std::_List_iterator<int> >; Distance = int]'
+/usr/local/include/boost/next_prior.hpp:151:62:   required from 'T boost::next(T, Distance) [with T = std::reverse_iterator<std::_List_iterator<int> >; Distance = int]'
+main.cpp:23:47:   required from here
+/usr/local/include/c++/5.1.0/bits/stl_iterator.h:244:10: error: no match for 'operator-=' (operand types are 'std::_List_iterator<int>' and 'std::reverse_iterator<std::_List_iterator<int> >::difference_type {aka long int}')
+  current -= __n;
+          ^
