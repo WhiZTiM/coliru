@@ -1,0 +1,19 @@
+main.cpp:11:48: error: no member named 'foo' in 'C'
+    using return_t=decltype(std::declval<T&>().foo(std::declval<Args>()...));
+                            ~~~~~~~~~~~~~~~~~~ ^
+main.cpp:19:9: note: in instantiation of template type alias 'return_t' requested here
+        return_t<C, Args...>(C::*)(Args...) const,
+        ^
+main.cpp:15:5: note: in instantiation of template class 'detail::method_sig<C (unsigned long)>' requested here
+    using method_sig_t=typename method_sig<Sig>::type;
+    ^
+main.cpp:27:35: note: in instantiation of template type alias 'method_sig_t' requested here
+constexpr bool has_method(detail::method_sig_t<Sig>) { return true; }
+                                  ^
+main.cpp:33:20: note: while substituting explicitly-specified template arguments into function template 'has_method' 
+    static_assert(!has_method<C(size_t)>(&C::foo)); // Bad, doesn't compile!
+                   ^
+main.cpp:33:46: error: no member named 'foo' in 'C'
+    static_assert(!has_method<C(size_t)>(&C::foo)); // Bad, doesn't compile!
+                                          ~~~^
+2 errors generated.
