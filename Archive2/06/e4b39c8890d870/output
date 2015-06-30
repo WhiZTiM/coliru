@@ -1,0 +1,16 @@
+only the first few warning lines are shown
+main.cpp:71:48: warning: 'my_assert_' is deprecated: instead, use the assert in <cassert> [-Wdeprecated-declarations]
+        char& operator[] ( std::size_t pos ) { my_assert( pos < size ) ; return buffer[pos] ; }
+                                               ^
+main.cpp:17:58: note: expanded from macro 'my_assert'
+    #define my_assert(e) static_cast<void>( ( (!!(e)) || my_assert_( #e, __FILE__, __LINE__ ) ), 0 )
+                                                         ^
+main.cpp:4:13: note: 'my_assert_' has been explicitly marked deprecated here
+static bool my_assert_( const char* text, const char* source_file, unsigned int line )
+
+
+assertion '"this assertion should fail" == nullptr' failed: file: main.cpp line: 107
+this is an expected assertion failure
+
+
+result: SUCCESS
