@@ -1,0 +1,41 @@
+main.cpp:10:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+main.cpp:16:9: note: in instantiation of function template specialization 'func<char>' requested here
+    f =&func;
+        ^
+1 warning generated.
+GNU gdb (Ubuntu/Linaro 7.4-2012.04-0ubuntu2.1) 7.4-2012.04
+Copyright (C) 2012 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+For bug reporting instructions, please see:
+<http://bugs.launchpad.net/gdb-linaro/>...
+Reading symbols from /tmp/1435679005.17886/a.out...done.
+(gdb) Dump of assembler code for function main:
+15	{
+   0x0000000000400890 <+0>:	push   %rbp
+   0x0000000000400891 <+1>:	mov    %rsp,%rbp
+   0x0000000000400894 <+4>:	sub    $0x20,%rsp
+   0x0000000000400898 <+8>:	movabs $0x4008d0,%rax
+   0x00000000004008a2 <+18>:	mov    %edi,-0x4(%rbp)
+   0x00000000004008a5 <+21>:	mov    %rsi,-0x10(%rbp)
+
+16	    f =&func;
+   0x00000000004008a9 <+25>:	mov    %rax,0x600ed8
+
+17	    f();
+   0x00000000004008b1 <+33>:	callq  *0x600ed8
+   0x00000000004008b8 <+40>:	xor    %edi,%edi
+
+18	}   0x00000000004008ba <+42>:	mov    %al,-0x11(%rbp)
+   0x00000000004008bd <+45>:	mov    %edi,%eax
+   0x00000000004008bf <+47>:	add    $0x20,%rsp
+   0x00000000004008c3 <+51>:	pop    %rbp
+   0x00000000004008c4 <+52>:	retq   
+
+End of assembler dump.
+(gdb) 

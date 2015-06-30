@@ -1,0 +1,1 @@
+clang++ -std=c++11 -g -Wall -pedantic -pthread main.cpp && echo -e "disassemble /m main\nq" | gdb a.out
