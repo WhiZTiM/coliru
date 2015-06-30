@@ -1,0 +1,3 @@
+main.cpp:1:1: error: 'Matrix33' does not name a type
+ Matrix33 Matrix33::inverted() const
+ ^
