@@ -1,0 +1,47 @@
+main.cpp:77:48: warning: 'my_assert_' is deprecated: instead, use the assert in <cassert> [-Wdeprecated-declarations]
+        char& operator[] ( std::size_t pos ) { my_assert( pos < size ) ; return buffer[pos] ; }
+                                               ^
+main.cpp:47:24: note: expanded from macro 'my_assert'
+        ( ( (!!(e)) || my_assert_( #e, __FILE__, __LINE__ ) ), 0 )
+                       ^
+main.cpp:32:13: note: 'my_assert_' has been explicitly marked deprecated here
+inline bool my_assert_( const char* text, const char* source_file, unsigned int line )
+            ^
+main.cpp:78:60: warning: 'my_assert_' is deprecated: instead, use the assert in <cassert> [-Wdeprecated-declarations]
+        const char& operator[] ( std::size_t pos ) const { my_assert( pos < size ) ; return buffer[pos] ; }
+                                                           ^
+main.cpp:47:24: note: expanded from macro 'my_assert'
+        ( ( (!!(e)) || my_assert_( #e, __FILE__, __LINE__ ) ), 0 )
+                       ^
+main.cpp:32:13: note: 'my_assert_' has been explicitly marked deprecated here
+inline bool my_assert_( const char* text, const char* source_file, unsigned int line )
+            ^
+main.cpp:117:5: warning: 'my_assert_' is deprecated: instead, use the assert in <cassert> [-Wdeprecated-declarations]
+    my_assert( s3 > s1 ); // print message and abort if assertion fails
+    ^
+main.cpp:47:24: note: expanded from macro 'my_assert'
+        ( ( (!!(e)) || my_assert_( #e, __FILE__, __LINE__ ) ), 0 )
+                       ^
+main.cpp:32:13: note: 'my_assert_' has been explicitly marked deprecated here
+inline bool my_assert_( const char* text, const char* source_file, unsigned int line )
+            ^
+main.cpp:124:5: warning: 'my_assert_' is deprecated: instead, use the assert in <cassert> [-Wdeprecated-declarations]
+    my_assert( "this assertion must fail" == nullptr) ;
+    ^
+main.cpp:47:24: note: expanded from macro 'my_assert'
+        ( ( (!!(e)) || my_assert_( #e, __FILE__, __LINE__ ) ), 0 )
+                       ^
+main.cpp:32:13: note: 'my_assert_' has been explicitly marked deprecated here
+inline bool my_assert_( const char* text, const char* source_file, unsigned int line )
+            ^
+4 warnings generated.
+
+
+*** result: SUCCESS
+
+deliberately trigger an assertion failure: 
+
+assertion '"this assertion must fail" == nullptr' failed
+    file: main.cpp line: 124
+terminate called after throwing an instance of 'my_assert_(char const*, char const*, unsigned int)::assertion_failure'
+bash: line 7: 10983 Aborted                 (core dumped) ./a.out
