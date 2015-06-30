@@ -1,0 +1,97 @@
+#include <iostream>
+#include <string>
+#include <vector>
+#include <list>
+#include <algorithm>
+#include <numeric>
+#include <map>
+#include <boost/regex.hpp>
+#include <boost/algorithm/string.hpp>
+#include <boost/filesystem.hpp>
+
+// IOLib error
+class IoError
+{
+public:
+    typedef int Code;
+    static const Code NoError = 0;
+    static const Code FileNotFound = 1;
+    
+    IoError(Code code):
+        m_code(code)
+    {
+        
+    }
+    
+    std::string message() const
+    {
+        if(m_code == NoError)
+            return "NoError";
+        else if(m_code == FileNotFound)
+            return "FileNotFound";
+        else
+            return "Invalid error code";
+    }
+    
+    operator bool() const 
+    {
+        return m_code != NoError;   
+    }
+    
+protected:
+    Code m_code;
+};
+
+// ImagingLib error
+class Error: public IoError
+{
+public:
+    static const Code OutOfMemory = 2;
+    
+    Error(int code):
+        IoError(code)
+    {
+    
+    }
+    
+    Error(const IoError &other):
+        IoError(other)
+    {
+    
+    }
+    
+    std::string message() const
+    {
+        if(m_code == OutOfMemory)
+            return "OutOfMemory";
+        else
+            return IoError::message();
+    }
+};
+
+IoError ioMethod()
+{
+    return IoError::FileNotFound;    
+}
+
+
+int main()
+{
+    Error e1 = Error::NoError;
+    if(!e1)
+        std::cout << e1.message() << std::endl;
+        
+    Error e2 = Error::OutOfMemory;
+    if(e2)
+        std::cout << e2.message() << std::endl;
+    
+    Error e3 = Error::NoError;
+    std::cout << e3.message() << std::endl;
+    e3 = Error::FileNotFound;
+    if(e3)
+        std::cout << e3.message() << std::endl;
+        
+    Error e4 = ioMethod();
+    if(e4)
+        std::cout << e4.message() << std::endl;
+}
