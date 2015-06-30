@@ -1,0 +1,3 @@
+double(double) specialisation: 0.958851
+double(*)(double) specialisation: 0.958851
+is_simple_functor specialisation: 0.958851
