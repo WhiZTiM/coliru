@@ -1,0 +1,18 @@
+main.cpp:2:6: error: 'map' in namespace 'std' does not name a template type
+ std::map<std::string, nnf::CONTRACT_DESC>() contracts;
+      ^
+main.cpp:3:6: error: 'string' in namespace 'std' does not name a type
+ std::string line;
+      ^
+main.cpp:4:6: error: 'vector' in namespace 'std' does not name a template type
+ std::vector<std::string> fields;
+      ^
+main.cpp:7:1: error: 'fields' does not name a type
+ fields.reserve(69);
+ ^
+main.cpp:10:13: error: expected constructor, destructor, or type conversion before '(' token
+ std::getline(f, line);
+             ^
+main.cpp:12:1: error: expected unqualified-id before 'while'
+ while (std::getline(f, line)) {
+ ^
