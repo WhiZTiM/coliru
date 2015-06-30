@@ -1,0 +1,2 @@
+#title Big static allocator
+g++ -std=c++14 -O2 -Wall -pedantic -pthread main.cpp -S -masm=intel -o - | c++filt
