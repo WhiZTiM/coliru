@@ -1,0 +1,1 @@
+clang++ -std=c++14 -stdlib=libc++ -O2 -Wall -Wextra -pedantic-errors main.cpp 2> /tmp/errlist && echo 'only the first few warning lines are shown' && head -n8 /tmp/errlist && ./a.out
