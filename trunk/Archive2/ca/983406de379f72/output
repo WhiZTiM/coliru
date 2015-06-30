@@ -1,0 +1,6 @@
+main.cpp: In instantiation of 'T func(T) [with T = char]':
+main.cpp:16:7:   required from here
+main.cpp:10:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+$$$
