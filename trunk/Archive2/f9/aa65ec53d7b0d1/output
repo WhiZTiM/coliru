@@ -1,0 +1,16 @@
+main.cpp:7:43: error: 'i' is a private member of 'Outer::Inner'
+    class C { static int const k = Inner::i; };
+                                          ^
+main.cpp:5:25: note: implicitly declared private here
+       static int const i = 0;
+                        ^
+main.cpp:8:31: error: 'i' is a private member of 'Outer::Inner'
+    void f() { int i = Inner::i; }
+                              ^
+main.cpp:5:25: note: implicitly declared private here
+       static int const i = 0;
+                        ^
+main.cpp:12:16: warning: unused variable 'i' [-Wunused-variable]
+void f() { int i = Outer::Inner::i; }
+               ^
+1 warning and 2 errors generated.
