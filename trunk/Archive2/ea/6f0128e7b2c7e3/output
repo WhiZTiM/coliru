@@ -1,0 +1,3 @@
+/tmp/main-c634e9.o: In function `B::B()':
+main.cpp:(.text._ZN1BC2Ev[_ZN1BC2Ev]+0x21): undefined reference to `vtable for B'
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
