@@ -1,0 +1,11 @@
+main.cpp: In function 'int main(int, char**)':
+main.cpp:19:25: warning: variable 'm2' set but not used [-Wunused-but-set-variable]
+     std::pair<int, int> m2 = pair<int, int>();
+                         ^
+main.cpp:20:41: warning: variable 'm3' set but not used [-Wunused-but-set-variable]
+     std::pair<int, std::pair<int, int>> m3 = pair<int, int, int>(); 
+                                         ^
+main.cpp:21:57: warning: variable 'm4' set but not used [-Wunused-but-set-variable]
+     std::pair<int, std::pair<int, std::pair<int, int>>> m4 = pair<int, int, int, int>();    // <- Compile Error here [fixed]
+                                                         ^
+It works
