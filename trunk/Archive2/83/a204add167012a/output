@@ -1,0 +1,7 @@
+main.cpp:22:9: error: non-const lvalue reference to type 'void (int)' cannot bind to a temporary of type 'wrap'
+    foo(wrap());
+        ^~~~~~
+main.cpp:3:16: note: passing argument to parameter 'f' here
+void foo(void(&f)(int))
+               ^
+1 error generated.
