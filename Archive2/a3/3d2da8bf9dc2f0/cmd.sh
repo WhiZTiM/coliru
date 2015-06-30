@@ -1,0 +1,1 @@
+g++ -O2 -Wall -std=c++98 -pedantic main.cpp -lm && ./a.out

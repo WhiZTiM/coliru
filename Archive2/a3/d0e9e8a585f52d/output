@@ -1,0 +1,104 @@
+In file included from /usr/local/include/c++/5.1.0/type_traits:35:0,
+                 from main.cpp:1:
+/usr/local/include/c++/5.1.0/bits/c++0x_warning.h:32:2: error: #error This file requires compiler and library support for the ISO C++ 2011 standard. This support is currently experimental, and must be enabled with the -std=c++11 or -std=gnu++11 compiler options.
+ #error This file requires compiler and library support for the \
+  ^
+main.cpp:27:5: warning: identifier 'static_assert' is a keyword in C++11 [-Wc++0x-compat]
+     static_assert(std::is_same<decltype(d), double>::value, "");
+     ^
+main.cpp:27:5: warning: identifier 'decltype' is a keyword in C++11 [-Wc++0x-compat]
+main.cpp:10:15: error: 'result_of' in namespace 'std' does not name a template type
+ typename std::result_of<T(int)>::type f(T& t)
+               ^
+main.cpp:10:24: error: expected unqualified-id before '<' token
+ typename std::result_of<T(int)>::type f(T& t)
+                        ^
+main.cpp: In function 'int main()':
+main.cpp:26:5: error: 'result_of' is not a member of 'std'
+     std::result_of<S(char, int&)>::type d = 3.14; // d has type double
+     ^
+main.cpp:26:21: error: expected primary-expression before '(' token
+     std::result_of<S(char, int&)>::type d = 3.14; // d has type double
+                     ^
+main.cpp:26:22: error: expected primary-expression before 'char'
+     std::result_of<S(char, int&)>::type d = 3.14; // d has type double
+                      ^
+main.cpp:26:28: error: expected primary-expression before 'int'
+     std::result_of<S(char, int&)>::type d = 3.14; // d has type double
+                            ^
+main.cpp:26:34: error: '::type' has not been declared
+     std::result_of<S(char, int&)>::type d = 3.14; // d has type double
+                                  ^
+main.cpp:27:19: error: 'is_same' is not a member of 'std'
+     static_assert(std::is_same<decltype(d), double>::value, "");
+                   ^
+main.cpp:27:41: error: 'd' was not declared in this scope
+     static_assert(std::is_same<decltype(d), double>::value, "");
+                                         ^
+main.cpp:27:42: error: 'decltype' was not declared in this scope
+     static_assert(std::is_same<decltype(d), double>::value, "");
+                                          ^
+main.cpp:27:45: error: expected primary-expression before 'double'
+     static_assert(std::is_same<decltype(d), double>::value, "");
+                                             ^
+main.cpp:27:63: error: 'static_assert' was not declared in this scope
+     static_assert(std::is_same<decltype(d), double>::value, "");
+                                                               ^
+main.cpp:30:5: error: 'result_of' is not a member of 'std'
+     std::result_of<S(int)>::type x = 3.14; // f has type float
+     ^
+main.cpp:30:21: error: expected primary-expression before '(' token
+     std::result_of<S(int)>::type x = 3.14; // f has type float
+                     ^
+main.cpp:30:22: error: expected primary-expression before 'int'
+     std::result_of<S(int)>::type x = 3.14; // f has type float
+                      ^
+main.cpp:30:27: error: '::type' has not been declared
+     std::result_of<S(int)>::type x = 3.14; // f has type float
+                           ^
+main.cpp:31:19: error: 'is_same' is not a member of 'std'
+     static_assert(std::is_same<decltype(x), float>::value, "");
+                   ^
+main.cpp:31:41: error: 'x' was not declared in this scope
+     static_assert(std::is_same<decltype(x), float>::value, "");
+                                         ^
+main.cpp:31:45: error: expected primary-expression before 'float'
+     static_assert(std::is_same<decltype(x), float>::value, "");
+                                             ^
+main.cpp:35:5: error: 'result_of' is not a member of 'std'
+     std::result_of<decltype(&C::Func)(C, char, int&)>::type g = 3.14;
+     ^
+main.cpp:35:40: error: expected primary-expression before ',' token
+     std::result_of<decltype(&C::Func)(C, char, int&)>::type g = 3.14;
+                                        ^
+main.cpp:35:42: error: expected primary-expression before 'char'
+     std::result_of<decltype(&C::Func)(C, char, int&)>::type g = 3.14;
+                                          ^
+main.cpp:35:48: error: expected primary-expression before 'int'
+     std::result_of<decltype(&C::Func)(C, char, int&)>::type g = 3.14;
+                                                ^
+main.cpp:35:54: error: '::type' has not been declared
+     std::result_of<decltype(&C::Func)(C, char, int&)>::type g = 3.14;
+                                                      ^
+main.cpp:36:19: error: 'is_same' is not a member of 'std'
+     static_assert(std::is_same<decltype(g), double>::value, "");
+                   ^
+main.cpp:36:41: error: 'g' was not declared in this scope
+     static_assert(std::is_same<decltype(g), double>::value, "");
+                                         ^
+main.cpp:36:45: error: expected primary-expression before 'double'
+     static_assert(std::is_same<decltype(g), double>::value, "");
+                                             ^
+main.cpp:38:11: error: no matching function for call to 'f(int)'
+     f<C>(1); // fails to compile in C++11, calls the non-callable overload in C++14
+           ^
+main.cpp:17:5: note: candidate: template<class T, class U> int f(U)
+ int f(U u)
+     ^
+main.cpp:17:5: note:   template argument deduction/substitution failed:
+main.cpp: In substitution of 'template<class T, class U> int f(U) [with T = main()::C; U = int]':
+main.cpp:38:11:   required from here
+main.cpp:38:11: error: template argument for 'template<class T, class U> int f(U)' uses local type 'main()::C'
+     f<C>(1); // fails to compile in C++11, calls the non-callable overload in C++14
+           ^
+main.cpp:38:11: error:   trying to instantiate 'template<class T, class U> int f(U)'
