@@ -1,0 +1,3 @@
+main.cpp:41:1: error: need 'typename' before 'avlTree<type>::avlNode' because 'avlTree<type>' is a dependent scope
+ avlTree<type>::avlNode* 
+ ^
