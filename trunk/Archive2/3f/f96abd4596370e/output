@@ -1,0 +1,19 @@
+main.cpp: In function 'int Calc(int, int, int)':
+main.cpp:26:17: warning: suggest braces around empty body in an 'if' statement [-Wempty-body]
+     if (op == 1);
+                 ^
+main.cpp:28:17: warning: suggest braces around empty body in an 'if' statement [-Wempty-body]
+     if (op == 2);
+                 ^
+main.cpp:30:17: warning: suggest braces around empty body in an 'if' statement [-Wempty-body]
+     if (op == 3);
+                 ^
+main.cpp:32:17: warning: suggest braces around empty body in an 'if' statement [-Wempty-body]
+     if (op == 4);
+                 ^
+Enter your Number: Your Operator?
+  (1 = +)
+  (2 = -)
+  (3 = *)
+  (4 = /)
+Enter your Number: Therefore, Your Result is, 0
