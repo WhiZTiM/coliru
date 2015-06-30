@@ -1,0 +1,5 @@
+Time to fill and iterate a vector of 1 ints : 3.205e-06 s
+Time to fill and iterate a vector of 100 ints : 1.594e-06 s
+Time to fill and iterate a vector of 10000 ints : 9.3819e-05 s
+Time to fill and iterate a vector of 1000000 ints : 0.00940045 s
+Time to fill and iterate a vector of 100000000 ints : 0.909325 s
