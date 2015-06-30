@@ -1,0 +1,7 @@
+main.cpp:4:40: error: expected primary-expression before '...' token
+ using last_element = decltype(type_<Ts>...)::type;
+                                        ^
+main.cpp:4:40: error: expected ')' before '...' token
+main.cpp:4:22: error: expected type-specifier before 'decltype'
+ using last_element = decltype(type_<Ts>...)::type;
+                      ^
