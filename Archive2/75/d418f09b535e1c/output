@@ -1,0 +1,9 @@
+main.cpp: In function 'int main()':
+main.cpp:20:29: warning: typedef 'f' locally defined but not used [-Wunused-local-typedefs]
+     typedef uint_traits<24> f;
+                             ^
+1
+2
+3
+4
+5
