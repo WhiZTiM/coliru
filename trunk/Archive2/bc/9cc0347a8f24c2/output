@@ -1,0 +1,4 @@
+main.cpp:9:14: error: out-of-line constructor for 'Base' cannot have template arguments
+Base<Ts...>::Base<Ts...>(){ std::cout << "wut?\n"; }
+             ^   ~~~~~~~
+1 error generated.
