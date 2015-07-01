@@ -1,0 +1,6 @@
+LOCKING   min_latency_ns=1256  max_latency_ns=218817  avg_latency_ns=38085  throughput=698events/ms
+LOCKING   min_latency_ns=1472  max_latency_ns=105441  avg_latency_ns=12098  throughput=655events/ms
+LOCKING   min_latency_ns=1275  max_latency_ns=77221   avg_latency_ns=6910   throughput=643events/ms
+SPINNING  min_latency_ns=1386  max_latency_ns=480007  avg_latency_ns=80353  throughput=675events/ms
+SPINNING  min_latency_ns=1531  max_latency_ns=229957  avg_latency_ns=6809   throughput=613events/ms
+SPINNING  min_latency_ns=1308  max_latency_ns=352686  avg_latency_ns=15595  throughput=616events/ms
