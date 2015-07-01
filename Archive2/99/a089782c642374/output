@@ -1,0 +1,57 @@
+main.cpp: In function 'int main()':
+main.cpp:22:36: error: no matching function for call to 'is_valid(TPoly&, std::__cxx11::string&)'
+     if (!bg::is_valid(first, reason))  std::cout << "First polygon not valid: "  << reason << "\n";
+                                    ^
+In file included from /usr/local/include/boost/geometry/algorithms/is_valid.hpp:13:0,
+                 from /usr/local/include/boost/geometry/geometry.hpp:67,
+                 from /usr/local/include/boost/geometry.hpp:17,
+                 from main.cpp:1:
+/usr/local/include/boost/geometry/algorithms/detail/is_valid/interface.hpp:70:13: note: candidate: template<class Geometry> bool boost::geometry::is_valid(const Geometry&)
+ inline bool is_valid(Geometry const& geometry)
+             ^
+/usr/local/include/boost/geometry/algorithms/detail/is_valid/interface.hpp:70:13: note:   template argument deduction/substitution failed:
+main.cpp:22:36: note:   candidate expects 1 argument, 2 provided
+     if (!bg::is_valid(first, reason))  std::cout << "First polygon not valid: "  << reason << "\n";
+                                    ^
+main.cpp:23:37: error: no matching function for call to 'is_valid(TPoly&, std::__cxx11::string&)'
+     if (!bg::is_valid(second, reason)) std::cout << "Second polygon not valid: " << reason << "\n";
+                                     ^
+In file included from /usr/local/include/boost/geometry/algorithms/is_valid.hpp:13:0,
+                 from /usr/local/include/boost/geometry/geometry.hpp:67,
+                 from /usr/local/include/boost/geometry.hpp:17,
+                 from main.cpp:1:
+/usr/local/include/boost/geometry/algorithms/detail/is_valid/interface.hpp:70:13: note: candidate: template<class Geometry> bool boost::geometry::is_valid(const Geometry&)
+ inline bool is_valid(Geometry const& geometry)
+             ^
+/usr/local/include/boost/geometry/algorithms/detail/is_valid/interface.hpp:70:13: note:   template argument deduction/substitution failed:
+main.cpp:23:37: note:   candidate expects 1 argument, 2 provided
+     if (!bg::is_valid(second, reason)) std::cout << "Second polygon not valid: " << reason << "\n";
+                                     ^
+main.cpp:29:36: error: no matching function for call to 'is_valid(TPoly&, std::__cxx11::string&)'
+     if (!bg::is_valid(first, reason))  std::cout << "First polygon not valid: "  << reason << "\n";
+                                    ^
+In file included from /usr/local/include/boost/geometry/algorithms/is_valid.hpp:13:0,
+                 from /usr/local/include/boost/geometry/geometry.hpp:67,
+                 from /usr/local/include/boost/geometry.hpp:17,
+                 from main.cpp:1:
+/usr/local/include/boost/geometry/algorithms/detail/is_valid/interface.hpp:70:13: note: candidate: template<class Geometry> bool boost::geometry::is_valid(const Geometry&)
+ inline bool is_valid(Geometry const& geometry)
+             ^
+/usr/local/include/boost/geometry/algorithms/detail/is_valid/interface.hpp:70:13: note:   template argument deduction/substitution failed:
+main.cpp:29:36: note:   candidate expects 1 argument, 2 provided
+     if (!bg::is_valid(first, reason))  std::cout << "First polygon not valid: "  << reason << "\n";
+                                    ^
+main.cpp:30:37: error: no matching function for call to 'is_valid(TPoly&, std::__cxx11::string&)'
+     if (!bg::is_valid(second, reason)) std::cout << "Second polygon not valid: " << reason << "\n";
+                                     ^
+In file included from /usr/local/include/boost/geometry/algorithms/is_valid.hpp:13:0,
+                 from /usr/local/include/boost/geometry/geometry.hpp:67,
+                 from /usr/local/include/boost/geometry.hpp:17,
+                 from main.cpp:1:
+/usr/local/include/boost/geometry/algorithms/detail/is_valid/interface.hpp:70:13: note: candidate: template<class Geometry> bool boost::geometry::is_valid(const Geometry&)
+ inline bool is_valid(Geometry const& geometry)
+             ^
+/usr/local/include/boost/geometry/algorithms/detail/is_valid/interface.hpp:70:13: note:   template argument deduction/substitution failed:
+main.cpp:30:37: note:   candidate expects 1 argument, 2 provided
+     if (!bg::is_valid(second, reason)) std::cout << "Second polygon not valid: " << reason << "\n";
+                                     ^
