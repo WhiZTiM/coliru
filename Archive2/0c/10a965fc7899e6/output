@@ -1,0 +1,4 @@
+terminate called after throwing an instance of 'boost::exception_detail::clone_impl<boost::exception_detail::error_info_injector<boost::property_tree::ptree_bad_path> >'
+  what():  No such node (section2)
+There is NO section `oops`
+bash: line 7: 16824 Aborted                 (core dumped) ./a.out
