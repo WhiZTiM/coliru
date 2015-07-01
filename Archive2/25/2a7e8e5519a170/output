@@ -1,0 +1,4 @@
+main.cpp:18:10: warning: unused variable 'my_vao' [-Wunused-variable]
+    auto my_vao = vao{{"position", float{}}, {"normal", float{}}};
+         ^
+1 warning generated.
