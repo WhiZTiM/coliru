@@ -1,0 +1,8 @@
+main.cpp: In function 'int main(int, char**)':
+main.cpp:14:39: warning: format '%d' expects a matching 'int' argument [-Wformat=]
+     printf("%d est le nombreMystere\n");
+                                       ^
+main.cpp:7:9: warning: variable 'nombreMystere' set but not used [-Wunused-but-set-variable]
+     int nombreMystere = 0;
+         ^
+-1835700372 est le nombreMystere
