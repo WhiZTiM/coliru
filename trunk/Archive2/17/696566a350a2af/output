@@ -1,0 +1,3 @@
+main.cpp:17:35: error: declaration of 'void func()' not in a namespace surrounding 'B'
+     template <> void B::func<int>() {cout <<"int spec"<<endl;}
+                                   ^
