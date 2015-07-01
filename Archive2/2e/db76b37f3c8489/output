@@ -1,0 +1,2 @@
+main.cpp: In function 'int main()':
+main.cpp:10:5: error: 'iota' is not a member of 'std'
