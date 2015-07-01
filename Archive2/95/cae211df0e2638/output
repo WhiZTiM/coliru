@@ -1,0 +1,7 @@
+main.cpp: In function 'int main()':
+main.cpp:11:8: error: 'p' was not declared in this scope
+    a->*p = 5;
+        ^
+main.cpp:17:7: error: 'p' was not declared in this scope
+    a.*p = 5;
+       ^
