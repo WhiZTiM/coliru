@@ -1,0 +1,4 @@
+/tmp/main-bc061e.o: In function `void func<int (&)(int, int)>(int (&)(int, int))':
+main.cpp:(.text._Z4funcIRFiiiEEvOT_[_Z4funcIRFiiiEEvOT_]+0xd): undefined reference to `void type_is<int (&)(int, int)>()'
+main.cpp:(.text._Z4funcIRFiiiEEvOT_[_Z4funcIRFiiiEEvOT_]+0x12): undefined reference to `void type_is<int (&)(int, int)>()'
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
