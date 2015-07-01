@@ -1,0 +1,9 @@
+*** glibc detected *** ./a.out: free(): invalid pointer: 0x000000000131bc40 ***
+======= Backtrace: =========
+/lib/x86_64-linux-gnu/libc.so.6(+0x7e846)[0x7fcc1f209846]
+./a.out[0x4013f2]
+./a.out[0x401578]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xed)[0x7fcc1f1ac76d]
+./a.out[0x4011f5]
+======= Memory map: ========
+bash: line 7:  4000 Aborted                 (core dumped) ./a.out 75 7655 76656 77765 7646546 a1
