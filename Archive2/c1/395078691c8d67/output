@@ -1,0 +1,7 @@
+There is NO section `oops`
+rabbits	has value 'creditcard1'
+die	has value 'creditcard2'
+eagerly	has value 'creditcard3'
+rabbits=creditcard1
+die=creditcard2
+eagerly=creditcard3
