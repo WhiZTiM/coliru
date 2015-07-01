@@ -1,0 +1,14 @@
+main.cpp: In instantiation of 'void foo(function_type, double) [with function_type = functor1]':
+main.cpp:107:24:   required from here
+main.cpp:75:37: error: ambiguous template instantiation for 'struct call_traits<functor1, void>'
+     call_traits<function_type>::call(f, x, fx);
+                                     ^
+main.cpp:54:8: note: candidates are: template<class function_type> struct call_traits<function_type, typename enable_if<is_functor_with_signature<function_type, double (function_type::*)(double)>::value>::type> [with function_type = functor1]
+ struct call_traits<function_type, typename enable_if<
+        ^
+main.cpp:64:8: note:                 template<class function_type> struct call_traits<function_type, typename enable_if<has_return_type<function_type>::value>::type> [with function_type = functor1]
+ struct call_traits<function_type, typename enable_if<has_return_type<function_type>::value>::type> {
+        ^
+main.cpp:75:37: error: incomplete type 'call_traits<functor1, void>' used in nested name specifier
+     call_traits<function_type>::call(f, x, fx);
+                                     ^
