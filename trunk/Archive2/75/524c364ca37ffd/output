@@ -1,0 +1,7 @@
+main.cpp:13:11: warning: unused type alias 'T' [-Wunused-local-typedef]
+    using T = decltype(dv<A>());
+          ^
+main.cpp:14:11: warning: unused type alias 'U' [-Wunused-local-typedef]
+    using U = decltype(dv<B>());
+          ^
+2 warnings generated.
