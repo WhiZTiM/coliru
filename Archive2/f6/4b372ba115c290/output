@@ -1,0 +1,7 @@
+state at #1: {[1,1]}
+state at #2: {[1,1][4,4]}
+state at #3: {[1,2][4,4]}
+state at #4: {[1,4]}
+state at #5: {[1,4][6,6]}
+state at #6: {[1,6]}
+state after erase: {[4,6]}
