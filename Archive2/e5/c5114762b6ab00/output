@@ -1,0 +1,6 @@
+g++: fatal error: no input files
+compilation terminated.
+bash: line 10: -O2: command not found
+LOCKING  min_latency_ns=1357  max_latency_ns=280151   avg_latency_ns=55960    throughput=691events/ms
+LOCKING  min_latency_ns=1454  max_latency_ns=186291   avg_latency_ns=8724     throughput=690events/ms
+LOCKING  min_latency_ns=1414  max_latency_ns=2385182  avg_latency_ns=1046572  throughput=750events/ms
