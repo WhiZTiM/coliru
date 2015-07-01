@@ -1,0 +1,4 @@
+Locking: 
+num_consumed=573549 num_batches=502418 sum_latency=1875600628 avg_latency=3270
+Spinning: 
+num_consumed=567656 num_batches=479339 sum_latency=10178580728 avg_latency=17931
