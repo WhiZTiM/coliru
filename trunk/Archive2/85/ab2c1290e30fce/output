@@ -1,0 +1,31 @@
+neighborhood of point { 100, 150 }
+-----------------
+
+	{ 101, 152 }
+	{ 102, 151 }
+
+neighborhood of point { 105, 155 }
+-----------------
+
+	... is empty
+
+neighborhood of point { 50, 50 }
+-----------------
+
+	... is empty
+
+neighborhood of point { 51, 55 }
+-----------------
+
+	{ 55, 55 }
+
+neighborhood of point { 150, 250 }
+-----------------
+
+	... is empty
+
+neighborhood of point { 190, 260 }
+-----------------
+
+	... is empty
+
