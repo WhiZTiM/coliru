@@ -1,0 +1,18 @@
+main.cpp:18:10: warning: unused variable 'my_vao' [-Wunused-variable]
+    auto my_vao = vao{{"position", std::declval<float>()}, {"normal", std::declval<float>()}};
+         ^
+In file included from main.cpp:1:
+In file included from /usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.1.0/../../../../include/c++/5.1.0/iostream:39:
+In file included from /usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.1.0/../../../../include/c++/5.1.0/ostream:38:
+In file included from /usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.1.0/../../../../include/c++/5.1.0/ios:40:
+In file included from /usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.1.0/../../../../include/c++/5.1.0/bits/char_traits.h:39:
+In file included from /usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.1.0/../../../../include/c++/5.1.0/bits/stl_algobase.h:64:
+In file included from /usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.1.0/../../../../include/c++/5.1.0/bits/stl_pair.h:59:
+In file included from /usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.1.0/../../../../include/c++/5.1.0/bits/move.h:57:
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.1.0/../../../../include/c++/5.1.0/type_traits:2204:7: error: static_assert failed "declval() must not be used!"
+      static_assert(__declval_protector<_Tp>::__stop,
+      ^             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+main.cpp:18:41: note: in instantiation of function template specialization 'std::declval<float>' requested here
+    auto my_vao = vao{{"position", std::declval<float>()}, {"normal", std::declval<float>()}};
+                                        ^
+1 warning and 1 error generated.
