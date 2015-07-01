@@ -1,0 +1,5 @@
+Locking: 
+num_consumed=591330 num_batches=535324 sum_latency=1831040462 avg_latency=3096
+Spinning: 
+num_consumed=579675 num_batches=544750 sum_latency=23221233407 avg_latency=40059
+(Don't trust Coliru results. Test on a real machine.)
