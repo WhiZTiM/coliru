@@ -1,0 +1,4 @@
+Foo() called
+Foo(Foo const &other) called
+Foo() called
+Foo(Foo &&other) called
