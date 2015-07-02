@@ -1,0 +1,24 @@
+main.cpp:4:21: error: redeclaration of 'A'
+ enum categories { A=1, B, C, D }; 
+                     ^
+main.cpp:3:19: note: previous declaration 'letters A'
+ enum letters    { A=5, B, C, D }; 
+                   ^
+main.cpp:4:24: error: redeclaration of 'B'
+ enum categories { A=1, B, C, D }; 
+                        ^
+main.cpp:3:24: note: previous declaration 'letters B'
+ enum letters    { A=5, B, C, D }; 
+                        ^
+main.cpp:4:27: error: redeclaration of 'C'
+ enum categories { A=1, B, C, D }; 
+                           ^
+main.cpp:3:27: note: previous declaration 'letters C'
+ enum letters    { A=5, B, C, D }; 
+                           ^
+main.cpp:4:30: error: redeclaration of 'D'
+ enum categories { A=1, B, C, D }; 
+                              ^
+main.cpp:3:30: note: previous declaration 'letters D'
+ enum letters    { A=5, B, C, D }; 
+                              ^
