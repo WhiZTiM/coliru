@@ -1,0 +1,9 @@
+num_comparisons  branchful  branchless
+1                7          10
+2                16         10
+3                16         10
+4                16         10
+5                10         10
+6                12         10
+7                13         10
+8                11         10
