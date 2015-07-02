@@ -1,0 +1,1 @@
+gcc -x c main.cpp -g -pthread -o main && ./main
