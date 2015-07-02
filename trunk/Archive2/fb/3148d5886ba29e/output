@@ -1,0 +1,7 @@
+main.cpp: In member function 'void OtherClass::MyFunction(std::__cxx11::string)':
+main.cpp:35:17: error: 'make_unique' is not a member of 'std'
+     auto test = std::make_unique<MyClass>(data);
+                 ^
+main.cpp:35:41: error: expected primary-expression before '>' token
+     auto test = std::make_unique<MyClass>(data);
+                                         ^
