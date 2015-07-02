@@ -247,3 +247,20 @@ very good
 A different approach then recursivity with variadic templates
 No std::cin??
 How can I specify which language I'd like to use?
+Need keyboard shortcuts. I.e. ctrl+Enter to run!
+Hey, I'm looking to get a similar service to yours up and running as part of my M.S. thesis project and I was wondering if you would be willing to chat a little bit about your implementation and possible access to source code and/or setup information! If so, my email is cban @ southern.edu. Thanks!
+Detection idiom
+What is it?
+Great job!!
+Please add libc++abi :(
+The lack of libc++abi is a problem for some fairly simple code. Can it be installed?
+Please add an input panel.
+ANAN WAS HERE
+Wish this worked better on mobile/android.  I couldn't select or edit text under stock browser or Dolphin.  Great service on desktop!  So helpful on cppreference.com.  Thank for providing this.
+by the way, I was using http://coliru.stacked-crooked.com/ and that's where I had problems on mobile.
+by the way, I was using http://coliru.stacked-crooked.com/ and that's where I had problems on mobile.
+ha, now i feel stupid " http://coliru.stacked-crooked.com/mobile" works great!  Maybe you could do user agent forwarding?
+clang doesn't work anymore
+Nice Tool!
+Hello, world!
+we can run some bash commands here too
