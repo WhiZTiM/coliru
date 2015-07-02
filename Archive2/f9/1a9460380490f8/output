@@ -1,0 +1,5 @@
+num_comparisons  branchful  branchless  branchful/branchless
+2                78         46          170%
+4                118        57          207%
+5                158        101         156%
+10               181        143         127%
