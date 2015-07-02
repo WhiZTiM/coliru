@@ -1,0 +1,52 @@
+main.cpp:18:1: error: 'f' does not name a type
+ f
+ ^
+main.cpp: In function 'int main()':
+main.cpp:89:12: error: 'branchful' was not declared in this scope
+     RUN(2, branchful, branchless);
+            ^
+main.cpp:86:74: note: in definition of macro 'RUN'
+     { std::cout << n << " " << std::flush; double a = run<n>(#f " " #n, &f<n>); double b = run<n>(#g " " #n, &g<n>); std::cout << a << ' ' << b << " " << int(0.5 + 100.0 * a / b) << "% \n"; }
+                                                                          ^
+main.cpp:86:78: error: expected primary-expression before ')' token
+     { std::cout << n << " " << std::flush; double a = run<n>(#f " " #n, &f<n>); double b = run<n>(#g " " #n, &g<n>); std::cout << a << ' ' << b << " " << int(0.5 + 100.0 * a / b) << "% \n"; }
+                                                                              ^
+main.cpp:89:5: note: in expansion of macro 'RUN'
+     RUN(2, branchful, branchless);
+     ^
+main.cpp:90:12: error: 'branchful' was not declared in this scope
+     RUN(4, branchful, branchless);
+            ^
+main.cpp:86:74: note: in definition of macro 'RUN'
+     { std::cout << n << " " << std::flush; double a = run<n>(#f " " #n, &f<n>); double b = run<n>(#g " " #n, &g<n>); std::cout << a << ' ' << b << " " << int(0.5 + 100.0 * a / b) << "% \n"; }
+                                                                          ^
+main.cpp:86:78: error: expected primary-expression before ')' token
+     { std::cout << n << " " << std::flush; double a = run<n>(#f " " #n, &f<n>); double b = run<n>(#g " " #n, &g<n>); std::cout << a << ' ' << b << " " << int(0.5 + 100.0 * a / b) << "% \n"; }
+                                                                              ^
+main.cpp:90:5: note: in expansion of macro 'RUN'
+     RUN(4, branchful, branchless);
+     ^
+main.cpp:91:12: error: 'branchful' was not declared in this scope
+     RUN(5, branchful, branchless);
+            ^
+main.cpp:86:74: note: in definition of macro 'RUN'
+     { std::cout << n << " " << std::flush; double a = run<n>(#f " " #n, &f<n>); double b = run<n>(#g " " #n, &g<n>); std::cout << a << ' ' << b << " " << int(0.5 + 100.0 * a / b) << "% \n"; }
+                                                                          ^
+main.cpp:86:78: error: expected primary-expression before ')' token
+     { std::cout << n << " " << std::flush; double a = run<n>(#f " " #n, &f<n>); double b = run<n>(#g " " #n, &g<n>); std::cout << a << ' ' << b << " " << int(0.5 + 100.0 * a / b) << "% \n"; }
+                                                                              ^
+main.cpp:91:5: note: in expansion of macro 'RUN'
+     RUN(5, branchful, branchless);
+     ^
+main.cpp:92:13: error: 'branchful' was not declared in this scope
+     RUN(10, branchful, branchless);
+             ^
+main.cpp:86:74: note: in definition of macro 'RUN'
+     { std::cout << n << " " << std::flush; double a = run<n>(#f " " #n, &f<n>); double b = run<n>(#g " " #n, &g<n>); std::cout << a << ' ' << b << " " << int(0.5 + 100.0 * a / b) << "% \n"; }
+                                                                          ^
+main.cpp:86:78: error: expected primary-expression before ')' token
+     { std::cout << n << " " << std::flush; double a = run<n>(#f " " #n, &f<n>); double b = run<n>(#g " " #n, &g<n>); std::cout << a << ' ' << b << " " << int(0.5 + 100.0 * a / b) << "% \n"; }
+                                                                              ^
+main.cpp:92:5: note: in expansion of macro 'RUN'
+     RUN(10, branchful, branchless);
+     ^
