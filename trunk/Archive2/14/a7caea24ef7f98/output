@@ -1,0 +1,84 @@
+main.cpp:36:20: warning: unused variable 'c_cnt' [-Wunused-variable]
+            size_t c_cnt = m_timer.cancel();
+                   ^
+1 warning generated.
+00:00:03.545143	[C1 - fast] tick1600 (c1 active? true)
+00:00:03.546146	[C1 - fast] tick1601 (c1 active? true)
+00:00:03.547154	[C1 - fast] tick1602 (c1 active? true)
+00:00:03.548142	[C1 - fast] tick1603 (c1 active? true)
+00:00:03.549123	[C2 - slow] tick355
+00:00:03.549148	[C1 - fast] tick1604 (c1 active? false)
+00:00:03.550152	[C1 - fast] tick1605 (c1 active? false)
+00:00:03.551152	[C1 - fast] tick1606 (c1 active? false)
+00:00:03.552145	[C1 - fast] tick1607 (c1 active? false)
+00:00:03.553144	[C1 - fast] tick1608 (c1 active? false)
+00:00:03.554146	[C1 - fast] tick1609 (c1 active? false)
+00:00:03.555152	[C1 - fast] tick1610 (c1 active? false)
+00:00:03.556144	[C1 - fast] tick1611 (c1 active? false)
+00:00:03.557144	[C1 - fast] tick1612 (c1 active? false)
+00:00:03.558142	[C1 - fast] tick1613 (c1 active? false)
+00:00:03.559086	[C2 - slow] tick356
+00:00:03.560162	[C1 - fast] tick1614 (c1 active? true)
+00:00:03.561153	[C1 - fast] tick1615 (c1 active? true)
+00:00:03.562155	[C1 - fast] tick1616 (c1 active? true)
+00:00:03.563161	[C1 - fast] tick1617 (c1 active? true)
+--
+00:00:10.565152	[C1 - fast] tick4769 (c1 active? true)
+00:00:10.566145	[C1 - fast] tick4770 (c1 active? true)
+00:00:10.567159	[C1 - fast] tick4771 (c1 active? true)
+00:00:10.568147	[C1 - fast] tick4772 (c1 active? true)
+00:00:10.569122	[C2 - slow] tick1057
+00:00:10.569147	[C1 - fast] tick4773 (c1 active? false)
+00:00:10.570152	[C1 - fast] tick4774 (c1 active? false)
+00:00:10.571157	[C1 - fast] tick4775 (c1 active? false)
+00:00:10.572151	[C1 - fast] tick4776 (c1 active? false)
+00:00:10.573149	[C1 - fast] tick4777 (c1 active? false)
+00:00:10.574152	[C1 - fast] tick4778 (c1 active? false)
+00:00:10.575160	[C1 - fast] tick4779 (c1 active? false)
+00:00:10.576151	[C1 - fast] tick4780 (c1 active? false)
+00:00:10.577142	[C1 - fast] tick4781 (c1 active? false)
+00:00:10.578149	[C1 - fast] tick4782 (c1 active? false)
+00:00:10.579095	[C2 - slow] tick1058
+00:00:10.580166	[C1 - fast] tick4783 (c1 active? true)
+00:00:10.581149	[C1 - fast] tick4784 (c1 active? true)
+00:00:10.582163	[C1 - fast] tick4785 (c1 active? true)
+00:00:10.583171	[C1 - fast] tick4786 (c1 active? true)
+--
+00:00:10.806101	[C1 - fast] tick4884 (c1 active? true)
+00:00:10.806131	[C1 - fast] tick4885 (c1 active? true)
+00:00:10.807096	[C1 - fast] tick4886 (c1 active? true)
+00:00:10.808095	[C1 - fast] tick4887 (c1 active? true)
+00:00:10.809084	[C2 - slow] tick1081
+00:00:10.809107	[C1 - fast] tick4888 (c1 active? false)
+00:00:10.810094	[C1 - fast] tick4889 (c1 active? false)
+00:00:10.811098	[C1 - fast] tick4890 (c1 active? false)
+00:00:10.812104	[C1 - fast] tick4891 (c1 active? false)
+00:00:10.813090	[C1 - fast] tick4892 (c1 active? false)
+00:00:10.814093	[C1 - fast] tick4893 (c1 active? false)
+00:00:10.815098	[C1 - fast] tick4894 (c1 active? false)
+00:00:10.816090	[C1 - fast] tick4895 (c1 active? false)
+00:00:10.817089	[C1 - fast] tick4896 (c1 active? false)
+00:00:10.818094	[C1 - fast] tick4897 (c1 active? false)
+00:00:10.819088	[C2 - slow] tick1082
+00:00:10.819121	[C1 - fast] tick4898 (c1 active? true)
+00:00:10.821158	[C1 - fast] tick4899 (c1 active? true)
+00:00:10.822164	[C1 - fast] tick4900 (c1 active? true)
+00:00:10.823164	[C1 - fast] tick4901 (c1 active? true)
+--
+00:00:14.025190	[C1 - fast] tick6343 (c1 active? true)
+00:00:14.026189	[C1 - fast] tick6344 (c1 active? true)
+00:00:14.027177	[C1 - fast] tick6345 (c1 active? true)
+00:00:14.028187	[C1 - fast] tick6346 (c1 active? true)
+00:00:14.029186	[C2 - slow] tick1403
+00:00:14.029223	[C1 - fast] tick6347 (c1 active? false)
+00:00:14.030176	[C1 - fast] tick6348 (c1 active? false)
+00:00:14.031190	[C1 - fast] tick6349 (c1 active? false)
+00:00:14.032190	[C1 - fast] tick6350 (c1 active? false)
+00:00:14.033190	[C1 - fast] tick6351 (c1 active? false)
+00:00:14.034191	[C1 - fast] tick6352 (c1 active? false)
+00:00:14.035189	[C1 - fast] tick6353 (c1 active? false)
+00:00:14.036189	[C1 - fast] tick6354 (c1 active? false)
+00:00:14.037174	[C1 - fast] tick6355 (c1 active? false)
+00:00:14.038188	[C1 - fast] tick6356 (c1 active? false)
+00:00:14.039080	[C2 - slow] tick1404
+00:00:14.0401
