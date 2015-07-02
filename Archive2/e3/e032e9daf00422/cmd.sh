@@ -1,0 +1,1 @@
+mv main.c{pp,} && cc -W{all,extra,error} main.c -pthread -O2 -S && cat main.s
