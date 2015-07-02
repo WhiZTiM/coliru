@@ -1,0 +1,1 @@
+g++ -O3 -Wall -march=native -lrt main.cpp && ./a.out
