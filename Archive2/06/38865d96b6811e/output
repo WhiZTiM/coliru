@@ -1,0 +1,6 @@
+main.cpp: In function 'int main()':
+main.cpp:3:33: warning: second operand of conditional expression has no effect [-Wunused-value]
+ std::cout << 5 ? (5 ? 0 : 2) : 5;
+                                 ^
+main.cpp:3:33: warning: third operand of conditional expression has no effect [-Wunused-value]
+5
