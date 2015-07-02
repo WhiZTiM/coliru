@@ -1,0 +1,6 @@
+Moving ranges...
+foo contains 4 elements: (each in an unspecified but valid state)
+bar contains 4 elements: [air] [water] [fire] [earth]
+Moving container...
+foo contains 4 elements: [air] [water] [fire] [earth]
+bar is in an unspecified but valid state
