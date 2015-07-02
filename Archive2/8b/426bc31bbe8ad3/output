@@ -1,0 +1,48 @@
+main.cpp: In member function 'void OtherClass::MyFunction(std::__cxx11::string)':
+main.cpp:35:39: error: no matching function for call to 'std::unique_ptr<MyClass>::unique_ptr(std::__cxx11::string&)'
+     std::unique_ptr<MyClass> test(data);
+                                       ^
+In file included from /usr/local/include/c++/5.1.0/memory:81:0,
+                 from main.cpp:4:
+/usr/local/include/c++/5.1.0/bits/unique_ptr.h:228:2: note: candidate: template<class _Up, class> std::unique_ptr<_Tp, _Dp>::unique_ptr(std::auto_ptr<_Up>&&)
+  unique_ptr(auto_ptr<_Up>&& __u) noexcept;
+  ^
+/usr/local/include/c++/5.1.0/bits/unique_ptr.h:228:2: note:   template argument deduction/substitution failed:
+main.cpp:35:39: note:   'std::__cxx11::string {aka std::__cxx11::basic_string<char>}' is not derived from 'std::auto_ptr<_Up>'
+     std::unique_ptr<MyClass> test(data);
+                                       ^
+In file included from /usr/local/include/c++/5.1.0/memory:81:0,
+                 from main.cpp:4:
+/usr/local/include/c++/5.1.0/bits/unique_ptr.h:220:2: note: candidate: template<class _Up, class _Ep, class> std::unique_ptr<_Tp, _Dp>::unique_ptr(std::unique_ptr<_Up, _Ep>&&)
+  unique_ptr(unique_ptr<_Up, _Ep>&& __u) noexcept
+  ^
+/usr/local/include/c++/5.1.0/bits/unique_ptr.h:220:2: note:   template argument deduction/substitution failed:
+main.cpp:35:39: note:   'std::__cxx11::string {aka std::__cxx11::basic_string<char>}' is not derived from 'std::unique_ptr<_Tp, _Dp>'
+     std::unique_ptr<MyClass> test(data);
+                                       ^
+In file included from /usr/local/include/c++/5.1.0/memory:81:0,
+                 from main.cpp:4:
+/usr/local/include/c++/5.1.0/bits/unique_ptr.h:205:7: note: candidate: std::unique_ptr<_Tp, _Dp>::unique_ptr(std::unique_ptr<_Tp, _Dp>&&) [with _Tp = MyClass; _Dp = std::default_delete<MyClass>]
+       unique_ptr(unique_ptr&& __u) noexcept
+       ^
+/usr/local/include/c++/5.1.0/bits/unique_ptr.h:205:7: note:   no known conversion for argument 1 from 'std::__cxx11::string {aka std::__cxx11::basic_string<char>}' to 'std::unique_ptr<MyClass>&&'
+/usr/local/include/c++/5.1.0/bits/unique_ptr.h:200:17: note: candidate: constexpr std::unique_ptr<_Tp, _Dp>::unique_ptr(std::nullptr_t) [with _Tp = MyClass; _Dp = std::default_delete<MyClass>; std::nullptr_t = std::nullptr_t]
+       constexpr unique_ptr(nullptr_t) noexcept : unique_ptr() { }
+                 ^
+/usr/local/include/c++/5.1.0/bits/unique_ptr.h:200:17: note:   no known conversion for argument 1 from 'std::__cxx11::string {aka std::__cxx11::basic_string<char>}' to 'std::nullptr_t'
+/usr/local/include/c++/5.1.0/bits/unique_ptr.h:193:7: note: candidate: std::unique_ptr<_Tp, _Dp>::unique_ptr(std::unique_ptr<_Tp, _Dp>::pointer, typename std::remove_reference<_To>::type&&) [with _Tp = MyClass; _Dp = std::default_delete<MyClass>; std::unique_ptr<_Tp, _Dp>::pointer = MyClass*; typename std::remove_reference<_To>::type = std::default_delete<MyClass>]
+       unique_ptr(pointer __p,
+       ^
+/usr/local/include/c++/5.1.0/bits/unique_ptr.h:193:7: note:   candidate expects 2 arguments, 1 provided
+/usr/local/include/c++/5.1.0/bits/unique_ptr.h:181:7: note: candidate: std::unique_ptr<_Tp, _Dp>::unique_ptr(std::unique_ptr<_Tp, _Dp>::pointer, typename std::conditional<std::is_reference<_Dp>::value, _Dp, const _Dp&>::type) [with _Tp = MyClass; _Dp = std::default_delete<MyClass>; std::unique_ptr<_Tp, _Dp>::pointer = MyClass*; typename std::conditional<std::is_reference<_Dp>::value, _Dp, const _Dp&>::type = const std::default_delete<MyClass>&]
+       unique_ptr(pointer __p,
+       ^
+/usr/local/include/c++/5.1.0/bits/unique_ptr.h:181:7: note:   candidate expects 2 arguments, 1 provided
+/usr/local/include/c++/5.1.0/bits/unique_ptr.h:169:7: note: candidate: std::unique_ptr<_Tp, _Dp>::unique_ptr(std::unique_ptr<_Tp, _Dp>::pointer) [with _Tp = MyClass; _Dp = std::default_delete<MyClass>; std::unique_ptr<_Tp, _Dp>::pointer = MyClass*]
+       unique_ptr(pointer __p) noexcept
+       ^
+/usr/local/include/c++/5.1.0/bits/unique_ptr.h:169:7: note:   no known conversion for argument 1 from 'std::__cxx11::string {aka std::__cxx11::basic_string<char>}' to 'std::unique_ptr<MyClass>::pointer {aka MyClass*}'
+/usr/local/include/c++/5.1.0/bits/unique_ptr.h:157:17: note: candidate: constexpr std::unique_ptr<_Tp, _Dp>::unique_ptr() [with _Tp = MyClass; _Dp = std::default_delete<MyClass>]
+       constexpr unique_ptr() noexcept
+                 ^
+/usr/local/include/c++/5.1.0/bits/unique_ptr.h:157:17: note:   candidate expects 0 arguments, 1 provided
