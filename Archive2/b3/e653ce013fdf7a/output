@@ -1,0 +1,15 @@
+main.cpp:3:11: warning: field 'j' will be initialized after field 'i' [-Wreorder]
+    A() : j(1), i(2) {}
+          ^
+1 warning generated.
+================
+main.cpp: In constructor 'A::A()':
+main.cpp:5:9: warning: 'A::j' will be initialized after [-Wreorder]
+     int j ;
+         ^
+main.cpp:4:9: warning:   'int A::i' [-Wreorder]
+     int i ;
+         ^
+main.cpp:3:5: warning:   when initialized here [-Wreorder]
+     A() : j(1), i(2) {}
+     ^

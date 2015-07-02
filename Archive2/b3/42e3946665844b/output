@@ -1,0 +1,97 @@
+In file included from main.cpp:2:
+In file included from /usr/local/include/boost/archive/xml_oarchive.hpp:31:
+/usr/local/include/boost/archive/basic_xml_oarchive.hpp:99:9: error: no matching function for call to 'assertion_failed'
+        BOOST_MPL_ASSERT((serialization::is_wrapper< T >));
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/local/include/boost/mpl/assert.hpp:288:11: note: expanded from macro 'BOOST_MPL_ASSERT'
+          boost::mpl::assertion_failed<false>( \
+          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/local/include/boost/mpl/assert.hpp:60:58: note: expanded from macro '\
+BOOST_MPL_AUX_ASSERT_CONSTANT'
+#   define BOOST_MPL_AUX_ASSERT_CONSTANT(T, expr) enum { expr }
+                                                         ^
+/usr/local/include/boost/archive/detail/interface_oarchive.hpp:63:23: note: in instantiation of function template specialization 'boost::archive::basic_xml_oarchive<boost::archive::xml_oarchive>::save_override<const bool>' requested here
+        this->This()->save_override(t, 0);
+                      ^
+/usr/local/include/boost/archive/detail/interface_oarchive.hpp:71:35: note: in instantiation of function template specialization 'boost::archive::detail::interface_oarchive<boost::archive::xml_oarchive>::operator<<<const bool>' requested here
+            return * this->This() << const_cast<const T &>(t);
+                                  ^
+main.cpp:29:20: note: in instantiation of function template specialization 'boost::archive::detail::interface_oarchive<boost::archive::xml_oarchive>::operator&<bool>' requested here
+                ar & has_value;
+                   ^
+/usr/local/include/boost/serialization/serialization.hpp:128:9: note: in instantiation of function template specialization 'boost::serialization::serialize<boost::archive::xml_oarchive, double>' requested here
+        serialize(ar, t, v);
+        ^
+/usr/local/include/boost/archive/detail/oserializer.hpp:148:27: note: in instantiation of function template specialization 'boost::serialization::serialize_adl<boost::archive::xml_oarchive, Ptr<double> >' requested here
+    boost::serialization::serialize_adl(
+                          ^
+/usr/local/include/boost/serialization/singleton.hpp:106:7: note: (skipping 4 contexts in backtrace; use -ftemplate-backtrace-limit=0 to see all)
+class singleton_wrapper : public T
+      ^
+/usr/local/include/boost/archive/detail/oserializer.hpp:525:12: note: in instantiation of function template specialization 'boost::archive::detail::save_non_pointer_type<boost::archive::xml_oarchive>::invoke<Ptr<double> >' requested here
+    typex::invoke(ar, t);
+           ^
+/usr/local/include/boost/archive/detail/common_oarchive.hpp:69:18: note: in instantiation of function template specialization 'boost::archive::save<boost::archive::xml_oarchive, const Ptr<double> >' requested here
+        archive::save(* this->This(), t);
+                 ^
+/usr/local/include/boost/archive/basic_xml_oarchive.hpp:114:39: note: in instantiation of function template specialization 'boost::archive::detail::common_oarchive<boost::archive::xml_oarchive>::save_override<const Ptr<double> >' requested here
+        this->detail_common_oarchive::save_override(t.const_value(), 0);
+                                      ^
+/usr/local/include/boost/archive/detail/interface_oarchive.hpp:63:23: note: in instantiation of function template specialization 'boost::archive::basic_xml_oarchive<boost::archive::xml_oarchive>::save_override<Ptr<double> >' requested here
+        this->This()->save_override(t, 0);
+                      ^
+main.cpp:47:12: note: in instantiation of function template specialization 'boost::archive::detail::interface_oarchive<boost::archive::xml_oarchive>::operator<<<const boost::serialization::nvp<Ptr<double> > >' requested here
+        oa << BOOST_SERIALIZATION_NVP(p);
+           ^
+/usr/local/include/boost/mpl/assert.hpp:83:5: note: candidate function [with C = false] not viable: no known conversion from 'mpl_::failed ************(boost::serialization::is_wrapper<const bool>::************)' to 'typename assert<false>::type' (aka 'mpl_::assert<false>') for 1st argument
+int assertion_failed( typename assert<C>::type );
+    ^
+In file included from main.cpp:1:
+In file included from /usr/local/include/boost/archive/xml_iarchive.hpp:24:
+/usr/local/include/boost/archive/basic_xml_iarchive.hpp:76:9: error: no matching function for call to 'assertion_failed'
+        BOOST_MPL_ASSERT((serialization::is_wrapper< T >));
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/local/include/boost/mpl/assert.hpp:288:11: note: expanded from macro 'BOOST_MPL_ASSERT'
+          boost::mpl::assertion_failed<false>( \
+          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/local/include/boost/mpl/assert.hpp:60:58: note: expanded from macro '\
+BOOST_MPL_AUX_ASSERT_CONSTANT'
+#   define BOOST_MPL_AUX_ASSERT_CONSTANT(T, expr) enum { expr }
+                                                         ^
+/usr/local/include/boost/archive/xml_iarchive.hpp:103:38: note: in instantiation of function template specialization 'boost::archive::basic_xml_iarchive<boost::archive::xml_iarchive>::load_override<bool>' requested here
+        basic_xml_iarchive<Archive>::load_override(t, 0);
+                                     ^
+/usr/local/include/boost/archive/detail/interface_iarchive.hpp:60:23: note: in instantiation of function template specialization 'boost::archive::xml_iarchive_impl<boost::archive::xml_iarchive>::load_override<bool>' requested here
+        this->This()->load_override(t, 0);
+                      ^
+/usr/local/include/boost/archive/detail/interface_iarchive.hpp:67:32: note: in instantiation of function template specialization 'boost::archive::detail::interface_iarchive<boost::archive::xml_iarchive>::operator>><bool>' requested here
+        return *(this->This()) >> t;
+                               ^
+main.cpp:29:20: note: in instantiation of function template specialization 'boost::archive::detail::interface_iarchive<boost::archive::xml_iarchive>::operator&<bool>' requested here
+                ar & has_value;
+                   ^
+/usr/local/include/boost/serialization/serialization.hpp:128:9: note: in instantiation of function template specialization 'boost::serialization::serialize<boost::archive::xml_iarchive, double>' requested here
+        serialize(ar, t, v);
+        ^
+/usr/local/include/boost/archive/detail/iserializer.hpp:184:27: note: (skipping 6 contexts in backtrace; use -ftemplate-backtrace-limit=0 to see all)
+    boost::serialization::serialize_adl(
+                          ^
+/usr/local/include/boost/archive/detail/common_iarchive.hpp:66:18: note: in instantiation of function template specialization 'boost::archive::load<boost::archive::xml_iarchive, Ptr<double> >' requested here
+        archive::load(* this->This(), t);
+                 ^
+/usr/local/include/boost/archive/basic_xml_iarchive.hpp:92:39: note: in instantiation of function template specialization 'boost::archive::detail::common_iarchive<boost::archive::xml_iarchive>::load_override<Ptr<double> >' requested here
+        this->detail_common_iarchive::load_override(t.value(), 0);
+                                      ^
+/usr/local/include/boost/archive/xml_iarchive.hpp:103:38: note: in instantiation of function template specialization 'boost::archive::basic_xml_iarchive<boost::archive::xml_iarchive>::load_override<Ptr<double> >' requested here
+        basic_xml_iarchive<Archive>::load_override(t, 0);
+                                     ^
+/usr/local/include/boost/archive/detail/interface_iarchive.hpp:60:23: note: in instantiation of function template specialization 'boost::archive::xml_iarchive_impl<boost::archive::xml_iarchive>::load_override<const boost::serialization::nvp<Ptr<double> > >' requested here
+        this->This()->load_override(t, 0);
+                      ^
+main.cpp:55:12: note: in instantiation of function template specialization 'boost::archive::detail::interface_iarchive<boost::archive::xml_iarchive>::operator>><const boost::serialization::nvp<Ptr<double> > >' requested here
+        ia >> BOOST_SERIALIZATION_NVP(p);
+           ^
+/usr/local/include/boost/mpl/assert.hpp:83:5: note: candidate function [with C = false] not viable: no known conversion from 'mpl_::failed ************(boost::serialization::is_wrapper<bool>::************)' to 'typename assert<false>::type' (aka 'mpl_::assert<false>') for 1st argument
+int assertion_failed( typename assert<C>::type );
+    ^
+2 errors generated.
