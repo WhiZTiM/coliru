@@ -1,0 +1,10 @@
+main.cpp:10:39: error: member reference base type 'int' is not a structure or union
+    auto lambda = [](auto x){ return x.foo(); };
+                                     ~^~~~
+main.cpp:13:33: note: in instantiation of function template specialization 'main()::(anonymous class)::operator()<int>' requested here
+    decltype(&decltype(lambda)::operator()<WrongTag>) x; // Error
+                                ^
+main.cpp:13:14: error: reference to overloaded function could not be resolved; did you mean to call it?
+    decltype(&decltype(lambda)::operator()<WrongTag>) x; // Error
+             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2 errors generated.
