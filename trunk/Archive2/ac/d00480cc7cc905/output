@@ -1,0 +1,4 @@
+main.cpp:11:7: error: array subscript is not an integer
+    ar[1.2];     
+      ^~~~
+1 error generated.
