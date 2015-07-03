@@ -1,0 +1,9 @@
+main.cpp:1:1: warning: character constant too long for its type
+ 'std::basic_ostream<char,std::char_traits<char>> &std::operator <<<char,std::char_traits<char>>(std::basic_ostream<char,std::char_traits<char>> &,const char *)'
+ ^
+main.cpp:2:41: warning: character constant too long for its type
+ while trying to match the argument list '(std::basic_ostream<char,std::char_traits<char>>, std::string)'
+                                         ^
+main.cpp:1:1: error: expected unqualified-id before '\x72202a29'
+ 'std::basic_ostream<char,std::char_traits<char>> &std::operator <<<char,std::char_traits<char>>(std::basic_ostream<char,std::char_traits<char>> &,const char *)'
+ ^

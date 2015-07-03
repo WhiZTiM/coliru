@@ -1,0 +1,7 @@
+main.cpp: In function 'int main()':
+main.cpp:10:31: warning: suggest parentheses around arithmetic in operand of '|' [-Wparentheses]
+     uint32_t test1 = numBytes & 0xffff | (1<<19);
+                               ^
+test1 is 589821
+test2 is 589821
+test3 is 589821

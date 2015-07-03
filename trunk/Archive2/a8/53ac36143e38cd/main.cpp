@@ -1,0 +1,2 @@
+'std::basic_ostream<char,std::char_traits<char>> &std::operator <<<char,std::char_traits<char>>(std::basic_ostream<char,std::char_traits<char>> &,const char *)'
+while trying to match the argument list '(std::basic_ostream<char,std::char_traits<char>>, std::string)'
