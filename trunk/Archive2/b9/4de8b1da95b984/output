@@ -1,0 +1,40 @@
+In file included from /usr/include/c++/4.7/initializer_list:36:0,
+                 from main.cpp:3:
+/usr/include/c++/4.7/bits/c++0x_warning.h:32:2: error: #error This file requires compiler and library support for the ISO C++ 2011 standard. This support is currently experimental, and must be enabled with the -std=c++11 or -std=gnu++11 compiler options.
+main.cpp:8:28: error: expected ')' before '<' token
+main.cpp:11:22: error: 'std::initializer_list' has not been declared
+main.cpp:11:38: error: expected ',' or '...' before '<' token
+main.cpp: In member function 'void S<T>::append(int)':
+main.cpp:12:27: error: 'l' was not declared in this scope
+main.cpp: In member function 'std::pair<const T*, long unsigned int> S<T>::c_arr() const':
+main.cpp:15:9: error: extended initializer lists only available with -std=c++11 or -std=gnu++11
+main.cpp: In function 'int main()':
+main.cpp:25:30: error: too many initializers for 'S<int>'
+main.cpp:25:30: error: could not convert '1' from 'int' to 'std::vector<int, std::allocator<int> >'
+main.cpp:26:13: error: extended initializer lists only available with -std=c++11 or -std=gnu++11
+main.cpp:26:23: error: no matching function for call to 'S<int>::append(<brace-enclosed initializer list>)'
+main.cpp:26:23: note: candidate is:
+main.cpp:11:10: note: void S<T>::append(int) [with T = int]
+main.cpp:11:10: note:   no known conversion for argument 1 from '<brace-enclosed initializer list>' to 'int'
+main.cpp:30:10: warning: 'auto' changes meaning in C++11; please remove it [-Wc++0x-compat]
+main.cpp:30:15: error: 'n' does not name a type
+main.cpp:32:5: error: expected ';' before 'std'
+main.cpp:34:54: error: expected ')' before ';' token
+main.cpp:36:18: error: range-based 'for' loops are not allowed in C++98 mode
+main.cpp:40:5: warning: 'auto' changes meaning in C++11; please remove it [-Wc++0x-compat]
+main.cpp:40:10: error: 'al' does not name a type
+main.cpp:42:60: error: 'al' was not declared in this scope
+main.cpp:46:18: error: 'initializer_list' is not a member of 'std'
+main.cpp:46:18: error: 'initializer_list' is not a member of 'std'
+main.cpp:46:5: error: parse error in template argument list
+main.cpp:46:46: error: expected ';' before '{' token
+main.cpp:46:54: error: statement cannot resolve address of overloaded function
+main.cpp:46:55: error: expected primary-expression before ')' token
+main.cpp:46:55: error: expected ';' before ')' token
+main.cpp:47:33: error: '>>' should be '> >' within a nested template argument list
+main.cpp:47:35: error: extended initializer lists only available with -std=c++11 or -std=gnu++11
+main.cpp:47:45: error: no matching function for call to 'templated_fn(<brace-enclosed initializer list>)'
+main.cpp:47:45: note: candidate is:
+main.cpp:21:6: note: template<class T> void templated_fn(T)
+main.cpp:21:6: note:   template argument deduction/substitution failed:
+main.cpp:47:45: note:   cannot convert '{1, 2, 3}' (type '<brace-enclosed initializer list>') to type 'std::vector<int, std::allocator<int> >'
