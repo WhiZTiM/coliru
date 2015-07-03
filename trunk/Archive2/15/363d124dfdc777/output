@@ -1,0 +1,21 @@
+main.cpp: In function 'int main()':
+main.cpp:9:4: error: 'cout' was not declared in this scope
+    cout << fixed << " exp(i*pi) = " << std::exp(i * pi) << '\n';
+    ^
+main.cpp:9:4: note: suggested alternative:
+In file included from main.cpp:2:0:
+/usr/local/include/c++/5.1.0/iostream:61:18: note:   'std::cout'
+   extern ostream cout;  /// Linked to standard output
+                  ^
+main.cpp:9:12: error: 'fixed' was not declared in this scope
+    cout << fixed << " exp(i*pi) = " << std::exp(i * pi) << '\n';
+            ^
+main.cpp:9:12: note: suggested alternative:
+In file included from /usr/local/include/c++/5.1.0/ios:42:0,
+                 from /usr/local/include/c++/5.1.0/istream:38,
+                 from /usr/local/include/c++/5.1.0/sstream:38,
+                 from /usr/local/include/c++/5.1.0/complex:45,
+                 from main.cpp:1:
+/usr/local/include/c++/5.1.0/bits/ios_base.h:1035:3: note:   'std::fixed'
+   fixed(ios_base& __base)
+   ^
