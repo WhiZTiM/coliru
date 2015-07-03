@@ -1,0 +1,6 @@
+main.cpp:2:36: error: variable or field 'AggregatePocedure' declared void
+ void AggregatePocedure(context_ptr const context) {
+                                    ^
+main.cpp:2:24: error: 'context_ptr' was not declared in this scope
+ void AggregatePocedure(context_ptr const context) {
+                        ^
