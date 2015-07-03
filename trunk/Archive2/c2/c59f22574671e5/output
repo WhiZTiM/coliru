@@ -1,0 +1,37 @@
+main.cpp: In instantiation of 'void abs(Args&& ...) [with Args = {}]':
+main.cpp:95:9:   required from here
+main.cpp:57:5: warning: statement has no effect [-Wunused-value]
+     expand {
+     ^
+1
+2
+3
+abc
+1
+4
+9
+228.01
+1
+12
+3
+15.1
+1
+2
+3
+4
+5
+6
+7
+Printing once again all the numbers: 
+    Once again 1
+    Once again 2
+    Once again 3
+    Once again 4
+    Once again 5
+    Once again 6
+    Once again 7
+EOF Printing once again all the numbers.
+Printing once again all the numbers: 
+EOF Printing once again all the numbers.
+42
+No args
