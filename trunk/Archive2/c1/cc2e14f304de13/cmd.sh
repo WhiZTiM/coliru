@@ -1,0 +1,1 @@
+clang++ -std=c++1y -O3 -DNDEBUG -pedantic -Wall -lboost_timer -lboost_system main.cpp && time ./a.out
