@@ -1,0 +1,4 @@
+main.cpp: In function 'int main()':
+main.cpp:134:17: error: a template-id may not appear in a using-declaration
+     using Pond::Geese<int>;
+                 ^
