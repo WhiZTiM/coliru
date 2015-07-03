@@ -1,0 +1,4 @@
+main.cpp:36:20: warning: unused variable 'c_cnt' [-Wunused-variable]
+            size_t c_cnt = m_timer.cancel();
+                   ^
+1 warning generated.
