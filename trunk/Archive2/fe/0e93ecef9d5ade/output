@@ -1,0 +1,5 @@
+main.cpp: In function 'void reverseString(std::__cxx11::string&)':
+main.cpp:10:23: error: expected ';' before '<' token
+     for (int i = 0, i < m_size; ++i)
+                       ^
+main.cpp:10:23: error: expected primary-expression before '<' token
