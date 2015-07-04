@@ -1,0 +1,19 @@
+main.c: In function 'main':
+main.c:15:15: error: expected ')' before 'a'
+     print(int a = isalnum('a'));
+               ^
+main.c:4:57: note: in definition of macro 'mprint'
+ #define mprint(str, e) (printf("%s = ", str), _Generic((e), \
+                                                         ^
+main.c:15:5: note: in expansion of macro 'print'
+     print(int a = isalnum('a'));
+     ^
+main.c:4:58: error: expected expression before ')' token
+ #define mprint(str, e) (printf("%s = ", str), _Generic((e), \
+                                                          ^
+main.c:11:20: note: in expansion of macro 'mprint'
+ #define print(...) mprint(#__VA_ARGS__, (__VA_ARGS__))
+                    ^
+main.c:15:5: note: in expansion of macro 'print'
+     print(int a = isalnum('a'));
+     ^
