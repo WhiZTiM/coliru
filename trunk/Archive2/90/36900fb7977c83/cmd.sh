@@ -1,0 +1,1 @@
+g++ -std=c++11 -Wall main.cpp -o example_boost_geometry_intersection && ./example_boost_geometry_intersection

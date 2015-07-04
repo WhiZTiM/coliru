@@ -1,0 +1,43 @@
+________________________________
+Segments:
+LINESTRING(0 0,2 0)
+LINESTRING(1 1,1 -1)
+
+Intersection points:
+POINT(1 0)
+________________________________
+Segments:
+LINESTRING(0 0,2 0)
+LINESTRING(1 0,3 0)
+
+Intersection points:
+POINT(1 0)
+POINT(2 0)
+________________________________
+Segments:
+LINESTRING(0 0,2 0)
+LINESTRING(1 0,2 0)
+
+Intersection points:
+POINT(1 0)
+POINT(2 0)
+________________________________
+Segments:
+LINESTRING(0 0,2 0)
+LINESTRING(0 0,2 0)
+
+Intersection points:
+POINT(0 0)
+POINT(2 0)
+________________________________
+Segments:
+LINESTRING(0 0,2 0)
+LINESTRING(3 0,4 0)
+
+There are no intersection points
+________________________________
+Segments:
+LINESTRING(0 0,2 0)
+LINESTRING(0 1,2 1)
+
+There are no intersection points
