@@ -1,0 +1,47 @@
+main.cpp:6:25: error: 'unique_ptr' in namespace 'std' does not name a template type
+     using window = std::unique_ptr<SDL_Window, SDL_DestroyWindow>;
+                         ^
+main.cpp:7:27: error: 'unique_ptr' in namespace 'std' does not name a template type
+     using renderer = std::unique_ptr<SDL_Renderer, SDL_DestroyRenderer>;
+                           ^
+main.cpp:9:5: error: 'window' does not name a type
+     window make_window(std::string title, int w, int h) {
+     ^
+main.cpp:17:5: error: 'renderer' does not name a type
+     renderer make_renderer(const window& wnd) {
+     ^
+main.cpp: In function 'void sdl::init()':
+main.cpp:26:24: error: 'IMG_INIT_PNG' was not declared in this scope
+         int imgFlags = IMG_INIT_PNG;
+                        ^
+main.cpp:27:32: error: 'IMG_Init' was not declared in this scope
+         if (!(IMG_Init(imgFlags) & imgFlags)) {
+                                ^
+main.cpp:28:51: error: 'IMG_GetError' was not declared in this scope
+             throw std::runtime_error(IMG_GetError());
+                                                   ^
+main.cpp:31:22: error: 'TTF_Init' was not declared in this scope
+         if (TTF_Init() < 0) {
+                      ^
+main.cpp:32:51: error: 'TTF_GetError' was not declared in this scope
+             throw std::runtime_error(TTF_GetError());
+                                                   ^
+main.cpp:35:26: error: 'MIX_INIT_MP3' was not declared in this scope
+         int mixerFlags = MIX_INIT_MP3 | MIX_INIT_OGG;
+                          ^
+main.cpp:35:41: error: 'MIX_INIT_OGG' was not declared in this scope
+         int mixerFlags = MIX_INIT_MP3 | MIX_INIT_OGG;
+                                         ^
+main.cpp:36:33: error: 'Mix_Init' was not declared in this scope
+         if ((Mix_Init(mixerFlags) & mixerFlags) != mixerFlags) {
+                                 ^
+main.cpp:37:51: error: 'Mix_GetError' was not declared in this scope
+             throw std::runtime_error(Mix_GetError());
+                                                   ^
+main.cpp: In function 'int main()':
+main.cpp:44:19: error: 'make_window' is not a member of 'sdl'
+     auto window = sdl::make_window("whatever", 1280, 720);
+                   ^
+main.cpp:45:21: error: 'make_renderer' is not a member of 'sdl'
+     auto renderer = sdl::make_renderer(window);
+                     ^
