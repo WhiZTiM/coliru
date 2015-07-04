@@ -1,0 +1,10 @@
+main.cpp:15:7: warning: unused variable 'a1' [-Wunused-variable]
+    A a1 = 1; // OK: copy-initialization selects A::A(int)
+      ^
+main.cpp:19:7: warning: unused variable 'a5' [-Wunused-variable]
+    A a5 = (A)1; // OK: explicit cast performs static_cast, direct-initialization
+      ^
+main.cpp:25:7: warning: unused variable 'b5' [-Wunused-variable]
+    B b5 = (B)1; // OK: explicit cast performs static_cast, direct-initialization
+      ^
+3 warnings generated.
