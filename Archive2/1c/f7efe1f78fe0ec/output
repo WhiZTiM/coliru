@@ -1,0 +1,9 @@
++ g++-5.1 -std=c++14 -O0 -Wall -pedantic -Wextra -pthread -Wno-unused-variable -Wno-unused-parameter -pthread main.cpp
++ ./a.out
+size 1:4	ONE,TWO,THREE,FOUR,
+size 2:0	
+ONE,TWO,THREE,FOUR,+ clang++ -std=c++14 -O0 -Wall -pedantic -Wextra -pthread -Wno-unused-variable -Wno-unused-parameter -pthread main.cpp -stdlib=libc++ -lsupc++
++ ./a.out
+size 1:4	ONE,TWO,THREE,FOUR,
+size 2:0	
+ONE,TWO,THREE,FOUR,
