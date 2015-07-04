@@ -1,0 +1,70 @@
+main.cpp: In function 'bool Init()':
+main.cpp:4:16: error: 'SDL_INIT_EVERYTHING' was not declared in this scope
+   if (SDL_Init(SDL_INIT_EVERYTHING) < 0) {
+                ^
+main.cpp:4:35: error: 'SDL_Init' was not declared in this scope
+   if (SDL_Init(SDL_INIT_EVERYTHING) < 0) {
+                                   ^
+main.cpp:5:5: error: 'cout' is not a member of 'std'
+     std::cout << "SDL could not initialize! SDL Error: " << SDL_GetError() << std::endl;
+     ^
+main.cpp:5:74: error: 'SDL_GetError' was not declared in this scope
+     std::cout << "SDL could not initialize! SDL Error: " << SDL_GetError() << std::endl;
+                                                                          ^
+main.cpp:5:79: error: 'endl' is not a member of 'std'
+     std::cout << "SDL could not initialize! SDL Error: " << SDL_GetError() << std::endl;
+                                                                               ^
+main.cpp:8:5: error: 'gWindow' was not declared in this scope
+     gWindow = SDL_CreateWindow("HI",
+     ^
+main.cpp:9:32: error: 'SDL_WINDOWPOS_UNDEFINED' was not declared in this scope
+                                SDL_WINDOWPOS_UNDEFINED,
+                                ^
+main.cpp:13:32: error: 'SDL_WINDOW_OPENGL' was not declared in this scope
+                                SDL_WINDOW_OPENGL);
+                                ^
+main.cpp:13:49: error: 'SDL_CreateWindow' was not declared in this scope
+                                SDL_WINDOW_OPENGL);
+                                                 ^
+main.cpp:15:7: error: 'cout' is not a member of 'std'
+       std::cout << "Window could not be created! SDL Error: " << SDL_GetError() << std::endl;
+       ^
+main.cpp:15:79: error: 'SDL_GetError' was not declared in this scope
+       std::cout << "Window could not be created! SDL Error: " << SDL_GetError() << std::endl;
+                                                                               ^
+main.cpp:15:84: error: 'endl' is not a member of 'std'
+       std::cout << "Window could not be created! SDL Error: " << SDL_GetError() << std::endl;
+                                                                                    ^
+main.cpp:18:7: error: 'gRenderer' was not declared in this scope
+       gRenderer = SDL_CreateRenderer(gWindow, -1, SDL_RENDERER_ACCELERATED);
+       ^
+main.cpp:18:51: error: 'SDL_RENDERER_ACCELERATED' was not declared in this scope
+       gRenderer = SDL_CreateRenderer(gWindow, -1, SDL_RENDERER_ACCELERATED);
+                                                   ^
+main.cpp:18:75: error: 'SDL_CreateRenderer' was not declared in this scope
+       gRenderer = SDL_CreateRenderer(gWindow, -1, SDL_RENDERER_ACCELERATED);
+                                                                           ^
+main.cpp:20:9: error: 'cout' is not a member of 'std'
+         std::cout << "Renderer could not be created! SDL Error: " << SDL_GetError() << std::endl;
+         ^
+main.cpp:20:83: error: 'SDL_GetError' was not declared in this scope
+         std::cout << "Renderer could not be created! SDL Error: " << SDL_GetError() << std::endl;
+                                                                                   ^
+main.cpp:20:88: error: 'endl' is not a member of 'std'
+         std::cout << "Renderer could not be created! SDL Error: " << SDL_GetError() << std::endl;
+                                                                                        ^
+main.cpp:24:24: error: 'IMG_INIT_PNG' was not declared in this scope
+         int imgFlags = IMG_INIT_PNG;
+                        ^
+main.cpp:25:32: error: 'IMG_Init' was not declared in this scope
+         if (!(IMG_Init(imgFlags) & imgFlags)) {
+                                ^
+main.cpp:26:11: error: 'cout' is not a member of 'std'
+           std::cout << "SDL_Image could not be initalized! SDL_image Error: " << IMG_GetError() << std::endl;
+           ^
+main.cpp:26:95: error: 'IMG_GetError' was not declared in this scope
+           std::cout << "SDL_Image could not be initalized! SDL_image Error: " << IMG_GetError() << std::endl;
+                                                                                               ^
+main.cpp:26:100: error: 'endl' is not a member of 'std'
+           std::cout << "SDL_Image could not be initalized! SDL_image Error: " << IMG_GetError() << std::endl;
+                                                                                                    ^
