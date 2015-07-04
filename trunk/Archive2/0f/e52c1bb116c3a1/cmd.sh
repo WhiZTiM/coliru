@@ -1,0 +1,1 @@
+clang++ -std=c++11 -O1 -g -Wall -pedantic -pthread -fverbose-asm -save-temps main.cpp && ./a.out && cat main.s | c++filt
