@@ -1,0 +1,24 @@
+main.cpp:10:24: error: expected ')' before '<' token
+     Foo(std::shared_ptr<int> texture) {
+                        ^
+main.cpp:21:10: error: 'shared_ptr' in namespace 'std' does not name a template type
+     std::shared_ptr<int> texture;
+          ^
+main.cpp: In constructor 'Foo::Foo(int*)':
+main.cpp:7:19: error: 'make_shared' is not a member of 'std'
+         texture = std::make_shared(texture);
+                   ^
+main.cpp: In copy constructor 'Foo::Foo(const Foo&)':
+main.cpp:15:9: error: class 'Foo' does not have any field named 'texture'
+         texture(other.texture) {}
+         ^
+main.cpp:15:23: error: 'const class Foo' has no member named 'texture'
+         texture(other.texture) {}
+                       ^
+main.cpp: In member function 'int* Foo::get()':
+main.cpp:18:16: error: 'texture' was not declared in this scope
+         return texture.get()   
+                ^
+main.cpp:19:5: error: expected ';' before '}' token
+     }
+     ^
