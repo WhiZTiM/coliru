@@ -1,0 +1,4 @@
+main.cpp: In function 'int main()':
+main.cpp:13:23: error: narrowing conversion of '1.0e+0' from 'double' to 'int' inside { }
+     C c2 { {1.0}, {2} }; // why not twice-list ?
+                       ^
