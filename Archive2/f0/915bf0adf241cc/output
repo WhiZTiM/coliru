@@ -1,0 +1,86 @@
+main.cpp:3:33: error: 'size_t' has not been declared
+   BaseSystem(const char* title, size_t w, size_t h, Uint32 flags) :
+                                 ^
+main.cpp:3:43: error: 'size_t' has not been declared
+   BaseSystem(const char* title, size_t w, size_t h, Uint32 flags) :
+                                           ^
+main.cpp:3:53: error: 'Uint32' has not been declared
+   BaseSystem(const char* title, size_t w, size_t h, Uint32 flags) :
+                                                     ^
+main.cpp:29:3: error: 'SDL_Window' does not name a type
+   SDL_Window* get_window() const noexcept {
+   ^
+main.cpp:33:3: error: 'SDL_Renderer' does not name a type
+   SDL_Renderer* get_renderer() const noexcept {
+   ^
+main.cpp:38:8: error: 'unique_ptr' in namespace 'std' does not name a template type
+   std::unique_ptr<Window> window;
+        ^
+main.cpp:39:8: error: 'unique_ptr' in namespace 'std' does not name a template type
+   std::unique_ptr<Renderer> renderer;
+        ^
+main.cpp: In constructor 'BaseSystem::BaseSystem(const char*, int, int, int)':
+main.cpp:4:5: error: class 'BaseSystem' does not have any field named 'window'
+     window(new Window(title, w, h, flags)) {
+     ^
+main.cpp:4:16: error: expected type-specifier before 'Window'
+     window(new Window(title, w, h, flags)) {
+                ^
+main.cpp:6:7: error: 'renderer' was not declared in this scope
+       renderer = std::unique_ptr<Renderer>(new Renderer(window.get()->get()));
+       ^
+main.cpp:6:18: error: 'unique_ptr' is not a member of 'std'
+       renderer = std::unique_ptr<Renderer>(new Renderer(window.get()->get()));
+                  ^
+main.cpp:6:34: error: 'Renderer' was not declared in this scope
+       renderer = std::unique_ptr<Renderer>(new Renderer(window.get()->get()));
+                                  ^
+main.cpp:6:48: error: expected type-specifier before 'Renderer'
+       renderer = std::unique_ptr<Renderer>(new Renderer(window.get()->get()));
+                                                ^
+main.cpp:6:48: error: expected ')' before 'Renderer'
+main.cpp:9:22: error: 'IMG_INIT_PNG' was not declared in this scope
+       int imgFlags = IMG_INIT_PNG;
+                      ^
+main.cpp:10:30: error: 'IMG_Init' was not declared in this scope
+       if (!(IMG_Init(imgFlags) & imgFlags)) {
+                              ^
+main.cpp:11:9: error: 'cerr' is not a member of 'std'
+         std::cerr << "Image loading subsystem initialization error.\n";
+         ^
+main.cpp:12:15: error: 'runtime_error' is not a member of 'std'
+         throw std::runtime_error(IMG_GetError());
+               ^
+main.cpp:12:47: error: 'IMG_GetError' was not declared in this scope
+         throw std::runtime_error(IMG_GetError());
+                                               ^
+main.cpp:16:20: error: 'TTF_Init' was not declared in this scope
+       if (TTF_Init() < 0) {
+                    ^
+main.cpp:17:9: error: 'cerr' is not a member of 'std'
+         std::cerr << "TTF subsystem initialization error.\n";
+         ^
+main.cpp:18:15: error: 'runtime_error' is not a member of 'std'
+         throw std::runtime_error(TTF_GetError());
+               ^
+main.cpp:18:47: error: 'TTF_GetError' was not declared in this scope
+         throw std::runtime_error(TTF_GetError());
+                                               ^
+main.cpp:22:24: error: 'MIX_INIT_MP3' was not declared in this scope
+       int mixerFlags = MIX_INIT_MP3 | MIX_INIT_OGG;
+                        ^
+main.cpp:22:39: error: 'MIX_INIT_OGG' was not declared in this scope
+       int mixerFlags = MIX_INIT_MP3 | MIX_INIT_OGG;
+                                       ^
+main.cpp:23:31: error: 'Mix_Init' was not declared in this scope
+       if ((Mix_Init(mixerFlags) & mixerFlags) != mixerFlags) {
+                               ^
+main.cpp:24:9: error: 'cerr' is not a member of 'std'
+         std::cerr << "Audio mixer subsystem initialization error.\n";
+         ^
+main.cpp:25:15: error: 'runtime_error' is not a member of 'std'
+         throw std::runtime_error(Mix_GetError());
+               ^
+main.cpp:25:47: error: 'Mix_GetError' was not declared in this scope
+         throw std::runtime_error(Mix_GetError());
+                                               ^
