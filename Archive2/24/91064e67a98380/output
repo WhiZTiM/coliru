@@ -1,0 +1,20 @@
+GNU C
+main.cpp: In function 'main':
+main.cpp:8:2: warning: C++ style comments are not allowed in ISO C90
+  // your code goes here
+  ^
+main.cpp:8:2: warning: (this will be reported only once per input file)
+-----------
+Standard C
+main.cpp:3:8: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'void'
+ inline void foo() { printf("foo\n"); }
+        ^
+main.cpp: In function 'main':
+main.cpp:6:20: error: 'foo' undeclared (first use in this function)
+     void (*f)() = &foo;
+                    ^
+main.cpp:6:20: note: each undeclared identifier is reported only once for each function it appears in
+main.cpp:8:2: error: C++ style comments are not allowed in ISO C90
+  // your code goes here
+  ^
+main.cpp:8:2: error: (this will be reported only once per input file)
