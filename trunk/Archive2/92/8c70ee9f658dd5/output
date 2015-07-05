@@ -1,0 +1,16 @@
++ mv main.cpp main.c
++ gcc -std=c99 -O0 -Wall -Wextra -pedantic -pthread main.c
+main.c: In function 'main':
+main.c:9:11: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+     a2[0] = 5;
+           ^
+main.c:10:11: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
+     a1[0] = &a;
+           ^
+main.c:8:10: warning: variable 'a2' set but not used [-Wunused-but-set-variable]
+     int* a2[10] = {0};
+          ^
+main.c:7:9: warning: variable 'a1' set but not used [-Wunused-but-set-variable]
+     int a1[10] = {0};
+         ^
++ ./a.out
