@@ -1,0 +1,8 @@
+main.cpp:4:8: warning: ISO C++ forbids use of 'auto' in parameter declaration [-Wpedantic]
+ auto f(auto (*)(int)->int) -> void {}
+        ^
+main.cpp: In instantiation of 'auto:1 f(auto:1 (*)(int)) [with auto:1 = int]':
+main.cpp:7:6:   required from here
+main.cpp:4:37: warning: no return statement in function returning non-void [-Wreturn-type]
+ auto f(auto (*)(int)->int) -> void {}
+                                     ^
