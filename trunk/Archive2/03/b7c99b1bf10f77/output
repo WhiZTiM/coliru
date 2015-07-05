@@ -1,0 +1,7 @@
+main.cpp:5:14: error: 'B' is a protected member of 'A'
+struct D: A::B, A { };
+             ^
+main.cpp:3:12: note: declared protected here
+    struct B { };
+           ^
+1 error generated.
