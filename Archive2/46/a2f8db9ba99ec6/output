@@ -1,0 +1,4 @@
+main.cpp:1:43: fatal error: ../JuceLibraryCode/JuceHeader.h: No such file or directory
+ #include "../JuceLibraryCode/JuceHeader.h"
+                                           ^
+compilation terminated.
