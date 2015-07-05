@@ -1,0 +1,2 @@
+Modified a non-volatile variable 100m times. Time used: 0.00 seconds
+Modified a volatile variable 100m times. Time used: 1.00 seconds
