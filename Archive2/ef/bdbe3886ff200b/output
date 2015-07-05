@@ -1,0 +1,9 @@
++ mv main.cpp main.c
++ gcc -std=c89 -O0 -Wall -Wextra -pedantic -pthread main.c
+main.c: In function 'main':
+main.c:12:17: warning: unused variable 'b' [-Wunused-variable]
+     int a = 4, *b, c[4] = {1,2,3};
+                 ^
++ ./a.out
+2
+1 , 2
