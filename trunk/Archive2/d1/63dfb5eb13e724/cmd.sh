@@ -1,0 +1,1 @@
+mv main.cpp main.c && gcc -Wno-unused -Wno-format -std=c11 -O2 -fsanitize=undefined -Wall -pedantic main.c && ./a.out
