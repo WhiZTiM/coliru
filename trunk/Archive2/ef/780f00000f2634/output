@@ -1,0 +1,18 @@
+main.cpp:6:27: error: use of 'auto' in parameter declaration only available with -std=c++14 or -std=gnu++14
+ template <class R> auto f(auto (X::*)(int) const -> R) {}
+                           ^
+main.cpp:6:54: error: 'f' function uses 'auto' type specifier without trailing return type
+ template <class R> auto f(auto (X::*)(int) const -> R) {}
+                                                      ^
+main.cpp:6:54: note: deduced return type only available with -std=c++14 or -std=gnu++14
+main.cpp: In function 'int main()':
+main.cpp:11:12: error: no matching function for call to 'f(<unresolved overloaded function type>)'
+   f(&X::get);
+            ^
+main.cpp:6:25: note: candidate: template<class R> auto f(int (X::*)(int) const)
+ template <class R> auto f(auto (X::*)(int) const -> R) {}
+                         ^
+main.cpp:6:25: note:   template argument deduction/substitution failed:
+main.cpp:11:12: note:   couldn't deduce template parameter 'R'
+   f(&X::get);
+            ^
