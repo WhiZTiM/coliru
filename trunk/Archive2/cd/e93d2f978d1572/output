@@ -1,0 +1,20 @@
+main.cpp: In instantiation of 'void foo(IteratorTypes&& ...) [with IteratorTypes = {__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, __gnu_cxx::__normal_iterator<float*, std::vector<float, std::allocator<float> > >}]':
+main.cpp:16:40:   required from here
+main.cpp:8:83: error: wrong number of template arguments (2, should be 1)
+     using ValueTypes = typename std::iterator_traits<IteratorTypes...>::value_type;
+                                                                                   ^
+In file included from /usr/include/c++/4.8/bits/stl_algobase.h:65:0,
+                 from /usr/include/c++/4.8/vector:60,
+                 from main.cpp:2:
+/usr/include/c++/4.8/bits/stl_iterator_base_types.h:159:12: error: provided for 'template<class _Iterator> struct std::iterator_traits'
+     struct iterator_traits
+            ^
+main.cpp:9:103: error: wrong number of template arguments (2, should be 1)
+  static_assert(std::is_same<std::tuple<ValueTypes>,std::tuple<int,float>>::value, "types do no match");
+                                                                                                       ^
+In file included from /usr/include/c++/4.8/bits/stl_algobase.h:65:0,
+                 from /usr/include/c++/4.8/vector:60,
+                 from main.cpp:2:
+/usr/include/c++/4.8/bits/stl_iterator_base_types.h:159:12: error: provided for 'template<class _Iterator> struct std::iterator_traits'
+     struct iterator_traits
+            ^
