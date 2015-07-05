@@ -1,0 +1,4 @@
+main.cpp:11:23: error: expected '{' or ','
+    foo() : (qux, bar)(create()) {
+                      ^
+1 error generated.
