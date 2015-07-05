@@ -1,0 +1,7 @@
+main.cpp:260:4: error: no matching function for call to 'intersect'
+   intersect(Line(Point(0,0), Point(0,0)), Circle(Point(0,0), 0));
+   ^~~~~~~~~
+main.cpp:225:6: note: candidate function [with Type1 = Line, Type2 = Circle] not viable: expects an l-value for 1st argument
+bool intersect(Type1 &a, Type2 &b) {
+     ^
+1 error generated.
