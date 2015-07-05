@@ -1,0 +1,1 @@
+cat main.cpp | php > a.cpp && g++ -std=c++1z -O2 -Wall -Wextra -pedantic -pthread a.cpp && ./a.out
