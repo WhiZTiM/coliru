@@ -1,0 +1,8 @@
+main.cpp:17:13: warning: private field 'a' is not used [-Wunused-private-field]
+        bar a;
+            ^
+main.cpp:18:13: warning: private field 'b' is not used [-Wunused-private-field]
+        bar b;
+            ^
+2 warnings generated.
+12
