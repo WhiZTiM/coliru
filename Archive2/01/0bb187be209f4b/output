@@ -1,0 +1,14 @@
+main.cpp: In instantiation of 'void heapify(std::vector<T>&, int, int) [with T = int]':
+main.cpp:54:10:   required from 'void heapsort(std::vector<T>&) [with T = int]'
+main.cpp:66:12:   required from here
+main.cpp:24:8: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  if (l <= heap_size && A.at(l) > A.at(r)) {
+        ^
+main.cpp:30:8: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  if (r <= heap_size && A.at(r) > A.at(largest)) {
+        ^
+main.cpp:33:14: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  if (largest != i) {
+              ^
+Heapsort. Type in numbers to sort, separated by spaces.
+
