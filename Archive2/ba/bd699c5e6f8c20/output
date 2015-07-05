@@ -1,0 +1,6 @@
+======== clang++ ========
+ processor: 120 millisecs
+wall clock: 371 millisecs
+========== g++ ==========
+ processor: 1340 millisecs
+wall clock: 1585 millisecs
