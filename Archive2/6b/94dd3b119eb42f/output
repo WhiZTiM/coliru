@@ -1,0 +1,12 @@
+======== clang++ ========
+      all values compare equal:   30 millisecs
+   pre-sorted in reverse order:   60 millisecs
+                already sorted:   40 millisecs
+         shuffled (repeatable):  880 millisecs
+             shuffled (random):  890 millisecs
+========== g++ ==========
+      all values compare equal:  360 millisecs
+   pre-sorted in reverse order:  340 millisecs
+                already sorted:  480 millisecs
+         shuffled (repeatable):  920 millisecs
+             shuffled (random):  940 millisecs
