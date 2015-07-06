@@ -1,0 +1,10 @@
+main.cpp:17:21: warning: unused variable 'pUWidthsClass' [-Wunused-variable]
+    UWidthsbase_t * pUWidthsClass = &UWidths.group;
+                    ^
+main.cpp:18:21: warning: unused variable 'pUWidthsTerrain' [-Wunused-variable]
+    UWidthsbase_t * pUWidthsTerrain = &UWidths.terrain;
+                    ^
+main.cpp:19:21: warning: unused variable 'pUWidthsConst' [-Wunused-variable]
+    UWidthsbase_t * pUWidthsConst = &UWidths.uConst;
+                    ^
+3 warnings generated.
