@@ -1,0 +1,4 @@
+/tmp/ccNsyfh1.o: In function `main':
+main.cpp:(.text.startup+0xafc): undefined reference to `boost::chrono::steady_clock::now()'
+main.cpp:(.text.startup+0xb96): undefined reference to `boost::chrono::steady_clock::now()'
+collect2: error: ld returned 1 exit status
