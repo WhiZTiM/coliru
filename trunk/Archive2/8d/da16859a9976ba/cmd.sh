@@ -1,0 +1,1 @@
+clang++ -std=c++14 -Os -Wall -pedantic -pthread main.cpp  && ./a.out <<<"somename888 8000"; tail inventory.txt
