@@ -1,0 +1,303 @@
+In file included from /usr/local/include/c++/5.1.0/numeric:62:0,
+                 from /usr/local/include/c++/5.1.0/bits/random.tcc:33,
+                 from /usr/local/include/c++/5.1.0/random:51,
+                 from /usr/local/include/c++/5.1.0/bits/stl_algo.h:66,
+                 from /usr/local/include/c++/5.1.0/algorithm:62,
+                 from main.cpp:3:
+/usr/local/include/c++/5.1.0/bits/stl_numeric.h: In instantiation of '_Tp std::accumulate(_InputIterator, _InputIterator, _Tp) [with _InputIterator = __gnu_cxx::__normal_iterator<std::array<double, 1ul>*, std::vector<std::array<double, 1ul> > >; _Tp = std::array<double, 1ul>]':
+main.cpp:34:55:   required from here
+/usr/local/include/c++/5.1.0/bits/stl_numeric.h:127:18: error: no match for 'operator+' (operand types are 'std::array<double, 1ul>' and 'std::array<double, 1ul>')
+  __init = __init + *__first;
+                  ^
+In file included from /usr/local/include/c++/5.1.0/bits/stl_algobase.h:67:0,
+                 from /usr/local/include/c++/5.1.0/bits/char_traits.h:39,
+                 from /usr/local/include/c++/5.1.0/ios:40,
+                 from /usr/local/include/c++/5.1.0/ostream:38,
+                 from /usr/local/include/c++/5.1.0/iostream:39,
+                 from main.cpp:1:
+/usr/local/include/c++/5.1.0/bits/stl_iterator.h:334:5: note: candidate: template<class _Iterator> std::reverse_iterator<_Iterator> std::operator+(typename std::reverse_iterator<_Iterator>::difference_type, const std::reverse_iterator<_Iterator>&)
+     operator+(typename reverse_iterator<_Iterator>::difference_type __n,
+     ^
+/usr/local/include/c++/5.1.0/bits/stl_iterator.h:334:5: note:   template argument deduction/substitution failed:
+In file included from /usr/local/include/c++/5.1.0/numeric:62:0,
+                 from /usr/local/include/c++/5.1.0/bits/random.tcc:33,
+                 from /usr/local/include/c++/5.1.0/random:51,
+                 from /usr/local/include/c++/5.1.0/bits/stl_algo.h:66,
+                 from /usr/local/include/c++/5.1.0/algorithm:62,
+                 from main.cpp:3:
+/usr/local/include/c++/5.1.0/bits/stl_numeric.h:127:18: note:   'std::array<double, 1ul>' is not derived from 'const std::reverse_iterator<_Iterator>'
+  __init = __init + *__first;
+                  ^
+In file included from /usr/local/include/c++/5.1.0/bits/stl_algobase.h:67:0,
+                 from /usr/local/include/c++/5.1.0/bits/char_traits.h:39,
+                 from /usr/local/include/c++/5.1.0/ios:40,
+                 from /usr/local/include/c++/5.1.0/ostream:38,
+                 from /usr/local/include/c++/5.1.0/iostream:39,
+                 from main.cpp:1:
+/usr/local/include/c++/5.1.0/bits/stl_iterator.h:1152:5: note: candidate: template<class _Iterator> std::move_iterator<_Iterator> std::operator+(typename std::move_iterator<_Iterator>::difference_type, const std::move_iterator<_Iterator>&)
+     operator+(typename move_iterator<_Iterator>::difference_type __n,
+     ^
+/usr/local/include/c++/5.1.0/bits/stl_iterator.h:1152:5: note:   template argument deduction/substitution failed:
+In file included from /usr/local/include/c++/5.1.0/numeric:62:0,
+                 from /usr/local/include/c++/5.1.0/bits/random.tcc:33,
+                 from /usr/local/include/c++/5.1.0/random:51,
+                 from /usr/local/include/c++/5.1.0/bits/stl_algo.h:66,
+                 from /usr/local/include/c++/5.1.0/algorithm:62,
+                 from main.cpp:3:
+/usr/local/include/c++/5.1.0/bits/stl_numeric.h:127:18: note:   'std::array<double, 1ul>' is not derived from 'const std::move_iterator<_Iterator>'
+  __init = __init + *__first;
+                  ^
+In file included from /usr/local/include/c++/5.1.0/string:52:0,
+                 from /usr/local/include/c++/5.1.0/bits/locale_classes.h:40,
+                 from /usr/local/include/c++/5.1.0/bits/ios_base.h:41,
+                 from /usr/local/include/c++/5.1.0/ios:42,
+                 from /usr/local/include/c++/5.1.0/ostream:38,
+                 from /usr/local/include/c++/5.1.0/iostream:39,
+                 from main.cpp:1:
+/usr/local/include/c++/5.1.0/bits/basic_string.h:4778:5: note: candidate: template<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Alloc> std::operator+(const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&, const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&)
+     operator+(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+     ^
+/usr/local/include/c++/5.1.0/bits/basic_string.h:4778:5: note:   template argument deduction/substitution failed:
+In file included from /usr/local/include/c++/5.1.0/numeric:62:0,
+                 from /usr/local/include/c++/5.1.0/bits/random.tcc:33,
+                 from /usr/local/include/c++/5.1.0/random:51,
+                 from /usr/local/include/c++/5.1.0/bits/stl_algo.h:66,
+                 from /usr/local/include/c++/5.1.0/algorithm:62,
+                 from main.cpp:3:
+/usr/local/include/c++/5.1.0/bits/stl_numeric.h:127:18: note:   'std::array<double, 1ul>' is not derived from 'const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>'
+  __init = __init + *__first;
+                  ^
+In file included from /usr/local/include/c++/5.1.0/string:53:0,
+                 from /usr/local/include/c++/5.1.0/bits/locale_classes.h:40,
+                 from /usr/local/include/c++/5.1.0/bits/ios_base.h:41,
+                 from /usr/local/include/c++/5.1.0/ios:42,
+                 from /usr/local/include/c++/5.1.0/ostream:38,
+                 from /usr/local/include/c++/5.1.0/iostream:39,
+                 from main.cpp:1:
+/usr/local/include/c++/5.1.0/bits/basic_string.tcc:1151:5: note: candidate: template<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Alloc> std::operator+(const _CharT*, const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&)
+     operator+(const _CharT* __lhs,
+     ^
+/usr/local/include/c++/5.1.0/bits/basic_string.tcc:1151:5: note:   template argument deduction/substitution failed:
+In file included from /usr/local/include/c++/5.1.0/numeric:62:0,
+                 from /usr/local/include/c++/5.1.0/bits/random.tcc:33,
+                 from /usr/local/include/c++/5.1.0/random:51,
+                 from /usr/local/include/c++/5.1.0/bits/stl_algo.h:66,
+                 from /usr/local/include/c++/5.1.0/algorithm:62,
+                 from main.cpp:3:
+/usr/local/include/c++/5.1.0/bits/stl_numeric.h:127:18: note:   mismatched types 'const _CharT*' and 'std::array<double, 1ul>'
+  __init = __init + *__first;
+                  ^
+In file included from /usr/local/include/c++/5.1.0/string:53:0,
+                 from /usr/local/include/c++/5.1.0/bits/locale_classes.h:40,
+                 from /usr/local/include/c++/5.1.0/bits/ios_base.h:41,
+                 from /usr/local/include/c++/5.1.0/ios:42,
+                 from /usr/local/include/c++/5.1.0/ostream:38,
+                 from /usr/local/include/c++/5.1.0/iostream:39,
+                 from main.cpp:1:
+/usr/local/include/c++/5.1.0/bits/basic_string.tcc:1167:5: note: candidate: template<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Alloc> std::operator+(_CharT, const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&)
+     operator+(_CharT __lhs, const basic_string<_CharT, _Traits, _Alloc>& __rhs)
+     ^
+/usr/local/include/c++/5.1.0/bits/basic_string.tcc:1167:5: note:   template argument deduction/substitution failed:
+In file included from /usr/local/include/c++/5.1.0/numeric:62:0,
+                 from /usr/local/include/c++/5.1.0/bits/random.tcc:33,
+                 from /usr/local/include/c++/5.1.0/random:51,
+                 from /usr/local/include/c++/5.1.0/bits/stl_algo.h:66,
+                 from /usr/local/include/c++/5.1.0/algorithm:62,
+                 from main.cpp:3:
+/usr/local/include/c++/5.1.0/bits/stl_numeric.h:127:18: note:   'std::array<double, 1ul>' is not derived from 'const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>'
+  __init = __init + *__first;
+                  ^
+In file included from /usr/local/include/c++/5.1.0/string:52:0,
+                 from /usr/local/include/c++/5.1.0/bits/locale_classes.h:40,
+                 from /usr/local/include/c++/5.1.0/bits/ios_base.h:41,
+                 from /usr/local/include/c++/5.1.0/ios:42,
+                 from /usr/local/include/c++/5.1.0/ostream:38,
+                 from /usr/local/include/c++/5.1.0/iostream:39,
+                 from main.cpp:1:
+/usr/local/include/c++/5.1.0/bits/basic_string.h:4815:5: note: candidate: template<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Alloc> std::operator+(const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&, const _CharT*)
+     operator+(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+     ^
+/usr/local/include/c++/5.1.0/bits/basic_string.h:4815:5: note:   template argument deduction/substitution failed:
+In file included from /usr/local/include/c++/5.1.0/numeric:62:0,
+                 from /usr/local/include/c++/5.1.0/bits/random.tcc:33,
+                 from /usr/local/include/c++/5.1.0/random:51,
+                 from /usr/local/include/c++/5.1.0/bits/stl_algo.h:66,
+                 from /usr/local/include/c++/5.1.0/algorithm:62,
+                 from main.cpp:3:
+/usr/local/include/c++/5.1.0/bits/stl_numeric.h:127:18: note:   'std::array<double, 1ul>' is not derived from 'const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>'
+  __init = __init + *__first;
+                  ^
+In file included from /usr/local/include/c++/5.1.0/string:52:0,
+                 from /usr/local/include/c++/5.1.0/bits/locale_classes.h:40,
+                 from /usr/local/include/c++/5.1.0/bits/ios_base.h:41,
+                 from /usr/local/include/c++/5.1.0/ios:42,
+                 from /usr/local/include/c++/5.1.0/ostream:38,
+                 from /usr/local/include/c++/5.1.0/iostream:39,
+                 from main.cpp:1:
+/usr/local/include/c++/5.1.0/bits/basic_string.h:4831:5: note: candidate: template<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Alloc> std::operator+(const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&, _CharT)
+     operator+(const basic_string<_CharT, _Traits, _Alloc>& __lhs, _CharT __rhs)
+     ^
+/usr/local/include/c++/5.1.0/bits/basic_string.h:4831:5: note:   template argument deduction/substitution failed:
+In file included from /usr/local/include/c++/5.1.0/numeric:62:0,
+                 from /usr/local/include/c++/5.1.0/bits/random.tcc:33,
+                 from /usr/local/include/c++/5.1.0/random:51,
+                 from /usr/local/include/c++/5.1.0/bits/stl_algo.h:66,
+                 from /usr/local/include/c++/5.1.0/algorithm:62,
+                 from main.cpp:3:
+/usr/local/include/c++/5.1.0/bits/stl_numeric.h:127:18: note:   'std::array<double, 1ul>' is not derived from 'const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>'
+  __init = __init + *__first;
+                  ^
+In file included from /usr/local/include/c++/5.1.0/string:52:0,
+                 from /usr/local/include/c++/5.1.0/bits/locale_classes.h:40,
+                 from /usr/local/include/c++/5.1.0/bits/ios_base.h:41,
+                 from /usr/local/include/c++/5.1.0/ios:42,
+                 from /usr/local/include/c++/5.1.0/ostream:38,
+                 from /usr/local/include/c++/5.1.0/iostream:39,
+                 from main.cpp:1:
+/usr/local/include/c++/5.1.0/bits/basic_string.h:4843:5: note: candidate: template<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Alloc> std::operator+(std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&&, const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&)
+     operator+(basic_string<_CharT, _Traits, _Alloc>&& __lhs,
+     ^
+/usr/local/include/c++/5.1.0/bits/basic_string.h:4843:5: note:   template argument deduction/substitution failed:
+In file included from /usr/local/include/c++/5.1.0/numeric:62:0,
+                 from /usr/local/include/c++/5.1.0/bits/random.tcc:33,
+                 from /usr/local/include/c++/5.1.0/random:51,
+                 from /usr/local/include/c++/5.1.0/bits/stl_algo.h:66,
+                 from /usr/local/include/c++/5.1.0/algorithm:62,
+                 from main.cpp:3:
+/usr/local/include/c++/5.1.0/bits/stl_numeric.h:127:18: note:   'std::array<double, 1ul>' is not derived from 'std::__cxx11::basic_string<_CharT, _Traits, _Alloc>'
+  __init = __init + *__first;
+                  ^
+In file included from /usr/local/include/c++/5.1.0/string:52:0,
+                 from /usr/local/include/c++/5.1.0/bits/locale_classes.h:40,
+                 from /usr/local/include/c++/5.1.0/bits/ios_base.h:41,
+                 from /usr/local/include/c++/5.1.0/ios:42,
+                 from /usr/local/include/c++/5.1.0/ostream:38,
+                 from /usr/local/include/c++/5.1.0/iostream:39,
+                 from main.cpp:1:
+/usr/local/include/c++/5.1.0/bits/basic_string.h:4849:5: note: candidate: template<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Alloc> std::operator+(const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&, std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&&)
+     operator+(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+     ^
+/usr/local/include/c++/5.1.0/bits/basic_string.h:4849:5: note:   template argument deduction/substitution failed:
+In file included from /usr/local/include/c++/5.1.0/numeric:62:0,
+                 from /usr/local/include/c++/5.1.0/bits/random.tcc:33,
+                 from /usr/local/include/c++/5.1.0/random:51,
+                 from /usr/local/include/c++/5.1.0/bits/stl_algo.h:66,
+                 from /usr/local/include/c++/5.1.0/algorithm:62,
+                 from main.cpp:3:
+/usr/local/include/c++/5.1.0/bits/stl_numeric.h:127:18: note:   'std::array<double, 1ul>' is not derived from 'const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>'
+  __init = __init + *__first;
+                  ^
+In file included from /usr/local/include/c++/5.1.0/string:52:0,
+                 from /usr/local/include/c++/5.1.0/bits/locale_classes.h:40,
+                 from /usr/local/include/c++/5.1.0/bits/ios_base.h:41,
+                 from /usr/local/include/c++/5.1.0/ios:42,
+                 from /usr/local/include/c++/5.1.0/ostream:38,
+                 from /usr/local/include/c++/5.1.0/iostream:39,
+                 from main.cpp:1:
+/usr/local/include/c++/5.1.0/bits/basic_string.h:4855:5: note: candidate: template<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Alloc> std::operator+(std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&&, std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&&)
+     operator+(basic_string<_CharT, _Traits, _Alloc>&& __lhs,
+     ^
+/usr/local/include/c++/5.1.0/bits/basic_string.h:4855:5: note:   template argument deduction/substitution failed:
+In file included from /usr/local/include/c++/5.1.0/numeric:62:0,
+                 from /usr/local/include/c++/5.1.0/bits/random.tcc:33,
+                 from /usr/local/include/c++/5.1.0/random:51,
+                 from /usr/local/include/c++/5.1.0/bits/stl_algo.h:66,
+                 from /usr/local/include/c++/5.1.0/algorithm:62,
+                 from main.cpp:3:
+/usr/local/include/c++/5.1.0/bits/stl_numeric.h:127:18: note:   'std::array<double, 1ul>' is not derived from 'std::__cxx11::basic_string<_CharT, _Traits, _Alloc>'
+  __init = __init + *__first;
+                  ^
+In file included from /usr/local/include/c++/5.1.0/string:52:0,
+                 from /usr/local/include/c++/5.1.0/bits/locale_classes.h:40,
+                 from /usr/local/include/c++/5.1.0/bits/ios_base.h:41,
+                 from /usr/local/include/c++/5.1.0/ios:42,
+                 from /usr/local/include/c++/5.1.0/ostream:38,
+                 from /usr/local/include/c++/5.1.0/iostream:39,
+                 from main.cpp:1:
+/usr/local/include/c++/5.1.0/bits/basic_string.h:4867:5: note: candidate: template<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Alloc> std::operator+(const _CharT*, std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&&)
+     operator+(const _CharT* __lhs,
+     ^
+/usr/local/include/c++/5.1.0/bits/basic_string.h:4867:5: note:   template argument deduction/substitution failed:
+In file included from /usr/local/include/c++/5.1.0/numeric:62:0,
+                 from /usr/local/include/c++/5.1.0/bits/random.tcc:33,
+                 from /usr/local/include/c++/5.1.0/random:51,
+                 from /usr/local/include/c++/5.1.0/bits/stl_algo.h:66,
+                 from /usr/local/include/c++/5.1.0/algorithm:62,
+                 from main.cpp:3:
+/usr/local/include/c++/5.1.0/bits/stl_numeric.h:127:18: note:   mismatched types 'const _CharT*' and 'std::array<double, 1ul>'
+  __init = __init + *__first;
+                  ^
+In file included from /usr/local/include/c++/5.1.0/string:52:0,
+                 from /usr/local/include/c++/5.1.0/bits/locale_classes.h:40,
+                 from /usr/local/include/c++/5.1.0/bits/ios_base.h:41,
+                 from /usr/local/include/c++/5.1.0/ios:42,
+                 from /usr/local/include/c++/5.1.0/ostream:38,
+                 from /usr/local/include/c++/5.1.0/iostream:39,
+                 from main.cpp:1:
+/usr/local/include/c++/5.1.0/bits/basic_string.h:4873:5: note: candidate: template<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Alloc> std::operator+(_CharT, std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&&)
+     operator+(_CharT __lhs,
+     ^
+/usr/local/include/c++/5.1.0/bits/basic_string.h:4873:5: note:   template argument deduction/substitution failed:
+In file included from /usr/local/include/c++/5.1.0/numeric:62:0,
+                 from /usr/local/include/c++/5.1.0/bits/random.tcc:33,
+                 from /usr/local/include/c++/5.1.0/random:51,
+                 from /usr/local/include/c++/5.1.0/bits/stl_algo.h:66,
+                 from /usr/local/include/c++/5.1.0/algorithm:62,
+                 from main.cpp:3:
+/usr/local/include/c++/5.1.0/bits/stl_numeric.h:127:18: note:   'std::array<double, 1ul>' is not derived from 'std::__cxx11::basic_string<_CharT, _Traits, _Alloc>'
+  __init = __init + *__first;
+                  ^
+In file included from /usr/local/include/c++/5.1.0/string:52:0,
+                 from /usr/local/include/c++/5.1.0/bits/locale_classes.h:40,
+                 from /usr/local/include/c++/5.1.0/bits/ios_base.h:41,
+                 from /usr/local/include/c++/5.1.0/ios:42,
+                 from /usr/local/include/c++/5.1.0/ostream:38,
+                 from /usr/local/include/c++/5.1.0/iostream:39,
+                 from main.cpp:1:
+/usr/local/include/c++/5.1.0/bits/basic_string.h:4879:5: note: candidate: template<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Alloc> std::operator+(std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&&, const _CharT*)
+     operator+(basic_string<_CharT, _Traits, _Alloc>&& __lhs,
+     ^
+/usr/local/include/c++/5.1.0/bits/basic_string.h:4879:5: note:   template argument deduction/substitution failed:
+In file included from /usr/local/include/c++/5.1.0/numeric:62:0,
+                 from /usr/local/include/c++/5.1.0/bits/random.tcc:33,
+                 from /usr/local/include/c++/5.1.0/random:51,
+                 from /usr/local/include/c++/5.1.0/bits/stl_algo.h:66,
+                 from /usr/local/include/c++/5.1.0/algorithm:62,
+                 from main.cpp:3:
+/usr/local/include/c++/5.1.0/bits/stl_numeric.h:127:18: note:   'std::array<double, 1ul>' is not derived from 'std::__cxx11::basic_string<_CharT, _Traits, _Alloc>'
+  __init = __init + *__first;
+                  ^
+In file included from /usr/local/include/c++/5.1.0/string:52:0,
+                 from /usr/local/include/c++/5.1.0/bits/locale_classes.h:40,
+                 from /usr/local/include/c++/5.1.0/bits/ios_base.h:41,
+                 from /usr/local/include/c++/5.1.0/ios:42,
+                 from /usr/local/include/c++/5.1.0/ostream:38,
+                 from /usr/local/include/c++/5.1.0/iostream:39,
+                 from main.cpp:1:
+/usr/local/include/c++/5.1.0/bits/basic_string.h:4885:5: note: candidate: template<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Alloc> std::operator+(std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&&, _CharT)
+     operator+(basic_string<_CharT, _Traits, _Alloc>&& __lhs,
+     ^
+/usr/local/include/c++/5.1.0/bits/basic_string.h:4885:5: note:   template argument deduction/substitution failed:
+In file included from /usr/local/include/c++/5.1.0/numeric:62:0,
+                 from /usr/local/include/c++/5.1.0/bits/random.tcc:33,
+                 from /usr/local/include/c++/5.1.0/random:51,
+                 from /usr/local/include/c++/5.1.0/bits/stl_algo.h:66,
+                 from /usr/local/include/c++/5.1.0/algorithm:62,
+                 from main.cpp:3:
+/usr/local/include/c++/5.1.0/bits/stl_numeric.h:127:18: note:   'std::array<double, 1ul>' is not derived from 'std::__cxx11::basic_string<_CharT, _Traits, _Alloc>'
+  __init = __init + *__first;
+                  ^
+In file included from /usr/local/include/c++/5.1.0/vector:65:0,
+                 from /usr/local/include/c++/5.1.0/bits/random.h:34,
+                 from /usr/local/include/c++/5.1.0/random:49,
+                 from /usr/local/include/c++/5.1.0/bits/stl_algo.h:66,
+                 from /usr/local/include/c++/5.1.0/algorithm:62,
+                 from main.cpp:3:
+/usr/local/include/c++/5.1.0/bits/stl_bvector.h:297:3: note: candidate: std::_Bit_iterator std::operator+(std::ptrdiff_t, const std::_Bit_iterator&)
+   operator+(ptrdiff_t __n, const _Bit_iterator& __x)
+   ^
+/usr/local/include/c++/5.1.0/bits/stl_bvector.h:297:3: note:   no known conversion for argument 1 from 'std::array<double, 1ul>' to 'std::ptrdiff_t {aka long int}'
+/usr/local/include/c++/5.1.0/bits/stl_bvector.h:387:3: note: candidate: std::_Bit_const_iterator std::operator+(std::ptrdiff_t, const std::_Bit_const_iterator&)
+   operator+(ptrdiff_t __n, const _Bit_const_iterator& __x)
+   ^
+/usr/local/include/c++/5.1.0/bits/stl_bvector.h:387:3: note:   no known conversion for argument 1 from 'std::array<double, 1ul>' to 'std::ptrdiff_t {aka long int}'
