@@ -1,0 +1,6 @@
+======== clang++ ========
+vector:  1330 millisecs
+  list:  3630 millisecs
+========== g++ ==========
+vector:   780 millisecs
+  list:  4110 millisecs
