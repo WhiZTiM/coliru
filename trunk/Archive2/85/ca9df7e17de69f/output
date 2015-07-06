@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<!DOCTYPE boost_serialization>
+<boost_serialization signature="serialization::archive" version="12">
+<a class_id="0" tracking_level="0" version="0">
+	<Base1 class_id="1" tracking_level="0" version="0">
+		<obj.u>2.00000000000000000e+00</obj.u>
+		<obj.v>4</obj.v>
+	</Base1>
+	<Base2 class_id="2" tracking_level="0" version="0">
+		<obj.u>3.00000000000000000e+00</obj.u>
+		<obj.v>hello</obj.v>
+	</Base2>
+	<obj.t>10</obj.t>
+</a>
+
