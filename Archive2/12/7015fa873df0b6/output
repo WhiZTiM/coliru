@@ -1,0 +1,14 @@
+main.cpp: In function 'int main()':
+main.cpp:8:18: error: namespace 'boost::phoenix' not allowed in using-declaration
+     using boost::phoenix = phx;
+                  ^
+main.cpp:8:26: error: expected ';' before '=' token
+     using boost::phoenix = phx;
+                          ^
+main.cpp:8:26: error: expected primary-expression before '=' token
+main.cpp:8:28: error: 'phx' was not declared in this scope
+     using boost::phoenix = phx;
+                            ^
+main.cpp:15:23: error: 'phx' is not a class, namespace, or enumeration
+             >> +char_[phx::ref(a) = _1] >> char_('('),
+                       ^
