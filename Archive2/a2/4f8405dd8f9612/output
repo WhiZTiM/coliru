@@ -1,0 +1,16 @@
++ g++-5.1 -std=c++14 -O3 -Wall -Wextra -pedantic -pthread main.cpp
+main.cpp: In function 'int main()':
+main.cpp:18:65: error: no match for call to '(<lambda(auto:1&&, auto:2&& ...)>) (main()::<lambda(const char*)>, const char [4])'
+  gL([](const char * s){std::cout << s << '\n'; return;}  , "bar");   // this one gets SFINAE'd out
+                                                                 ^
+main.cpp:6:17: note: candidate: template<class auto:1, class ... auto:2> <lambda(auto:1&&, auto:2&& ...)>::operator std::enable_if_t<(! std::is_same<void, decltype (forward<decltype (func)>(func)((forward<decltype(__lambda0::operator()::params)>)(__lambda0::operator()::params)...))>{}), decltype (forward<decltype (func)>(func)((forward<decltype(__lambda0::operator()::params)>)(__lambda0::operator()::params)...))> (*)(auto:1&&, auto:2&& ...)() const
+         -> std::enable_if_t<not std::is_same<void,
+                 ^
+main.cpp:6:17: note:   template argument deduction/substitution failed:
+main.cpp:18:65: note:   mismatched types 'auto:2&&' and 'auto:2&& ...'
+  gL([](const char * s){std::cout << s << '\n'; return;}  , "bar");   // this one gets SFINAE'd out
+                                                                 ^
+main.cpp:6:17: note: candidate: template<class auto:1, class ... auto:2> <lambda(auto:1&&, auto:2&& ...)>
+         -> std::enable_if_t<not std::is_same<void,
+                 ^
+main.cpp:6:17: note:   template argument deduction/substitution failed:
