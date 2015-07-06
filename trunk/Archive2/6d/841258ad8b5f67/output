@@ -1,0 +1,4 @@
+call Foo with DerivedCoreA
+exec FooA
+call Foo with DerivedCoreB
+exec FooB
