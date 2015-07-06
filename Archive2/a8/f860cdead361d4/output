@@ -1,0 +1,4 @@
+main.cpp:6:8: error: cannot take the address of an rvalue of type '(anonymous enum at main.cpp:1:1)'
+        throw &m00;
+              ^~~~
+1 error generated.
