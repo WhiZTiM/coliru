@@ -1,0 +1,1 @@
+clang++ -std=c++14 -Os -Wall -pedantic -pthread main.cpp -lboost_system -lboost_serialization && ./a.out
