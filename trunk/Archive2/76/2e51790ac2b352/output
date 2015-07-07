@@ -1,0 +1,10 @@
+main.cpp:9:7: error: use of overloaded operator '<<' is ambiguous (with operand types 'foo<char, struct dummy>' and 'char')
+    f << 'a';
+    ~ ^  ~~~
+main.cpp:3:39: note: candidate function [with X = char, Y = dummy]
+template<typename X, typename Y> void operator<<(foo<X, Y>, X) {}
+                                      ^
+main.cpp:4:39: note: candidate function [with X = char, Y = dummy]
+template<typename X, typename Y> void operator<<(foo<X, Y>, char) {}
+                                      ^
+1 error generated.
