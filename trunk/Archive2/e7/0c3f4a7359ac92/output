@@ -1,0 +1,49 @@
+main.cpp:49:8: warning: 'StatisticsDisplay::update' hides overloaded virtual function [-Woverloaded-virtual]
+  void update(int data) { std::cout<<"Statistics Display"; }
+       ^
+main.cpp:12:16: note: hidden overloaded virtual function 'Observor<int>::update' declared here: type mismatch at 1st parameter ('const int &' vs 'int')
+  virtual void update(const T& t) = 0;
+               ^
+In file included from main.cpp:1:
+In file included from /usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.1.0/../../../../include/c++/5.1.0/iostream:39:
+In file included from /usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.1.0/../../../../include/c++/5.1.0/ostream:38:
+In file included from /usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.1.0/../../../../include/c++/5.1.0/ios:42:
+In file included from /usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.1.0/../../../../include/c++/5.1.0/bits/ios_base.h:41:
+In file included from /usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.1.0/../../../../include/c++/5.1.0/bits/locale_classes.h:40:
+In file included from /usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.1.0/../../../../include/c++/5.1.0/string:41:
+In file included from /usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.1.0/../../../../include/c++/5.1.0/bits/allocator.h:46:
+In file included from /usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.1.0/../../../../include/c++/5.1.0/x86_64-unknown-linux-gnu/bits/c++allocator.h:33:
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.1.0/../../../../include/c++/5.1.0/ext/new_allocator.h:120:23: error: allocating an object of abstract class type 'StatisticsDisplay'
+        { ::new((void *)__p) _Up(std::forward<_Args>(__args)...); }
+                             ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.1.0/../../../../include/c++/5.1.0/bits/alloc_traits.h:256:8: note: in instantiation of function template specialization '__gnu_cxx::new_allocator<StatisticsDisplay>::construct<StatisticsDisplay>' requested here
+        { __a.construct(__p, std::forward<_Args>(__args)...); }
+              ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.1.0/../../../../include/c++/5.1.0/bits/alloc_traits.h:402:4: note: in instantiation of function template specialization 'std::allocator_traits<std::allocator<StatisticsDisplay> >::_S_construct<StatisticsDisplay>' requested here
+        { _S_construct(__a, __p, std::forward<_Args>(__args)...); }
+          ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.1.0/../../../../include/c++/5.1.0/bits/shared_ptr_base.h:522:30: note: in instantiation of function template specialization 'std::allocator_traits<std::allocator<StatisticsDisplay> >::construct<StatisticsDisplay>' requested here
+          allocator_traits<_Alloc>::construct(__a, _M_ptr(),
+                                    ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.1.0/../../../../include/c++/5.1.0/bits/shared_ptr_base.h:617:18: note: in instantiation of function template specialization 'std::_Sp_counted_ptr_inplace<StatisticsDisplay, std::allocator<StatisticsDisplay>, __gnu_cxx::_Lock_policy::_S_atomic>::_Sp_counted_ptr_inplace<>' requested here
+          ::new (__mem) _Sp_cp_type(std::move(__a),
+                        ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.1.0/../../../../include/c++/5.1.0/bits/shared_ptr_base.h:1096:14: note: in instantiation of function template specialization 'std::__shared_count<__gnu_cxx::_Lock_policy::_S_atomic>::__shared_count<StatisticsDisplay, std::allocator<StatisticsDisplay>>' requested here
+        : _M_ptr(), _M_refcount(__tag, (_Tp*)0, __a,
+                    ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.1.0/../../../../include/c++/5.1.0/bits/shared_ptr.h:319:4: note: in instantiation of function template specialization 'std::__shared_ptr<StatisticsDisplay, __gnu_cxx::_Lock_policy::_S_atomic>::__shared_ptr<std::allocator<StatisticsDisplay>>' requested here
+        : __shared_ptr<_Tp>(__tag, __a, std::forward<_Args>(__args)...)
+          ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.1.0/../../../../include/c++/5.1.0/bits/shared_ptr.h:613:14: note: in instantiation of function template specialization 'std::shared_ptr<StatisticsDisplay>::shared_ptr<std::allocator<StatisticsDisplay>>' requested here
+      return shared_ptr<_Tp>(_Sp_make_shared_tag(), __a,
+             ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.1.0/../../../../include/c++/5.1.0/bits/shared_ptr.h:629:19: note: in instantiation of function template specialization 'std::allocate_shared<StatisticsDisplay, std::allocator<StatisticsDisplay>>' requested here
+      return std::allocate_shared<_Tp>(std::allocator<_Tp_nc>(),
+                  ^
+main.cpp:55:24: note: in instantiation of function template specialization 'std::make_shared<StatisticsDisplay>' requested here
+  auto sDisplay = std::make_shared<StatisticsDisplay>();
+                       ^
+main.cpp:12:16: note: unimplemented pure virtual method 'update' in 'StatisticsDisplay'
+  virtual void update(const T& t) = 0;
+               ^
+1 warning and 1 error generated.
