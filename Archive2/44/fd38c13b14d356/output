@@ -1,0 +1,3 @@
+search pattern "Monday" on string "Monday"...
+result (match): true
+result (search): true
