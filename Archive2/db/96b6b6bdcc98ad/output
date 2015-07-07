@@ -1,0 +1,7 @@
+main.cpp:4:10: error: ISO C++11 does not allow conversion from string literal to 'char *' [-Werror,-Wwritable-strings]
+char* s2="Ciao";
+         ^
+main.cpp:5:10: error: ISO C++11 does not allow conversion from string literal to 'char *' [-Werror,-Wwritable-strings]
+char* s3="pippo";
+         ^
+2 errors generated.
