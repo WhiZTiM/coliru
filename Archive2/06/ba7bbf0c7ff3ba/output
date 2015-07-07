@@ -1,0 +1,11 @@
+main.cpp:13:31: error: brackets go after the unqualified-id
+char[2] foo( decltype(U::x)* )
+    ~~~                       ^
+                              [2]
+main.cpp:13:12: error: function cannot return array type 'char [2]'
+char[2] foo( decltype(U::x)* )
+           ^
+main.cpp:23:16: warning: unused variable 'pStr' [-Wunused-variable]
+    auto Car::*pStr = &Car::str;
+               ^
+1 warning and 2 errors generated.
