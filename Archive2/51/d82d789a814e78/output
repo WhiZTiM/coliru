@@ -1,0 +1,16 @@
+main.cpp:24:51: error: no viable conversion from 'noop' to 'std::function<int (std::string, char, double)>'
+    std::function<int(std::string, char, double)> f2 = noop{};
+                                                  ^    ~~~~~~
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.1.0/../../../../include/c++/5.1.0/functional:2013:7: note: candidate constructor not viable: no known conversion from 'noop' to 'nullptr_t' for 1st argument
+      function(nullptr_t) noexcept
+      ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.1.0/../../../../include/c++/5.1.0/functional:2024:7: note: candidate constructor not viable: no known conversion from 'noop' to 'const std::function<int (std::__cxx11::basic_string<char>, char, double)> &' for 1st argument
+      function(const function& __x);
+      ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.1.0/../../../../include/c++/5.1.0/functional:2033:7: note: candidate constructor not viable: no known conversion from 'noop' to 'std::function<int (std::__cxx11::basic_string<char>, char, double)> &&' for 1st argument
+      function(function&& __x) : _Function_base()
+      ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.1.0/../../../../include/c++/5.1.0/functional:1995:39: note: candidate template ignored: disabled by 'enable_if' [with _Functor = noop]
+        using _Requires = typename enable_if<_Cond::value, _Tp>::type;
+                                             ^
+1 error generated.
