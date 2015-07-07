@@ -1,0 +1,11 @@
+main.cpp:16:1: error: expected ';' after struct definition
+ }
+ ^
+main.cpp: In constructor 'A::A()':
+main.cpp:13:5: warning: 'A::m_a' should be initialized in the member initialization list [-Weffc++]
+     A() = default;
+     ^
+main.cpp: In function 'int main()':
+main.cpp:40:7: note: synthesized method 'A::A()' first required here 
+     A a;
+       ^
