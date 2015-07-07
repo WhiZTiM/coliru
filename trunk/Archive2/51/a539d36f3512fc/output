@@ -1,0 +1,3 @@
+main.cpp:2:35: error: expected ',' before ')' token
+main.cpp:2:35: error: expected string-literal before ')' token
+main.cpp:2:5: error: static assertion failed: 
