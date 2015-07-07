@@ -1,0 +1,10 @@
+A:           false
+int:         true
+int const:   true
+int &:       false
+int *:       false
+float:       true
+float const: true
+float &:     false
+float *:     false
+complex:     false
