@@ -1,0 +1,10 @@
+main.cpp:25:9: error: conversion from 'noop::anything' to 'int' is ambiguous
+    int x = noop::anything{};
+        ^   ~~~~~~~~~~~~~~~~
+main.cpp:10:9: note: candidate function [with T = int]
+        operator T()const{ return {}; }
+        ^
+main.cpp:12:9: note: candidate function [with T = int]
+        operator const T&()const{ static const T t{}; return t; }
+        ^
+1 error generated.
