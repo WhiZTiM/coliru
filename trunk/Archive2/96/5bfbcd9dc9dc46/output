@@ -1,0 +1,6 @@
+With 'No' default: 'demo.positive':	Yes
+Without default:   'demo.positive':	Yes
+With 'No' default: 'demo.negative':	No
+Without default:   'demo.negative':	No
+With 'No' default: 'demo.invalid':	No
+Without default:   'demo.invalid':	Error parsing 'demo.invalid':	conversion of data to type "5YesNo" failed
