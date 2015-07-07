@@ -1,0 +1,6 @@
+!ptr: 0 false
+!!ptr: 1 true
+~!!ptr: -2 true
+!null: 1 true
+!!null: 0 false
+~!!null: -1 true
