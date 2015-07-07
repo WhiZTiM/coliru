@@ -1,0 +1,26 @@
+main() : creating thread - odd
+main() : creating thread - even
+Thread ID, 0
+Thread ID, 0
+sem_even: 0 sem_odd: 0
+0
+sem_even: 0 sem_odd: 0
+1
+sem_even: 0 sem_odd: 0
+2
+sem_even: 0 sem_odd: 0
+3
+sem_even: 0 sem_odd: 0
+4
+sem_even: 0 sem_odd: 0
+5
+sem_even: 0 sem_odd: 0
+6
+sem_even: 0 sem_odd: 0
+7
+sem_even: 0 sem_odd: 0
+8
+sem_even: 0 sem_odd: 0
+9
+sem_even: 0 sem_odd: 0
+10
