@@ -1,0 +1,23 @@
+#include <iostream>
+
+void menu()
+{
+    std::cout << R"(
+        Hi! Welcome to 'the X'
+                       MENU
+        -------------------------------------
+        |                                   |
+        |     1. Apples $2.50 each          |
+        |                                   |
+        |     2. Cheese $2.00 per pound     |
+        |                                   |
+        |     3. Bread  $3.00 per loaf      |
+        |                                   |
+        -------------------------------------
+       )" ;
+}
+
+int main()
+{
+    menu() ;
+}
