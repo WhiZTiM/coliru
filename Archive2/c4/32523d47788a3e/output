@@ -1,0 +1,10 @@
+g++
+operator T
+operator T const&
+operator T const&
+f3 creates: 
+clang
+operator T
+operator T const&
+f3 creates: operator T const&
+
