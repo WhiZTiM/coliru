@@ -1,0 +1,2 @@
+clang++ -std=c++14 -stdlib=libc++ -O2 -Wall -Wextra -pedantic-errors -c main.cpp 2>&1 | grep error && echo 'clang++ ok' || echo 'clang++ non-conforming'
+echo ================ && g++ -std=c++14 -O2 -Wall -Wextra -pedantic-errors -c main.cpp 2>&1 | grep error && echo 'g++ ok' || echo 'g++ non-conforming'

@@ -1,0 +1,5 @@
+main.cpp:4:13: error: enumerator value is not a constant expression
+1 error generated.
+clang++ ok
+================
+g++ non-conforming

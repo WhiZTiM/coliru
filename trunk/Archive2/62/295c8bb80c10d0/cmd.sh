@@ -1,0 +1,1 @@
+g++ -std=c++0x -O2 -Wall -pedantic -pthread -Wold-style-cast -Wextra -Wundef -Wsign-compare -Wconversion -Wpointer-arith -Weffc++ -Wnon-virtual-dtor main.cpp && ./a.out
