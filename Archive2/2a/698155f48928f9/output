@@ -1,0 +1,4 @@
+operator T
+operator T const&
+operator T const&
+f3 creates: 
