@@ -1,0 +1,2 @@
+this should read -1: -1 (and cannot be evaluated at compile-time)
+this should read 1: 1 (and nobody would try to evaluate it at compile-time)
