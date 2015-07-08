@@ -1,0 +1,5 @@
+main.cpp: In function 'void test()':
+main.cpp:11:8: warning: unused variable 'val' [-Wunused-variable]
+     T *val = 0;
+        ^
+T(T)
