@@ -1,0 +1,11 @@
+rvalues:
+----------------
+   direct access to vector: 720
+lvalue reference semantics: 1050
+           value semantics: 770
+
+lvalues:
+----------------
+   direct access to vector: 800
+lvalue reference semantics: 800
+           value semantics: 870
