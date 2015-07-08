@@ -1,0 +1,7 @@
+main.cpp: In function 'int main()':
+main.cpp:16:14: error: passing 'const A' as 'this' argument discards qualifiers [-fpermissive]
+      (a = b) = c;
+              ^
+main.cpp:6:14: note:   in call to 'const A& A::operator=(const A&)'
+     const A& operator= (const A& other)
+              ^
