@@ -1,0 +1,1 @@
+this should read -1: -1 (and cannot be evaluated at compile-time)
