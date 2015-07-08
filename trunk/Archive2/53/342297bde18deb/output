@@ -1,0 +1,5 @@
+main.cpp: In function 'int main()':
+main.cpp:10:23: error: expected primary-expression before 'unsigned'
+     unsigned int b = (unsigned char(a) & 0xff);
+                       ^
+main.cpp:10:23: error: expected ')' before 'unsigned'
