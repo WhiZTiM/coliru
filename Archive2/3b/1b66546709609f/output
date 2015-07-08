@@ -1,0 +1,7 @@
+main.cpp: In function 'int main()':
+main.cpp:23:17: error: taking address of temporary [-fpermissive]
+     fn(&A{ 1, 2 });      //OK, no extra magick
+                 ^
+main.cpp:25:20: error: taking address of temporary [-fpermissive]
+     fn(&(B)B{ 3, 4 });  //OK with explicit cast to B (but why?)
+                    ^
