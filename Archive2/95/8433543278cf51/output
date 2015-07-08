@@ -1,0 +1,10 @@
+main.cpp: In function 'int main()':
+main.cpp:8:5: error: 'chat' was not declared in this scope
+     chat c = " ";
+     ^
+main.cpp:10:30: error: 'byte' does not name a type
+     std::cout << static_cast<byte>(c);
+                              ^
+main.cpp:10:36: error: 'c' was not declared in this scope
+     std::cout << static_cast<byte>(c);
+                                    ^
