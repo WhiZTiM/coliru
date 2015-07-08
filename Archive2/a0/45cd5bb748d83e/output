@@ -1,0 +1,18 @@
+main.cpp: In constructor 'Semaphore::Semaphore(int)':
+main.cpp:11:5: warning: 'Semaphore::count' is initialized with itself [-Winit-self]
+     Semaphore (int count_ = 0)
+     ^
+main() : creating thread - odd
+main() : creating thread - even
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+finish
