@@ -1,0 +1,13 @@
++ g++ -std=c++14 -O3 -Wall -pedantic-errors main.cpp
++ ./a.out
+UTF-16
+
+[b098] [b294] [d0dc] [c624] 
+
+UTF-16 to UTF-8
+
+[eb] [82] [98] [eb] [8a] [94] [ed] [83] [9c] [ec] [98] [a4] 
+
+Converting back to UTF-16
+
+[b098] [b294] [d0dc] [c624] 
