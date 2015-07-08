@@ -1,0 +1,6 @@
+Hit Foo::do_decimal_point
+Hit Foo::do_thousands_sep
+Hit Foo::do_thousands_sep
+Hit Foo::do_decimal_point
+,
+.
