@@ -1,0 +1,7 @@
+main.cpp:11:3: error: no matching function for call to 'ReceiveFuncPtr'
+  ReceiveFuncPtr(&std::set<int>::insert); // ERROR
+  ^~~~~~~~~~~~~~
+main.cpp:3:3: note: candidate template ignored: couldn't infer template argument 'Return'
+T ReceiveFuncPtr (Return (T::*Method)(const int&))
+  ^
+1 error generated.
