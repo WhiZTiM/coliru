@@ -1,0 +1,9 @@
+main.cpp:1:1: warning: return type defaults to 'int' [-Wimplicit-int]
+ f(p) {}
+ ^
+main.cpp: In function 'f':
+main.cpp:1:1: warning: type of 'p' defaults to 'int' [-Wimplicit-int]
+main.cpp:1:1: warning: unused parameter 'p' [-Wunused-parameter]
+main.cpp:1:1: warning: control reaches end of non-void function [-Wreturn-type]
+ f(p) {}
+ ^
