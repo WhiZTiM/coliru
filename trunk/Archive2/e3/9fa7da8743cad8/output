@@ -1,0 +1,13 @@
+main.cpp:159:18: warning: unused variable 'both' [-Wunused-variable]
+    BothService* both = services->AddService<BothService>("both");
+                 ^
+main.cpp:161:18: warning: unused variable 'post' [-Wunused-variable]
+    PostService* post = services->AddService<PostService>("post");
+                 ^
+main.cpp:160:17: warning: unused variable 'pre' [-Wunused-variable]
+    PreService* pre = services->AddService<PreService>("pre");
+                ^
+3 warnings generated.
+!Pre
+BothService::OnPreUpdate()
+PreService::OnPreUpdate()
