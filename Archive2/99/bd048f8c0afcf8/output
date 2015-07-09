@@ -1,0 +1,7 @@
+main.cpp: In function 'int main()':
+main.cpp:13:38: warning: typedef 'using t1 = class std::result_of<S(int)>' locally defined but not used [-Wunused-local-typedefs]
+     using t1 = std::result_of<S(int)>;
+                                      ^
+main.cpp:15:38: warning: typedef 'using t2 = class std::result_of<int (&(int))(int)>' locally defined but not used [-Wunused-local-typedefs]
+     using t2 = std::result_of<N(int)>;
+                                      ^
