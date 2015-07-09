@@ -1,0 +1,5 @@
+main.cpp: In function 'int16_t foo()':
+main.cpp:7:13: warning: conversion to 'int16_t {aka short int}' from 'int32_t {aka int}' may alter its value [-Wconversion]
+      return i;
+             ^
+-1

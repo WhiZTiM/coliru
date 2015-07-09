@@ -1,0 +1,1 @@
+g++ -std=c++14  -fsanitize=undefined -Wall -pedantic -pthread main.cpp -Wconversion && ./a.out
