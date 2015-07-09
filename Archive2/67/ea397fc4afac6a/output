@@ -1,0 +1,422 @@
+ pool_used=16/16 pool_freed=0 pool_size=16
+ ALLOCATE 32B (LEAKING 16B)
+ pool_used=16/32 pool_freed=-16 pool_size=32
+
+Garbage collection:
+ freed=0/16
+ freed=16/16 CLEAR!
+
+
+Start:
+ pool_used=16/32 pool_freed=0 pool_size=32
+ pool_used=32/32 pool_freed=0 pool_size=32
+ ALLOCATE 64B (LEAKING 32B)
+ pool_used=16/64 pool_freed=-32 pool_size=64
+
+Garbage collection:
+ freed=-16/16
+ freed=0/16
+ freed=16/16 CLEAR!
+
+
+Start:
+ pool_used=16/64 pool_freed=0 pool_size=64
+ pool_used=32/64 pool_freed=0 pool_size=64
+ pool_used=48/64 pool_freed=0 pool_size=64
+ pool_used=64/64 pool_freed=0 pool_size=64
+
+Garbage collection:
+ freed=16/64
+ freed=32/64
+ freed=48/64
+ freed=64/64 CLEAR!
+
+
+Start:
+ pool_used=16/64 pool_freed=0 pool_size=64
+ pool_used=32/64 pool_freed=0 pool_size=64
+ pool_used=48/64 pool_freed=0 pool_size=64
+ pool_used=64/64 pool_freed=0 pool_size=64
+ ALLOCATE 128B (LEAKING 64B)
+ pool_used=16/128 pool_freed=-64 pool_size=128
+
+Garbage collection:
+ freed=-48/16
+ freed=-32/16
+ freed=-16/16
+ freed=0/16
+ freed=16/16 CLEAR!
+
+
+Start:
+ pool_used=16/128 pool_freed=0 pool_size=128
+ pool_used=32/128 pool_freed=0 pool_size=128
+ pool_used=48/128 pool_freed=0 pool_size=128
+ pool_used=64/128 pool_freed=0 pool_size=128
+ pool_used=80/128 pool_freed=0 pool_size=128
+ pool_used=96/128 pool_freed=0 pool_size=128
+
+Garbage collection:
+ freed=16/96
+ freed=32/96
+ freed=48/96
+ freed=64/96
+ freed=80/96
+ freed=96/96 CLEAR!
+
+
+Start:
+ pool_used=16/128 pool_freed=0 pool_size=128
+ pool_used=32/128 pool_freed=0 pool_size=128
+ pool_used=48/128 pool_freed=0 pool_size=128
+ pool_used=64/128 pool_freed=0 pool_size=128
+ pool_used=80/128 pool_freed=0 pool_size=128
+ pool_used=96/128 pool_freed=0 pool_size=128
+ pool_used=112/128 pool_freed=0 pool_size=128
+
+Garbage collection:
+ freed=16/112
+ freed=32/112
+ freed=48/112
+ freed=64/112
+ freed=80/112
+ freed=96/112
+ freed=112/112 CLEAR!
+
+
+Start:
+ pool_used=16/128 pool_freed=0 pool_size=128
+ pool_used=32/128 pool_freed=0 pool_size=128
+ pool_used=48/128 pool_freed=0 pool_size=128
+ pool_used=64/128 pool_freed=0 pool_size=128
+ pool_used=80/128 pool_freed=0 pool_size=128
+ pool_used=96/128 pool_freed=0 pool_size=128
+ pool_used=112/128 pool_freed=0 pool_size=128
+ pool_used=128/128 pool_freed=0 pool_size=128
+
+Garbage collection:
+ freed=16/128
+ freed=32/128
+ freed=48/128
+ freed=64/128
+ freed=80/128
+ freed=96/128
+ freed=112/128
+ freed=128/128 CLEAR!
+
+
+Start:
+ pool_used=16/128 pool_freed=0 pool_size=128
+ pool_used=32/128 pool_freed=0 pool_size=128
+ pool_used=48/128 pool_freed=0 pool_size=128
+ pool_used=64/128 pool_freed=0 pool_size=128
+ pool_used=80/128 pool_freed=0 pool_size=128
+ pool_used=96/128 pool_freed=0 pool_size=128
+ pool_used=112/128 pool_freed=0 pool_size=128
+ pool_used=128/128 pool_freed=0 pool_size=128
+ ALLOCATE 256B (LEAKING 128B)
+ pool_used=16/256 pool_freed=-128 pool_size=256
+
+Garbage collection:
+ freed=-112/16
+ freed=-96/16
+ freed=-80/16
+ freed=-64/16
+ freed=-48/16
+ freed=-32/16
+ freed=-16/16
+ freed=0/16
+ freed=16/16 CLEAR!
+
+
+Start:
+ pool_used=16/256 pool_freed=0 pool_size=256
+ pool_used=32/256 pool_freed=0 pool_size=256
+ pool_used=48/256 pool_freed=0 pool_size=256
+ pool_used=64/256 pool_freed=0 pool_size=256
+ pool_used=80/256 pool_freed=0 pool_size=256
+ pool_used=96/256 pool_freed=0 pool_size=256
+ pool_used=112/256 pool_freed=0 pool_size=256
+ pool_used=128/256 pool_freed=0 pool_size=256
+ pool_used=144/256 pool_freed=0 pool_size=256
+ pool_used=160/256 pool_freed=0 pool_size=256
+
+Garbage collection:
+ freed=16/160
+ freed=32/160
+ freed=48/160
+ freed=64/160
+ freed=80/160
+ freed=96/160
+ freed=112/160
+ freed=128/160
+ freed=144/160
+ freed=160/160 CLEAR!
+
+
+Start:
+ pool_used=16/256 pool_freed=0 pool_size=256
+ pool_used=32/256 pool_freed=0 pool_size=256
+ pool_used=48/256 pool_freed=0 pool_size=256
+ pool_used=64/256 pool_freed=0 pool_size=256
+ pool_used=80/256 pool_freed=0 pool_size=256
+ pool_used=96/256 pool_freed=0 pool_size=256
+ pool_used=112/256 pool_freed=0 pool_size=256
+ pool_used=128/256 pool_freed=0 pool_size=256
+ pool_used=144/256 pool_freed=0 pool_size=256
+ pool_used=160/256 pool_freed=0 pool_size=256
+ pool_used=176/256 pool_freed=0 pool_size=256
+ pool_used=192/256 pool_freed=0 pool_size=256
+ pool_used=208/256 pool_freed=0 pool_size=256
+ pool_used=224/256 pool_freed=0 pool_size=256
+
+Garbage collection:
+ freed=16/224
+ freed=32/224
+ freed=48/224
+ freed=64/224
+ freed=80/224
+ freed=96/224
+ freed=112/224
+ freed=128/224
+ freed=144/224
+ freed=160/224
+ freed=176/224
+ freed=192/224
+ freed=208/224
+ freed=224/224 CLEAR!
+
+
+Start:
+ pool_used=16/256 pool_freed=0 pool_size=256
+ pool_used=32/256 pool_freed=0 pool_size=256
+ pool_used=48/256 pool_freed=0 pool_size=256
+ pool_used=64/256 pool_freed=0 pool_size=256
+ pool_used=80/256 pool_freed=0 pool_size=256
+ pool_used=96/256 pool_freed=0 pool_size=256
+ pool_used=112/256 pool_freed=0 pool_size=256
+ pool_used=128/256 pool_freed=0 pool_size=256
+ pool_used=144/256 pool_freed=0 pool_size=256
+ pool_used=160/256 pool_freed=0 pool_size=256
+ pool_used=176/256 pool_freed=0 pool_size=256
+ pool_used=192/256 pool_freed=0 pool_size=256
+ pool_used=208/256 pool_freed=0 pool_size=256
+ pool_used=224/256 pool_freed=0 pool_size=256
+ pool_used=240/256 pool_freed=0 pool_size=256
+ pool_used=256/256 pool_freed=0 pool_size=256
+ ALLOCATE 512B (LEAKING 256B)
+ pool_used=16/512 pool_freed=-256 pool_size=512
+ pool_used=32/512 pool_freed=-256 pool_size=512
+ pool_used=48/512 pool_freed=-256 pool_size=512
+ pool_used=64/512 pool_freed=-256 pool_size=512
+ pool_used=80/512 pool_freed=-256 pool_size=512
+
+Garbage collection:
+ freed=-240/80
+ freed=-224/80
+ freed=-208/80
+ freed=-192/80
+ freed=-176/80
+ freed=-160/80
+ freed=-144/80
+ freed=-128/80
+ freed=-112/80
+ freed=-96/80
+ freed=-80/80
+ freed=-64/80
+ freed=-48/80
+ freed=-32/80
+ freed=-16/80
+ freed=0/80
+ freed=16/80
+ freed=32/80
+ freed=48/80
+ freed=64/80
+ freed=80/80 CLEAR!
+
+
+Start:
+ pool_used=16/512 pool_freed=0 pool_size=512
+ pool_used=32/512 pool_freed=0 pool_size=512
+ pool_used=48/512 pool_freed=0 pool_size=512
+ pool_used=64/512 pool_freed=0 pool_size=512
+ pool_used=80/512 pool_freed=0 pool_size=512
+ pool_used=96/512 pool_freed=0 pool_size=512
+ pool_used=112/512 pool_freed=0 pool_size=512
+ pool_used=128/512 pool_freed=0 pool_size=512
+ pool_used=144/512 pool_freed=0 pool_size=512
+ pool_used=160/512 pool_freed=0 pool_size=512
+ pool_used=176/512 pool_freed=0 pool_size=512
+ pool_used=192/512 pool_freed=0 pool_size=512
+ pool_used=208/512 pool_freed=0 pool_size=512
+ pool_used=224/512 pool_freed=0 pool_size=512
+ pool_used=240/512 pool_freed=0 pool_size=512
+ pool_used=256/512 pool_freed=0 pool_size=512
+ pool_used=272/512 pool_freed=0 pool_size=512
+ pool_used=288/512 pool_freed=0 pool_size=512
+ pool_used=304/512 pool_freed=0 pool_size=512
+ pool_used=320/512 pool_freed=0 pool_size=512
+ pool_used=336/512 pool_freed=0 pool_size=512
+ pool_used=352/512 pool_freed=0 pool_size=512
+ pool_used=368/512 pool_freed=0 pool_size=512
+ pool_used=384/512 pool_freed=0 pool_size=512
+ pool_used=400/512 pool_freed=0 pool_size=512
+ pool_used=416/512 pool_freed=0 pool_size=512
+ pool_used=432/512 pool_freed=0 pool_size=512
+ pool_used=448/512 pool_freed=0 pool_size=512
+ pool_used=464/512 pool_freed=0 pool_size=512
+ pool_used=480/512 pool_freed=0 pool_size=512
+ pool_used=496/512 pool_freed=0 pool_size=512
+ pool_used=512/512 pool_freed=0 pool_size=512
+ ALLOCATE 1024B (LEAKING 512B)
+ pool_used=16/1024 pool_freed=-512 pool_size=1024
+ pool_used=32/1024 pool_freed=-512 pool_size=1024
+ pool_used=48/1024 pool_freed=-512 pool_size=1024
+ pool_used=64/1024 pool_freed=-512 pool_size=1024
+ pool_used=80/1024 pool_freed=-512 pool_size=1024
+
+Garbage collection:
+ freed=-496/80
+ freed=-480/80
+ freed=-464/80
+ freed=-448/80
+ freed=-432/80
+ freed=-416/80
+ freed=-400/80
+ freed=-384/80
+ freed=-368/80
+ freed=-352/80
+ freed=-336/80
+ freed=-320/80
+ freed=-304/80
+ freed=-288/80
+ freed=-272/80
+ freed=-256/80
+ freed=-240/80
+ freed=-224/80
+ freed=-208/80
+ freed=-192/80
+ freed=-176/80
+ freed=-160/80
+ freed=-144/80
+ freed=-128/80
+ freed=-112/80
+ freed=-96/80
+ freed=-80/80
+ freed=-64/80
+ freed=-48/80
+ freed=-32/80
+ freed=-16/80
+ freed=0/80
+ freed=16/80
+ freed=32/80
+ freed=48/80
+ freed=64/80
+ freed=80/80 CLEAR!
+
+
+Start:
+ pool_used=16/1024 pool_freed=0 pool_size=1024
+ pool_used=32/1024 pool_freed=0 pool_size=1024
+ pool_used=48/1024 pool_freed=0 pool_size=1024
+ pool_used=64/1024 pool_freed=0 pool_size=1024
+ pool_used=80/1024 pool_freed=0 pool_size=1024
+ pool_used=96/1024 pool_freed=0 pool_size=1024
+ pool_used=112/1024 pool_freed=0 pool_size=1024
+ pool_used=128/1024 pool_freed=0 pool_size=1024
+ pool_used=144/1024 pool_freed=0 pool_size=1024
+ pool_used=160/1024 pool_freed=0 pool_size=1024
+ pool_used=176/1024 pool_freed=0 pool_size=1024
+ pool_used=192/1024 pool_freed=0 pool_size=1024
+ pool_used=208/1024 pool_freed=0 pool_size=1024
+ pool_used=224/1024 pool_freed=0 pool_size=1024
+ pool_used=240/1024 pool_freed=0 pool_size=1024
+ pool_used=256/1024 pool_freed=0 pool_size=1024
+ pool_used=272/1024 pool_freed=0 pool_size=1024
+ pool_used=288/1024 pool_freed=0 pool_size=1024
+ pool_used=304/1024 pool_freed=0 pool_size=1024
+ pool_used=320/1024 pool_freed=0 pool_size=1024
+ pool_used=336/1024 pool_freed=0 pool_size=1024
+ pool_used=352/1024 pool_freed=0 pool_size=1024
+ pool_used=368/1024 pool_freed=0 pool_size=1024
+ pool_used=384/1024 pool_freed=0 pool_size=1024
+ pool_used=400/1024 pool_freed=0 pool_size=1024
+ pool_used=416/1024 pool_freed=0 pool_size=1024
+ pool_used=432/1024 pool_freed=0 pool_size=1024
+ pool_used=448/1024 pool_freed=0 pool_size=1024
+ pool_used=464/1024 pool_freed=0 pool_size=1024
+ pool_used=480/1024 pool_freed=0 pool_size=1024
+ pool_used=496/1024 pool_freed=0 pool_size=1024
+ pool_used=512/1024 pool_freed=0 pool_size=1024
+ pool_used=528/1024 pool_freed=0 pool_size=1024
+ pool_used=544/1024 pool_freed=0 pool_size=1024
+ pool_used=560/1024 pool_freed=0 pool_size=1024
+ pool_used=576/1024 pool_freed=0 pool_size=1024
+ pool_used=592/1024 pool_freed=0 pool_size=1024
+ pool_used=608/1024 pool_freed=0 pool_size=1024
+ pool_used=624/1024 pool_freed=0 pool_size=1024
+ pool_used=640/1024 pool_freed=0 pool_size=1024
+ pool_used=656/1024 pool_freed=0 pool_size=1024
+ pool_used=672/1024 pool_freed=0 pool_size=1024
+ pool_used=688/1024 pool_freed=0 pool_size=1024
+ pool_used=704/1024 pool_freed=0 pool_size=1024
+ pool_used=720/1024 pool_freed=0 pool_size=1024
+ pool_used=736/1024 pool_freed=0 pool_size=1024
+ pool_used=752/1024 pool_freed=0 pool_size=1024
+ pool_used=768/1024 pool_freed=0 pool_size=1024
+ pool_used=784/1024 pool_freed=0 pool_size=1024
+ pool_used=800/1024 pool_freed=0 pool_size=1024
+ pool_used=816/1024 pool_freed=0 pool_size=1024
+
+Garbage collection:
+ freed=16/816
+ freed=32/816
+ freed=48/816
+ freed=64/816
+ freed=80/816
+ freed=96/816
+ freed=112/816
+ freed=128/816
+ freed=144/816
+ freed=160/816
+ freed=176/816
+ freed=192/816
+ freed=208/816
+ freed=224/816
+ freed=240/816
+ freed=256/816
+ freed=272/816
+ freed=288/816
+ freed=304/816
+ freed=320/816
+ freed=336/816
+ freed=352/816
+ freed=368/816
+ freed=384/816
+ freed=400/816
+ freed=416/816
+ freed=432/816
+ freed=448/816
+ freed=464/816
+ freed=480/816
+ freed=496/816
+ freed=512/816
+ freed=528/816
+ freed=544/816
+ freed=560/816
+ freed=576/816
+ freed=592/816
+ freed=608/816
+ freed=624/816
+ freed=640/816
+ freed=656/816
+ freed=672/816
+ freed=688/816
+ freed=704/816
+ freed=720/816
+ freed=736/816
+ freed=752/816
+ freed=768/816
+ freed=784/816
+ freed=800/816
+ freed=816/816 CLEAR!
