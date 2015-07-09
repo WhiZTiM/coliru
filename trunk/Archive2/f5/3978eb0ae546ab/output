@@ -1,0 +1,24 @@
+In file included from /usr/local/include/boost/bind.hpp:22:0,
+                 from main.cpp:7:
+/usr/local/include/boost/bind/bind.hpp: In instantiation of 'struct boost::_bi::add_cref<bool (g::*)(const int&) const, 1>':
+/usr/local/include/boost/bind/bind.hpp:1997:46:   required from 'struct boost::_bi::dm_result<bool (g::*)(const int&) const, int>'
+/usr/local/include/boost/bind/bind.hpp:2016:1:   required by substitution of 'template<class A1, class M, class T> boost::_bi::bind_t<typename boost::_bi::dm_result<M T::*, A1>::type, boost::_mfi::dm<M, T>, typename boost::_bi::list_av_1<A1>::type> boost::bind(M T::*, A1) [with A1 = int; M = bool(const int&) const; T = g]'
+main.cpp:18:63:   required from here
+/usr/local/include/boost/bind/bind.hpp:1960:23: error: forming reference to qualified function type 'bool(const int&) const'
+     typedef M const & type;
+                       ^
+In file included from /usr/local/include/boost/bind.hpp:22:0,
+                 from main.cpp:7:
+/usr/local/include/boost/bind/bind.hpp: In instantiation of 'struct boost::_bi::result_traits<boost::_bi::unspecified, bool (g::*)(const int&) const>':
+/usr/local/include/boost/bind/bind.hpp:883:48:   required from 'class boost::_bi::bind_t<boost::_bi::unspecified, bool (g::*)(const int&) const, boost::_bi::list1<boost::_bi::value<int> > >'
+main.cpp:18:63:   required from here
+/usr/local/include/boost/bind/bind.hpp:69:37: error: 'bool (g::*)(const int&) const' is not a class, struct, or union type
+     typedef typename F::result_type type;
+                                     ^
+In file included from main.cpp:6:0:
+/usr/local/include/boost/algorithm/cxx11/any_of.hpp: In instantiation of 'bool boost::algorithm::any_of(InputIterator, InputIterator, Predicate) [with InputIterator = const g*; Predicate = boost::_bi::bind_t<boost::_bi::unspecified, bool (g::*)(const int&) const, boost::_bi::list1<boost::_bi::value<int> > >]':
+/usr/local/include/boost/algorithm/cxx11/any_of.hpp:50:37:   required from 'bool boost::algorithm::any_of(const Range&, Predicate) [with Range = std::array<g, 100ul>; Predicate = boost::_bi::bind_t<boost::_bi::unspecified, bool (g::*)(const int&) const, boost::_bi::list1<boost::_bi::value<int> > >]'
+main.cpp:18:64:   required from here
+/usr/local/include/boost/algorithm/cxx11/any_of.hpp:35:15: error: no match for call to '(boost::_bi::bind_t<boost::_bi::unspecified, bool (g::*)(const int&) const, boost::_bi::list1<boost::_bi::value<int> > >) (const g&)'
+         if ( p(*first)) 
+               ^
