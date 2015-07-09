@@ -1,0 +1,8 @@
+outer loop, thread no. 0, 
+inner loop, thread no. 0, 
+inner loop, thread no. 1, 
+outer loop, thread no. 0, 
+inner loop, thread no. 0, 
+inner loop, thread no. 1, 
+outer loop has been executed 1 times (once for each thread)
+this can be seen by checking the counter. if only executed once it should be the same size as the vector (2). but it really is 2
