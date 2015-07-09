@@ -1,0 +1,8 @@
++ clang++ -std=c++11 -O0 -Wall -pedantic main.cpp
++ ./a.out
+Working lexer:
+Success: true
+Consumed everything: true
+Broken lexer:
+Success: false
+Consumed everything: false
