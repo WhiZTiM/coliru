@@ -1,0 +1,1 @@
+gcc -O2 -Wall -Wextra -pedantic -x c main.cpp -o a.out && echo 00001234 | ./a.out
