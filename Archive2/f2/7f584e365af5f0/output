@@ -1,0 +1,7 @@
+clang version 3.6.0 (tags/RELEASE_360/final 235480)
+entered string is: 'how now brown cow'
+    new string is: 'how_now_brown_cow'
+=============
+g++ (GCC) 5.1.0
+entered string is: 'she sells seashells by the seashore.'
+    new string is: 'she_sells_seashells_by_the_seashore.'
