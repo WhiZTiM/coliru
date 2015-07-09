@@ -1,0 +1,12 @@
+main.cpp: In function 'int main()':
+main.cpp:8:4: error: no match for 'operator=' (operand types are 'std::_Rb_tree_iterator<std::pair<const int, int> >' and 'std::map<int, int>::reverse_iterator {aka std::reverse_iterator<std::_Rb_tree_iterator<std::pair<const int, int> > >}')
+  p = data.rbegin();
+    ^
+In file included from /usr/local/include/c++/5.1.0/map:60:0,
+                 from main.cpp:2:
+/usr/local/include/c++/5.1.0/bits/stl_tree.h:174:12: note: candidate: std::_Rb_tree_iterator<std::pair<const int, int> >& std::_Rb_tree_iterator<std::pair<const int, int> >::operator=(const std::_Rb_tree_iterator<std::pair<const int, int> >&)
+     struct _Rb_tree_iterator
+            ^
+/usr/local/include/c++/5.1.0/bits/stl_tree.h:174:12: note:   no known conversion for argument 1 from 'std::map<int, int>::reverse_iterator {aka std::reverse_iterator<std::_Rb_tree_iterator<std::pair<const int, int> > >}' to 'const std::_Rb_tree_iterator<std::pair<const int, int> >&'
+/usr/local/include/c++/5.1.0/bits/stl_tree.h:174:12: note: candidate: std::_Rb_tree_iterator<std::pair<const int, int> >& std::_Rb_tree_iterator<std::pair<const int, int> >::operator=(std::_Rb_tree_iterator<std::pair<const int, int> >&&)
+/usr/local/include/c++/5.1.0/bits/stl_tree.h:174:12: note:   no known conversion for argument 1 from 'std::map<int, int>::reverse_iterator {aka std::reverse_iterator<std::_Rb_tree_iterator<std::pair<const int, int> > >}' to 'std::_Rb_tree_iterator<std::pair<const int, int> >&&'
