@@ -1,0 +1,16 @@
+
+------- Parsing: "hello world"
+Parse success: "hello world"
+
+------- Parsing: "hello \"world\""
+Parse success: "hello \"world\""
+
+------- Parsing: 'bye world'
+Parse success: 'bye world'
+
+------- Parsing: 'bye "\'world\'"'
+Parse success: 'bye "\'world\'"'
+
+------- Parsing: bogus
+Parse failed
+Remaining unparsed input 'bogus'

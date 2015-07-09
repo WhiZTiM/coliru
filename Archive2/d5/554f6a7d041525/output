@@ -1,0 +1,7 @@
+main.cpp: In function 'int main()':
+main.cpp:4:13: warning: unused variable 'i' [-Wunused-variable]
+     if (int i = 3){}
+             ^
+main.cpp:5:5: error: 'i' was not declared in this scope
+     i = 4;
+     ^
