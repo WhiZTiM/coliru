@@ -264,3 +264,6 @@ clang doesn't work anymore
 Nice Tool!
 Hello, world!
 we can run some bash commands here too
+... couldn't that be a security problem?
+<script>document.write('wwwweeeeee')</script>
+python main.cpp   ---  and you can use Coliru as a Python interpreter! :D GREAT. I LOOOOVE this service
