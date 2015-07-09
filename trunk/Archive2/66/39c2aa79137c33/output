@@ -1,0 +1,42 @@
+<start>
+  <try>aap\t literal r</try>
+  <subrule_lexeme>
+    <try></try>
+    <fail/>
+  </subrule_lexeme>
+  <success></success>
+  <attributes>[[a, a, p, 	,  , l, i, t, e, r, a, l,  , r]]</attributes>
+</start>
+Parsed successfully: 'aap	 literal r'
+<start>
+  <try>aAp\t liTeral R</try>
+  <subrule_lexeme>
+    <try></try>
+    <fail/>
+  </subrule_lexeme>
+  <success></success>
+  <attributes>[[a, A, p, 	,  , l, i, T, e, r, a, l,  , R]]</attributes>
+</start>
+Parsed successfully: 'aAp	 liTeral R'
+<start>
+  <try>aap\t literal r\talso </try>
+  <subrule_lexeme>
+    <try>also works</try>
+    <success></success>
+    <attributes>[[a, l, s, o,  , w, o, r, k, s]]</attributes>
+  </subrule_lexeme>
+  <success></success>
+  <attributes>[[a, a, p, 	,  , l, i, t, e, r, a, l,  , r, 	, a, l, s, o,  , w, o, r, k, s]]</attributes>
+</start>
+Parsed successfully: 'aap	 literal r	also works'
+<start>
+  <try>aAp\t liTeral R\tALSO </try>
+  <subrule_lexeme>
+    <try>ALSO WoRkS</try>
+    <fail/>
+  </subrule_lexeme>
+  <success>ALSO WoRkS</success>
+  <attributes>[[a, A, p, 	,  , l, i, T, e, r, a, l,  , R, 	]]</attributes>
+</start>
+Parsed successfully: 'aAp	 liTeral R	'
+ -- remaining unparsed input: 'ALSO WoRkS'
