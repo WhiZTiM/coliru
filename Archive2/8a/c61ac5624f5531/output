@@ -1,0 +1,4 @@
+main.cpp: In function 'void test(MD*)':
+main.cpp:16:21: error: 'const class D' has no member named 'fn'
+         MD val(val->fn());
+                     ^
