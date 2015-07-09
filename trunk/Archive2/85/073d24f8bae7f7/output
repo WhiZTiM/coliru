@@ -1,0 +1,15 @@
+clang version 3.6.0 (tags/RELEASE_360/final 235480)
+main.cpp:16:56: warning: dependent nested name specifier 'B<T, U>::' for friend class declaration is not supported; turning off access control for 'C' [-Wunsupported-friend]
+        template <typename T, typename U> friend void B<T,U>::foo();
+                                                      ~~~~~~~~^
+main.cpp:17:76: warning: dependent nested name specifier 'B<T, U>::' for friend class declaration is not supported; turning off access control for 'C' [-Wunsupported-friend]
+    template <typename T, typename U> template <int N> friend void B<T,U>::bar();
+                                                                   ~~~~~~~~^
+2 warnings generated.
+clang++ ok
+=============
+g++ (GCC) 5.1.0
+g++ ok
+=============
+g++-4.9 (GCC) 4.9.2
+g++ ok
