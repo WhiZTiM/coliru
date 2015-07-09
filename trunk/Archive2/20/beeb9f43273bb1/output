@@ -1,0 +1,5 @@
+main.cpp: In function 'int main()':
+main.cpp:4:11: warning: 'p' is used uninitialized in this function [-Wuninitialized]
+     *p = 3;
+           ^
+bash: line 7: 21425 Segmentation fault      (core dumped) ./a.out
