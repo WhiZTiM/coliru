@@ -1,0 +1,14 @@
++ g++-5.1 -std=c++14 -O3 -Wall -Wextra -pedantic -pthread main.cpp
++ ./a.out
+has_subscript_operator<doesnt_have_it,int>: 0
+has_subscript_operator<returns_void,int>: 0
+has_subscript_operator<returns_int,int>: 1
+has_subscript_operator<int*,int>: 1
+has_subscript_operator<std::vector<int>,int>: 1
++ clang++ -std=c++14 -O3 -Wall -Wextra -pedantic -pthread -stdlib=libc++ main.cpp -lsupc++
++ ./a.out
+has_subscript_operator<doesnt_have_it,int>: 0
+has_subscript_operator<returns_void,int>: 0
+has_subscript_operator<returns_int,int>: 1
+has_subscript_operator<int*,int>: 1
+has_subscript_operator<std::vector<int>,int>: 1
