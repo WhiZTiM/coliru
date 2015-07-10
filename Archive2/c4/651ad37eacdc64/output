@@ -1,0 +1,11 @@
+g++
+main.cpp: In function 'int main()':
+main.cpp:19:41: warning: format '%f' expects argument of type 'double', but argument 2 has type 'const char*' [-Wformat=]
+     auto s2 = astringprintf("%f", "test");
+                                         ^
+clang++
+main.cpp:19:35: warning: format specifies type 'double' but the argument has type 'const char *' [-Wformat]
+    auto s2 = astringprintf("%f", "test");
+                             ~~   ^~~~~~
+                             %s
+1 warning generated.
