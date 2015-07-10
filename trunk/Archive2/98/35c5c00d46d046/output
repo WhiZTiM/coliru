@@ -1,0 +1,4 @@
+main.cpp: In function 'int main()':
+main.cpp:12:8: warning: unused variable 'f' [-Wunused-variable]
+    Foo f;
+        ^
