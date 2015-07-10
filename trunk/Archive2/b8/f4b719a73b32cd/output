@@ -1,0 +1,7 @@
+main.cpp:3:2: error: invalid preprocessing directive #in
+main.cpp:4:1: error: expected unqualified-id before '{' token
+In file included from /usr/include/c++/4.7/functional:54:0,
+                 from /usr/include/c++/4.7/bits/stl_algo.h:68,
+                 from /usr/include/c++/4.7/algorithm:63,
+                 from main.cpp:14:
+/usr/include/c++/4.7/typeinfo:41:37: error: expected declaration before end of line
