@@ -1,0 +1,40 @@
+main.cpp: In function 'int main()':
+main.cpp:9:21: error: 'Base' was not declared in this scope
+     std::shared_ptr<Base> p = std::make_shared<Derived>();
+                     ^
+main.cpp:9:25: error: template argument 1 is invalid
+     std::shared_ptr<Base> p = std::make_shared<Derived>();
+                         ^
+main.cpp:9:48: error: 'Derived' was not declared in this scope
+     std::shared_ptr<Base> p = std::make_shared<Derived>();
+                                                ^
+main.cpp:9:57: error: no matching function for call to 'make_shared()'
+     std::shared_ptr<Base> p = std::make_shared<Derived>();
+                                                         ^
+In file included from /usr/local/include/c++/5.1.0/memory:82:0,
+                 from main.cpp:2:
+/usr/local/include/c++/5.1.0/bits/shared_ptr.h:626:5: note: candidate: template<class _Tp, class ... _Args> std::shared_ptr<_Tp1> std::make_shared(_Args&& ...)
+     make_shared(_Args&&... __args)
+     ^
+/usr/local/include/c++/5.1.0/bits/shared_ptr.h:626:5: note:   template argument deduction/substitution failed:
+main.cpp:9:57: error: template argument 1 is invalid
+     std::shared_ptr<Base> p = std::make_shared<Derived>();
+                                                         ^
+main.cpp:12:38: error: request for member 'get' in 'p', which is of non-class type 'int'
+               << "  p.get() = " << p.get()
+                                      ^
+main.cpp:13:44: error: request for member 'use_count' in 'p', which is of non-class type 'int'
+               << ", p.use_count() = " << p.use_count() << '\n';
+                                            ^
+main.cpp:14:20: error: 'thr' was not declared in this scope
+     std::thread t1(thr, p), t2(thr, p), t3(thr, p);
+                    ^
+main.cpp:15:7: error: request for member 'reset' in 'p', which is of non-class type 'int'
+     p.reset(); // release ownership from main
+       ^
+main.cpp:18:38: error: request for member 'get' in 'p', which is of non-class type 'int'
+               << "  p.get() = " << p.get()
+                                      ^
+main.cpp:19:44: error: request for member 'use_count' in 'p', which is of non-class type 'int'
+               << ", p.use_count() = " << p.use_count() << '\n';
+                                            ^
