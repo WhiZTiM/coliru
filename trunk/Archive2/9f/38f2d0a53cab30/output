@@ -1,0 +1,4 @@
+main.cpp: In function 'int main()':
+main.cpp:23:29: error: 'string' is not a member of 'std::__cxx11::string {aka std::__cxx11::basic_string<char>}'
+      std::cout<<isPolyndrom(std::string::string("helloworld"));
+                             ^
