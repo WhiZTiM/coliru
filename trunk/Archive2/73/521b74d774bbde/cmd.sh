@@ -1,0 +1,1 @@
+echo main.cpp:3405:7: A wild std::terminate appears!
