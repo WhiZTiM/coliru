@@ -1,0 +1,1 @@
+clang++ -std=c++1z -O2 -Wall -pedantic -pthread -lpthread main.cpp && echo 1111 2222 3333 | ./a.out
