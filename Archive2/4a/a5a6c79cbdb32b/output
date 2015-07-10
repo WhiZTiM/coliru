@@ -1,0 +1,11 @@
+outer: 	i=0, 	thread=0
+inner: 	i=0, 	thread=0, 	c=0 
+inner: 	i=0, 	thread=0, 	c=1 
+outer: 	i=0, 	thread=3
+inner: 	i=0, 	thread=3, 	c=4 
+outer: 	i=0, 	thread=1
+inner: 	i=0, 	thread=1, 	c=2 
+outer: 	i=0, 	thread=2
+inner: 	i=0, 	thread=2, 	c=3 
+outerCounter=4 | this equals number of threads -> outer loop got executed n times although itemRows==1
+innerCounter=5 | this equals weightColumns -> inner loop got executed only once, distributed among the threads
