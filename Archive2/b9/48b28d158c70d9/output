@@ -1,0 +1,9 @@
+main.cpp:18:18: warning: 'C::foo' hides overloaded virtual function [-Woverloaded-virtual]
+    virtual void foo() {std::cout << "C\n";}
+                 ^
+main.cpp:6:18: note: hidden overloaded virtual function 'A::foo' declared here: different qualifiers (const vs none)
+    virtual void foo() const {std::cout << "A\n";}
+                 ^
+1 warning generated.
+B
+A
