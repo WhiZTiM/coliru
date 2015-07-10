@@ -1,0 +1,10 @@
+main.cpp:5:21: error: 'Wt' does not name a type
+ bool IsMobile(const Wt::WEnviroment& env) 
+                     ^
+main.cpp:5:36: error: expected unqualified-id before '&' token
+ bool IsMobile(const Wt::WEnviroment& env) 
+                                    ^
+main.cpp:5:36: error: expected ')' before '&' token
+main.cpp:5:38: error: expected initializer before 'env'
+ bool IsMobile(const Wt::WEnviroment& env) 
+                                      ^
