@@ -1,0 +1,10 @@
+main.cpp:10:8: error: conflicting access specifications for field 'propose', ignored
+ struct B1 : A1 {
+        ^
+main.cpp: In function 'int main()':
+main.cpp:2:9: error: 'int A::propose()' is inaccessible
+     int propose();
+         ^
+main.cpp:18:18: error: within this context
+     B1().propose();
+                  ^
