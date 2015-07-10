@@ -1,0 +1,5 @@
+main.cpp:16:5: error: stray '\343' in program
+     cout << t <<　endl;
+     ^
+main.cpp:16:5: error: stray '\200' in program
+main.cpp:16:5: error: stray '\200' in program
