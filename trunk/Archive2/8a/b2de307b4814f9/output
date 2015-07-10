@@ -1,0 +1,18 @@
++ g++ -O3 -std=c++1y -Wall -Wextra -pedantic -pthread main.cpp
+main.cpp: In function 'int main()':
+main.cpp:47:45: warning: unused variable 'a' [-Wunused-variable]
+     static constexpr RemoveConst<const int> a = 9;
+                                             ^
++ ./a.out
++ clang++ -O3 -std=c++1y -Wall -Wextra -pedantic -pthread main.cpp
+main.cpp:47:45: warning: unused variable 'a' [-Wunused-variable]
+    static constexpr RemoveConst<const int> a = 9;
+                                            ^
+1 warning generated.
++ ./a.out
++ clang++ -O3 -stdlib=libc++ -std=c++1y -Wall -Wextra -pedantic -pthread main.cpp
+main.cpp:47:45: warning: unused variable 'a' [-Wunused-variable]
+    static constexpr RemoveConst<const int> a = 9;
+                                            ^
+1 warning generated.
++ ./a.out
