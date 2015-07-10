@@ -1,0 +1,15 @@
+main.cpp:12:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+main.cpp:16:8: note: in instantiation of function template specialization 'test<int>' requested here
+        foo2=&test;
+              ^
+main.cpp:12:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+main.cpp:17:8: note: in instantiation of function template specialization 'test<char>' requested here
+        foo3=&test;
+              ^
+2 warnings generated.
+2
+bash: line 7: 27691 Illegal instruction     (core dumped) ./a.out
