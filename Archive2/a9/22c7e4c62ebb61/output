@@ -1,0 +1,11 @@
+main.cpp: In static member function 'static F F::create()':
+main.cpp:13:5: warning: no return statement in function returning non-void [-Wreturn-type]
+     }
+     ^
+main.cpp: In function 'int main()':
+main.cpp:7:5: error: 'F::F()' is private
+     F(){}
+     ^
+main.cpp:18:7: error: within this context
+     F f1;
+       ^
