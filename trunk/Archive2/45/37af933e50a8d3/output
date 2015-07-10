@@ -1,0 +1,37 @@
+main.cpp:6:14: warning: using the result of an assignment as a condition without parentheses [-Wparentheses]
+ while (*p++ = *q++) ;
+        ~~~~~^~~~~~
+main.cpp:6:14: note: place parentheses around the assignment to silence this warning
+ while (*p++ = *q++) ;
+             ^
+        (          )
+main.cpp:6:14: note: use '==' to turn this assignment into an equality comparison
+ while (*p++ = *q++) ;
+             ^
+             ==
+main.cpp:18:21: warning: using the result of an assignment as a condition without parentheses [-Wparentheses]
+    while(*it_end++ = *it_start++);
+          ~~~~~~~~~~^~~~~~~~~~~~~
+main.cpp:18:21: note: place parentheses around the assignment to silence this warning
+    while(*it_end++ = *it_start++);
+                    ^
+          (                      )
+main.cpp:18:21: note: use '==' to turn this assignment into an equality comparison
+    while(*it_end++ = *it_start++);
+                    ^
+                    ==
+main.cpp:20:2: error: use of undeclared identifier 'cout'; did you mean 'std::cout'?
+        cout << charRecv << endl;
+        ^~~~
+        std::cout
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.1.0/../../../../include/c++/5.1.0/iostream:61:18: note: 'std::cout' declared here
+  extern ostream cout;          /// Linked to standard output
+                 ^
+main.cpp:20:22: error: use of undeclared identifier 'endl'; did you mean 'std::endl'?
+        cout << charRecv << endl;
+                            ^~~~
+                            std::endl
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.1.0/../../../../include/c++/5.1.0/ostream:590:5: note: 'std::endl' declared here
+    endl(basic_ostream<_CharT, _Traits>& __os)
+    ^
+2 warnings and 2 errors generated.
