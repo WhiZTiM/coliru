@@ -1,0 +1,7 @@
+clang version 3.6.0 (tags/RELEASE_360/final 235480)
+picked target 'bigger'
+picked target 'orlok'
+=============
+g++ (GCC) 5.1.0
+picked target 'bigger'
+picked target 'orlok'
