@@ -1,0 +1,6 @@
+processor
+x86_64
+==============
+unsigned int: 1234abcd  bytes in memory: cd ab 34 12 
+=============
+unsigned int: 1234abcd  bytes in memory: cd ab 34 12 
