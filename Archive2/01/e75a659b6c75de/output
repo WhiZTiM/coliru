@@ -1,0 +1,4 @@
+/tmp/main-dbed55.o: In function `void boost::iostreams::mapped_file_source::open<boost::iostreams::detail::path>(boost::iostreams::basic_mapped_file_params<boost::iostreams::detail::path> const&)':
+main.cpp:(.text._ZN5boost9iostreams18mapped_file_source4openINS0_6detail4pathEEEvRKNS0_24basic_mapped_file_paramsIT_EE[_ZN5boost9iostreams18mapped_file_source4openINS0_6detail4pathEEEvRKNS0_24basic_mapped_file_paramsIT_EE]+0x1ab): undefined reference to `std::ios_base::failure::failure(char const*, std::error_code const&)'
+main.cpp:(.text._ZN5boost9iostreams18mapped_file_source4openINS0_6detail4pathEEEvRKNS0_24basic_mapped_file_paramsIT_EE[_ZN5boost9iostreams18mapped_file_source4openINS0_6detail4pathEEEvRKNS0_24basic_mapped_file_paramsIT_EE]+0x1ea): undefined reference to `std::ios_base::failure::failure(char const*, std::error_code const&)'
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
