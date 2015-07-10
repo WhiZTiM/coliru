@@ -1,0 +1,6 @@
+main.cpp:10:18: warning: variable 'i' is uninitialized when used within its own initialization [-Wuninitialized]
+        int i(fn(i));
+            ~    ^
+1 warning generated.
+i
+4
