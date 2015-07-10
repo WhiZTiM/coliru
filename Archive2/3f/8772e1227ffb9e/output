@@ -1,0 +1,7 @@
+main.cpp:22:9: error: class member cannot be redeclared
+    int propose();
+        ^
+main.cpp:19:9: note: previous declaration is here
+    int propose();
+        ^
+1 error generated.
