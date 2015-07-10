@@ -1,0 +1,8 @@
+main.cpp: In function 'void fun(int*)':
+main.cpp:6:25: warning: 'sizeof' on array function parameter 'a' will return size of 'int*' [-Wsizeof-array-argument]
+     std::cout <<sizeof(a);
+                         ^
+main.cpp:5:16: note: declared here
+ void fun(int a[]){
+                ^
+8
