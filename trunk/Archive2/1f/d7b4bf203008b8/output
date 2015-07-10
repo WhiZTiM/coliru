@@ -1,0 +1,5 @@
+clang version 3.6.0 (tags/RELEASE_360/final 235480)
+unsigned int: 1234abcd  bytes: cd ab 34 12 
+=============
+g++ (GCC) 5.1.0
+unsigned int: 1234abcd  bytes: cd ab 34 12 
