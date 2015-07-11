@@ -1,0 +1,11 @@
+main.cpp: In function 'int main()':
+main.cpp:21:19: error: no matching function for call to 'some_func(X&)'
+     B::some_func(x);
+                   ^
+main.cpp:13:20: note: candidate: template<class T> decltype(auto) B::some_func(B::some_class<T>&)
+     decltype(auto) some_func(const some_class<T>& obj)
+                    ^
+main.cpp:13:20: note:   template argument deduction/substitution failed:
+main.cpp:21:19: note:   'X' is not derived from 'B::some_class<T>'
+     B::some_func(x);
+                   ^
