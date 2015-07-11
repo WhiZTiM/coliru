@@ -1,0 +1,1 @@
+clang++ -std=c++14 -O2 -Wall -c -pedantic -pthread main.cpp && clang --version
