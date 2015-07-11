@@ -1,0 +1,6 @@
+main.cpp: In function 'int main()':
+main.cpp:15:4: warning: variable 'b' set but not used [-Wunused-but-set-variable]
+  A b = f(a);
+    ^
+def
+move
