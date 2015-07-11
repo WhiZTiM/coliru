@@ -1,0 +1,7 @@
+main.cpp: In function 'int main()':
+main.cpp:13:23: error: aggregate 'TD<int*&&> td1' has incomplete type and cannot be defined
+     TD<decltype(arg)> td1;
+                       ^
+main.cpp:17:24: error: aggregate 'TD<int*&> td2' has incomplete type and cannot be defined
+     TD<decltype(arg2)> td2;
+                        ^
