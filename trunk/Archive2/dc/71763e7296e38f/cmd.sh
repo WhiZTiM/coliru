@@ -1,0 +1,2 @@
+clang++ -std=c++14 -stdlib=libc++ -O3 -Wall -Wextra -pedantic-errors main.cpp && ./a.out <<< 'one 1 two 2 three 3 four 4'
+echo ============= && g++ -std=c++14 -O3 -Wall -Wextra -pedantic-errors main.cpp &&./a.out <<< 'one 1 two 2 three 3 four 4'
