@@ -1,0 +1,1 @@
+clang++ --version && clang main.cpp && ./a.out
