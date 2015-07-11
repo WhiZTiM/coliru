@@ -1,0 +1,43 @@
+clang version 3.6.0 (tags/RELEASE_360/final 235480)
+
+test standard stream
+--------------
+
+my_code_cvt facet installed? false
+hello world! 0xbc614e
+
+MY_CODE_CVT FACET INSTALLED? TRUE
+HELLO WORLD! 0XBC614E
+
+
+test file stream
+--------------
+
+my_code_cvt facet installed? false
+hello world! 0xbc614e
+
+MY_CODE_CVT FACET INSTALLED? TRUE
+HELLO WORLD! 0XBC614E
+
+=============
+g++ (GCC) 5.1.0
+
+test standard stream
+--------------
+
+my_code_cvt facet installed? false
+hello world! 0xbc614e
+
+my_code_cvt facet installed? true
+hello world! 0xbc614e
+
+
+test file stream
+--------------
+
+my_code_cvt facet installed? false
+hello world! 0xbc614e
+
+MY_CODE_CVT FACET INSTALLED? TRUE
+HELLO WORLD! 0XBC614E
+
