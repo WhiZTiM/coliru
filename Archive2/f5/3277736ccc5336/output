@@ -1,0 +1,5 @@
+main.cpp:1:2: warning: #import is a GCC extension
+ #import "user32.dll"
+  ^
+main.cpp:1:21: fatal error: user32.dll: No such file or directory
+compilation terminated.
