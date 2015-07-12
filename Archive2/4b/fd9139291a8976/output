@@ -1,0 +1,10 @@
+main.cpp:22:36:   in constexpr expansion of 'K<Q<int>, 1, R>((*(const R*)(& R{})))'
+main.cpp:12:66:   in constexpr expansion of 'K<Q<int>, 1, R, {0}>((* & e), ((*(IX<0>*)(& BI<1>())), IX<0>()))'
+main.cpp:9:83:   in constexpr expansion of '(& e)->R::operator()(0)'
+main.cpp:22:36: error: 'constexpr Q<T>::Q() [with T = int]' called in a constant expression
+ constexpr auto DD = K<Q<int>,1>(R{});
+                                    ^
+main.cpp:18:12: note: 'constexpr Q<T>::Q() [with T = int]' is not usable as a constexpr function because:
+  constexpr Q () : x{0}, y{x} {}
+            ^
+main.cpp:18: confused by earlier errors, bailing out
