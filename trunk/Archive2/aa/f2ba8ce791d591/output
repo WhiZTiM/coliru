@@ -1,0 +1,6 @@
+main.cpp: In function 'int main()':
+main.cpp:9:10: warning: variable 'x' set but not used [-Wunused-but-set-variable]
+     int* x , hiThere ,helloWorld;
+          ^
+hiThere
+helloWorld
