@@ -1,0 +1,2 @@
+g++ --version | grep GCC && echo 'compiled with -O3' && g++ -std=c++14 -O3 -Wall -Wextra -pedantic-errors main.cpp &&./a.out
+echo ------------ && echo 'compiled with -g -O0' && g++ -std=c++14 -g -O0 -Wall -Wextra -pedantic-errors main.cpp &&./a.out
