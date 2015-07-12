@@ -1,0 +1,8 @@
+g++ (GCC) 5.1.0
+compiled with -O3
+good? false
+EXPECT UPPER CASE: HELLO WORLD! 
+------------
+compiled with -g -O0
+good? false
+EXPECT UPPER CASE: HELLO WORLD! 
