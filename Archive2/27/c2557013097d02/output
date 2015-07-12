@@ -1,0 +1,4 @@
+main.cpp: In function 'bool intersect(Shape&, Shape&)':
+main.cpp:63:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
