@@ -1,0 +1,26 @@
+main.cpp: In function 'void sweep(char*)':
+main.cpp:12:13: error: missing template arguments before '*' token
+     GCObject* o = reinterpret_cast<GCObject*>(heap); // this is UB because GCObject might not be in front of memory layout of Cons
+             ^
+main.cpp:12:15: error: 'o' was not declared in this scope
+     GCObject* o = reinterpret_cast<GCObject*>(heap); // this is UB because GCObject might not be in front of memory layout of Cons
+               ^
+main.cpp:12:36: error: invalid use of template-name 'GCObject' without an argument list
+     GCObject* o = reinterpret_cast<GCObject*>(heap); // this is UB because GCObject might not be in front of memory layout of Cons
+                                    ^
+main.cpp:12:44: error: expected '>' before '*' token
+     GCObject* o = reinterpret_cast<GCObject*>(heap); // this is UB because GCObject might not be in front of memory layout of Cons
+                                            ^
+main.cpp:12:44: error: expected '(' before '*' token
+main.cpp:12:45: error: expected primary-expression before '>' token
+     GCObject* o = reinterpret_cast<GCObject*>(heap); // this is UB because GCObject might not be in front of memory layout of Cons
+                                             ^
+main.cpp:12:52: error: expected ')' before ';' token
+     GCObject* o = reinterpret_cast<GCObject*>(heap); // this is UB because GCObject might not be in front of memory layout of Cons
+                                                    ^
+main.cpp: In function 'int main(int, char**)':
+main.cpp:20:31: error: no matching function for call to 'operator new(sizetype, char [512])'
+     Cons* c = new (heap) Cons();
+                               ^
+<built-in>: note: candidate: void* operator new(long unsigned int)
+<built-in>: note:   candidate expects 1 argument, 2 provided
