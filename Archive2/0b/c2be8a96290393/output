@@ -1,0 +1,6 @@
+char => char
+int => int
+float => float
+MyChar => char
+test::MyInt => int
+MyInt => int
