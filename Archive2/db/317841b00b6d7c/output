@@ -1,0 +1,17 @@
+Divido: 
+  L: 4 
+  R: 2 
+Comparo: 4 and 2
+Comparo: 4 and 100
+Divido: 
+  L: 2 
+  R: 6 
+Comparo: 2 and 6
+Comparo: 100 and 6
+Divido: 
+  L: 4 2 
+  R: 2 6 
+Comparo: 4 and 2
+Comparo: 4 and 6
+Comparo: 2 and 6
+0
