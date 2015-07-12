@@ -1,0 +1,7 @@
+main.cpp:3:24: error: ISO C++ forbids declaration of 'GCObject' with no type [-fpermissive]
+     GCObject(char _size) : size(_size) {}
+                        ^
+main.cpp: In member function 'int GCObjectBase::GCObject(char)':
+main.cpp:3:28: error: only constructors take member initializers
+     GCObject(char _size) : size(_size) {}
+                            ^
