@@ -1,0 +1,21 @@
+main.cpp: In constructor 'testns::Foo::Foo()':
+main.cpp:9:10: error: '::glovar' has not been declared
+          ::glovar;
+          ^
+main.cpp: At global scope:
+main.cpp:15:6: error: 'shared_ptr' in namespace 'std' does not name a template type
+ std::shared_ptr<testns::Foo> glovar;
+      ^
+main.cpp: In function 'int main(int, char**)':
+main.cpp:19:5: error: 'glovar' was not declared in this scope
+     glovar = std::make_shared<testns::Foo>();
+     ^
+main.cpp:19:14: error: 'make_shared' is not a member of 'std'
+     glovar = std::make_shared<testns::Foo>();
+              ^
+main.cpp:19:42: error: expected primary-expression before '>' token
+     glovar = std::make_shared<testns::Foo>();
+                                          ^
+main.cpp:19:44: error: expected primary-expression before ')' token
+     glovar = std::make_shared<testns::Foo>();
+                                            ^
