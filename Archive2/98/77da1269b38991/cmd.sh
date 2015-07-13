@@ -1,0 +1,1 @@
+g++ -std=c++14 -mavx2 -O3 -Wall main.cpp -S && cat main.s
