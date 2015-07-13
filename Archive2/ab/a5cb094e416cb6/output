@@ -1,0 +1,30 @@
+main.cpp: In instantiation of 'bool wiertlo::operator==(wiertlo::tagged_ptr<T>, std::nullptr_t) [with T = int; std::nullptr_t = std::nullptr_t]':
+main.cpp:298:2:   required from here
+main.cpp:167:52: warning: unused parameter 'nullp' [-Wunused-parameter]
+  bool operator==(tagged_ptr<T> lhs, std::nullptr_t nullp)
+                                                    ^
+main.cpp: In instantiation of 'bool wiertlo::operator==(std::nullptr_t, wiertlo::tagged_ptr<T>) [with T = int; std::nullptr_t = std::nullptr_t]':
+main.cpp:298:2:   required from here
+main.cpp:161:33: warning: unused parameter 'nullp' [-Wunused-parameter]
+  bool operator==(std::nullptr_t nullp, tagged_ptr<T> rhs)
+                                 ^
+main.cpp: In instantiation of 'bool wiertlo::operator!=(wiertlo::tagged_ptr<T>, std::nullptr_t) [with T = int; std::nullptr_t = std::nullptr_t]':
+main.cpp:307:2:   required from here
+main.cpp:179:52: warning: unused parameter 'nullp' [-Wunused-parameter]
+  bool operator!=(tagged_ptr<T> lhs, std::nullptr_t nullp)
+                                                    ^
+main.cpp: In instantiation of 'bool wiertlo::operator!=(std::nullptr_t, wiertlo::tagged_ptr<T>) [with T = int; std::nullptr_t = std::nullptr_t]':
+main.cpp:307:2:   required from here
+main.cpp:173:33: warning: unused parameter 'nullp' [-Wunused-parameter]
+  bool operator!=(std::nullptr_t nullp, tagged_ptr<T> rhs)
+                                 ^
+0x7ffff07c7d2c 42 0 - p
+0x7ffff07c7d2c 42 0 - p
+0x7ffff07c7d2c 42 1 - q
+0x7ffff07c7d2c 256 0 - p
+0x7ffff07c7d2c 256 1 - q
+true
+0 N/A 3 - np
+0xc47c20 42 0 - p
+0xc47c20 42 3 - p
+DELETED 0xc47c20
