@@ -1,0 +1,77 @@
+main.cpp: In function 'int main()':
+main.cpp:8:42: error: no match for call to '(std::_Bind_helper<false, main()::<lambda(int&&)>, int>::type {aka std::_Bind<main()::<lambda(int&&)>(int)>}) ()'
+     std::bind([](int&&){}, std::move(i))();
+                                          ^
+In file included from main.cpp:1:0:
+/usr/local/include/c++/5.1.0/functional:1129:2: note: candidate: template<class ... _Args, class _Result> _Result std::_Bind<_Functor(_Bound_args ...)>::operator()(_Args&& ...) [with _Args = {_Args ...}; _Result = _Result; _Functor = main()::<lambda(int&&)>; _Bound_args = {int}]
+  operator()(_Args&&... __args)
+  ^
+/usr/local/include/c++/5.1.0/functional:1129:2: note:   template argument deduction/substitution failed:
+/usr/local/include/c++/5.1.0/functional:1125:38: error: no match for call to '(main()::<lambda(int&&)>) (int&)'
+  = decltype( std::declval<_Functor>()(
+                                      ^
+/usr/local/include/c++/5.1.0/functional:1125:38: note: candidate: void (*)(int&&) <conversion>
+/usr/local/include/c++/5.1.0/functional:1125:38: note:   conversion of argument 2 would be ill-formed:
+/usr/local/include/c++/5.1.0/functional:1125:38: error: cannot bind 'int' lvalue to 'int&&'
+main.cpp:8:23: note: candidate: main()::<lambda(int&&)> <near match>
+     std::bind([](int&&){}, std::move(i))();
+                       ^
+main.cpp:8:23: note:   conversion of argument 1 would be ill-formed:
+In file included from main.cpp:1:0:
+/usr/local/include/c++/5.1.0/functional:1125:38: error: cannot bind 'int' lvalue to 'int&&'
+  = decltype( std::declval<_Functor>()(
+                                      ^
+/usr/local/include/c++/5.1.0/functional:1143:2: note: candidate: template<class ... _Args, class _Result> _Result std::_Bind<_Functor(_Bound_args ...)>::operator()(_Args&& ...) const [with _Args = {_Args ...}; _Result = _Result; _Functor = main()::<lambda(int&&)>; _Bound_args = {int}]
+  operator()(_Args&&... __args) const
+  ^
+/usr/local/include/c++/5.1.0/functional:1143:2: note:   template argument deduction/substitution failed:
+/usr/local/include/c++/5.1.0/functional:1139:52: error: no match for call to '(const main()::<lambda(int&&)>) (const int&)'
+          typename add_const<_Functor>::type>::type>()(
+                                                    ^
+/usr/local/include/c++/5.1.0/functional:1139:52: note: candidate: void (*)(int&&) <conversion>
+/usr/local/include/c++/5.1.0/functional:1139:52: note:   conversion of argument 2 would be ill-formed:
+/usr/local/include/c++/5.1.0/functional:1139:52: error: cannot bind 'const int' lvalue to 'int&&'
+main.cpp:8:23: note: candidate: main()::<lambda(int&&)> <near match>
+     std::bind([](int&&){}, std::move(i))();
+                       ^
+main.cpp:8:23: note:   conversion of argument 1 would be ill-formed:
+In file included from main.cpp:1:0:
+/usr/local/include/c++/5.1.0/functional:1139:52: error: cannot bind 'const int' lvalue to 'int&&'
+          typename add_const<_Functor>::type>::type>()(
+                                                    ^
+/usr/local/include/c++/5.1.0/functional:1157:2: note: candidate: template<class ... _Args, class _Result> _Result std::_Bind<_Functor(_Bound_args ...)>::operator()(_Args&& ...) volatile [with _Args = {_Args ...}; _Result = _Result; _Functor = main()::<lambda(int&&)>; _Bound_args = {int}]
+  operator()(_Args&&... __args) volatile
+  ^
+/usr/local/include/c++/5.1.0/functional:1157:2: note:   template argument deduction/substitution failed:
+/usr/local/include/c++/5.1.0/functional:1153:69: error: no match for call to '(volatile main()::<lambda(int&&)>) (volatile int&)'
+                        typename add_volatile<_Functor>::type>::type>()(
+                                                                     ^
+/usr/local/include/c++/5.1.0/functional:1153:69: note: candidate: void (*)(int&&) <conversion>
+/usr/local/include/c++/5.1.0/functional:1153:69: note:   conversion of argument 2 would be ill-formed:
+/usr/local/include/c++/5.1.0/functional:1153:69: error: cannot bind 'volatile int' lvalue to 'int&&'
+main.cpp:8:23: note: candidate: main()::<lambda(int&&)> <near match>
+     std::bind([](int&&){}, std::move(i))();
+                       ^
+main.cpp:8:23: note:   conversion of argument 1 would be ill-formed:
+In file included from main.cpp:1:0:
+/usr/local/include/c++/5.1.0/functional:1153:69: error: cannot bind 'volatile int' lvalue to 'int&&'
+                        typename add_volatile<_Functor>::type>::type>()(
+                                                                     ^
+/usr/local/include/c++/5.1.0/functional:1171:2: note: candidate: template<class ... _Args, class _Result> _Result std::_Bind<_Functor(_Bound_args ...)>::operator()(_Args&& ...) const volatile [with _Args = {_Args ...}; _Result = _Result; _Functor = main()::<lambda(int&&)>; _Bound_args = {int}]
+  operator()(_Args&&... __args) const volatile
+  ^
+/usr/local/include/c++/5.1.0/functional:1171:2: note:   template argument deduction/substitution failed:
+/usr/local/include/c++/5.1.0/functional:1167:63: error: no match for call to '(const volatile main()::<lambda(int&&)>) (const volatile int&)'
+                        typename add_cv<_Functor>::type>::type>()(
+                                                               ^
+/usr/local/include/c++/5.1.0/functional:1167:63: note: candidate: void (*)(int&&) <conversion>
+/usr/local/include/c++/5.1.0/functional:1167:63: note:   conversion of argument 2 would be ill-formed:
+/usr/local/include/c++/5.1.0/functional:1167:63: error: cannot bind 'const volatile int' lvalue to 'int&&'
+main.cpp:8:23: note: candidate: main()::<lambda(int&&)> <near match>
+     std::bind([](int&&){}, std::move(i))();
+                       ^
+main.cpp:8:23: note:   conversion of argument 1 would be ill-formed:
+In file included from main.cpp:1:0:
+/usr/local/include/c++/5.1.0/functional:1167:63: error: cannot bind 'const volatile int' lvalue to 'int&&'
+                        typename add_cv<_Functor>::type>::type>()(
+                                                               ^
