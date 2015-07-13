@@ -1,0 +1,23 @@
+0  Freshman
+1  Sophomore
+2  Junior
+3  Senior
+4  ** invalid **
+2  Junior
+5  ** invalid **
+1  Sophomore
+-6  ** invalid **
+0  Freshman
+3  Senior
+------------
+0  Freshman
+1  Sophomore
+2  Junior
+3  Senior
+4  ** invalid **
+2  Junior
+5  ** invalid **
+1  Sophomore
+-6  ** invalid **
+0  Freshman
+3  Senior
