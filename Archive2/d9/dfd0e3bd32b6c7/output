@@ -1,0 +1,10 @@
+main.cpp:49:7: error: invalid operands to binary expression ('bob' and 'toy<int>')
+    b * x;
+    ~ ^ ~
+main.cpp:35:12: note: candidate template ignored: deduced conflicting types for parameter 'T' ('bob' vs. 'int')
+    toy<T> operator*(T s, toy<T> t){
+           ^
+main.cpp:30:12: note: candidate template ignored: could not match 'toy<type-parameter-0-0>' against 'bob'
+    toy<T> operator*(toy<T> t, T s){
+           ^
+1 error generated.
