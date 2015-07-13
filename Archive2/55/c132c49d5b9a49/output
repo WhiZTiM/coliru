@@ -1,0 +1,4 @@
+main.cpp:32:34: error: no member named 'foo' in 'std::integral_constant<bool, true>'
+        eval_t<vargs<int, char, bool>>::foo();
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+1 error generated.
