@@ -1,0 +1,7 @@
+clang version 3.6.0 (tags/RELEASE_360/final 235480)
+hardware concurrency: 1
+#unique thread ids: 6
+------------
+g++ (GCC) 5.1.0
+hardware concurrency: 1
+#unique thread ids: 135
