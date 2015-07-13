@@ -1,0 +1,41 @@
+---- matching lvalue references: all ok
+void test_roundtrip(const From&) [with From = MB_BPMessage; To = MB_BPMessage]	roundtrip ok: true
+From: MB_BPMessage, key: (1 2 3)
+To:   MB_BPMessage, key: (1 2 3)
+--
+void test_roundtrip(const From&) [with From = MB_BPRequest; To = MB_BPRequest]	roundtrip ok: true
+From: MB_BPRequest, key: (444 (1 2 3))
+To:   MB_BPRequest, key: (444 (1 2 3))
+--
+void test_roundtrip(const From&) [with From = MB_BPResponse; To = MB_BPResponse]	roundtrip ok: true
+From: MB_BPResponse, key: (555 (1 2 3))
+To:   MB_BPResponse, key: (555 (1 2 3))
+--
+
+---- through base&: matching, but only serializing the base fields!
+void test_roundtrip(const From&) [with From = MB_BPMessage; To = MB_BPMessage]	roundtrip ok: true
+From: MB_BPMessage, key: (1 2 3)
+To:   MB_BPMessage, key: (1 2 3)
+--
+void test_roundtrip(const From&) [with From = MB_BPMessage; To = MB_BPMessage]	roundtrip ok: true
+From: MB_BPMessage, key: (1 2 3)
+To:   MB_BPMessage, key: (1 2 3)
+--
+void test_roundtrip(const From&) [with From = MB_BPMessage; To = MB_BPMessage]	roundtrip ok: true
+From: MB_BPMessage, key: (1 2 3)
+To:   MB_BPMessage, key: (1 2 3)
+--
+
+---- through base&: matching, but only serializing the base fields!
+void test_roundtrip(const From&) [with From = MB_BPMessage; To = MB_BPMessage]	roundtrip ok: true
+From: MB_BPMessage, key: (1 2 3)
+To:   MB_BPMessage, key: (1 2 3)
+--
+void test_roundtrip(const From&) [with From = MB_BPRequest; To = MB_BPMessage]	roundtrip ok: false
+From: MB_BPRequest, key: (444 (1 2 3))
+To:   MB_BPMessage, key: (444 (1 2 3))
+--
+void test_roundtrip(const From&) [with From = MB_BPResponse; To = MB_BPMessage]	roundtrip ok: false
+From: MB_BPResponse, key: (555 (1 2 3))
+To:   MB_BPMessage, key: (555 (1 2 3))
+--
