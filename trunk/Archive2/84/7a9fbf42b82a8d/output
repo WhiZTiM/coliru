@@ -1,0 +1,8 @@
+B::A1 (raw pointers)
+Construction
+Exception thrown for b
+
+C::A2 (unique pointers)
+Construction
+Destruction
+Exception thrown for c
