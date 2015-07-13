@@ -1,0 +1,101 @@
+main.cpp:30:49: error: 'ClientSession' has not been declared
+     static void do_explode_with_callback(F&& f, ClientSession& session, Callback&& callback, Tuple&& tuple, Sequence<Indices...>)
+                                                 ^
+main.cpp:36:46: error: 'ClientSession' has not been declared
+     static void explode_with_callback(F&& f, ClientSession& session, Callback&& callback, std::tuple<Args...>&& tup)
+                                              ^
+main.cpp:36:96: error: 'std::tuple' has not been declared
+     static void explode_with_callback(F&& f, ClientSession& session, Callback&& callback, std::tuple<Args...>&& tup)
+                                                                                                ^
+main.cpp:36:101: error: expected ',' or '...' before '<' token
+     static void explode_with_callback(F&& f, ClientSession& session, Callback&& callback, std::tuple<Args...>&& tup)
+                                                                                                     ^
+main.cpp:42:17: error: 'future' in namespace 'std' does not name a template type
+     static std::future<RecursiveAttribute> pack_future(std::future<void>& fut)
+                 ^
+main.cpp:56:17: error: 'future' in namespace 'std' does not name a template type
+     static std::future<RecursiveAttribute> pack_future(std::future<R>& fut)
+                 ^
+main.cpp:69:39: error: 'string' in namespace 'std' does not name a type
+     void do_register_async(const std::string & name, F&& handler, Detail::ArgumentTypeIsVoid<false>, Detail::ResultTypeTag<R>)
+                                       ^
+main.cpp:69:67: error: 'Detail' has not been declared
+     void do_register_async(const std::string & name, F&& handler, Detail::ArgumentTypeIsVoid<false>, Detail::ResultTypeTag<R>)
+                                                                   ^
+main.cpp:69:93: error: expected ',' or '...' before '<' token
+     void do_register_async(const std::string & name, F&& handler, Detail::ArgumentTypeIsVoid<false>, Detail::ResultTypeTag<R>)
+                                                                                             ^
+main.cpp: In member function 'void RPC::Server::registerAsyncCommand(Function&&)':
+main.cpp:13:25: error: 'Identity' was not declared in this scope
+             GetTypeName(Identity<Command>()), // ADL-lookup
+                         ^
+main.cpp:13:41: error: expected primary-expression before '>' token
+             GetTypeName(Identity<Command>()), // ADL-lookup
+                                         ^
+main.cpp:13:43: error: expected primary-expression before ')' token
+             GetTypeName(Identity<Command>()), // ADL-lookup
+                                           ^
+main.cpp:13:44: error: there are no arguments to 'GetTypeName' that depend on a template parameter, so a declaration of 'GetTypeName' must be available [-fpermissive]
+             GetTypeName(Identity<Command>()), // ADL-lookup
+                                            ^
+main.cpp:13:44: note: (if you use '-fpermissive', G++ will accept your code, but allowing the use of an undeclared name is deprecated)
+main.cpp:15:13: error: 'Detail' has not been declared
+             Detail::ArgumentTypeTag<typename Command::argument_type>(),
+             ^
+main.cpp:15:68: error: expected '(' before '>' token
+             Detail::ArgumentTypeTag<typename Command::argument_type>(),
+                                                                    ^
+main.cpp:15:70: error: expected primary-expression before ')' token
+             Detail::ArgumentTypeTag<typename Command::argument_type>(),
+                                                                      ^
+main.cpp:16:13: error: 'Detail' has not been declared
+             Detail::ResultTypeTag<typename Command::result_type>());
+             ^
+main.cpp:16:64: error: expected '(' before '>' token
+             Detail::ResultTypeTag<typename Command::result_type>());
+                                                                ^
+main.cpp:16:66: error: expected primary-expression before ')' token
+             Detail::ResultTypeTag<typename Command::result_type>());
+                                                                  ^
+main.cpp: In static member function 'static void RPC::Server::do_explode_with_callback(F&&, int&, Callback&&, Tuple&&, RPC::Server::Sequence<Indices ...>)':
+main.cpp:32:20: error: 'forward' is not a member of 'std'
+         f(session, std::forward<Callback>(callback), std::get<Indices>(tuple)...);
+                    ^
+main.cpp:32:41: error: expected primary-expression before '>' token
+         f(session, std::forward<Callback>(callback), std::get<Indices>(tuple)...);
+                                         ^
+main.cpp:32:54: error: 'get' is not a member of 'std'
+         f(session, std::forward<Callback>(callback), std::get<Indices>(tuple)...);
+                                                      ^
+main.cpp:32:78: error: expansion pattern '(<expression error> > tuple)' contains no argument packs
+         f(session, std::forward<Callback>(callback), std::get<Indices>(tuple)...);
+                                                                              ^
+main.cpp: In static member function 'static void RPC::Server::explode_with_callback(F&&, int&, Callback&&, int)':
+main.cpp:39:46: error: 'forward' is not a member of 'std'
+         do_explode_with_callback(f, session, std::forward<Callback>(callback), tup, Sequence{});
+                                              ^
+main.cpp:39:67: error: expected primary-expression before '>' token
+         do_explode_with_callback(f, session, std::forward<Callback>(callback), tup, Sequence{});
+                                                                   ^
+main.cpp:39:80: error: 'tup' was not declared in this scope
+         do_explode_with_callback(f, session, std::forward<Callback>(callback), tup, Sequence{});
+                                                                                ^
+main.cpp: In member function 'void RPC::Server::do_register_async(const int&, F&&, int)':
+main.cpp:71:31: error: 'decay' in namespace 'std' does not name a template type
+         typedef typename std::decay<typename C::argument_type>::type CleanArgType;
+                               ^
+main.cpp:71:36: error: expected unqualified-id before '<' token
+         typedef typename std::decay<typename C::argument_type>::type CleanArgType;
+                                    ^
+main.cpp:75:23: error: 'ClientSession' has not been declared
+             [handler](ClientSession& session, const RecursiveAttribute& arg, std::function<void(std::future<RecursiveAttribute>)> callback) {
+                       ^
+main.cpp:75:53: error: 'RecursiveAttribute' does not name a type
+             [handler](ClientSession& session, const RecursiveAttribute& arg, std::function<void(std::future<RecursiveAttribute>)> callback) {
+                                                     ^
+main.cpp: In lambda function:
+main.cpp:83:10: error: expected '{' before ';' token
+         );
+          ^
+main.cpp: In member function 'void RPC::Server::do_register_async(const int&, F&&, int)':
+main.cpp:83:10: error: expected ')' before ';' token
