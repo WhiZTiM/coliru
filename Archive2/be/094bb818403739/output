@@ -1,0 +1,8 @@
+main.cpp:11:12: error: 'FILE* pai::fopen(const char*, const char*)' conflicts with a previous declaration
+ using pai::fopen;
+            ^
+In file included from /usr/local/include/c++/5.1.0/cstdio:42:0,
+                 from main.cpp:1:
+/usr/include/stdio.h:273:14: note: previous declaration 'FILE* fopen(const char*, const char*)'
+ extern FILE *fopen (__const char *__restrict __filename,
+              ^
