@@ -1,0 +1,73 @@
+<start>
+  <try>int double double in</try>
+  <csv>
+    <try>int double double in</try>
+    <header>
+      <try>int double double in</try>
+      <success>\n12  1.3    23445  1</success>
+      <attributes>[[(lazy rule), (lazy rule), (lazy rule), (lazy rule), (lazy rule)]]</attributes>
+    </header>
+    <int_cell>
+      <try>12  1.3    23445  1 </try>
+      <success>  1.3    23445  1   </success>
+      <attributes>[12]</attributes>
+    </int_cell>
+    <double_cell>
+      <try>  1.3    23445  1   </try>
+      <success>    23445  1   42\n45</success>
+      <attributes>[1.3]</attributes>
+    </double_cell>
+    <double_cell>
+      <try>    23445  1   42\n45</try>
+      <success>  1   42\n45  46     </success>
+      <attributes>[23445]</attributes>
+    </double_cell>
+    <int_cell>
+      <try>  1   42\n45  46     </try>
+      <success>   42\n45  46     47 </success>
+      <attributes>[1]</attributes>
+    </int_cell>
+    <uint_cell>
+      <try>   42\n45  46     47 </try>
+      <success>\n45  46     47     4</success>
+      <attributes>[42]</attributes>
+    </uint_cell>
+    <int_cell>
+      <try>45  46     47     48</try>
+      <success>  46     47     48  </success>
+      <attributes>[45]</attributes>
+    </int_cell>
+    <double_cell>
+      <try>  46     47     48  </try>
+      <success>     47     48  49\n</success>
+      <attributes>[46]</attributes>
+    </double_cell>
+    <double_cell>
+      <try>     47     48  49\n</try>
+      <success>     48  49\n</success>
+      <attributes>[47]</attributes>
+    </double_cell>
+    <int_cell>
+      <try>     48  49\n</try>
+      <success>  49\n</success>
+      <attributes>[48]</attributes>
+    </int_cell>
+    <uint_cell>
+      <try>  49\n</try>
+      <success>\n</success>
+      <attributes>[49]</attributes>
+    </uint_cell>
+    <int_cell>
+      <try></try>
+      <fail/>
+    </int_cell>
+    <success></success>
+    <attributes>[[[12, 1.3, 23445, 1, 42], [45, 46, 47, 48, 49], []]]</attributes><locals>((column mappings) 1)</locals>
+  </csv>
+  <success></success>
+  <attributes>[[[12, 1.3, 23445, 1, 42], [45, 46, 47, 48, 49], []]]</attributes>
+</start>
+Parse success
+12	1.3	23445	1	42	
+45	46	47	48	49	
+
