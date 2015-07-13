@@ -1,0 +1,2 @@
+void foo(Container&&) [with Container = std::vector<int>]
+void foo(Container&&) [with Container = std::vector<int>&]
