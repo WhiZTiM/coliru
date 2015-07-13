@@ -1,0 +1,173 @@
+	.file	"main.cpp"
+	.section	.text.unlikely,"ax",@progbits
+.LCOLDB3:
+	.text
+.LHOTB3:
+	.p2align 4,,15
+	.globl	_Z4testm
+	.type	_Z4testm, @function
+_Z4testm:
+.LFB4:
+	.cfi_startproc
+	testq	%rdi, %rdi
+	je	.L9
+	leaq	8(%rsp), %r10
+	.cfi_def_cfa 10, 0
+	andq	$-32, %rsp
+	leaq	-4(%rdi), %rax
+	leaq	-1(%rdi), %rdx
+	pushq	-8(%r10)
+	pushq	%rbp
+	shrq	$2, %rax
+	addq	$1, %rax
+	cmpq	$8, %rdx
+	.cfi_escape 0x10,0x6,0x2,0x76,0
+	movq	%rsp, %rbp
+	pushq	%r10
+	.cfi_escape 0xf,0x3,0x76,0x78,0x6
+	leaq	0(,%rax,4), %rcx
+	jbe	.L10
+	movq	%rdi, -24(%rbp)
+	vmovdqa	.LC0(%rip), %ymm0
+	xorl	%edx, %edx
+	vpbroadcastq	-24(%rbp), %ymm1
+	vmovdqa	.LC2(%rip), %ymm5
+	vpaddq	.LC1(%rip), %ymm1, %ymm1
+.L4:
+	addq	$1, %rdx
+	vpmuludq	%ymm0, %ymm1, %ymm3
+	vpsrlq	$32, %ymm1, %ymm4
+	cmpq	%rdx, %rax
+	vpsrlq	$32, %ymm0, %ymm2
+	vpmuludq	%ymm0, %ymm4, %ymm0
+	vpmuludq	%ymm1, %ymm2, %ymm2
+	vpaddq	%ymm5, %ymm1, %ymm1
+	vpaddq	%ymm2, %ymm0, %ymm0
+	vpsllq	$32, %ymm0, %ymm0
+	vpaddq	%ymm0, %ymm3, %ymm0
+	ja	.L4
+	vpxor	%xmm1, %xmm1, %xmm1
+	vpsrlq	$32, %ymm0, %ymm5
+	movq	%rdi, %rdx
+	subq	%rcx, %rdx
+	cmpq	%rcx, %rdi
+	vperm2i128	$33, %ymm1, %ymm0, %ymm2
+	vpmuludq	%ymm2, %ymm0, %ymm3
+	vpsrlq	$32, %ymm2, %ymm4
+	vpmuludq	%ymm2, %ymm5, %ymm2
+	vpmuludq	%ymm0, %ymm4, %ymm0
+	vpaddq	%ymm0, %ymm2, %ymm2
+	vpsllq	$32, %ymm2, %ymm2
+	vpaddq	%ymm2, %ymm3, %ymm2
+	vperm2i128	$33, %ymm1, %ymm2, %ymm0
+	vpsrlq	$32, %ymm2, %ymm4
+	vpalignr	$8, %ymm2, %ymm0, %ymm0
+	vpmuludq	%ymm0, %ymm2, %ymm1
+	vpsrlq	$32, %ymm0, %ymm3
+	vpmuludq	%ymm0, %ymm4, %ymm0
+	vpmuludq	%ymm2, %ymm3, %ymm2
+	vpaddq	%ymm2, %ymm0, %ymm0
+	vpsllq	$32, %ymm0, %ymm0
+	vpaddq	%ymm0, %ymm1, %ymm0
+	vmovq	%xmm0, %rax
+	je	.L40
+	vzeroupper
+.L3:
+	movq	%rdx, %rcx
+	imulq	%rdx, %rax
+	subq	$1, %rcx
+	je	.L35
+	imulq	%rcx, %rax
+	movq	%rdx, %rcx
+	subq	$2, %rcx
+	je	.L35
+	imulq	%rcx, %rax
+	movq	%rdx, %rcx
+	subq	$3, %rcx
+	je	.L35
+	imulq	%rcx, %rax
+	movq	%rdx, %rcx
+	subq	$4, %rcx
+	je	.L35
+	imulq	%rcx, %rax
+	movq	%rdx, %rcx
+	subq	$5, %rcx
+	je	.L35
+	imulq	%rcx, %rax
+	movq	%rdx, %rcx
+	subq	$6, %rcx
+	je	.L35
+	imulq	%rcx, %rax
+	movq	%rdx, %rcx
+	subq	$7, %rcx
+	je	.L35
+	imulq	%rcx, %rax
+	subq	$8, %rdx
+	je	.L35
+	imulq	%rdx, %rax
+.L35:
+	popq	%r10
+	.cfi_remember_state
+	.cfi_restore 10
+	.cfi_def_cfa 10, 0
+	popq	%rbp
+	.cfi_restore 6
+	leaq	-8(%r10), %rsp
+	.cfi_def_cfa 7, 8
+	ret
+	.p2align 4,,10
+	.p2align 3
+.L40:
+	.cfi_restore_state
+	vzeroupper
+	popq	%r10
+	.cfi_remember_state
+	.cfi_restore 10
+	.cfi_def_cfa 10, 0
+	popq	%rbp
+	.cfi_restore 6
+	leaq	-8(%r10), %rsp
+	.cfi_def_cfa 7, 8
+	ret
+	.p2align 4,,10
+	.p2align 3
+.L10:
+	.cfi_restore_state
+	movq	%rdi, %rdx
+	movl	$1, %eax
+	jmp	.L3
+	.p2align 4,,10
+	.p2align 3
+.L9:
+	.cfi_def_cfa 7, 8
+	.cfi_restore 6
+	movl	$1, %eax
+	ret
+	.cfi_endproc
+.LFE4:
+	.size	_Z4testm, .-_Z4testm
+	.section	.text.unlikely
+.LCOLDE3:
+	.text
+.LHOTE3:
+	.section	.rodata.cst32,"aM",@progbits,32
+	.align 32
+.LC0:
+	.quad	1
+	.quad	1
+	.quad	1
+	.quad	1
+	.align 32
+.LC1:
+	.quad	0
+	.quad	-1
+	.quad	-2
+	.quad	-3
+	.align 32
+.LC2:
+	.quad	-4
+	.quad	-4
+	.quad	-4
+	.quad	-4
+	.ident	"GCC: (GNU) 5.1.0"
+	.section	.note.GNU-stack,"",@progbits
