@@ -1,0 +1,10 @@
+main.cpp:41:15: error: use of undeclared identifier 'type_info'
+        std::cout << type_info<eval_t<vargs<int, char, bool>>>() << '\n';
+                     ^
+main.cpp:41:55: error: expected '(' for function-style cast or type construction
+        std::cout << type_info<eval_t<vargs<int, char, bool>>>() << '\n';
+                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+main.cpp:41:57: error: expected expression
+        std::cout << type_info<eval_t<vargs<int, char, bool>>>() << '\n';
+                                                               ^
+3 errors generated.
