@@ -1,0 +1,7 @@
+main.cpp: In function 'int main()':
+main.cpp:18:37: error: unable to find string literal operator 'operator""name' with 'const char [4]', 'long unsigned int' arguments
+     std::cout << "A: " << A(age,name) << '\n';
+                                     ^
+main.cpp:3:21: note: in definition of macro 'A'
+ #define A(db,name) #db##name
+                     ^
