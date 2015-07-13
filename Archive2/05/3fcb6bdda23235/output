@@ -1,0 +1,6 @@
+g++
+bar_1::fn_1()
+bar_2::fn_2()
+clang++
+bar_1::fn_1()
+bar_2::fn_2()
