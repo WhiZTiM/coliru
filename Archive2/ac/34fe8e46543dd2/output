@@ -1,0 +1,4 @@
+main.cpp:18:30: warning: unused variable 'injector' [-Wunused-variable]
+    Injector<BaseClass<int>> injector;
+                             ^
+1 warning generated.
