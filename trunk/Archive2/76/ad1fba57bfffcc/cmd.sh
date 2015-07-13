@@ -1,0 +1,1 @@
+g++ -std=c++11 -O3 -Wall -pedantic -pthread main.cpp -lcrypto && ./a.out *.cpp ./a.out; echo compare:; md5sum  *.cpp ./a.out

@@ -1,0 +1,4 @@
+main.cpp: In function 'void f(const int&)':
+main.cpp:8:3: error: invalid conversion from 'const int*' to 'int*' [-fpermissive]
+ i = &x;
+   ^
