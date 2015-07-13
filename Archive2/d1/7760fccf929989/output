@@ -1,0 +1,22 @@
+	.file	"main.cpp"
+	.section	.text.unlikely,"ax",@progbits
+.LCOLDB0:
+	.text
+.LHOTB0:
+	.p2align 4,,15
+	.globl	_Z4testv
+	.type	_Z4testv, @function
+_Z4testv:
+.LFB4:
+	.cfi_startproc
+	movl	$120, %eax
+	ret
+	.cfi_endproc
+.LFE4:
+	.size	_Z4testv, .-_Z4testv
+	.section	.text.unlikely
+.LCOLDE0:
+	.text
+.LHOTE0:
+	.ident	"GCC: (GNU) 5.1.0"
+	.section	.note.GNU-stack,"",@progbits
