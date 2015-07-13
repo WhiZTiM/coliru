@@ -1,0 +1,7 @@
+main.cpp:53:9: error: cannot decrement value of type 'std::__cxx11::basic_string<char>'
+        --value;
+        ^ ~~~~~
+main.cpp:60:5: note: in instantiation of function template specialization 'decrement_kindof<std::__cxx11::basic_string<char> >' requested here
+    decrement_kindof(s);
+    ^
+1 error generated.
