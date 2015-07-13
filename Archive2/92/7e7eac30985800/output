@@ -1,0 +1,13 @@
+main.cpp:8:39: error: use of undeclared identifier 'T'
+    return abi::__cxa_demangle(typeid(T).name(), nullptr, nullptr, nullptr);
+                                      ^
+main.cpp:40:15: error: use of undeclared identifier 'type_info'
+        std::cout << type_info<eval_t<vargs<int, char, bool>>>() << '\n';
+                     ^
+main.cpp:40:55: error: expected '(' for function-style cast or type construction
+        std::cout << type_info<eval_t<vargs<int, char, bool>>>() << '\n';
+                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+main.cpp:40:57: error: expected expression
+        std::cout << type_info<eval_t<vargs<int, char, bool>>>() << '\n';
+                                                               ^
+4 errors generated.
