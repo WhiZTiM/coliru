@@ -1,0 +1,6 @@
+main.cpp:13:2: error: 'hrtrth' does not name a type
+ }hrtrth
+  ^
+main.cpp:22:1: error: 'fvdfsabvdafb' does not name a type
+ fvdfsabvdafb
+ ^
