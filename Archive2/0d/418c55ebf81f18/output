@@ -1,0 +1,15 @@
+main.cpp: In function 'int main()':
+main.cpp:28:23: error: no match for 'operator*' (operand types are 'T<int>' and 'int')
+     auto y = T<int>() * 1;
+                       ^
+main.cpp:15:10: note: candidate: template<class Type1, class Type2> T<Type1> operator*(T<Type1>, const T<Type2>&)
+ T<Type1> operator*(T<Type1> lhs, T<Type2> const&) { return lhs; }
+          ^
+main.cpp:15:10: note:   template argument deduction/substitution failed:
+main.cpp:28:25: note:   mismatched types 'const T<Type2>' and 'int'
+     auto y = T<int>() * 1;
+                         ^
+main.cpp:24:3: note: candidate: R operator*(R, const R&)
+ R operator*(R lhs, R const&) { return lhs; }
+   ^
+main.cpp:24:3: note:   no known conversion for argument 1 from 'T<int>' to 'R'
