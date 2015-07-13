@@ -1,0 +1,9 @@
+clang version 3.6.0 (tags/RELEASE_360/final 235480)
+Dad has apples
+Mom has pears
+I have oranges
+------------
+g++ (GCC) 5.1.0
+Dad has apples
+Mom has pears
+I have oranges
