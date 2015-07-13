@@ -1,0 +1,15 @@
+main.cpp: In lambda function:
+main.cpp:11:33: error: 'value' is not captured
+     [] (const float v) { return value > 0.0f; }
+                                 ^
+main.cpp:11:6: note: the lambda has no capture-default
+     [] (const float v) { return value > 0.0f; }
+      ^
+main.cpp:9:15: note: 'const float value' declared here
+   const float value = FloatSelect(
+               ^
+main.cpp: In instantiation of 'float FloatSelect(float, TFunc&&) [with TFunc = DisplayFloatSelect()::<lambda(float)>]':
+main.cpp:12:3:   required from here
+main.cpp:5:40: error: could not convert '(& std::forward<DisplayFloatSelect()::<lambda(float)> >((* & Predicate)))->DisplayFloatSelect()::<lambda(float)>(((float)in_value))' from 'void' to 'bool'
+   return std::forward<TFunc>(Predicate)(in_value) ? in_value : 0.0f;
+                                        ^
