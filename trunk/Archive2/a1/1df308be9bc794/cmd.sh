@@ -1,0 +1,1 @@
+g++ -std=c++11 -m64 -march=native main.cpp && ./a.out
