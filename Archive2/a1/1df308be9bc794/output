@@ -1,0 +1,4 @@
+main.cpp: In function 'int main()':
+main.cpp:6:11: error: operands to ?: have different types 'main()::<lambda(int)>' and 'std::nullptr_t'
+     f = b ? [](int a) { return 2*a; } : nullptr;
+           ^
