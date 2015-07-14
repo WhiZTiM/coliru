@@ -1,0 +1,10 @@
+veritas::meta::list<int, char, bool, float>
+veritas::meta::list<double, int, char, bool, float>
+veritas::meta::list<int, char, bool, float, double>
+std::integral_constant<bool, true>
+std::integral_constant<bool, false>
+std::integral_constant<bool, true>
+std::integral_constant<bool, false>
+veritas::meta::list<wrap::wrapper<int>, wrap::wrapper<char>, wrap::wrapper<bool>, wrap::wrapper<float> >
+veritas::meta::list<float, bool, char, int>
+veritas::meta::list<std::integral_constant<bool, false>, std::integral_constant<bool, false>, std::integral_constant<bool, true>, std::integral_constant<bool, false> >
