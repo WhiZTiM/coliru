@@ -1,0 +1,7 @@
+main.cpp: In function 'int main()':
+main.cpp:17:17: warning: unused variable 'a' [-Wunused-variable]
+     ErrorCode_e a = NO_ERROR;
+                 ^
+main.cpp:18:17: warning: unused variable 'b' [-Wunused-variable]
+     ErrorCode_t b = NO_ERROR;
+                 ^
