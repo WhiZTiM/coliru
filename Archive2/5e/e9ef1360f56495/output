@@ -1,0 +1,37 @@
+main.cpp:361:9: error: use of undeclared identifier 'abi'
+        return abi::__cxa_demangle(typeid(T).name(), nullptr, nullptr, nullptr);
+               ^
+main.cpp:361:29: error: you need to include <typeinfo> before using the 'typeid' operator
+        return abi::__cxa_demangle(typeid(T).name(), nullptr, nullptr, nullptr);
+                                   ^
+main.cpp:406:7: error: no member named 'cout' in namespace 'std'
+        std::cout << type_name<meta::eval<t1>>() << '\n';
+        ~~~~~^
+main.cpp:407:7: error: no member named 'cout' in namespace 'std'
+        std::cout << type_name<meta::eval<t2>>() << '\n';
+        ~~~~~^
+main.cpp:408:7: error: no member named 'cout' in namespace 'std'
+        std::cout << type_name<meta::eval<t3>>() << '\n';
+        ~~~~~^
+main.cpp:409:7: error: no member named 'cout' in namespace 'std'
+        std::cout << type_name<meta::eval<t4>>() << '\n';
+        ~~~~~^
+main.cpp:410:7: error: no member named 'cout' in namespace 'std'
+        std::cout << type_name<meta::eval<t5>>() << '\n';
+        ~~~~~^
+main.cpp:411:7: error: no member named 'cout' in namespace 'std'
+        std::cout << type_name<meta::eval<t6>>() << '\n';
+        ~~~~~^
+main.cpp:412:7: error: no member named 'cout' in namespace 'std'
+        std::cout << type_name<meta::eval<t7>>() << '\n';
+        ~~~~~^
+main.cpp:413:7: error: no member named 'cout' in namespace 'std'
+        std::cout << type_name<meta::eval<t8>>() << '\n';
+        ~~~~~^
+main.cpp:414:7: error: no member named 'cout' in namespace 'std'
+        std::cout << type_name<meta::eval<t9>>() << '\n';
+        ~~~~~^
+main.cpp:415:7: error: no member named 'cout' in namespace 'std'
+        std::cout << type_name<meta::eval<t10>>() << '\n';
+        ~~~~~^
+12 errors generated.
