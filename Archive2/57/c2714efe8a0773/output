@@ -1,0 +1,2 @@
+terminate called after throwing an instance of 'char'
+bash: line 7: 15354 Aborted                 (core dumped) ./a.out
