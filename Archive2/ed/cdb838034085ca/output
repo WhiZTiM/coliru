@@ -1,0 +1,56 @@
+
+
+g++ ####################################################
+
+main.cpp: In constructor 'BoostAnyTest::BoostAnyTest()':
+main.cpp:26:64: warning: format '%p' expects argument of type 'void*', but argument 2 has type 'std::unique_ptr<DummyElement>::pointer {aka DummyElement*}' [-Wformat=]
+             printf("BoostAnyTest::ctor() 0x%p\n", element.get());
+                                                                ^
+main.cpp: In lambda function:
+main.cpp:61:53: warning: format '%p' expects argument of type 'void*', but argument 2 has type 'DummyElement*' [-Wformat=]
+         printf("TestBoostAnyRange() 0x%p\n", element);
+                                                     ^
+BoostAnyTest::ctor() 0x0x134cc20
+BoostAnyTest::ctor() 0x0x134cc60
+BoostAnyTest::ctor() 0x0x134cc40
+BoostAnyTest::ctor() 0x0x134cd00
+BoostAnyTest::ctor() 0x0x134cd20
+BoostAnyTest::ctor() 0x0x134cdd0
+BoostAnyTest::ctor() 0x0x134cdf0
+BoostAnyTest::ctor() 0x0x134ce10
+BoostAnyTest::ctor() 0x0x134ce30
+BoostAnyTest::ctor() 0x0x134cd40
+TestBoostAnyRange() 0x0x134ce50
+TestBoostAnyRange() 0x0x134ce50
+TestBoostAnyRange() 0x0x134ce50
+TestBoostAnyRange() 0x0x134ce50
+TestBoostAnyRange() 0x0x134ce50
+TestBoostAnyRange() 0x0x134ce50
+TestBoostAnyRange() 0x0x134ce50
+TestBoostAnyRange() 0x0x134ce50
+TestBoostAnyRange() 0x0x134ce50
+TestBoostAnyRange() 0x0x134ce50
+
+
+clang++ ####################################################
+
+BoostAnyTest::ctor() 0x0x1886c20
+BoostAnyTest::ctor() 0x0x1886c60
+BoostAnyTest::ctor() 0x0x1886c40
+BoostAnyTest::ctor() 0x0x1886d00
+BoostAnyTest::ctor() 0x0x1886d20
+BoostAnyTest::ctor() 0x0x1886dd0
+BoostAnyTest::ctor() 0x0x1886df0
+BoostAnyTest::ctor() 0x0x1886e10
+BoostAnyTest::ctor() 0x0x1886e30
+BoostAnyTest::ctor() 0x0x1886d40
+TestBoostAnyRange() 0x0x400ec0
+TestBoostAnyRange() 0x0x400ec0
+TestBoostAnyRange() 0x0x400ec0
+TestBoostAnyRange() 0x0x400ec0
+TestBoostAnyRange() 0x0x400ec0
+TestBoostAnyRange() 0x0x400ec0
+TestBoostAnyRange() 0x0x400ec0
+TestBoostAnyRange() 0x0x400ec0
+TestBoostAnyRange() 0x0x400ec0
+TestBoostAnyRange() 0x0x400ec0
