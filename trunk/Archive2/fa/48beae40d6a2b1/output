@@ -1,0 +1,4 @@
+main.cpp:34:5: error: no viable overloaded '*='
+  z *= 42;
+  ~ ^  ~~
+1 error generated.
