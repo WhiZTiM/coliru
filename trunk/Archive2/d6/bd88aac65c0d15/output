@@ -1,0 +1,56 @@
+
+
+g++ ####################################################
+
+main.cpp: In constructor 'BoostAnyTest::BoostAnyTest()':
+main.cpp:26:64: warning: format '%p' expects argument of type 'void*', but argument 2 has type 'std::unique_ptr<DummyElement>::pointer {aka DummyElement*}' [-Wformat=]
+             printf("BoostAnyTest::ctor() 0x%p\n", element.get());
+                                                                ^
+main.cpp: In lambda function:
+main.cpp:67:53: warning: format '%p' expects argument of type 'void*', but argument 2 has type 'DummyElement*' [-Wformat=]
+         printf("TestBoostAnyRange() 0x%p\n", element);
+                                                     ^
+BoostAnyTest::ctor() 0x0x88ac20
+BoostAnyTest::ctor() 0x0x88ac60
+BoostAnyTest::ctor() 0x0x88ac40
+BoostAnyTest::ctor() 0x0x88ad00
+BoostAnyTest::ctor() 0x0x88ad20
+BoostAnyTest::ctor() 0x0x88add0
+BoostAnyTest::ctor() 0x0x88adf0
+BoostAnyTest::ctor() 0x0x88ae10
+BoostAnyTest::ctor() 0x0x88ae30
+BoostAnyTest::ctor() 0x0x88ad40
+TestBoostAnyRange() 0x0x88ac20
+TestBoostAnyRange() 0x0x88ac60
+TestBoostAnyRange() 0x0x88ac40
+TestBoostAnyRange() 0x0x88ad00
+TestBoostAnyRange() 0x0x88ad20
+TestBoostAnyRange() 0x0x88add0
+TestBoostAnyRange() 0x0x88adf0
+TestBoostAnyRange() 0x0x88ae10
+TestBoostAnyRange() 0x0x88ae30
+TestBoostAnyRange() 0x0x88ad40
+
+
+clang++ ####################################################
+
+BoostAnyTest::ctor() 0x0x1dbcc20
+BoostAnyTest::ctor() 0x0x1dbcc60
+BoostAnyTest::ctor() 0x0x1dbcc40
+BoostAnyTest::ctor() 0x0x1dbcd00
+BoostAnyTest::ctor() 0x0x1dbcd20
+BoostAnyTest::ctor() 0x0x1dbcdd0
+BoostAnyTest::ctor() 0x0x1dbcdf0
+BoostAnyTest::ctor() 0x0x1dbce10
+BoostAnyTest::ctor() 0x0x1dbce30
+BoostAnyTest::ctor() 0x0x1dbcd40
+TestBoostAnyRange() 0x0x1dbcc20
+TestBoostAnyRange() 0x0x1dbcc60
+TestBoostAnyRange() 0x0x1dbcc40
+TestBoostAnyRange() 0x0x1dbcd00
+TestBoostAnyRange() 0x0x1dbcd20
+TestBoostAnyRange() 0x0x1dbcdd0
+TestBoostAnyRange() 0x0x1dbcdf0
+TestBoostAnyRange() 0x0x1dbce10
+TestBoostAnyRange() 0x0x1dbce30
+TestBoostAnyRange() 0x0x1dbcd40
