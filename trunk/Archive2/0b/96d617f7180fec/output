@@ -1,0 +1,5 @@
+main.cpp: In function 'int main(int, char**)':
+main.cpp:5:18: warning: suggest parentheses around '&&' within '||' [-Wparentheses]
+     if (argc > 1 and argv<:1:> not_eq NULL or true) <%
+                  ^
+Hello, 
