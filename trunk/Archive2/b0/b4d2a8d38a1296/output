@@ -1,0 +1,14 @@
+main.cpp: In constructor 'Test::AnotherInner::AnotherInner(const Test::Inner&)':
+main.cpp:15:37: error: no matching function for call to 'Test::Inner::Inner()'
+    AnotherInner(const Inner& inner) {
+                                     ^
+main.cpp:6:4: note: candidate: Test::Inner::Inner(int)
+    Inner(int i) {
+    ^
+main.cpp:6:4: note:   candidate expects 1 argument, 0 provided
+main.cpp:2:11: note: candidate: constexpr Test::Inner::Inner(const Test::Inner&)
+     class Inner {
+           ^
+main.cpp:2:11: note:   candidate expects 1 argument, 0 provided
+main.cpp:2:11: note: candidate: constexpr Test::Inner::Inner(Test::Inner&&)
+main.cpp:2:11: note:   candidate expects 1 argument, 0 provided
