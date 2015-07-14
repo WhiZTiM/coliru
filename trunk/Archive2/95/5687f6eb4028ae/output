@@ -1,0 +1,4 @@
+main.cpp: In function 'void f(const int&)':
+main.cpp:9:4: error: assignment of read-only location '* i'
+ *i = 16;}
+    ^
