@@ -1,0 +1,22 @@
+main.cpp: In constructor 'C::C()':
+main.cpp:31:37: error: no matching function for call to 'A::A()'
+     : B(static_cast<A const&>(*this)) // [1]
+                                     ^
+main.cpp:9:19: note: candidate: constexpr A::A(A&&)
+     SET_COPY_MOVE(A, delete, default);
+                   ^
+main.cpp:2:24: note: in definition of macro 'SET_MOVE'
+ #define SET_MOVE(T, A) T(T&&) = A; T& operator=(T&&) = A
+                        ^
+main.cpp:9:5: note: in expansion of macro 'SET_COPY_MOVE'
+     SET_COPY_MOVE(A, delete, default);
+     ^
+main.cpp:9:19: note:   candidate expects 1 argument, 0 provided
+     SET_COPY_MOVE(A, delete, default);
+                   ^
+main.cpp:2:24: note: in definition of macro 'SET_MOVE'
+ #define SET_MOVE(T, A) T(T&&) = A; T& operator=(T&&) = A
+                        ^
+main.cpp:9:5: note: in expansion of macro 'SET_COPY_MOVE'
+     SET_COPY_MOVE(A, delete, default);
+     ^
