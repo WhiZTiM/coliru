@@ -1,0 +1,2 @@
+isalnum('\xdf') in default C locale returned 0
+isalnum('\xdf') in ISO-8859-1 locale returned 0
