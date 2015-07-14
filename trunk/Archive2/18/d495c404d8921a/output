@@ -1,0 +1,3 @@
+main.cpp:2:2: error: 'r' does not name a type
+  r   - remapped                                 |
+  ^
