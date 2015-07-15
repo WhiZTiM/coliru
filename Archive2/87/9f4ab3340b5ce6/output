@@ -1,0 +1,4 @@
+main.cpp: In function 'int main()':
+main.cpp:78:23: error: binding 'const int' to reference of type 'int&' discards qualifiers
+  int& nci = *nc.begin();
+                       ^
