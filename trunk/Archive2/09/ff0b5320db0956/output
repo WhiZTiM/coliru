@@ -1,0 +1,6 @@
+main.cpp: In function 'int main()':
+main.cpp:11:9: warning: unused variable 'c_area' [-Wunused-variable]
+   float c_area = c_radius * c_radius * 3.1415;
+         ^
+1.2
+2.4
