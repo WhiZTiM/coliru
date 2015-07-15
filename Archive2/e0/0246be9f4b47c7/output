@@ -1,0 +1,13 @@
+main.cpp: In function 'main':
+main.cpp:6:28: error: expected expression before 'foo'
+     printf ("%u\n", sizeof foo); /* #1 */
+                            ^
+main.cpp:9:13: warning: format '%u' expects argument of type 'unsigned int', but argument 2 has type 'long unsigned int' [-Wformat=]
+     printf ("%u\n", sizeof foo); /* #2 */
+             ^
+main.cpp:4:14: warning: unused parameter 'argc' [-Wunused-parameter]
+ int main(int argc, char *argv[])
+              ^
+main.cpp:4:26: warning: unused parameter 'argv' [-Wunused-parameter]
+ int main(int argc, char *argv[])
+                          ^
