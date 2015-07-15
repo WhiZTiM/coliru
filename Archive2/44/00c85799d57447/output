@@ -1,0 +1,7 @@
+**** Compilation du programme C++ ****
+main.cpp:16:28: error: type 'std::initializer_list<int>' does not provide a subscript operator
+        std::cout << nombre[i] << std::endl;
+                     ~~~~~~^~
+1 error generated.
+bash: line 9: ./mon_programme: No such file or directory
+**** Exécution du programme C++ ****
