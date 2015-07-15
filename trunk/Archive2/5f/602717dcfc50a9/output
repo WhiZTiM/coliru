@@ -1,0 +1,7 @@
+main.cpp: In function 'int main()':
+main.cpp:29:33: error: invalid initialization of non-const reference of type 'int&' from an rvalue of type 'int'
+     b.anotherMethod(a.someMethod());
+                                 ^
+main.cpp:22:10: note:   initializing argument 1 of 'void B::anotherMethod(int&)'
+     void anotherMethod(int& someInt){ /*...*/}
+          ^
