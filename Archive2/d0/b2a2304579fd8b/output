@@ -1,0 +1,16 @@
+main.cpp:2:1: error: pasting formed '3##', an invalid preprocessing token
+Z(3)
+^
+main.cpp:1:16: note: expanded from macro 'Z'
+#define Z(x) x ## ## 3
+               ^
+# 1 "main.cpp"
+# 1 "<built-in>" 1
+# 1 "<built-in>" 3
+# 312 "<built-in>" 3
+# 1 "<command line>" 1
+# 1 "<built-in>" 2
+# 1 "main.cpp" 2
+
+3 ## 3
+1 error generated.
