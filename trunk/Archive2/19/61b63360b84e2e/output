@@ -1,0 +1,4 @@
+Module name before parsing: initial_default
+Module name during parse: mod01
+Command name during parse:  cmd02
+Module name after parsing: mod01
