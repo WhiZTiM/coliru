@@ -1,0 +1,20 @@
++ g++ -std=c++1y -O2 -Wall -pedantic -pthread main.cpp
++ ./a.out
+vargs<char, int>
++ clang++ -std=c++1y -O2 -Wall -pedantic -pthread main.cpp
+clang: error: unable to execute command: Segmentation fault (core dumped)
+clang: error: clang frontend command failed due to signal (use -v to see invocation)
+clang version 3.6.0 (tags/RELEASE_360/final 235480)
+Target: x86_64-unknown-linux-gnu
+Thread model: posix
+clang: note: diagnostic msg: PLEASE submit a bug report to http://llvm.org/bugs/ and include the crash backtrace, preprocessed source, and associated run script.
+clang: note: diagnostic msg: 
+********************
+
+PLEASE ATTACH THE FOLLOWING FILES TO THE BUG REPORT:
+Preprocessed source(s) and associated run script(s) are located at:
+clang: note: diagnostic msg: /tmp/main-3b5b23.cpp
+clang: note: diagnostic msg: /tmp/main-3b5b23.sh
+clang: note: diagnostic msg: 
+
+********************
