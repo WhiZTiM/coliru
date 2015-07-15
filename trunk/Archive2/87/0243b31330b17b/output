@@ -1,0 +1,8 @@
+main.cpp:6:5: error: expected primary-expression before 'int'
+     int variable*;
+     ^
+main.cpp:6:5: error: expected '}' before 'int'
+main.cpp:6:5: error: expected ',' or ';' before 'int'
+main.cpp:7:1: error: expected declaration before '}' token
+ };
+ ^
