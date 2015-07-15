@@ -1,0 +1,4 @@
+[thread 1], waiting
+[thread 2], waiting
+[thread 1], Object acquired, waiting 3 seconds
+[thread 2], Object acquired, waiting 1 seconds
