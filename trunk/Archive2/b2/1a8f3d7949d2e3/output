@@ -1,0 +1,11 @@
+main.cpp: In function 'int main()':
+main.cpp:21:17: error: no matching function for call to 'q(int&, int (&)(int, int, int), int, int, int)'
+  q(s, h, 1, 2, 3);
+                 ^
+main.cpp:7:9: note: candidate: template<class RetType, class ... ArgTypes> RetType q(int&, std::function<_Res(_ArgTypes ...)>, ArgTypes ...)
+ RetType q(int& s, function<RetType(ArgTypes...)> f, ArgTypes... args)
+         ^
+main.cpp:7:9: note:   template argument deduction/substitution failed:
+main.cpp:21:17: note:   mismatched types 'std::function<_Res(_ArgTypes ...)>' and 'int (*)(int, int, int)'
+  q(s, h, 1, 2, 3);
+                 ^
