@@ -1,0 +1,15 @@
+Before copy_if
+Constructed a Where object
+Constructed a Where object
+Creating PredicateAnd
+Evaluating PredicateAnd &&
+Evaluating PredicateAnd &&
+Evaluating PredicateAnd &&
+Evaluating PredicateAnd &&
+Evaluating PredicateAnd &&
+Evaluating PredicateAnd &&
+After copy_if
+
+--------
+Bobo - maison - D - 
+Baba - maison - D - 
