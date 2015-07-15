@@ -1,0 +1,27 @@
+clang version 3.6.0 (tags/RELEASE_360/final 235480)
+thread #1: A::instance at 0x7f4f31bb96fe 0x7f4f31bb96fe
+thread #2: A::instance at 0x7f4f32bbb6fe 0x7f4f32bbb6fe
+thread #3: A::instance at 0x7f4f323ba6fe 0x7f4f323ba6fe
+thread #4: A::instance at 0x7f4f23fff6fe 0x7f4f23fff6fe
+thread #5: A::instance at 0x7f4f313b86fe 0x7f4f313b86fe
+--------------
+ object *was* at address: 0x7f4f32bbb6fe
+ object *was* at address: 0x7f4f323ba6fe
+ object *was* at address: 0x7f4f31bb96fe
+ object *was* at address: 0x7f4f23fff6fe
+ object *was* at address: 0x7f4f313b86fe
+
+==========
+
+g++ (GCC) 5.1.0
+thread #1: A::instance at 0x7fd2686f46f8 0x7fd2686f46f8
+thread #2: A::instance at 0x7fd267ef36f8 0x7fd267ef36f8
+thread #3: A::instance at 0x7fd2676f26f8 0x7fd2676f26f8
+thread #4: A::instance at 0x7fd266ef16f8 0x7fd266ef16f8
+thread #5: A::instance at 0x7fd2666f06f8 0x7fd2666f06f8
+--------------
+ object *was* at address: 0x7fd2686f46f8
+ object *was* at address: 0x7fd267ef36f8
+ object *was* at address: 0x7fd2676f26f8
+ object *was* at address: 0x7fd266ef16f8
+ object *was* at address: 0x7fd2666f06f8
