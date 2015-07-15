@@ -1,0 +1,7 @@
+main.cpp:13:5: error: no matching function for call to 'call_with'
+    call_with<void>([](int){ std::cout << "called" << std::endl; }, 2);
+    ^~~~~~~~~~~~~~~
+main.cpp:5:3: note: candidate template ignored: could not match 'function<void (type-parameter-0-1...)>' against '(lambda at main.cpp:13:21)'
+R call_with(std::function<R(Args...)> f,
+  ^
+1 error generated.
