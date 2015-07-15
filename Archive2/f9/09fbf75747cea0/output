@@ -1,0 +1,23 @@
+main.cpp: In substitution of 'template<class T> using test_t = typename details::outer<tag>::inner::result [with T = vargs<char, int>]':
+main.cpp:47:37:   required from here
+main.cpp:43:62: error: invalid use of incomplete type 'struct details::outer<tag>::inner<vargs<char, int> >'
+ using test_t = typename details::outer<tag>::inner<T>::result;
+                                                              ^
+main.cpp:20:16: note: declaration of 'struct details::outer<tag>::inner<vargs<char, int> >'
+         struct inner
+                ^
+main.cpp: In function 'int main()':
+main.cpp:48:28: error: 't' was not declared in this scope
+     std::cout << type_name<t>() << '\n';
+                            ^
+main.cpp:48:31: error: no matching function for call to 'type_name()'
+     std::cout << type_name<t>() << '\n';
+                               ^
+main.cpp:6:14: note: candidate: template<class T> const char* type_name()
+ const char * type_name()
+              ^
+main.cpp:6:14: note:   template argument deduction/substitution failed:
+main.cpp:48:31: error: template argument 1 is invalid
+     std::cout << type_name<t>() << '\n';
+                               ^
+tag
