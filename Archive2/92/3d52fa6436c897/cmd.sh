@@ -1,0 +1,1 @@
+g++ -x c -std=c11 -O3 -Wall -Wextra -pedantic main.cpp && time ./a.out
