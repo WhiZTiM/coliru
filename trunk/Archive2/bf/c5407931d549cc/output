@@ -1,0 +1,4 @@
+main.cpp: In function 'int main(int, char**)':
+main.cpp:21:31: error: aggregate 'FailStruct<std::vector<int> > myStruct' has incomplete type and cannot be defined
+     FailStruct<decltype(vec)> myStruct; //vector<int> gets deduced
+                               ^
