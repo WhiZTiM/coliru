@@ -1,0 +1,16 @@
+main.cpp:7:20: error: constexpr variable 'd' must be initialized by a constant expression
+    constexpr auto d = '<' >> optional('/') >> +_w >> '>';
+                   ^   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+main.cpp:7:24: note: non-constexpr function 'operator>><const boost::proto::exprns_::expr<boost::proto::tagns_::tag::shift_right, boost::proto::argsns_::list2<const boost::proto::exprns_::expr<boost::proto::tagns_::tag::shift_right, boost::proto::argsns_::list2<boost::proto::exprns_::expr<boost::proto::tagns_::tag::terminal, boost::proto::argsns_::term<const char &>, 0>, const boost::proto::exprns_::expr<boost::proto::tagns_::tag::logical_not, boost::proto::argsns_::list1<boost::proto::exprns_::expr<boost::proto::tagns_::tag::terminal, boost::proto::argsns_::term<const char &>, 0> >, 1> &>, 2> &, const boost::proto::exprns_::expr<boost::proto::tagns_::tag::unary_plus, boost::proto::argsns_::list1<const boost::proto::exprns_::expr<boost::proto::tagns_::tag::terminal, boost::proto::argsns_::term<boost::xpressive::detail::posix_charset_placeholder>, 0> &>, 1> &>, 2>, char>' cannot be used in a constant expression
+    constexpr auto d = '<' >> optional('/') >> +_w >> '>';
+                       ^
+/usr/local/include/boost/proto/operators.hpp:295:9: note: declared here
+        BOOST_PROTO_DEFINE_OPERATORS(is_extension, deduce_domain)
+        ^
+/usr/local/include/boost/proto/operators.hpp:247:5: note: expanded from macro 'BOOST_PROTO_DEFINE_OPERATORS'
+    BOOST_PROTO_DEFINE_BINARY_OPERATOR(>>, boost::proto::tag::shift_right, TRAIT, DOMAIN)           \
+    ^
+/usr/local/include/boost/proto/operators.hpp:227:5: note: expanded from macro 'BOOST_PROTO_DEFINE_BINARY_OPERATOR'
+    operator OP(Left &&left, Right &&right)                                                         \
+    ^
+1 error generated.
