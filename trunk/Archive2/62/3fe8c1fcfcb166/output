@@ -1,0 +1,11 @@
+main.cpp:27:7: warning: ISO C++ forbids declaration of 'main' with no type [-Wpedantic]
+ main () {
+       ^
+3
+3.1
+3.14
+3.142
+3.1416
+3.14159
+3.14159
+3.14159
