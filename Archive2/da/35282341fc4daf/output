@@ -1,0 +1,7 @@
+type int ID 1 value 10
+type int ID 1 value 20
+type char ID 2 value a
+type double ID 3 value 2.2
+type char const* ID 4 value OK 1 2 3
+type Test ID 5 value 1
+type test_func ID 6 value 1
