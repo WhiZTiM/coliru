@@ -1,0 +1,7 @@
+main.cpp: In function 'int main()':
+main.cpp:10:17: error: 'iMaxSQLLen' was not declared in this scope
+  fgets(l_chSQL, iMaxSQLLen, fpSQLFile);
+                 ^
+main.cpp:11:17: error: expected primary-expression before ')' token
+     printf("%s",);
+                 ^
