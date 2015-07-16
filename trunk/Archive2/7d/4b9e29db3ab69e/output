@@ -1,0 +1,19 @@
+main.cpp: In constructor 'Rectangle::Rectangle()':
+main.cpp:29:22: error: 'shape' was not declared in this scope
+ Rectangle(){Color = (shape:char^)"bLue SkY!";}
+                      ^
+main.cpp:29:27: error: expected ')' before ':' token
+ Rectangle(){Color = (shape:char^)"bLue SkY!";}
+                           ^
+main.cpp: In constructor 'Square::Square()':
+main.cpp:39:16: warning: ISO C++ forbids converting a string constant to 'char*' [-Wpedantic]
+ Square(){Color = "yEllOw!";}
+                ^
+main.cpp: In constructor 'Triangle::Triangle()':
+main.cpp:47:18: warning: ISO C++ forbids converting a string constant to 'char*' [-Wpedantic]
+ Triangle(){Color = "GrEEn!";}
+                  ^
+main.cpp: In constructor 'Circle::Circle()':
+main.cpp:55:16: warning: ISO C++ forbids converting a string constant to 'char*' [-Wpedantic]
+ Circle(){Color = "aMbEr!";}
+                ^
