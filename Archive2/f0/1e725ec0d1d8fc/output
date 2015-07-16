@@ -1,0 +1,45 @@
+Noisy::Noisy(int i)
+  this = 0x7fff4dc766d0
+  this.i = 1
+Noisy::Noisy(int i)
+  this = 0x7fff4dc766e0
+  this.i = 2
+Noisy::operator=(Noisy && that)
+  this = 0x7fff4dc766d0
+  that = 0x7fff4dc766e0
+  preconditions:
+  this.i = 1
+  that.i = 2
+  postconditions:
+  this.i = 2
+  that.i = -1
+~Noisy():
+  this = 0x7fff4dc766e0
+  preconditions:
+  this.i = -1
+  postconditions:
+  this.i = -1
+Noisy::Noisy(int i)
+  this = 0x7fff4dc766f0
+  this.i = 3
+Noisy::operator=(Noisy && that)
+  this = 0x7fff4dc766d0
+  that = 0x7fff4dc766f0
+  preconditions:
+  this.i = 2
+  that.i = 3
+  postconditions:
+  this.i = 3
+  that.i = -1
+~Noisy():
+  this = 0x7fff4dc766f0
+  preconditions:
+  this.i = -1
+  postconditions:
+  this.i = -1
+~Noisy():
+  this = 0x7fff4dc766d0
+  preconditions:
+  this.i = 3
+  postconditions:
+  this.i = -1
