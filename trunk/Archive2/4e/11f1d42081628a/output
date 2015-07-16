@@ -1,0 +1,6 @@
+int 10
+int 20
+char a
+double 2.2
+char const* OK 1 2 3
+Test 1
