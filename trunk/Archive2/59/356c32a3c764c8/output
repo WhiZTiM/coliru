@@ -1,0 +1,27 @@
+
+
+g++ ####################################################
+
+main.cpp: In instantiation of 'base<T>::base() [with T = int&]':
+main.cpp:14:21:   required from 'constexpr foo<T>::foo() [with T = int&]'
+/usr/local/include/c++/5.1.0/type_traits:842:28:   required by substitution of 'template<class _Tp, class> static std::true_type std::__do_is_default_constructible_impl::__test(int) [with _Tp = foo<int&>; <template-parameter-1-2> = foo<int&>]'
+/usr/local/include/c++/5.1.0/type_traits:853:35:   required from 'struct std::__is_default_constructible_impl<foo<int&> >'
+/usr/local/include/c++/5.1.0/type_traits:137:12:   required from 'struct std::__and_<std::__not_<std::is_void<foo<int&> > >, std::__is_default_constructible_impl<foo<int&> > >'
+/usr/local/include/c++/5.1.0/type_traits:857:12:   required from 'struct std::__is_default_constructible_atom<foo<int&> >'
+/usr/local/include/c++/5.1.0/type_traits:878:12:   required from 'struct std::__is_default_constructible_safe<foo<int&>, false>'
+/usr/local/include/c++/5.1.0/type_traits:884:12:   required from 'struct std::is_default_constructible<foo<int&> >'
+main.cpp:19:60:   required from here
+main.cpp:5:16: error: value-initialization of reference type 'int&'
+     base() : t() {}
+                ^
+
+
+clang++ ####################################################
+
+main.cpp:5:14: error: reference to type 'int' requires an initializer
+    base() : t() {}
+             ^
+main.cpp:14:15: note: in instantiation of member function 'base<int &>::base' requested here
+    constexpr foo() {}
+              ^
+1 error generated.
