@@ -1,0 +1,8 @@
+legacy::initialize()
+legacy::Test::Test()
+legacy::Test::Test()
+legacy::Test::~Test()
+end of python script
+legacy::Test::~Test()
+legacy::shutdown()
+0
