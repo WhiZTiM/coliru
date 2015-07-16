@@ -1,0 +1,8 @@
+main.cpp: In instantiation of 'void HasElapsed<ChronoType>::TimeRun() [with ChronoType = std::chrono::duration<long int>]':
+main.cpp:80:36:   required from 'HasElapsed<ChronoType>::HasElapsed(int64_t) [with ChronoType = std::chrono::duration<long int>; int64_t = long int]'
+main.cpp:148:36:   required from here
+main.cpp:115:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+          if (elapsed >= wait_time_till_flagging_) {
+                      ^
+Elapsed us for 5s wait 5000003
+Elapsed us for atomic threaded 5s wait 5000765
