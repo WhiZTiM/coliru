@@ -1,0 +1,7 @@
+main.cpp:8:17: note: #pragma message: Debug disabled
+main.cpp:14:17: note: #pragma message: Release disabled
+main.cpp:20:17: note: #pragma message: _DEBUG disabled
+main.cpp:26:17: note: #pragma message: ENABLE_ASSERTS disabled
+main.cpp:32:17: note: #pragma message: NDEBUG disabled
+a.out: main.cpp:37: int main(): Assertion `false' failed.
+bash: line 7:  5450 Aborted                 (core dumped) ./a.out
