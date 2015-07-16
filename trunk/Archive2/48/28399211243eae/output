@@ -1,0 +1,3 @@
+terminate called after throwing an instance of 'boost::exception_detail::clone_impl<boost::exception_detail::error_info_injector<boost::date_time::data_not_accessible> >'
+  what():  Unable to locate or access the required datafile. Filespec: /home/sehe/custom/boost/libs/date_time/data/date_time_zonespec.csv
+bash: line 11:  1248 Aborted                 (core dumped) ./a.out
