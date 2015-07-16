@@ -1,0 +1,19 @@
+main.cpp:5:9: error: expected ';' at end of member declaration
+     int m_size
+         ^
+main.cpp:8:24: error: expected initializer before '<' token
+ typedef std::shared_ptr<bob> bob_ptr;
+                        ^
+main.cpp:11:5: error: 'bob_ptr' does not name a type
+     bob_ptr m_bob;
+     ^
+main.cpp:14:27: error: expected ')' before 'in'
+     controlledBob(bob_ptr in): m_bob(in), m_size(in->size){};
+                           ^
+main.cpp:15:1: error: expected ';' after struct definition
+ }
+ ^
+main.cpp: In function 'int main()':
+main.cpp:18:22: error: 'foo' was not declared in this scope
+     std::cout << foo();
+                      ^
