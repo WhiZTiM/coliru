@@ -1,0 +1,1 @@
+clang++ -D_USE_RTTI=1 -std=c++11 -Os main.cpp && ./a.out
