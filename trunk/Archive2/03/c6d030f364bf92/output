@@ -1,0 +1,3 @@
+main.cpp:2:12: error: 'I' has not been declared
+     void f(I) {}
+            ^
