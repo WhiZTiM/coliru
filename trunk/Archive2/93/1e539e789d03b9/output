@@ -1,0 +1,21 @@
+[XmlDoc]:
+  [XmlElement]: labels
+    [XmlAttribute]: _FORMAT, value: example
+    [XmlAttribute]: _QUANTITY, value: 1
+    [XmlAttribute]: _PRINTERNAME, value: P1
+    [XmlElement]: label
+      [XmlElement]: variable
+        [XmlAttribute]: name, value: test1
+        value: foobaz
+      [XmlElement]: variable
+        [XmlAttribute]: name, value: test2
+        value: Hello blabla
+      [XmlElement]: variable
+        [XmlAttribute]: name, value: test3
+        value: testme
+      [XmlElement]: variable
+        [XmlAttribute]: name, value: test4
+        value: 42
+      [XmlElement]: variable
+        [XmlAttribute]: name, value: test5
+*[name='test3'] : testme
