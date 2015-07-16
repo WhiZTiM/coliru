@@ -1,0 +1,7 @@
+In file included from main.cpp:1:0:
+/usr/local/include/c++/5.1.0/type_traits: In instantiation of 'struct std::underlying_type<int>':
+main.cpp:10:12:   required from 'void serialize(Archive&, T) [with Archive = std::basic_ostream<char>; T = int]'
+main.cpp:21:27:   required from here
+/usr/local/include/c++/5.1.0/type_traits:2190:38: error: 'int' is not an enumeration type
+       typedef __underlying_type(_Tp) type;
+                                      ^
