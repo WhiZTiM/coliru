@@ -1,0 +1,11 @@
+main.cpp: In function 'int main()':
+main.cpp:17:70: error: no matching function for call to 'convert(MUSIC, COLOR, boost::assign_detail::generic_list<std::pair<MUSIC, COLOR> >&)'
+         boost::assign::map_list_of (RAP, RED) (EDM, BLUE) (ROCK, RED));
+                                                                      ^
+main.cpp:6:3: note: candidate: template<class Key, class T> T convert(const Key&, const T&, const std::map<Key, T>&)
+ T convert(const Key &k, const T &d, const std::map<Key, T> &m) {
+   ^
+main.cpp:6:3: note:   template argument deduction/substitution failed:
+main.cpp:17:70: note:   'boost::assign_detail::generic_list<std::pair<MUSIC, COLOR> >' is not derived from 'const std::map<Key, T>'
+         boost::assign::map_list_of (RAP, RED) (EDM, BLUE) (ROCK, RED));
+                                                                      ^
