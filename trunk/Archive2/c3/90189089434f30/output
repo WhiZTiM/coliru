@@ -1,0 +1,13 @@
+main.cpp: In member function 'const Pair IROList::operator[](const char*) const':
+main.cpp:14:29: error: no matching function for call to 'Pair::Pair(const Pair)'
+         return this->get(key);
+                             ^
+main.cpp:14:29: note: candidates are:
+main.cpp:6:5: note: Pair::Pair(Pair&)
+     Pair( Pair & other){};
+     ^
+main.cpp:6:5: note:   no known conversion for argument 1 from 'const Pair' to 'Pair&'
+main.cpp:4:5: note: Pair::Pair(Pair&&)
+     Pair(Pair && other){};
+     ^
+main.cpp:4:5: note:   no known conversion for argument 1 from 'const Pair' to 'Pair&&'
