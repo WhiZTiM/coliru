@@ -1,0 +1,7 @@
+main.cpp:11:8: error: implicit instantiation of undefined template 'Foo<0>'
+Foo<0> q; //explicit instantiation, compilation fails
+       ^
+main.cpp:2:7: note: template is declared here
+class Foo;
+      ^
+1 error generated.
