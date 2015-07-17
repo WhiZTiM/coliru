@@ -1,0 +1,42 @@
+format: %%
+
+1
+format: %%%
+
+0
+format: %w
+
+0
+got 1 arg left. type: i
+format: %d
+
+1
+got 1 arg left. type: i
+format: %d %
+
+0
+got 1 arg left. type: i
+format: %d %d
+
+0
+got 2 args left. first of type: i
+format: %d %f
+
+got 1 arg left. type: f
+format:  %f
+
+1
+got 2 args left. first of type: i
+format: %d %s
+
+got 1 arg left. type: NSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE
+format:  %s
+
+0
+got 2 args left. first of type: i
+format: %d %s
+
+got 1 arg left. type: PKc
+format:  %s
+
+1
