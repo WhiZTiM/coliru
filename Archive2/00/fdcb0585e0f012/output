@@ -1,0 +1,8 @@
+main.cpp: In function 'int main()':
+main.cpp:11:9: warning: overflow in implicit constant conversion [-Woverflow]
+     b.x = 2; // 10 <-- ultimo bit ativo, logo negativo
+         ^
+main.cpp:12:9: warning: overflow in implicit constant conversion [-Woverflow]
+     c.x = 3; // 11 <-- ultimo bit ativo, logo negativo
+         ^
+1 -2 -1
