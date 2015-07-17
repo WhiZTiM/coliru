@@ -1,0 +1,564 @@
+
+16:
+allocate(16) allocate(32) allocate(64) allocate(128) allocate(256) allocate(512) allocate(1024) allocate(2048) allocate(4096) allocate(8192) ::operator new(8192)
+allocate(16) allocate(16) allocate(32) allocate(16) allocate(16) allocate(32) allocate(64) 
+32:
+allocate(32) allocate(32) allocate(64) allocate(128) allocate(32) allocate(32) allocate(64) allocate(32) 
+64:
+allocate(64) allocate(128) allocate(256) allocate(64) allocate(64) allocate(128) allocate(64) allocate(64) allocate(128) allocate(256) allocate(512) 
+128:
+allocate(128) allocate(128) allocate(256) allocate(128) allocate(128) allocate(256) allocate(512) allocate(1024) allocate(128) 
+256:
+allocate(256) allocate(256) allocate(512) allocate(256) allocate(256) allocate(512) allocate(1024) allocate(2048) allocate(256) 
+512:
+allocate(512) allocate(512) allocate(1024) allocate(512) allocate(512) allocate(1024) allocate(2048) allocate(4096) allocate(512) 
+1024:
+allocate(1024) allocate(1024) allocate(2048) allocate(1024) allocate(1024) allocate(2048) allocate(4096) allocate(8192) ::operator new(8192)
+allocate(1024) 
+2048:
+allocate(2048) allocate(2048) allocate(4096) allocate(2048) allocate(2048) allocate(4096) allocate(8192) ::operator new(8192)
+allocate(2048) deallocate 2048 
+
+4096:
+allocate(4096) allocate(4096) allocate(8192) ::operator new(8192)
+allocate(4096) allocate(4096) allocate(8192) ::operator new(8192)
+allocate(4096) <pools>
+pool[0 -> 16]=1
+pool[1 -> 32]=0
+pool[2 -> 64]=1
+pool[3 -> 128]=0
+pool[4 -> 256]=0
+pool[5 -> 512]=0
+pool[6 -> 1024]=0
+pool[7 -> 2048]=1
+pool[8 -> 4096]=0
+</pools>
+deallocate 4096 
+<pools>
+pool[0 -> 16]=1
+pool[1 -> 32]=0
+pool[2 -> 64]=1
+pool[3 -> 128]=0
+pool[4 -> 256]=0
+pool[5 -> 512]=0
+pool[6 -> 1024]=0
+pool[7 -> 2048]=1
+pool[8 -> 4096]=1
+</pools>
+deallocate 4096 
+<pools>
+pool[0 -> 16]=1
+pool[1 -> 32]=0
+pool[2 -> 64]=1
+pool[3 -> 128]=0
+pool[4 -> 256]=0
+pool[5 -> 512]=0
+pool[6 -> 1024]=0
+pool[7 -> 2048]=1
+pool[8 -> 4096]=2
+</pools>
+deallocate 4096 
+<pools>
+pool[0 -> 16]=1
+pool[1 -> 32]=0
+pool[2 -> 64]=1
+pool[3 -> 128]=0
+pool[4 -> 256]=0
+pool[5 -> 512]=0
+pool[6 -> 1024]=0
+pool[7 -> 2048]=1
+pool[8 -> 4096]=3
+</pools>
+deallocate 4096 
+<pools>
+pool[0 -> 16]=1
+pool[1 -> 32]=0
+pool[2 -> 64]=1
+pool[3 -> 128]=0
+pool[4 -> 256]=0
+pool[5 -> 512]=0
+pool[6 -> 1024]=0
+pool[7 -> 2048]=1
+pool[8 -> 4096]=4
+</pools>
+deallocate 4096 
+<pools>
+pool[0 -> 16]=1
+pool[1 -> 32]=0
+pool[2 -> 64]=1
+pool[3 -> 128]=0
+pool[4 -> 256]=0
+pool[5 -> 512]=0
+pool[6 -> 1024]=0
+pool[7 -> 2048]=1
+pool[8 -> 4096]=5
+</pools>
+deallocate 2048 
+<pools>
+pool[0 -> 16]=1
+pool[1 -> 32]=0
+pool[2 -> 64]=1
+pool[3 -> 128]=0
+pool[4 -> 256]=0
+pool[5 -> 512]=0
+pool[6 -> 1024]=0
+pool[7 -> 2048]=2
+pool[8 -> 4096]=5
+</pools>
+deallocate 2048 
+<pools>
+pool[0 -> 16]=1
+pool[1 -> 32]=0
+pool[2 -> 64]=1
+pool[3 -> 128]=0
+pool[4 -> 256]=0
+pool[5 -> 512]=0
+pool[6 -> 1024]=0
+pool[7 -> 2048]=3
+pool[8 -> 4096]=5
+</pools>
+deallocate 2048 
+<pools>
+pool[0 -> 16]=1
+pool[1 -> 32]=0
+pool[2 -> 64]=1
+pool[3 -> 128]=0
+pool[4 -> 256]=0
+pool[5 -> 512]=0
+pool[6 -> 1024]=0
+pool[7 -> 2048]=4
+pool[8 -> 4096]=5
+</pools>
+deallocate 2048 
+<pools>
+pool[0 -> 16]=1
+pool[1 -> 32]=0
+pool[2 -> 64]=1
+pool[3 -> 128]=0
+pool[4 -> 256]=0
+pool[5 -> 512]=0
+pool[6 -> 1024]=0
+pool[7 -> 2048]=5
+pool[8 -> 4096]=5
+</pools>
+deallocate 1024 
+<pools>
+pool[0 -> 16]=1
+pool[1 -> 32]=0
+pool[2 -> 64]=1
+pool[3 -> 128]=0
+pool[4 -> 256]=0
+pool[5 -> 512]=0
+pool[6 -> 1024]=1
+pool[7 -> 2048]=5
+pool[8 -> 4096]=5
+</pools>
+deallocate 1024 
+<pools>
+pool[0 -> 16]=1
+pool[1 -> 32]=0
+pool[2 -> 64]=1
+pool[3 -> 128]=0
+pool[4 -> 256]=0
+pool[5 -> 512]=0
+pool[6 -> 1024]=2
+pool[7 -> 2048]=5
+pool[8 -> 4096]=5
+</pools>
+deallocate 1024 
+<pools>
+pool[0 -> 16]=1
+pool[1 -> 32]=0
+pool[2 -> 64]=1
+pool[3 -> 128]=0
+pool[4 -> 256]=0
+pool[5 -> 512]=0
+pool[6 -> 1024]=3
+pool[7 -> 2048]=5
+pool[8 -> 4096]=5
+</pools>
+deallocate 1024 
+<pools>
+pool[0 -> 16]=1
+pool[1 -> 32]=0
+pool[2 -> 64]=1
+pool[3 -> 128]=0
+pool[4 -> 256]=0
+pool[5 -> 512]=0
+pool[6 -> 1024]=4
+pool[7 -> 2048]=5
+pool[8 -> 4096]=5
+</pools>
+deallocate 1024 
+<pools>
+pool[0 -> 16]=1
+pool[1 -> 32]=0
+pool[2 -> 64]=1
+pool[3 -> 128]=0
+pool[4 -> 256]=0
+pool[5 -> 512]=0
+pool[6 -> 1024]=5
+pool[7 -> 2048]=5
+pool[8 -> 4096]=5
+</pools>
+deallocate 512 
+<pools>
+pool[0 -> 16]=1
+pool[1 -> 32]=0
+pool[2 -> 64]=1
+pool[3 -> 128]=0
+pool[4 -> 256]=0
+pool[5 -> 512]=1
+pool[6 -> 1024]=5
+pool[7 -> 2048]=5
+pool[8 -> 4096]=5
+</pools>
+deallocate 512 
+<pools>
+pool[0 -> 16]=1
+pool[1 -> 32]=0
+pool[2 -> 64]=1
+pool[3 -> 128]=0
+pool[4 -> 256]=0
+pool[5 -> 512]=2
+pool[6 -> 1024]=5
+pool[7 -> 2048]=5
+pool[8 -> 4096]=5
+</pools>
+deallocate 512 
+<pools>
+pool[0 -> 16]=1
+pool[1 -> 32]=0
+pool[2 -> 64]=1
+pool[3 -> 128]=0
+pool[4 -> 256]=0
+pool[5 -> 512]=3
+pool[6 -> 1024]=5
+pool[7 -> 2048]=5
+pool[8 -> 4096]=5
+</pools>
+deallocate 512 
+<pools>
+pool[0 -> 16]=1
+pool[1 -> 32]=0
+pool[2 -> 64]=1
+pool[3 -> 128]=0
+pool[4 -> 256]=0
+pool[5 -> 512]=4
+pool[6 -> 1024]=5
+pool[7 -> 2048]=5
+pool[8 -> 4096]=5
+</pools>
+deallocate 512 
+<pools>
+pool[0 -> 16]=1
+pool[1 -> 32]=0
+pool[2 -> 64]=1
+pool[3 -> 128]=0
+pool[4 -> 256]=0
+pool[5 -> 512]=5
+pool[6 -> 1024]=5
+pool[7 -> 2048]=5
+pool[8 -> 4096]=5
+</pools>
+deallocate 256 
+<pools>
+pool[0 -> 16]=1
+pool[1 -> 32]=0
+pool[2 -> 64]=1
+pool[3 -> 128]=0
+pool[4 -> 256]=1
+pool[5 -> 512]=5
+pool[6 -> 1024]=5
+pool[7 -> 2048]=5
+pool[8 -> 4096]=5
+</pools>
+deallocate 256 
+<pools>
+pool[0 -> 16]=1
+pool[1 -> 32]=0
+pool[2 -> 64]=1
+pool[3 -> 128]=0
+pool[4 -> 256]=2
+pool[5 -> 512]=5
+pool[6 -> 1024]=5
+pool[7 -> 2048]=5
+pool[8 -> 4096]=5
+</pools>
+deallocate 256 
+<pools>
+pool[0 -> 16]=1
+pool[1 -> 32]=0
+pool[2 -> 64]=1
+pool[3 -> 128]=0
+pool[4 -> 256]=3
+pool[5 -> 512]=5
+pool[6 -> 1024]=5
+pool[7 -> 2048]=5
+pool[8 -> 4096]=5
+</pools>
+deallocate 256 
+<pools>
+pool[0 -> 16]=1
+pool[1 -> 32]=0
+pool[2 -> 64]=1
+pool[3 -> 128]=0
+pool[4 -> 256]=4
+pool[5 -> 512]=5
+pool[6 -> 1024]=5
+pool[7 -> 2048]=5
+pool[8 -> 4096]=5
+</pools>
+deallocate 256 
+<pools>
+pool[0 -> 16]=1
+pool[1 -> 32]=0
+pool[2 -> 64]=1
+pool[3 -> 128]=0
+pool[4 -> 256]=5
+pool[5 -> 512]=5
+pool[6 -> 1024]=5
+pool[7 -> 2048]=5
+pool[8 -> 4096]=5
+</pools>
+deallocate 128 
+<pools>
+pool[0 -> 16]=1
+pool[1 -> 32]=0
+pool[2 -> 64]=1
+pool[3 -> 128]=1
+pool[4 -> 256]=5
+pool[5 -> 512]=5
+pool[6 -> 1024]=5
+pool[7 -> 2048]=5
+pool[8 -> 4096]=5
+</pools>
+deallocate 128 
+<pools>
+pool[0 -> 16]=1
+pool[1 -> 32]=0
+pool[2 -> 64]=1
+pool[3 -> 128]=2
+pool[4 -> 256]=5
+pool[5 -> 512]=5
+pool[6 -> 1024]=5
+pool[7 -> 2048]=5
+pool[8 -> 4096]=5
+</pools>
+deallocate 128 
+<pools>
+pool[0 -> 16]=1
+pool[1 -> 32]=0
+pool[2 -> 64]=1
+pool[3 -> 128]=3
+pool[4 -> 256]=5
+pool[5 -> 512]=5
+pool[6 -> 1024]=5
+pool[7 -> 2048]=5
+pool[8 -> 4096]=5
+</pools>
+deallocate 128 
+<pools>
+pool[0 -> 16]=1
+pool[1 -> 32]=0
+pool[2 -> 64]=1
+pool[3 -> 128]=4
+pool[4 -> 256]=5
+pool[5 -> 512]=5
+pool[6 -> 1024]=5
+pool[7 -> 2048]=5
+pool[8 -> 4096]=5
+</pools>
+deallocate 128 
+<pools>
+pool[0 -> 16]=1
+pool[1 -> 32]=0
+pool[2 -> 64]=1
+pool[3 -> 128]=5
+pool[4 -> 256]=5
+pool[5 -> 512]=5
+pool[6 -> 1024]=5
+pool[7 -> 2048]=5
+pool[8 -> 4096]=5
+</pools>
+deallocate 64 
+<pools>
+pool[0 -> 16]=1
+pool[1 -> 32]=0
+pool[2 -> 64]=2
+pool[3 -> 128]=5
+pool[4 -> 256]=5
+pool[5 -> 512]=5
+pool[6 -> 1024]=5
+pool[7 -> 2048]=5
+pool[8 -> 4096]=5
+</pools>
+deallocate 64 
+<pools>
+pool[0 -> 16]=1
+pool[1 -> 32]=0
+pool[2 -> 64]=3
+pool[3 -> 128]=5
+pool[4 -> 256]=5
+pool[5 -> 512]=5
+pool[6 -> 1024]=5
+pool[7 -> 2048]=5
+pool[8 -> 4096]=5
+</pools>
+deallocate 64 
+<pools>
+pool[0 -> 16]=1
+pool[1 -> 32]=0
+pool[2 -> 64]=4
+pool[3 -> 128]=5
+pool[4 -> 256]=5
+pool[5 -> 512]=5
+pool[6 -> 1024]=5
+pool[7 -> 2048]=5
+pool[8 -> 4096]=5
+</pools>
+deallocate 64 
+<pools>
+pool[0 -> 16]=1
+pool[1 -> 32]=0
+pool[2 -> 64]=5
+pool[3 -> 128]=5
+pool[4 -> 256]=5
+pool[5 -> 512]=5
+pool[6 -> 1024]=5
+pool[7 -> 2048]=5
+pool[8 -> 4096]=5
+</pools>
+deallocate 64 
+<pools>
+pool[0 -> 16]=1
+pool[1 -> 32]=0
+pool[2 -> 64]=6
+pool[3 -> 128]=5
+pool[4 -> 256]=5
+pool[5 -> 512]=5
+pool[6 -> 1024]=5
+pool[7 -> 2048]=5
+pool[8 -> 4096]=5
+</pools>
+deallocate 32 
+<pools>
+pool[0 -> 16]=1
+pool[1 -> 32]=1
+pool[2 -> 64]=6
+pool[3 -> 128]=5
+pool[4 -> 256]=5
+pool[5 -> 512]=5
+pool[6 -> 1024]=5
+pool[7 -> 2048]=5
+pool[8 -> 4096]=5
+</pools>
+deallocate 32 
+<pools>
+pool[0 -> 16]=1
+pool[1 -> 32]=2
+pool[2 -> 64]=6
+pool[3 -> 128]=5
+pool[4 -> 256]=5
+pool[5 -> 512]=5
+pool[6 -> 1024]=5
+pool[7 -> 2048]=5
+pool[8 -> 4096]=5
+</pools>
+deallocate 32 
+<pools>
+pool[0 -> 16]=1
+pool[1 -> 32]=3
+pool[2 -> 64]=6
+pool[3 -> 128]=5
+pool[4 -> 256]=5
+pool[5 -> 512]=5
+pool[6 -> 1024]=5
+pool[7 -> 2048]=5
+pool[8 -> 4096]=5
+</pools>
+deallocate 32 
+<pools>
+pool[0 -> 16]=1
+pool[1 -> 32]=4
+pool[2 -> 64]=6
+pool[3 -> 128]=5
+pool[4 -> 256]=5
+pool[5 -> 512]=5
+pool[6 -> 1024]=5
+pool[7 -> 2048]=5
+pool[8 -> 4096]=5
+</pools>
+deallocate 32 
+<pools>
+pool[0 -> 16]=1
+pool[1 -> 32]=5
+pool[2 -> 64]=6
+pool[3 -> 128]=5
+pool[4 -> 256]=5
+pool[5 -> 512]=5
+pool[6 -> 1024]=5
+pool[7 -> 2048]=5
+pool[8 -> 4096]=5
+</pools>
+deallocate 16 
+<pools>
+pool[0 -> 16]=2
+pool[1 -> 32]=5
+pool[2 -> 64]=6
+pool[3 -> 128]=5
+pool[4 -> 256]=5
+pool[5 -> 512]=5
+pool[6 -> 1024]=5
+pool[7 -> 2048]=5
+pool[8 -> 4096]=5
+</pools>
+deallocate 16 
+<pools>
+pool[0 -> 16]=3
+pool[1 -> 32]=5
+pool[2 -> 64]=6
+pool[3 -> 128]=5
+pool[4 -> 256]=5
+pool[5 -> 512]=5
+pool[6 -> 1024]=5
+pool[7 -> 2048]=5
+pool[8 -> 4096]=5
+</pools>
+deallocate 16 
+<pools>
+pool[0 -> 16]=4
+pool[1 -> 32]=5
+pool[2 -> 64]=6
+pool[3 -> 128]=5
+pool[4 -> 256]=5
+pool[5 -> 512]=5
+pool[6 -> 1024]=5
+pool[7 -> 2048]=5
+pool[8 -> 4096]=5
+</pools>
+deallocate 16 
+<pools>
+pool[0 -> 16]=5
+pool[1 -> 32]=5
+pool[2 -> 64]=6
+pool[3 -> 128]=5
+pool[4 -> 256]=5
+pool[5 -> 512]=5
+pool[6 -> 1024]=5
+pool[7 -> 2048]=5
+pool[8 -> 4096]=5
+</pools>
+deallocate 16 
+<pools>
+pool[0 -> 16]=6
+pool[1 -> 32]=5
+pool[2 -> 64]=6
+pool[3 -> 128]=5
+pool[4 -> 256]=5
+pool[5 -> 512]=5
+pool[6 -> 1024]=5
+pool[7 -> 2048]=5
+pool[8 -> 4096]=5
+</pools>
+END OF PROGRAM
