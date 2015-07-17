@@ -1,0 +1,6 @@
+main.cpp:14:6: error: extra ';' [-Wpedantic]
+     };
+      ^
+main.cpp:19:6: error: extra ';' [-Wpedantic]
+     };
+      ^
