@@ -1,0 +1,7 @@
+main.cpp:4:2: error: static_assert failed "Min 1 for N"
+ static_assert(N > 0, "Min 1 for N");
+ ^             ~~~~~
+main.cpp:12:9: note: in instantiation of template class 'Foo<0>' requested here
+int m = boo( p );
+        ^
+1 error generated.
