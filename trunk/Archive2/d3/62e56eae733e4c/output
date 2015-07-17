@@ -1,0 +1,9 @@
+clang c99
+main.c:31:15: warning: duplicate 'const' declaration specifier [-Wduplicate-decl-specifier]
+const Table_t const tables [] = {
+              ^
+1 warning generated.
+TEST
+
+gcc c99
+TEST
