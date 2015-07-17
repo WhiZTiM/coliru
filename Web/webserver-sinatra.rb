@@ -14,6 +14,11 @@ get '/' do
 end
 
 
+get '/hi' do
+    "hi"
+end
+
+
 get '/mobile' do |_|
     File.read('mobile.html')
 end
@@ -21,6 +26,12 @@ end
 
 get '/*.html' do |file|
     File.read("#{file}.html")
+end
+
+
+get '/*.zip' do |file|
+    content_type :zip
+    File.read("#{file}.zip")
 end
 
 
@@ -270,6 +281,7 @@ end
 configure do
   enable :cross_origin
   disable :protection
+  mime_type :zip, 'application/octet-stream'
   mime_type :json, 'application/json'
   mime_type :js, 'application/javascript'
   mime_type :jpg, 'image/jpeg'
@@ -357,4 +369,5 @@ def log_request(rid, method, message)
     # Cannot handle the exception here.
   end
 end
+
 
