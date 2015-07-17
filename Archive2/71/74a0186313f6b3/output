@@ -1,0 +1,482 @@
+<pools>
+  allocations=3
+  deallocations=0
+  pool<16>=1
+  pool<32>=0
+  pool<64>=1
+  pool<128>=1
+  pool<256>=1
+  pool<512>=1
+  pool<1024>=1
+  pool<2048>=1
+  pool<4096>=1
+</pools>
+<pools>
+  allocations=6
+  deallocations=0
+  pool<16>=1
+  pool<32>=1
+  pool<64>=1
+  pool<128>=0
+  pool<256>=1
+  pool<512>=1
+  pool<1024>=1
+  pool<2048>=1
+  pool<4096>=1
+</pools>
+<pools>
+  allocations=9
+  deallocations=0
+  pool<16>=1
+  pool<32>=1
+  pool<64>=0
+  pool<128>=1
+  pool<256>=0
+  pool<512>=1
+  pool<1024>=1
+  pool<2048>=1
+  pool<4096>=1
+</pools>
+<pools>
+  allocations=12
+  deallocations=0
+  pool<16>=1
+  pool<32>=1
+  pool<64>=0
+  pool<128>=0
+  pool<256>=1
+  pool<512>=0
+  pool<1024>=1
+  pool<2048>=1
+  pool<4096>=1
+</pools>
+<pools>
+  allocations=15
+  deallocations=0
+  pool<16>=1
+  pool<32>=1
+  pool<64>=0
+  pool<128>=0
+  pool<256>=0
+  pool<512>=1
+  pool<1024>=0
+  pool<2048>=1
+  pool<4096>=1
+</pools>
+<pools>
+  allocations=18
+  deallocations=0
+  pool<16>=1
+  pool<32>=1
+  pool<64>=0
+  pool<128>=0
+  pool<256>=0
+  pool<512>=0
+  pool<1024>=1
+  pool<2048>=0
+  pool<4096>=1
+</pools>
+<pools>
+  allocations=21
+  deallocations=0
+  pool<16>=1
+  pool<32>=1
+  pool<64>=0
+  pool<128>=0
+  pool<256>=0
+  pool<512>=0
+  pool<1024>=0
+  pool<2048>=1
+  pool<4096>=0
+</pools>
+<pools>
+  allocations=24
+  deallocations=0
+  pool<16>=1
+  pool<32>=1
+  pool<64>=0
+  pool<128>=0
+  pool<256>=0
+  pool<512>=0
+  pool<1024>=0
+  pool<2048>=0
+  pool<4096>=1
+</pools>
+<pools>
+  allocations=24
+  deallocations=0
+  pool<16>=2
+  pool<32>=1
+  pool<64>=0
+  pool<128>=0
+  pool<256>=0
+  pool<512>=0
+  pool<1024>=0
+  pool<2048>=0
+  pool<4096>=1
+</pools>
+<pools>
+  allocations=27
+  deallocations=1
+  pool<16>=2
+  pool<32>=1
+  pool<64>=0
+  pool<128>=0
+  pool<256>=0
+  pool<512>=0
+  pool<1024>=0
+  pool<2048>=0
+  pool<4096>=0
+</pools>
+<pools>
+  allocations=27
+  deallocations=1
+  pool<16>=2
+  pool<32>=1
+  pool<64>=0
+  pool<128>=0
+  pool<256>=0
+  pool<512>=0
+  pool<1024>=0
+  pool<2048>=0
+  pool<4096>=0
+</pools>
+<pools>
+  allocations=27
+  deallocations=2
+  pool<16>=3
+  pool<32>=1
+  pool<64>=0
+  pool<128>=0
+  pool<256>=0
+  pool<512>=0
+  pool<1024>=0
+  pool<2048>=0
+  pool<4096>=0
+</pools>
+<pools>
+  allocations=27
+  deallocations=3
+  pool<16>=3
+  pool<32>=1
+  pool<64>=0
+  pool<128>=0
+  pool<256>=0
+  pool<512>=0
+  pool<1024>=0
+  pool<2048>=0
+  pool<4096>=1
+</pools>
+<pools>
+  allocations=27
+  deallocations=4
+  pool<16>=4
+  pool<32>=1
+  pool<64>=0
+  pool<128>=0
+  pool<256>=0
+  pool<512>=0
+  pool<1024>=0
+  pool<2048>=0
+  pool<4096>=1
+</pools>
+<pools>
+  allocations=27
+  deallocations=5
+  pool<16>=4
+  pool<32>=1
+  pool<64>=0
+  pool<128>=0
+  pool<256>=0
+  pool<512>=0
+  pool<1024>=0
+  pool<2048>=0
+  pool<4096>=2
+</pools>
+<pools>
+  allocations=27
+  deallocations=6
+  pool<16>=4
+  pool<32>=2
+  pool<64>=0
+  pool<128>=0
+  pool<256>=0
+  pool<512>=0
+  pool<1024>=0
+  pool<2048>=0
+  pool<4096>=2
+</pools>
+<pools>
+  allocations=27
+  deallocations=7
+  pool<16>=4
+  pool<32>=2
+  pool<64>=0
+  pool<128>=0
+  pool<256>=0
+  pool<512>=0
+  pool<1024>=0
+  pool<2048>=0
+  pool<4096>=3
+</pools>
+<pools>
+  allocations=27
+  deallocations=8
+  pool<16>=4
+  pool<32>=3
+  pool<64>=0
+  pool<128>=0
+  pool<256>=0
+  pool<512>=0
+  pool<1024>=0
+  pool<2048>=0
+  pool<4096>=3
+</pools>
+<pools>
+  allocations=27
+  deallocations=9
+  pool<16>=4
+  pool<32>=3
+  pool<64>=0
+  pool<128>=0
+  pool<256>=0
+  pool<512>=0
+  pool<1024>=0
+  pool<2048>=1
+  pool<4096>=3
+</pools>
+<pools>
+  allocations=27
+  deallocations=10
+  pool<16>=4
+  pool<32>=4
+  pool<64>=0
+  pool<128>=0
+  pool<256>=0
+  pool<512>=0
+  pool<1024>=0
+  pool<2048>=1
+  pool<4096>=3
+</pools>
+<pools>
+  allocations=27
+  deallocations=11
+  pool<16>=4
+  pool<32>=4
+  pool<64>=0
+  pool<128>=0
+  pool<256>=0
+  pool<512>=0
+  pool<1024>=0
+  pool<2048>=2
+  pool<4096>=3
+</pools>
+<pools>
+  allocations=27
+  deallocations=12
+  pool<16>=4
+  pool<32>=4
+  pool<64>=1
+  pool<128>=0
+  pool<256>=0
+  pool<512>=0
+  pool<1024>=0
+  pool<2048>=2
+  pool<4096>=3
+</pools>
+<pools>
+  allocations=27
+  deallocations=13
+  pool<16>=4
+  pool<32>=4
+  pool<64>=1
+  pool<128>=0
+  pool<256>=0
+  pool<512>=0
+  pool<1024>=0
+  pool<2048>=3
+  pool<4096>=3
+</pools>
+<pools>
+  allocations=27
+  deallocations=14
+  pool<16>=4
+  pool<32>=4
+  pool<64>=2
+  pool<128>=0
+  pool<256>=0
+  pool<512>=0
+  pool<1024>=0
+  pool<2048>=3
+  pool<4096>=3
+</pools>
+<pools>
+  allocations=27
+  deallocations=15
+  pool<16>=4
+  pool<32>=4
+  pool<64>=2
+  pool<128>=0
+  pool<256>=0
+  pool<512>=0
+  pool<1024>=1
+  pool<2048>=3
+  pool<4096>=3
+</pools>
+<pools>
+  allocations=27
+  deallocations=16
+  pool<16>=4
+  pool<32>=4
+  pool<64>=3
+  pool<128>=0
+  pool<256>=0
+  pool<512>=0
+  pool<1024>=1
+  pool<2048>=3
+  pool<4096>=3
+</pools>
+<pools>
+  allocations=27
+  deallocations=17
+  pool<16>=4
+  pool<32>=4
+  pool<64>=3
+  pool<128>=0
+  pool<256>=0
+  pool<512>=0
+  pool<1024>=2
+  pool<2048>=3
+  pool<4096>=3
+</pools>
+<pools>
+  allocations=27
+  deallocations=18
+  pool<16>=4
+  pool<32>=4
+  pool<64>=3
+  pool<128>=1
+  pool<256>=0
+  pool<512>=0
+  pool<1024>=2
+  pool<2048>=3
+  pool<4096>=3
+</pools>
+<pools>
+  allocations=27
+  deallocations=19
+  pool<16>=4
+  pool<32>=4
+  pool<64>=3
+  pool<128>=1
+  pool<256>=0
+  pool<512>=0
+  pool<1024>=3
+  pool<2048>=3
+  pool<4096>=3
+</pools>
+<pools>
+  allocations=27
+  deallocations=20
+  pool<16>=4
+  pool<32>=4
+  pool<64>=3
+  pool<128>=2
+  pool<256>=0
+  pool<512>=0
+  pool<1024>=3
+  pool<2048>=3
+  pool<4096>=3
+</pools>
+<pools>
+  allocations=27
+  deallocations=21
+  pool<16>=4
+  pool<32>=4
+  pool<64>=3
+  pool<128>=2
+  pool<256>=0
+  pool<512>=1
+  pool<1024>=3
+  pool<2048>=3
+  pool<4096>=3
+</pools>
+<pools>
+  allocations=27
+  deallocations=22
+  pool<16>=4
+  pool<32>=4
+  pool<64>=3
+  pool<128>=3
+  pool<256>=0
+  pool<512>=1
+  pool<1024>=3
+  pool<2048>=3
+  pool<4096>=3
+</pools>
+<pools>
+  allocations=27
+  deallocations=23
+  pool<16>=4
+  pool<32>=4
+  pool<64>=3
+  pool<128>=3
+  pool<256>=0
+  pool<512>=2
+  pool<1024>=3
+  pool<2048>=3
+  pool<4096>=3
+</pools>
+<pools>
+  allocations=27
+  deallocations=24
+  pool<16>=4
+  pool<32>=4
+  pool<64>=3
+  pool<128>=3
+  pool<256>=1
+  pool<512>=2
+  pool<1024>=3
+  pool<2048>=3
+  pool<4096>=3
+</pools>
+<pools>
+  allocations=27
+  deallocations=25
+  pool<16>=4
+  pool<32>=4
+  pool<64>=3
+  pool<128>=3
+  pool<256>=1
+  pool<512>=3
+  pool<1024>=3
+  pool<2048>=3
+  pool<4096>=3
+</pools>
+<pools>
+  allocations=27
+  deallocations=26
+  pool<16>=4
+  pool<32>=4
+  pool<64>=3
+  pool<128>=3
+  pool<256>=2
+  pool<512>=3
+  pool<1024>=3
+  pool<2048>=3
+  pool<4096>=3
+</pools>
+<pools>
+  allocations=27
+  deallocations=27
+  pool<16>=4
+  pool<32>=4
+  pool<64>=3
+  pool<128>=3
+  pool<256>=3
+  pool<512>=3
+  pool<1024>=3
+  pool<2048>=3
+  pool<4096>=3
+</pools>
+END OF PROGRAM
