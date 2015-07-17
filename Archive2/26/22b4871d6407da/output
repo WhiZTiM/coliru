@@ -1,0 +1,4 @@
+Foo()
+Bar(Args&&... args)
+Foo()
+Bar(const Bar&)
