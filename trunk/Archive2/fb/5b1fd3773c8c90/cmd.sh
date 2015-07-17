@@ -1,0 +1,1 @@
+g++ -std=c++1z -O2 -Wall -Wextra -pedantic main.cpp -o a.out && echo 00001234 | ./a.out
