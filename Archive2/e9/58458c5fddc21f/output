@@ -1,0 +1,36 @@
+format: %%
+
+1
+format: %%%
+
+0
+format: %w
+
+0
+got 1 arg left. type: i
+format: %d
+
+1
+got 1 arg left. type: i
+format: %d %
+
+0
+got 1 arg left. type: i
+format: %d %d
+
+0
+got 2 args left. first of type: i
+format: %d %f
+
+got 1 arg left. type: f
+format:  %f
+
+1
+got 2 args left. first of type: A7_c
+format: int %d float %f
+
+0
+got 3 args left. first of type: A7_c
+format: int %d char* %s float %f
+
+0
