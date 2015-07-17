@@ -1,0 +1,6 @@
+bash: line 710: warning: here-document at line 7 delimited by end-of-file (wanted `EOF')
+main.cpp: In function 'int main()':
+main.cpp:73:49: warning: ISO C++ forbids variable length array 'v_aStationRingBuffer' [-Wvla]
+   Station v_aStationRingBuffer[v_maxDistance +1u]; /* allocate array for use as ring buffer */
+                                                 ^
+3440
