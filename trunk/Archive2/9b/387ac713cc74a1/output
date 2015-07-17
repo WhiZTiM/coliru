@@ -1,0 +1,40 @@
+main.cpp:23:40: error: pasting "." and "attr" does not give a valid preprocessing token
+ #define PRINT1(std, X) printf("%d", std.##X);
+                                        ^
+main.cpp:26:9: note: in expansion of macro 'PRINT1'
+         PRINT1(std, attr[iCounter])
+         ^
+# 1 "main.cpp"
+# 1 "<built-in>"
+# 1 "<command-line>"
+# 1 "main.cpp"
+class Student
+{
+public:
+    int roll;
+    int marks;
+
+    Student()
+    {
+        roll = 10;
+        marks = 0;
+    }
+};
+
+int main()
+{
+    printf("Hello, World!\n");
+    int iCounter;
+
+    char attr[][6] = {"roll", "marks"};
+
+    Student std;
+
+
+    for (iCounter = 0; iCounter < 2; iCounter++)
+    {
+        printf("%d", std. attr[iCounter]);
+    }
+
+    return 0;
+}
