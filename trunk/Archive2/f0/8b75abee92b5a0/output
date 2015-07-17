@@ -1,0 +1,6 @@
+main.cpp:9:10: error: declaration of 'long int Outer::x' [-fpermissive]
+     long x;
+          ^
+main.cpp:2:6: error: changes meaning of 'x' from 'char x' [-fpermissive]
+ char x;
+      ^
