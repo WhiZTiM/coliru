@@ -1,0 +1,1 @@
+clang++ -std=c++11 -O2 -Wall -pedantic -pthread main.cpp -lboost_system -lboost_thread -lboost_log{,_setup} && for a in {1..10}; do ./a.out; done; ls -lt Logs/
