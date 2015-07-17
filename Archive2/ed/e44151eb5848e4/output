@@ -1,0 +1,12 @@
+'name' == 'etrusks'  --- (non-empty field)
+
+'email' == ''  --- (empty field)
+
+'posts' == '168'  --- (non-empty field)
+
+'age' ==   --- (nonexistent field)
+
+'phone' == ''  --- (empty field)
+
+'address' ==   --- (nonexistent field)
+
