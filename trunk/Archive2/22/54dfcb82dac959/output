@@ -1,0 +1,169 @@
+
+16:
+allocate(16) allocate(32) allocate(64) allocate(128) allocate(256) allocate(512) allocate(1024) allocate(2048) allocate(4096) allocate(8192) allocate(16384) ::operator new(16384)
+<pools>
+pool[0 -> 16]=1
+pool[1 -> 32]=1
+pool[2 -> 64]=1
+pool[3 -> 128]=1
+pool[4 -> 256]=1
+pool[5 -> 512]=1
+pool[6 -> 1024]=1
+pool[7 -> 2048]=1
+pool[8 -> 4096]=1
+pool[9 -> 8192]=1
+</pools>
+
+32:
+allocate(32) <pools>
+pool[0 -> 16]=1
+pool[1 -> 32]=0
+pool[2 -> 64]=1
+pool[3 -> 128]=1
+pool[4 -> 256]=1
+pool[5 -> 512]=1
+pool[6 -> 1024]=1
+pool[7 -> 2048]=1
+pool[8 -> 4096]=1
+pool[9 -> 8192]=1
+</pools>
+
+64:
+allocate(64) <pools>
+pool[0 -> 16]=1
+pool[1 -> 32]=0
+pool[2 -> 64]=0
+pool[3 -> 128]=1
+pool[4 -> 256]=1
+pool[5 -> 512]=1
+pool[6 -> 1024]=1
+pool[7 -> 2048]=1
+pool[8 -> 4096]=1
+pool[9 -> 8192]=1
+</pools>
+
+128:
+allocate(128) <pools>
+pool[0 -> 16]=1
+pool[1 -> 32]=0
+pool[2 -> 64]=0
+pool[3 -> 128]=0
+pool[4 -> 256]=1
+pool[5 -> 512]=1
+pool[6 -> 1024]=1
+pool[7 -> 2048]=1
+pool[8 -> 4096]=1
+pool[9 -> 8192]=1
+</pools>
+
+256:
+allocate(256) <pools>
+pool[0 -> 16]=1
+pool[1 -> 32]=0
+pool[2 -> 64]=0
+pool[3 -> 128]=0
+pool[4 -> 256]=0
+pool[5 -> 512]=1
+pool[6 -> 1024]=1
+pool[7 -> 2048]=1
+pool[8 -> 4096]=1
+pool[9 -> 8192]=1
+</pools>
+
+512:
+allocate(512) <pools>
+pool[0 -> 16]=1
+pool[1 -> 32]=0
+pool[2 -> 64]=0
+pool[3 -> 128]=0
+pool[4 -> 256]=0
+pool[5 -> 512]=0
+pool[6 -> 1024]=1
+pool[7 -> 2048]=1
+pool[8 -> 4096]=1
+pool[9 -> 8192]=1
+</pools>
+
+1024:
+allocate(1024) <pools>
+pool[0 -> 16]=1
+pool[1 -> 32]=0
+pool[2 -> 64]=0
+pool[3 -> 128]=0
+pool[4 -> 256]=0
+pool[5 -> 512]=0
+pool[6 -> 1024]=0
+pool[7 -> 2048]=1
+pool[8 -> 4096]=1
+pool[9 -> 8192]=1
+</pools>
+
+2048:
+allocate(2048) <pools>
+pool[0 -> 16]=1
+pool[1 -> 32]=0
+pool[2 -> 64]=0
+pool[3 -> 128]=0
+pool[4 -> 256]=0
+pool[5 -> 512]=0
+pool[6 -> 1024]=0
+pool[7 -> 2048]=0
+pool[8 -> 4096]=1
+pool[9 -> 8192]=1
+</pools>
+
+4096:
+allocate(4096) <pools>
+pool[0 -> 16]=1
+pool[1 -> 32]=0
+pool[2 -> 64]=0
+pool[3 -> 128]=0
+pool[4 -> 256]=0
+pool[5 -> 512]=0
+pool[6 -> 1024]=0
+pool[7 -> 2048]=0
+pool[8 -> 4096]=0
+pool[9 -> 8192]=1
+</pools>
+
+8192:
+allocate(8192) <pools>
+pool[0 -> 16]=1
+pool[1 -> 32]=0
+pool[2 -> 64]=0
+pool[3 -> 128]=0
+pool[4 -> 256]=0
+pool[5 -> 512]=0
+pool[6 -> 1024]=0
+pool[7 -> 2048]=0
+pool[8 -> 4096]=0
+pool[9 -> 8192]=0
+</pools>
+
+16384:
+allocate(16384) ::operator new(16384)
+<pools>
+pool[0 -> 16]=1
+pool[1 -> 32]=0
+pool[2 -> 64]=0
+pool[3 -> 128]=0
+pool[4 -> 256]=0
+pool[5 -> 512]=0
+pool[6 -> 1024]=0
+pool[7 -> 2048]=0
+pool[8 -> 4096]=0
+pool[9 -> 8192]=0
+</pools>
+<pools>
+pool[0 -> 16]=1
+pool[1 -> 32]=0
+pool[2 -> 64]=0
+pool[3 -> 128]=0
+pool[4 -> 256]=0
+pool[5 -> 512]=0
+pool[6 -> 1024]=0
+pool[7 -> 2048]=0
+pool[8 -> 4096]=0
+pool[9 -> 8192]=0
+</pools>
+END OF PROGRAM
