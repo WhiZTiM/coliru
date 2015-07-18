@@ -1,0 +1,7 @@
+main.cpp:28:13: error: variable type 'Base<B>' is an abstract class
+    Base<B> b; // ok, error
+            ^
+main.cpp:9:18: note: unimplemented pure virtual method 'foo' in 'Base'
+    virtual void foo() = 0;
+                 ^
+1 error generated.
