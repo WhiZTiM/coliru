@@ -1,0 +1,10 @@
+main.cpp:6:24: error: 'S' is a private member of 'Y::VS'
+    static typename T::S ts;
+                       ^
+main.cpp:12:11: note: in instantiation of template class 'X<Y::VS>' requested here
+    X<VS> x;
+          ^
+main.cpp:11:21: note: implicitly declared private here
+    class VS{ class S{ }; };
+                    ^
+1 error generated.
