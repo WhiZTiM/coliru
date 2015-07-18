@@ -1,0 +1,14 @@
+----- 测试 delegate -----
+begin -> [no Event1] -> [no Event2] -> [Event3 : ]  end
+begin -> [has Event1 : 3000] -> [no Event2] -> [Event3 : ]  end
+begin -> [has Event1 : 3000] -> [has Event2 : one_1_2_3] -> [Event3 : ]  end
+begin -> [has Event1 : 6000] -> [has Event2 : two_1_2_3] -> [Event3 : 35/40/45/]  end
+
+----- 测试 bind -----
+[function] mem_fn -> one_1_2_3
+[auto]     mem_fn -> two_4_5_6
+[function] bind mem_fn -> one_1_2_3
+[auto]     bind mem_fn -> two_4_5_6
+[function] bind -> one_1_2_3
+[auto]     bind -> two_4_5_6
+
