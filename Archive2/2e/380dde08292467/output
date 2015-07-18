@@ -1,0 +1,16 @@
+main.cpp:14:10: error: no viable conversion from 'integer_sequence<[2 * ...], 1, 2>' to 'const integer_sequence<[2 * ...], (no argument), (no argument)>'
+    test(f);
+         ^
+main.cpp:19:6: note: in instantiation of function template specialization 'foo<int, float, char>' requested here
+     foo<int, float, char>();
+     ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../include/c++/5.2.0/utility:230:12: note: candidate constructor (the implicit copy constructor) not viable: no known conversion from 'std::integer_sequence<unsigned long, 0, 1, 2>' to 'const std::integer_sequence<unsigned long, 0> &' for 1st argument
+    struct integer_sequence
+           ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../include/c++/5.2.0/utility:230:12: note: candidate constructor (the implicit move constructor) not viable: no known conversion from 'std::integer_sequence<unsigned long, 0, 1, 2>' to 'std::integer_sequence<unsigned long, 0> &&' for 1st argument
+    struct integer_sequence
+           ^
+main.cpp:5:21: note: passing argument to parameter 't' here
+void test(T const & t)
+                    ^
+1 error generated.
