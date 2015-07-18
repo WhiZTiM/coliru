@@ -1,0 +1,8 @@
+main.cpp:9:21: error: no member named 'invoke' in namespace 'std'; did you mean '__invoke'?
+        return std::invoke(p, std::forward<Args>(args)...);
+               ~~~~~^~~~~~
+                    __invoke
+/usr/include/c++/v1/type_traits:3180:1: note: '__invoke' declared here
+__invoke(__any, _Args&& ...__args)
+^
+1 error generated.
