@@ -1,0 +1,14 @@
+Shutdown in 2 seconds...
+Stop accepting...
+Shutdown...
+Byebye
+      1 hello world 2820
+      1 hello world 31357
+      1 hello world 3220
+      1 void Server::Start()
+      1 void Server::StopAllConnections()
+      2 void Server::Stop()
+      5 std::string Connection::ExtractString()
+      6 virtual Connection::~Connection()
+     10 void Connection::AsyncReadString()
+     10 void Connection::ReadHandler(const bs::error_code &, std::size_t)
