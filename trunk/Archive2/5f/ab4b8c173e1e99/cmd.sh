@@ -1,0 +1,1 @@
+clang++ -std=c++11 -O2 -Wall -pedantic -pthread main.cpp && set -x; for cmd in 0 1 2; do ./a.out $cmd; xxd tiles.dat; done
