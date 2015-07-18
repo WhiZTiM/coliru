@@ -1,0 +1,31 @@
+
+
+g++ ####################################################
+
+main.cpp:5:37: error: invalid use of incomplete type 'struct some_traits<int>'
+ char const* const some_traits<int>::some_string = "int";
+                                     ^
+main.cpp:2:8: note: declaration of 'struct some_traits<int>'
+ struct some_traits;
+        ^
+main.cpp: In function 'int main()':
+main.cpp:10:18: error: incomplete type 'some_traits<int>' used in nested name specifier
+     std::cout << some_traits<int>::some_string;
+                  ^
+
+
+clang++ ####################################################
+
+main.cpp:5:19: error: implicit instantiation of undefined template 'some_traits<int>'
+char const* const some_traits<int>::some_string = "int";
+                  ^
+main.cpp:2:8: note: template is declared here
+struct some_traits;
+       ^
+main.cpp:10:18: error: implicit instantiation of undefined template 'some_traits<int>'
+    std::cout << some_traits<int>::some_string;
+                 ^
+main.cpp:2:8: note: template is declared here
+struct some_traits;
+       ^
+2 errors generated.
