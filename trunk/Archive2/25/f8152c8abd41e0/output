@@ -1,0 +1,7 @@
+main.cpp:12:18: error: cannot initialize object parameter of type 'const std::array<unsigned long, 1>' with an expression of type 'xxx<int, float, char>' (aka 'std::array<unsigned long, 3>')
+    std::cout << x.size() << std::endl;
+                 ^
+main.cpp:17:6: note: in instantiation of function template specialization 'foo<int, float, char>' requested here
+     foo<int, float, char>();
+     ^
+1 error generated.
