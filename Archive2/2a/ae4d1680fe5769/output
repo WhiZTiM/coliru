@@ -1,0 +1,5 @@
+main.cpp: In member function 'void Base<T>::bar()':
+main.cpp:33:13: error: there are no arguments to 'foo' that depend on a template parameter, so a declaration of 'foo' must be available [-fpermissive]
+         foo(); // ???
+             ^
+main.cpp:33:13: note: (if you use '-fpermissive', G++ will accept your code, but allowing the use of an undeclared name is deprecated)
