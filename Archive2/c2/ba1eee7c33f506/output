@@ -1,0 +1,9 @@
+Shutdown in 2 seconds...
+Stop accepting...
+Shutdown...
+Byebye
+      1 Server::~Server()
+      1 virtual Connection::~Connection()
+      1 void Server::Start()
+      1 void Server::StopAllConnections()
+      2 void Server::Stop()
