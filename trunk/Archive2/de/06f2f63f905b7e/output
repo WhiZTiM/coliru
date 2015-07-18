@@ -1,0 +1,12 @@
+digraph finite_state_machine {
+rankdir=LR;
+node [shape = circle];
+start -> find_blank [ label = "x -> x_mark,R" ];
+find_blank -> find_blank [ label = "x -> x,R" ];
+find_blank -> find_blank [ label = "split -> split,R" ];
+find_blank -> go_back [ label = "_ -> x,L" ];
+go_back -> go_back [ label = "x -> x,L" ];
+go_back -> go_back [ label = "split -> split,L" ];
+go_back -> start [ label = "x_mark -> x,R" ];
+start -> qaccept [ label = "split -> split,L" ];
+}
