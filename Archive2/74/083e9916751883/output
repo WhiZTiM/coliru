@@ -1,0 +1,3 @@
+main.cpp:10:1: error: static assertion failed: OOPS
+ static_assert(std::is_pod<POD>::value, "OOPS");
+ ^
