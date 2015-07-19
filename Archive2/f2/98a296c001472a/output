@@ -1,0 +1,2 @@
+global op new called, message = 1, 1
+global op delete called, message = 1, 1
