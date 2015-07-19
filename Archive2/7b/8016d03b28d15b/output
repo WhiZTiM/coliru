@@ -1,0 +1,7 @@
+main.cpp:23:5: error: no suitable member 'operator delete' in 'A'
+    delete a;
+    ^
+main.cpp:17:9: note: member 'operator delete' declared here
+void A::operator delete  ( void* ptr, std::size_t msg, std::size_t mmsg ){
+        ^
+1 error generated.
