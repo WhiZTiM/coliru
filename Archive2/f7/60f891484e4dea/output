@@ -1,0 +1,9 @@
+terminate called after throwing an instance of 'std::runtime_error'
+  what():  locale::facet::_S_create_c_locale name not valid
+Locale names:
+l1: C
+l2: en_US.UTF-8
+l3: LC_CTYPE=en_US.UTF-8;LC_NUMERIC=C;LC_TIME=C;LC_COLLATE=C;LC_MONETARY=C;LC_MESSAGES=C;LC_PAPER=C;LC_NAME=C;LC_ADDRESS=C;LC_TELEPHONE=C;LC_MEASUREMENT=C;LC_IDENTIFICATION=C
+l4: *
+X Y Z a b c 
+bash: line 7: 28776 Aborted                 (core dumped) ./a.out
