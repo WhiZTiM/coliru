@@ -1,0 +1,3 @@
+main.cpp:5:5: error: invalid use of template-name 'std::chrono::time_point' without an argument list
+     std::chrono::time_point gameStartClock = std::chrono::high_resolution_clock::now();
+     ^
