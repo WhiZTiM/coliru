@@ -1,0 +1,5 @@
+bash: line 8:  5242 File size limit exceeded(core dumped) ./a.out > /dev/null
+
+real	0m0.378s
+user	0m0.228s
+sys	0m0.020s
