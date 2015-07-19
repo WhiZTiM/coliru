@@ -1,0 +1,9 @@
+main.cpp: In member function 'int F::println(char*)':
+main.cpp:7:60: warning: no return statement in function returning non-void [-Wreturn-type]
+ struct F{void println(char* s){std::cout << s << std::endl;}};
+                                                            ^
+main.cpp: In function 'int main()':
+main.cpp:11:36: warning: ISO C++ forbids converting a string constant to 'char*' [-Wpedantic]
+   System.out.println("Hello World!");
+                                    ^
+Hello World!
