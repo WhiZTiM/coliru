@@ -1,0 +1,2 @@
+g++ -std=c++03 -O2 -Wall -pedantic -pthread main.cpp -DTEST_METHOD=1 -DTEST_COUNT=200000 && time ./a.out && \
+g++ -std=c++03 -O2 -Wall -pedantic -pthread main.cpp -DTEST_METHOD=2 -DTEST_COUNT=200000 && time ./a.out
