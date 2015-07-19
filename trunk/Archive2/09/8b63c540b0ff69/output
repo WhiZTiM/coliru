@@ -1,0 +1,10 @@
+main.cpp: In function 'constexpr int f(Flags)':
+main.cpp:17:5: warning: case value '6' not in enumerated type 'Flags' [-Wswitch]
+     case bad|eof:     return 0xBAADE0F; /* ... */ break;
+     ^
+main.cpp: In function 'int main()':
+main.cpp:23:9: warning: unused variable 'v' [-Wunused-variable]
+     int v[f(good)];
+         ^
+4
+baade0f
