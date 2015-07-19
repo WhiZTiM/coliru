@@ -1,0 +1,1 @@
+g++ -std=c++14 -O2 -Wall -S -pedantic -pthread main.cpp && cat main.s
