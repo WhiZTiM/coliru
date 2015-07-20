@@ -1,0 +1,41 @@
+view: 3
+text_view (daffy): 'three'
+
+view: 4
+text_view (daffy): 'four'
+
+view: 5
+text_view (daffy): 'five'
+
+view: 6
+text_view (daffy): 'six'
+
+view: 5
+text_view (daffy): 'five'
+
+view: 4
+text_view (daffy): 'four'
+
+view: 'controller' says hello
+text_view (daffy): 'controller' says hello
+==========
+view: 3
+text_view (daffy): 'three'
+
+view: 4
+text_view (daffy): 'four'
+
+view: 5
+text_view (daffy): 'five'
+
+view: 6
+text_view (daffy): 'six'
+
+view: 5
+text_view (daffy): 'five'
+
+view: 4
+text_view (daffy): 'four'
+
+view: 'controller' says hello
+text_view (daffy): 'controller' says hello
