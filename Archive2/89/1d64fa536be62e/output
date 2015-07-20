@@ -1,0 +1,4 @@
+calling bar(Foo&&)
+Copy
+calling bar()
+Move
