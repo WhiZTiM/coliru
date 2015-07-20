@@ -1,0 +1,1 @@
+echo clang++ && clang++ -std=c++14 -O2 -Wall -pedantic main.cpp && ./a.out && echo g++ && g++ -std=c++11 -O2 -Wall -pedantic main.cpp && ./a.out
