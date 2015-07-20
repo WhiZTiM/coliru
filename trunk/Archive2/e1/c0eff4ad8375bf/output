@@ -1,0 +1,13 @@
+clang version 3.6.0 (tags/RELEASE_360/final 235480)
+Target: x86_64-unknown-linux-gnu
+Thread model: posix
+main.cpp:18:7: error: cannot cast 'Derived' to its private base class 'Base'
+    (c->*func)();
+      ^
+main.cpp:27:5: note: in instantiation of function template specialization 'exec<Derived, void (Base::*)()>' requested here
+    exec(&d,&Derived::doStuff);
+    ^
+main.cpp:7:17: note: declared private here
+class Derived : private Base
+                ^~~~~~~~~~~~
+1 error generated.
