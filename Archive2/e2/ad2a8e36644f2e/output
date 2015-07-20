@@ -1,0 +1,9 @@
+main.cpp: In instantiation of 'void foo(const std::vector<T>&) [with T = int]':
+main.cpp:34:10:   required from here
+main.cpp:16:35: error: dependent-name 'std::vector<T>::const_iterator' is parsed as a non-type, but instantiation yields a type
+     std::vector<T>::const_iterator* p; 
+                                   ^
+main.cpp:16:35: note: say 'typename std::vector<T>::const_iterator' if a type is meant
+main.cpp:19:14: warning: unused variable 'p2' [-Wunused-variable]
+     iter_t * p2; // iter_t is a dependent name, but it's known to be a type name
+              ^
