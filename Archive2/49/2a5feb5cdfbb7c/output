@@ -1,0 +1,40 @@
+	.text
+	.file	"main.cpp"
+	.globl	_Z6foobarv
+	.align	16, 0x90
+	.type	_Z6foobarv,@function
+_Z6foobarv:                             # @_Z6foobarv
+	.cfi_startproc
+# BB#0:
+	movl	$68, %eax
+	retq
+.Ltmp0:
+	.size	_Z6foobarv, .Ltmp0-_Z6foobarv
+	.cfi_endproc
+
+
+	.ident	"clang version 3.6.0 (tags/RELEASE_360/final 235480)"
+	.section	".note.GNU-stack","",@progbits
+==========
+	.file	"main.cpp"
+	.section	.text.unlikely,"ax",@progbits
+.LCOLDB0:
+	.text
+.LHOTB0:
+	.p2align 4,,15
+	.globl	_Z6foobarv
+	.type	_Z6foobarv, @function
+_Z6foobarv:
+.LFB2:
+	.cfi_startproc
+	movl	$68, %eax
+	ret
+	.cfi_endproc
+.LFE2:
+	.size	_Z6foobarv, .-_Z6foobarv
+	.section	.text.unlikely
+.LCOLDE0:
+	.text
+.LHOTE0:
+	.ident	"GCC: (GNU) 5.2.0"
+	.section	.note.GNU-stack,"",@progbits
