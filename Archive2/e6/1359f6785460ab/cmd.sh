@@ -1,0 +1,1 @@
+g++ -std=c++11 -O2 -Wall -pedantic -pthread main.cpp -lbz2 -lboost_iostreams && ./a.out < main.cpp

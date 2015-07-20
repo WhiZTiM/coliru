@@ -1,0 +1,32 @@
+#include <iostream>
+#include <boost/iostreams/filtering_stream.hpp>
+#include <boost/iostreams/copy.hpp>
+#include <boost/iostreams/filter/bzip2.hpp>
+#include <sstream>
+
+namespace io = boost::iostreams;
+
+int main()
+{
+    std::stringstream ss;
+    //ss.unsetf(std::ios::skipws);
+
+    {
+        io::filtering_stream<io::output> of;
+        of.push(io::bzip2_compressor{});
+        of.push(ss);
+
+        io::copy(std::cin, of);
+    }
+
+    std::cout << "Compressed input: " << ss.str().size() << " bytes\n";
+
+    ss.seekg(0ul);
+    {
+        io::filtering_stream<io::input> if_;
+        if_.push(io::bzip2_decompressor{});
+        if_.push(ss);
+
+        io::copy(if_, std::cout);
+    }
+}
