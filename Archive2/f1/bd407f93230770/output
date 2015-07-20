@@ -1,0 +1,8 @@
+main.cpp: In function 'BigObject&& foo(int)':
+main.cpp:22:30: warning: function may return address of local variable [-Wreturn-local-addr]
+     return std::move(localObj);
+                              ^
+main.cpp:20:15: note: declared here
+     BigObject localObj;
+               ^
+bash: line 7:  1500 Segmentation fault      (core dumped) ./a.out
