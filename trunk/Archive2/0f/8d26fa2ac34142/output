@@ -1,0 +1,6 @@
+Shutdown in 10 seconds...
+Shutdown...
+      1 Server::~Server()
+      5 void Session::AsyncReadString()
+      5 void Session::ReadHandler(const bs::error_code &, std::size_t)
+      6 virtual Session::~Session()
