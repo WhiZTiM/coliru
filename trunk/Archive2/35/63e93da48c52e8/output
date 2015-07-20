@@ -1,0 +1,17 @@
+main.cpp:21:26:   in constexpr expansion of 'cw2.Widget::X()'
+main.cpp:21:27: error: the value of 'cw2' is not usable in a constant expression
+ constexpr int zz2 = cw2.X();  // the value of 'cw2' is not usable in a constant expression
+                           ^
+main.cpp:20:14: note: 'cw2' was not declared 'constexpr'
+ const Widget cw2(xx, 0);
+              ^
+main.cpp: In function 'int main()':
+main.cpp:60:70: error: 'zz' was not declared in this scope
+     cout << "cxx " << cxx << " cx " << cx << " x " << x << " zz " << zz << '\n';
+                                                                      ^
+main.cpp:67:16: warning: unused variable 'z' [-Wunused-variable]
+  constexpr int z = orig.xValue();
+                ^
+main.cpp:71:16: warning: unused variable 'x0' [-Wunused-variable]
+  constexpr int x0 = diagonal[1].xValue(); 
+                ^
