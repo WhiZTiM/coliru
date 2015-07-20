@@ -1,0 +1,3 @@
+/tmp/ccjjjVGA.o: In function `main':
+main.cpp:(.text.startup+0x2d): undefined reference to `Vector<int, 4ul>::Vector(std::array<int, 4ul>&)'
+collect2: error: ld returned 1 exit status
