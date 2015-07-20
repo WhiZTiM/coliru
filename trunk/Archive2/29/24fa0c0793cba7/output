@@ -1,0 +1,6 @@
+Starting with a class DangerousA & DangerousB, both are unrelated
+Let's see what happens when we case DangerousA to DangerousB...
+A: 5
+ABCDEFG...
+Done
+Note how DangerousA's first function was called, not DangerousB's printA function.
