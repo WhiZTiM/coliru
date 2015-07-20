@@ -1,0 +1,11 @@
+main.cpp:14:10: warning: unused parameter 'other' [-Wunused-parameter]
+     A(A& other)
+          ^
+main.cpp:20:11: warning: unused parameter 'other' [-Wunused-parameter]
+     A(A&& other) noexcept
+           ^
+main.cpp: In function 'int main()':
+main.cpp:37:7: warning: variable 'a' set but not used [-Wunused-but-set-variable]
+     A a = GetA();
+       ^
+constructor of A
