@@ -1,0 +1,10 @@
+main.cpp:6:30: warning: variadic templates are incompatible with C++98 [-Wc++98-compat]
+template<typename T, typename... Types>
+                             ^
+main.cpp:12:5: warning: 'auto' type specifier is incompatible with C++98 [-Wc++98-compat]
+    auto i = arithmetic_sum(123, 123.45, 0.55l);
+    ^~~~
+main.cpp:12:10: warning: unused variable 'i' [-Wunused-variable]
+    auto i = arithmetic_sum(123, 123.45, 0.55l);
+         ^
+3 warnings generated.
