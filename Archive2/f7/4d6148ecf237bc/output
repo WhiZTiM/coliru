@@ -1,0 +1,7 @@
+Shutdown in 10 seconds...
+Shutdown...
+terminate called after throwing an instance of 'boost::exception_detail::clone_impl<boost::exception_detail::error_info_injector<boost::system::system_error> >'
+  what():  close: Bad file descriptor
+      5 virtual Session::~Session()
+      5 void Session::AsyncReadString()
+      5 void Session::ReadHandler(const bs::error_code &, std::size_t)
