@@ -1,0 +1,5 @@
+1 : [ 2 3 4 ]
+2 : [ 1 3 ]
+4 : [ 3 5 ]
+Vertex1 : [ Vertex2 Vertex3 ]
+Vertex3 : [ Vertex1 ]
