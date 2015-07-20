@@ -1,0 +1,1 @@
+clang++ -std=c++11 -O0 -Wall -pedantic -pthread -DBOOST_SPIRIT_DEBUG main.cpp && ./a.out

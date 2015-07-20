@@ -1,0 +1,24 @@
+<split_string>
+  <try>one/two/three/four</try>
+  <part>
+    <try>one/two/three/four</try>
+    <success>/two/three/four</success>
+    <attributes>[[o, n, e]]</attributes>
+  </part>
+  <part>
+    <try>two/three/four</try>
+    <success>/three/four</success>
+    <attributes>[[o, n, e, t, w, o]]</attributes>
+  </part>
+  <last_part>
+    <try>three/four</try>
+    <success></success>
+    <attributes>[[t, h, r, e, e, /, f, o, u, r]]</attributes>
+  </last_part>
+  <success></success>
+  <attributes>[[[o, n, e, t, w, o], [t, h, r, e, e, /, f, o, u, r], []]]</attributes>
+</split_string>
+Parsed: 1
+a:onetwo
+b:three/four
+c:
