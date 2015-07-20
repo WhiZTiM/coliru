@@ -1,0 +1,11 @@
+main.cpp: In function 'int main()':
+main.cpp:31:7: warning: variable 'version2' set but not used [-Wunused-but-set-variable]
+     A version2 = version1;
+       ^
+main.cpp:32:7: warning: variable 'version5' set but not used [-Wunused-but-set-variable]
+     A version5 = create( 5 );
+       ^
+constructed 1
+called copy for 1
+constructed 5
+finished my testing
