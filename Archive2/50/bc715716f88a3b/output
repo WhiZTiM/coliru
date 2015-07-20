@@ -1,0 +1,6 @@
+sizeof(float)         = 4
+sizeof(void(*)(void)) = 8
+sizeof(char[10])      = 10
+sizeof 'a'   = 4
+sizeof &main = 8
+sizeof "hello" = 6
