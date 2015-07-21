@@ -1,0 +1,19 @@
+main.cpp:37:18: error: 'h1' has not been declared
+ struct Resolve : h1::Mix2<Resolve<_i>>, Struct, Mix1<Resolve<_i>>
+                  ^
+main.cpp:37:22: error: expected '{' before 'Mix2'
+ struct Resolve : h1::Mix2<Resolve<_i>>, Struct, Mix1<Resolve<_i>>
+                      ^
+main.cpp:37:39: error: invalid declarator before ',' token
+ struct Resolve : h1::Mix2<Resolve<_i>>, Struct, Mix1<Resolve<_i>>
+                                       ^
+main.cpp:43:2: warning: extra ';' [-Wpedantic]
+ };
+  ^
+main.cpp: In function 'int main()':
+main.cpp:47:17: error: aggregate 'Resolve<12> r' has incomplete type and cannot be defined
+     Resolve<12> r;
+                 ^
+main.cpp:53:17: error: aggregate 'Resolve<12> r2' has incomplete type and cannot be defined
+     Resolve<12> r2;
+                 ^
