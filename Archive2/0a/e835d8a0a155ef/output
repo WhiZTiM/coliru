@@ -1,0 +1,7 @@
+main.cpp:9:31: error: no matching function for call to 'count_if'
+    size_t upper_case_count = std::count_if( password.cbegin(), password.cend(), std::isupper);
+                              ^~~~~~~~~~~~~
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../include/c++/5.2.0/bits/stl_algo.h:3982:5: note: candidate template ignored: couldn't infer template argument '_Predicate'
+    count_if(_InputIterator __first, _InputIterator __last, _Predicate __pred)
+    ^
+1 error generated.
