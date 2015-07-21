@@ -1,0 +1,16 @@
+main.cpp: In function 'int main()':
+main.cpp:23:5: error: redefinition of 'int main()'
+ int main()
+     ^
+main.cpp:6:5: note: 'int main()' previously defined here
+ int main()
+     ^
+main.cpp:25:5: error: 'vector' is not a member of 'std'
+     std::vector<std::string> words = {
+     ^
+main.cpp:25:28: error: expected primary-expression before '>' token
+     std::vector<std::string> words = {
+                            ^
+main.cpp:25:30: error: 'words' was not declared in this scope
+     std::vector<std::string> words = {
+                              ^
