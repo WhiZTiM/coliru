@@ -1,0 +1,1 @@
+clang++ -std=c++14 -Weverything -Wno-missing-prototypes -Wno-c++98-compat -Wno-c++98-compat-pedantic main.cpp && ./a.out
