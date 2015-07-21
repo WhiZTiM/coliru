@@ -1,0 +1,31 @@
+
+char
+------------
+-128 == 128 ? false
+127 == -129 ? false
+
+signed char
+------------
+-128 == 128 ? false
+127 == -129 ? false
+
+unsigned char
+------------
+0 == 256 ? false
+255 == -1 ? false
+==========
+
+char
+------------
+-128 == 128 ? false
+127 == -129 ? false
+
+signed char
+------------
+-128 == 128 ? false
+127 == -129 ? false
+
+unsigned char
+------------
+0 == 256 ? false
+255 == -1 ? false
