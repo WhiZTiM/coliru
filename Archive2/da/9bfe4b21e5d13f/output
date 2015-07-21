@@ -1,0 +1,4 @@
+main.cpp:13:10: warning: unused variable 'array' [-Wunused-variable]
+    auto array = A<>::truc();
+         ^
+1 warning generated.
