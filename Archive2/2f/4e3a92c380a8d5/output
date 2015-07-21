@@ -1,0 +1,5 @@
+main.cpp: In function 'int main()':
+main.cpp:7:39: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+main.cpp:16:4: error: ISO C++ 1998 does not support 'long long' [-Wlong-long]
+main.cpp:16:37: error: ISO C++ 1998 does not support 'long long' [-Wlong-long]
+main.cpp:16:51: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
