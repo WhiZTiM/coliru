@@ -1,0 +1,10 @@
+main.cpp:16:4: error: static_assert failed "getMax can only be called with a pixel type."
+   static_assert( false, "getMax can only be called with a pixel type." );
+   ^              ~~~~~
+main.cpp:26:5: error: no matching function for call to 'getMax'
+    getMax<>();
+    ^~~~~~~~
+main.cpp:14:6: note: candidate template ignored: couldn't infer template argument 'PIXEL'
+auto getMax( ) -> decltype( PIXEL::r )
+     ^
+2 errors generated.
