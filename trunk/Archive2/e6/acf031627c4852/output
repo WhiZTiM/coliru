@@ -1,0 +1,16 @@
+main.cpp: In function 'int main()':
+main.cpp:7:39: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+    int ff = *reinterpret_cast<int*>(&f);
+                                       ^
+main.cpp:16:51: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+    long long dd = *reinterpret_cast<long long*>(&d);
+                                                   ^
+main.cpp:29:52: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+     long long tt = *reinterpret_cast<long long*>(&t);
+                                                    ^
+3f a2 91 a7
+3f f4 52 34 e0 0 0 0
+3f f4 52 34 eb 9a 17 6e
+1.27006995677947998046875
+1.27006995677947998046875
+1.270070000000000032258640203508548438549041748046875
