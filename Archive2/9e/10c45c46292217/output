@@ -1,0 +1,52 @@
+main.cpp:6:16: error: variable or field 'test' declared void
+ void test(std::function<int(int, int)> const& arg)
+                ^
+main.cpp:6:11: error: 'function' is not a member of 'std'
+ void test(std::function<int(int, int)> const& arg)
+           ^
+main.cpp:6:37: error: expression list treated as compound expression in functional cast [-fpermissive]
+ void test(std::function<int(int, int)> const& arg)
+                                     ^
+main.cpp:6:25: error: expected primary-expression before 'int'
+ void test(std::function<int(int, int)> const& arg)
+                         ^
+main.cpp: In function 'int main()':
+main.cpp:23:10: error: 'function' is not a member of 'std'
+     test(std::function<int(int, int)>(std::plus<int>()));
+          ^
+main.cpp:23:36: error: expression list treated as compound expression in functional cast [-fpermissive]
+     test(std::function<int(int, int)>(std::plus<int>()));
+                                    ^
+main.cpp:23:24: error: expected primary-expression before 'int'
+     test(std::function<int(int, int)>(std::plus<int>()));
+                        ^
+main.cpp:23:56: error: 'test' was not declared in this scope
+     test(std::function<int(int, int)>(std::plus<int>()));
+                                                        ^
+main.cpp:24:10: error: 'function' is not a member of 'std'
+     test(std::function<int(int, int)>(std::minus<int>()));
+          ^
+main.cpp:24:36: error: expression list treated as compound expression in functional cast [-fpermissive]
+     test(std::function<int(int, int)>(std::minus<int>()));
+                                    ^
+main.cpp:24:24: error: expected primary-expression before 'int'
+     test(std::function<int(int, int)>(std::minus<int>()));
+                        ^
+main.cpp:25:10: error: 'function' is not a member of 'std'
+     test(std::function<int(int, int)>(f));
+          ^
+main.cpp:25:36: error: expression list treated as compound expression in functional cast [-fpermissive]
+     test(std::function<int(int, int)>(f));
+                                    ^
+main.cpp:25:24: error: expected primary-expression before 'int'
+     test(std::function<int(int, int)>(f));
+                        ^
+main.cpp:26:10: error: 'function' is not a member of 'std'
+     test(std::function<int(int, int)>(g));
+          ^
+main.cpp:26:36: error: expression list treated as compound expression in functional cast [-fpermissive]
+     test(std::function<int(int, int)>(g));
+                                    ^
+main.cpp:26:24: error: expected primary-expression before 'int'
+     test(std::function<int(int, int)>(g));
+                        ^
