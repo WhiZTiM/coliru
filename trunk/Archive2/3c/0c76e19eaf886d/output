@@ -1,0 +1,24 @@
+<split_string>
+  <try>one/two/tree/four</try>
+  <part>
+    <try>one/two/tree/four</try>
+    <success>/two/tree/four</success>
+    <attributes>[[o, n, e]]</attributes>
+  </part>
+  <part>
+    <try>two/tree/four</try>
+    <success>/tree/four</success>
+    <attributes>[[t, w, o]]</attributes>
+  </part>
+  <last_part>
+    <try>tree/four</try>
+    <success></success>
+    <attributes>[[t, r, e, e, /, f, o, u, r]]</attributes>
+  </last_part>
+  <success></success>
+  <attributes>[[[o, n, e], [t, w, o], [t, r, e, e, /, f, o, u, r]]]</attributes><locals>(3)</locals>
+</split_string>
+Parsed: 1
+a:one
+b:two
+c:tree/four
