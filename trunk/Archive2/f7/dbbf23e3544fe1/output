@@ -1,0 +1,26 @@
+==> filtered1.dot <==
+digraph G {
+10 [label=Ten];
+20 [label=Twenty];
+30 [label=Thirty];
+10->20  [weight=0.5];
+20->30  [weight=1.5];
+30->10  [weight=2.5];
+}
+
+==> filtered2.dot <==
+digraph G {
+10 [label=Ten];
+30 [label=Thirty];
+30->10  [weight=2.5];
+}
+
+==> original.dot <==
+digraph G {
+10 [label=Ten];
+20 [label=Twenty];
+30 [label=Thirty];
+10->20  [weight=0.5];
+20->30  [weight=1.5];
+30->10  [weight=2.5];
+}
