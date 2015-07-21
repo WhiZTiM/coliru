@@ -1,0 +1,29 @@
+allocate:16
+operator new(4096)
+ 1 1 1 1 1 1 1 1
+allocate:32
+ 1 0 1 1 1 1 1 1
+allocate:64
+ 1 0 0 1 1 1 1 1
+allocate:256
+ 1 0 0 1 0 1 1 1
+allocate:512
+ 1 0 0 1 0 0 1 1
+allocate:128
+ 1 0 0 0 0 0 1 1
+allocate:1024
+ 1 0 0 0 0 0 0 1
+deallocate:32
+ 1 1 0 0 0 0 0 1
+deallocate:64
+ 1 1 1 0 0 0 0 1
+deallocate:256
+ 1 1 1 0 1 0 0 1
+deallocate:16
+ 2 1 1 0 1 0 0 1
+deallocate:128
+ 2 1 1 1 1 0 0 1
+deallocate:512
+ 2 1 1 1 1 1 0 1
+deallocate:1024
+ 2 1 1 1 1 1 1 1
