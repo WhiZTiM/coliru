@@ -1,0 +1,4 @@
+main.cpp: In function 'int main()':
+main.cpp:12:10: warning: unused variable 'i' [-Wunused-variable]
+     auto i = arithmetic_sum(123, 123.45, 0.55l);
+          ^
