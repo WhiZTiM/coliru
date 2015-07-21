@@ -1,0 +1,33 @@
+main.cpp: In member function 'foo& foo::operator=(const foo&)':
+main.cpp:13:71: warning: no return statement in function returning non-void [-Wreturn-type]
+     foo& operator=(const foo& temp){cout << ent++ << "assign" << endl;}
+                                                                       ^
+1construct
+2copy
+3copy
+4destruct
+resize4
+1construct
+2copy
+3copy
+4copy
+5copy
+6destruct
+7destruct
+8destruct
+resize1
+1construct
+2destruct
+3destruct
+4destruct
+5destruct
+resize3
+1construct
+2copy
+3copy
+4copy
+5destruct
+6destruct
+7destruct
+8destruct
+9destruct
