@@ -1,0 +1,9 @@
+main.cpp:6:5: error: 'functype1' does not name a type
+     functype1 open();
+     ^
+main.cpp:7:5: error: 'functype2' does not name a type
+     functype2 close();
+     ^
+main.cpp:10:8: error: expected initializer before 'std'
+ typdef std::shared_ptr<Message> MessagePtr
+        ^
