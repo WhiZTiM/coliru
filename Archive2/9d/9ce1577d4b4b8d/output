@@ -1,0 +1,10 @@
+main.cpp: In function 'int main()':
+main.cpp:40:7: error: no match for 'operator=' (operand types are 'C' and 'A')
+     c = a;
+       ^
+main.cpp:15:7: note: candidate: C& C::operator=(const C&)
+ class C: public A {
+       ^
+main.cpp:15:7: note:   no known conversion for argument 1 from 'A' to 'const C&'
+main.cpp:15:7: note: candidate: C& C::operator=(C&&)
+main.cpp:15:7: note:   no known conversion for argument 1 from 'A' to 'C&&'
