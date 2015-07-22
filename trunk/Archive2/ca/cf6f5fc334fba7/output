@@ -1,0 +1,5 @@
+1 (parent: 0xb01c40) (left:   0) (right:  0xb01c80)
+2 (parent: 0xb01c20) (left:   0) (right:  0)
+3 (parent: 0x7fff6da3f058) (left:   0xb01c20) (right:  0xb01c60)
+3 (parent: 0xb01c60) (left:   0) (right:  0)
+4 (parent: 0xb01c40) (left:   0xb01ca0) (right:  0)
