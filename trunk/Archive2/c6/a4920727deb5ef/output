@@ -1,0 +1,15 @@
+main.cpp: In instantiation of 'decltype(auto) waitEvt2(std::tuple<T>, CBT, Args ...) [with T = int; CBT = main()::<lambda(int)>; Args = {EventPkg<int, int>, main()::<lambda(int, int)>}]':
+main.cpp:81:18:   required from 'decltype(auto) waitEvt(EventPkg<T>, Args ...) [with T = int; Args = {main()::<lambda(int)>, EventPkg<int, int>, main()::<lambda(int, int)>}]'
+main.cpp:98:3:   required from here
+main.cpp:73:10: error: use of 'template<class T, class ... Args> decltype(auto) waitEvt(EventPkg<T>, Args ...)' before deduction of 'auto'
+   waitEvt(args...);
+          ^
+main.cpp:73:10: error: no matching function for call to 'waitEvt(EventPkg<int, int>&, main()::<lambda(int, int)>&)'
+main.cpp:77:16: note: candidate: template<class T, class ... Args> decltype(auto) waitEvt(EventPkg<T>, Args ...)
+ decltype(auto) waitEvt(EventPkg<T> t, Args... args) {
+                ^
+main.cpp:77:16: note:   template argument deduction/substitution failed:
+main.cpp:73:10: note:   candidate expects 1 argument, 2 provided
+   waitEvt(args...);
+          ^
+main.cpp:73:10: note:   'EventPkg<int, int>' is not derived from 'EventPkg<T>'
