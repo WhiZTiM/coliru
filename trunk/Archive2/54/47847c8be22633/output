@@ -1,0 +1,7 @@
+
+===================
+Call1  ---->decltype(auto) waitEvt(EventPkg<T>, Args ...) [with T = int; Args = {main()::<lambda(int)>, EventPkg<int, int>, main()::<lambda(int, int)>}]
+Call2  ---->decltype(auto) waitEvt2(std::tuple<T>, CBT, Args ...) [with T = int; CBT = main()::<lambda(int)>; Args = {EventPkg<int, int>, main()::<lambda(int, int)>}]
+evt1 99
+
+
