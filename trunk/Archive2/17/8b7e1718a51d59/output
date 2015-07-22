@@ -1,0 +1,7 @@
+main.cpp:11:48: error: calling a private constructor of class 'S'
+    std::cout << "Size of S::foo = " << sizeof(S{}.foo);
+                                               ^
+main.cpp:7:5: note: declared private here
+    S();
+    ^
+1 error generated.
