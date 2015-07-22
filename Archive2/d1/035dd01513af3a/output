@@ -1,0 +1,10 @@
+main.cpp: In function 'int main()':
+main.cpp:34:39: error: call of overloaded 'InsertDataIntoInputMap(int&, boost::shared_ptr<double>&)' is ambiguous
+     InsertDataIntoInputMap<Proxy>(a, x);
+                                       ^
+main.cpp:12:6: note: candidate: void InsertDataIntoInputMap(const typename C::InputDataMap::key_type&, D) [with C = Proxy; D = boost::shared_ptr<double>; typename C::InputDataMap::key_type = int]
+ void InsertDataIntoInputMap(
+      ^
+main.cpp:20:6: note: candidate: void InsertDataIntoInputMap(const typename C::InputDataMap::key_type&, boost::shared_ptr<U>) [with C = Proxy; D = double; typename C::InputDataMap::key_type = int]
+ void InsertDataIntoInputMap(
+      ^
