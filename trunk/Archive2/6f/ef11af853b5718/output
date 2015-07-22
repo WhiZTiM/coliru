@@ -1,0 +1,10 @@
+main.cpp:36:5: error: call to 'InsertDataIntoInputMap' is ambiguous
+    InsertDataIntoInputMap<Proxy>(a, x2);
+    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+main.cpp:12:6: note: candidate function [with C = Proxy, D = std::shared_ptr<double> &]
+void InsertDataIntoInputMap(
+     ^
+main.cpp:20:6: note: candidate function [with C = Proxy, D = double]
+void InsertDataIntoInputMap(
+     ^
+1 error generated.
