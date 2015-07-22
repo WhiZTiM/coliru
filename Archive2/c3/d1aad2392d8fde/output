@@ -1,0 +1,8 @@
+main.cpp: In function 'int main(int, char**)':
+main.cpp:11:19: error: 'A' was not declared in this scope
+      Test::foo( A() ); // 2. why A() requires Test:: considering above line?
+                   ^
+main.cpp:11:19: note: suggested alternative:
+main.cpp:3:16: note:   'Test::A'
+         struct A {};
+                ^
