@@ -1,0 +1,9 @@
+main.cpp: In function 'int** constructSparseMatrix(int, int)':
+main.cpp:21:50: warning: operation on '*((*(arr + ((sizetype)(((long unsigned int)i) * 8ul)))) + ((sizetype)(((long unsigned int)k) * 4ul)))' may be undefined [-Wsequence-point]
+             arr[i][k] = arr[i][k] = rand () % 100;
+                                                  ^
+83 86 77 
+15 93 35 
+86 92 49 
+21 62 27 
+90 59 63 
