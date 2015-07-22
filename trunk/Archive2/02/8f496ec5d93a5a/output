@@ -1,0 +1,52 @@
+main.cpp:1:6: error: 'DebugShapesRenderer' has not been declared
+ void DebugShapesRenderer::OnServerShapesList(const std::string&, const std::vector<uint8_t>& dump)
+      ^
+main.cpp:1:57: error: 'string' in namespace 'std' does not name a type
+ void DebugShapesRenderer::OnServerShapesList(const std::string&, const std::vector<uint8_t>& dump)
+                                                         ^
+main.cpp:1:77: error: 'vector' in namespace 'std' does not name a template type
+ void DebugShapesRenderer::OnServerShapesList(const std::string&, const std::vector<uint8_t>& dump)
+                                                                             ^
+main.cpp:1:83: error: expected ',' or '...' before '<' token
+ void DebugShapesRenderer::OnServerShapesList(const std::string&, const std::vector<uint8_t>& dump)
+                                                                                   ^
+main.cpp: In function 'void OnServerShapesList(const int&, int)':
+main.cpp:3:14: error: 'size_t' does not name a type
+     volatile size_t read = 0;
+              ^
+main.cpp:4:12: error: 'read' was not declared in this scope
+     while (read < dump.size())
+            ^
+main.cpp:4:19: error: 'dump' was not declared in this scope
+     while (read < dump.size())
+                   ^
+main.cpp:6:9: error: 'ShapeType' was not declared in this scope
+         ShapeType type = (ShapeType)dump[read];
+         ^
+main.cpp:9:9: error: 'vector' is not a member of 'std'
+         std::vector<float> args;
+         ^
+main.cpp:9:21: error: expected primary-expression before 'float'
+         std::vector<float> args;
+                     ^
+main.cpp:10:9: error: 'args' was not declared in this scope
+         args.resize(DebugShapes::argCount[(size_t)type]);
+         ^
+main.cpp:10:21: error: 'DebugShapes' has not been declared
+         args.resize(DebugShapes::argCount[(size_t)type]);
+                     ^
+main.cpp:10:44: error: 'size_t' was not declared in this scope
+         args.resize(DebugShapes::argCount[(size_t)type]);
+                                            ^
+main.cpp:10:51: error: expected ']' before 'type'
+         args.resize(DebugShapes::argCount[(size_t)type]);
+                                                   ^
+main.cpp:11:25: error: unable to deduce 'auto&&' from 'args'
+         for (auto& arg: args)
+                         ^
+main.cpp:16:9: error: 'mServerShapesList' was not declared in this scope
+         mServerShapesList.emplace_back(
+         ^
+main.cpp:18:13: error: 'Shape' was not declared in this scope
+             Shape{ type, std::move(args) });
+             ^
