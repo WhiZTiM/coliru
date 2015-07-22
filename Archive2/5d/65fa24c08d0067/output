@@ -1,0 +1,14 @@
+main.cpp:15:19: error: no matching constructor for initialization of 'S2'
+    return sizeof(T{}.foo);   
+                  ^~~
+main.cpp:20:42: note: in instantiation of function template specialization 'getSizeOfFoo<S2>' requested here
+    std::cout << "Size of S2::foo = " << getSizeOfFoo<S2>() << '\n';
+                                         ^
+main.cpp:8:5: note: candidate constructor not viable: requires 1 argument, but 0 were provided
+    S2(char);
+    ^
+main.cpp:7:8: note: candidate constructor (the implicit copy constructor) not viable: requires 1 argument, but 0 were provided
+struct S2 {
+       ^
+main.cpp:7:8: note: candidate constructor (the implicit move constructor) not viable: requires 1 argument, but 0 were provided
+1 error generated.
