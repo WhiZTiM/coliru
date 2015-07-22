@@ -1,0 +1,7 @@
+main.cpp: In function 'int main()':
+main.cpp:72:10: warning: unused variable 'data' [-Wunused-variable]
+     auto data = results->data();
+          ^
+SpecificFormat
+SpecificFormatOne
+SpecificFormatTwo
