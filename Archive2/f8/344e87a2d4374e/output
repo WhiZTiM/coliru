@@ -1,0 +1,27 @@
+In file included from main.cpp:1:
+In file included from /usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../include/c++/5.2.0/vector:62:
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../include/c++/5.2.0/bits/stl_construct.h:75:38: error: call to deleted constructor of 'bar'
+    { ::new(static_cast<void*>(__p)) _T1(std::forward<_Args>(__args)...); }
+                                     ^   ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../include/c++/5.2.0/bits/stl_uninitialized.h:75:8: note: in instantiation of function template specialization 'std::_Construct<bar, const bar &>' requested here
+                std::_Construct(std::__addressof(*__cur), *__first);
+                     ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../include/c++/5.2.0/bits/stl_uninitialized.h:126:2: note: in instantiation of function template specialization 'std::__uninitialized_copy<false>::__uninit_copy<const bar *, bar *>' requested here
+        __uninit_copy(__first, __last, __result);
+        ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../include/c++/5.2.0/bits/stl_uninitialized.h:281:19: note: in instantiation of function template specialization 'std::uninitialized_copy<const bar *, bar *>' requested here
+    { return std::uninitialized_copy(__first, __last, __result); }
+                  ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../include/c++/5.2.0/bits/stl_vector.h:1290:11: note: in instantiation of function template specialization 'std::__uninitialized_copy_a<const bar *, bar *, bar>' requested here
+            std::__uninitialized_copy_a(__first, __last,
+                 ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../include/c++/5.2.0/bits/stl_vector.h:377:2: note: in instantiation of function template specialization 'std::vector<bar, std::allocator<bar> >::_M_range_initialize<const bar *>' requested here
+        _M_range_initialize(__l.begin(), __l.end(),
+        ^
+main.cpp:11:12: note: in instantiation of member function 'std::vector<bar, std::allocator<bar> >::vector' requested here
+    return {{}};
+           ^
+main.cpp:5:5: note: 'bar' has been explicitly marked deleted here
+    bar(bar const&)=delete;
+    ^
+1 error generated.
