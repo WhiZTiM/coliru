@@ -1,0 +1,49 @@
+<rule>
+  <try>function a() begin r</try>
+  <identifier>
+    <try> a() begin return on</try>
+    <symbol>
+      <try> a() begin return on</try>
+      <success>() begin return one </success>
+    </symbol>
+    <success>() begin return one </success>
+  </identifier>
+  <lvalue_list>
+    <try>) begin return one e</try>
+    <identifier>
+      <try>) begin return one e</try>
+      <symbol>
+        <try>) begin return one e</try>
+        <fail/>
+      </symbol>
+      <fail/>
+    </identifier>
+    <fail/>
+  </lvalue_list>
+  <statements>
+    <try> return one end</try>
+    <identifier>
+      <try> return one end</try>
+      <symbol>
+        <try> return one end</try>
+        <success> one end</success>
+      </symbol>
+      <success> one end</success>
+    </identifier>
+    <identifier>
+      <try> one end</try>
+      <symbol>
+        <try> one end</try>
+        <success> end</success>
+      </symbol>
+      <success> end</success>
+    </identifier>
+    <identifier>
+      <try> end</try>
+      <fail/>
+    </identifier>
+    <success> end</success>
+  </statements>
+  <success></success>
+</rule>
+Parse success
