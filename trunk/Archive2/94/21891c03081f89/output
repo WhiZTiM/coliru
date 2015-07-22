@@ -1,0 +1,9 @@
+main.cpp: In function 'std::ostream& operator<<(std::ostream&, const std::vector<T>&)':
+main.cpp:8:25: error: 'd' was not declared in this scope
+     for (auto& el : vec)d
+                         ^
+main.cpp: In instantiation of 'std::ostream& operator<<(std::ostream&, const std::vector<T>&) [with T = std::__cxx11::basic_string<char>; std::ostream = std::basic_ostream<char>]':
+main.cpp:20:18:   required from here
+main.cpp:8:16: warning: unused variable 'el' [-Wunused-variable]
+     for (auto& el : vec)d
+                ^
