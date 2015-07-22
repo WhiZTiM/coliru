@@ -1,0 +1,1 @@
+gcc -o test -Wall -Wextra -Werror main.cpp && ./test
