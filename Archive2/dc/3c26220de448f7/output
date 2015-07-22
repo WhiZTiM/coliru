@@ -1,0 +1,12 @@
+main.cpp: In function 'int main()':
+main.cpp:27:10: warning: unused variable 'tab' [-Wunused-variable]
+     char tab[40]={};
+          ^
+ D D D G U U U G D D| D G U U U G D D D G| U U U G D D D G U U| U G D D D G U U U G| #shift 0
+ U U U G D D D G U U| U G D D D G U U U G| D D D G U U U G D D| D G U U U G D D D G| #shift 4
+ G D D D G U U U G D| D D G U U U G D D D| G U U U G D D D G U| U U G D D D G U U U| #shift 1
+ G U U U G D D D G U| U U G D D D G U U U| G D D D G U U U G D| D D G U U U G D D D| #shift 5
+ U G D D D G U U U G| D D D G U U U G D D| D G U U U G D D D G| U U U G D D D G U U| #shift 2
+ D G U U U G D D D G| U U U G D D D G U U| U G D D D G U U U G| D D D G U U U G D D| #shift 6
+ U U G D D D G U U U| G D D D G U U U G D| D D G U U U G D D D| G U U U G D D D G U| #shift 3
+ D D G U U U G D D D| G U U U G D D D G U| U U G D D D G U U U| G D D D G U U U G D| #shift 7
