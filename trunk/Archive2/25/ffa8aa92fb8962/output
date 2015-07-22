@@ -1,0 +1,23 @@
+g++ (GCC) 5.2.0
+Copyright (C) 2015 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+.............
+main.cpp: In instantiation of 'void Derive<X>::bar() [with int X = 42]':
+main.cpp:25:12:   required from here
+main.cpp:16:17: error: 'struct Derive<42>' has no member named 'foo'
+    void bar() { this->foo(); } // Derive<X> pourrait être spécialisé avec X=42
+                 ^
+............
+clang version 3.6.0 (tags/RELEASE_360/final 235480)
+Target: x86_64-unknown-linux-gnu
+Thread model: posix
+.............
+main.cpp:16:23: error: no member named 'foo' in 'Derive<42>'
+   void bar() { this->foo(); } // Derive<X> pourrait être spécialisé avec X=42
+                ~~~~  ^
+main.cpp:25:8: note: in instantiation of member function 'Derive<42>::bar' requested here
+   d42.bar();                  // erreur
+       ^
+1 error generated.

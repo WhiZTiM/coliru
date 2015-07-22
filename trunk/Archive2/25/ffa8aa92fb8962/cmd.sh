@@ -1,0 +1,1 @@
+g++ --version ; echo ............. ; g++ -Wall -Wextra -pedantic main.cpp && a.out ; echo ............ ; clang++ --version ; echo ............. ; clang++ -Wall -Wextra -pedantic main.cpp && a.out
