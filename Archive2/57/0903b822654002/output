@@ -1,0 +1,8 @@
+main.cpp:1:1: error: 'main' must return 'int'
+void main(int, char **) {
+^~~~
+int
+main.cpp:2:5: error: void function 'main' should not return a value [-Wreturn-type]
+    return 0;
+    ^      ~
+2 errors generated.
