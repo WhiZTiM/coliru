@@ -1,0 +1,22 @@
++ g++-5.1 -std=c++11 -O3 -Wall -Wextra -pedantic -pthread main.cpp
+main.cpp: In static member function 'static void* test1::operator new(std::size_t)':
+main.cpp:11:16: warning: 'operator new' must not return NULL unless it is declared 'throw()' (or -fcheck-new is in effect)
+         return nullptr;
+                ^
++ ./a.out
+void tester() [with T = test1] 
+static void* test1::operator new(std::size_t) 1
+test1::test1() 0
+static void test1::operator delete(void*) 0
+Done
+
+void tester() [with T = test2] 
+static void* test2::operator new(std::size_t) 1
+Caught: std::bad_alloc
+Done
+
+void tester() [with T = test3] 
+static void* test3::operator new(std::size_t) 1
+static void test3::operator delete(void*) 0
+Done
+
