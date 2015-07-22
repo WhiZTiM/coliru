@@ -1,0 +1,6 @@
+~~~~~~GCC~~~~~~
+main.cpp: In function 'int main(int, char**)':
+main.cpp:6:11: warning: variable 'foo' set but not used [-Wunused-but-set-variable]
+     ; int foo;
+           ^
+~~~~~CLANG~~~~~
