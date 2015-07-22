@@ -1,0 +1,1 @@
+g++ -std=c++14  -Os -Wall -pedantic -Wextra main.cpp && ./a.out
