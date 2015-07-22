@@ -1,0 +1,7 @@
+main.cpp: In function 'void Foo()':
+main.cpp:14:35: error: invalid conversion from 'const char*' to 'char' [-fpermissive]
+     char sayMyName = {"Heizenberg"};
+                                   ^
+main.cpp:14:10: warning: unused variable 'sayMyName' [-Wunused-variable]
+     char sayMyName = {"Heizenberg"};
+          ^
