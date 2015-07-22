@@ -1,0 +1,3 @@
+Roundtrip 'A{42}': true
+Roundtrip 'B{Life The Universe And Everything}': true
+Roundtrip 'C{A{42}, B{Life The Universe And Everything}}': true
