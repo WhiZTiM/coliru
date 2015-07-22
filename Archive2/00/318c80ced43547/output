@@ -1,0 +1,46 @@
+main.cpp:9:34: error: no matching function for call to object of type '(lambda at main.cpp:25:15)'
+    return [=](auto op) { return op(elems...); }; 
+                                 ^~
+main.cpp:25:12: note: in instantiation of function template specialization '(anonymous class)::operator()()::(anonymous class)::operator()<(lambda at main.cpp:25:15)>' requested here
+    return xs([=](auto first, auto ... last) { return first; }); 
+           ^
+main.cpp:35:14: note: in instantiation of function template specialization '(anonymous class)::operator()<(lambda at main.cpp:9:12)>' requested here
+    auto r = value(xs);
+             ^
+main.cpp:81:20: note: in instantiation of function template specialization '(anonymous class)::operator()<(lambda at main.cpp:9:12)>' requested here
+            s = add(s);
+                   ^
+main.cpp:25:15: note: candidate function template not viable: requires at least argument 'first', but no arguments were provided
+    return xs([=](auto first, auto ... last) { return first; }); 
+              ^
+main.cpp:9:34: error: no matching function for call to object of type '(lambda at main.cpp:29:15)'
+    return [=](auto op) { return op(elems...); }; 
+                                 ^~
+main.cpp:29:12: note: in instantiation of function template specialization '(anonymous class)::operator()()::(anonymous class)::operator()<(lambda at main.cpp:29:15)>' requested here
+    return xs([=](auto first, auto ... last) { return stack(last...); }); 
+           ^
+main.cpp:36:20: note: in instantiation of function template specialization '(anonymous class)::operator()<(lambda at main.cpp:9:12)>' requested here
+    auto bottom1 = pop(xs);
+                   ^
+main.cpp:81:20: note: in instantiation of function template specialization '(anonymous class)::operator()<(lambda at main.cpp:9:12)>' requested here
+            s = add(s);
+                   ^
+main.cpp:29:15: note: candidate function template not viable: requires at least argument 'first', but no arguments were provided
+    return xs([=](auto first, auto ... last) { return stack(last...); }); 
+              ^
+main.cpp:85:15: error: no viable overloaded '='
+            s = concat (stack(atoi(token)), s);
+            ~ ^ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+main.cpp:9:12: note: candidate function (the implicit copy assignment operator) not viable: no known conversion from '(lambda at main.cpp:9:12)' to 'const (lambda at main.cpp:9:12)' for 1st argument
+    return [=](auto op) { return op(elems...); }; 
+           ^
+main.cpp:9:12: note: candidate function (the implicit move assignment operator) not viable: no known conversion from '(lambda at main.cpp:9:12)' to '(lambda at main.cpp:9:12)' for 1st argument
+    return [=](auto op) { return op(elems...); }; 
+           ^
+main.cpp:89:12: error: no matching function for call to object of type '(lambda at main.cpp:24:12)'
+    print (value(s));
+           ^~~~~
+main.cpp:24:12: note: candidate template ignored: substitution failure [with $0 = (lambda at main.cpp:9:12)]
+auto top = [](auto xs) { 
+           ^
+4 errors generated.
