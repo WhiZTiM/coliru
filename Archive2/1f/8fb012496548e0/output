@@ -1,0 +1,5 @@
+main.cpp: In member function 'int B::cFoo(int)':
+main.cpp:29:23: warning: 'a' is used uninitialized in this function [-Wuninitialized]
+    return (a->*pFoo)(i); //this causes a problem
+                       ^
+4
