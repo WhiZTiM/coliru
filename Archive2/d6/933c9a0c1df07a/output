@@ -1,0 +1,20 @@
+main.cpp:13:1: error: expected ';' after class definition
+ }
+ ^
+main.cpp: In member function 'void neko::showdata()':
+main.cpp:26:12: error: invalid conversion from 'int' to 'const char*' [-fpermissive]
+     printf(tuyosa);
+            ^
+In file included from /usr/local/include/c++/5.2.0/cstdio:42:0,
+                 from /usr/local/include/c++/5.2.0/ext/string_conversions.h:43,
+                 from /usr/local/include/c++/5.2.0/bits/basic_string.h:5247,
+                 from /usr/local/include/c++/5.2.0/string:52,
+                 from /usr/local/include/c++/5.2.0/bits/locale_classes.h:40,
+                 from /usr/local/include/c++/5.2.0/bits/ios_base.h:41,
+                 from /usr/local/include/c++/5.2.0/ios:42,
+                 from /usr/local/include/c++/5.2.0/ostream:38,
+                 from /usr/local/include/c++/5.2.0/iostream:39,
+                 from main.cpp:1:
+/usr/include/stdio.h:363:12: note:   initializing argument 1 of 'int printf(const char*, ...)'
+ extern int printf (__const char *__restrict __format, ...);
+            ^
