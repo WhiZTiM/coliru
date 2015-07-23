@@ -1,0 +1,4 @@
+main.cpp: In function 'void foo()':
+main.cpp:2:9: error: 'fun' was not declared in this scope
+     fun();
+         ^
