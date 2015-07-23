@@ -1,0 +1,4 @@
+main.cpp: In function 'main':
+main.cpp:4:18: error: subscripted value is neither array nor pointer nor vector
+     (void *) &arr[0];
+                  ^
