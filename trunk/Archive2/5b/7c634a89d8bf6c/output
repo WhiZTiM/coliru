@@ -1,0 +1,4 @@
+main.cpp:30:4: error: no viable overloaded '+='
+        s += 99;       //uses conversion to int[3] ref, then...adds 99 to the first element. WTF?
+        ~ ^  ~~
+1 error generated.
