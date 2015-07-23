@@ -1,0 +1,4 @@
+main.cpp:17:6: warning: ISO C++ forbids declaration of 'main' with no type [-Wpedantic]
+ main()
+      ^
+-->Bright star, would I were steadfast as thou art...
