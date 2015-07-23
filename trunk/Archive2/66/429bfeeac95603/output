@@ -1,0 +1,7 @@
+main.cpp: In static member function 'static void Bar::SomeFunc()':
+main.cpp:14:34: error: use of deleted function 'Bar::Bar()'
+     static void SomeFunc() { Bar b; }
+                                  ^
+main.cpp:13:5: note: declared here
+     Bar() = delete;
+     ^
