@@ -1,0 +1,2 @@
+Called DoSomething with SomeRandomClass whose myInt member has value 42
+Called DoSomething with a type that is not SomeRandomClass
