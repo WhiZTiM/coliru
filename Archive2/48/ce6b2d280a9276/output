@@ -1,0 +1,4 @@
+main.cpp: In function 'int main()':
+main.cpp:16:3: error: no 'operator++(int)' declared for postfix '++' [-fpermissive]
+  x++;
+   ^
