@@ -1,0 +1,12 @@
+main.cpp: In function 'int main()':
+main.cpp:26:23: error: use of deleted function 'std::unique_ptr<_Tp, _Dp>::unique_ptr(const std::unique_ptr<_Tp, _Dp>&) [with _Tp = int; _Dp = std::default_delete<int>]'
+     t.setTester_Way2(p);
+                       ^
+In file included from /usr/local/include/c++/5.2.0/memory:81:0,
+                 from main.cpp:6:
+/usr/local/include/c++/5.2.0/bits/unique_ptr.h:356:7: note: declared here
+       unique_ptr(const unique_ptr&) = delete;
+       ^
+main.cpp:17:10: note:   initializing argument 1 of 'void TestClass::setTester_Way2(std::unique_ptr<int>)'
+     void setTester_Way2(std::unique_ptr<int> te) {
+          ^
