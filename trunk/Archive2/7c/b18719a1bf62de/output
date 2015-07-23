@@ -1,0 +1,10 @@
+Enter the number of multipliers you would like to use (up to 50)
+Next, you will enter the mutliples you want to use.
+(for example, if you want to find the sum of the multipliers of 3 and
+5 below a given amount, enter 3 as 'multiplier 1' and 5 as 'multiplier 2')
+Enter 'multiplier 1'
+Enter 'multiplier 2'
+Enter the the limit for how high you want to add the multipliers
+(for example, you could set the limit to 1000 to find the sum of the
+multipliers of 3 and 5 (if you entered those) less than and or equal to 1000)
+The sum is 100500
