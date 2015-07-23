@@ -1,0 +1,9 @@
+main.cpp:17:6: warning: ISO C++ forbids declaration of 'main' with no type [-Wpedantic]
+ main()
+      ^
+main.cpp: In function 'int main()':
+main.cpp:19:27: warning: unused variable 'a' [-Wunused-variable]
+     int sockets[2], child,a;
+                           ^
+-->blabasdsasas
+
