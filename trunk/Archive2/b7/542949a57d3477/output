@@ -1,0 +1,2 @@
+terminate called after throwing an instance of 'decltype(nullptr)'
+bash: line 7: 17050 Aborted                 (core dumped) ./a.out
