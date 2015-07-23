@@ -1,0 +1,34 @@
+main.cpp: In function 'int main()':
+main.cpp:8:32: error: 'S' was not declared in this scope
+     std::result_of<S(char, int&)>::type d = 3.14; // d has type double
+                                ^
+main.cpp:8:33: error: template argument 1 is invalid
+     std::result_of<S(char, int&)>::type d = 3.14; // d has type double
+                                 ^
+main.cpp:8:41: error: qualified-id in declaration before 'd'
+     std::result_of<S(char, int&)>::type d = 3.14; // d has type double
+                                         ^
+main.cpp:9:41: error: 'd' was not declared in this scope
+     static_assert(std::is_same<decltype(d), double>::value, "");
+                                         ^
+main.cpp:9:51: error: template argument 1 is invalid
+     static_assert(std::is_same<decltype(d), double>::value, "");
+                                                   ^
+main.cpp:12:26: error: template argument 1 is invalid
+     std::result_of<S(int)>::type x = 3.14; // f has type float
+                          ^
+main.cpp:12:34: error: qualified-id in declaration before 'x'
+     std::result_of<S(int)>::type x = 3.14; // f has type float
+                                  ^
+main.cpp:13:41: error: 'x' was not declared in this scope
+     static_assert(std::is_same<decltype(x), float>::value, "");
+                                         ^
+main.cpp:13:50: error: template argument 1 is invalid
+     static_assert(std::is_same<decltype(x), float>::value, "");
+                                                  ^
+main.cpp:20:5: error: 'f' was not declared in this scope
+     f<C>(1); // fails to compile in C++11, calls the non-callable overload in C++14
+     ^
+main.cpp:20:8: error: expected primary-expression before '>' token
+     f<C>(1); // fails to compile in C++11, calls the non-callable overload in C++14
+        ^
