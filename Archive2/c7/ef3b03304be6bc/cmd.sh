@@ -1,0 +1,1 @@
+clang++ -std=gnu++1z -stdlib=libc++ -Ofast -march=native -Weverything -Wno-c++98-compat -Wno-c++98-compat-pedantic -Wno-newline-eof main.cpp -o a && ./a
