@@ -1,0 +1,8 @@
+dump_memory
+ba ba ba ba ba ba ba ba ba ba ba ba ba ba ba ba ba ba ba ba ba ba ba ba ba ba ba ba ba ba ba ba ba ba ba ba ba ba ba ba 
+31323334
+56789
+ABC()
+dump_memory
+ba ba ba ba ba ba ba ba ba ba ba ba ba ba ba ba 34 33 32 31 ba ba ba ba 35 36 37 38 39 00 ba ba 78 56 34 12 98 99 99 98 
+~ABC()
