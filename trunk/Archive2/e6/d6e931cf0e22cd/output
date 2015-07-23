@@ -1,0 +1,25 @@
+
+
+g++ ####################################################
+
+main.cpp: In function 'int main()':
+main.cpp:10:13: warning: ISO C++ does not allow C99 designated initializers [-Wpedantic]
+     foo f = { .woo = 2.3 };
+             ^
+main.cpp:10:26: sorry, unimplemented: non-trivial designated initializers not supported
+     foo f = { .woo = 2.3 };
+                          ^
+main.cpp:10:9: warning: unused variable 'f' [-Wunused-variable]
+     foo f = { .woo = 2.3 };
+         ^
+
+
+clang++ ####################################################
+
+main.cpp:10:15: warning: designated initializers are a C99 feature [-Wc99-extensions]
+    foo f = { .woo = 2.3 };
+              ^~~~~~~~~~
+main.cpp:10:9: warning: unused variable 'f' [-Wunused-variable]
+    foo f = { .woo = 2.3 };
+        ^
+2 warnings generated.
