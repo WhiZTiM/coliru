@@ -1,0 +1,4 @@
+main.cpp: In function 'int main()':
+main.cpp:64:22: error: expected ';' before ':' token
+     car(5,"gasoline"):vehicle("mercedes",4,489.12);//Part that i cant figure it out.
+                      ^
