@@ -1,0 +1,7 @@
+Ex1 is move-constructible? true
+Ex1 is trivially move-constructible? false
+Ex1 is nothrow move-constructible? true
+Ex2 is trivially move-constructible? true
+Ex2 is nothrow move-constructible? true
+NoMove is move-constructible? true
+NoMove is nothrow move-constructible? false
