@@ -1,0 +1,51 @@
+#include <iostream>
+#include <string>
+#include <boost/variant/static_visitor.hpp>
+using namespace std;
+
+struct Person
+{
+   string name() const { return "Jens"; }
+};
+
+struct Thing
+{
+   string name() const { return "Jens"; }
+};
+
+template< class K >
+struct generic_member_visitor : boost::static_visitor<K>
+{
+    template<class T, class callable>
+    K operator()(callable&& c, T&& t) const
+    {
+        return c(forward<T>(t));
+    }
+};
+
+struct MemberCaller
+{
+    U call;
+    MemberCaller( U u ) : call(move(u)) {}
+    
+    template< class O >
+    auto operator()( O&& k ) const -> decltype( (k.*call)() )
+    {
+        using memfunctype = O::U
+        return (k.*call)();
+    }
+};
+
+template< class U >
+MemberCaller<U> make_defered_call( U u )
+{
+    return MemberCaller<U>{ u };
+}
+
+int main()
+{
+   Person p;
+   auto lambda = make_defered_call(&Person::name);
+   generic_member_visitor<std::string> v;
+   cout << v(lambda, p) << endl;
+}

@@ -1,0 +1,36 @@
+main.cpp:28:5: error: 'U' does not name a type
+     U call;
+     ^
+main.cpp:29:21: error: expected ')' before 'u'
+     MemberCaller( U u ) : call(move(u)) {}
+                     ^
+main.cpp:32:53: error: 'call' was not declared in this scope
+     auto operator()( O&& k ) const -> decltype( (k.*call)() )
+                                                     ^
+main.cpp:32:53: error: 'call' was not declared in this scope
+main.cpp: In member function 'decltype (*k.*<erroneous-expression>()) MemberCaller::operator()(O&&) const':
+main.cpp:34:29: error: need 'typename' before 'O::U' because 'O' is a dependent scope
+         using memfunctype = O::U
+                             ^
+main.cpp: At global scope:
+main.cpp:40:1: error: 'MemberCaller' is not a template
+ MemberCaller<U> make_defered_call( U u )
+ ^
+main.cpp: In function 'MemberCaller make_defered_call(U)':
+main.cpp:42:12: error: 'MemberCaller' is not a template
+     return MemberCaller<U>{ u };
+            ^
+main.cpp: In instantiation of 'MemberCaller make_defered_call(U) [with U = std::__cxx11::basic_string<char> (Person::*)() const]':
+main.cpp:48:49:   required from here
+main.cpp:42:31: error: too many initializers for 'MemberCaller'
+     return MemberCaller<U>{ u };
+                               ^
+main.cpp: In instantiation of 'K generic_member_visitor<K>::operator()(callable&&, T&&) const [with T = Person&; callable = MemberCaller&; K = std::__cxx11::basic_string<char>]':
+main.cpp:50:23:   required from here
+main.cpp:22:17: error: no match for call to '(MemberCaller) (Person&)'
+         return c(forward<T>(t));
+                 ^
+main.cpp:32:10: note: candidate: template<class O> decltype (*MemberCaller::operator()::k.*<erroneous-expression>()) MemberCaller::operator()(O&&) const
+     auto operator()( O&& k ) const -> decltype( (k.*call)() )
+          ^
+main.cpp:32:10: note:   template argument deduction/substitution failed:
