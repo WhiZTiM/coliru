@@ -1,0 +1,26 @@
+MoveConstructible? true
+CopyConstructible? false
+MoveAssignable? true
+CopyAssignable? false
+path: out0.txt
+output from A #1
+
+path: out1.txt
+output from A #2
+output from A #2
+
+path: out2.txt
+output from A #3
+output from A #3
+
+path: out3.txt
+output from A #4
+
+path: out4.txt
+output from A #5
+output from A #5
+
+path: out5.txt
+output from A #6
+output from A #6
+
