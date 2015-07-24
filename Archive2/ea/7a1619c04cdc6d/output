@@ -1,0 +1,127 @@
+main.cpp:3427:18: error: invalid operands to binary expression ('int' and 'date::year')
+    auto d = 1/13/2015_y;
+             ~~~~^~~~~~~
+main.cpp:2629:1: note: candidate function not viable: no known conversion from 'date::year' to 'const date::day' for 2nd argument
+operator/(int m, const day& d) noexcept
+^
+main.cpp:2657:1: note: candidate function not viable: no known conversion from 'date::year' to 'date::last_spec' for 2nd argument
+operator/(int m, last_spec) noexcept
+^
+main.cpp:2691:1: note: candidate function not viable: no known conversion from 'date::year' to 'const date::weekday_indexed' for 2nd argument
+operator/(int m, const weekday_indexed& wdi) noexcept
+^
+main.cpp:2725:1: note: candidate function not viable: no known conversion from 'date::year' to 'const date::weekday_last' for 2nd argument
+operator/(int m, const weekday_last& wdl) noexcept
+^
+main.cpp:2767:1: note: candidate function not viable: no known conversion from 'date::year' to 'const date::month_day' for 2nd argument
+operator/(int y, const month_day& md) noexcept
+^
+main.cpp:2775:1: note: candidate function not viable: no known conversion from 'int' to 'const date::month_day' for 1st argument
+operator/(const month_day& md, const year& y)  noexcept
+^
+main.cpp:2809:1: note: candidate function not viable: no known conversion from 'date::year' to 'const date::month_day_last' for 2nd argument
+operator/(int y, const month_day_last& mdl) noexcept
+^
+main.cpp:2817:1: note: candidate function not viable: no known conversion from 'int' to 'const date::month_day_last' for 1st argument
+operator/(const month_day_last& mdl, const year& y) noexcept
+^
+main.cpp:2851:1: note: candidate function not viable: no known conversion from 'date::year' to 'const date::month_weekday' for 2nd argument
+operator/(int y, const month_weekday& mwd) noexcept
+^
+main.cpp:2859:1: note: candidate function not viable: no known conversion from 'int' to 'const date::month_weekday' for 1st argument
+operator/(const month_weekday& mwd, const year& y) noexcept
+^
+main.cpp:2893:1: note: candidate function not viable: no known conversion from 'date::year' to 'const date::month_weekday_last' for 2nd argument
+operator/(int y, const month_weekday_last& mwdl) noexcept
+^
+main.cpp:2901:1: note: candidate function not viable: no known conversion from 'int' to 'const date::month_weekday_last' for 1st argument
+operator/(const month_weekday_last& mwdl, const year& y) noexcept
+^
+main.cpp:2587:1: note: candidate function not viable: no known conversion from 'int' to 'const date::year' for 1st argument
+operator/(const year& y, const month& m) noexcept
+^
+main.cpp:2595:1: note: candidate function not viable: no known conversion from 'int' to 'const date::year' for 1st argument
+operator/(const year& y, int   m) noexcept
+^
+main.cpp:2605:1: note: candidate function not viable: no known conversion from 'int' to 'const date::month' for 1st argument
+operator/(const month& m, const day& d) noexcept
+^
+main.cpp:2613:1: note: candidate function not viable: no known conversion from 'int' to 'const date::day' for 1st argument
+operator/(const day& d, const month& m) noexcept
+^
+main.cpp:2621:1: note: candidate function not viable: no known conversion from 'int' to 'const date::month' for 1st argument
+operator/(const month& m, int d) noexcept
+^
+main.cpp:2634:28: note: candidate function not viable: no known conversion from 'int' to 'const date::day' for 1st argument
+CONSTCD11 inline month_day operator/(const day& d, int m) noexcept {return m / d;}
+                           ^
+main.cpp:2641:1: note: candidate function not viable: no known conversion from 'int' to 'const date::month' for 1st argument
+operator/(const month& m, last_spec) noexcept
+^
+main.cpp:2649:1: note: candidate function not viable: no known conversion from 'int' to 'date::last_spec' for 1st argument
+operator/(last_spec, const month& m) noexcept
+^
+main.cpp:2665:1: note: candidate function not viable: no known conversion from 'int' to 'date::last_spec' for 1st argument
+operator/(last_spec, int m) noexcept
+^
+main.cpp:2675:1: note: candidate function not viable: no known conversion from 'int' to 'const date::month' for 1st argument
+operator/(const month& m, const weekday_indexed& wdi) noexcept
+^
+main.cpp:2683:1: note: candidate function not viable: no known conversion from 'int' to 'const date::weekday_indexed' for 1st argument
+operator/(const weekday_indexed& wdi, const month& m) noexcept
+^
+main.cpp:2699:1: note: candidate function not viable: no known conversion from 'int' to 'const date::weekday_indexed' for 1st argument
+operator/(const weekday_indexed& wdi, int m) noexcept
+^
+main.cpp:2709:1: note: candidate function not viable: no known conversion from 'int' to 'const date::month' for 1st argument
+operator/(const month& m, const weekday_last& wdl) noexcept
+^
+main.cpp:2717:1: note: candidate function not viable: no known conversion from 'int' to 'const date::weekday_last' for 1st argument
+operator/(const weekday_last& wdl, const month& m) noexcept
+^
+main.cpp:2733:1: note: candidate function not viable: no known conversion from 'int' to 'const date::weekday_last' for 1st argument
+operator/(const weekday_last& wdl, int m) noexcept
+^
+main.cpp:2743:1: note: candidate function not viable: no known conversion from 'int' to 'const date::year_month' for 1st argument
+operator/(const year_month& ym, const day& d) noexcept
+^
+main.cpp:2751:1: note: candidate function not viable: no known conversion from 'int' to 'const date::year_month' for 1st argument
+operator/(const year_month& ym, int d)  noexcept
+^
+main.cpp:2759:1: note: candidate function not viable: no known conversion from 'int' to 'const date::year' for 1st argument
+operator/(const year& y, const month_day& md) noexcept
+^
+main.cpp:2783:1: note: candidate function not viable: no known conversion from 'int' to 'const date::month_day' for 1st argument
+operator/(const month_day& md, int y) noexcept
+^
+main.cpp:2793:1: note: candidate function not viable: no known conversion from 'int' to 'const date::year_month' for 1st argument
+operator/(const year_month& ym, last_spec) noexcept
+^
+main.cpp:2801:1: note: candidate function not viable: no known conversion from 'int' to 'const date::year' for 1st argument
+operator/(const year& y, const month_day_last& mdl) noexcept
+^
+main.cpp:2825:1: note: candidate function not viable: no known conversion from 'int' to 'const date::month_day_last' for 1st argument
+operator/(const month_day_last& mdl, int y) noexcept
+^
+main.cpp:2835:1: note: candidate function not viable: no known conversion from 'int' to 'const date::year_month' for 1st argument
+operator/(const year_month& ym, const weekday_indexed& wdi) noexcept
+^
+main.cpp:2843:1: note: candidate function not viable: no known conversion from 'int' to 'const date::year' for 1st argument
+operator/(const year& y, const month_weekday& mwd) noexcept
+^
+main.cpp:2867:1: note: candidate function not viable: no known conversion from 'int' to 'const date::month_weekday' for 1st argument
+operator/(const month_weekday& mwd, int y) noexcept
+^
+main.cpp:2877:1: note: candidate function not viable: no known conversion from 'int' to 'const date::year_month' for 1st argument
+operator/(const year_month& ym, const weekday_last& wdl) noexcept
+^
+main.cpp:2885:1: note: candidate function not viable: no known conversion from 'int' to 'const date::year' for 1st argument
+operator/(const year& y, const month_weekday_last& mwdl) noexcept
+^
+main.cpp:2909:1: note: candidate function not viable: no known conversion from 'int' to 'const date::month_weekday_last' for 1st argument
+operator/(const month_weekday_last& mwdl, int y) noexcept
+^
+main.cpp:2:9: warning: macro is not used [-Wunused-macros]
+#define DATE_H
+        ^
+1 warning and 1 error generated.

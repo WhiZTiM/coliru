@@ -1,0 +1,1 @@
+clang++ -std=c++1z -Weverything -Wno-c++98-compat -Wno-c++98-compat-pedantic -Wno-padded main.cpp -lsupc++ && ./a.out
