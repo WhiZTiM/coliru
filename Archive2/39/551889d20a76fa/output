@@ -1,0 +1,11 @@
+main.cpp:9:14: error: use 'template' keyword to treat 'someTemplateFunc' as a dependent template name
+    return t.someTemplateFunc<int>();
+             ^
+             template 
+main.cpp:15:3: error: use of class template 'S' requires template arguments
+  S s;
+  ^
+main.cpp:7:8: note: template is declared here
+struct S {
+       ^
+2 errors generated.
