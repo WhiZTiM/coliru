@@ -1,0 +1,10 @@
+main.cpp:2:10: error: definition of variable with array type needs an explicit size or an initializer
+MyStruct myArrayOfStructs[];
+         ^
+main.cpp:4:10: error: redefinition of 'myArrayOfStructs'
+MyStruct myArrayOfStructs[1] = {{}};
+         ^
+main.cpp:2:10: note: previous definition is here
+MyStruct myArrayOfStructs[];
+         ^
+2 errors generated.
