@@ -1,0 +1,11 @@
+triangle 0x1a15010 constructor
+ptr1 points to triangle at: 0x1a15010
+ptr2 points to triangle at: 0x1a15010
+ptr3 points to triangle at: 0x1a15010
+triangle 0x1a15010 destructor
+==========
+triangle 0x11e0c20 constructor
+ptr1 points to triangle at: 0x11e0c20
+ptr2 points to triangle at: 0x11e0c20
+ptr3 points to triangle at: 0x11e0c20
+triangle 0x11e0c20 destructor
