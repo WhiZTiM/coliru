@@ -1,0 +1,22 @@
++ clang++ -O0 -std=gnu++1z -stdlib=libc++ main.cpp -lcxxrt -ldl -o a
++ ./a
+~A at 0x7fffcad7cc70
+~A at 0x7fffcad7cca0
+~A at 0x7fffcad7ccd0
+~A at 0x7fffcad7cd00
+F
+  'A': 0x7fffcad7cc70 1
+  'B': 0x7fffcad7cca0 2
+  'C': 0x7fffcad7ccd0 3
+  'D': 0x7fffcad7cd00 4
++ g++ -O0 -std=gnu++1z main.cpp -lcxxrt -ldl -o a
++ ./a
+~A at 0x7fffff584480
+~A at 0x7fffff584480
+~A at 0x7fffff584480
+~A at 0x7fffff584480
+F
+  'A': 0x7fffff584480 4
+  'B': 0x7fffff584480 4
+  'C': 0x7fffff584480 4
+  'D': 0x7fffff584480 4
