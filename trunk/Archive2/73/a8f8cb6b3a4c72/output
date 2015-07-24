@@ -1,0 +1,40 @@
+main.cpp: In function 'void heightmap_to_buffer()':
+main.cpp:3:6: error: 'vector' is not a member of 'std'
+      std::vector<glm::vec3> vertices;
+      ^
+main.cpp:3:18: error: 'glm' has not been declared
+      std::vector<glm::vec3> vertices;
+                  ^
+main.cpp:3:29: error: 'vertices' was not declared in this scope
+      std::vector<glm::vec3> vertices;
+                             ^
+main.cpp:4:6: error: 'cout' is not a member of 'std'
+      std::cout << "image size: [" << img.width << "x" << img.height << "]\n";
+      ^
+main.cpp:4:38: error: 'img' was not declared in this scope
+      std::cout << "image size: [" << img.width << "x" << img.height << "]\n";
+                                      ^
+main.cpp:8:38: error: 'glm' has not been declared
+        vertices[x + y * img.width] = glm::vec3(static_cast<float>(x) - static_cast<float>(img.width) / 2.0f, static_cast<float>(img.bitmap[x + y * img.width]) * 0.3, static_cast<float>(y) - static_cast<float>(img.height) / 2.0f);
+                                      ^
+main.cpp:11:18: error: 'vbuffer' was not declared in this scope
+      auto vbuf = vbuffer.bind();
+                  ^
+main.cpp:15:6: error: 'vector' is not a member of 'std'
+      std::vector<unsigned short> indices;
+      ^
+main.cpp:15:18: error: expected primary-expression before 'unsigned'
+      std::vector<unsigned short> indices;
+                  ^
+main.cpp:16:27: error: 'img' was not declared in this scope
+      int row_length = 2 * img.width + 2;
+                           ^
+main.cpp:17:6: error: 'indices' was not declared in this scope
+      indices.resize(img.height * row_length);
+      ^
+main.cpp:30:18: error: 'ebuffer' was not declared in this scope
+      auto ebuf = ebuffer.bind();
+                  ^
+main.cpp:31:40: error: decltype evaluates to '<type error>', which is not a class or enumeration type
+      ebuf.data(indices.size() * sizeof(decltype(indices)::value_type), indices.data());
+                                        ^
