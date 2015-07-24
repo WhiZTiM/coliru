@@ -1,0 +1,16 @@
+main.cpp: In instantiation of 'struct function_traits<long long int (main()::<lambda(int)>::*)(int) const>':
+main.cpp:8:20:   required from 'struct function_traits<main()::<lambda(int)> >'
+main.cpp:21:54:   required from here
+main.cpp:7:18: error: 'operator()' is not a member of 'long long int (main()::<lambda(int)>::*)(int) const'
+         decltype(&T::operator())
+                  ^
+main.cpp: In function 'int main()':
+main.cpp:21:56: error: invalid combination of multiple type-specifiers
+     typename function_traits<decltype(testingLambda)>::return_type test;
+                                                        ^
+main.cpp:23:5: error: static assertion failed: 
+     static_assert(std::is_same<decltype(test), long long>{}, "");
+     ^
+main.cpp:19:10: warning: unused variable 'i' [-Wunused-variable]
+     auto i = 0;
+          ^
