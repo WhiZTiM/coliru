@@ -1,0 +1,16 @@
+main.cpp:14:14: warning: unused variable 's1' [-Wunused-variable]
+        auto s1 = std::chrono::steady_clock::now();
+             ^
+main.cpp:16:14: warning: unused variable 'e1' [-Wunused-variable]
+        auto e1 = std::chrono::steady_clock::now();
+             ^
+main.cpp:18:14: warning: unused variable 's2' [-Wunused-variable]
+        auto s2 = std::chrono::steady_clock::now();
+             ^
+main.cpp:20:14: warning: unused variable 'e2' [-Wunused-variable]
+        auto e2 = std::chrono::steady_clock::now();
+             ^
+4 warnings generated.
+Regular: 132.986
+Make shared: 211.889
+As you can see, both are working correctly: 42 & 42
