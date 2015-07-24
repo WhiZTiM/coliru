@@ -1,0 +1,12 @@
+
+
+g++ ####################################################
+
+
+
+clang++ ####################################################
+
+main.cpp:4:11: error: no viable conversion from '(lambda at main.cpp:4:18)' to 'void (*)()'
+    void(*p)() = [&]{};
+          ^      ~~~~~
+1 error generated.
