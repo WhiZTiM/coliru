@@ -1,0 +1,1 @@
+cp /Archive2/01/04e49fea6e64f9/main.cpp test.xyz; g++ -std=c++11 -O2 -Wall -pedantic -pthread main.cpp && ./a.out
