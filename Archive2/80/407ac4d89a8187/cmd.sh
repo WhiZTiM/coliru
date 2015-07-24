@@ -1,0 +1,1 @@
+clang++ -std=c++11 -Os -Wall -Wno-unused-variable main.cpp && ./a.out
