@@ -1,0 +1,19 @@
+main.cpp:33:10: error: class member cannot be redeclared
+    void foo() {}
+         ^
+main.cpp:28:10: note: previous declaration is here
+    void foo() {}
+         ^
+main.cpp:31:25: error: template parameter redefines default argument
+             typename = typename std::enable_if<std::is_floating_point<U>::value>::type
+                        ^
+main.cpp:26:25: note: previous default template argument defined here
+             typename = typename std::enable_if<!std::is_floating_point<U>::value>::type
+                        ^
+main.cpp:33:10: error: redefinition of 'foo'
+    void foo() {}
+         ^
+main.cpp:28:10: note: previous definition is here
+    void foo() {}
+         ^
+3 errors generated.
