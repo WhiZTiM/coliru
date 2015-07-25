@@ -1,0 +1,17 @@
+~~~~~~G++~~~~~~
+main.cpp:4:13: warning: integer constant is too large for its type
+     int i = 23424365874344676645345676453;
+             ^
+main.cpp: In function 'int main()':
+main.cpp:4:13: warning: overflow in implicit constant conversion [-Woverflow]
+main.cpp:4:9: warning: unused variable 'i' [-Wunused-variable]
+     int i = 23424365874344676645345676453;
+         ^
+~~~~CLANG++~~~~
+main.cpp:4:13: error: integer literal is too large to be represented in any integer type
+    int i = 23424365874344676645345676453;
+            ^
+main.cpp:4:13: warning: implicit conversion from 'unsigned long long' to 'int' changes value from 9278537939346508965 to -1782854491 [-Wconstant-conversion]
+    int i = 23424365874344676645345676453;
+        ~   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+1 warning and 1 error generated.
