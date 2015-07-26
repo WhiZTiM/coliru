@@ -1,0 +1,177 @@
+
+
+clang++ no optimizations ####################################################
+
+	.text
+	.file	"main.cpp"
+	.globl	_Z6strchrPcc
+	.align	16, 0x90
+	.type	_Z6strchrPcc,@function
+_Z6strchrPcc:                           # @_Z6strchrPcc
+	.cfi_startproc
+# BB#0:
+	pushq	%rbp
+.Ltmp0:
+	.cfi_def_cfa_offset 16
+.Ltmp1:
+	.cfi_offset %rbp, -16
+	movq	%rsp, %rbp
+.Ltmp2:
+	.cfi_def_cfa_register %rbp
+	movb	%sil, %al
+	movq	%rdi, -16(%rbp)
+	movb	%al, -17(%rbp)
+.LBB0_1:                                # =>This Inner Loop Header: Depth=1
+	movq	-16(%rbp), %rax
+	movsbl	(%rax), %ecx
+	cmpl	$0, %ecx
+	je	.LBB0_6
+# BB#2:                                 #   in Loop: Header=BB0_1 Depth=1
+	movq	-16(%rbp), %rax
+	movsbl	(%rax), %ecx
+	movsbl	-17(%rbp), %edx
+	cmpl	%edx, %ecx
+	jne	.LBB0_4
+# BB#3:
+	movq	-16(%rbp), %rax
+	movq	%rax, -8(%rbp)
+	jmp	.LBB0_7
+.LBB0_4:                                #   in Loop: Header=BB0_1 Depth=1
+	jmp	.LBB0_5
+.LBB0_5:                                #   in Loop: Header=BB0_1 Depth=1
+	movq	-16(%rbp), %rax
+	addq	$1, %rax
+	movq	%rax, -16(%rbp)
+	jmp	.LBB0_1
+.LBB0_6:
+	movq	$0, -8(%rbp)
+.LBB0_7:
+	movq	-8(%rbp), %rax
+	popq	%rbp
+	retq
+.Ltmp3:
+	.size	_Z6strchrPcc, .Ltmp3-_Z6strchrPcc
+	.cfi_endproc
+
+	.globl	main
+	.align	16, 0x90
+	.type	main,@function
+main:                                   # @main
+	.cfi_startproc
+# BB#0:
+	pushq	%rbp
+.Ltmp4:
+	.cfi_def_cfa_offset 16
+.Ltmp5:
+	.cfi_offset %rbp, -16
+	movq	%rsp, %rbp
+.Ltmp6:
+	.cfi_def_cfa_register %rbp
+	subq	$16, %rsp
+	movl	$119, %esi
+	movabsq	$.L.str, %rax
+	movq	%rax, -8(%rbp)
+	movq	-8(%rbp), %rdi
+	callq	_Z6strchrPKcc
+	xorl	%esi, %esi
+	movq	%rax, -16(%rbp)         # 8-byte Spill
+	movl	%esi, %eax
+	addq	$16, %rsp
+	popq	%rbp
+	retq
+.Ltmp7:
+	.size	main, .Ltmp7-main
+	.cfi_endproc
+
+	.section	.text._Z6strchrPKcc,"axG",@progbits,_Z6strchrPKcc,comdat
+	.weak	_Z6strchrPKcc
+	.align	16, 0x90
+	.type	_Z6strchrPKcc,@function
+_Z6strchrPKcc:                          # @_Z6strchrPKcc
+	.cfi_startproc
+# BB#0:
+	pushq	%rbp
+.Ltmp8:
+	.cfi_def_cfa_offset 16
+.Ltmp9:
+	.cfi_offset %rbp, -16
+	movq	%rsp, %rbp
+.Ltmp10:
+	.cfi_def_cfa_register %rbp
+	subq	$16, %rsp
+	movb	%sil, %al
+	movq	%rdi, -8(%rbp)
+	movb	%al, -9(%rbp)
+	movq	-8(%rbp), %rdi
+	movsbl	-9(%rbp), %esi
+	callq	_Z6strchrPcc
+	addq	$16, %rsp
+	popq	%rbp
+	retq
+.Ltmp11:
+	.size	_Z6strchrPKcc, .Ltmp11-_Z6strchrPKcc
+	.cfi_endproc
+
+	.type	.L.str,@object          # @.str
+	.section	.rodata.str1.1,"aMS",@progbits,1
+.L.str:
+	.asciz	"hello world"
+	.size	.L.str, 12
+
+
+	.ident	"clang version 3.6.0 (tags/RELEASE_360/final 235480)"
+	.section	".note.GNU-stack","",@progbits
+
+
+clang++ optimized ####################################################
+
+	.text
+	.file	"main.cpp"
+	.globl	_Z6strchrPcc
+	.align	16, 0x90
+	.type	_Z6strchrPcc,@function
+_Z6strchrPcc:                           # @_Z6strchrPcc
+	.cfi_startproc
+# BB#0:
+	movb	(%rdi), %cl
+	xorl	%eax, %eax
+	testb	%cl, %cl
+	je	.LBB0_5
+# BB#1:
+	movzbl	%sil, %edx
+	xorl	%eax, %eax
+	.align	16, 0x90
+.LBB0_2:                                # %.lr.ph
+                                        # =>This Inner Loop Header: Depth=1
+	movzbl	%cl, %ecx
+	cmpl	%edx, %ecx
+	je	.LBB0_3
+# BB#4:                                 #   in Loop: Header=BB0_2 Depth=1
+	movb	1(%rdi), %cl
+	incq	%rdi
+	testb	%cl, %cl
+	jne	.LBB0_2
+.LBB0_5:                                # %._crit_edge
+	retq
+.LBB0_3:
+	movq	%rdi, %rax
+	retq
+.Ltmp0:
+	.size	_Z6strchrPcc, .Ltmp0-_Z6strchrPcc
+	.cfi_endproc
+
+	.globl	main
+	.align	16, 0x90
+	.type	main,@function
+main:                                   # @main
+	.cfi_startproc
+# BB#0:
+	xorl	%eax, %eax
+	retq
+.Ltmp1:
+	.size	main, .Ltmp1-main
+	.cfi_endproc
+
+
+	.ident	"clang version 3.6.0 (tags/RELEASE_360/final 235480)"
+	.section	".note.GNU-stack","",@progbits
