@@ -1,0 +1,1 @@
+gcc -xc main.cpp -std=c89 -pedantic -Wall
