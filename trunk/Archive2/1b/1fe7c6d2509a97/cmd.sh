@@ -1,0 +1,1 @@
+g++ -std=c++14 -O2 -Wall -Wstrict-aliasing=2 -pedantic -pthread main.cpp && ./a.out
