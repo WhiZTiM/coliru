@@ -1,0 +1,10 @@
+main.cpp: In function 'int main()':
+main.cpp:31:3: error: expected ',' or ';' before 'std'
+   std::vector<char> v7 {'A', 'B', 'C'};
+   ^
+main.cpp:32:17: error: 'v7' was not declared in this scope
+   for (auto i : v7) std::cout << i << ' ';
+                 ^
+main.cpp:34:52: error: 'v7' was not declared in this scope
+             << std::includes(v1.begin(), v1.end(), v7.begin(), v7.end(), cmp_nocase)
+                                                    ^
