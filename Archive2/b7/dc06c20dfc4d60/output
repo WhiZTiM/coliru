@@ -1,0 +1,13 @@
+main.cpp:11:1: error: expected ';' after struct definition
+ }
+ ^
+main.cpp:53:1: error: expected ';' after class definition
+ }
+ ^
+main.cpp: In member function 'void VendorWrapper::foo()':
+main.cpp:40:48: error: 'SUCCES' was not declared in this scope
+         if (alloc_vendor_data(&local_data1) != SUCCES) {
+                                                ^
+main.cpp:44:48: error: 'SUCCES' was not declared in this scope
+         if (alloc_vendor_data(&local_data2) != SUCCES) {
+                                                ^
