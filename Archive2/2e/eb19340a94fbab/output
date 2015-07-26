@@ -1,0 +1,10 @@
+main.cpp: In function 'int main(int, char**)':
+main.cpp:22:17: error: request for member 'item' is ambiguous
+  auto foo = See.item;
+                 ^
+main.cpp:10:4: note: candidates are: int B<int>::item
+  T item;
+    ^
+main.cpp:4:7: note:                 int A<int>::item
+     T item;
+       ^
