@@ -1,0 +1,1 @@
+clang++ -std=c++14 -stdlib=libc++ -O2 main.cpp -S -emit-llvm -o -
