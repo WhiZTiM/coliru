@@ -1,0 +1,21 @@
+main.cpp: In member function 'void bar::child<T>::func()':
+main.cpp:23:17: error: there are no arguments to 'add' that depend on a template parameter, so a declaration of 'add' must be available [-fpermissive]
+             add();
+                 ^
+main.cpp:23:17: note: (if you use '-fpermissive', G++ will accept your code, but allowing the use of an undeclared name is deprecated)
+main.cpp:25:13: error: 'addt' was not declared in this scope
+             addt<0>(*this);
+             ^
+main.cpp:25:13: note: suggested alternative:
+main.cpp:15:10: note:   'foo::addt'
+     void addt(const base& x){}
+          ^
+main.cpp: In instantiation of 'void bar::child<T>::func() [with T = foo::base]':
+main.cpp:32:34:   required from here
+main.cpp:23:16: error: 'add' was not declared in this scope
+             add();
+                ^
+main.cpp:23:16: note: suggested alternative:
+main.cpp:8:10: note:   'foo::add'
+     void add(){}
+          ^
