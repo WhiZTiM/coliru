@@ -1,0 +1,4 @@
+main.cpp: In function 'int main(int, char**)':
+main.cpp:21:7: warning: unused variable 'foo' [-Wunused-variable]
+  auto foo = See.item;
+       ^
