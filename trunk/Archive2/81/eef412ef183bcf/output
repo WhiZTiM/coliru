@@ -1,0 +1,7 @@
+main.cpp: In function 'int main(int, char**)':
+main.cpp:22:7: warning: unused variable 'foo' [-Wunused-variable]
+  auto foo = See.A::item;
+       ^
+main.cpp:22:20: warning: 'See.C<int>::<anonymous>.A<int>::item' is used uninitialized in this function [-Wuninitialized]
+  auto foo = See.A::item;
+                    ^
