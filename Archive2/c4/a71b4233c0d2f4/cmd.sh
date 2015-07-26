@@ -1,0 +1,2 @@
+clang++ -std=c++14 -stdlib=libc++ -O3 -Wall -Wextra -pedantic-errors -DNDEBUG main.cpp && ./a.out <<< 'fiction genre::biography children dictionary'
+echo ========== && g++ -std=c++14 -O3 -Wall -Wextra -pedantic-errors -DNDEBUG main.cpp && ./a.out <<< 'CHILDREN periodical Genre::nonfiction dictionary'
