@@ -1,0 +1,7 @@
+main.cpp: In function 'int main()':
+main.cpp:19:35: error: cannot convert 'int (foo::*)(int, int)' to 'memberf_pointer<foo> {aka int (foo::*)()}' in initialization
+   memberf_pointer<foo> mp = &foo::g ;
+                                   ^
+main.cpp:20:29: error: too many arguments to function
+   std::cout << (f.*mp) (5, 8) << std::endl ;
+                             ^
