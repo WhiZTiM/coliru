@@ -1,0 +1,20 @@
+checking thread with priority 0
+Locked main
+checking thread with priority 1
+checking thread with priority 3
+checking thread with priority 2
+Main unlocked!
+checking thread with priority 3
+3 u locked!
+3 u unlocked!
+checking thread with priority 2
+2 v locked!
+add new lock with priority 4
+checking thread with priority 4
+2 v unlocked!
+checking thread with priority 4
+4 w locked!
+checking thread with priority 1
+1 t locked!
+1 t unlocked!
+4 w unlocked!
