@@ -1,0 +1,7 @@
+main.cpp: In function 'void bar(Foo&&)':
+main.cpp:16:32: error: use of deleted function 'Foo::Foo(Foo&&)'
+     static Foo bar(std::move(f));
+                                ^
+main.cpp:11:5: note: declared here
+     Foo(Foo && f) = delete;
+     ^
