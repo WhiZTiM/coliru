@@ -1,0 +1,6 @@
+clang version 3.6.0 (tags/RELEASE_360/final 235480)
+Target: x86_64-unknown-linux-gnu
+Thread model: posix
+Sleeping for 3s...
+Waiting 3s for signal signal...
+timed out waiting for signal
