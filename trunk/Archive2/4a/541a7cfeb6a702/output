@@ -1,0 +1,12 @@
+main.cpp: In function 'void getkFactorLinearity(uint32_t (*)[20])':
+main.cpp:11:55: warning: 'sizeof' on array function parameter 'linearity' will return size of 'uint32_t (*)[20] {aka unsigned int (*)[20]}' [-Wsizeof-array-argument]
+     memcpy(linearity, kfactor_linear, sizeof(linearity)); 
+                                                       ^
+main.cpp:10:50: note: declared here
+ void getkFactorLinearity(uint32_t linearity[2][20]){
+                                                  ^
+main.cpp:11:45: warning: argument to 'sizeof' in 'void* memcpy(void*, const void*, size_t)' call is the same expression as the destination; did you mean to dereference it? [-Wsizeof-pointer-memaccess]
+     memcpy(linearity, kfactor_linear, sizeof(linearity)); 
+                                             ^
+1 2 0 0 0 0 4195081 0 684139040 32767 1930680408 32639 0 0 0 0 0 0 0 0 
+115124853 0 0 0 1924570688 32639 4195265 0 1 0 4195869 0 1 0 4195776 0 0 0 4195472 0 
