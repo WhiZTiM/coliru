@@ -1,0 +1,58 @@
+main.cpp:11:8: error: expected unqualified-id
+assert(sizeof(S) == 8);
+       ^
+/usr/include/assert.h:92:5: note: expanded from macro 'assert'
+  ((expr)                                                               \
+    ^
+main.cpp:11:8: error: expected ')'
+/usr/include/assert.h:92:5: note: expanded from macro 'assert'
+  ((expr)                                                               \
+    ^
+main.cpp:11:1: note: to match this '('
+assert(sizeof(S) == 8);
+^
+/usr/include/assert.h:92:4: note: expanded from macro 'assert'
+  ((expr)                                                               \
+   ^
+main.cpp:11:1: error: expected ')'
+assert(sizeof(S) == 8);
+^
+/usr/include/assert.h:93:4: note: expanded from macro 'assert'
+   ? __ASSERT_VOID_CAST (0)                                             \
+   ^
+main.cpp:11:1: note: to match this '('
+/usr/include/assert.h:92:3: note: expanded from macro 'assert'
+  ((expr)                                                               \
+  ^
+main.cpp:14:1: error: expected unqualified-id
+reinterpret_cast<char*>(&s1)[2] = 'b'; // change 2nd byte
+^
+main.cpp:15:11: error: expected ')'
+assert(s1 == s2); // value did not change
+          ^
+/usr/include/assert.h:92:5: note: expanded from macro 'assert'
+  ((expr)                                                               \
+    ^
+main.cpp:15:1: note: to match this '('
+assert(s1 == s2); // value did not change
+^
+/usr/include/assert.h:92:4: note: expanded from macro 'assert'
+  ((expr)                                                               \
+   ^
+main.cpp:15:1: error: expected ')'
+assert(s1 == s2); // value did not change
+^
+/usr/include/assert.h:93:4: note: expanded from macro 'assert'
+   ? __ASSERT_VOID_CAST (0)                                             \
+   ^
+main.cpp:15:1: note: to match this '('
+/usr/include/assert.h:92:3: note: expanded from macro 'assert'
+  ((expr)                                                               \
+  ^
+main.cpp:15:8: error: C++ requires a type specifier for all declarations
+assert(s1 == s2); // value did not change
+       ^
+/usr/include/assert.h:92:5: note: expanded from macro 'assert'
+  ((expr)                                                               \
+    ^
+7 errors generated.
