@@ -1,0 +1,4 @@
+main.cpp: In function 'int main(int, char**)':
+main.cpp:37:9: warning: unused variable 'err' [-Wunused-variable]
+     int err = example(24,2,3,4);
+         ^
