@@ -1,0 +1,13 @@
+main.cpp: In function 'void init_allArrays()':
+main.cpp:9:26: warning: ISO C++ forbids converting a string constant to 'char*' [-Wpedantic]
+         getSymName[0].DP = "name0";
+                          ^
+main.cpp:10:26: warning: ISO C++ forbids converting a string constant to 'char*' [-Wpedantic]
+         getSymName[1].DP = "name1"; 
+                          ^
+main.cpp:11:26: warning: ISO C++ forbids converting a string constant to 'char*' [-Wpedantic]
+         getSymName[2].DP = "name2"; 
+                          ^
+main.cpp:12:26: warning: ISO C++ forbids converting a string constant to 'char*' [-Wpedantic]
+         getSymName[3].DP = "name3"; 
+                          ^
