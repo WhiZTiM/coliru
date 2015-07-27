@@ -1,0 +1,105 @@
+main.cpp: In function 'constexpr bool EqualImpl(ConstString, ConstString, int)':
+main.cpp:50:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  return (str1.size() == n) ? true :
+                      ^
+main.cpp: At global scope:
+main.cpp:101:11: error: function template-id 'ValidParam<(FunctionTraits:: arg < N)>' in nested-name-specifier
+   Value = ValidParam<FunctionTraits::arg<N>::type>(Params & 0xf) &&
+           ^
+main.cpp:91:16: note: 'template<class Type> constexpr bool ValidParam(unsigned int)' declared here
+ constexpr bool ValidParam(unsigned param)
+                ^
+main.cpp:110:11: error: function template-id 'ValidParam<(FunctionTraits:: arg < 0)>' in nested-name-specifier
+   Value = ValidParam<FunctionTraits::arg<0>::type>(Params & 0xf)
+           ^
+main.cpp:91:16: note: 'template<class Type> constexpr bool ValidParam(unsigned int)' declared here
+ constexpr bool ValidParam(unsigned param)
+                ^
+main.cpp: In function 'int main()':
+main.cpp:140:73: error: 'constexpr ParameterValidator<FunctionTraits, Params>::ParameterValidator() [with FunctionTraits = function_traits<main()::<lambda(int)> >; unsigned int Params = 1u]' called in a constant expression
+   constexpr ParameterValidator<function_traits<decltype(func)>, params> parameter_mismatch; \
+                                                                         ^
+main.cpp:146:2: note: in expansion of macro 'FOO'
+  FOO("<int>", [](int value) {
+  ^
+main.cpp:124:12: note: 'constexpr ParameterValidator<FunctionTraits, Params>::ParameterValidator() [with FunctionTraits = function_traits<main()::<lambda(int)> >; unsigned int Params = 1u]' is not usable as a constexpr function because:
+  constexpr ParameterValidator()
+            ^
+main.cpp:124:12: error: expression '<throw-expression>' is not a constant-expression
+main.cpp:140:73: error: 'constexpr ParameterValidator<FunctionTraits, Params>::ParameterValidator() [with FunctionTraits = function_traits<main()::<lambda(char)> >; unsigned int Params = 2u]' called in a constant expression
+   constexpr ParameterValidator<function_traits<decltype(func)>, params> parameter_mismatch; \
+                                                                         ^
+main.cpp:150:2: note: in expansion of macro 'FOO'
+  FOO("<char>", [](char value) {
+  ^
+main.cpp:124:12: note: 'constexpr ParameterValidator<FunctionTraits, Params>::ParameterValidator() [with FunctionTraits = function_traits<main()::<lambda(char)> >; unsigned int Params = 2u]' is not usable as a constexpr function because:
+  constexpr ParameterValidator()
+            ^
+main.cpp:124:12: error: expression '<throw-expression>' is not a constant-expression
+main.cpp:140:73: error: 'constexpr ParameterValidator<FunctionTraits, Params>::ParameterValidator() [with FunctionTraits = function_traits<main()::<lambda(int)> >; unsigned int Params = 1u]' called in a constant expression
+   constexpr ParameterValidator<function_traits<decltype(func)>, params> parameter_mismatch; \
+                                                                         ^
+main.cpp:154:2: note: in expansion of macro 'FOO'
+  FOO("asdf <int> zxcv", [](int value) {
+  ^
+main.cpp:124:12: note: 'constexpr ParameterValidator<FunctionTraits, Params>::ParameterValidator() [with FunctionTraits = function_traits<main()::<lambda(int)> >; unsigned int Params = 1u]' is not usable as a constexpr function because:
+  constexpr ParameterValidator()
+            ^
+main.cpp:124:12: error: expression '<throw-expression>' is not a constant-expression
+main.cpp: At global scope:
+main.cpp:158:55: warning: unused parameter 'ch' [-Wunused-parameter]
+  FOO("asdf <int> 1234 <char> xsd", [](int value, char ch) {
+                                                       ^
+main.cpp:138:15: note: in definition of macro 'FOO'
+   auto func = lambda; \
+               ^
+main.cpp: In function 'int main()':
+main.cpp:140:73: error: 'constexpr ParameterValidator<FunctionTraits, Params>::ParameterValidator() [with FunctionTraits = function_traits<main()::<lambda(int, char)> >; unsigned int Params = 18u]' called in a constant expression
+   constexpr ParameterValidator<function_traits<decltype(func)>, params> parameter_mismatch; \
+                                                                         ^
+main.cpp:158:2: note: in expansion of macro 'FOO'
+  FOO("asdf <int> 1234 <char> xsd", [](int value, char ch) {
+  ^
+main.cpp:124:12: note: 'constexpr ParameterValidator<FunctionTraits, Params>::ParameterValidator() [with FunctionTraits = function_traits<main()::<lambda(int, char)> >; unsigned int Params = 18u]' is not usable as a constexpr function because:
+  constexpr ParameterValidator()
+            ^
+main.cpp:124:12: error: expression '<throw-expression>' is not a constant-expression
+main.cpp: At global scope:
+main.cpp:158:55: warning: unused parameter 'ch' [-Wunused-parameter]
+  FOO("asdf <int> 1234 <char> xsd", [](int value, char ch) {
+                                                       ^
+main.cpp:142:11: note: in definition of macro 'FOO'
+  Foo(str, lambda);
+           ^
+main.cpp: In instantiation of 'void Foo(ConstString, Func) [with Func = main()::<lambda(int)>]':
+main.cpp:146:2:   required from here
+main.cpp:131:22: warning: unused parameter 'str' [-Wunused-parameter]
+ void Foo(ConstString str, Func func)
+                      ^
+main.cpp:131:32: warning: unused parameter 'func' [-Wunused-parameter]
+ void Foo(ConstString str, Func func)
+                                ^
+main.cpp: In instantiation of 'void Foo(ConstString, Func) [with Func = main()::<lambda(char)>]':
+main.cpp:150:2:   required from here
+main.cpp:131:22: warning: unused parameter 'str' [-Wunused-parameter]
+ void Foo(ConstString str, Func func)
+                      ^
+main.cpp:131:32: warning: unused parameter 'func' [-Wunused-parameter]
+ void Foo(ConstString str, Func func)
+                                ^
+main.cpp: In instantiation of 'void Foo(ConstString, Func) [with Func = main()::<lambda(int)>]':
+main.cpp:154:2:   required from here
+main.cpp:131:22: warning: unused parameter 'str' [-Wunused-parameter]
+ void Foo(ConstString str, Func func)
+                      ^
+main.cpp:131:32: warning: unused parameter 'func' [-Wunused-parameter]
+ void Foo(ConstString str, Func func)
+                                ^
+main.cpp: In instantiation of 'void Foo(ConstString, Func) [with Func = main()::<lambda(int, char)>]':
+main.cpp:158:2:   required from here
+main.cpp:131:22: warning: unused parameter 'str' [-Wunused-parameter]
+ void Foo(ConstString str, Func func)
+                      ^
+main.cpp:131:32: warning: unused parameter 'func' [-Wunused-parameter]
+ void Foo(ConstString str, Func func)
+                                ^
