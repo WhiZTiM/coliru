@@ -1,0 +1,7 @@
+main.cpp:32:17: error: non-const lvalue reference to type 'typename Self::Parent::mix<std::decay_t<decltype(*this)> >' cannot bind to a value of unrelated type 'A1_wrap<A2_wrap<void> >::mix<void>'
+                static_cast<typename Self::Parent::template mix< getType(*this) >&>(*this).root_call();               // THIS IS NOT
+                ^                                                                   ~~~~~
+main.cpp:56:12: note: in instantiation of member function 'A1_wrap<A2_wrap<void> >::mix<void>::A1_call_parent' requested here
+        a2.A1_call_parent();
+           ^
+1 error generated.
