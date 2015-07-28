@@ -1,0 +1,3 @@
+main.cpp:8:11: error: out of range
+     std::printf("%d\n", PP_VARIADIC_ELEM(1, 1, 2, 3));
+           ^
