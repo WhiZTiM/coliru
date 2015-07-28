@@ -1,0 +1,4 @@
+main.cpp: In function 'my_callback_2':
+main.cpp:3:1: error: parameter name omitted
+ void my_callback_2(int id, void*)
+ ^
