@@ -1,0 +1,21 @@
+main.cpp: In function 'int main()':
+main.cpp:80:12: warning: unused variable 'a1' [-Wunused-variable]
+     A<int> a1; // OK, matches the primary template
+            ^
+main.cpp:81:15: warning: unused variable 'a2' [-Wunused-variable]
+     A<double> a2; // OK, matches the partial specialization
+               ^
+main.cpp: In instantiation of 'typename std::enable_if<std::is_trivially_constructible<T, Args&& ...>::value>::type construct(T*, Args&& ...) [with T = int; Args = {}; typename std::enable_if<std::is_trivially_constructible<T, Args&& ...>::value>::type = void]':
+main.cpp:74:41:   required from here
+main.cpp:13:18: warning: unused parameter 't' [-Wunused-parameter]
+     construct(T* t,Args&&... args) 
+                  ^
+main.cpp: In instantiation of 'void destroy(T*, typename std::enable_if<std::is_trivially_destructible<T>::value>::type*) [with T = int; typename std::enable_if<std::is_trivially_destructible<T>::value>::type = void]':
+main.cpp:75:39:   required from here
+main.cpp:29:17: warning: unused parameter 't' [-Wunused-parameter]
+ void destroy(T* t, 
+                 ^
+constructing trivially constructible T
+destroying trivially destructible T
+constructing non-trivially constructible T
+destroying non-trivially destructible T
