@@ -1,0 +1,20 @@
+main.cpp:52:37: error: 'A' was not declared in this scope
+     typedef typename std::result_of<A::foo>::type type_tt;
+                                     ^
+main.cpp:52:43: error: template argument 1 is invalid
+     typedef typename std::result_of<A::foo>::type type_tt;
+                                           ^
+main.cpp:52:44: error: expected identifier before '::' token
+     typedef typename std::result_of<A::foo>::type type_tt;
+                                            ^
+main.cpp:52:46: error: typedef name may not be a nested-name-specifier
+     typedef typename std::result_of<A::foo>::type type_tt;
+                                              ^
+main.cpp:52:46: error: expected ';' at end of member declaration
+main.cpp:52:51: error: 'type_tt' does not name a type
+     typedef typename std::result_of<A::foo>::type type_tt;
+                                                   ^
+main.cpp: In static member function 'static mpl_::bool_<false> has_const_iterator<T>::dummyFunc()':
+main.cpp:44:5: warning: no return statement in function returning non-void [-Wreturn-type]
+     }
+     ^
