@@ -1,0 +1,31 @@
+main.cpp:4:41: error: reference to overloaded function could not be resolved; did you mean to call it?
+        std::cout << "hello, world!" >> std::endl;
+                                        ^~~~~~~~~
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../include/c++/5.2.0/ostream:590:5: note: possible target for call
+    endl(basic_ostream<_CharT, _Traits>& __os)
+    ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../include/c++/5.2.0/streambuf:168:9: note: candidate template ignored: could not match 'basic_istream' against 'basic_ostream'
+        operator>>(basic_istream<_CharT2, _Traits2>&,
+        ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../include/c++/5.2.0/istream:756:5: note: candidate template ignored: could not match 'basic_istream' against 'basic_ostream'
+    operator>>(basic_istream<char, _Traits>& __in, unsigned char& __c)
+    ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../include/c++/5.2.0/istream:761:5: note: candidate template ignored: could not match 'basic_istream' against 'basic_ostream'
+    operator>>(basic_istream<char, _Traits>& __in, signed char& __c)
+    ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../include/c++/5.2.0/istream:803:5: note: candidate template ignored: could not match 'basic_istream' against 'basic_ostream'
+    operator>>(basic_istream<char, _Traits>& __in, unsigned char* __s)
+    ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../include/c++/5.2.0/istream:808:5: note: candidate template ignored: could not match 'basic_istream' against 'basic_ostream'
+    operator>>(basic_istream<char, _Traits>& __in, signed char* __s)
+    ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../include/c++/5.2.0/istream:924:5: note: candidate template ignored: could not match 'basic_istream' against 'basic_ostream'
+    operator>>(basic_istream<_CharT, _Traits>&& __is, _Tp& __x)
+    ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../include/c++/5.2.0/bits/istream.tcc:923:5: note: candidate template ignored: could not match 'basic_istream' against 'basic_ostream'
+    operator>>(basic_istream<_CharT, _Traits>& __in, _CharT& __c)
+    ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../include/c++/5.2.0/bits/istream.tcc:955:5: note: candidate template ignored: could not match 'basic_istream' against 'basic_ostream'
+    operator>>(basic_istream<_CharT, _Traits>& __in, _CharT* __s)
+    ^
+1 error generated.
