@@ -1,0 +1,3 @@
+main.cpp:6:24: warning: unused parameter 'warn_me' [-Wunused-parameter]
+     gief_answer([](int warn_me) {});
+                        ^
