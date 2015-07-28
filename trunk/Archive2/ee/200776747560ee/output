@@ -1,0 +1,6 @@
+main.cpp:20:32: warning: unused parameter 'userdata' [-Wunused-parameter]
+ void my_callback(int id, void* userdata)
+                                ^
+42
+666
+1337
