@@ -1,0 +1,6 @@
+Exception arrived: bad lexical cast: source type value could not be interpreted as target
+Diagnostic info:Dynamic exception type: boost::bad_lexical_cast
+std::exception::what: bad lexical cast: source type value could not be interpreted as target
+
+There are 7 dwarves in Grimm's tale.
+There are 0 red ballons in the title of the song. 
