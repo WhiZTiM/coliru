@@ -1,0 +1,7 @@
+main.cpp:29:5: error: no matching function for call to 'g'
+    g(b);
+    ^
+main.cpp:17:1: note: candidate function not viable: no known conversion from 'char [10]' to 'char (&)[100]' for 1st argument
+g(char (& y)[100])
+^
+1 error generated.

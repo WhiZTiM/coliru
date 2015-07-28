@@ -1,0 +1,1 @@
+clang++ -std=gnu++1z -stdlib=libc++ -Weverything main.cpp && ./a.out
