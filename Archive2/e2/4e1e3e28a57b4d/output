@@ -1,0 +1,13 @@
+main.cpp: In function 'int main()':
+main.cpp:34:11: warning: unused variable 'new_d' [-Wunused-variable]
+     if(D* new_d = dynamic_cast<D*>(a1))
+           ^
+main.cpp:41:11: warning: unused variable 'new_b' [-Wunused-variable]
+     if(B* new_b = dynamic_cast<B*>(a1))
+           ^
+main.cpp:29:8: warning: unused variable 'a' [-Wunused-variable]
+     A& a = d; // upcast, dynamic_cast may be used, but unnecessary
+        ^
+downcast from a to d successful
+sidecast from a to b successful
+downcast from b2 to d successful
