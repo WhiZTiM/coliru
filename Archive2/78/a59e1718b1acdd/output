@@ -1,0 +1,18 @@
+main.cpp: In function 'int main()':
+main.cpp:30:4: error: 'cout' was not declared in this scope
+    cout << "0: " << i0 << endl;
+    ^
+main.cpp:30:4: note: suggested alternative:
+In file included from main.cpp:1:0:
+/usr/local/include/c++/5.2.0/iostream:61:18: note:   'std::cout'
+   extern ostream cout;  /// Linked to standard output
+                  ^
+main.cpp:30:27: error: 'endl' was not declared in this scope
+    cout << "0: " << i0 << endl;
+                           ^
+main.cpp:30:27: note: suggested alternative:
+In file included from /usr/local/include/c++/5.2.0/iostream:39:0,
+                 from main.cpp:1:
+/usr/local/include/c++/5.2.0/ostream:590:5: note:   'std::endl'
+     endl(basic_ostream<_CharT, _Traits>& __os)
+     ^
