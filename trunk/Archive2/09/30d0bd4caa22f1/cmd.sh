@@ -1,0 +1,1 @@
+gcc -x c -std=c99 -Wall -pedantic -Wextra main.cpp && ./a.out
