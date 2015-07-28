@@ -1,0 +1,21 @@
+main.cpp: In function 'int rand3()':
+main.cpp:11:26: warning: 'res' may be used uninitialized in this function [-Wmaybe-uninitialized]
+         res += rand() * 2;
+                          ^
+main.cpp: In function 'int main()':
+main.cpp:11:26: warning: 'res' may be used uninitialized in this function [-Wmaybe-uninitialized]
+main.cpp:9:9: note: 'res' was declared here
+     int res;
+         ^
+main.cpp:29:17: warning: 'i2' may be used uninitialized in this function [-Wmaybe-uninitialized]
+             i2++;
+                 ^
+main.cpp:26:17: warning: 'i1' may be used uninitialized in this function [-Wmaybe-uninitialized]
+             i1++;
+                 ^
+main.cpp:23:17: warning: 'i0' may be used uninitialized in this function [-Wmaybe-uninitialized]
+             i0++;
+                 ^
+0: -1606925168
+1: 0
+2: 0
