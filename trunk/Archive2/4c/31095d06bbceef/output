@@ -1,0 +1,10 @@
+main.cpp: In lambda function:
+main.cpp:14:9: error: 'vec' is not captured
+         vec.push_back(beer);
+         ^
+main.cpp:12:25: note: the lambda has no capture-default
+     auto push_to_vec = [](const std::string& beer)
+                         ^
+main.cpp:8:30: note: 'std::vector<std::__cxx11::basic_string<char> > vec' declared here
+     std::vector<std::string> vec{ "Dortmunder Actien-Brauerei" };
+                              ^
