@@ -1,0 +1,4 @@
+main.cpp:4:10: fatal error: 'algorith' file not found
+#include <algorith>
+         ^
+1 error generated.
