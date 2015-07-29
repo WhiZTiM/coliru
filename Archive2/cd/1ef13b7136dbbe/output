@@ -1,0 +1,5 @@
+/tmp/main-1566bd.o: In function `function()':
+main.cpp:(.text+0x4): undefined reference to `Type const& MyNamespace::get_Type<int>(int*)'
+/tmp/main-1566bd.o: In function `main':
+main.cpp:(.text+0x54): undefined reference to `Type const& MyNamespace::get_Type<int>(int*)'
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
