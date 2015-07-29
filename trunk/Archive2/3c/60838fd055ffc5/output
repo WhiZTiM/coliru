@@ -1,0 +1,5 @@
+/tmp/cc63FjK1.o: In function `function()':
+main.cpp:(.text+0x7): undefined reference to `Type const& MyNamespace::get_Type<int>(int*)'
+/tmp/cc63FjK1.o: In function `main':
+main.cpp:(.text.startup+0x7): undefined reference to `Type const& MyNamespace::get_Type<int>(int*)'
+collect2: error: ld returned 1 exit status
