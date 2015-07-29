@@ -1,0 +1,14 @@
+main.cpp:8:54: warning: data argument not used by format string [-Wformat-extra-args]
+    int n = sscanf(input, "%lf %lf %lf", &a, &b, &c, &d);
+                          ~~~~~~~~~~~~~              ^
+main.cpp:9:38: warning: more '%' conversions than data arguments [-Wformat]
+    int m = sscanf(input, "%lf %lf %lf", &a, &b);
+                                   ~~^
+main.cpp:10:23: warning: more '%' conversions than data arguments [-Wformat]
+    printf("%d %f %f %f\n", n, a, b);
+                     ~^
+main.cpp:9:9: warning: unused variable 'm' [-Wunused-variable]
+    int m = sscanf(input, "%lf %lf %lf", &a, &b);
+        ^
+4 warnings generated.
+bash: line 7: 25389 Segmentation fault      (core dumped) ./a.out
