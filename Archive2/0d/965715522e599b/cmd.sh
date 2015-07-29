@@ -1,0 +1,1 @@
+clang++ -std=c++11 -stdlib=libstdc++ main.cpp -Wall && ./a.out
