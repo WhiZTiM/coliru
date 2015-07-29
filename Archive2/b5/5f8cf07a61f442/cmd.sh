@@ -1,0 +1,1 @@
+g++ -std=c++14 -Wall -Wextra main.cpp && echo "1 3 4 9 2 9 2" | ./a.out
