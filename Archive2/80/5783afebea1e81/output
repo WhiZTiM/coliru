@@ -1,0 +1,17 @@
+main.cpp:12:54: warning: character constant too long for its type
+ /Api/ApiClient.m::: error: unexpected interface name 'NSData': expected expression
+                                                      ^
+main.cpp:13:39: error: stray '@' in program
+                 NSData* callerData = [@"http://nikyotis.xyz" dataUsingEncoding:NSUTF8StringEncoding];
+                                       ^
+main.cpp:15:57: warning: character constant too long for its type
+ /Api/ApiClient.m::: error: use of undeclared identifier 'callerData'
+                                                         ^
+main.cpp:16:39: error: stray '@' in program
+                 NSData* callerData = [@"http://nikyotis.xyz" dataUsingEncoding:NSUTF8StringEncoding];
+                                       ^
+main.cpp:22:2: warning: #import is a GCC extension
+ #import <Foundation/Foundation.h>
+  ^
+main.cpp:22:34: fatal error: Foundation/Foundation.h: No such file or directory
+compilation terminated.
