@@ -1,0 +1,5 @@
+main.cpp:5:19: warning: implicit conversion loses floating-point precision: 'double' to 'float' [-Wconversion]
+    float a = 1.0 / 10.0;
+          ~   ~~~~^~~~~~
+1 warning generated.
+0.1000000014901161193847656250

@@ -1,0 +1,1 @@
+clang -x c -std=c11 -Weverything main.cpp -lm && ./a.out
