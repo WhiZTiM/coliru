@@ -1,0 +1,4 @@
+main.cpp:2:21: fatal error: threads.h: No such file or directory
+ #include <threads.h>
+                     ^
+compilation terminated.
