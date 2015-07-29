@@ -1,0 +1,10 @@
+main.cpp:26:6: error: circular pointer delegation detected
+    t->i;
+     ^
+main.cpp:15:10: note: 'operator->' declared here produces an object of type 'Test'
+    Test operator ->()
+         ^
+main.cpp:28:2: warning: no newline at end of file [-Wnewline-eof]
+}
+ ^
+1 warning and 1 error generated.
