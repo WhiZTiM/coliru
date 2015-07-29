@@ -1,0 +1,25 @@
+In file included from /usr/local/include/c++/5.2.0/map:60:0,
+                 from main.cpp:4:
+/usr/local/include/c++/5.2.0/bits/stl_tree.h: In instantiation of 'std::_Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::const_iterator std::_Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::find(const _Key&) const [with _Key = std::__cxx11::basic_string<char>; _Val = std::pair<const std::__cxx11::basic_string<char>, int>; _KeyOfValue = std::_Select1st<std::pair<const std::__cxx11::basic_string<char>, int> >; _Compare = comparator; _Alloc = std::allocator<std::pair<const std::__cxx11::basic_string<char>, int> >; std::_Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::const_iterator = std::_Rb_tree_const_iterator<std::pair<const std::__cxx11::basic_string<char>, int> >]':
+/usr/local/include/c++/5.2.0/bits/stl_map.h:892:31:   required from 'std::map<_Key, _Tp, _Compare, _Alloc>::size_type std::map<_Key, _Tp, _Compare, _Alloc>::count(const key_type&) const [with _Key = std::__cxx11::basic_string<char>; _Tp = int; _Compare = comparator; _Alloc = std::allocator<std::pair<const std::__cxx11::basic_string<char>, int> >; std::map<_Key, _Tp, _Compare, _Alloc>::size_type = long unsigned int; std::map<_Key, _Tp, _Compare, _Alloc>::key_type = std::__cxx11::basic_string<char>]'
+main.cpp:24:27:   required from here
+/usr/local/include/c++/5.2.0/bits/stl_tree.h:2310:8: error: no match for call to '(const comparator) (const std::__cxx11::basic_string<char>&, const std::__cxx11::basic_string<char>&)'
+        || _M_impl._M_key_compare(__k, 
+        ^
+main.cpp:8:10: note: candidate: bool comparator::operator()(std::__cxx11::string, std::__cxx11::string) <near match>
+     bool operator()(const std::string x, const std::string y)
+          ^
+main.cpp:8:10: note:   passing 'const comparator*' as 'this' argument discards qualifiers
+In file included from /usr/local/include/c++/5.2.0/map:60:0,
+                 from main.cpp:4:
+/usr/local/include/c++/5.2.0/bits/stl_tree.h: In instantiation of 'std::_Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::const_iterator std::_Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::_M_lower_bound(std::_Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::_Const_Link_type, std::_Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::_Const_Link_type, const _Key&) const [with _Key = std::__cxx11::basic_string<char>; _Val = std::pair<const std::__cxx11::basic_string<char>, int>; _KeyOfValue = std::_Select1st<std::pair<const std::__cxx11::basic_string<char>, int> >; _Compare = comparator; _Alloc = std::allocator<std::pair<const std::__cxx11::basic_string<char>, int> >; std::_Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::const_iterator = std::_Rb_tree_const_iterator<std::pair<const std::__cxx11::basic_string<char>, int> >; std::_Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::_Const_Link_type = const std::_Rb_tree_node<std::pair<const std::__cxx11::basic_string<char>, int> >*]':
+/usr/local/include/c++/5.2.0/bits/stl_tree.h:2308:42:   required from 'std::_Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::const_iterator std::_Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::find(const _Key&) const [with _Key = std::__cxx11::basic_string<char>; _Val = std::pair<const std::__cxx11::basic_string<char>, int>; _KeyOfValue = std::_Select1st<std::pair<const std::__cxx11::basic_string<char>, int> >; _Compare = comparator; _Alloc = std::allocator<std::pair<const std::__cxx11::basic_string<char>, int> >; std::_Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::const_iterator = std::_Rb_tree_const_iterator<std::pair<const std::__cxx11::basic_string<char>, int> >]'
+/usr/local/include/c++/5.2.0/bits/stl_map.h:892:31:   required from 'std::map<_Key, _Tp, _Compare, _Alloc>::size_type std::map<_Key, _Tp, _Compare, _Alloc>::count(const key_type&) const [with _Key = std::__cxx11::basic_string<char>; _Tp = int; _Compare = comparator; _Alloc = std::allocator<std::pair<const std::__cxx11::basic_string<char>, int> >; std::map<_Key, _Tp, _Compare, _Alloc>::size_type = long unsigned int; std::map<_Key, _Tp, _Compare, _Alloc>::key_type = std::__cxx11::basic_string<char>]'
+main.cpp:24:27:   required from here
+/usr/local/include/c++/5.2.0/bits/stl_tree.h:1644:6: error: no match for call to '(const comparator) (const std::__cxx11::basic_string<char>&, const std::__cxx11::basic_string<char>&)'
+  if (!_M_impl._M_key_compare(_S_key(__x), __k))
+      ^
+main.cpp:8:10: note: candidate: bool comparator::operator()(std::__cxx11::string, std::__cxx11::string) <near match>
+     bool operator()(const std::string x, const std::string y)
+          ^
+main.cpp:8:10: note:   passing 'const comparator*' as 'this' argument discards qualifiers
