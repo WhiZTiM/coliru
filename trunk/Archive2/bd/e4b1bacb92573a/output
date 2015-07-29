@@ -1,0 +1,8 @@
+main.cpp: In function 'main':
+main.cpp:8:27: warning: format '%lf' expects a matching 'double *' argument [-Wformat=]
+     int n = sscanf(input, "%lf %lf %lf", &a, &b);
+                           ^
+main.cpp:9:12: warning: format '%f' expects a matching 'double' argument [-Wformat=]
+     printf("%d %f %f %f\n", n, a, b);
+            ^
+bash: line 7: 24443 Segmentation fault      (core dumped) ./a.out
