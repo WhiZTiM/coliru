@@ -1,0 +1,4 @@
+Plain::foo
+Templated<i>::foo
+Templated<v>::foo
+Templated<v>::foo
