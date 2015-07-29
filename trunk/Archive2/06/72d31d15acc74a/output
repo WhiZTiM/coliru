@@ -1,0 +1,11 @@
+main.cpp:107:138: error: wrong number of template arguments (0, should be at least 1)
+ auto dgemm(NDcontainer<Container1,extent<2>, Params1...> const& a, NDcontainer<Container2,extent<2>,Params2...> const& b, std::enable_if<>)
+                                                                                                                                          ^
+In file included from /usr/local/include/c++/5.2.0/bits/move.h:57:0,
+                 from /usr/local/include/c++/5.2.0/bits/stl_pair.h:59,
+                 from /usr/local/include/c++/5.2.0/bits/stl_algobase.h:64,
+                 from /usr/local/include/c++/5.2.0/vector:60,
+                 from main.cpp:1:
+/usr/local/include/c++/5.2.0/type_traits:2099:12: note: provided for 'template<bool <anonymous>, class _Tp> struct std::enable_if'
+     struct enable_if 
+            ^
