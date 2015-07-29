@@ -1,0 +1,11 @@
+main.cpp:4:15: error: template parameter redefines default argument
+template <int=1>
+              ^
+main.cpp:2:19: note: previous default template argument defined here
+    template <int=0> void f();
+                  ^
+1 error generated.
+------------------------------------------------------------
+main.cpp:5:11: error: default argument for template parameter for class enclosing 'void A::f()'
+ void A::f(){}
+           ^
