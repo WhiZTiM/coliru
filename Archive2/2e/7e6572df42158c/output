@@ -1,0 +1,7 @@
+main.cpp: In function 'int main()':
+main.cpp:192:20: error: invalid use of 'using shape_ = using type = std::tuple_element<0ul, std::tuple<diagonal_> >::type'
+   std::cout << te1.shape_{} << std::endl;
+                    ^
+main.cpp:192:29: error: expected primary-expression before '<<' token
+   std::cout << te1.shape_{} << std::endl;
+                             ^
