@@ -1,0 +1,10 @@
+main.cpp:15:29: warning: string literal operator templates are a GNU extension [-Wgnu-string-literal-operator-template]
+constexpr tstring<chars...> operator""_tstr() { return { }; }
+                            ^
+main.cpp:35:7: warning: unused variable 't' [-Wunused-variable]
+    T t;
+      ^
+2 warnings generated.
+1
+1XISt16integer_sequenceIcJLc109ELc121ELc95ELc115ELc116ELc114ELc105ELc110ELc103EEEE
+1XISt16integer_sequenceIcJLc109ELc121ELc95ELc115ELc116ELc114ELc105ELc110ELc104EEEE
