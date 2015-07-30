@@ -1,0 +1,9 @@
+~~~~~~G++~~~~~~
+main.cpp:11:7: warning: suffix for double constant is a GCC extension
+     A{1.1d}; // selects (c), ambiguity error without (c)
+       ^
+~~~~CLANG++~~~~
+main.cpp:11:10: error: invalid suffix 'd' on floating constant
+    A{1.1d}; // selects (c), ambiguity error without (c)
+         ^
+1 error generated.
