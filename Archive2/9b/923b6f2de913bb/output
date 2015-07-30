@@ -1,0 +1,23 @@
+typical usage:
+-----------------------
+   stack(deque)  420 millisecs
+  stack(vector)  220 millisecs
+    stack(list) 1800 millisecs
+
+monotonic usage:
+-----------------------
+   stack(deque)  380 millisecs
+  stack(vector)  320 millisecs
+    stack(list) 1840 millisecs
+============================================
+typical usage:
+-----------------------
+   stack(deque)  370 millisecs
+  stack(vector)  240 millisecs
+    stack(list) 1960 millisecs
+
+monotonic usage:
+-----------------------
+   stack(deque)  500 millisecs
+  stack(vector)  320 millisecs
+    stack(list) 1930 millisecs
