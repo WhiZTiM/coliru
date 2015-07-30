@@ -1,0 +1,15 @@
++ clang++ -std=c++14 -O3 -Wall -pedantic-errors main.cpp -stdlib=libc++ -lsupc++
+main.cpp:2:10: warning: implicit conversion from 'double' to 'int' changes value from 7.9 to 7 [-Wliteral-conversion]
+int x1 = 7.9; // x1 becomes 7
+    ~~   ^~~
+main.cpp:3:9: error: type 'double' cannot be narrowed to 'int' in initializer list [-Wc++11-narrowing]
+int x2 {7.9}; // error: narrowing conversion
+        ^~~
+main.cpp:3:9: note: insert an explicit cast to silence this issue
+int x2 {7.9}; // error: narrowing conversion
+        ^~~
+        static_cast<int>( )
+main.cpp:3:9: warning: implicit conversion from 'double' to 'int' changes value from 7.9 to 7 [-Wliteral-conversion]
+int x2 {7.9}; // error: narrowing conversion
+       ~^~~
+2 warnings and 1 error generated.
