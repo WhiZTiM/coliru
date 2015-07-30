@@ -1,0 +1,70 @@
+# 1 "main.cpp"
+# 1 "<built-in>"
+# 1 "<command-line>"
+# 1 "main.cpp"
+# 44 "main.cpp"
+struct Point
+{
+
+    int x;
+
+    int y;
+
+}
+;
+
+
+
+RecursiveAttribute Pack(Point p) {
+ std::vector<RecursiveAttribute> result;
+ result.reserve(2);
+ result.push_back(Pack(p.x));
+ result.push_back(Pack(p.y));
+ return Pack(std::move(result);
+ }
+ void Unpack(const RecursiveAttribute& attr, Point& out) {
+ auto& vec = boost::get<const std::vector<RecursiveAttribute>&>(attr);
+ Unpack(vec.at(0), out.x);
+ Unpack(vec.at(1), out.y));
+ }
+
+
+
+
+struct Stats
+{
+
+    Stats cumulative;
+
+    Stats interval;
+
+    Timestamp timestamp;
+
+}
+;
+
+
+
+RecursiveAttribute Pack(const Stats& p) {
+ std::vector<RecursiveAttribute> result;
+ result.reserve(3);
+ result.push_back(Pack(p.cumulative));
+ result.push_back(Pack(p.interval));
+ result.push_back(Pack(p.timestamp));
+ return Pack(std::move(result));
+ }
+ RecursiveAttribute Pack(Stats&& p) {
+ std::vector<RecursiveAttribute> result;
+ result.reserve(3);
+ result.push_back(Pack(std::move(p.cumulative)));
+ result.push_back(Pack(std::move(p.interval)));
+ result.push_back(Pack(std::move(p.timestamp)));
+ return Pack(std::move(result));
+ }
+ void Unpack(const RecursiveAttribute& attr, Stats& out) {
+ auto& vec = boost::get<const std::vector<RecursiveAttribute>&>(attr);
+ Unpack(vec.at(0), out.cumulative);
+ Unpack(vec.at(1), out.interval);
+ Unpack(vec.at(2), out.timestamp);
+ }
+
