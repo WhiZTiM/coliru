@@ -1,0 +1,7 @@
+main.cpp:13:29: error: no matching function for call to 'make_shared'
+    std::shared_ptr<D> d2 = std::make_shared<D, B1 *>(b1);
+                            ^~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../include/c++/5.2.0/bits/shared_ptr.h:626:5: note: candidate function [with _Tp = D, _Args = <B1 *>] not viable: no known conversion from 'B1 *' to 'B1 *&&' for 1st argument
+    make_shared(_Args&&... __args)
+    ^
+1 error generated.
