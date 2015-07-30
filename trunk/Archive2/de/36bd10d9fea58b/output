@@ -1,0 +1,19 @@
+clang version 3.6.0 (tags/RELEASE_360/final 235480)
+Target: x86_64-unknown-linux-gnu
+Thread model: posix
+main.cpp:1:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+main()
+^
+main.cpp:3:5: warning: implicit declaration of function 'func' is invalid in C99 [-Wimplicit-function-declaration]
+    func();
+    ^
+main.cpp:6:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+func()
+^
+main.cpp:8:2: warning: no newline at end of file [-Wnewline-eof]
+}
+ ^
+main.cpp:8:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+5 warnings generated.

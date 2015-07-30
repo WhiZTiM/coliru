@@ -1,0 +1,1 @@
+clang --version && clang -x c -std=c99 -Wall -Wextra -pedantic main.cpp && ./a.out
