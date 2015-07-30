@@ -1,0 +1,12 @@
+main.cpp: In function 'uint32_t OnesComplementSum(const uint8_t*, int, uint32_t)':
+main.cpp:12:6: warning: variable 'run8' set but not used [-Wunused-but-set-variable]
+ auto run8 = [&]{
+      ^
+loop=CLEAN_LOOP  elapsed_ns=8365  =  14031
+loop=CLEAN_LOOP  elapsed_ns=5793  =  14031
+loop=CLEAN_LOOP  elapsed_ns=5623  =  14031
+loop=CLEAN_LOOP  elapsed_ns=5585  =  14031
+loop=UGLY_LOOP   elapsed_ns=9365  =  14031
+loop=UGLY_LOOP   elapsed_ns=8957  =  14031
+loop=UGLY_LOOP   elapsed_ns=8877  =  14031
+loop=UGLY_LOOP   elapsed_ns=8873  =  14031
