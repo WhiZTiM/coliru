@@ -1,0 +1,4 @@
++ g++ -std=c++14 -O3 -Wall -pedantic-errors main.cpp
+main.cpp:3:12: error: narrowing conversion of '7.9000000000000004e+0' from 'double' to 'int' inside { } [-Wnarrowing]
+ int x2 {7.9}; // error: narrowing conversion
+            ^
