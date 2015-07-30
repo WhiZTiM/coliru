@@ -1,0 +1,8 @@
+loop=CLEAN_LOOP  elapsed_ns=3116
+loop=CLEAN_LOOP  elapsed_ns=3159
+loop=CLEAN_LOOP  elapsed_ns=2958
+loop=CLEAN_LOOP  elapsed_ns=2749
+loop=UGLY_LOOP   elapsed_ns=8944
+loop=UGLY_LOOP   elapsed_ns=8725
+loop=UGLY_LOOP   elapsed_ns=9039
+loop=UGLY_LOOP   elapsed_ns=8932
