@@ -1,0 +1,4 @@
+main.cpp: In function 'void swap(const char**, const char**)':
+main.cpp:10:23: error: cannot convert 'const char*' to 'const char**' in initialization
+  const char** temp = *strA;
+                       ^
