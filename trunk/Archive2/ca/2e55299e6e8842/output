@@ -1,0 +1,12 @@
+clang version 3.6.0 (tags/RELEASE_360/final 235480)
+Target: x86_64-unknown-linux-gnu
+Thread model: posix
+main.cpp:3:5: warning: implicitly declaring library function 'printf' with type 'int (const char *, ...)'
+    printf("Hello, World%c\n", '!');
+    ^
+main.cpp:3:5: note: include the header <stdio.h> or explicitly provide a declaration for 'printf'
+main.cpp:5:2: warning: no newline at end of file [-Wnewline-eof]
+}
+ ^
+2 warnings generated.
+Hello, World!
