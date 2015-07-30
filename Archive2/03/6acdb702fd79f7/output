@@ -1,0 +1,14 @@
+
+
+clang++ ####################################################
+
+main.cpp:11:5: error: call to 'foo' is ambiguous
+    foo({i});
+    ^~~
+main.cpp:2:6: note: candidate function
+void foo(long) {
+     ^
+main.cpp:5:6: note: candidate function
+void foo(short) {
+     ^
+1 error generated.
