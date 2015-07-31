@@ -1,0 +1,20 @@
+clang version 3.6.0 (tags/RELEASE_360/final 235480)
+Target: x86_64-unknown-linux-gnu
+Thread model: posix
+main.cpp:8:21: error: constexpr variable 'b' must be initialized by a constant expression
+        constexpr B b{a};
+                    ^~~~
+main.cpp:8:21: note: reference to 'a' is not a constant expression
+main.cpp:7:21: note: declared here
+        constexpr A a{55};
+                    ^
+1 error generated.
+g++ (GCC) 5.2.0
+Copyright (C) 2015 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+main.cpp: In function 'constexpr int foo()':
+main.cpp:8:24: error: 'B{a}' is not a constant expression
+         constexpr B b{a};
+                        ^
