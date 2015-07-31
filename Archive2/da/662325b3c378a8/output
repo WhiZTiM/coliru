@@ -1,0 +1,4 @@
++ g++-4.6 -O3 -Wall -pedantic-errors main.cpp
++ ./a.out
+Sizeof cout object: 272
+Sizeof cin object: 280

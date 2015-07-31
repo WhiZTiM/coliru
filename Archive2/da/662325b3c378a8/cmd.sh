@@ -1,0 +1,1 @@
+set -x ; g++-4.6  -O3 -Wall -pedantic-errors main.cpp  && ./a.out
