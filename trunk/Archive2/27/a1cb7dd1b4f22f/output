@@ -1,0 +1,7 @@
+main.cpp:15:12: error: cannot cast 'D' to its private base class 'B'
+    B& b = *new D; // error
+           ^
+main.cpp:3:11: note: declared private here
+struct D: private B {
+          ^~~~~~~~~
+1 error generated.
