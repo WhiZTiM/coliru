@@ -1,0 +1,8 @@
+main.cpp:5:16: error: default initialization of an object of const type 'const S' without a user-provided default constructor
+static const S s;
+               ^
+main.cpp:5:17: note: add an explicit initializer to initialize 's'
+static const S s;
+                ^
+                 = {}
+1 error generated.
