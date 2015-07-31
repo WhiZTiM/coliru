@@ -1,0 +1,1 @@
+clang++ -std=gnu++1z -stdlib=libc++ -Weverything -Wno-c++98-compat main.cpp -c
