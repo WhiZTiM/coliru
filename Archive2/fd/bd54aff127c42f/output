@@ -1,0 +1,30 @@
+cc1plus: warning: command line option '-std=c99' is valid for C/ObjC but not for C++
+main.cpp: In function 'int lcss(const char*, int)':
+main.cpp:15:9: error: 'start2' was not declared in this scope
+         start2 = end1;
+         ^
+main.cpp:15:18: error: 'end1' was not declared in this scope
+         start2 = end1;
+                  ^
+main.cpp:18:13: error: 'temp_s1' was not declared in this scope
+             temp_s1 = s1;
+             ^
+main.cpp:19:13: error: 'temp_s2' was not declared in this scope
+             temp_s2 = s2;
+             ^
+main.cpp:28:17: error: 'local_mx' was not declared in this scope
+             if (local_mx > max_len)
+                 ^
+main.cpp:10:9: warning: unused variable 'len1' [-Wunused-variable]
+     int len1 = 1, len2 = 1;; 
+         ^
+main.cpp:10:19: warning: unused variable 'len2' [-Wunused-variable]
+     int len1 = 1, len2 = 1;; 
+                   ^
+main.cpp: In function 'int main(int, const char**)':
+main.cpp:43:25: error: too few arguments to function 'int lcss(const char*, int)'
+     printf(lcss("banana"));
+                         ^
+main.cpp:3:5: note: declared here
+ int lcss(const char *s1, int len) 
+     ^
