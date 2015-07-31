@@ -1,0 +1,24 @@
+main.cpp: In function 'int main()':
+main.cpp:16:52: error: no matching function for call to 'distance(std::vector<std::__cxx11::basic_string<char> >::const_iterator, std::vector<std::__cxx11::basic_string<char> >::iterator)'
+     std::cout << distance(cbegin(words), end(words));
+                                                    ^
+main.cpp:6:5: note: candidate: template<class T> int distance(typename T::const_iterator, typename T::iterator)
+ int distance(typename T::const_iterator lhs, typename T::iterator rhs){
+     ^
+main.cpp:6:5: note:   template argument deduction/substitution failed:
+main.cpp:16:52: note:   couldn't deduce template parameter 'T'
+     std::cout << distance(cbegin(words), end(words));
+                                                    ^
+In file included from /usr/local/include/c++/5.2.0/bits/stl_algobase.h:66:0,
+                 from /usr/local/include/c++/5.2.0/bits/char_traits.h:39,
+                 from /usr/local/include/c++/5.2.0/ios:40,
+                 from /usr/local/include/c++/5.2.0/ostream:38,
+                 from /usr/local/include/c++/5.2.0/iostream:39,
+                 from main.cpp:1:
+/usr/local/include/c++/5.2.0/bits/stl_iterator_base_funcs.h:114:5: note: candidate: template<class _InputIterator> typename std::iterator_traits<_Iterator>::difference_type std::distance(_InputIterator, _InputIterator)
+     distance(_InputIterator __first, _InputIterator __last)
+     ^
+/usr/local/include/c++/5.2.0/bits/stl_iterator_base_funcs.h:114:5: note:   template argument deduction/substitution failed:
+main.cpp:16:52: note:   deduced conflicting types for parameter '_InputIterator' ('__gnu_cxx::__normal_iterator<const std::__cxx11::basic_string<char>*, std::vector<std::__cxx11::basic_string<char> > >' and '__gnu_cxx::__normal_iterator<std::__cxx11::basic_string<char>*, std::vector<std::__cxx11::basic_string<char> > >')
+     std::cout << distance(cbegin(words), end(words));
+                                                    ^
