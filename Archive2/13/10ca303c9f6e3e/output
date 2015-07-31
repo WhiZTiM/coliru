@@ -1,0 +1,4 @@
+main.cpp: In function 'main':
+main.cpp:9:12: warning: initialization from incompatible pointer type [-Wincompatible-pointer-types]
+   int *p = n;
+            ^
