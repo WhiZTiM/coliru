@@ -1,0 +1,21 @@
+main.cpp: In function 'void remove(int, node*&)':
+main.cpp:18:10: error: 'temp' was not declared in this scope
+    node* temp = node; 
+          ^
+main.cpp:41:11: error: 'leftnode' was not declared in this scope
+     node* leftnode = node ->left; 
+           ^
+main.cpp:42:11: error: 'rightnode' was not declared in this scope
+     node* rightnode = node ->right; 
+           ^
+main.cpp:49:11: error: 'temp_parent' was not declared in this scope
+     node* temp_parent = node; 
+           ^
+main.cpp: In function 'void print_ptree(node*, int)':
+main.cpp:89:42: error: 'print_tree' was not declared in this scope
+         print_tree(root->left, indent + 1);
+                                          ^
+main.cpp: In function 'int main()':
+main.cpp:110:20: error: 'print_tree' was not declared in this scope
+     print_tree(root);
+                    ^
