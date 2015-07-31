@@ -1,0 +1,4 @@
+main.cpp: In function 'int main()':
+main.cpp:2:15: error: 'long long long' is too long for GCC
+     long long long x = 0;
+               ^
