@@ -1,0 +1,11 @@
+Program input: no input
+scanf return value is -1. v1 has value 'x'. v2 has value 'x'.
+
+Program input: xxx
+scanf return value is 0. v1 has value 'x'. v2 has value 'x'.
+
+Program input: --a
+scanf return value is 1. v1 has value 'a'. v2 has value 'x'.
+
+Program input: --a--b--
+scanf return value is 2. v1 has value 'a'. v2 has value 'b'.
