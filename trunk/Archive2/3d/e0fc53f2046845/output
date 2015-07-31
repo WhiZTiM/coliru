@@ -1,0 +1,15 @@
+"-123.456" ? true
+"45fg" ? false
+"1.0e-23" ? true
+"inf" ? true
+"nan" ? true
+"" ? false
+"0xab.cdP+55" ? true
+============================================
+"-123.456" ? true
+"45fg" ? false
+"1.0e-23" ? true
+"inf" ? true
+"nan" ? true
+"" ? false
+"0xab.cdP+55" ? true
