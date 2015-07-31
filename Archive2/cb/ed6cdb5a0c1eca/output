@@ -1,0 +1,22 @@
+main.cpp: In function 'main':
+main.cpp:20:5: warning: format '%u' expects argument of type 'unsigned int', but argument 2 has type 'time_t' [-Wformat=]
+     printf("\next: %u", t);
+     ^
+main.cpp:27:5: warning: format '%u' expects argument of type 'unsigned int', but argument 2 has type 'time_t' [-Wformat=]
+     printf("\next: %u", t);
+     ^
+main.cpp:33:5: warning: format '%u' expects argument of type 'unsigned int', but argument 2 has type 'time_t' [-Wformat=]
+     printf("\next: %u", t);
+     ^
+main.cpp:13:10: warning: unused variable 'str' [-Wunused-variable]
+     char str[26];
+          ^
+main.cpp:12:15: warning: unused variable 'buf' [-Wunused-variable]
+     struct tm buf;        
+               ^
+
+ext: 1438331234Fri Jul 31 08:27:14 2015
+
+ext: 1438334834Fri Jul 31 09:27:14 2015
+
+ext: 1438338434Fri Jul 31 10:27:14 2015
