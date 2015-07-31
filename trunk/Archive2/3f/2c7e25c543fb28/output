@@ -1,0 +1,4 @@
+main.cpp:10:1: error: static_assert failed "2"
+static_assert(std::is_volatile< decltype(a.i) >{}, "2");
+^             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+1 error generated.
