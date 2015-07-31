@@ -1,0 +1,10 @@
+main.cpp:18:10: warning: 'made_by_me' attribute directive ignored [-Wattributes]
+ int main()
+          ^
+main.cpp: In function 'void q(int)':
+main.cpp:12:1: warning: 'noreturn' function does return
+ }
+ ^
+Test
+terminate called after throwing an instance of 'char const*'
+bash: line 7: 18021 Aborted                 (core dumped) ./a.out
