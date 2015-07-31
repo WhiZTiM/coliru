@@ -1,0 +1,31 @@
+          6.235          6.235              6          6.235
+      345835866      345835866        <error>      345835866
+         345,40            345        <error>        <error>
+------------------------------------------------------------
+          Value           tata           tutu   lexical_cast
+------------------------------------------------------------
+            -1.             -1             -1             -1
+         1.0e10          1e+10              1          1e+10
+        -1.3e23       -1.3e+23             -1       -1.3e+23
+          -1,45             -1        <error>        <error>
+          +1,45              1        <error>        <error>
+           1.45           1.45              1           1.45
+          +1.45           1.45              1           1.45
+              +        <error>        <error>        <error>
+     +zdaij1.45        <error>        <error>        <error>
+           toto        <error>        <error>        <error>
+        123 123            123        <error>        <error>
+           1'23              1        <error>        <error>
+           1"23              1        <error>        <error>
+           &é"        <error>        <error>        <error>
+ é"'(-è_çà)        <error>        <error>        <error>
+  &"'(-è_çà)        <error>        <error>        <error>
+ &é'(-è_çà)        <error>        <error>        <error>
+ &é"(-è_çà)        <error>        <error>        <error>
+ &é"'-è_çà)        <error>        <error>        <error>
+ &é"'(è_çà)        <error>        <error>        <error>
+  &é"'(-_çà)        <error>        <error>        <error>
+ &é"'(-èçà)        <error>        <error>        <error>
+  &é"'(-è_à)        <error>        <error>        <error>
+  &é"'(-è_ç)        <error>        <error>        <error>
+ &é"'(-è_çà        <error>        <error>        <error>
