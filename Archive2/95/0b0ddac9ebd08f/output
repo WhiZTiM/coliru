@@ -1,0 +1,5 @@
+main.cpp: In function 'int main()':
+main.cpp:37:13: warning: variable 'e' set but not used [-Wunused-but-set-variable]
+     EnConst e;
+             ^
+Hello from GCC 5.2.0 ! 
