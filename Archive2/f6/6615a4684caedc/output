@@ -1,0 +1,36 @@
+~~~~~~G++~~~~~~
+---PART I---
+first value of unique pointer
+second value of unique pointer
+
+---PART II---
+Making a B
+A constructed
+B created with 13 as internal value.
+
+Contents of customPtr: 13
+
+aDeleter Releasing A
+A::Release
+13 values released. Now have 0
+aDeleter Deleting A
+Destroying a B with 0 as internal value.
+A destructed
+~~~~CLANG++~~~~
+---PART I---
+first value of unique pointer
+second value of unique pointer
+
+---PART II---
+Making a B
+A constructed
+B created with 13 as internal value.
+
+Contents of customPtr: 13
+
+aDeleter Releasing A
+A::Release
+13 values released. Now have 0
+aDeleter Deleting A
+Destroying a B with 0 as internal value.
+A destructed
