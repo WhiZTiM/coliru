@@ -1,0 +1,18 @@
+~~~~~~G++~~~~~~
+Foo constructed with string Zilch
+Foo destructed with string Zilch
+Foo constructed with string Zot
+Foo destructed with string Zot
+Foo constructed with string Zod
+Foo constructed with string Zwieback
+Foo destructed with string Zwieback
+Foo destructed with string Zod
+~~~~CLANG++~~~~
+Foo constructed with string Zilch
+Foo destructed with string Zilch
+Foo constructed with string Zot
+Foo destructed with string Zot
+Foo constructed with string Zod
+Foo constructed with string Zwieback
+Foo destructed with string Zwieback
+Foo destructed with string Zod
