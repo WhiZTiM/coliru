@@ -1,0 +1,3 @@
+main.cpp:11:1: error: static assertion failed: 
+ static_assert(arr[0] == 1, "");
+ ^
