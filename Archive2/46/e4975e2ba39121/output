@@ -1,0 +1,18 @@
+In file included from main.cpp:1:
+./implementation.hpp:46:5: warning: inline function 'visitor::apply<C &>' is not defined [-Wundefined-inline]
+    apply(T &&) const
+    ^
+./implementation.hpp:22:80: note: used here
+        return boost::apply_visitor([this] (auto && x) -> result_type { return apply(std::forward< decltype(x) >(x)); }, v);
+                                                                               ^
+./implementation.hpp:46:5: warning: inline function 'visitor::apply<B &>' is not defined [-Wundefined-inline]
+    apply(T &&) const
+    ^
+./implementation.hpp:22:80: note: used here
+        return boost::apply_visitor([this] (auto && x) -> result_type { return apply(std::forward< decltype(x) >(x)); }, v);
+                                                                               ^
+2 warnings generated.
+/tmp/main-15cb25.o: In function `_ZN5boost6detail7variant15visitation_implIN4mpl_4int_ILi0EEENS1_20visitation_impl_stepINS_3mpl6l_iterINS7_6l_itemINS3_5long_ILl3EEE1ANS9_INSA_ILl2EEE1BNS9_INSA_ILl1EEE1CNS7_5l_endEEEEEEEEENS8_ISH_EEEENS1_14invoke_visitorINS1_15result_wrapper1IKZNK7visitorclENS_7variantISC_JSE_SG_EEEEUlOT_E_SS_EEEEPvNSS_18has_fallback_type_EEENT1_11result_typeEiiRS11_T2_NS3_5bool_ILb0EEET3_PST_PT0_':
+main.cpp:(.text._ZN5boost6detail7variant15visitation_implIN4mpl_4int_ILi0EEENS1_20visitation_impl_stepINS_3mpl6l_iterINS7_6l_itemINS3_5long_ILl3EEE1ANS9_INSA_ILl2EEE1BNS9_INSA_ILl1EEE1CNS7_5l_endEEEEEEEEENS8_ISH_EEEENS1_14invoke_visitorINS1_15result_wrapper1IKZNK7visitorclENS_7variantISC_JSE_SG_EEEEUlOT_E_SS_EEEEPvNSS_18has_fallback_type_EEENT1_11result_typeEiiRS11_T2_NS3_5bool_ILb0EEET3_PST_PT0_[_ZN5boost6detail7variant15visitation_implIN4mpl_4int_ILi0EEENS1_20visitation_impl_stepINS_3mpl6l_iterINS7_6l_itemINS3_5long_ILl3EEE1ANS9_INSA_ILl2EEE1BNS9_INSA_ILl1EEE1CNS7_5l_endEEEEEEEEENS8_ISH_EEEENS1_14invoke_visitorINS1_15result_wrapper1IKZNK7visitorclENS_7variantISC_JSE_SG_EEEEUlOT_E_SS_EEEEPvNSS_18has_fallback_type_EEENT1_11result_typeEiiRS11_T2_NS3_5bool_ILb0EEET3_PST_PT0_]+0x2f): undefined reference to `void visitor::apply<B&>(B&) const'
+main.cpp:(.text._ZN5boost6detail7variant15visitation_implIN4mpl_4int_ILi0EEENS1_20visitation_impl_stepINS_3mpl6l_iterINS7_6l_itemINS3_5long_ILl3EEE1ANS9_INSA_ILl2EEE1BNS9_INSA_ILl1EEE1CNS7_5l_endEEEEEEEEENS8_ISH_EEEENS1_14invoke_visitorINS1_15result_wrapper1IKZNK7visitorclENS_7variantISC_JSE_SG_EEEEUlOT_E_SS_EEEEPvNSS_18has_fallback_type_EEENT1_11result_typeEiiRS11_T2_NS3_5bool_ILb0EEET3_PST_PT0_[_ZN5boost6detail7variant15visitation_implIN4mpl_4int_ILi0EEENS1_20visitation_impl_stepINS_3mpl6l_iterINS7_6l_itemINS3_5long_ILl3EEE1ANS9_INSA_ILl2EEE1BNS9_INSA_ILl1EEE1CNS7_5l_endEEEEEEEEENS8_ISH_EEEENS1_14invoke_visitorINS1_15result_wrapper1IKZNK7visitorclENS_7variantISC_JSE_SG_EEEEUlOT_E_SS_EEEEPvNSS_18has_fallback_type_EEENT1_11result_typeEiiRS11_T2_NS3_5bool_ILb0EEET3_PST_PT0_]+0x41): undefined reference to `void visitor::apply<C&>(C&) const'
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
