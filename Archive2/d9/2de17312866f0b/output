@@ -1,0 +1,25 @@
+
+
+clang++ ####################################################
+
+0
+1
+0
+
+
+g++ ####################################################
+
+main.cpp:28:8: warning: virtual base 'A' inaccessible in 'D' due to ambiguity [-Wextra]
+ struct D : B, C {};
+        ^
+main.cpp: In instantiation of 'struct make_diamond<A, B>::type':
+main.cpp:31:42:   required from here
+main.cpp:13:12: warning: virtual base 'A' inaccessible in 'make_diamond<A, B>::type' due to ambiguity [-Wextra]
+     struct type : Derived, D2 { };
+            ^
+main.cpp: In instantiation of 'struct make_diamond<A, D>::type':
+main.cpp:33:42:   required from here
+main.cpp:13:12: warning: virtual base 'A' inaccessible in 'make_diamond<A, D>::type' due to ambiguity [-Wextra]
+0
+1
+0
