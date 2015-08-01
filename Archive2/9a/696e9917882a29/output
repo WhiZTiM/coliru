@@ -1,0 +1,17 @@
+
+
+clang++ ####################################################
+
+main.cpp:5:14: warning: expression result unused [-Wunused-value]
+int main() { operator""_x; }
+             ^~~~~~~~~~~~
+1 warning generated.
+
+
+g++ ####################################################
+
+main.cpp: In function 'int main()':
+main.cpp:5:26: warning: statement is a reference, not call, to function 'operator""_x' [-Waddress]
+ int main() { operator""_x; }
+                          ^
+main.cpp:5:26: warning: statement has no effect [-Wunused-value]
