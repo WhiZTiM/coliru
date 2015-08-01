@@ -1,0 +1,6 @@
+main.cpp:23:16: warning: variable 'chk' is uninitialized when used within its own initialization [-Wuninitialized]
+    test chk = chk;
+         ~~~   ^~~
+1 warning generated.
+
+copy ctor
