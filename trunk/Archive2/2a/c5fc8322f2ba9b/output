@@ -1,0 +1,16 @@
+main.cpp:51:5: warning: function '(anonymous namespace)::visitor::apply<(anonymous namespace)::B &>' has internal linkage but is not defined [-Wundefined-internal]
+    apply(T &&) const
+    ^
+main.cpp:27:80: note: used here
+        return boost::apply_visitor([this] (auto && x) -> result_type { return apply(std::forward< decltype(x) >(x)); }, v);
+                                                                               ^
+main.cpp:51:5: warning: function '(anonymous namespace)::visitor::apply<(anonymous namespace)::C &>' has internal linkage but is not defined [-Wundefined-internal]
+    apply(T &&) const
+    ^
+main.cpp:27:80: note: used here
+        return boost::apply_visitor([this] (auto && x) -> result_type { return apply(std::forward< decltype(x) >(x)); }, v);
+                                                                               ^
+2 warnings generated.
+/tmp/main-c41844.o: In function `main':
+main.cpp:(.text+0x17): undefined reference to `void (anonymous namespace)::visitor::apply<(anonymous namespace)::B&>((anonymous namespace)::B&) const'
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
