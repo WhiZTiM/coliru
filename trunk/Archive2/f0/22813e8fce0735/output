@@ -1,0 +1,18 @@
+emplace_back:
+I am being constructed.
+
+push_back:
+I am being constructed.
+I am being moved.
+
+push_back existing object:
+I am being constructed.
+A
+I am being copied.
+I am being copied.
+B
+
+Contents:
+Nelson Mandela was elected president of South Africa in 1994.
+Franklin Delano Roosevelt was re-elected president of the USA in 1936.
+Franklin Delano Roosevelt2 was re-elected president of the USA in 1936.
