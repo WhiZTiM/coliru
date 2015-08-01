@@ -1,0 +1,1 @@
+ln -s /Archive2/af/ff8bdf3e79cbef/main.cpp implementation.hpp ; clang++ -I. -std=gnu++1z -stdlib=libc++ -march=native -Ofast -W -Weverything -Wno-c++98-compat -Wno-c++98-compat-pedantic -Wno-padded -Wno-newline-eof main.cpp && time ./a.out
