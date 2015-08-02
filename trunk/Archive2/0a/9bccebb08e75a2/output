@@ -1,0 +1,14 @@
++ clang -x c -O3 -std=c99 -Wall -pedantic-errors main.cpp
+main.cpp:7:9: error: use of undeclared identifier 'NULL'
+    fun(NULL); // error
+        ^
+main.cpp:10:5: warning: array argument is too small; contains 5 elements, callee requires at least 20 [-Warray-bounds]
+    fun(x); // error
+    ^   ~
+main.cpp:1:14: note: callee declares array parameter as static here
+void fun(int x[static 20])
+             ^~~~~~~~~~~~
+main.cpp:11:2: error: no newline at end of file [-Werror,-Wnewline-eof]
+}
+ ^
+1 warning and 2 errors generated.
