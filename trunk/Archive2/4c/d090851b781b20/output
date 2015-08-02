@@ -1,0 +1,4 @@
+main.cpp:4:17: warning: unused variable 's' [-Wunused-variable]
+    constexpr S s = S();
+                ^
+1 warning generated.
