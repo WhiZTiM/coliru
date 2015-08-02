@@ -1,0 +1,17 @@
++ clang -x c -O3 -std=c99 -Wall -pedantic-errors main.cpp
+main.cpp:9:5: warning: null passed to a callee that requires a non-null argument [-Wnonnull]
+    fun(NULL); // error
+    ^   ~~~~
+main.cpp:3:14: note: callee declares array parameter as static here
+void fun(int x[static 10])
+             ^~~~~~~~~~~~
+main.cpp:12:5: warning: array argument is too small; contains 5 elements, callee requires at least 10 [-Warray-bounds]
+    fun(x); // error
+    ^   ~
+main.cpp:3:14: note: callee declares array parameter as static here
+void fun(int x[static 10])
+             ^~~~~~~~~~~~
+main.cpp:13:2: error: no newline at end of file [-Werror,-Wnewline-eof]
+}
+ ^
+2 warnings and 1 error generated.
