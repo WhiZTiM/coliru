@@ -1,0 +1,4 @@
+main.cpp: In function 'int main()':
+main.cpp:10:16: error: request for member 'size' in 'words', which is of non-class type 'std::vector<std::__cxx11::basic_string<char> >(std::istream_iterator<std::__cxx11::basic_string<char> >, std::istream_iterator<std::__cxx11::basic_string<char> > (*)())'
+  cout << words.size();
+                ^
