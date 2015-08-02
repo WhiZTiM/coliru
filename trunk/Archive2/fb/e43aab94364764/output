@@ -1,0 +1,5 @@
+main.cpp: In function 'void f2(PtrContainerT&&)':
+main.cpp:7:63: warning: typedef 'using T = typename PtrContainerT::element_type::value_type' locally defined but not used [-Wunused-local-typedefs]
+     using T = typename PtrContainerT::element_type::value_type; //in case you need to know T
+                                                               ^
+bla
