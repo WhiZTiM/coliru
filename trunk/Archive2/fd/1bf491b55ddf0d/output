@@ -1,0 +1,4 @@
+main.cpp:9:7: warning: unused variable 's' [-Wunused-variable]
+    S s = S(); 
+      ^
+1 warning generated.
