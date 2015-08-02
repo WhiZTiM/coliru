@@ -1,0 +1,7 @@
+Buying orders for 15, sorted by timestamp
+BUY, 15, 0
+BUY, 15, 1
+Cheapest selling order
+SELL, 16, 3
+Costliest buying order
+BUY, 15, 1
