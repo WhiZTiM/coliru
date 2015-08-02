@@ -1,0 +1,14 @@
+main.cpp: In function 'int main()':
+main.cpp:9:43: error: no matching function for call to 'f(std::shared_ptr<std::vector<int> >)'
+     f(std::make_shared<std::vector<int>>());
+                                           ^
+main.cpp:6:13: note: candidate: template<template<class> class Ptr, template<class> class Container, class T> void f(Ptr<Container<T> >)
+ inline void f(Ptr<Container<T>> p) {}
+             ^
+main.cpp:6:13: note:   template argument deduction/substitution failed:
+main.cpp:9:43: error: wrong number of template arguments (2, should be 1)
+     f(std::make_shared<std::vector<int>>());
+                                           ^
+main.cpp:5:59: note: provided for 'template<class> class Container'
+ template<template<class> class Ptr, template<class> class Container, class T>
+                                                           ^
