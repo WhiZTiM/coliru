@@ -1,0 +1,4 @@
+main.cpp:10:11: error: excess elements in struct initializer
+    Foo y{x}; // error here
+          ^
+1 error generated.
