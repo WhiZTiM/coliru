@@ -1,0 +1,6 @@
+main.cpp:10:10: error: 'void Derived::sayHi()' marked 'override', but does not override
+     void sayHi()          override {}
+          ^
+main.cpp:11:10: error: 'void Derived::sayHello() const' marked 'override', but does not override
+     void sayHello() const override {}
+          ^
