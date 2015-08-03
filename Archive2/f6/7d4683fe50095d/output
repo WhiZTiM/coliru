@@ -1,0 +1,40 @@
++ g++ -std=c++1y -O2 -Wall -Wextra -pedantic -pthread main.cpp
++ ./a.out
+Constructor val=0
+Constructor val=1
+Constructor val=2
+Constructor val=3
+Constructor val=4
+Constructor val=5
+Constructor val=6
+Constructor val=7
+Destructor val=7
+Destructor val=6
+Destructor val=5
+Destructor val=4
+Destructor val=3
+Destructor val=2
+Destructor val=1
+Destructor val=0
++ clang++ -std=c++1y -O2 -Wall -Wextra -pedantic -pthread main.cpp
+main.cpp:14:8: warning: unused variable 'sc' [-Wunused-variable]
+    SM sc[8] = { {0},{1},{2},{3},{4},{5},{6},{7} };
+       ^
+1 warning generated.
++ ./a.out
+Constructor val=0
+Constructor val=1
+Constructor val=2
+Constructor val=3
+Constructor val=4
+Constructor val=5
+Constructor val=6
+Constructor val=7
+Destructor val=7
+Destructor val=6
+Destructor val=5
+Destructor val=4
+Destructor val=3
+Destructor val=2
+Destructor val=1
+Destructor val=0
