@@ -1,0 +1,15 @@
++ clang++ -std=c++14 -O3 -Wall -pedantic -Wextra -pthread -Wno-unused-variable -Wno-unused-parameter -Wconversion -fno-elide-constructors -stdlib=libc++ main.cpp -lsupc++
+main.cpp:5:16: error: functions that differ only in their return type cannot be overloaded
+    friend int f(A &);
+           ~~~ ^
+main.cpp:4:17: note: previous declaration is here
+    friend void f(A &);
+           ~~~~ ^
+1 error generated.
++ g++-4.9 -std=c++11 -O3 -Wall -pedantic -Wextra -pthread -Wno-unused-variable -Wno-unused-parameter -Wconversion main.cpp
+main.cpp:5:21: error: ambiguating new declaration of 'int N::f(N::A&)'
+     friend int f(A &);
+                     ^
+main.cpp:4:17: note: old declaration 'void N::f(N::A&)'
+     friend void f(A &);
+                 ^
