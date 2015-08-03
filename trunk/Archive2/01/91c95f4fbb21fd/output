@@ -1,0 +1,13 @@
+main.cpp:21:5: error: no matching function for call to 'runLengthEncodingCompressBytes'
+    runLengthEncodingCompressBytes(std::begin(truc), std::end(truc), &Foo::i, 0);
+    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+main.cpp:4:10: note: candidate template ignored: deduced conflicting types for parameter 'Integer' ('char' vs. 'int')
+unsigned runLengthEncodingCompressBytes(Ite begin, Ite end, Integer T::*const field, Integer marker)
+         ^
+main.cpp:22:5: error: no matching function for call to 'runLengthEncodingDecompressBytes'
+    runLengthEncodingDecompressBytes(std::begin(truc), std::end(truc), &Foo::i, 0);
+    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+main.cpp:10:10: note: candidate template ignored: deduced conflicting types for parameter 'Integer' ('char' vs. 'int')
+unsigned runLengthEncodingDecompressBytes(Ite begin, Ite end, Integer T::*const field, Integer marker)
+         ^
+2 errors generated.
