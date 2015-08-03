@@ -1,0 +1,13 @@
+In file included from /usr/include/c++/4.6/type_traits:35:0,
+                 from main.cpp:2:
+/usr/include/c++/4.6/bits/c++0x_warning.h:32:2: error: #error This file requires compiler and library support for the upcoming ISO C++ standard, C++0x. This support is currently experimental, and must be enabled with the -std=c++0x or -std=gnu++0x compiler options.
+main.cpp:4:12: error: variable or field 'f' declared void
+main.cpp:4:15: error: taking the address of a label is non-standard [-pedantic]
+main.cpp:4:15: error: label 'x' referenced outside of any function
+main.cpp:4:16: error: cast from 'void*' to 'int' loses precision [-fpermissive]
+main.cpp:4:19: error: invalid types 'int[int]' for array subscript
+main.cpp:13:22: error: expected unqualified-id before 'using'
+main.cpp: In function 'int main()':
+main.cpp:18:12: error: 'f' was not declared in this scope
+main.cpp:21:7: error: 'identity' was not declared in this scope
+main.cpp:21:16: error: expected primary-expression before 'int'
