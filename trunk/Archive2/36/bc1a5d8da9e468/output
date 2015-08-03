@@ -1,0 +1,4 @@
+main.cpp:39:7: warning: unused variable 'b' [-Wunused-variable]
+    B b = B::vip_access::call_default();
+      ^
+1 warning generated.
