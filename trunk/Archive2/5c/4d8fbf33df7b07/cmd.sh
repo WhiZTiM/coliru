@@ -1,0 +1,2 @@
+set -x; g++ -std=c++1z -O2 -Wall -Wextra -pedantic -pthread main.cpp && ./a.out
+clang++ -std=c++1z -O2 -Wall -Wextra -pedantic -pthread main.cpp && ./a.out
