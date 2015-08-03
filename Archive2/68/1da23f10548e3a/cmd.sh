@@ -1,0 +1,1 @@
+clang++ main.cpp -lboost_thread -lboost_system -lboost_filesystem -lboost_log -pthread -DBOOST_LOG_DYN_LINK  &&  ./a.out
