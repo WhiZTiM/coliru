@@ -1,0 +1,18 @@
+
+
+clang++ ####################################################
+
+main.cpp:33:5: warning: delete called on 'A1' that is abstract but has non-virtual destructor [-Wdelete-non-virtual-dtor]
+    delete pa1;
+    ^
+main.cpp:42:5: warning: cannot delete expression with pointer-to-'void' type 'void *' [-Wdelete-incomplete]
+    delete dynamic_cast<void*>(pa2);
+    ^      ~~~~~~~~~~~~~~~~~~~~~~~~
+2 warnings generated.
+sizeof(A1): 8
+sizeof(A2): 8
+sizeof(B): 16
+b: 0x2172c20
+pa1: 0x2172c20
+b: 0x2172c20
+pa2: 0x2172c48
