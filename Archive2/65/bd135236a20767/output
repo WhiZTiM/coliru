@@ -1,0 +1,24 @@
+main.cpp: In member function 'constexpr std::function<void()> eval::operator()(std::size_t) const':
+main.cpp:49:38: error: 'x' is not a constant expression
+             return &MyClass<MyEnum(x)>::doStuff;
+                                      ^
+main.cpp:49:38: note: in template argument for type 'MyEnum' 
+main.cpp:48:41: error: invalid return type 'std::function<void()>' of constexpr function 'constexpr std::function<void()> eval::operator()(std::size_t) const'
+         constexpr std::function<void()> operator() ( const size_t x ) const {
+                                         ^
+In file included from main.cpp:4:0:
+/usr/local/include/c++/5.2.0/functional:1974:11: note: 'std::function<void()>' is not literal because:
+     class function<_Res(_ArgTypes...)>
+           ^
+/usr/local/include/c++/5.2.0/functional:1974:11: note:   'std::function<void()>' has a non-trivial destructor
+main.cpp: In function 'int main()':
+main.cpp:54:99: error: the type 'const std::array<std::function<void()>, 2ul>' of constexpr variable 'v' is not literal
+     constexpr auto v = MakeArray<std::function<void()>, static_cast<size_t>(MyEnum::_size)>(eval{});
+                                                                                                   ^
+In file included from /usr/local/include/c++/5.2.0/tuple:39:0,
+                 from /usr/local/include/c++/5.2.0/functional:55,
+                 from main.cpp:4:
+/usr/local/include/c++/5.2.0/array:89:12: note: 'std::array<std::function<void()>, 2ul>' is not literal because:
+     struct array
+            ^
+/usr/local/include/c++/5.2.0/array:89:12: note:   'std::array<std::function<void()>, 2ul>' has a non-trivial destructor
