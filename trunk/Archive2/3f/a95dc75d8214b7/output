@@ -1,0 +1,9 @@
+main.cpp:5:16: warning: format specifies type 'char *' but the argument has type 'int' [-Wformat]
+    printf( f, 42 );
+            ~  ^~
+main.cpp:4:28: note: format string is defined here
+    const char* const f = "%s\n";
+                           ^~
+                           %d
+1 warning generated.
+bash: line 7:  7021 Segmentation fault      (core dumped) ./a.out
