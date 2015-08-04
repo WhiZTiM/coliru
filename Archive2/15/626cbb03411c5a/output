@@ -1,0 +1,12 @@
+clang version 3.6.0 (tags/RELEASE_360/final 235480)
+Target: x86_64-unknown-linux-gnu
+Thread model: posix
+/tmp/main-2adec5.o: In function `main':
+main.cpp:(.text+0x3): undefined reference to `Foo<int>::nested'
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+g++ (GCC) 5.2.0
+Copyright (C) 2015 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+They are  NOT the same
