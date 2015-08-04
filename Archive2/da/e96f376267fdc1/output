@@ -1,0 +1,673 @@
+boost version:1_58
+long double
+------------------------------------------------------------------------------------------------------------------------------------
+                 Value          lexical_cast                  tata                 diff.               status.
+------------------------------------------------------------------------------------------------------------------------------------
+         1.18973e+4932         1.18973e+4932         1.18973e+4932         3.48276e+4914                    ok                   max
+          3.3621e-4932          3.3621e-4932          3.3621e-4932        -9.84204e-4950                    ok                   min
+                   -1.                    -1                    -1                     0                    ok                      
+                1.0e10                 1e+10                 1e+10                     0                    ok                      
+               -1.3e23              -1.3e+23              -1.3e+23                     0                    ok                      
+                  1.45                  1.45                  1.45                     0                    ok                      
+                 +1.45                  1.45                  1.45                     0                    ok                      
+                     0                     0                     0                     0                    ok                      
+                     1                     1                     1                     0                    ok                      
+            1987651432           1.98765e+09           1.98765e+09                     0                    ok                      
+            4294967295           4.29497e+09           4.29497e+09                     0                    ok                      
+            4294967296           4.29497e+09           4.29497e+09                     0                    ok                      
+           -4294967296          -4.29497e+09          -4.29497e+09                     0                    ok                      
+  18446744073709551615           1.84467e+19           1.84467e+19                     0                    ok                      
+  18446744073709551616           1.84467e+19           1.84467e+19                     0                    ok                      
+                    0.                     0                     0                     0                    ok                      
+                    1.                     1                     1                     0                    ok                      
+                    1,               <error>               <error>                     0                    ok                      
+                   -0.                    -0                    -0                     0                    ok                      
+                   +0.                     0                     0                     0                    ok                      
+                 0.264                 0.264                 0.264                     0                    ok                      
+                  .274                 0.274                 0.274                     0                    ok                      
+                 -.274                -0.274                -0.274                     0                    ok                      
+                 +.274                 0.274                 0.274                     0                    ok                      
+            235620.264                235620                235620                     0                    ok                      
+  234567890.9874651342           2.34568e+08           2.34568e+08                     0                    ok                      
+                     .               <error>               <error>                     0                    ok                      
+             234.567.2               <error>               <error>                     0                    ok                      
+                                     <error>               <error>                     0                    ok                      
+                    ¤               <error>               <error>                     0                    ok                      
+                    ²               <error>               <error>                     0                    ok                      
+                     -               <error>               <error>                     0                    ok                      
+                     +               <error>               <error>                     0                    ok                      
+            +zdaij1.45               <error>               <error>                     0                    ok                      
+                  toto               <error>               <error>                     0                    ok                      
+               123 123               <error>               <error>                     0                    ok                      
+                  1'23               <error>               <error>                     0                    ok                      
+                  1"23               <error>               <error>                     0                    ok                      
+                 -1,45               <error>               <error>                     0                    ok                      
+                 +1,45               <error>               <error>                     0                    ok                      
+                  true               <error>               <error>                     0                    ok                      
+                 false               <error>               <error>                     0                    ok                      
+                    on               <error>               <error>                     0                    ok                      
+                   off               <error>               <error>                     0                    ok                      
+         &"'(-è_çà)               <error>               <error>                     0                    ok                      
+                  -inf                  -inf                  -inf                  -nan                    ok                      
+                  +inf                   inf                   inf                  -nan                    ok                      
+                   inf                   inf                   inf                  -nan                    ok                      
+             -infinity                  -inf                  -inf                  -nan                    ok                      
+             +infinity                   inf                   inf                  -nan                    ok                      
+                   nan                   nan                   nan                   nan                    ok                      
+                   NaN                   nan                   nan                   nan                    ok                      
+double
+------------------------------------------------------------------------------------------------------------------------------------
+                 Value          lexical_cast                  tata                 diff.               status.
+------------------------------------------------------------------------------------------------------------------------------------
+          1.79769e+308          1.79769e+308          1.79769e+308                     0                    ok                   max
+          2.22507e-308          2.22507e-308          2.22507e-308         -4.94066e-324                    ok                   min
+                   -1.                    -1                    -1                     0                    ok                      
+                1.0e10                 1e+10                 1e+10                     0                    ok                      
+               -1.3e23              -1.3e+23              -1.3e+23                     0                    ok                      
+                  1.45                  1.45                  1.45                     0                    ok                      
+                 +1.45                  1.45                  1.45                     0                    ok                      
+                     0                     0                     0                     0                    ok                      
+                     1                     1                     1                     0                    ok                      
+            1987651432           1.98765e+09           1.98765e+09                     0                    ok                      
+            4294967295           4.29497e+09           4.29497e+09                     0                    ok                      
+            4294967296           4.29497e+09           4.29497e+09                     0                    ok                      
+           -4294967296          -4.29497e+09          -4.29497e+09                     0                    ok                      
+  18446744073709551615           1.84467e+19           1.84467e+19                     0                    ok                      
+  18446744073709551616           1.84467e+19           1.84467e+19                     0                    ok                      
+                    0.                     0                     0                     0                    ok                      
+                    1.                     1                     1                     0                    ok                      
+                    1,               <error>               <error>                     0                    ok                      
+                   -0.                    -0                    -0                     0                    ok                      
+                   +0.                     0                     0                     0                    ok                      
+                 0.264                 0.264                 0.264                     0                    ok                      
+                  .274                 0.274                 0.274                     0                    ok                      
+                 -.274                -0.274                -0.274                     0                    ok                      
+                 +.274                 0.274                 0.274                     0                    ok                      
+            235620.264                235620                235620                     0                    ok                      
+  234567890.9874651342           2.34568e+08           2.34568e+08          -2.98023e-08                    ok                      
+                     .               <error>               <error>                     0                    ok                      
+             234.567.2               <error>               <error>                     0                    ok                      
+                                     <error>               <error>                     0                    ok                      
+                    ¤               <error>               <error>                     0                    ok                      
+                    ²               <error>               <error>                     0                    ok                      
+                     -               <error>               <error>                     0                    ok                      
+                     +               <error>               <error>                     0                    ok                      
+            +zdaij1.45               <error>               <error>                     0                    ok                      
+                  toto               <error>               <error>                     0                    ok                      
+               123 123               <error>               <error>                     0                    ok                      
+                  1'23               <error>               <error>                     0                    ok                      
+                  1"23               <error>               <error>                     0                    ok                      
+                 -1,45               <error>               <error>                     0                    ok                      
+                 +1,45               <error>               <error>                     0                    ok                      
+                  true               <error>               <error>                     0                    ok                      
+                 false               <error>               <error>                     0                    ok                      
+                    on               <error>               <error>                     0                    ok                      
+                   off               <error>               <error>                     0                    ok                      
+         &"'(-è_çà)               <error>               <error>                     0                    ok                      
+                  -inf                  -inf                  -inf                  -nan                    ok                      
+                  +inf                   inf                   inf                  -nan                    ok                      
+                   inf                   inf                   inf                  -nan                    ok                      
+             -infinity                  -inf                  -inf                  -nan                    ok                      
+             +infinity                   inf                   inf                  -nan                    ok                      
+                   nan                   nan                   nan                   nan                    ok                      
+                   NaN                   nan                   nan                   nan                    ok                      
+float
+------------------------------------------------------------------------------------------------------------------------------------
+                 Value          lexical_cast                  tata                 diff.               status.
+------------------------------------------------------------------------------------------------------------------------------------
+           3.40282e+38           3.40282e+38           3.40282e+38                     0                    ok                   max
+           1.17549e-38           1.17549e-38           1.17549e-38                     0                    ok                   min
+                   -1.                    -1                    -1                     0                    ok                      
+                1.0e10                 1e+10                 1e+10                     0                    ok                      
+               -1.3e23              -1.3e+23              -1.3e+23                     0                    ok                      
+                  1.45                  1.45                  1.45                     0                    ok                      
+                 +1.45                  1.45                  1.45                     0                    ok                      
+                     0                     0                     0                     0                    ok                      
+                     1                     1                     1                     0                    ok                      
+            1987651432           1.98765e+09           1.98765e+09                   128                    ok                      
+            4294967295           4.29497e+09           4.29497e+09                   256                    ok                      
+            4294967296           4.29497e+09           4.29497e+09                   256                    ok                      
+           -4294967296          -4.29497e+09          -4.29497e+09                  -256                    ok                      
+  18446744073709551615           1.84467e+19           1.84467e+19           1.09951e+12                    ok                      
+  18446744073709551616           1.84467e+19           1.84467e+19           1.09951e+12                    ok                      
+                    0.                     0                     0                     0                    ok                      
+                    1.                     1                     1                     0                    ok                      
+                    1,               <error>               <error>                     0                    ok                      
+                   -0.                    -0                    -0                     0                    ok                      
+                   +0.                     0                     0                     0                    ok                      
+                 0.264                 0.264                 0.264                     0                    ok                      
+                  .274                 0.274                 0.274                     0                    ok                      
+                 -.274                -0.274                -0.274                     0                    ok                      
+                 +.274                 0.274                 0.274                     0                    ok                      
+            235620.264                235620                235620              0.015625                    ok                      
+  234567890.9874651342           2.34568e+08           2.34568e+08                   -32                    ok                      
+                     .               <error>               <error>                     0                    ok                      
+             234.567.2               <error>               <error>                     0                    ok                      
+                                     <error>               <error>                     0                    ok                      
+                    ¤               <error>               <error>                     0                    ok                      
+                    ²               <error>               <error>                     0                    ok                      
+                     -               <error>               <error>                     0                    ok                      
+                     +               <error>               <error>                     0                    ok                      
+            +zdaij1.45               <error>               <error>                     0                    ok                      
+                  toto               <error>               <error>                     0                    ok                      
+               123 123               <error>               <error>                     0                    ok                      
+                  1'23               <error>               <error>                     0                    ok                      
+                  1"23               <error>               <error>                     0                    ok                      
+                 -1,45               <error>               <error>                     0                    ok                      
+                 +1,45               <error>               <error>                     0                    ok                      
+                  true               <error>               <error>                     0                    ok                      
+                 false               <error>               <error>                     0                    ok                      
+                    on               <error>               <error>                     0                    ok                      
+                   off               <error>               <error>                     0                    ok                      
+         &"'(-è_çà)               <error>               <error>                     0                    ok                      
+                  -inf                  -inf                  -inf                  -nan                    ok                      
+                  +inf                   inf                   inf                  -nan                    ok                      
+                   inf                   inf                   inf                  -nan                    ok                      
+             -infinity                  -inf                  -inf                  -nan                    ok                      
+             +infinity                   inf                   inf                  -nan                    ok                      
+                   nan                   nan                   nan                   nan                    ok                      
+                   NaN                   nan                   nan                   nan                    ok                      
+uint8_t 
+------------------------------------------------------------------------------------------------------------------------------------
+                 Value          lexical_cast                  tata                 diff.               status.
+------------------------------------------------------------------------------------------------------------------------------------
+                     �                     �                     �                                          ok                   max
+                                                                                                            ok                   min
+                   -1.               <error>               <error>                                          ok                      
+                1.0e10               <error>               <error>                                          ok                      
+               -1.3e23               <error>               <error>                                          ok                      
+                  1.45               <error>               <error>                                          ok                      
+                 +1.45               <error>               <error>                                          ok                      
+                     0                     0                     0                                          ok                      
+                     1                     1                     1                                          ok                      
+            1987651432               <error>               <error>                                          ok                      
+            4294967295               <error>               <error>                                          ok                      
+            4294967296               <error>               <error>                                          ok                      
+           -4294967296               <error>               <error>                                          ok                      
+  18446744073709551615               <error>               <error>                                          ok                      
+  18446744073709551616               <error>               <error>                                          ok                      
+                    0.               <error>               <error>                                          ok                      
+                    1.               <error>               <error>                                          ok                      
+                    1,               <error>               <error>                                          ok                      
+                   -0.               <error>               <error>                                          ok                      
+                   +0.               <error>               <error>                                          ok                      
+                 0.264               <error>               <error>                                          ok                      
+                  .274               <error>               <error>                                          ok                      
+                 -.274               <error>               <error>                                          ok                      
+                 +.274               <error>               <error>                                          ok                      
+            235620.264               <error>               <error>                                          ok                      
+  234567890.9874651342               <error>               <error>                                          ok                      
+                     .                     .                     .                                          ok                      
+             234.567.2               <error>               <error>                                          ok                      
+                                     <error>               <error>                                          ok                      
+                    ¤               <error>               <error>                                          ok                      
+                    ²               <error>               <error>                                          ok                      
+                     -                     -                     -                                          ok                      
+                     +                     +                     +                                          ok                      
+            +zdaij1.45               <error>               <error>                                          ok                      
+                  toto               <error>               <error>                                          ok                      
+               123 123               <error>               <error>                                          ok                      
+                  1'23               <error>               <error>                                          ok                      
+                  1"23               <error>               <error>                                          ok                      
+                 -1,45               <error>               <error>                                          ok                      
+                 +1,45               <error>               <error>                                          ok                      
+                  true               <error>               <error>                                          ok                      
+                 false               <error>               <error>                                          ok                      
+                    on               <error>               <error>                                          ok                      
+                   off               <error>               <error>                                          ok                      
+         &"'(-è_çà)               <error>               <error>                                          ok                      
+                  -inf               <error>               <error>                                          ok                      
+                  +inf               <error>               <error>                                          ok                      
+                   inf               <error>               <error>                                          ok                      
+             -infinity               <error>               <error>                                          ok                      
+             +infinity               <error>               <error>                                          ok                      
+                   nan               <error>               <error>                                          ok                      
+                   NaN               <error>               <error>                                          ok                      
+uint16_t
+------------------------------------------------------------------------------------------------------------------------------------
+                 Value          lexical_cast                  tata                 diff.               status.
+------------------------------------------------------------------------------------------------------------------------------------
+                 65535                 65535                 65535                     0                    ok                   max
+                     0                     0                     0                     0                    ok                   min
+                   -1.               <error>               <error>                     0                    ok                      
+                1.0e10               <error>               <error>                     0                    ok                      
+               -1.3e23               <error>               <error>                     0                    ok                      
+                  1.45               <error>               <error>                     0                    ok                      
+                 +1.45               <error>               <error>                     0                    ok                      
+                     0                     0                     0                     0                    ok                      
+                     1                     1                     1                     0                    ok                      
+            1987651432               <error>               <error>                     0                    ok                      
+            4294967295               <error>               <error>                     0                    ok                      
+            4294967296               <error>               <error>                     0                    ok                      
+           -4294967296               <error>               <error>                     0                    ok                      
+  18446744073709551615               <error>               <error>                     0                    ok                      
+  18446744073709551616               <error>               <error>                     0                    ok                      
+                    0.               <error>               <error>                     0                    ok                      
+                    1.               <error>               <error>                     0                    ok                      
+                    1,               <error>               <error>                     0                    ok                      
+                   -0.               <error>               <error>                     0                    ok                      
+                   +0.               <error>               <error>                     0                    ok                      
+                 0.264               <error>               <error>                     0                    ok                      
+                  .274               <error>               <error>                     0                    ok                      
+                 -.274               <error>               <error>                     0                    ok                      
+                 +.274               <error>               <error>                     0                    ok                      
+            235620.264               <error>               <error>                     0                    ok                      
+  234567890.9874651342               <error>               <error>                     0                    ok                      
+                     .               <error>               <error>                     0                    ok                      
+             234.567.2               <error>               <error>                     0                    ok                      
+                                     <error>               <error>                     0                    ok                      
+                    ¤               <error>               <error>                     0                    ok                      
+                    ²               <error>               <error>                     0                    ok                      
+                     -               <error>               <error>                     0                    ok                      
+                     +               <error>               <error>                     0                    ok                      
+            +zdaij1.45               <error>               <error>                     0                    ok                      
+                  toto               <error>               <error>                     0                    ok                      
+               123 123               <error>               <error>                     0                    ok                      
+                  1'23               <error>               <error>                     0                    ok                      
+                  1"23               <error>               <error>                     0                    ok                      
+                 -1,45               <error>               <error>                     0                    ok                      
+                 +1,45               <error>               <error>                     0                    ok                      
+                  true               <error>               <error>                     0                    ok                      
+                 false               <error>               <error>                     0                    ok                      
+                    on               <error>               <error>                     0                    ok                      
+                   off               <error>               <error>                     0                    ok                      
+         &"'(-è_çà)               <error>               <error>                     0                    ok                      
+                  -inf               <error>               <error>                     0                    ok                      
+                  +inf               <error>               <error>                     0                    ok                      
+                   inf               <error>               <error>                     0                    ok                      
+             -infinity               <error>               <error>                     0                    ok                      
+             +infinity               <error>               <error>                     0                    ok                      
+                   nan               <error>               <error>                     0                    ok                      
+                   NaN               <error>               <error>                     0                    ok                      
+uint32_t
+------------------------------------------------------------------------------------------------------------------------------------
+                 Value          lexical_cast                  tata                 diff.               status.
+------------------------------------------------------------------------------------------------------------------------------------
+            4294967295            4294967295            4294967295                     0                    ok                   max
+                     0                     0                     0                     0                    ok                   min
+                   -1.               <error>               <error>                     0                    ok                      
+                1.0e10               <error>               <error>                     0                    ok                      
+               -1.3e23               <error>               <error>                     0                    ok                      
+                  1.45               <error>               <error>                     0                    ok                      
+                 +1.45               <error>               <error>                     0                    ok                      
+                     0                     0                     0                     0                    ok                      
+                     1                     1                     1                     0                    ok                      
+            1987651432            1987651432            1987651432                     0                    ok                      
+            4294967295            4294967295            4294967295                     0                    ok                      
+            4294967296               <error>               <error>                     0                    ok                      
+           -4294967296               <error>               <error>                     0                    ok                      
+  18446744073709551615               <error>               <error>                     0                    ok                      
+  18446744073709551616               <error>               <error>                     0                    ok                      
+                    0.               <error>               <error>                     0                    ok                      
+                    1.               <error>               <error>                     0                    ok                      
+                    1,               <error>               <error>                     0                    ok                      
+                   -0.               <error>               <error>                     0                    ok                      
+                   +0.               <error>               <error>                     0                    ok                      
+                 0.264               <error>               <error>                     0                    ok                      
+                  .274               <error>               <error>                     0                    ok                      
+                 -.274               <error>               <error>                     0                    ok                      
+                 +.274               <error>               <error>                     0                    ok                      
+            235620.264               <error>               <error>                     0                    ok                      
+  234567890.9874651342               <error>               <error>                     0                    ok                      
+                     .               <error>               <error>                     0                    ok                      
+             234.567.2               <error>               <error>                     0                    ok                      
+                                     <error>               <error>                     0                    ok                      
+                    ¤               <error>               <error>                     0                    ok                      
+                    ²               <error>               <error>                     0                    ok                      
+                     -               <error>               <error>                     0                    ok                      
+                     +               <error>               <error>                     0                    ok                      
+            +zdaij1.45               <error>               <error>                     0                    ok                      
+                  toto               <error>               <error>                     0                    ok                      
+               123 123               <error>               <error>                     0                    ok                      
+                  1'23               <error>               <error>                     0                    ok                      
+                  1"23               <error>               <error>                     0                    ok                      
+                 -1,45               <error>               <error>                     0                    ok                      
+                 +1,45               <error>               <error>                     0                    ok                      
+                  true               <error>               <error>                     0                    ok                      
+                 false               <error>               <error>                     0                    ok                      
+                    on               <error>               <error>                     0                    ok                      
+                   off               <error>               <error>                     0                    ok                      
+         &"'(-è_çà)               <error>               <error>                     0                    ok                      
+                  -inf               <error>               <error>                     0                    ok                      
+                  +inf               <error>               <error>                     0                    ok                      
+                   inf               <error>               <error>                     0                    ok                      
+             -infinity               <error>               <error>                     0                    ok                      
+             +infinity               <error>               <error>                     0                    ok                      
+                   nan               <error>               <error>                     0                    ok                      
+                   NaN               <error>               <error>                     0                    ok                      
+uint64_t
+------------------------------------------------------------------------------------------------------------------------------------
+                 Value          lexical_cast                  tata                 diff.               status.
+------------------------------------------------------------------------------------------------------------------------------------
+  18446744073709551615  18446744073709551615  18446744073709551615                     0                    ok                   max
+                     0                     0                     0                     0                    ok                   min
+                   -1.               <error>               <error>                     0                    ok                      
+                1.0e10               <error>               <error>                     0                    ok                      
+               -1.3e23               <error>               <error>                     0                    ok                      
+                  1.45               <error>               <error>                     0                    ok                      
+                 +1.45               <error>               <error>                     0                    ok                      
+                     0                     0                     0                     0                    ok                      
+                     1                     1                     1                     0                    ok                      
+            1987651432            1987651432            1987651432                     0                    ok                      
+            4294967295            4294967295            4294967295                     0                    ok                      
+            4294967296            4294967296            4294967296                     0                    ok                      
+           -4294967296  18446744069414584320               <error>  18446744069414584320                   nok                      
+  18446744073709551615  18446744073709551615  18446744073709551615                     0                    ok                      
+  18446744073709551616               <error>               <error>                     0                    ok                      
+                    0.               <error>               <error>                     0                    ok                      
+                    1.               <error>               <error>                     0                    ok                      
+                    1,               <error>               <error>                     0                    ok                      
+                   -0.               <error>               <error>                     0                    ok                      
+                   +0.               <error>               <error>                     0                    ok                      
+                 0.264               <error>               <error>                     0                    ok                      
+                  .274               <error>               <error>                     0                    ok                      
+                 -.274               <error>               <error>                     0                    ok                      
+                 +.274               <error>               <error>                     0                    ok                      
+            235620.264               <error>               <error>                     0                    ok                      
+  234567890.9874651342               <error>               <error>                     0                    ok                      
+                     .               <error>               <error>                     0                    ok                      
+             234.567.2               <error>               <error>                     0                    ok                      
+                                     <error>               <error>                     0                    ok                      
+                    ¤               <error>               <error>                     0                    ok                      
+                    ²               <error>               <error>                     0                    ok                      
+                     -               <error>               <error>                     0                    ok                      
+                     +               <error>               <error>                     0                    ok                      
+            +zdaij1.45               <error>               <error>                     0                    ok                      
+                  toto               <error>               <error>                     0                    ok                      
+               123 123               <error>               <error>                     0                    ok                      
+                  1'23               <error>               <error>                     0                    ok                      
+                  1"23               <error>               <error>                     0                    ok                      
+                 -1,45               <error>               <error>                     0                    ok                      
+                 +1,45               <error>               <error>                     0                    ok                      
+                  true               <error>               <error>                     0                    ok                      
+                 false               <error>               <error>                     0                    ok                      
+                    on               <error>               <error>                     0                    ok                      
+                   off               <error>               <error>                     0                    ok                      
+         &"'(-è_çà)               <error>               <error>                     0                    ok                      
+                  -inf               <error>               <error>                     0                    ok                      
+                  +inf               <error>               <error>                     0                    ok                      
+                   inf               <error>               <error>                     0                    ok                      
+             -infinity               <error>               <error>                     0                    ok                      
+             +infinity               <error>               <error>                     0                    ok                      
+                   nan               <error>               <error>                     0                    ok                      
+                   NaN               <error>               <error>                     0                    ok                      
+int8_t 
+------------------------------------------------------------------------------------------------------------------------------------
+                 Value          lexical_cast                  tata                 diff.               status.
+------------------------------------------------------------------------------------------------------------------------------------
+                                                                                                         ok                   max
+                     �                     �                     �                                          ok                   min
+                   -1.               <error>               <error>                                          ok                      
+                1.0e10               <error>               <error>                                          ok                      
+               -1.3e23               <error>               <error>                                          ok                      
+                  1.45               <error>               <error>                                          ok                      
+                 +1.45               <error>               <error>                                          ok                      
+                     0                     0                     0                                          ok                      
+                     1                     1                     1                                          ok                      
+            1987651432               <error>               <error>                                          ok                      
+            4294967295               <error>               <error>                                          ok                      
+            4294967296               <error>               <error>                                          ok                      
+           -4294967296               <error>               <error>                                          ok                      
+  18446744073709551615               <error>               <error>                                          ok                      
+  18446744073709551616               <error>               <error>                                          ok                      
+                    0.               <error>               <error>                                          ok                      
+                    1.               <error>               <error>                                          ok                      
+                    1,               <error>               <error>                                          ok                      
+                   -0.               <error>               <error>                                          ok                      
+                   +0.               <error>               <error>                                          ok                      
+                 0.264               <error>               <error>                                          ok                      
+                  .274               <error>               <error>                                          ok                      
+                 -.274               <error>               <error>                                          ok                      
+                 +.274               <error>               <error>                                          ok                      
+            235620.264               <error>               <error>                                          ok                      
+  234567890.9874651342               <error>               <error>                                          ok                      
+                     .                     .                     .                                          ok                      
+             234.567.2               <error>               <error>                                          ok                      
+                                     <error>               <error>                                          ok                      
+                    ¤               <error>               <error>                                          ok                      
+                    ²               <error>               <error>                                          ok                      
+                     -                     -                     -                                          ok                      
+                     +                     +                     +                                          ok                      
+            +zdaij1.45               <error>               <error>                                          ok                      
+                  toto               <error>               <error>                                          ok                      
+               123 123               <error>               <error>                                          ok                      
+                  1'23               <error>               <error>                                          ok                      
+                  1"23               <error>               <error>                                          ok                      
+                 -1,45               <error>               <error>                                          ok                      
+                 +1,45               <error>               <error>                                          ok                      
+                  true               <error>               <error>                                          ok                      
+                 false               <error>               <error>                                          ok                      
+                    on               <error>               <error>                                          ok                      
+                   off               <error>               <error>                                          ok                      
+         &"'(-è_çà)               <error>               <error>                                          ok                      
+                  -inf               <error>               <error>                                          ok                      
+                  +inf               <error>               <error>                                          ok                      
+                   inf               <error>               <error>                                          ok                      
+             -infinity               <error>               <error>                                          ok                      
+             +infinity               <error>               <error>                                          ok                      
+                   nan               <error>               <error>                                          ok                      
+                   NaN               <error>               <error>                                          ok                      
+int16_t
+------------------------------------------------------------------------------------------------------------------------------------
+                 Value          lexical_cast                  tata                 diff.               status.
+------------------------------------------------------------------------------------------------------------------------------------
+                 32767                 32767                 32767                     0                    ok                   max
+                -32768                -32768                -32768                     0                    ok                   min
+                   -1.               <error>               <error>                     0                    ok                      
+                1.0e10               <error>               <error>                     0                    ok                      
+               -1.3e23               <error>               <error>                     0                    ok                      
+                  1.45               <error>               <error>                     0                    ok                      
+                 +1.45               <error>               <error>                     0                    ok                      
+                     0                     0                     0                     0                    ok                      
+                     1                     1                     1                     0                    ok                      
+            1987651432               <error>               <error>                     0                    ok                      
+            4294967295               <error>               <error>                     0                    ok                      
+            4294967296               <error>               <error>                     0                    ok                      
+           -4294967296               <error>               <error>                     0                    ok                      
+  18446744073709551615               <error>               <error>                     0                    ok                      
+  18446744073709551616               <error>               <error>                     0                    ok                      
+                    0.               <error>               <error>                     0                    ok                      
+                    1.               <error>               <error>                     0                    ok                      
+                    1,               <error>               <error>                     0                    ok                      
+                   -0.               <error>               <error>                     0                    ok                      
+                   +0.               <error>               <error>                     0                    ok                      
+                 0.264               <error>               <error>                     0                    ok                      
+                  .274               <error>               <error>                     0                    ok                      
+                 -.274               <error>               <error>                     0                    ok                      
+                 +.274               <error>               <error>                     0                    ok                      
+            235620.264               <error>               <error>                     0                    ok                      
+  234567890.9874651342               <error>               <error>                     0                    ok                      
+                     .               <error>               <error>                     0                    ok                      
+             234.567.2               <error>               <error>                     0                    ok                      
+                                     <error>               <error>                     0                    ok                      
+                    ¤               <error>               <error>                     0                    ok                      
+                    ²               <error>               <error>                     0                    ok                      
+                     -               <error>               <error>                     0                    ok                      
+                     +               <error>               <error>                     0                    ok                      
+            +zdaij1.45               <error>               <error>                     0                    ok                      
+                  toto               <error>               <error>                     0                    ok                      
+               123 123               <error>               <error>                     0                    ok                      
+                  1'23               <error>               <error>                     0                    ok                      
+                  1"23               <error>               <error>                     0                    ok                      
+                 -1,45               <error>               <error>                     0                    ok                      
+                 +1,45               <error>               <error>                     0                    ok                      
+                  true               <error>               <error>                     0                    ok                      
+                 false               <error>               <error>                     0                    ok                      
+                    on               <error>               <error>                     0                    ok                      
+                   off               <error>               <error>                     0                    ok                      
+         &"'(-è_çà)               <error>               <error>                     0                    ok                      
+                  -inf               <error>               <error>                     0                    ok                      
+                  +inf               <error>               <error>                     0                    ok                      
+                   inf               <error>               <error>                     0                    ok                      
+             -infinity               <error>               <error>                     0                    ok                      
+             +infinity               <error>               <error>                     0                    ok                      
+                   nan               <error>               <error>                     0                    ok                      
+                   NaN               <error>               <error>                     0                    ok                      
+int32_t
+------------------------------------------------------------------------------------------------------------------------------------
+                 Value          lexical_cast                  tata                 diff.               status.
+------------------------------------------------------------------------------------------------------------------------------------
+            2147483647            2147483647            2147483647                     0                    ok                   max
+           -2147483648           -2147483648           -2147483648                     0                    ok                   min
+                   -1.               <error>               <error>                     0                    ok                      
+                1.0e10               <error>               <error>                     0                    ok                      
+               -1.3e23               <error>               <error>                     0                    ok                      
+                  1.45               <error>               <error>                     0                    ok                      
+                 +1.45               <error>               <error>                     0                    ok                      
+                     0                     0                     0                     0                    ok                      
+                     1                     1                     1                     0                    ok                      
+            1987651432            1987651432            1987651432                     0                    ok                      
+            4294967295               <error>               <error>                     0                    ok                      
+            4294967296               <error>               <error>                     0                    ok                      
+           -4294967296               <error>               <error>                     0                    ok                      
+  18446744073709551615               <error>               <error>                     0                    ok                      
+  18446744073709551616               <error>               <error>                     0                    ok                      
+                    0.               <error>               <error>                     0                    ok                      
+                    1.               <error>               <error>                     0                    ok                      
+                    1,               <error>               <error>                     0                    ok                      
+                   -0.               <error>               <error>                     0                    ok                      
+                   +0.               <error>               <error>                     0                    ok                      
+                 0.264               <error>               <error>                     0                    ok                      
+                  .274               <error>               <error>                     0                    ok                      
+                 -.274               <error>               <error>                     0                    ok                      
+                 +.274               <error>               <error>                     0                    ok                      
+            235620.264               <error>               <error>                     0                    ok                      
+  234567890.9874651342               <error>               <error>                     0                    ok                      
+                     .               <error>               <error>                     0                    ok                      
+             234.567.2               <error>               <error>                     0                    ok                      
+                                     <error>               <error>                     0                    ok                      
+                    ¤               <error>               <error>                     0                    ok                      
+                    ²               <error>               <error>                     0                    ok                      
+                     -               <error>               <error>                     0                    ok                      
+                     +               <error>               <error>                     0                    ok                      
+            +zdaij1.45               <error>               <error>                     0                    ok                      
+                  toto               <error>               <error>                     0                    ok                      
+               123 123               <error>               <error>                     0                    ok                      
+                  1'23               <error>               <error>                     0                    ok                      
+                  1"23               <error>               <error>                     0                    ok                      
+                 -1,45               <error>               <error>                     0                    ok                      
+                 +1,45               <error>               <error>                     0                    ok                      
+                  true               <error>               <error>                     0                    ok                      
+                 false               <error>               <error>                     0                    ok                      
+                    on               <error>               <error>                     0                    ok                      
+                   off               <error>               <error>                     0                    ok                      
+         &"'(-è_çà)               <error>               <error>                     0                    ok                      
+                  -inf               <error>               <error>                     0                    ok                      
+                  +inf               <error>               <error>                     0                    ok                      
+                   inf               <error>               <error>                     0                    ok                      
+             -infinity               <error>               <error>                     0                    ok                      
+             +infinity               <error>               <error>                     0                    ok                      
+                   nan               <error>               <error>                     0                    ok                      
+                   NaN               <error>               <error>                     0                    ok                      
+int64_t
+------------------------------------------------------------------------------------------------------------------------------------
+                 Value          lexical_cast                  tata                 diff.               status.
+------------------------------------------------------------------------------------------------------------------------------------
+   9223372036854775807   9223372036854775807   9223372036854775807                     0                    ok                   max
+  -9223372036854775808  -9223372036854775808  -9223372036854775808                     0                    ok                   min
+                   -1.               <error>               <error>                     0                    ok                      
+                1.0e10               <error>               <error>                     0                    ok                      
+               -1.3e23               <error>               <error>                     0                    ok                      
+                  1.45               <error>               <error>                     0                    ok                      
+                 +1.45               <error>               <error>                     0                    ok                      
+                     0                     0                     0                     0                    ok                      
+                     1                     1                     1                     0                    ok                      
+            1987651432            1987651432            1987651432                     0                    ok                      
+            4294967295            4294967295            4294967295                     0                    ok                      
+            4294967296            4294967296            4294967296                     0                    ok                      
+           -4294967296           -4294967296           -4294967296                     0                    ok                      
+  18446744073709551615               <error>               <error>                     0                    ok                      
+  18446744073709551616               <error>               <error>                     0                    ok                      
+                    0.               <error>               <error>                     0                    ok                      
+                    1.               <error>               <error>                     0                    ok                      
+                    1,               <error>               <error>                     0                    ok                      
+                   -0.               <error>               <error>                     0                    ok                      
+                   +0.               <error>               <error>                     0                    ok                      
+                 0.264               <error>               <error>                     0                    ok                      
+                  .274               <error>               <error>                     0                    ok                      
+                 -.274               <error>               <error>                     0                    ok                      
+                 +.274               <error>               <error>                     0                    ok                      
+            235620.264               <error>               <error>                     0                    ok                      
+  234567890.9874651342               <error>               <error>                     0                    ok                      
+                     .               <error>               <error>                     0                    ok                      
+             234.567.2               <error>               <error>                     0                    ok                      
+                                     <error>               <error>                     0                    ok                      
+                    ¤               <error>               <error>                     0                    ok                      
+                    ²               <error>               <error>                     0                    ok                      
+                     -               <error>               <error>                     0                    ok                      
+                     +               <error>               <error>                     0                    ok                      
+            +zdaij1.45               <error>               <error>                     0                    ok                      
+                  toto               <error>               <error>                     0                    ok                      
+               123 123               <error>               <error>                     0                    ok                      
+                  1'23               <error>               <error>                     0                    ok                      
+                  1"23               <error>               <error>                     0                    ok                      
+                 -1,45               <error>               <error>                     0                    ok                      
+                 +1,45               <error>               <error>                     0                    ok                      
+                  true               <error>               <error>                     0                    ok                      
+                 false               <error>               <error>                     0                    ok                      
+                    on               <error>               <error>                     0                    ok                      
+                   off               <error>               <error>                     0                    ok                      
+         &"'(-è_çà)               <error>               <error>                     0                    ok                      
+                  -inf               <error>               <error>                     0                    ok                      
+                  +inf               <error>               <error>                     0                    ok                      
+                   inf               <error>               <error>                     0                    ok                      
+             -infinity               <error>               <error>                     0                    ok                      
+             +infinity               <error>               <error>                     0                    ok                      
+                   nan               <error>               <error>                     0                    ok                      
+                   NaN               <error>               <error>                     0                    ok                      
+bool
+------------------------------------------------------------------------------------------------------------------------------------
+                 Value          lexical_cast                  tata                 diff.               status.
+------------------------------------------------------------------------------------------------------------------------------------
+                     1                     1                     1                     0                    ok                   max
+                     0                     0                     0                     0                    ok                   min
+                   -1.               <error>               <error>                     0                    ok                      
+                1.0e10               <error>               <error>                     0                    ok                      
+               -1.3e23               <error>               <error>                     0                    ok                      
+                  1.45               <error>               <error>                     0                    ok                      
+                 +1.45               <error>               <error>                     0                    ok                      
+                     0                     0                     0                     0                    ok                      
+                     1                     1                     1                     0                    ok                      
+            1987651432               <error>               <error>                     0                    ok                      
+            4294967295               <error>               <error>                     0                    ok                      
+            4294967296               <error>               <error>                     0                    ok                      
+           -4294967296               <error>               <error>                     0                    ok                      
+  18446744073709551615               <error>               <error>                     0                    ok                      
+  18446744073709551616               <error>               <error>                     0                    ok                      
+                    0.               <error>               <error>                     0                    ok                      
+                    1.               <error>               <error>                     0                    ok                      
+                    1,               <error>               <error>                     0                    ok                      
+                   -0.               <error>               <error>                     0                    ok                      
+                   +0.               <error>               <error>                     0                    ok                      
+                 0.264               <error>               <error>                     0                    ok                      
+                  .274               <error>               <error>                     0                    ok                      
+                 -.274               <error>               <error>                     0                    ok                      
+                 +.274               <error>               <error>                     0                    ok                      
+            235620.264               <error>               <error>                     0                    ok                      
+  234567890.9874651342               <error>               <error>                     0                    ok                      
+                     .               <error>               <error>                     0                    ok                      
+             234.567.2               <error>               <error>                     0                    ok                      
+                                     <error>               <error>                     0                    ok                      
+                    ¤               <error>               <error>                     0                    ok                      
+                    ²               <error>               <error>                     0                    ok                      
+                     -               <error>               <error>                     0                    ok                      
+                     +               <error>               <error>                     0                    ok                      
+            +zdaij1.45               <error>               <error>                     0                    ok                      
+                  toto               <error>               <error>                     0                    ok                      
+               123 123               <error>               <error>                     0                    ok                      
+                  1'23               <error>               <error>                     0                    ok                      
+                  1"23               <error>               <error>                     0                    ok                      
+                 -1,45               <error>               <error>                     0                    ok                      
+                 +1,45               <error>               <error>                     0                    ok                      
+                  true               <error>                     1                     1                   nok                      
+                 false               <error>                     0                     0                   nok                      
+                    on               <error>               <error>                     0                    ok                      
+                   off               <error>               <error>                     0                    ok                      
+         &"'(-è_çà)               <error>               <error>                     0                    ok                      
+                  -inf               <error>               <error>                     0                    ok                      
+                  +inf               <error>               <error>                     0                    ok                      
+                   inf               <error>               <error>                     0                    ok                      
+             -infinity               <error>               <error>                     0                    ok                      
+             +infinity               <error>               <error>                     0                    ok                      
+                   nan               <error>               <error>                     0                    ok                      
+                   NaN               <error>               <error>                     0                    ok                      
