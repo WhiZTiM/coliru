@@ -1,0 +1,22 @@
+main.cpp: In instantiation of 'auto dgemm(const Container1&, const Container2&) [with Container1 = NDcontainer<std::vector<int>, std::array<unsigned int, 2ul> >; Container2 = NDcontainer<std::vector<int>, std::array<unsigned int, 2ul>, tag::diagonal_>; typename std::enable_if<std::is_same<tag::diagonal_, typename Container2::shape_>::value, int>::type <anonymous> = 0]':
+main.cpp:348:15:   required from here
+main.cpp:311:30: warning: unused parameter 'a' [-Wunused-parameter]
+ auto dgemm(Container1 const& a, Container2 const& b )
+                              ^
+main.cpp:311:51: warning: unused parameter 'b' [-Wunused-parameter]
+ auto dgemm(Container1 const& a, Container2 const& b )
+                                                   ^
+Test 1
+1 2 3 
+4 5 6 
+7 8 9 
+
+value : 15
+value : 2
+dgemm for A*D 
+Test 2 : 9
+1 2 3 
+4 5 6 
+7 8 9 
+
+1
