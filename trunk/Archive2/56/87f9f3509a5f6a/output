@@ -1,0 +1,37 @@
+In file included from /usr/local/include/boost/serialization/extended_type_info_typeid.hpp:37:0,
+                 from /usr/local/include/boost/archive/detail/iserializer.hpp:46,
+                 from /usr/local/include/boost/archive/detail/interface_iarchive.hpp:22,
+                 from /usr/local/include/boost/archive/detail/common_iarchive.hpp:23,
+                 from /usr/local/include/boost/archive/basic_xml_iarchive.hpp:23,
+                 from /usr/local/include/boost/archive/xml_iarchive.hpp:24,
+                 from main.cpp:8:
+/usr/local/include/boost/serialization/access.hpp: In instantiation of 'static void boost::serialization::access::serialize(Archive&, T&, unsigned int) [with Archive = boost::archive::xml_oarchive; T = double]':
+/usr/local/include/boost/serialization/serialization.hpp:69:22:   required from 'void boost::serialization::serialize(Archive&, T&, unsigned int) [with Archive = boost::archive::xml_oarchive; T = double]'
+/usr/local/include/boost/serialization/serialization.hpp:128:18:   required from 'void boost::serialization::serialize_adl(Archive&, T&, unsigned int) [with Archive = boost::archive::xml_oarchive; T = double]'
+/usr/local/include/boost/archive/detail/oserializer.hpp:148:40:   required from 'void boost::archive::detail::oserializer<Archive, T>::save_object_data(boost::archive::detail::basic_oarchive&, const void*) const [with Archive = boost::archive::xml_oarchive; T = double]'
+/usr/local/include/boost/archive/detail/oserializer.hpp:101:1:   required from 'class boost::archive::detail::oserializer<boost::archive::xml_oarchive, double>'
+/usr/local/include/boost/archive/detail/oserializer.hpp:214:5:   required from 'boost::archive::detail::pointer_oserializer<Archive, T>::pointer_oserializer() [with Archive = boost::archive::xml_oarchive; T = double]'
+/usr/local/include/boost/serialization/singleton.hpp:106:7:   [ skipping 18 instantiation contexts, use -ftemplate-backtrace-limit=0 to disable ]
+/usr/local/include/boost/archive/detail/oserializer.hpp:308:22:   required from 'static void boost::archive::detail::save_non_pointer_type<Archive>::invoke(Archive&, const T&) [with T = Ptr<double>; Archive = boost::archive::xml_oarchive]'
+/usr/local/include/boost/archive/detail/oserializer.hpp:525:18:   required from 'void boost::archive::save(Archive&, T&) [with Archive = boost::archive::xml_oarchive; T = const Ptr<double>]'
+/usr/local/include/boost/archive/detail/common_oarchive.hpp:69:22:   required from 'void boost::archive::detail::common_oarchive<Archive>::save_override(T&, int) [with T = const Ptr<double>; Archive = boost::archive::xml_oarchive]'
+/usr/local/include/boost/archive/basic_xml_oarchive.hpp:114:9:   required from 'void boost::archive::basic_xml_oarchive<Archive>::save_override(const boost::serialization::nvp<T>&, int) [with T = Ptr<double>; Archive = boost::archive::xml_oarchive]'
+/usr/local/include/boost/archive/detail/interface_oarchive.hpp:63:9:   required from 'Archive& boost::archive::detail::interface_oarchive<Archive>::operator<<(T&) [with T = const boost::serialization::nvp<Ptr<double> >; Archive = boost::archive::xml_oarchive]'
+main.cpp:110:15:   required from here
+/usr/local/include/boost/serialization/access.hpp:118:9: error: request for member 'serialize' in 't', which is of non-class type 'double'
+         t.serialize(ar, file_version);
+         ^
+/usr/local/include/boost/serialization/access.hpp: In instantiation of 'static void boost::serialization::access::serialize(Archive&, T&, unsigned int) [with Archive = boost::archive::xml_iarchive; T = double]':
+/usr/local/include/boost/serialization/serialization.hpp:69:22:   required from 'void boost::serialization::serialize(Archive&, T&, unsigned int) [with Archive = boost::archive::xml_iarchive; T = double]'
+/usr/local/include/boost/serialization/serialization.hpp:128:18:   required from 'void boost::serialization::serialize_adl(Archive&, T&, unsigned int) [with Archive = boost::archive::xml_iarchive; T = double]'
+/usr/local/include/boost/archive/detail/iserializer.hpp:184:40:   required from 'void boost::archive::detail::iserializer<Archive, T>::load_object_data(boost::archive::detail::basic_iarchive&, void*, unsigned int) const [with Archive = boost::archive::xml_iarchive; T = double]'
+/usr/local/include/boost/archive/detail/iserializer.hpp:116:1:   required from 'class boost::archive::detail::iserializer<boost::archive::xml_iarchive, double>'
+/usr/local/include/boost/archive/detail/iserializer.hpp:367:5:   required from 'boost::archive::detail::pointer_iserializer<Archive, T>::pointer_iserializer() [with Archive = boost::archive::xml_iarchive; T = double]'
+/usr/local/include/boost/serialization/singleton.hpp:106:7:   [ skipping 21 instantiation contexts, use -ftemplate-backtrace-limit=0 to disable ]
+/usr/local/include/boost/archive/detail/iserializer.hpp:618:18:   required from 'void boost::archive::load(Archive&, T&) [with Archive = boost::archive::xml_iarchive; T = Ptr<double>]'
+/usr/local/include/boost/archive/detail/common_iarchive.hpp:66:22:   required from 'void boost::archive::detail::common_iarchive<Archive>::load_override(T&, int) [with T = Ptr<double>; Archive = boost::archive::xml_iarchive]'
+/usr/local/include/boost/archive/basic_xml_iarchive.hpp:92:9:   required from 'void boost::archive::basic_xml_iarchive<Archive>::load_override(const boost::serialization::nvp<T>&, int) [with T = Ptr<double>; Archive = boost::archive::xml_iarchive]'
+/usr/local/include/boost/archive/xml_iarchive.hpp:103:51:   required from 'void boost::archive::xml_iarchive_impl<Archive>::load_override(T&, int) [with T = const boost::serialization::nvp<Ptr<double> >; Archive = boost::archive::xml_iarchive]'
+/usr/local/include/boost/archive/detail/interface_iarchive.hpp:60:9:   required from 'Archive& boost::archive::detail::interface_iarchive<Archive>::operator>>(T&) [with T = const boost::serialization::nvp<Ptr<double> >; Archive = boost::archive::xml_iarchive]'
+main.cpp:101:15:   required from here
+/usr/local/include/boost/serialization/access.hpp:118:9: error: request for member 'serialize' in 't', which is of non-class type 'double'
