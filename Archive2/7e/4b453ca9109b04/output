@@ -1,0 +1,22 @@
+	.file	"main.cpp"
+	.section	.text.unlikely,"ax",@progbits
+.LCOLDB0:
+	.text
+.LHOTB0:
+	.p2align 5,,31
+	.globl	_Z6popcntm
+	.type	_Z6popcntm, @function
+_Z6popcntm:
+.LFB1048:
+	.cfi_startproc
+	popcntq	%rdi, %rax
+	ret
+	.cfi_endproc
+.LFE1048:
+	.size	_Z6popcntm, .-_Z6popcntm
+	.section	.text.unlikely
+.LCOLDE0:
+	.text
+.LHOTE0:
+	.ident	"GCC: (GNU) 5.2.0"
+	.section	.note.GNU-stack,"",@progbits
