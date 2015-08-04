@@ -1,0 +1,8 @@
+clang version 3.6.0 (tags/RELEASE_360/final 235480)
+Target: x86_64-unknown-linux-gnu
+Thread model: posix
+main.cpp:30:9: warning: private field 'val' is not used [-Wunused-private-field]
+    int val;
+        ^
+1 warning generated.
+12
