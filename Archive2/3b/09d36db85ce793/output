@@ -1,0 +1,35 @@
+	.file	"main.cpp"
+	.section	.text.unlikely,"ax",@progbits
+.LCOLDB0:
+	.text
+.LHOTB0:
+	.p2align 5,,31
+	.globl	_Z7do_movejii
+	.type	_Z7do_movejii, @function
+_Z7do_movejii:
+.LFB0:
+	.cfi_startproc
+	leal	(%rdx,%rdx,4), %eax
+	andl	$1, %edx
+	movl	%edi, %edi
+	leal	-8(%rax,%rdx), %edx
+	movl	%esi, %eax
+	movl	%edx, %ecx
+	shrl	$31, %ecx
+	addl	%edx, %ecx
+	addl	%esi, %edx
+	sarl	%ecx
+	addl	%esi, %ecx
+	shrq	%cl, %rdi
+	andl	$1, %edi
+	cmovne	%edx, %eax
+	ret
+	.cfi_endproc
+.LFE0:
+	.size	_Z7do_movejii, .-_Z7do_movejii
+	.section	.text.unlikely
+.LCOLDE0:
+	.text
+.LHOTE0:
+	.ident	"GCC: (GNU) 5.2.0"
+	.section	.note.GNU-stack,"",@progbits
