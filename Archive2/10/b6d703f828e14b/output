@@ -1,0 +1,17 @@
++ g++ -Os -std=c++11 -Wall -pedantic main.cpp
+main.cpp: In function 'int main()':
+main.cpp:22:12: warning: deleting object of abstract class type 'A1' which has non-virtual destructor will cause undefined behaviour [-Wdelete-non-virtual-dtor]
+     delete pa1;
+            ^
+main.cpp:26:12: warning: deleting object of abstract class type 'A2' which has non-virtual destructor will cause undefined behaviour [-Wdelete-non-virtual-dtor]
+     delete pa2;
+            ^
++ ./a.out
+*** glibc detected *** ./a.out: free(): invalid pointer: 0x0000000002396c28 ***
+======= Backtrace: =========
+/lib/x86_64-linux-gnu/libc.so.6(+0x7e846)[0x7fb1f3689846]
+./a.out[0x400624]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xed)[0x7fb1f362c76d]
+./a.out[0x400651]
+======= Memory map: ========
+bash: line 7: 10107 Aborted                 (core dumped) ./a.out
