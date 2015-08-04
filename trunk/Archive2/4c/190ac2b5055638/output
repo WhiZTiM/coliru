@@ -1,0 +1,10 @@
+with string
+1 A foo.cpp 42 bar
+1 B foo.cpp 42 bar
+1 C foo.cpp 42 bar
+1 D foo.cpp 42 bar
+without string
+1 A foo.cpp 42 
+1 B foo.cpp 42 
+1 C foo.cpp 42 
+1 D foo.cpp 42 
