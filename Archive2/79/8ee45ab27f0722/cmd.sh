@@ -1,0 +1,2 @@
+clang++ -std=c++14 -stdlib=libc++ -O3 -Wall -Wextra -pedantic-errors main.cpp && ./a.out <<< 'how now hell bell damn Damn damn! brown cow'
+echo -e '\n===========\n' && g++ -std=c++14 -O3 -Wall -Wextra -pedantic-errors main.cpp && ./a.out <<< 'how now hell bell damn Damn damn! brown cow'
