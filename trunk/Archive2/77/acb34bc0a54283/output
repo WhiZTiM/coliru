@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<!DOCTYPE boost_serialization>
+<boost_serialization signature="serialization::archive" version="12">
+<p class_id="0" tracking_level="0" version="0">
+	<data class_id="1" tracking_level="0" version="0">
+		<a>0</a>
+	</data>
+</p>
+
+bash: line 7: 19496 Segmentation fault      (core dumped) ./a.out
