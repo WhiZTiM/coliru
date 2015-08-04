@@ -1,0 +1,50 @@
+main.cpp: In instantiation of 'void boost::serialization::save(Archive&, const Ptr<T>&, unsigned int) [with Archive = boost::archive::xml_oarchive; T = A]':
+/usr/local/include/boost/serialization/split_free.hpp:45:13:   required from 'static void boost::serialization::free_saver<Archive, T>::invoke(Archive&, const T&, unsigned int) [with Archive = boost::archive::xml_oarchive; T = Ptr<A>]'
+/usr/local/include/boost/serialization/split_free.hpp:74:18:   required from 'void boost::serialization::split_free(Archive&, T&, unsigned int) [with Archive = boost::archive::xml_oarchive; T = Ptr<A>]'
+main.cpp:79:38:   required from 'void boost::serialization::serialize(Archive&, Ptr<T>&, unsigned int) [with Archive = boost::archive::xml_oarchive; T = A]'
+/usr/local/include/boost/serialization/serialization.hpp:128:18:   required from 'void boost::serialization::serialize_adl(Archive&, T&, unsigned int) [with Archive = boost::archive::xml_oarchive; T = Ptr<A>]'
+/usr/local/include/boost/archive/detail/oserializer.hpp:148:40:   required from 'void boost::archive::detail::oserializer<Archive, T>::save_object_data(boost::archive::detail::basic_oarchive&, const void*) const [with Archive = boost::archive::xml_oarchive; T = Ptr<A>]'
+/usr/local/include/boost/archive/detail/oserializer.hpp:101:1:   [ skipping 2 instantiation contexts, use -ftemplate-backtrace-limit=0 to disable ]
+/usr/local/include/boost/archive/detail/oserializer.hpp:308:22:   required from 'static void boost::archive::detail::save_non_pointer_type<Archive>::invoke(Archive&, const T&) [with T = Ptr<A>; Archive = boost::archive::xml_oarchive]'
+/usr/local/include/boost/archive/detail/oserializer.hpp:525:18:   required from 'void boost::archive::save(Archive&, T&) [with Archive = boost::archive::xml_oarchive; T = const Ptr<A>]'
+/usr/local/include/boost/archive/detail/common_oarchive.hpp:69:22:   required from 'void boost::archive::detail::common_oarchive<Archive>::save_override(T&, int) [with T = const Ptr<A>; Archive = boost::archive::xml_oarchive]'
+/usr/local/include/boost/archive/basic_xml_oarchive.hpp:114:9:   required from 'void boost::archive::basic_xml_oarchive<Archive>::save_override(const boost::serialization::nvp<T>&, int) [with T = Ptr<A>; Archive = boost::archive::xml_oarchive]'
+/usr/local/include/boost/archive/detail/interface_oarchive.hpp:63:9:   required from 'Archive& boost::archive::detail::interface_oarchive<Archive>::operator<<(T&) [with T = const boost::serialization::nvp<Ptr<A> >; Archive = boost::archive::xml_oarchive]'
+main.cpp:91:15:   required from here
+main.cpp:60:56: error: invalid initialization of non-const reference of type 'bool&' from an rvalue of type 'bool'
+         ar & boost::serialization::make_nvp("is_null", !ptr.m_elem);
+                                                        ^
+In file included from /usr/local/include/boost/archive/detail/iserializer.hpp:74:0,
+                 from /usr/local/include/boost/archive/detail/interface_iarchive.hpp:22,
+                 from /usr/local/include/boost/archive/detail/common_iarchive.hpp:23,
+                 from /usr/local/include/boost/archive/basic_xml_iarchive.hpp:23,
+                 from /usr/local/include/boost/archive/xml_iarchive.hpp:24,
+                 from main.cpp:8:
+/usr/local/include/boost/serialization/nvp.hpp:93:10: note:   initializing argument 2 of 'const boost::serialization::nvp<T> boost::serialization::make_nvp(const char*, T&) [with T = bool]'
+ nvp< T > make_nvp(const char * name, T & t){
+          ^
+main.cpp: In instantiation of 'void boost::serialization::save(Archive&, const Ptr<T>&, unsigned int) [with Archive = boost::archive::xml_oarchive; T = double]':
+/usr/local/include/boost/serialization/split_free.hpp:45:13:   required from 'static void boost::serialization::free_saver<Archive, T>::invoke(Archive&, const T&, unsigned int) [with Archive = boost::archive::xml_oarchive; T = Ptr<double>]'
+/usr/local/include/boost/serialization/split_free.hpp:74:18:   required from 'void boost::serialization::split_free(Archive&, T&, unsigned int) [with Archive = boost::archive::xml_oarchive; T = Ptr<double>]'
+main.cpp:79:38:   required from 'void boost::serialization::serialize(Archive&, Ptr<T>&, unsigned int) [with Archive = boost::archive::xml_oarchive; T = double]'
+/usr/local/include/boost/serialization/serialization.hpp:128:18:   required from 'void boost::serialization::serialize_adl(Archive&, T&, unsigned int) [with Archive = boost::archive::xml_oarchive; T = Ptr<double>]'
+/usr/local/include/boost/archive/detail/oserializer.hpp:148:40:   required from 'void boost::archive::detail::oserializer<Archive, T>::save_object_data(boost::archive::detail::basic_oarchive&, const void*) const [with Archive = boost::archive::xml_oarchive; T = Ptr<double>]'
+/usr/local/include/boost/archive/detail/oserializer.hpp:101:1:   [ skipping 2 instantiation contexts, use -ftemplate-backtrace-limit=0 to disable ]
+/usr/local/include/boost/archive/detail/oserializer.hpp:308:22:   required from 'static void boost::archive::detail::save_non_pointer_type<Archive>::invoke(Archive&, const T&) [with T = Ptr<double>; Archive = boost::archive::xml_oarchive]'
+/usr/local/include/boost/archive/detail/oserializer.hpp:525:18:   required from 'void boost::archive::save(Archive&, T&) [with Archive = boost::archive::xml_oarchive; T = const Ptr<double>]'
+/usr/local/include/boost/archive/detail/common_oarchive.hpp:69:22:   required from 'void boost::archive::detail::common_oarchive<Archive>::save_override(T&, int) [with T = const Ptr<double>; Archive = boost::archive::xml_oarchive]'
+/usr/local/include/boost/archive/basic_xml_oarchive.hpp:114:9:   required from 'void boost::archive::basic_xml_oarchive<Archive>::save_override(const boost::serialization::nvp<T>&, int) [with T = Ptr<double>; Archive = boost::archive::xml_oarchive]'
+/usr/local/include/boost/archive/detail/interface_oarchive.hpp:63:9:   required from 'Archive& boost::archive::detail::interface_oarchive<Archive>::operator<<(T&) [with T = const boost::serialization::nvp<Ptr<double> >; Archive = boost::archive::xml_oarchive]'
+main.cpp:107:15:   required from here
+main.cpp:60:56: error: invalid initialization of non-const reference of type 'bool&' from an rvalue of type 'bool'
+         ar & boost::serialization::make_nvp("is_null", !ptr.m_elem);
+                                                        ^
+In file included from /usr/local/include/boost/archive/detail/iserializer.hpp:74:0,
+                 from /usr/local/include/boost/archive/detail/interface_iarchive.hpp:22,
+                 from /usr/local/include/boost/archive/detail/common_iarchive.hpp:23,
+                 from /usr/local/include/boost/archive/basic_xml_iarchive.hpp:23,
+                 from /usr/local/include/boost/archive/xml_iarchive.hpp:24,
+                 from main.cpp:8:
+/usr/local/include/boost/serialization/nvp.hpp:93:10: note:   initializing argument 2 of 'const boost::serialization::nvp<T> boost::serialization::make_nvp(const char*, T&) [with T = bool]'
+ nvp< T > make_nvp(const char * name, T & t){
+          ^
