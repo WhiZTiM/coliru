@@ -1,0 +1,97 @@
+In file included from main.cpp:1:
+In file included from /usr/local/include/boost/graph/adjacency_list.hpp:246:
+/usr/local/include/boost/graph/detail/adjacency_list.hpp:2543:27: error: cannot form a reference to 'void'
+        typedef value_type& reference;
+                          ^
+/usr/local/include/boost/graph/detail/adjacency_list.hpp:2614:9: note: in instantiation of template class 'boost::adj_list_any_vertex_pa::bind_<boost::vertex_index_t, boost::adjacency_list<boost::setS, boost::setS, boost::directedS, boost::no_property, boost::no_property, boost::no_property, boost::setS>, boost::no_property>' requested here
+      : boost::mpl::if_<
+        ^
+/usr/local/include/boost/graph/detail/adjacency_list.hpp:2751:9: note: in instantiation of template class 'boost::detail::adj_list_choose_vertex_pa<boost::vertex_index_t, boost::adjacency_list<boost::setS, boost::setS, boost::directedS, boost::no_property, boost::no_property, boost::no_property, boost::setS>, boost::no_property>' requested here
+      : detail::adj_list_choose_vertex_pa<Tag,Graph,Property>
+        ^
+/usr/local/include/boost/graph/properties.hpp:202:9: note: in instantiation of template class 'boost::adj_list_vertex_property_selector::bind_<boost::adjacency_list<boost::setS, boost::setS, boost::directedS, boost::no_property, boost::no_property, boost::no_property, boost::setS>, boost::no_property, boost::vertex_index_t>' requested here
+      : vertex_property_selector<
+        ^
+/usr/local/include/boost/graph/properties.hpp:213:5: note: in instantiation of template class 'boost::detail::vertex_property_map<boost::adjacency_list<boost::setS, boost::setS, boost::directedS, boost::no_property, boost::no_property, boost::no_property, boost::setS>, boost::vertex_index_t>' requested here
+    mpl::if_<
+    ^
+/usr/local/include/boost/graph/named_function_params.hpp:407:31: note: in instantiation of template class 'boost::property_map<boost::adjacency_list<boost::setS, boost::setS, boost::directedS, boost::no_property, boost::no_property, boost::no_property, boost::setS>, boost::vertex_index_t, void>' requested here
+      typedef typename boost::property_map<Graph, Prop>::const_type result_type;
+                              ^
+/usr/local/include/boost/graph/named_function_params.hpp:556:18: note: (skipping 4 contexts in backtrace; use -ftemplate-backtrace-limit=0 to see all)
+        typename override_const_property_t<
+                 ^
+/usr/local/include/boost/graph/depth_first_search.hpp:330:5: note: in instantiation of function template specialization 'boost::graph::detail::depth_first_search_impl<boost::adjacency_list<boost::setS, boost::setS, boost::directedS, boost::no_property, boost::no_property, boost::no_property, boost::setS> >::operator()<boost::parameter::aux::arg_list<boost::parameter::aux::tagged_argument<boost::graph::keywords::tag::visitor, const boost::topo_sort_visitor<boost::iterators::function_output_iterator<(lambda at main.cpp:21:50)> > >, boost::parameter::aux::arg_list<boost::parameter::aux::tagged_argument<boost::graph::keywords::tag::buffer, const int>, boost::parameter::aux::empty_arg_list> > >' requested here
+    BOOST_GRAPH_MAKE_FORWARDING_FUNCTION(depth_first_search, 1, 4)
+    ^
+/usr/local/include/boost/graph/named_function_params.hpp:496:12: note: expanded from macro 'BOOST_GRAPH_MAKE_FORWARDING_FUNCTION'
+    return detail::BOOST_PP_CAT(name, _impl)<BOOST_PP_ENUM_PARAMS(nfixed, Param)>()(BOOST_PP_ENUM_PARAMS(nfixed, param) BOOST_PP_COMMA_IF(nfixed) arg_pack); \
+           ^
+/usr/local/include/boost/graph/depth_first_search.hpp:333:3: note: in instantiation of function template specialization 'boost::graph::depth_first_search_with_named_params<boost::adjacency_list<boost::setS, boost::setS, boost::directedS, boost::no_property, boost::no_property, boost::no_property, boost::setS>, boost::parameter::aux::arg_list<boost::parameter::aux::tagged_argument<boost::graph::keywords::tag::visitor, const boost::topo_sort_visitor<boost::iterators::function_output_iterator<(lambda at main.cpp:21:50)> > >, boost::parameter::aux::arg_list<boost::parameter::aux::tagged_argument<boost::graph::keywords::tag::buffer, const int>, boost::parameter::aux::empty_arg_list> > >' requested here
+  BOOST_GRAPH_MAKE_OLD_STYLE_PARAMETER_FUNCTION(depth_first_search, 1)
+  ^
+/usr/local/include/boost/graph/named_function_params.hpp:528:28: note: expanded from macro 'BOOST_GRAPH_MAKE_OLD_STYLE_PARAMETER_FUNCTION'
+    return ::boost::graph::BOOST_PP_CAT(name, _with_named_params)(BOOST_PP_ENUM_PARAMS(nfixed, param) BOOST_PP_COMMA_IF(nfixed) arg_pack); \
+                           ^
+/usr/local/include/boost/preprocessor/cat.hpp:22:32: note: expanded from macro 'BOOST_PP_CAT'
+#    define BOOST_PP_CAT(a, b) BOOST_PP_CAT_I(a, b)
+                               ^
+/usr/local/include/boost/preprocessor/cat.hpp:29:34: note: expanded from macro 'BOOST_PP_CAT_I'
+#    define BOOST_PP_CAT_I(a, b) a ## b
+                                 ^
+<scratch space>:96:1: note: expanded from here
+depth_first_search_with_named_params
+^
+/usr/local/include/boost/graph/topological_sort.hpp:65:5: note: in instantiation of function template specialization 'boost::depth_first_search<boost::adjacency_list<boost::setS, boost::setS, boost::directedS, boost::no_property, boost::no_property, boost::no_property, boost::setS>, boost::topo_sort_visitor<boost::iterators::function_output_iterator<(lambda at main.cpp:21:50)> >, boost::graph_visitor_t, boost::bgl_named_params<int, boost::buffer_param_t, boost::no_property> >' requested here
+    depth_first_search(g, params.visitor(TopoVisitor(result)));
+    ^
+/usr/local/include/boost/graph/topological_sort.hpp:71:5: note: in instantiation of function template specialization 'boost::topological_sort<const boost::adjacency_list<boost::setS, boost::setS, boost::directedS, boost::no_property, boost::no_property, boost::no_property, boost::setS>, boost::iterators::function_output_iterator<(lambda at main.cpp:21:50)>, int, boost::buffer_param_t, boost::no_property>' requested here
+    topological_sort(g, result, 
+    ^
+main.cpp:19:16: note: in instantiation of function template specialization 'boost::topological_sort<const boost::adjacency_list<boost::setS, boost::setS, boost::directedS, boost::no_property, boost::no_property, boost::no_property, boost::setS>, boost::iterators::function_output_iterator<(lambda at main.cpp:21:50)> >' requested here
+        boost::topological_sort(
+               ^
+In file included from main.cpp:1:
+In file included from /usr/local/include/boost/graph/adjacency_list.hpp:246:
+/usr/local/include/boost/graph/detail/adjacency_list.hpp:2544:33: error: cannot form a reference to 'void'
+        typedef const value_type& const_reference;
+                                ^
+In file included from main.cpp:2:
+In file included from /usr/local/include/boost/graph/topological_sort.hpp:16:
+/usr/local/include/boost/graph/depth_first_search.hpp:325:37: error: no matching function for call to object of type 'const make_property_map_from_arg_pack_gen<boost::graph::keywords::tag::color_map, boost::default_color_type>'
+                                    boost::detail::make_color_map_from_arg_pack(g, arg_pack),
+                                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/local/include/boost/graph/depth_first_search.hpp:330:5: note: in instantiation of function template specialization 'boost::graph::detail::depth_first_search_impl<boost::adjacency_list<boost::setS, boost::setS, boost::directedS, boost::no_property, boost::no_property, boost::no_property, boost::setS> >::operator()<boost::parameter::aux::arg_list<boost::parameter::aux::tagged_argument<boost::graph::keywords::tag::visitor, const boost::topo_sort_visitor<boost::iterators::function_output_iterator<(lambda at main.cpp:21:50)> > >, boost::parameter::aux::arg_list<boost::parameter::aux::tagged_argument<boost::graph::keywords::tag::buffer, const int>, boost::parameter::aux::empty_arg_list> > >' requested here
+    BOOST_GRAPH_MAKE_FORWARDING_FUNCTION(depth_first_search, 1, 4)
+    ^
+/usr/local/include/boost/graph/named_function_params.hpp:496:12: note: expanded from macro 'BOOST_GRAPH_MAKE_FORWARDING_FUNCTION'
+    return detail::BOOST_PP_CAT(name, _impl)<BOOST_PP_ENUM_PARAMS(nfixed, Param)>()(BOOST_PP_ENUM_PARAMS(nfixed, param) BOOST_PP_COMMA_IF(nfixed) arg_pack); \
+           ^
+/usr/local/include/boost/graph/depth_first_search.hpp:333:3: note: in instantiation of function template specialization 'boost::graph::depth_first_search_with_named_params<boost::adjacency_list<boost::setS, boost::setS, boost::directedS, boost::no_property, boost::no_property, boost::no_property, boost::setS>, boost::parameter::aux::arg_list<boost::parameter::aux::tagged_argument<boost::graph::keywords::tag::visitor, const boost::topo_sort_visitor<boost::iterators::function_output_iterator<(lambda at main.cpp:21:50)> > >, boost::parameter::aux::arg_list<boost::parameter::aux::tagged_argument<boost::graph::keywords::tag::buffer, const int>, boost::parameter::aux::empty_arg_list> > >' requested here
+  BOOST_GRAPH_MAKE_OLD_STYLE_PARAMETER_FUNCTION(depth_first_search, 1)
+  ^
+/usr/local/include/boost/graph/named_function_params.hpp:528:28: note: expanded from macro 'BOOST_GRAPH_MAKE_OLD_STYLE_PARAMETER_FUNCTION'
+    return ::boost::graph::BOOST_PP_CAT(name, _with_named_params)(BOOST_PP_ENUM_PARAMS(nfixed, param) BOOST_PP_COMMA_IF(nfixed) arg_pack); \
+                           ^
+/usr/local/include/boost/preprocessor/cat.hpp:22:32: note: expanded from macro 'BOOST_PP_CAT'
+#    define BOOST_PP_CAT(a, b) BOOST_PP_CAT_I(a, b)
+                               ^
+/usr/local/include/boost/preprocessor/cat.hpp:29:34: note: expanded from macro 'BOOST_PP_CAT_I'
+#    define BOOST_PP_CAT_I(a, b) a ## b
+                                 ^
+<scratch space>:96:1: note: expanded from here
+depth_first_search_with_named_params
+^
+/usr/local/include/boost/graph/topological_sort.hpp:65:5: note: in instantiation of function template specialization 'boost::depth_first_search<boost::adjacency_list<boost::setS, boost::setS, boost::directedS, boost::no_property, boost::no_property, boost::no_property, boost::setS>, boost::topo_sort_visitor<boost::iterators::function_output_iterator<(lambda at main.cpp:21:50)> >, boost::graph_visitor_t, boost::bgl_named_params<int, boost::buffer_param_t, boost::no_property> >' requested here
+    depth_first_search(g, params.visitor(TopoVisitor(result)));
+    ^
+/usr/local/include/boost/graph/topological_sort.hpp:71:5: note: in instantiation of function template specialization 'boost::topological_sort<const boost::adjacency_list<boost::setS, boost::setS, boost::directedS, boost::no_property, boost::no_property, boost::no_property, boost::setS>, boost::iterators::function_output_iterator<(lambda at main.cpp:21:50)>, int, boost::buffer_param_t, boost::no_property>' requested here
+    topological_sort(g, result, 
+    ^
+main.cpp:19:16: note: in instantiation of function template specialization 'boost::topological_sort<const boost::adjacency_list<boost::setS, boost::setS, boost::directedS, boost::no_property, boost::no_property, boost::no_property, boost::setS>, boost::iterators::function_output_iterator<(lambda at main.cpp:21:50)> >' requested here
+        boost::topological_sort(
+               ^
+/usr/local/include/boost/graph/named_function_params.hpp:612:7: note: candidate template ignored: substitution failure [with Graph = boost::adjacency_list<boost::setS, boost::setS, boost::directedS, boost::no_property, boost::no_property, boost::no_property, boost::setS>, ArgPack = boost::parameter::aux::arg_list<boost::parameter::aux::tagged_argument<boost::graph::keywords::tag::visitor, const boost::topo_sort_visitor<boost::iterators::function_output_iterator<(lambda at main.cpp:21:50)> > >, boost::parameter::aux::arg_list<boost::parameter::aux::tagged_argument<boost::graph::keywords::tag::buffer, const int>, boost::parameter::aux::empty_arg_list> >]
+      operator()(const Graph& g, const ArgPack& ap) const {
+      ^
+3 errors generated.
