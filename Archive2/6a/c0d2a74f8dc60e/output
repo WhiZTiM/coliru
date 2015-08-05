@@ -1,0 +1,4 @@
+main.cpp:21:32: error: invalid explicit specialization before '>' token
+ template <typename T> template<>
+                                ^
+main.cpp:21:32: error: enclosing class templates are not explicitly specialized
