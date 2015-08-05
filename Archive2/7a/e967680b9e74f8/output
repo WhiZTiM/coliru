@@ -1,0 +1,3 @@
+main.cpp:3:19: error: 'RANDOM' was not declared in this scope
+ enum test { Foo = RANDOM, Bar }; 
+                   ^
