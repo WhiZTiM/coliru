@@ -1,0 +1,8 @@
+~~~~~~G++~~~~~~
+line Alice and 
+Bob were having an adventure.
+not line!
+~~~~CLANG++~~~~
+line Alice and 
+Bob were having an adventure.
+not line!
