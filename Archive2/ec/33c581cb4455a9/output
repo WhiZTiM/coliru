@@ -1,0 +1,10 @@
++ g++ -std=c++1y -O2 -Wall -pedantic -pthread main.cpp
++ ./a.out
+void A::foo()
+void A::bar(int)
+void A::foo(int, char)
++ clang++ -std=c++1y -stdlib=libc++ -O2 -Wall -pedantic -pthread main.cpp
++ ./a.out
+void A::foo()
+void A::bar(int)
+void A::foo(int, char)
