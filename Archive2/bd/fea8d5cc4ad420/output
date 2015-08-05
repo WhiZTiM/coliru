@@ -1,0 +1,23 @@
+test_inline_byval(Class):
+	mov	eax, 123
+	ret
+test_inline_byref(Class&):
+	mov	DWORD PTR [rdi], 123
+	mov	eax, 123
+	ret
+test_noninline_byval(Class):
+	sub	rsp, 24
+	mov	rdi, rsp
+	mov	DWORD PTR [rsp], 123
+	call	Class::non_inline_function()
+	mov	eax, DWORD PTR [rsp]
+	add	rsp, 24
+	ret
+test_noninline_byref(Class&):
+	push	rbx
+	mov	DWORD PTR [rdi], 123
+	mov	rbx, rdi
+	call	Class::non_inline_function()
+	mov	eax, DWORD PTR [rbx]
+	pop	rbx
+	ret
