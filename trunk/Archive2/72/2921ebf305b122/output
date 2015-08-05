@@ -1,0 +1,73 @@
+after initialisation
+------------------
+ firstvalue: has address 0x7fff27c1abbc value 25
+secondvalue: has address 0x7fff27c1abb8 value 15
+         p1:   points to 0x7fff27c1abbc value 25 (points to firstvalue)
+         p2:   points to 0x7fff27c1abb8 value 15 (points to secondvalue)
+
+after *p1 = 10
+------------------
+ firstvalue: has address 0x7fff27c1abbc value 10
+secondvalue: has address 0x7fff27c1abb8 value 15
+         p1:   points to 0x7fff27c1abbc value 10 (points to firstvalue)
+         p2:   points to 0x7fff27c1abb8 value 15 (points to secondvalue)
+
+after *p2 = *p1
+------------------
+ firstvalue: has address 0x7fff27c1abbc value 10
+secondvalue: has address 0x7fff27c1abb8 value 10
+         p1:   points to 0x7fff27c1abbc value 10 (points to firstvalue)
+         p2:   points to 0x7fff27c1abb8 value 10 (points to secondvalue)
+
+after p1 = p2
+------------------
+ firstvalue: has address 0x7fff27c1abbc value 10
+secondvalue: has address 0x7fff27c1abb8 value 10
+         p1:   points to 0x7fff27c1abb8 value 10 (points to secondvalue)
+         p2:   points to 0x7fff27c1abb8 value 10 (points to secondvalue)
+
+after *p1 = 20
+------------------
+ firstvalue: has address 0x7fff27c1abbc value 10
+secondvalue: has address 0x7fff27c1abb8 value 20
+         p1:   points to 0x7fff27c1abb8 value 20 (points to secondvalue)
+         p2:   points to 0x7fff27c1abb8 value 20 (points to secondvalue)
+
+
+===========
+
+after initialisation
+------------------
+ firstvalue: has address 0x7fffb0513c38 value 25
+secondvalue: has address 0x7fffb0513c3c value 15
+         p1:   points to 0x7fffb0513c38 value 25 (points to firstvalue)
+         p2:   points to 0x7fffb0513c3c value 15 (points to secondvalue)
+
+after *p1 = 10
+------------------
+ firstvalue: has address 0x7fffb0513c38 value 10
+secondvalue: has address 0x7fffb0513c3c value 15
+         p1:   points to 0x7fffb0513c38 value 10 (points to firstvalue)
+         p2:   points to 0x7fffb0513c3c value 15 (points to secondvalue)
+
+after *p2 = *p1
+------------------
+ firstvalue: has address 0x7fffb0513c38 value 10
+secondvalue: has address 0x7fffb0513c3c value 10
+         p1:   points to 0x7fffb0513c38 value 10 (points to firstvalue)
+         p2:   points to 0x7fffb0513c3c value 10 (points to secondvalue)
+
+after p1 = p2
+------------------
+ firstvalue: has address 0x7fffb0513c38 value 10
+secondvalue: has address 0x7fffb0513c3c value 10
+         p1:   points to 0x7fffb0513c3c value 10 (points to secondvalue)
+         p2:   points to 0x7fffb0513c3c value 10 (points to secondvalue)
+
+after *p1 = 20
+------------------
+ firstvalue: has address 0x7fffb0513c38 value 10
+secondvalue: has address 0x7fffb0513c3c value 20
+         p1:   points to 0x7fffb0513c3c value 20 (points to secondvalue)
+         p2:   points to 0x7fffb0513c3c value 20 (points to secondvalue)
+
