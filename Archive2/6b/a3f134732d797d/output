@@ -1,0 +1,9 @@
+main.cpp: In function 'void test2()':
+main.cpp:13:8: warning: 'y' is used uninitialized in this function [-Wuninitialized]
+     ++y;
+        ^
+1
+2
+200
+201
+202
