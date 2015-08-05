@@ -1,0 +1,20 @@
+
+Checking for exceptions every iteration
+
+Processed 500000 elements, of which 100 led to an exception being thrown
+Elapsed time: 1386 microseconds
+
+Checking for exceptions globally, early exit
+
+Processed 500000 elements, of which element 0 led to an exception being thrown
+Elapsed time: 22 microseconds
+
+Checking for exceptions globally, early exit
+
+Processed 500000 elements, of which element 499900 led to an exception being thrown
+Elapsed time: 647 microseconds
+
+Checking for exceptions globally, no exit
+
+Processed 500000 elements
+Elapsed time: 705 microseconds
