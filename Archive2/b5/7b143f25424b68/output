@@ -1,0 +1,201 @@
+min(unsigned long, unsigned long):
+	cmp	rsi, rdi
+	mov	rax, rdi
+	cmovbe	rax, rsi
+	ret
+min(unsigned long, unsigned long, unsigned long):
+	cmp	rsi, rdx
+	mov	rax, rdi
+	cmova	rsi, rdx
+	cmp	rsi, rdi
+	cmovbe	rax, rsi
+	ret
+min(unsigned long, unsigned long, unsigned long, unsigned long):
+	cmp	rdi, rsi
+	mov	rax, rdx
+	cmova	rdi, rsi
+	cmp	rdi, rcx
+	cmovbe	rcx, rdi
+	cmp	rcx, rdx
+	cmovbe	rax, rcx
+	ret
+min(unsigned long, unsigned long, unsigned long, unsigned long, unsigned long):
+	cmp	rsi, r8
+	mov	rax, rdx
+	cmova	rsi, r8
+	cmp	rsi, rdi
+	cmovbe	rdi, rsi
+	cmp	rdi, rcx
+	cmovbe	rcx, rdi
+	cmp	rcx, rdx
+	cmovbe	rax, rcx
+	ret
+min(unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long):
+	cmp	rdi, rsi
+	mov	rax, r8
+	cmova	rdi, rsi
+	cmp	rdi, rcx
+	cmovbe	rcx, rdi
+	cmp	rcx, rdx
+	cmovbe	rdx, rcx
+	cmp	rdx, r9
+	cmovbe	r9, rdx
+	cmp	r9, r8
+	cmovbe	rax, r9
+	ret
+min(unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long):
+	cmp	rdi, rsi
+	mov	rax, QWORD PTR [rsp+8]
+	cmova	rdi, rsi
+	cmp	rdi, rcx
+	cmovbe	rcx, rdi
+	cmp	rcx, rdx
+	cmovbe	rdx, rcx
+	cmp	rdx, rax
+	cmova	rdx, rax
+	mov	rax, r8
+	cmp	rdx, r9
+	cmovbe	r9, rdx
+	cmp	r9, r8
+	cmovbe	rax, r9
+	ret
+min(unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long):
+	cmp	rdi, rsi
+	mov	r10, QWORD PTR [rsp+16]
+	mov	rax, QWORD PTR [rsp+8]
+	cmova	rdi, rsi
+	cmp	rdi, rcx
+	cmovbe	rcx, rdi
+	cmp	rcx, rdx
+	cmovbe	rdx, rcx
+	cmp	rdx, r9
+	cmovbe	r9, rdx
+	cmp	r9, r8
+	cmovbe	r8, r9
+	cmp	r8, r10
+	cmova	r8, r10
+	cmp	r8, rax
+	cmovbe	rax, r8
+	ret
+min(unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long):
+	cmp	rdi, rsi
+	push	rbx
+	mov	rbx, QWORD PTR [rsp+24]
+	cmova	rdi, rsi
+	mov	rax, QWORD PTR [rsp+16]
+	mov	r11, QWORD PTR [rsp+40]
+	cmp	rdi, rcx
+	mov	r10, QWORD PTR [rsp+32]
+	cmovbe	rcx, rdi
+	cmp	rcx, rdx
+	cmovbe	rdx, rcx
+	cmp	rdx, r9
+	cmovbe	r9, rdx
+	cmp	r9, r8
+	cmova	r9, r8
+	cmp	r9, rbx
+	cmovbe	rbx, r9
+	cmp	rbx, rax
+	mov	r8, rbx
+	cmova	r8, rax
+	mov	rax, r11
+	cmp	r8, r11
+	cmovbe	rax, r8
+	cmp	rax, r10
+	cmova	rax, r10
+	pop	rbx
+	ret
+min(unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long):
+	cmp	rdx, rcx
+	push	rbx
+	mov	rbx, QWORD PTR [rsp+24]
+	cmova	rdx, rcx
+	mov	r11, QWORD PTR [rsp+16]
+	mov	r10, QWORD PTR [rsp+40]
+	cmp	rdx, rsi
+	mov	rax, QWORD PTR [rsp+32]
+	cmovbe	rsi, rdx
+	cmp	rsi, rdi
+	cmova	rsi, rdi
+	cmp	rsi, rbx
+	cmovbe	rbx, rsi
+	cmp	rbx, r11
+	mov	rdi, rbx
+	cmova	rdi, r11
+	cmp	rdi, r9
+	cmovbe	r9, rdi
+	cmp	r9, r8
+	cmovbe	r8, r9
+	cmp	r8, r10
+	cmova	r8, r10
+	cmp	r8, rax
+	cmovbe	rax, r8
+	pop	rbx
+	ret
+min(unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long):
+	cmp	rdx, rcx
+	push	r12
+	push	rbp
+	cmova	rdx, rcx
+	push	rbx
+	mov	r12, QWORD PTR [rsp+40]
+	cmp	rdx, rsi
+	mov	rbp, QWORD PTR [rsp+32]
+	mov	rbx, QWORD PTR [rsp+72]
+	cmovbe	rsi, rdx
+	mov	rax, QWORD PTR [rsp+64]
+	mov	r11, QWORD PTR [rsp+56]
+	cmp	rsi, rdi
+	mov	r10, QWORD PTR [rsp+48]
+	cmova	rsi, rdi
+	mov	rdi, r12
+	cmp	rsi, r12
+	cmovbe	rdi, rsi
+	cmp	rdi, rbp
+	cmova	rdi, rbp
+	cmp	rdi, r9
+	cmovbe	r9, rdi
+	cmp	r9, r8
+	cmova	r9, r8
+	cmp	r9, rbx
+	cmovbe	rbx, r9
+	cmp	rbx, rax
+	mov	r8, rbx
+	cmova	r8, rax
+	mov	rax, r11
+	cmp	r8, r11
+	cmovbe	rax, r8
+	cmp	rax, r10
+	pop	rbx
+	cmova	rax, r10
+	pop	rbp
+	pop	r12
+	ret
+min(unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, double, double, double, double, double, double):
+	minsd	xmm1, xmm0
+	cmp	r8, r9
+	minsd	xmm3, xmm2
+	cmova	r8, r9
+	minsd	xmm5, xmm4
+	cmp	r8, rcx
+	cmovbe	rcx, r8
+	cmp	rcx, rdx
+	minsd	xmm3, xmm1
+	cmovbe	rdx, rcx
+	cmp	rdx, rsi
+	cmovbe	rsi, rdx
+	cmp	rsi, rdi
+	minsd	xmm5, xmm3
+	cmovbe	rdi, rsi
+	ucomisd	xmm5, xmm0
+	cvttsd2si	rax, xmm5
+	cmp	rdi, rax
+	cmovbe	rax, rdi
+	ret
+	subsd	xmm5, xmm0
+	movabs	rdx, -9223372036854775808
+	cvttsd2si	rax, xmm5
+	xor	rax, rdx
+	cmp	rdi, rax
+	cmovbe	rax, rdi
+	ret
