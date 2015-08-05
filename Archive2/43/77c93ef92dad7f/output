@@ -1,0 +1,6 @@
+main.cpp: In function 'int main(int, char**)':
+main.cpp:36:58: warning: typedef 'vertex_iter' locally defined but not used [-Wunused-local-typedefs]
+     typedef graph_traits<WorkflowGraph>::vertex_iterator vertex_iter;
+                                                          ^
+vertices(g) = 0 1 
+edges(g) = 
