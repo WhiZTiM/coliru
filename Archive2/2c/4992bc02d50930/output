@@ -1,0 +1,4 @@
+main.cpp: In function 'int main()':
+main.cpp:32:29: error: 'Base' is an inaccessible base of 'Derived'
+     Base* d2 = new Derived(1);
+                             ^
