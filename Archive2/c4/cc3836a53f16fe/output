@@ -1,0 +1,8 @@
+main.cpp:2:9: warning: unused variable 'a' [-Wunused-variable]
+    int a;
+        ^
+1 warning generated.
+main.cpp:2:9: warning: unused variable 'a' [-Wunused-variable]
+    int a;
+        ^
+1 warning generated.
