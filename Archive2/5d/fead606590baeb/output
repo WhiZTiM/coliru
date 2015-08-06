@@ -1,0 +1,8 @@
+gcc (GCC) 5.2.0
+main.cpp: In function 'main':
+main.cpp:12:9: warning: implicit declaration of function 'ctime_s' [-Wimplicit-function-declaration]
+     e = ctime_s( s, 50, &t );                           // 
+         ^
+/tmp/ccqJAS5o.o: In function `main':
+main.cpp:(.text.startup+0x22): undefined reference to `ctime_s'
+collect2: error: ld returned 1 exit status
