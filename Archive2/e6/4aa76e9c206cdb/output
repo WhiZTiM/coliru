@@ -1,0 +1,8 @@
+main.cpp: In instantiation of 'main()::<lambda(auto:1&&)> [with auto:1 = std::__cxx11::basic_string<char>]':
+main.cpp:16:27:   required from here
+main.cpp:13:30: error: 'GetType<std::__cxx11::basic_string<char>&&> _x' has incomplete type
+         GetType<decltype(x)> _x; // string&&
+                              ^
+main.cpp:14:32: error: 'GetType<std::__cxx11::basic_string<char>&> _y' has incomplete type
+         GetType<decltype((x))> _y; // string& *no-longer an x-value!*
+                                ^
