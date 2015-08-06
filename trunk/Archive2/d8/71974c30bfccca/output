@@ -1,0 +1,8 @@
+clang version 3.6.0 (tags/RELEASE_360/final 235480)
+g++ (GCC) 5.2.0
+main.cpp:14:19: error: specialization of 'template<class> struct blah::blub::X' in different namespace [-fpermissive]
+ template<> struct X<int>{};
+                   ^
+main.cpp:5:24: error:   from definition of 'template<class> struct blah::blub::X' [-fpermissive]
+ template<class> struct X{};
+                        ^
