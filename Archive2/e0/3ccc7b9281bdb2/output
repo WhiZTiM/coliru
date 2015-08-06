@@ -1,0 +1,29 @@
+main.cpp:2:25: error: variably modified 'c' at file scope
+ typedef struct vars{int c[n];} vars_t;
+                         ^
+main.cpp:5:1: warning: return type defaults to 'int' [-Wimplicit-int]
+ f(){n=2;}
+ ^
+main.cpp:6:1: warning: return type defaults to 'int' [-Wimplicit-int]
+ g(){int b[n];}
+ ^
+main.cpp: In function 'g':
+main.cpp:6:9: warning: unused variable 'b' [-Wunused-variable]
+ g(){int b[n];}
+         ^
+main.cpp: At top level:
+main.cpp:8:1: warning: return type defaults to 'int' [-Wimplicit-int]
+ main(){
+ ^
+main.cpp: In function 'main':
+main.cpp:9:13: warning: unused variable 'a' [-Wunused-variable]
+         int a[n];
+             ^
+main.cpp: In function 'f':
+main.cpp:5:1: warning: control reaches end of non-void function [-Wreturn-type]
+ f(){n=2;}
+ ^
+main.cpp: In function 'g':
+main.cpp:6:1: warning: control reaches end of non-void function [-Wreturn-type]
+ g(){int b[n];}
+ ^
