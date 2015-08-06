@@ -1,0 +1,12 @@
++ g++-5.1 -std=c++14 -O3 -Wall -Wextra -pedantic -pthread main.cpp
++ ./a.out
+v0.size: 4
+v1.size: 4
+v0[0]: 2
+v1[0]: 2
++ clang++ -std=c++14 -O3 -Wall -Wextra -pedantic -pthread -stdlib=libc++ main.cpp -lsupc++
++ ./a.out
+v0.size: 4
+v1.size: 4
+v0[0]: 2
+v1[0]: 2
