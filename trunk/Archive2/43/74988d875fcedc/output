@@ -1,0 +1,20 @@
+In file included from main.cpp:1:
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../include/c++/5.2.0/functional:1711:10: error: call to implicitly-deleted copy constructor of '(lambda at main.cpp:13:13)'
+            new _Functor(*__source._M_access<_Functor*>());
+                ^        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../include/c++/5.2.0/functional:1746:8: note: in instantiation of member function 'std::_Function_base::_Base_manager<(lambda at main.cpp:13:13)>::_M_clone' requested here
+              _M_clone(__dest, __source, _Local_storage());
+              ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../include/c++/5.2.0/functional:2260:33: note: in instantiation of member function 'std::_Function_base::_Base_manager<(lambda at main.cpp:13:13)>::_M_manager' requested here
+            _M_manager = &_My_handler::_M_manager;
+                                       ^
+main.cpp:13:13: note: in instantiation of function template specialization 'std::function<void ()>::function<(lambda at main.cpp:13:13), void>' requested here
+    runFunc([captured_ptr = std::move(ptr)]() {
+            ^
+main.cpp:13:14: note: copy constructor of '' is implicitly deleted because field '' has a deleted copy constructor
+    runFunc([captured_ptr = std::move(ptr)]() {
+             ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../include/c++/5.2.0/bits/unique_ptr.h:356:7: note: 'unique_ptr' has been explicitly marked deleted here
+      unique_ptr(const unique_ptr&) = delete;
+      ^
+1 error generated.
