@@ -1,0 +1,5 @@
+g++-5.1 (GCC) 5.1.0
+main.cpp: In function 'int main()':
+main.cpp:12:28: error: 'ctime_s' was not declared in this scope
+     e = ctime_s( s, 50, &t ); // *** error: 'ctime_s' was not declared in this scope                             // 
+                            ^
