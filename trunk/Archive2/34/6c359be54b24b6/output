@@ -1,0 +1,12 @@
+main.cpp:10:8: error: invalid initialization of non-const reference of type 'X&' from an rvalue of type 'X'
+ X y = f();
+        ^
+main.cpp:5:5: note:   initializing argument 1 of 'X::X(X&)'
+     X(X&);
+     ^
+main.cpp:11:9: error: invalid initialization of non-const reference of type 'X&' from an rvalue of type 'X'
+ X z = X();
+         ^
+main.cpp:5:5: note:   initializing argument 1 of 'X::X(X&)'
+     X(X&);
+     ^
