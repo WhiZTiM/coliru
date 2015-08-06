@@ -1,0 +1,2 @@
+clang++ main.cpp -std=c++14 -Wall -Wextra -pedantic -O2 -o mon_programme
+./mon_programme
