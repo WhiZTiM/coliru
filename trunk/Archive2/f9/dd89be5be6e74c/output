@@ -1,0 +1,17 @@
+main.cpp: In function 'bool convert(const string&)':
+main.cpp:8:14: error: passing 'const string {aka const std::__cxx11::basic_string<char>}' as 'this' argument discards qualifiers [-fpermissive]
+     if (text = "")
+              ^
+In file included from /usr/local/include/c++/5.2.0/string:52:0,
+                 from /usr/local/include/c++/5.2.0/bits/locale_classes.h:40,
+                 from /usr/local/include/c++/5.2.0/bits/ios_base.h:41,
+                 from /usr/local/include/c++/5.2.0/ios:42,
+                 from /usr/local/include/c++/5.2.0/ostream:38,
+                 from /usr/local/include/c++/5.2.0/iostream:39,
+                 from main.cpp:1:
+/usr/local/include/c++/5.2.0/bits/basic_string.h:559:7: note:   in call to 'std::__cxx11::basic_string<_CharT, _Traits, _Alloc>& std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::operator=(const _CharT*) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>]'
+       operator=(const _CharT* __s)
+       ^
+main.cpp:8:18: error: could not convert '(& text)->std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::operator=<char, std::char_traits<char>, std::allocator<char> >(((const char*)""))' from 'std::__cxx11::basic_string<char>' to 'bool'
+     if (text = "")
+                  ^
