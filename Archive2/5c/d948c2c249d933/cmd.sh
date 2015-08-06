@@ -1,0 +1,1 @@
+clang++ -std=c++1z -Wall -Wextra -lpthread main.cpp && echo "1 3 4 9 2 9 2" | ./a.out
