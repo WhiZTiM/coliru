@@ -1,0 +1,1 @@
+g++ -pthread -std=c++14 -Wall -O2 main.cpp && ./a.out
