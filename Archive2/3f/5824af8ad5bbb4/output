@@ -1,0 +1,19 @@
+Non ! Oui ? Pourquoi "()" ?
+12.0 / 5 = 2.4
+12 / 5 = 2
+Le nombre 666 en base 8 (octale) : 1232
+En base 16 (hexadécimal) : 29a
+Et en base 10 (décimal) : 666
+Et maintenant, en affichant les bases !
+Le nombre 5479 ==> 012547
+5479 ==> 0x1567
+5479 ==> 5479
+
+Passons aux conversions !
+
+Prenons le nombre 1203 par exemple...
+1203 correspond à 4b3 en hexadécimal
+
+Prenons un autre exemple, 355
+355 correspond à 543 en octal
+
