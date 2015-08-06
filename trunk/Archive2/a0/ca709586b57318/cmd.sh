@@ -1,0 +1,1 @@
+g++-5.1 --version | grep GCC && g++-5.1 -O3 -Wall -Wextra -c main.cpp
