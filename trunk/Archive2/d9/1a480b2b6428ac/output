@@ -1,0 +1,17 @@
+In file included from main.cpp:1:0:
+/usr/local/include/c++/5.2.0/functional: In instantiation of 'static void std::_Function_base::_Base_manager<_Functor>::_M_clone(std::_Any_data&, const std::_Any_data&, std::false_type) [with _Functor = main()::<lambda()>; std::false_type = std::integral_constant<bool, false>]':
+/usr/local/include/c++/5.2.0/functional:1746:16:   required from 'static bool std::_Function_base::_Base_manager<_Functor>::_M_manager(std::_Any_data&, const std::_Any_data&, std::_Manager_operation) [with _Functor = main()::<lambda()>]'
+/usr/local/include/c++/5.2.0/functional:2260:19:   required from 'std::function<_Res(_ArgTypes ...)>::function(_Functor) [with _Functor = main()::<lambda()>; <template-parameter-2-2> = void; _Res = void; _ArgTypes = {}]'
+main.cpp:15:6:   required from here
+/usr/local/include/c++/5.2.0/functional:1710:34: error: use of deleted function 'main()::<lambda()>::<lambda>(const main()::<lambda()>&)'
+    __dest._M_access<_Functor*>() =
+                                  ^
+main.cpp:13:43: note: 'main()::<lambda()>::<lambda>(const main()::<lambda()>&)' is implicitly deleted because the default definition would be ill-formed:
+     runFunc([captured_ptr = std::move(ptr)]() {
+                                           ^
+main.cpp:13:43: error: use of deleted function 'std::unique_ptr<_Tp, _Dp>::unique_ptr(const std::unique_ptr<_Tp, _Dp>&) [with _Tp = std::__cxx11::basic_string<char>; _Dp = std::default_delete<std::__cxx11::basic_string<char> >]'
+In file included from /usr/local/include/c++/5.2.0/memory:81:0,
+                 from main.cpp:3:
+/usr/local/include/c++/5.2.0/bits/unique_ptr.h:356:7: note: declared here
+       unique_ptr(const unique_ptr&) = delete;
+       ^
