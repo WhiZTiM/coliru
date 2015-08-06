@@ -1,0 +1,4 @@
+main.cpp: In function 'int main()':
+main.cpp:13:20: error: aggregate 'TD<std::__detail::_Node_iterator<std::basic_string<char>, true, true> > td' has incomplete type and cannot be defined
+   TD<decltype(it)> td;
+                    ^
