@@ -1,0 +1,1 @@
+clang++ -Wall -Werror -Wno-error=unused-variable -W main.cpp && ./a.out
