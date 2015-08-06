@@ -1,0 +1,1 @@
+g++ --version | grep GCC && g++ -std=gnu++14 -Wall -Wextra  -c main.cpp
