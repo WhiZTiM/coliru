@@ -1,0 +1,10 @@
+gcc (GCC) 5.2.0
+Copyright (C) 2015 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
++ gcc -x c -std=c99 -O3 -Wall -Wconversion main.cpp
+main.cpp:6:20: warning: 'tt' defined but not used [-Wunused-variable]
+ static struct Test tt = (struct Test) {1}; /* 1 */
+                    ^
++ ./a.out
