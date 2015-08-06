@@ -1,0 +1,1 @@
+gcc --version | grep GCC && gcc -std=c11 -O3 -Wall -Wextra -x c main.cpp && ./a.out
