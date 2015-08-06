@@ -1,0 +1,1 @@
+g++ --version | grep GCC && g++ -O3 -Wall -Wextra -c main.cpp
