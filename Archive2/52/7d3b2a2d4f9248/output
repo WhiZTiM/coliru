@@ -1,0 +1,4 @@
+main.cpp: In function 'int main()':
+main.cpp:29:7: error: 'class Test' has no member named 'test_a'
+     t.test_a(); //error, we dropped A from our base class list
+       ^
