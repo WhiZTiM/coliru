@@ -1,0 +1,10 @@
+main.cpp:14:27: error: member pointer refers into non-class type 'int'
+    auto &operator ->* (M T::*p) {
+                          ^
+main.cpp:55:14: note: in instantiation of template class 'Ptr<int>' requested here
+    Ptr<int> ip{&i};
+             ^
+main.cpp:20:27: error: member pointer refers into non-class type 'int'
+    auto operator ->* (R (T::*fp)(As...)) {
+                          ^
+2 errors generated.
