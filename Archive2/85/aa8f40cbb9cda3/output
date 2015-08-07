@@ -1,0 +1,55 @@
+main.cpp: In function 'auto curry(Func, Args ...)':
+main.cpp:6:78: error: expected ',' before '...' token
+     return [func = std::forward<Func> (func), args = std::forward<Args>(args)...](auto&&... x)
+                                                                              ^
+main.cpp:6:78: error: expected identifier before '...' token
+main.cpp:6:81: error: parameter packs not expanded with '...':
+     return [func = std::forward<Func> (func), args = std::forward<Args>(args)...](auto&&... x)
+                                                                                 ^
+main.cpp:6:81: note:         'args'
+main.cpp:6:81: note:         'Args'
+main.cpp: In lambda function:
+main.cpp:8:25: error: expansion pattern 'args' contains no argument packs
+         return func(args..., std::forward<decltype(x)>(x)...);
+                         ^
+main.cpp: In instantiation of 'struct curry(Func, Args ...) [with Func = foo; Args = {int}]::<lambda(auto:1&& ...)>':
+main.cpp:9:5:   required from 'auto curry(Func, Args ...) [with Func = foo; Args = {int}]'
+main.cpp:22:29:   required from here
+main.cpp:6:77: error: using invalid field 'curry(Func, Args ...)::<lambda(auto:1&& ...)>::__args'
+     return [func = std::forward<Func> (func), args = std::forward<Args>(args)...](auto&&... x)
+                                                                             ^
+main.cpp:6:72: error: no matching function for call to 'forward(int)'
+     return [func = std::forward<Func> (func), args = std::forward<Args>(args)...](auto&&... x)
+                                                                        ^
+In file included from /usr/local/include/c++/5.2.0/bits/stl_pair.h:59:0,
+                 from /usr/local/include/c++/5.2.0/bits/stl_algobase.h:64,
+                 from /usr/local/include/c++/5.2.0/bits/char_traits.h:39,
+                 from /usr/local/include/c++/5.2.0/ios:40,
+                 from /usr/local/include/c++/5.2.0/ostream:38,
+                 from /usr/local/include/c++/5.2.0/iostream:39,
+                 from main.cpp:1:
+/usr/local/include/c++/5.2.0/bits/move.h:76:5: note: candidate: template<class _Tp> constexpr _Tp&& std::forward(typename std::remove_reference<_From>::type&)
+     forward(typename std::remove_reference<_Tp>::type& __t) noexcept
+     ^
+/usr/local/include/c++/5.2.0/bits/move.h:76:5: note:   template argument deduction/substitution failed:
+/usr/local/include/c++/5.2.0/bits/move.h: In substitution of 'template<class _Tp> constexpr _Tp&& std::forward(typename std::remove_reference<_From>::type&) [with _Tp = Args]':
+main.cpp:6:72:   required from 'struct curry(Func, Args ...) [with Func = foo; Args = {int}]::<lambda(auto:1&& ...)>'
+main.cpp:9:5:   required from 'auto curry(Func, Args ...) [with Func = foo; Args = {int}]'
+main.cpp:22:29:   required from here
+/usr/local/include/c++/5.2.0/bits/move.h:76:5: error: no type named 'type' in 'struct std::remove_reference<Args>'
+main.cpp: In instantiation of 'struct curry(Func, Args ...) [with Func = foo; Args = {int}]::<lambda(auto:1&& ...)>':
+main.cpp:9:5:   required from 'auto curry(Func, Args ...) [with Func = foo; Args = {int}]'
+main.cpp:22:29:   required from here
+/usr/local/include/c++/5.2.0/bits/move.h:87:5: note: candidate: template<class _Tp> constexpr _Tp&& std::forward(typename std::remove_reference<_From>::type&&)
+     forward(typename std::remove_reference<_Tp>::type&& __t) noexcept
+     ^
+/usr/local/include/c++/5.2.0/bits/move.h:87:5: note:   template argument deduction/substitution failed:
+/usr/local/include/c++/5.2.0/bits/move.h: In substitution of 'template<class _Tp> constexpr _Tp&& std::forward(typename std::remove_reference<_From>::type&&) [with _Tp = Args]':
+main.cpp:6:72:   required from 'struct curry(Func, Args ...) [with Func = foo; Args = {int}]::<lambda(auto:1&& ...)>'
+main.cpp:9:5:   required from 'auto curry(Func, Args ...) [with Func = foo; Args = {int}]'
+main.cpp:22:29:   required from here
+/usr/local/include/c++/5.2.0/bits/move.h:87:5: error: no type named 'type' in 'struct std::remove_reference<Args>'
+main.cpp: In function 'int main()':
+main.cpp:22:29: error: 'void f' has incomplete type
+     auto f = curry(foo (), 1);
+                             ^
