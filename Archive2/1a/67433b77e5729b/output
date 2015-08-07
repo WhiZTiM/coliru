@@ -1,0 +1,9 @@
+main.cpp: In instantiation of 'curry(Func, Args ...)::<lambda(auto:1 ...)> [with auto:1 = {int, int}; Func = foo; Args = {int}]':
+main.cpp:23:11:   required from here
+main.cpp:8:20: error: no match for call to '(const foo) (const int&, int&, int&)'
+         return func(args..., x...);
+                    ^
+main.cpp:14:10: note: candidate: void foo::operator()(int, int, int) <near match>
+     void operator () (int x, int y, int z)
+          ^
+main.cpp:14:10: note:   passing 'const foo*' as 'this' argument discards qualifiers
