@@ -1,0 +1,14 @@
+Sou papa ou mama?
+mama___________________________________________________________________________________@
+
+
+
+
+*** glibc detected *** ./a.out: double free or corruption (fasttop): 0x0000000000ab4c20 ***
+======= Backtrace: =========
+/lib/x86_64-linux-gnu/libc.so.6(+0x7e846)[0x7f1d6f8da846]
+./a.out[0x400c9f]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xed)[0x7f1d6f87d76d]
+./a.out[0x400ae9]
+======= Memory map: ========
+bash: line 7: 15533 Aborted                 (core dumped) ./a.out
