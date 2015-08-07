@@ -1,0 +1,1 @@
+g++ -std=c++14 -O0 -Wno-overflow -pedantic -pthread main.cpp && ./a.out
