@@ -1,0 +1,4 @@
+main.cpp: In function 'int main()':
+main.cpp:27:27: error: request for member 'data' in '* it.__gnu_cxx::__normal_iterator<_Iterator, _Container>::operator-><Node**, std::vector<Node*> >()', which is of pointer type 'Node*' (maybe you meant to use '->' ?)
+         std::cout << *it->data << std::endl;   
+                           ^
