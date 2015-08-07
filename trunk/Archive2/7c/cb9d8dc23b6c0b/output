@@ -1,0 +1,8 @@
+/tmp/main-b8e030.o: In function `main':
+main.cpp:(.text+0x3e): undefined reference to `void error_with_type<char const&>()'
+main.cpp:(.text+0x43): undefined reference to `void error_with_type<char const&>()'
+main.cpp:(.text+0x48): undefined reference to `void error_with_type<char const&>()'
+main.cpp:(.text+0x4d): undefined reference to `void error_with_type<char const&>()'
+main.cpp:(.text+0x52): undefined reference to `void error_with_type<char const&>()'
+/tmp/main-b8e030.o:main.cpp:(.text+0x57): more undefined references to `void error_with_type<char const&>()' follow
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
