@@ -1,0 +1,7 @@
+main.cpp:28:2: warning: no newline at end of file [-Wnewline-eof]
+}
+ ^
+1 warning generated.
+Noisy default construct
+0x1963c20
+0x1963c20
