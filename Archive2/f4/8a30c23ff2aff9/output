@@ -1,0 +1,3 @@
+main.cpp:11:3: warning: ISO C++ prohibits anonymous structs [-Wpedantic]
+   };
+   ^
