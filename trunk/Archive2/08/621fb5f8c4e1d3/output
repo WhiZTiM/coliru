@@ -1,0 +1,4 @@
+main.cpp:7:5: error: static_assert failed
+    static_assert(std::is_same<decltype(foo), void(*)()>{});
+    ^             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+1 error generated.
