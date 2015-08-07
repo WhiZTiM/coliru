@@ -1,0 +1,8 @@
+main.cpp:7:13: error: static_assert failed "derived class is missing calculate_something"
+            static_assert ( std::is_same< decltype( derived::calculate_something() ),
+            ^               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+main.cpp:22:8: note: in instantiation of member function 'base_interface<bad_derived>::base_interface' requested here
+struct bad_derived : base_interface< bad_derived > {
+       ^
+1 error generated.
+1
