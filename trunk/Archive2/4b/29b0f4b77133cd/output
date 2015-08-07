@@ -1,0 +1,10 @@
++ clang++ -std=c++14 -O3 -Wall -pedantic -Wextra -pthread -Wno-unused-variable -Wno-unused-parameter -Wconversion -fno-elide-constructors -stdlib=libc++ main.cpp -lsupc++
+main.cpp:6:23: error: reinterpret_cast from 'const int **' to 'const int ***' casts away qualifiers
+                const int * * * b = reinterpret_cast< const int * * * >( a );
+                                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+1 error generated.
++ g++-4.9 -std=c++11 -O3 -Wall -pedantic -Wextra -pthread -Wno-unused-variable -Wno-unused-parameter -Wconversion main.cpp
+main.cpp: In function 'int main()':
+main.cpp:6:62: error: reinterpret_cast from type 'const int**' to type 'const int***' casts away qualifiers
+   const int * * * b = reinterpret_cast< const int * * * >( a );
+                                                              ^
