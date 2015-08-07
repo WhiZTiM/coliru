@@ -1,0 +1,15 @@
+main.cpp:14:28: error: incomplete type 'Foo' used in nested name specifier
+ struct Foo : TypeAttribute<Foo::Type>
+                            ^
+main.cpp:14:28: error: incomplete type 'Foo' used in nested name specifier
+main.cpp:14:37: error: template argument 1 is invalid
+ struct Foo : TypeAttribute<Foo::Type>
+                                     ^
+main.cpp: In instantiation of 'struct TypeAttribute2<Bar>':
+main.cpp:22:14:   required from here
+main.cpp:10:34: error: invalid use of incomplete type 'struct Bar'
+     using Type = typename T::Type;
+                                  ^
+main.cpp:22:8: note: forward declaration of 'struct Bar'
+ struct Bar : TypeAttribute2<Bar>
+        ^
