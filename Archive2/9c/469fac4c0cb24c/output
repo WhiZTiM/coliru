@@ -1,0 +1,8 @@
+*** glibc detected *** ./a.out: double free or corruption (fasttop): 0x0000000001294c20 ***
+======= Backtrace: =========
+/lib/x86_64-linux-gnu/libc.so.6(+0x7e846)[0x7fe578c23846]
+./a.out[0x4009ab]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xed)[0x7fe578bc676d]
+./a.out[0x400869]
+======= Memory map: ========
+bash: line 7: 12712 Aborted                 (core dumped) ./a.out
