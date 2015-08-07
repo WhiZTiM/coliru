@@ -1,0 +1,1 @@
+g++ -std=c++14 -Wall -Wextra -Wno-unused-but-set-variable main.cpp && ./a.out
