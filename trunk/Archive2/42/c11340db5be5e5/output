@@ -1,0 +1,10 @@
+main.cpp: In function 'int* test()':
+main.cpp:4:9: warning: address of local variable 'x' returned [-Wreturn-local-addr]
+     int x;
+         ^
+1
+2
+3
+4
+4
+0
