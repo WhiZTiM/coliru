@@ -1,0 +1,19 @@
+main.cpp:15:55: error: template argument for non-type template parameter must be an expression
+    using type = typename selector<std::tuple<Ts...>, Indices>::type; // fails
+                                                      ^~~~~~~
+main.cpp:5:38: note: template parameter is declared here
+template <typename T, std::size_t... Is>
+                                     ^
+main.cpp:15:65: error: expected a qualified name after 'typename'
+    using type = typename selector<std::tuple<Ts...>, Indices>::type; // fails
+                                                                ^
+main.cpp:15:65: error: type-id cannot have a name
+    using type = typename selector<std::tuple<Ts...>, Indices>::type; // fails
+                                                                ^~~~
+main.cpp:20:55: error: no type named 'type' in 'remove_last_n<2, int, char, bool, int>'
+    using X = remove_last_n<2, int, char, bool, int>::type;
+              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+main.cpp:21:32: error: use of undeclared identifier 'X'
+    static_assert(std::is_same<X, std::tuple<int, char>>::value, "types do not match");
+                               ^
+5 errors generated.
