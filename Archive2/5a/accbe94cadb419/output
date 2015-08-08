@@ -1,0 +1,6 @@
+main.cpp:5:24: warning: multi-character character constant [-Wmultichar]
+     unsigned char al = 'Alex';
+                        ^
+main.cpp: In function 'int main()':
+main.cpp:5:24: warning: large integer implicitly truncated to unsigned type [-Woverflow]
+What is your name?Not Alex
