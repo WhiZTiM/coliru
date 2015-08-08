@@ -1,0 +1,91 @@
+	.file	"main.cpp"
+	.section	.text.unlikely,"ax",@progbits
+.LCOLDB0:
+	.text
+.LHOTB0:
+	.p2align 5,,31
+	.globl	_Z4pushi
+	.type	_Z4pushi, @function
+_Z4pushi:
+.LFB329:
+	.cfi_startproc
+	movq	buf+128(%rip), %rcx
+	movq	buf+136(%rip), %rsi
+	xorl	%eax, %eax
+	leaq	1(%rcx), %rdx
+	andl	$31, %edx
+	cmpq	%rsi, %rdx
+	je	.L2
+	movl	%edi, buf(,%rcx,4)
+	movl	$1, %eax
+	movq	%rdx, buf+128(%rip)
+.L2:
+	rep; ret
+	.cfi_endproc
+.LFE329:
+	.size	_Z4pushi, .-_Z4pushi
+	.section	.text.unlikely
+.LCOLDE0:
+	.text
+.LHOTE0:
+	.section	.text.unlikely
+.LCOLDB1:
+	.text
+.LHOTB1:
+	.p2align 5,,31
+	.globl	_Z3popRi
+	.type	_Z3popRi, @function
+_Z3popRi:
+.LFB330:
+	.cfi_startproc
+	movq	buf+136(%rip), %rdx
+	movq	buf+128(%rip), %rcx
+	xorl	%eax, %eax
+	cmpq	%rcx, %rdx
+	je	.L6
+	movl	buf(,%rdx,4), %eax
+	incq	%rdx
+	andl	$31, %edx
+	movl	%eax, (%rdi)
+	movq	%rdx, buf+136(%rip)
+	movl	$1, %eax
+.L6:
+	rep; ret
+	.cfi_endproc
+.LFE330:
+	.size	_Z3popRi, .-_Z3popRi
+	.section	.text.unlikely
+.LCOLDE1:
+	.text
+.LHOTE1:
+	.section	.text.unlikely
+.LCOLDB2:
+	.section	.text.startup,"ax",@progbits
+.LHOTB2:
+	.p2align 5,,31
+	.type	_GLOBAL__sub_I_buf, @function
+_GLOBAL__sub_I_buf:
+.LFB358:
+	.cfi_startproc
+	movq	$0, buf+128(%rip)
+	movq	$0, buf+136(%rip)
+	ret
+	.cfi_endproc
+.LFE358:
+	.size	_GLOBAL__sub_I_buf, .-_GLOBAL__sub_I_buf
+	.section	.text.unlikely
+.LCOLDE2:
+	.section	.text.startup
+.LHOTE2:
+	.section	.init_array,"aw"
+	.align 8
+	.quad	_GLOBAL__sub_I_buf
+	.globl	buf
+	.bss
+	.align 32
+	.type	buf, @object
+	.size	buf, 144
+buf:
+	.zero	144
+	.ident	"GCC: (GNU) 5.2.0"
+	.section	.note.GNU-stack,"",@progbits
