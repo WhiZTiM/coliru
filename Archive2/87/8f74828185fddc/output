@@ -1,0 +1,4 @@
+main.cpp:3:10: error: definition of variable with array type needs an explicit size or an initializer
+    char c[]; //Illegal
+         ^
+1 error generated.
