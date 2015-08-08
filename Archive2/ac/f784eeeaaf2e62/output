@@ -1,0 +1,11 @@
+main.cpp:15:46: error: template argument for non-type template parameter must be an expression
+    using type = selector<std::tuple<Ts...>, Indices>, 
+                                             ^~~~~~~
+main.cpp:5:38: note: template parameter is declared here
+template <typename T, std::size_t... Is>
+                                     ^
+main.cpp:15:54: error: expected ';' after alias declaration
+    using type = selector<std::tuple<Ts...>, Indices>, 
+                                                     ^
+                                                     ;
+2 errors generated.
