@@ -1,0 +1,23 @@
+    std::string line ;
+    while( std::getline( file, line ) ) buffer.push( std::move(line) ) ;
+    return buffer.move_lines() ;
+}
+
+int main()
+{
+    for( std::string line : get_last_n_lines( std::ifstream( __FILE__ ), 10  ) ) std::cout << line << '\n' ;
+}
+// **** last line ****
+
+=============
+
+    std::string line ;
+    while( std::getline( file, line ) ) buffer.push( std::move(line) ) ;
+    return buffer.move_lines() ;
+}
+
+int main()
+{
+    for( std::string line : get_last_n_lines( std::ifstream( __FILE__ ), 10  ) ) std::cout << line << '\n' ;
+}
+// **** last line ****
