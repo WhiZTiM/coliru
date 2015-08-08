@@ -1,0 +1,7 @@
+~~~~~~G++~~~~~~
+Left identity: 15==15
+Right identity: 5==5
+~~~~CLANG++~~~~
+/tmp/main-e0cc72.o: In function `main':
+main.cpp:(.text+0x3fb): undefined reference to `_ZZZ4mainENK3$_0clINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEEDaT_ENUlvE_C1ERKS9_'
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
