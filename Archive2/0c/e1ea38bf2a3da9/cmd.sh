@@ -1,0 +1,1 @@
+echo -e "This is the output, but I don't know how to put multiple headers on coliru\nA\nB\nA\nB\nA\nC\nG\nI\nH\nF\n"
