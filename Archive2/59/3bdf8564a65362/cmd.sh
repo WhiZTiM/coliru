@@ -1,0 +1,1 @@
+clang++ -std=c++14 -O2 -Wall -Wc99-extensions -Werror main.cpp && ./a.out
