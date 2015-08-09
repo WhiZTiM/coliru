@@ -1,0 +1,4 @@
+main.cpp:9:5: warning: expression result unused [-Wunused-value]
+    D::x;
+    ^~~~
+1 warning generated.
