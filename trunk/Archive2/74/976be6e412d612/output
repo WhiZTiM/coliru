@@ -1,0 +1,52 @@
+main.cpp:29:33: error: no viable overloaded '='
+    um.find(sref{sv})->first.sv = &um[sref{sv}]; 
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~ ^ ~~~~~~~~~~~~~
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../include/c++/5.2.0/experimental/string_view:120:7: note: candidate function not viable: no known conversion from 'mapped_type *' (aka 'std::__cxx11::basic_string<char> *') to 'const std::experimental::fundamentals_v1::basic_string_view<char, std::char_traits<char> >' for 1st argument
+      operator=(const basic_string_view&) noexcept = default;
+      ^
+In file included from main.cpp:1:
+In file included from /usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../include/c++/5.2.0/experimental/string_view:42:
+In file included from /usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../include/c++/5.2.0/string:48:
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../include/c++/5.2.0/bits/stl_function.h:357:20: error: invalid operands to binary expression ('const sref' and 'const sref')
+      { return __x == __y; }
+               ~~~ ^  ~~~
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../include/c++/5.2.0/bits/hashtable_policy.h:1322:42: note: in instantiation of member function 'std::equal_to<sref>::operator()' requested here
+    { return __c == __n->_M_hash_code && __eq(__k, __extract(__n->_M_v())); }
+                                         ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../include/c++/5.2.0/bits/hashtable_policy.h:1703:28: note: in instantiation of member function 'std::__detail::_Equal_helper<sref, std::pair<const sref, std::__cxx11::basic_string<char> >, std::__detail::_Select1st, std::equal_to<sref>, unsigned long, true>::_S_equals' requested here
+      return _EqualHelper::_S_equals(_M_eq(), this->_M_extract(),
+                           ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../include/c++/5.2.0/bits/hashtable.h:1346:14: note: in instantiation of member function 'std::__detail::_Hashtable_base<sref, std::pair<const sref, std::__cxx11::basic_string<char> >, std::__detail::_Select1st, std::equal_to<sref>, std::hash<sref>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Hashtable_traits<true, false, true> >::_M_equals' requested here
+          if (this->_M_equals(__k, __code, __p))
+                    ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../include/c++/5.2.0/bits/unordered_map.h:633:21: note: in instantiation of member function 'std::_Hashtable<sref, std::pair<const sref, std::__cxx11::basic_string<char> >, std::allocator<std::pair<const sref, std::__cxx11::basic_string<char> > >, std::__detail::_Select1st, std::equal_to<sref>, std::hash<sref>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<true, false, true> >::count' requested here
+      { return _M_h.count(__x); }
+                    ^
+main.cpp:25:11: note: in instantiation of member function 'std::unordered_map<sref, std::__cxx11::basic_string<char>, std::hash<sref>, std::equal_to<sref>, std::allocator<std::pair<const sref, std::__cxx11::basic_string<char> > > >::count' requested here
+    if(um.count(sref{sv})) { 
+          ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../include/c++/5.2.0/bits/stl_pair.h:214:5: note: candidate template ignored: could not match 'pair<type-parameter-0-0, type-parameter-0-1>' against 'const sref'
+    operator==(const pair<_T1, _T2>& __x, const pair<_T1, _T2>& __y)
+    ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../include/c++/5.2.0/bits/stl_iterator.h:292:5: note: candidate template ignored: could not match 'reverse_iterator<type-parameter-0-0>' against 'const sref'
+    operator==(const reverse_iterator<_Iterator>& __x,
+    ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../include/c++/5.2.0/bits/stl_iterator.h:342:5: note: candidate template ignored: could not match 'reverse_iterator<type-parameter-0-0>' against 'const sref'
+    operator==(const reverse_iterator<_IteratorL>& __x,
+    ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../include/c++/5.2.0/bits/stl_iterator.h:1065:5: note: candidate template ignored: could not match 'move_iterator<type-parameter-0-0>' against 'const sref'
+    operator==(const move_iterator<_IteratorL>& __x,
+    ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../include/c++/5.2.0/bits/stl_iterator.h:1071:5: note: candidate template ignored: could not match 'move_iterator<type-parameter-0-0>' against 'const sref'
+    operator==(const move_iterator<_Iterator>& __x,
+    ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../include/c++/5.2.0/bits/postypes.h:216:5: note: candidate template ignored: could not match 'fpos<type-parameter-0-0>' against 'const sref'
+    operator==(const fpos<_StateT>& __lhs, const fpos<_StateT>& __rhs)
+    ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../include/c++/5.2.0/bits/allocator.h:128:5: note: candidate template ignored: could not match 'allocator<type-parameter-0-0>' against 'const sref'
+    operator==(const allocator<_T1>&, const allocator<_T2>&)
+    ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../include/c++/5.2.0/bits/allocator.h:134:5: note: candidate template ignored: could not match 'allocator<type-parameter-0-0>' against 'const sref'
+    operator==(const allocator<_Tp>&, const allocator<_Tp>&)
+    ^
+2 errors generated.
