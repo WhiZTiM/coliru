@@ -1,0 +1,7 @@
+main.cpp: In function 'int main()':
+main.cpp:11:16: error: 'ostream_iterator' was not declared in this scope
+ copy(A, A + N, ostream_iterator<int>(cout, " "));
+                ^
+main.cpp:11:33: error: expected primary-expression before 'int'
+ copy(A, A + N, ostream_iterator<int>(cout, " "));
+                                 ^
