@@ -1,0 +1,18 @@
+======== create ==========
+
+real	0m0.246s
+user	0m0.236s
+sys	0m0.008s
+-rw-r--r-- 1 2001 2000 3601439 Aug  9 06:59 test.txt
+
+======== parse ==========
+
+real	0m0.271s
+user	0m0.212s
+sys	0m0.060s
+
+======== parse ==========
+
+real	0m0.229s
+user	0m0.140s
+sys	0m0.088s
