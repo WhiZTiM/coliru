@@ -1,0 +1,20 @@
+======== create ==========
+
+real	0m0.275s
+user	0m0.252s
+sys	0m0.020s
+-rw-r--r-- 1 2001 2000 4020976 Aug  9 09:01 test.txt
+
+======== parse ==========
+111 rows 6668 cols
+
+real	0m0.389s
+user	0m0.352s
+sys	0m0.040s
+
+======== parse ==========
+111 rows 6668 cols
+
+real	0m0.290s
+user	0m0.220s
+sys	0m0.068s
