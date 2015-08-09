@@ -1,0 +1,26 @@
+======== create (clang++) ==========
+
+real	0m0.283s
+user	0m0.268s
+sys	0m0.012s
+-rw-r--r-- 1 2001 2000 4020976 Aug  9 09:32 test.txt
+
+======== parse (clang++) ==========
+111 rows 6668 cols
+
+real	0m0.389s
+user	0m0.344s
+sys	0m0.040s
+======== create (g++) ==========
+
+real	0m0.111s
+user	0m0.088s
+sys	0m0.020s
+-rw-r--r-- 1 2001 2000 4020976 Aug  9 09:32 test.txt
+
+======== parse (g++) ==========
+111 rows 6668 cols
+
+real	0m0.294s
+user	0m0.236s
+sys	0m0.060s
