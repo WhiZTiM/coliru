@@ -1,0 +1,7 @@
+main.cpp:2:5: error: use of undeclared identifier 'cout'
+    cout << "shonan" << endl;
+    ^
+main.cpp:2:25: error: use of undeclared identifier 'endl'
+    cout << "shonan" << endl;
+                        ^
+2 errors generated.
