@@ -1,0 +1,13 @@
+======== create srce file (g++) ==========
+
+real	0m0.113s
+user	0m0.100s
+sys	0m0.012s
+-rw-r--r-- 1 2001 2000 4020976 Aug  9 10:00 test.txt
+
+======== create dest file (g++) ==========
+
+real	0m0.252s
+user	0m0.192s
+sys	0m0.060s
+-rw-r--r-- 1 2001 2000 4067748 Aug  9 10:00 test_out.txt
