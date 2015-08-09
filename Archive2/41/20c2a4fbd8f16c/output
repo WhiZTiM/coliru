@@ -1,0 +1,14 @@
+clang version 3.6.0 (tags/RELEASE_360/final 235480)
+hex: 0x1.8b0a3d70a3d71p+3  default: 12.345
+g++ (GCC) 5.2.0
+hex: 0x1.8b0a3d70a3d71p+3  default: 12.345
+g++-5.1 (GCC) 5.1.0
+hex: 0x1.8b0a3d70a3d71p+3  default: 12.345
+g++-4.9 (GCC) 4.9.2
+main.cpp: In function 'int main()':
+main.cpp:5:29: error: 'hexfloat' is not a member of 'std'
+     std::cout << "hex: " << std::hexfloat << 12.345 
+                             ^
+main.cpp:6:35: error: 'defaultfloat' is not a member of 'std'
+               << "  default: " << std::defaultfloat << 12.345 << '\n' ;
+                                   ^
