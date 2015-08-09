@@ -1,0 +1,3 @@
+echo -e "\n======== create ==========\n" && clang++ -std=c++14 -stdlib=libc++ -Wall -Wextra -pedantic-errors /Archive2/85/294b94a82ae3c6/main.cpp -o create && time ./create 
+echo -e '\n======== parse ==========\n' && clang++ -std=c++14 -stdlib=libc++ -Wall -Wextra -pedantic-errors main.cpp -oparse && time ./parse
+echo -e '\n======== parse ==========\n' && g++ -std=c++14 -Wall -Wextra -pedantic-errors main.cpp -oparse && time ./parse

@@ -1,0 +1,21 @@
+
+======== create ==========
+
+
+real	0m0.316s
+user	0m0.300s
+sys	0m0.012s
+
+======== parse ==========
+
+
+real	0m0.005s
+user	0m0.004s
+sys	0m0.000s
+
+======== parse ==========
+
+
+real	0m0.006s
+user	0m0.004s
+sys	0m0.000s
