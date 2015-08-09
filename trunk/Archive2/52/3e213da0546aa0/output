@@ -1,0 +1,12 @@
+main.cpp: In function 'int main()':
+main.cpp:13:7: error: call of overloaded 'func()' is ambiguous
+  func();
+       ^
+main.cpp:6:6: note: candidate: void func()
+ void func()
+      ^
+main.cpp:3:10: note: candidate: void {anonymous}::func()
+     void func();
+          ^
+main.cpp: At global scope:
+main.cpp:3:10: warning: 'void {anonymous}::func()' declared 'static' but never defined [-Wunused-function]
