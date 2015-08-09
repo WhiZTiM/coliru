@@ -1,0 +1,10 @@
+main.cpp:17:12: warning: reference to stack memory associated with local variable 'x' returned [-Wreturn-stack-address]
+    return x; // dtor
+           ^
+1 warning generated.
+ctor
+dtor
+copy ctor
+deref
+50
+dtor
