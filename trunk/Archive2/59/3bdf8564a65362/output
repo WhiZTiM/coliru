@@ -1,0 +1,7 @@
+main.cpp:13:23: error: designated initializers are a C99 feature [-Werror,-Wc99-extensions]
+   struct foo bar = { .a = 1, .b = 2 };
+                      ^~~~~~
+main.cpp:13:31: error: designated initializers are a C99 feature [-Werror,-Wc99-extensions]
+   struct foo bar = { .a = 1, .b = 2 };
+                              ^~~~~~
+2 errors generated.
