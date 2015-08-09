@@ -1,0 +1,17 @@
+main.cpp:4:39: error: use of undeclared identifier 'get'
+auto sumFirst(T const& t) -> decltype(get<0>(t) + get<1>(t)) { return get<0>(t) + get<1>(t); }
+                                      ^
+main.cpp:4:51: error: use of undeclared identifier 'get'
+auto sumFirst(T const& t) -> decltype(get<0>(t) + get<1>(t)) { return get<0>(t) + get<1>(t); }
+                                                  ^
+main.cpp:4:71: error: use of undeclared identifier 'get'
+auto sumFirst(T const& t) -> decltype(get<0>(t) + get<1>(t)) { return get<0>(t) + get<1>(t); }
+                                                                      ^
+main.cpp:4:83: error: use of undeclared identifier 'get'
+auto sumFirst(T const& t) -> decltype(get<0>(t) + get<1>(t)) { return get<0>(t) + get<1>(t); }
+                                                                                  ^
+main.cpp:11:13: error: no matching function for call to 'sumFirst'
+    int q = sumFirst(blah);
+            ^~~~~~~~
+5 errors generated.
+1
