@@ -1,0 +1,2 @@
+void TD() [Ts = <int, short, float>]
+void TD() [Ts = <double, bool, char>]
