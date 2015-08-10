@@ -1,0 +1,18 @@
+main.cpp:17:8: error: partial specialization is not more specialized than the primary template because it replaces multiple parameters with a pack expansion
+ struct remove_first_n<0, Ts...>
+        ^
+main.cpp:12:8: note: primary template here
+ struct remove_first_n : remove_first_n<N-1, Ts...>
+        ^
+main.cpp: In instantiation of 'struct remove_first_n<0ul, Field2<long int, 64u> >':
+main.cpp:12:8:   recursively required from 'struct remove_first_n<2ul, Field2<char, 1u>, Field2<char, 128u>, Field2<long int, 64u> >'
+main.cpp:12:8:   required from 'struct remove_first_n<3ul, Field2<int, 32u>, Field2<char, 1u>, Field2<char, 128u>, Field2<long int, 64u> >'
+main.cpp:45:73:   required from 'static constexpr uint32_t ControlledLayout2<Ts>::offset() [with long unsigned int field_number = 3ul; Ts = {Field2<int, 32u>, Field2<char, 1u>, Field2<char, 128u>, Field2<long int, 64u>}; uint32_t = unsigned int]'
+main.cpp:66:36:   required from here
+main.cpp:12:8: error: wrong number of template arguments (1, should be at least 2)
+main.cpp:12:8: note: provided for 'template<long unsigned int N, class T, class ... Ts> struct remove_first_n'
+main.cpp: In instantiation of 'static constexpr uint32_t ControlledLayout2<Ts>::offset() [with long unsigned int field_number = 3ul; Ts = {Field2<int, 32u>, Field2<char, 1u>, Field2<char, 128u>, Field2<long int, 64u>}; uint32_t = unsigned int]':
+main.cpp:66:36:   required from here
+main.cpp:45:73: error: no type named 'type' in 'struct remove_first_n<3ul, Field2<int, 32u>, Field2<char, 1u>, Field2<char, 128u>, Field2<long int, 64u> >'
+         using Tuple = typename remove_first_n<field_number, Ts...>::type;
+                                                                         ^
