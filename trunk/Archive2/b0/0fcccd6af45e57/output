@@ -1,0 +1,4 @@
+main.cpp:11:31: warning: unused variable 'ob' [-Wunused-variable]
+    boost::optional<B> const& ob = boost::optional<B>(od);
+                              ^
+1 warning generated.
