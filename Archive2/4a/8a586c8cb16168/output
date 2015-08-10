@@ -1,0 +1,38 @@
+main.cpp: In constructor 'A::A(A&&)':
+main.cpp:29:18: error: assignment of read-only member 'A::u_tam'
+         he.u_tam = 0;
+                  ^
+main.cpp: In member function 'A& A::operator=(const A&)':
+main.cpp:51:19: error: assignment of read-only member 'A::u_tam'
+             u_tam = he.u_tam;
+                   ^
+main.cpp:56:26: error: 'a' was not declared in this scope
+             p_vec[idx] = a.p_vec[idx];
+                          ^
+main.cpp: In member function 'A& A::operator=(A&&)':
+main.cpp:81:5: warning: no return statement in function returning non-void [-Wreturn-type]
+     }
+     ^
+main.cpp: In member function 'int& A::at(size_t)':
+main.cpp:97:19: error: 'asdasdasd' was not declared in this scope
+             throw asdasdasd;
+                   ^
+main.cpp: In member function 'int A::at(size_t) const':
+main.cpp:105:19: error: 'asdasdasd' was not declared in this scope
+             throw asdasdasd;
+                   ^
+In file included from /usr/local/include/c++/5.2.0/bits/stl_pair.h:59:0,
+                 from /usr/local/include/c++/5.2.0/bits/stl_algobase.h:64,
+                 from /usr/local/include/c++/5.2.0/bits/char_traits.h:39,
+                 from /usr/local/include/c++/5.2.0/ios:40,
+                 from /usr/local/include/c++/5.2.0/ostream:38,
+                 from /usr/local/include/c++/5.2.0/iostream:39,
+                 from main.cpp:1:
+/usr/local/include/c++/5.2.0/bits/move.h: In instantiation of 'void std::swap(_Tp&, _Tp&) [with _Tp = const long unsigned int]':
+main.cpp:79:28:   required from here
+/usr/local/include/c++/5.2.0/bits/move.h:186:11: error: assignment of read-only reference '__a'
+       __a = _GLIBCXX_MOVE(__b);
+           ^
+/usr/local/include/c++/5.2.0/bits/move.h:187:11: error: assignment of read-only reference '__b'
+       __b = _GLIBCXX_MOVE(__tmp);
+           ^
