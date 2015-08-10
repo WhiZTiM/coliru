@@ -1,0 +1,14 @@
+clang version 3.6.0 (tags/RELEASE_360/final 235480)
+base_class::non_virtual_function
+derived_class::virtual_function overrides base_class::virtual_function
+
+base_class::non_virtual_function
+*** main::another::virtual_function ***
+
+g++ (GCC) 5.2.0
+base_class::non_virtual_function
+derived_class::virtual_function overrides base_class::virtual_function
+
+base_class::non_virtual_function
+*** main::another::virtual_function ***
+
