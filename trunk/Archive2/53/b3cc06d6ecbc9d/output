@@ -1,0 +1,10 @@
+main.cpp:24:55: error: rvalue reference to type 'unsigned long' cannot bind to lvalue of type 'unsigned long'
+    return MethodHelper<ReturnPack, ArgsPack>::Method(std::forward<Args>(args)...);
+                                                      ^~~~~~~~~~~~~~~~~~~~~~~~
+main.cpp:29:14: note: in instantiation of function template specialization 'Method<type_pack<unsigned long, unsigned long>, type_pack<unsigned long, unsigned long>, unsigned long &, unsigned long &>' requested here
+    auto t = Method<type_pack<size_t, size_t>, type_pack<size_t, size_t>>(a, b);
+             ^
+main.cpp:17:43: note: passing argument to parameter 'args' here
+        static auto Method(ArgTypes &&... args){
+                                          ^
+1 error generated.
