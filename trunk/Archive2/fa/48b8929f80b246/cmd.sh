@@ -1,0 +1,1 @@
+g++ -std=c++03 -O2 -Wall -pedantic -pthread main.cpp -lboost_system -lboost_filesystem -lboost_program_options && ./a.out; ./a.out -i /temp/path/foo --value=123
