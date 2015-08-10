@@ -1,0 +1,12 @@
+clang version 3.6.0 (tags/RELEASE_360/final 235480)
+one_liner for int 4
+one_liner for int 5
+one_liner for float 6.7
+an arithmetic type other than int or float
+what is this?
+g++ (GCC) 5.2.0
+one_liner for int 4
+one_liner for int 5
+one_liner for float 6.7
+an arithmetic type other than int or float
+what is this?
