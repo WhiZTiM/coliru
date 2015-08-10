@@ -1,0 +1,5 @@
+main.cpp: In instantiation of 'std::shared_ptr<_Tp1> UtlThreadSafeQueue<T, Cont>::wait_and_pop() [with T = PriorityLevel; Cont = std::queue<std::shared_ptr<PriorityLevel> >]':
+main.cpp:387:58:   required from here
+main.cpp:315:33: error: 'class std::queue<std::shared_ptr<PriorityLevel> >' has no member named 'top'
+             auto res = std::move(data_queue./*front*/top());
+                                 ^
