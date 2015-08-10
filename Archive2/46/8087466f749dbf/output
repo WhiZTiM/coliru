@@ -1,0 +1,6 @@
+main.cpp:8:21: warning: ISO C++ forbids zero-size array 'filename' [-Wpedantic]
+       char filename[];
+                     ^
+main.cpp:14:39: error: initializer-string for array of chars is too long [-fpermissive]
+ const struct Data data = {4,"file.txt"};
+                                       ^
