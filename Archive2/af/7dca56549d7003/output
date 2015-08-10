@@ -1,0 +1,4 @@
+main.cpp: In function 'int main()':
+main.cpp:9:10: warning: variable 'my_tuple' set but not used [-Wunused-but-set-variable]
+     auto my_tuple = method<int, float, short, float, double>(1.f, 2.0);
+          ^
