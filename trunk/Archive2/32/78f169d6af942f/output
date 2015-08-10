@@ -1,0 +1,7 @@
+main.cpp: In function 'int main()':
+main.cpp:12:6: error: binding 'const A' to reference of type 'A&' discards qualifiers
+    b = a;
+      ^
+main.cpp:3:8: note:   initializing argument 1 of 'A& A::operator=(A&)'
+ struct A
+        ^

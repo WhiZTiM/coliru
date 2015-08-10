@@ -1,0 +1,1 @@
+g++ main.cpp -lboost_log && ./a.out
