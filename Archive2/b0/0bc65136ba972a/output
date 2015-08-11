@@ -1,0 +1,8 @@
+Scenario: async_receive when socket has no data
+error = (system:125) Operation canceled; bytes_transferred = 0
+Scenario: async_receive when socket has data
+error = (system:0) Success; bytes_transferred = 6
+Scenario:  non-blocking synchronous read when socket has no data.
+error = (system:11) Resource temporarily unavailable; bytes_transferred = 0
+Scenario:  non-blocking synchronous read when socket has no data.
+error = (system:0) Success; bytes_transferred = 6
