@@ -1,0 +1,13 @@
+clang version 3.6.0 (tags/RELEASE_360/final 235480)
+
+a b c d 
+a b c d 
+56 78 90 12 34 
+56 78 90 12 34 
+
+g++ (GCC) 5.2.0
+
+a b c d 
+a b c d 
+56 78 90 12 34 
+56 78 90 12 34 
