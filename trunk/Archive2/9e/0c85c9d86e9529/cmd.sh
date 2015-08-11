@@ -1,0 +1,1 @@
+g++ -std=c++14 -O2 -Wall -pedantic -pthread main.cpp && echo "123" | ./a.out
