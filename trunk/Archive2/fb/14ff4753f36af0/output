@@ -1,0 +1,14 @@
+main.cpp: In function 'int main()':
+main.cpp:17:19: error: no matching function for call to 'std::vector<int>::erase(int*)'
+         c.erase(&i);
+                   ^
+In file included from /usr/local/include/c++/5.2.0/vector:64:0,
+                 from main.cpp:1:
+/usr/local/include/c++/5.2.0/bits/stl_vector.h:1146:7: note: candidate: std::vector<_Tp, _Alloc>::iterator std::vector<_Tp, _Alloc>::erase(std::vector<_Tp, _Alloc>::const_iterator) [with _Tp = int; _Alloc = std::allocator<int>; std::vector<_Tp, _Alloc>::iterator = __gnu_cxx::__normal_iterator<int*, std::vector<int> >; typename std::_Vector_base<_Tp, _Alloc>::pointer = int*; std::vector<_Tp, _Alloc>::const_iterator = __gnu_cxx::__normal_iterator<const int*, std::vector<int> >; typename __gnu_cxx::__alloc_traits<typename std::_Vector_base<_Tp, _Alloc>::_Tp_alloc_type>::const_pointer = const int*]
+       erase(const_iterator __position)
+       ^
+/usr/local/include/c++/5.2.0/bits/stl_vector.h:1146:7: note:   no known conversion for argument 1 from 'int*' to 'std::vector<int>::const_iterator {aka __gnu_cxx::__normal_iterator<const int*, std::vector<int> >}'
+/usr/local/include/c++/5.2.0/bits/stl_vector.h:1173:7: note: candidate: std::vector<_Tp, _Alloc>::iterator std::vector<_Tp, _Alloc>::erase(std::vector<_Tp, _Alloc>::const_iterator, std::vector<_Tp, _Alloc>::const_iterator) [with _Tp = int; _Alloc = std::allocator<int>; std::vector<_Tp, _Alloc>::iterator = __gnu_cxx::__normal_iterator<int*, std::vector<int> >; typename std::_Vector_base<_Tp, _Alloc>::pointer = int*; std::vector<_Tp, _Alloc>::const_iterator = __gnu_cxx::__normal_iterator<const int*, std::vector<int> >; typename __gnu_cxx::__alloc_traits<typename std::_Vector_base<_Tp, _Alloc>::_Tp_alloc_type>::const_pointer = const int*]
+       erase(const_iterator __first, const_iterator __last)
+       ^
+/usr/local/include/c++/5.2.0/bits/stl_vector.h:1173:7: note:   candidate expects 2 arguments, 1 provided
