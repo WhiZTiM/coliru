@@ -1,0 +1,3 @@
+main.cpp:1:1: error: 'include' does not name a type
+ include <stdio.h>
+ ^
