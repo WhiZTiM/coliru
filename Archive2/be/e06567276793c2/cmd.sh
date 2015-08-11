@@ -1,0 +1,1 @@
+clang++ -std=gnu++1z -stdlib=libc++ -Weverything -Wno-c++98-compat -Wno-c++98-compat-pedantic -Wno-padded -Wno-newline-eof main.cpp && ./a.out
