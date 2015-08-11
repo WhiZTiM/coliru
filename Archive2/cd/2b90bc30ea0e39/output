@@ -1,0 +1,4 @@
+main.cpp:30:29: warning: unused variable 'a' [-Wunused-variable]
+    t_Template<t_Out, t_In> a;
+                            ^
+1 warning generated.
