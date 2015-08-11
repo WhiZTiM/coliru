@@ -1,0 +1,11 @@
+main.cpp: In function 'std::vector<std::vector<int> > print_subsets(std::vector<int>&, int)':
+main.cpp:19:9: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     if(l==x.size()-1)
+         ^
+3 
+3 2 
+2 
+3 1 
+3 2 1 
+2 1 
+1 
