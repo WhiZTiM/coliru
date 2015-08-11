@@ -1,0 +1,4 @@
+main.cpp: In function 'int main()':
+main.cpp:36:16: warning: variable 'z' set but not used [-Wunused-but-set-variable]
+     const auto z = x * y;
+                ^
