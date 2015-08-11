@@ -1,0 +1,10 @@
+main.cpp:2:9: warning: variable length arrays are a C99 feature [-Wvla-extension]
+char str[foo()];
+        ^
+main.cpp:2:6: error: variable length array declaration not allowed at file scope
+char str[foo()];
+     ^   ~~~~~
+main.cpp:3:15: error: no return statement in constexpr function
+constexpr int foo() { return sizeof(str); }
+              ^
+1 warning and 2 errors generated.
