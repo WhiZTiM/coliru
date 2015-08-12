@@ -1,0 +1,14 @@
+main.cpp: In function 'int main()':
+main.cpp:27:37: error: no matching function for call to 'RunnableAdapter<void (*)(int), int>::RunnableAdapter()'
+  RunnableAdapter<decltype(fun),int> ra;
+                                     ^
+main.cpp:8:12: note: candidate: RunnableAdapter<R, Args>::RunnableAdapter(R (*)(Args ...)) [with R = void (*)(int); Args = {int}]
+   explicit RunnableAdapter(R(*function)(Args...))   
+            ^
+main.cpp:8:12: note:   candidate expects 1 argument, 0 provided
+main.cpp:3:7: note: candidate: constexpr RunnableAdapter<void (*)(int), int>::RunnableAdapter(const RunnableAdapter<void (*)(int), int>&)
+ class RunnableAdapter{
+       ^
+main.cpp:3:7: note:   candidate expects 1 argument, 0 provided
+main.cpp:3:7: note: candidate: constexpr RunnableAdapter<void (*)(int), int>::RunnableAdapter(RunnableAdapter<void (*)(int), int>&&)
+main.cpp:3:7: note:   candidate expects 1 argument, 0 provided
