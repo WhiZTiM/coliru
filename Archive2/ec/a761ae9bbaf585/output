@@ -1,0 +1,4 @@
+main.cpp:18:1: error: C++ requires a type specifier for all declarations
+rx = 0;
+^
+1 error generated.
