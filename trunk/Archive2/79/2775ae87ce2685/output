@@ -1,0 +1,11 @@
+main.cpp: In function 'int main()':
+main.cpp:43:21: error: call to non-constexpr function 'int factorial(int)'
+     constN<factorial(4)> out1; // computed at compile time
+                     ^
+main.cpp:43:21: error: call to non-constexpr function 'int factorial(int)'
+main.cpp:43:24: note: in template argument for type 'int' 
+     constN<factorial(4)> out1; // computed at compile time
+                        ^
+main.cpp:43:26: warning: unused variable 'out1' [-Wunused-variable]
+     constN<factorial(4)> out1; // computed at compile time
+                          ^
