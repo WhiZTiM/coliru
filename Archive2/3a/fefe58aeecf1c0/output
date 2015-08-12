@@ -1,0 +1,41 @@
+In file included from /usr/include/c++/4.6/chrono:35:0,
+                 from main.cpp:2:
+/usr/include/c++/4.6/bits/c++0x_warning.h:32:2: error: #error This file requires compiler and library support for the upcoming ISO C++ standard, C++0x. This support is currently experimental, and must be enabled with the -std=c++0x or -std=gnu++0x compiler options.
+main.cpp: In function 'int main()':
+main.cpp:6:11: error: expected nested-name-specifier before 'shakes'
+main.cpp:6:11: error: 'shakes' has not been declared
+main.cpp:6:18: error: expected ';' before '=' token
+main.cpp:6:18: error: expected primary-expression before '=' token
+main.cpp:6:25: error: 'std::chrono' has not been declared
+main.cpp:6:42: error: expected primary-expression before 'int'
+main.cpp:6:42: error: expected ';' before 'int'
+main.cpp:7:11: error: expected nested-name-specifier before 'jiffies'
+main.cpp:7:11: error: 'jiffies' has not been declared
+main.cpp:7:19: error: expected ';' before '=' token
+main.cpp:7:19: error: expected primary-expression before '=' token
+main.cpp:7:26: error: 'std::chrono' has not been declared
+main.cpp:7:43: error: expected primary-expression before 'int'
+main.cpp:7:43: error: expected ';' before 'int'
+main.cpp:8:11: error: expected nested-name-specifier before 'microfortnights'
+main.cpp:8:11: error: 'microfortnights' has not been declared
+main.cpp:8:27: error: expected ';' before '=' token
+main.cpp:8:27: error: expected primary-expression before '=' token
+main.cpp:8:34: error: 'std::chrono' has not been declared
+main.cpp:8:51: error: expected primary-expression before 'float'
+main.cpp:8:51: error: expected ';' before 'float'
+main.cpp:9:11: error: expected nested-name-specifier before 'nanocenturies'
+main.cpp:9:11: error: 'nanocenturies' has not been declared
+main.cpp:9:25: error: expected ';' before '=' token
+main.cpp:9:25: error: expected primary-expression before '=' token
+main.cpp:9:32: error: 'std::chrono' has not been declared
+main.cpp:9:49: error: expected primary-expression before 'float'
+main.cpp:9:49: error: expected ';' before 'float'
+main.cpp:11:10: error: 'std::chrono' has not been declared
+main.cpp:11:26: error: expected ';' before 'sec'
+main.cpp:15:23: error: 'std::chrono' has not been declared
+main.cpp:15:45: error: 'shakes' was not declared in this scope
+main.cpp:15:53: error: 'sec' was not declared in this scope
+main.cpp:17:23: error: 'std::chrono' has not been declared
+main.cpp:17:45: error: 'jiffies' was not declared in this scope
+main.cpp:19:37: error: 'microfortnights' was not declared in this scope
+main.cpp:20:35: error: 'nanocenturies' was not declared in this scope
