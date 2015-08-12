@@ -1,0 +1,1 @@
+A doFoo(const B &) [A = float, B = double, C = ParticularC]
