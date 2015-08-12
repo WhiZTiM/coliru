@@ -1,0 +1,11 @@
+main.cpp:20:16: error: non-type template argument of type 'int' is not an integral constant expression
+    SomeStruct<SomeIntConst>();
+               ^~~~~~~~~~~~
+main.cpp:20:16: note: initializer of 'SomeIntConst' is not a constant expression
+main.cpp:13:18: note: declared here
+static const int SomeIntConst = ((int)(SomeFloat+0.5));
+                 ^
+main.cpp:19:26: warning: unused parameter 'argv' [-Wunused-parameter]
+int main(int argc, char* argv[]) {
+                         ^
+1 warning and 1 error generated.
