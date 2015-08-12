@@ -1,0 +1,31 @@
+Calling DerivedA::pure_virtual
+DerivedA::pure_virtual()
+Calling DerivedB::pure_virtual
+DerivedB::pure_virtual()
+-----------------------------------
+
+Calling DerivedA::regular_virtual
+DerivedA::regular_virtual()
+Calling LeafA::regular_virtual
+LeafA::regular_virtual()
+-----------------------------------
+
+Calling DerivedA::non_virtual
+Base::non_virtual()
+Calling DerivedB::non_virtual
+Base::non_virtual()
+-----------------------------------
+
+Calling ~DerivedA
+DerivedA::~DerivedA()
+Base::~Base()
+
+Calling ~LeafA
+LeafA::~LeafA()
+DerivedA::~DerivedA()
+Base::~Base()
+
+Calling ~DerivedB
+DerivedB::~DerivedB()
+Base::~Base()
+
