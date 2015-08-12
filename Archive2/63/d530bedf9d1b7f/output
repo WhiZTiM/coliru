@@ -1,0 +1,4 @@
+main.cpp:14:11: error: non-const lvalue reference to type 'basic_string<[...]>' cannot bind to a temporary of type 'basic_string<[...]>'
+  string& a = foo();
+          ^   ~~~~~
+1 error generated.
