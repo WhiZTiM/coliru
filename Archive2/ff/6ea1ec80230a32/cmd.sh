@@ -1,0 +1,1 @@
+g++ -std=c++11 -Wall -pedantic -Wextra -Werror -pedantic-errors main.cpp && ./a.out
