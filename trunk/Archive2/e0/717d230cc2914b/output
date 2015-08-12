@@ -1,0 +1,13 @@
+clang
+hello world
+g++
+main.cpp: In lambda function:
+main.cpp:25:59: error: parameter packs not expanded with '...':
+     run( [&]{Jo_detail::stream << std::forward<Args>(args);}... );
+                                                           ^
+main.cpp:25:59: note:         '__args'
+main.cpp:25:59: note:         'Args'
+main.cpp: In function 'std::__cxx11::string Jo(Args&& ...)':
+main.cpp:25:61: error: expansion pattern '<lambda>' contains no argument packs
+     run( [&]{Jo_detail::stream << std::forward<Args>(args);}... );
+                                                             ^
