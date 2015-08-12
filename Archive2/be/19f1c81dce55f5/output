@@ -1,0 +1,22 @@
+main.cpp:6:33: error: no member named 'e' in 's<0>'
+    enum{e = (z%3==0) ? s<z/3>::e : (z==1 ? 1 : 0)};
+                        ~~~~~~~~^
+main.cpp:6:25: note: in instantiation of template class 's<0>' requested here
+    enum{e = (z%3==0) ? s<z/3>::e : (z==1 ? 1 : 0)};
+                        ^
+main.cpp:6:25: note: in instantiation of template class 's<1>' requested here
+    enum{e = (z%3==0) ? s<z/3>::e : (z==1 ? 1 : 0)};
+                        ^
+main.cpp:6:25: note: in instantiation of template class 's<3>' requested here
+    enum{e = (z%3==0) ? s<z/3>::e : (z==1 ? 1 : 0)};
+                        ^
+main.cpp:6:25: note: in instantiation of template class 's<10>' requested here
+    enum{e = (z%3==0) ? s<z/3>::e : (z==1 ? 1 : 0)};
+                        ^
+main.cpp:6:25: note: in instantiation of template class 's<30>' requested here
+    enum{e = (z%3==0) ? s<z/3>::e : (z==1 ? 1 : 0)};
+                        ^
+main.cpp:10:19: note: in instantiation of template class 's<91>' requested here
+    printf("%d\n",s<91>::e);
+                  ^
+1 error generated.
