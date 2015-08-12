@@ -1,0 +1,16 @@
+main.cpp: In function 'main':
+main.cpp:8:8: error: assignment of read-only location '*x'
+     *x = 0;
+        ^
+main.cpp:10:8: error: assignment of read-only location '*y'
+     *y = 0;
+        ^
+main.cpp:11:7: error: assignment of read-only variable 'z'
+     z = 0;
+       ^
+main.cpp:13:7: error: assignment of read-only variable 'p'
+     p = 0;
+       ^
+main.cpp:14:8: error: assignment of read-only location '*p'
+     *p = 0;
+        ^
