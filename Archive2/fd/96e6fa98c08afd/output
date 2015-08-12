@@ -1,0 +1,14 @@
+main.cpp:3:1: warning: elaborated-type-specifier for a scoped enum must not use the 'class' keyword
+ enum class A::B;
+ ^
+main.cpp:3:12: error: 'A' has not been declared
+ enum class A::B;
+            ^
+main.cpp:5:30: error: incomplete type 'A' used in nested name specifier
+ class A : public std::vector<A::B>
+                              ^
+main.cpp:5:30: error: incomplete type 'A' used in nested name specifier
+main.cpp:5:34: error: template argument 1 is invalid
+ class A : public std::vector<A::B>
+                                  ^
+main.cpp:5:34: error: template argument 2 is invalid
