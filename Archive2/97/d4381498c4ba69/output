@@ -1,0 +1,11 @@
+Input: 
+1, 0, -2, 1, -1, 2, 0, 
+[i:0]1 j:2 swapping 1 and -2
+[i:1]1 j:0 swapping 0 and -2
+[i:2]2 j:0 swapping 1 and 0
+[i:3]2 j:2 swapping 1 and 0
+[i:4]3 j:0 swapping -1 and 1
+[i:5]3 j:2 swapping 2 and 1
+[i:6]3 j:2 swapping 0 and 2
+Output: 
+-1, -2, 0, 0, 1, 1, 2, 
