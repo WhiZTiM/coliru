@@ -1,0 +1,6 @@
+clang: warning: -O4 is equivalent to -O3
+main.cpp:4:27: warning: multiple unsequenced modifications to 'i' [-Wunsequenced]
+    printf("%d %d %d\n", i++, i++, i);
+                          ^    ~~
+1 warning generated.
+1 2 3
