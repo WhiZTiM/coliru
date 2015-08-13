@@ -1,0 +1,3 @@
+main.cpp: In member function 'std::map<std::__cxx11::basic_string<char>, boost::variant<std::__cxx11::basic_string<char>*, int*, bool*> > DLNA::createMap()':
+main.cpp:79:20: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+main.cpp:93:6: error: no match for 'operator*' (operand type is 'std::map<std::__cxx11::basic_string<char>, boost::variant<std::__cxx11::basic_string<char>*, int*, bool*> >::mapped_type {aka boost::variant<std::__cxx11::basic_string<char>*, int*, bool*>}')
