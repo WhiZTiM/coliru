@@ -1,0 +1,46 @@
+main.cpp:1:5: error: use of undeclared identifier 'std'
+    std::streampos fsize = 0;
+    ^
+main.cpp:2:2: error: C++ requires a type specifier for all declarations
+        fsize = f.tellg();
+        ^
+main.cpp:2:10: error: use of undeclared identifier 'f'
+        fsize = f.tellg();
+                ^
+main.cpp:3:2: error: unknown type name 'f'
+        f.seekg(0, 2);
+        ^
+main.cpp:3:3: error: cannot use dot operator on a type
+        f.seekg(0, 2);
+         ^
+main.cpp:4:2: error: unknown type name 'DWORD'
+        DWORD pDataLength = f.tellg() - fsize;
+        ^
+main.cpp:4:22: error: use of undeclared identifier 'f'
+        DWORD pDataLength = f.tellg() - fsize;
+                            ^
+main.cpp:5:2: error: unknown type name 'f'
+        f.seekg(0, 0);
+        ^
+main.cpp:5:3: error: cannot use dot operator on a type
+        f.seekg(0, 0);
+         ^
+main.cpp:6:2: error: unknown type name 'BYTE'
+        BYTE * data = new BYTE[pDataLength];
+        ^
+main.cpp:6:20: error: unknown type name 'BYTE'
+        BYTE * data = new BYTE[pDataLength];
+                          ^
+main.cpp:7:2: error: unknown type name 'f'
+        f >> std::noskipws;
+        ^
+main.cpp:7:4: error: expected unqualified-id
+        f >> std::noskipws;
+          ^
+main.cpp:8:2: error: unknown type name 'f'
+        f.read((char*)data, pDataLength);
+        ^
+main.cpp:8:3: error: cannot use dot operator on a type
+        f.read((char*)data, pDataLength);
+         ^
+15 errors generated.
