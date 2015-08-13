@@ -1,0 +1,4 @@
+main.cpp:18:17: error: unknown type name 'Setup'
+    void Render(Setup& setup) {
+                ^
+1 error generated.
