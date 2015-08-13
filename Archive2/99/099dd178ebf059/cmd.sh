@@ -1,0 +1,1 @@
+clang++ -o biloute main.cpp -std=c++14 -Wall -Wextra -pedantic -O2 && ./biloute
