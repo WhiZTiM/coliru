@@ -1,0 +1,4 @@
+N5boost7variantIiJcEEE
+terminate called after throwing an instance of 'boost::exception_detail::clone_impl<boost::exception_detail::error_info_injector<boost::bad_get> >'
+  what():  boost::bad_get: failed value get using boost::get
+bash: line 7:  5944 Aborted                 (core dumped) ./a.out
