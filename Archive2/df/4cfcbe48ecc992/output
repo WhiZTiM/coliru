@@ -1,0 +1,10 @@
+/tmp/ccgNkprP.o: In function `main':
+main.cpp:(.text.startup+0x41): undefined reference to `__atomic_store'
+main.cpp:(.text.startup+0x5f): undefined reference to `__atomic_load'
+collect2: error: ld returned 1 exit status
+gcc version 5.2.0 (GCC) 
+/tmp/main-c75098.o: In function `main':
+main.cpp:(.text+0x96): undefined reference to `__atomic_store'
+main.cpp:(.text+0xb1): undefined reference to `__atomic_load'
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+clang version 3.6.0 (tags/RELEASE_360/final 235480)

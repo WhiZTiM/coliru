@@ -1,0 +1,2 @@
+g++ -std=c++11 -O2 -Wall -pedantic -pthread main.cpp && ./a.out ; g++ -v 2>&1 |grep 'gcc version'
+clang++ -std=c++11 -O2 -Wall -pedantic -pthread main.cpp && ./a.out ; clang++ -v 2>&1 |grep 'clang version'
