@@ -1,0 +1,11 @@
+main.cpp: In function 'int main()':
+main.cpp:93:13: warning: unused variable 'a' [-Wunused-variable]
+     A<char> a;
+             ^
+main.cpp:96:22: warning: variable 'obj' set but not used [-Wunused-but-set-variable]
+     A<char>::S<char> obj;       // only has int x;
+                      ^
+main.cpp:99:21: warning: variable 'obj2' set but not used [-Wunused-but-set-variable]
+     A<char>::S<int> obj2;       // A<char>::S<char> gets instantiated here (first use) - 
+                     ^
+Running
