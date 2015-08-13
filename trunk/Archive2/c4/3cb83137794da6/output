@@ -1,0 +1,4 @@
+main.cpp: In function 'int main()':
+main.cpp:19:13: error: 'B' is not a base of 'A'
+   ptr_a->B::print();
+             ^
