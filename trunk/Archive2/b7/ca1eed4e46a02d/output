@@ -1,0 +1,4 @@
+Contents of the list: -4 -3 -2 -1 0 1 2 3 4 5 
+Contents of the list, as seen through a shuffled vector: 3 0 -1 -4 1 5 -3 4 2 -2 
+Doubling the values in the initial list...
+Contents of the list, as seen through a shuffled vector: 6 0 -2 -8 2 10 -6 8 4 -4 
