@@ -1,0 +1,61 @@
+clang version 3.6.0 (tags/RELEASE_360/final 235480)
+main.cpp:39:9: error: conversion from 'A' to 'long' is ambiguous
+    bar(a) ; // *** error: ambiguous
+        ^
+main.cpp:5:5: note: candidate function
+    operator short() const { std::cout << "short\n" ; return n ; }
+    ^
+main.cpp:6:5: note: candidate function
+    operator double() const { std::cout << "double\n" ; return n ; }
+    ^
+main.cpp:20:14: note: passing argument to parameter here
+void bar(long) {}
+             ^
+main.cpp:45:9: error: conversion from 'B' to 'long' is ambiguous
+    bar(b) ; // *** error: ambiguous
+        ^
+main.cpp:12:5: note: candidate function
+    operator short() const { std::cout << "short\n" ; return n ; }
+    ^
+main.cpp:13:5: note: candidate function
+    operator int() const { std::cout << "int\n" ; return n ; }
+    ^
+main.cpp:14:5: note: candidate function
+    operator double() const { std::cout << "double\n" ; return n ; }
+    ^
+main.cpp:20:14: note: passing argument to parameter here
+void bar(long) {}
+             ^
+2 errors generated.
+
+========
+
+g++ (GCC) 5.2.0
+main.cpp: In function 'int main()':
+main.cpp:39:10: error: conversion from 'A' to 'long int' is ambiguous
+     bar(a) ; // *** error: ambiguous
+          ^
+main.cpp:6:5: note: candidate: A::operator double() const
+     operator double() const { std::cout << "double\n" ; return n ; }
+     ^
+main.cpp:5:5: note: candidate: A::operator short int() const
+     operator short() const { std::cout << "short\n" ; return n ; }
+     ^
+main.cpp:20:6: note:   initializing argument 1 of 'void bar(long int)'
+ void bar(long) {}
+      ^
+main.cpp:45:10: error: conversion from 'B' to 'long int' is ambiguous
+     bar(b) ; // *** error: ambiguous
+          ^
+main.cpp:14:5: note: candidate: B::operator double() const
+     operator double() const { std::cout << "double\n" ; return n ; }
+     ^
+main.cpp:13:5: note: candidate: B::operator int() const
+     operator int() const { std::cout << "int\n" ; return n ; }
+     ^
+main.cpp:12:5: note: candidate: B::operator short int() const
+     operator short() const { std::cout << "short\n" ; return n ; }
+     ^
+main.cpp:20:6: note:   initializing argument 1 of 'void bar(long int)'
+ void bar(long) {}
+      ^
