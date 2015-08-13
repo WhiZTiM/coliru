@@ -1,0 +1,1 @@
+clang++ main.cpp -o toast -std=c++14 -Wall -Wextra -pedantic -O2 && ./toast
