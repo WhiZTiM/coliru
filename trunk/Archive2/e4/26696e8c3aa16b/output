@@ -1,0 +1,7 @@
+ all permutations 3628800
+ duplicate permutations 362880
+ adjusted for duplicates permutations 10
+ zero all permutations 362880
+ zero duplicate permutations 40320
+ zero permutations 9
+1
