@@ -1,0 +1,8 @@
++ gcc -x c -O0 -std=c99 -Wall -Wconversion -fno-builtin main.cpp
+main.cpp: In function 'main':
+main.cpp:7:12: warning: conversion to 'float' from 'double' may alter its value [-Wfloat-conversion]
+   result = sqrt(2);
+            ^
+/tmp/cc0LRfIX.o: In function `main':
+main.cpp:(.text+0x1c): undefined reference to `sqrt'
+collect2: error: ld returned 1 exit status
