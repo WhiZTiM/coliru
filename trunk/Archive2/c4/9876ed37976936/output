@@ -1,0 +1,14 @@
+main.cpp:1:1: error: stray '\' in program
+ <isLocal>true</isLocal>\n<manufacturer>manufacturername</manufacturer>\n<modelName>modelname</modelName>\n<IPAddress>123.45.67</IPAddress>\n<modelNo>modelnumber</modelNo>\n<modelUrl>URL to model site</modelUrl>\n<serialNo>manufacturer's serial number</serialNo>\n
+ ^
+main.cpp:2:1: error: stray '\' in program
+main.cpp:3:1: error: stray '\' in program
+main.cpp:4:12: error: too many decimal points in number
+main.cpp:4:1: error: stray '\' in program
+main.cpp:5:1: error: stray '\' in program
+main.cpp:6:1: error: stray '\' in program
+main.cpp:7:23: warning: missing terminating ' character
+main.cpp:7:1: error: missing terminating ' character
+main.cpp:1:1: error: expected unqualified-id before '<' token
+ <isLocal>true</isLocal>\n<manufacturer>manufacturername</manufacturer>\n<modelName>modelname</modelName>\n<IPAddress>123.45.67</IPAddress>\n<modelNo>modelnumber</modelNo>\n<modelUrl>URL to model site</modelUrl>\n<serialNo>manufacturer's serial number</serialNo>\n
+ ^
