@@ -1,0 +1,7 @@
+main.cpp:5:5: error: no matching function for call to 'foo'
+    foo(false);
+    ^~~
+main.cpp:2:6: note: candidate function not viable: no known conversion from 'bool' to 'const std::string' (aka 'const basic_string<char>') for 1st argument
+void foo(const std::string &) {}
+     ^
+1 error generated.
