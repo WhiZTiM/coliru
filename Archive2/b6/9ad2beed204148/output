@@ -1,0 +1,10 @@
+clang version 3.6.0 (tags/RELEASE_360/final 235480)
+main.cpp:6:28: error: initializer-string for char array is too long
+    char* p = new char[6]{ "Zorro" };
+                           ^~~~~~~
+1 error generated.
+g++ (GCC) 5.2.0
+main.cpp: In function 'int main()':
+main.cpp:6:36: error: invalid conversion from 'const char*' to 'char' [-fpermissive]
+     char* p = new char[6]{ "Zorro" };
+                                    ^
