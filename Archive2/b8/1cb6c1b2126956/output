@@ -1,0 +1,7 @@
+main.cpp:33:28: error: initializer-string for char array is too long
+    char* p = new char[6]{ "Zorro" };
+                           ^~~~~~~
+main.cpp:34:29: error: initializer-string for char array is too long
+    char* p1 = new char[4]{ "Zio" };
+                            ^~~~~
+2 errors generated.
