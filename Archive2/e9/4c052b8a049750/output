@@ -1,0 +1,4 @@
+main.cpp:27:5: error: static_assert failed ""
+    static_assert(!has_no_duplicates<float, float>{}, "");
+    ^             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+1 error generated.
