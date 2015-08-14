@@ -1,0 +1,108 @@
+main.cpp:6:1: error: 'vx_graph' does not name a type
+ vx_graph graph = nvxCreateStreamGraph(context);
+ ^
+main.cpp:7:22: error: expected constructor, destructor, or type conversion before '(' token
+ NVXIO_CHECK_REFERENCE(graph);
+                      ^
+main.cpp:13:1: error: 'vx_image' does not name a type
+ vx_image yuvImage = vxCreateVirtualImage(graph, width, height, VX_DF_IMAGE_NV12);
+ ^
+main.cpp:14:22: error: expected constructor, destructor, or type conversion before '(' token
+ NVXIO_CHECK_REFERENCE(yuvImage);
+                      ^
+main.cpp:16:1: error: 'vx_image' does not name a type
+ vx_image yImage = nvxCreateImageFromChannel(yuvImage, VX_CHANNEL_Y);
+ ^
+main.cpp:17:22: error: expected constructor, destructor, or type conversion before '(' token
+ NVXIO_CHECK_REFERENCE(yImage);
+                      ^
+main.cpp:19:12: error: 'vector' in namespace 'std' does not name a template type
+ const std::vector<vx_image> splittedYImage = splitImage(yImage, cameraNumber, border);
+            ^
+main.cpp:21:1: error: 'vx_image' does not name a type
+ vx_image equalizedImage = vxCreateVirtualImage(graph, 0, 0, VX_DF_IMAGE_VIRT);
+ ^
+main.cpp:22:22: error: expected constructor, destructor, or type conversion before '(' token
+ NVXIO_CHECK_REFERENCE(equalizedImage);
+                      ^
+main.cpp:24:1: error: 'vx_image' does not name a type
+ vx_image outputImage = vxCraeteImage(context, width, height, VX_DF_IMAGE_RGBX);
+ ^
+main.cpp:25:22: error: expected constructor, destructor, or type conversion before '(' token
+ NVXIO_CHECK_REFERENCE(outputImage);
+                      ^
+main.cpp:31:1: error: 'vx_node' does not name a type
+ vx_node colorConvertInNode = vxColorConvertNode(graph, outputImage, yuvImage);
+ ^
+main.cpp:32:22: error: expected constructor, destructor, or type conversion before '(' token
+ NVXIO_CHECK_REFERENCE(colorConvertInNode);
+                      ^
+main.cpp:34:6: error: 'vector' in namespace 'std' does not name a template type
+ std::vector<vx_node> equalizeHistNodes(cameraNumber);
+      ^
+main.cpp:35:6: error: 'vector' in namespace 'std' does not name a template type
+ std::vector<vx_node> copyImageNodes(cameraNumber);
+      ^
+main.cpp:36:1: error: expected unqualified-id before 'for'
+ for (std::size_t i = 0; i != cameraNumber; ++i)
+ ^
+main.cpp:36:25: error: 'i' does not name a type
+ for (std::size_t i = 0; i != cameraNumber; ++i)
+                         ^
+main.cpp:36:44: error: expected unqualified-id before '++' token
+ for (std::size_t i = 0; i != cameraNumber; ++i)
+                                            ^
+main.cpp:45:1: error: 'vx_node' does not name a type
+ vx_node colorConvertOutNode = vxColorConvertNode(graph, yuvImage, outputImage);
+ ^
+main.cpp:46:22: error: expected constructor, destructor, or type conversion before '(' token
+ NVXIO_CHECK_REFERENCE(colorConvertOutNode);
+                      ^
+main.cpp:52:16: error: expected constructor, destructor, or type conversion before '(' token
+ NVXIO_SAFE_CALL(vxReleaseImage(&equalizedImage));
+                ^
+main.cpp:54:1: error: expected unqualified-id before 'for'
+ for (std::size_t i = 0; i != cameraNumber; ++i)
+ ^
+main.cpp:54:25: error: 'i' does not name a type
+ for (std::size_t i = 0; i != cameraNumber; ++i)
+                         ^
+main.cpp:54:44: error: expected unqualified-id before '++' token
+ for (std::size_t i = 0; i != cameraNumber; ++i)
+                                            ^
+main.cpp:59:16: error: expected constructor, destructor, or type conversion before '(' token
+ NVXIO_SAFE_CALL(vxReleaseImage(&yImage));
+                ^
+main.cpp:60:16: error: expected constructor, destructor, or type conversion before '(' token
+ NVXIO_SAFE_CALL(vxReleaseImage(yuvImage));
+                ^
+main.cpp:66:16: error: expected constructor, destructor, or type conversion before '(' token
+ NVXIO_SAFE_CALL(vxReleaseNode(&colorConvertOutNode));
+                ^
+main.cpp:68:1: error: expected unqualified-id before 'for'
+ for (std::size_t i = 0; i != cameraNumber; ++i)
+ ^
+main.cpp:68:25: error: 'i' does not name a type
+ for (std::size_t i = 0; i != cameraNumber; ++i)
+                         ^
+main.cpp:68:44: error: expected unqualified-id before '++' token
+ for (std::size_t i = 0; i != cameraNumber; ++i)
+                                            ^
+main.cpp:78:16: error: expected constructor, destructor, or type conversion before '(' token
+ NVXIO_SAFE_CALL(vxVerifyGraph(graph));
+                ^
+main.cpp:86:1: error: expected unqualified-id before 'if'
+ if (process)
+ ^
+main.cpp:96:1: error: expected unqualified-id before 'else'
+ else
+ ^
+main.cpp:109:16: error: expected constructor, destructor, or type conversion before '(' token
+ NVXIO_SAFE_CALL(vxReleaseNode(&colorConvertInNode));
+                ^
+main.cpp:111:16: error: expected constructor, destructor, or type conversion before '(' token
+ NVXIO_SAFE_CALL(vxReleaseImage(&outputImage));
+                ^
+main.cpp:113:16: error: expected constructor, destructor, or type conversion before '(' token
+ NVXIO_SAFE_CALL(vxReleaseGraph(&graph));
+                ^
