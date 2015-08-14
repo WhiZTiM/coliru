@@ -1,0 +1,15 @@
+main.cpp:2:22: warning: missing terminating ' character
+ <manufacturer>joe bob's machines</manufacturer>
+                      ^
+main.cpp:2:1: error: missing terminating ' character
+ <manufacturer>joe bob's machines</manufacturer>
+ ^
+main.cpp:4:12: error: too many decimal points in number
+ <IPAddress>980.123.912.5</IPAddress>
+            ^
+main.cpp:5:10: error: invalid digit "8" in octal constant
+ <modelNo>05348437</modelNo>
+          ^
+main.cpp:1:1: error: expected unqualified-id before '<' token
+ <isLocal>false</isLocal>
+ ^
