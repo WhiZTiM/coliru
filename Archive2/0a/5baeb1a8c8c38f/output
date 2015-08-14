@@ -1,0 +1,16 @@
+OUTPUT FROM TWO DIFFERENT COMPILERS:
+3 is evaluated
+4 is evaluated
+multiplication done
+2 is evaluated
+division done
+6
+
+================================
+
+2 is evaluated
+4 is evaluated
+3 is evaluated
+multiplication done
+division done
+6
