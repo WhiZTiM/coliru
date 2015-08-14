@@ -1,0 +1,11 @@
+main.cpp:12:14: error: constant expression evaluates to -2147483648 which cannot be narrowed to type 'unsigned int' [-Wc++11-narrowing]
+    U absMin{std::numeric_limits<T>::min()};
+             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+main.cpp:20:5: note: in instantiation of function template specialization 'f<int, unsigned int>' requested here
+    f<int32_t, uint32_t>(); 
+    ^
+main.cpp:12:14: note: insert an explicit cast to silence this issue
+    U absMin{std::numeric_limits<T>::min()};
+             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+             static_cast<unsigned int>(   )
+1 error generated.
