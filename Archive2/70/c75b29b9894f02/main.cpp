@@ -1,0 +1,23 @@
+#include <iostream>
+#include <fstream>
+
+bool append_file( std::ifstream srce_file, std::ofstream& dest_file )
+{ return dest_file << srce_file.rdbuf() && srce_file && srce_file.get() && srce_file.eof() ; }
+
+int main()
+{
+    const std::string input_file_1 = __FILE__ ; // "file_1.txt";
+    const std::string input_file_2 = __FILE__ ; // "file_2.txt";
+    const std::string output_file = "new_file.txt";
+
+    {
+        std::ofstream new_file(output_file) ;
+        
+        if( append_file( std::ifstream(input_file_1), new_file ) &&
+            append_file( std::ifstream(input_file_2), new_file ) )
+        { std::clog << "*** files were appended ***\n\n" ; }
+    }
+
+    // std::cout << std::ifstream(output_file).rdbuf() ;
+}
+// ------------------------------------------------------------
