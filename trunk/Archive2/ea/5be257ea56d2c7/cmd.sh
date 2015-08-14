@@ -1,0 +1,1 @@
+ln -s main.cpp main.c && gcc -Werror -Wall -pedantic main.c && ./a.out
