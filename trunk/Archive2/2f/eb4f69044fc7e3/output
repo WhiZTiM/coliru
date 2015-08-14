@@ -1,0 +1,15 @@
+hello
+*** glibc detected *** ./a.out: munmap_chunk(): invalid pointer: 0x00007fff260cf6f0 ***
+======= Backtrace: =========
+/lib/x86_64-linux-gnu/libc.so.6(+0x7e846)[0x7f95a5a93846]
+./a.out[0x4018fa]
+./a.out[0x40163a]
+./a.out[0x401507]
+./a.out[0x40147e]
+./a.out[0x40149a]
+./a.out[0x400fc8]
+./a.out[0x401063]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xed)[0x7f95a5a3676d]
+./a.out[0x400db9]
+======= Memory map: ========
+bash: line 7:  6912 Aborted                 (core dumped) ./a.out
