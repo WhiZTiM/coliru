@@ -1,0 +1,10 @@
+main.cpp:13:19: error: declaration of 'using A = struct A<T>' [-fpermissive]
+     using A = A<T>;
+                   ^
+main.cpp:7:8: error: changes meaning of 'A' from 'struct A<T>' [-fpermissive]
+ struct A
+        ^
+main.cpp: In function 'int main()':
+main.cpp:18:12: warning: unused variable 'b' [-Wunused-variable]
+     B<int> b;
+            ^
