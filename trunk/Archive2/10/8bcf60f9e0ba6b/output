@@ -1,0 +1,8 @@
+main.cpp: In instantiation of 'void foo(Function) [with Function = void (*)(std::unique_ptr<Bar>&)]':
+main.cpp:35:12:   required from here
+main.cpp:22:5: error: static assertion failed: Not callable
+     static_assert(is_callable<Function&(std::unique_ptr<Bar>)>{}, "Not callable");
+     ^
+main.cpp:26:13: error: invalid initialization of non-const reference of type 'std::unique_ptr<Bar>&' from an rvalue of type 'std::remove_reference<std::unique_ptr<Bar>&>::type {aka std::unique_ptr<Bar>}'
+     function(std::move(bar));
+             ^
