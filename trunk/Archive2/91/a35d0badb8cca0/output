@@ -1,0 +1,4 @@
+starting up
+opening file
+checking file state
+bash: line 7:  2132 Segmentation fault      (core dumped) ./a.out
