@@ -1,0 +1,7 @@
+main.cpp: In function 'int main()':
+main.cpp:5:14: warning: converting 'false' to pointer type for argument 1 of 'std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::basic_string(const _CharT*, const _Alloc&) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>]' [-Wconversion-null]
+     foo(false);
+              ^
+terminate called after throwing an instance of 'std::logic_error'
+  what():  basic_string::_M_construct null not valid
+bash: line 7: 21799 Aborted                 (core dumped) ./a.out
