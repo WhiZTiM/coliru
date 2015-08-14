@@ -1,0 +1,77 @@
+main.cpp:4:1: error: 'Class' does not name a type
+ Class Level {
+ ^
+main.cpp:14:2: warning: extra ';' [-Wpedantic]
+ };
+  ^
+main.cpp:16:5: error: 'Level' has not been declared
+ int Level::GetSize() {
+     ^
+main.cpp: In function 'int GetSize()':
+main.cpp:17:11: error: 'size' was not declared in this scope
+    return size;
+           ^
+main.cpp: At global scope:
+main.cpp:20:5: error: 'Level' has not been declared
+ int Level::SetSize(int _size) {
+     ^
+main.cpp: In function 'int SetSize(int)':
+main.cpp:21:4: error: 'size' was not declared in this scope
+    size = _size
+    ^
+main.cpp:22:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+main.cpp: At global scope:
+main.cpp:24:5: error: 'Level' has not been declared
+ int Level::Load(string str, int _size) {
+     ^
+main.cpp:24:17: error: 'string' was not declared in this scope
+ int Level::Load(string str, int _size) {
+                 ^
+main.cpp:24:17: note: suggested alternatives:
+In file included from /usr/local/include/c++/5.2.0/iosfwd:39:0,
+                 from /usr/local/include/c++/5.2.0/ios:38,
+                 from /usr/local/include/c++/5.2.0/ostream:38,
+                 from /usr/local/include/c++/5.2.0/iostream:39,
+                 from main.cpp:1:
+/usr/local/include/c++/5.2.0/bits/stringfwd.h:74:33: note:   'std::__cxx11::string'
+   typedef basic_string<char>    string;   
+                                 ^
+/usr/local/include/c++/5.2.0/bits/stringfwd.h:74:33: note:   'std::__cxx11::string'
+main.cpp:24:29: error: expected primary-expression before 'int'
+ int Level::Load(string str, int _size) {
+                             ^
+main.cpp:24:38: error: expression list treated as compound expression in initializer [-fpermissive]
+ int Level::Load(string str, int _size) {
+                                      ^
+main.cpp:24:40: error: expected ',' or ';' before '{' token
+ int Level::Load(string str, int _size) {
+                                        ^
+main.cpp:31:5: error: 'Level' has not been declared
+ int Level::DoSomething() {
+     ^
+main.cpp: In function 'int DoSomething()':
+main.cpp:32:4: error: 'a_predefined_2d_array' was not declared in this scope
+    a_predefined_2d_array = new float*[GetSize()]; //SEG FAULTS!!!
+    ^
+main.cpp:33:4: error: 'cout' was not declared in this scope
+    cout<<"size = "<<GetSize()<<endl; //SEG FAULTS!!!
+    ^
+main.cpp:33:4: note: suggested alternative:
+In file included from main.cpp:1:0:
+/usr/local/include/c++/5.2.0/iostream:61:18: note:   'std::cout'
+   extern ostream cout;  /// Linked to standard output
+                  ^
+main.cpp:33:32: error: 'endl' was not declared in this scope
+    cout<<"size = "<<GetSize()<<endl; //SEG FAULTS!!!
+                                ^
+main.cpp:33:32: note: suggested alternative:
+In file included from /usr/local/include/c++/5.2.0/iostream:39:0,
+                 from main.cpp:1:
+/usr/local/include/c++/5.2.0/ostream:590:5: note:   'std::endl'
+     endl(basic_ostream<_CharT, _Traits>& __os)
+     ^
+main.cpp:34:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
