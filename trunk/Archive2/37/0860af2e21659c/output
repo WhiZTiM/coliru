@@ -1,0 +1,5 @@
+main.cpp: In function 'std::map<std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char>*> createMap()':
+main.cpp:49:20: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+terminate called after throwing an instance of 'std::bad_alloc'
+  what():  std::bad_alloc
+bash: line 7:  1118 Aborted                 (core dumped) ./a.out
