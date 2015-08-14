@@ -1,0 +1,7 @@
+main.cpp: In function 'int main()':
+main.cpp:33:36: error: invalid conversion from 'const char*' to 'char' [-fpermissive]
+     char* p = new char[6]{ "Zorro" };
+                                    ^
+main.cpp:34:35: error: invalid conversion from 'const char*' to 'char' [-fpermissive]
+     char* p1 = new char[4]{ "Zio" };
+                                   ^
