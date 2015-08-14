@@ -1,0 +1,21 @@
+main.cpp:6:20: error: too many decimal points in number
+         <IPAddress>123.45.67</IPAddress>
+                    ^
+main.cpp:9:31: warning: missing terminating ' character
+         <serialNo>manufacturer's serial number</serialNo>
+                               ^
+main.cpp:9:9: error: missing terminating ' character
+         <serialNo>manufacturer's serial number</serialNo>
+         ^
+main.cpp:15:20: error: too many decimal points in number
+         <IPAddress>123.45.67</IPAddress>
+                    ^
+main.cpp:18:31: warning: missing terminating ' character
+         <serialNo>manufacturer's serial number</serialNo>
+                               ^
+main.cpp:18:9: error: missing terminating ' character
+         <serialNo>manufacturer's serial number</serialNo>
+         ^
+main.cpp:1:1: error: expected unqualified-id before '<' token
+ <parent>
+ ^
