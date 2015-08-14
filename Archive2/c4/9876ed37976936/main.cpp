@@ -1,0 +1,1 @@
+<isLocal>true</isLocal>\n<manufacturer>manufacturername</manufacturer>\n<modelName>modelname</modelName>\n<IPAddress>123.45.67</IPAddress>\n<modelNo>modelnumber</modelNo>\n<modelUrl>URL to model site</modelUrl>\n<serialNo>manufacturer's serial number</serialNo>\n
