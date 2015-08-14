@@ -1,0 +1,10 @@
+main.cpp: In function 'int main()':
+main.cpp:5:5: error: 'foo::foo' names the constructor, not the type
+     foo::foo a;
+     ^
+main.cpp:5:14: error: expected ';' before 'a'
+     foo::foo a;
+              ^
+main.cpp:5:15: error: statement cannot resolve address of overloaded function
+     foo::foo a;
+               ^
