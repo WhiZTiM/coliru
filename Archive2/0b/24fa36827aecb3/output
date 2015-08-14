@@ -1,0 +1,24 @@
++ g++-5.1 -std=c++14 -O3 -Wall -Wextra -pedantic main.cpp
++ ./a.out
+string: got 0 (expected 1).  well_formed_default<test_for_length_method_alias , T>
+string: got 1 (expected 1).  well_formed_default<test_for_length_method_struct , T>
+string: got 0 (expected 1).  well_formed_default<test_for_length_method_alias>
+string: got 1 (expected 1).  well_formed_default<test_for_length_method_struct>
+T has length
+ int  : got 0 (expected 0).  well_formed_default<test_for_length_method_alias , T>
+ int  : got 0 (expected 0).  well_formed_default<test_for_length_method_struct , T>
+ int  : got 0 (expected 0).  well_formed_default<test_for_length_method_alias>
+ int  : got 0 (expected 0).  well_formed_default<test_for_length_method_struct>
+T doesn't
++ clang++ -std=c++14 -O3 -Wall -Wextra -pedantic -stdlib=libc++ main.cpp -lsupc++
++ ./a.out
+string: got 1 (expected 1).  well_formed_default<test_for_length_method_alias , T>
+string: got 1 (expected 1).  well_formed_default<test_for_length_method_struct , T>
+string: got 0 (expected 1).  well_formed_default<test_for_length_method_alias>
+string: got 1 (expected 1).  well_formed_default<test_for_length_method_struct>
+T has length
+ int  : got 0 (expected 0).  well_formed_default<test_for_length_method_alias , T>
+ int  : got 0 (expected 0).  well_formed_default<test_for_length_method_struct , T>
+ int  : got 0 (expected 0).  well_formed_default<test_for_length_method_alias>
+ int  : got 0 (expected 0).  well_formed_default<test_for_length_method_struct>
+T doesn't
