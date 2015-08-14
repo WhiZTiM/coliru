@@ -1,0 +1,141 @@
+starting up
+opening file
+checking file state
+file is open
+reference assigned
+lines size is: 7
+reading line:
+<isLocal>true</isLocal>
+brackets found
+first open found
+1
+first close found
+1
+second open found
+1
+key is: isLocal
+attempting to dereference
+dereferencing: 0x7fff2f6f0b00
+to get: 
+ref is: 
+constructing new val
+new val is: true
+assigning to reference
+value assigned
+reading line:
+<manufacturer>manufacturername</manufacturer>
+brackets found
+first open found
+1
+first close found
+1
+second open found
+1
+key is: manufacturer
+attempting to dereference
+dereferencing: 0x7fff2f6f0b20
+to get: 
+ref is: 
+constructing new val
+new val is: manufacturername
+assigning to reference
+value assigned
+reading line:
+<modelName>modelname</modelName>
+brackets found
+first open found
+1
+first close found
+1
+second open found
+1
+key is: modelName
+attempting to dereference
+dereferencing: 0x7fff2f6f0b40
+to get: 
+ref is: 
+constructing new val
+new val is: modelname
+assigning to reference
+value assigned
+reading line:
+<IPAddress>123.45.67</IPAddress>
+brackets found
+first open found
+1
+first close found
+1
+second open found
+1
+key is: IPAddress
+attempting to dereference
+dereferencing: 0x7fff2f6f0b60
+to get: 
+ref is: 
+constructing new val
+new val is: 123.45.67
+assigning to reference
+value assigned
+reading line:
+<modelNo>modelnumber</modelNo>
+brackets found
+first open found
+1
+first close found
+1
+second open found
+1
+key is: modelNo
+attempting to dereference
+dereferencing: 0x7fff2f6f0b80
+to get: 
+ref is: 
+constructing new val
+new val is: modelnumber
+assigning to reference
+value assigned
+reading line:
+<modelUrl>URL to model site</modelUrl>
+brackets found
+first open found
+1
+first close found
+1
+second open found
+1
+key is: modelUrl
+attempting to dereference
+dereferencing: 0x7fff2f6f0ba0
+to get: 
+ref is: 
+constructing new val
+new val is: URL to model site
+assigning to reference
+value assigned
+reading line:
+<serialNo>manufacturer's serial number</serialNo>
+brackets found
+first open found
+1
+first close found
+1
+second open found
+1
+key is: serialNo
+attempting to dereference
+dereferencing: 0x7fff2f6f0bc0
+to get: 
+ref is: 
+constructing new val
+new val is: manufacturer's serial number
+assigning to reference
+value assigned
+map created
+key is: isLocal and val is: attempting to dereference
+dereferencing: 0x7fff2f6f0b00
+to get: true
+true
+attempting to dereference
+dereferencing: 0x7fff2f6f0b00
+to get: true
+closing down
