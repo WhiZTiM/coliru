@@ -1,0 +1,4 @@
+main.cpp:5:14: warning: unused variable 'a' [-Wunused-variable]
+    foo::foo a;
+             ^
+1 warning generated.
