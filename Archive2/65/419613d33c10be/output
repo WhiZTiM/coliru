@@ -1,0 +1,17 @@
+main.cpp: In function 'bool isPrime(int)':
+main.cpp:8:9: warning: unused variable 'square_root' [-Wunused-variable]
+     int square_root = sqrt(x);
+         ^
+main.cpp: In function 'int main()':
+main.cpp:32:24: warning: ISO C++ forbids variable length array 'tab' [-Wvla]
+     int tab[how_many][2];
+                        ^
+main.cpp:39:33: warning: ISO C++ forbids variable length array 'v_tab' [-Wvla]
+     vector<int>*  v_tab[how_many];
+                                 ^
+main.cpp:42:23: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         for(int j=0; j<v_tab[i]->size(); j++){
+                       ^
+main.cpp:44:26: error: request for member 'at' in '*(std::vector<int>**)(& v_tab)', which is of pointer type 'std::vector<int>*' (maybe you meant to use '->' ?)
+             cout<<v_tab->at(i)->at(j)<<endl;    
+                          ^
