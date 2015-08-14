@@ -1,0 +1,273 @@
+main.cpp:2:1: error: stray '`' in program
+ /tmp/cc99KH8g.o: In function `exit_nicely':
+ ^
+main.cpp:2:42: warning: missing terminating ' character
+ /tmp/cc99KH8g.o: In function `exit_nicely':
+                                          ^
+main.cpp:2:1: error: missing terminating ' character
+ /tmp/cc99KH8g.o: In function `exit_nicely':
+ ^
+main.cpp:3:1: error: stray '`' in program
+ libpqex1.c:(.text+0x14): undefined reference to `PQfinish'
+ ^
+main.cpp:3:58: warning: missing terminating ' character
+ libpqex1.c:(.text+0x14): undefined reference to `PQfinish'
+                                                          ^
+main.cpp:3:1: error: missing terminating ' character
+ libpqex1.c:(.text+0x14): undefined reference to `PQfinish'
+ ^
+main.cpp:4:1: error: stray '`' in program
+ /tmp/cc99KH8g.o: In function `main':
+ ^
+main.cpp:4:35: warning: missing terminating ' character
+ /tmp/cc99KH8g.o: In function `main':
+                                   ^
+main.cpp:4:1: error: missing terminating ' character
+ /tmp/cc99KH8g.o: In function `main':
+ ^
+main.cpp:5:1: error: stray '`' in program
+ libpqex1.c:(.text+0x3a): undefined reference to `PQconnectdb'
+ ^
+main.cpp:5:61: warning: missing terminating ' character
+ libpqex1.c:(.text+0x3a): undefined reference to `PQconnectdb'
+                                                             ^
+main.cpp:5:1: error: missing terminating ' character
+ libpqex1.c:(.text+0x3a): undefined reference to `PQconnectdb'
+ ^
+main.cpp:6:1: error: stray '`' in program
+ libpqex1.c:(.text+0x4a): undefined reference to `PQstatus'
+ ^
+main.cpp:6:58: warning: missing terminating ' character
+ libpqex1.c:(.text+0x4a): undefined reference to `PQstatus'
+                                                          ^
+main.cpp:6:1: error: missing terminating ' character
+ libpqex1.c:(.text+0x4a): undefined reference to `PQstatus'
+ ^
+main.cpp:7:1: error: stray '`' in program
+ libpqex1.c:(.text+0x5a): undefined reference to `PQerrorMessage'
+ ^
+main.cpp:7:64: warning: missing terminating ' character
+ libpqex1.c:(.text+0x5a): undefined reference to `PQerrorMessage'
+                                                                ^
+main.cpp:7:1: error: missing terminating ' character
+ libpqex1.c:(.text+0x5a): undefined reference to `PQerrorMessage'
+ ^
+main.cpp:8:1: error: stray '`' in program
+ libpqex1.c:(.text+0x93): undefined reference to `PQexec'
+ ^
+main.cpp:8:56: warning: missing terminating ' character
+ libpqex1.c:(.text+0x93): undefined reference to `PQexec'
+                                                        ^
+main.cpp:8:1: error: missing terminating ' character
+ libpqex1.c:(.text+0x93): undefined reference to `PQexec'
+ ^
+main.cpp:9:1: error: stray '`' in program
+ libpqex1.c:(.text+0xa3): undefined reference to `PQresultStatus'
+ ^
+main.cpp:9:64: warning: missing terminating ' character
+ libpqex1.c:(.text+0xa3): undefined reference to `PQresultStatus'
+                                                                ^
+main.cpp:9:1: error: missing terminating ' character
+ libpqex1.c:(.text+0xa3): undefined reference to `PQresultStatus'
+ ^
+main.cpp:10:1: error: stray '`' in program
+ libpqex1.c:(.text+0xb4): undefined reference to `PQerrorMessage'
+ ^
+main.cpp:10:64: warning: missing terminating ' character
+ libpqex1.c:(.text+0xb4): undefined reference to `PQerrorMessage'
+                                                                ^
+main.cpp:10:1: error: missing terminating ' character
+ libpqex1.c:(.text+0xb4): undefined reference to `PQerrorMessage'
+ ^
+main.cpp:11:1: error: stray '`' in program
+ libpqex1.c:(.text+0xdc): undefined reference to `PQclear'
+ ^
+main.cpp:11:57: warning: missing terminating ' character
+ libpqex1.c:(.text+0xdc): undefined reference to `PQclear'
+                                                         ^
+main.cpp:11:1: error: missing terminating ' character
+ libpqex1.c:(.text+0xdc): undefined reference to `PQclear'
+ ^
+main.cpp:12:1: error: stray '`' in program
+ libpqex1.c:(.text+0xf4): undefined reference to `PQclear'
+ ^
+main.cpp:12:57: warning: missing terminating ' character
+ libpqex1.c:(.text+0xf4): undefined reference to `PQclear'
+                                                         ^
+main.cpp:12:1: error: missing terminating ' character
+ libpqex1.c:(.text+0xf4): undefined reference to `PQclear'
+ ^
+main.cpp:13:1: error: stray '`' in program
+ libpqex1.c:(.text+0x105): undefined reference to `PQexec'
+ ^
+main.cpp:13:57: warning: missing terminating ' character
+ libpqex1.c:(.text+0x105): undefined reference to `PQexec'
+                                                         ^
+main.cpp:13:1: error: missing terminating ' character
+ libpqex1.c:(.text+0x105): undefined reference to `PQexec'
+ ^
+main.cpp:14:1: error: stray '`' in program
+ libpqex1.c:(.text+0x115): undefined reference to `PQresultStatus'
+ ^
+main.cpp:14:65: warning: missing terminating ' character
+ libpqex1.c:(.text+0x115): undefined reference to `PQresultStatus'
+                                                                 ^
+main.cpp:14:1: error: missing terminating ' character
+ libpqex1.c:(.text+0x115): undefined reference to `PQresultStatus'
+ ^
+main.cpp:15:1: error: stray '`' in program
+ libpqex1.c:(.text+0x126): undefined reference to `PQerrorMessage'
+ ^
+main.cpp:15:65: warning: missing terminating ' character
+ libpqex1.c:(.text+0x126): undefined reference to `PQerrorMessage'
+                                                                 ^
+main.cpp:15:1: error: missing terminating ' character
+ libpqex1.c:(.text+0x126): undefined reference to `PQerrorMessage'
+ ^
+main.cpp:16:1: error: stray '`' in program
+ libpqex1.c:(.text+0x14e): undefined reference to `PQclear'
+ ^
+main.cpp:16:58: warning: missing terminating ' character
+ libpqex1.c:(.text+0x14e): undefined reference to `PQclear'
+                                                          ^
+main.cpp:16:1: error: missing terminating ' character
+ libpqex1.c:(.text+0x14e): undefined reference to `PQclear'
+ ^
+main.cpp:17:1: error: stray '`' in program
+ libpqex1.c:(.text+0x166): undefined reference to `PQclear'
+ ^
+main.cpp:17:58: warning: missing terminating ' character
+ libpqex1.c:(.text+0x166): undefined reference to `PQclear'
+                                                          ^
+main.cpp:17:1: error: missing terminating ' character
+ libpqex1.c:(.text+0x166): undefined reference to `PQclear'
+ ^
+main.cpp:18:1: error: stray '`' in program
+ libpqex1.c:(.text+0x177): undefined reference to `PQexec'
+ ^
+main.cpp:18:57: warning: missing terminating ' character
+ libpqex1.c:(.text+0x177): undefined reference to `PQexec'
+                                                         ^
+main.cpp:18:1: error: missing terminating ' character
+ libpqex1.c:(.text+0x177): undefined reference to `PQexec'
+ ^
+main.cpp:19:1: error: stray '`' in program
+ libpqex1.c:(.text+0x187): undefined reference to `PQresultStatus'
+ ^
+main.cpp:19:65: warning: missing terminating ' character
+ libpqex1.c:(.text+0x187): undefined reference to `PQresultStatus'
+                                                                 ^
+main.cpp:19:1: error: missing terminating ' character
+ libpqex1.c:(.text+0x187): undefined reference to `PQresultStatus'
+ ^
+main.cpp:20:1: error: stray '`' in program
+ libpqex1.c:(.text+0x198): undefined reference to `PQerrorMessage'
+ ^
+main.cpp:20:65: warning: missing terminating ' character
+ libpqex1.c:(.text+0x198): undefined reference to `PQerrorMessage'
+                                                                 ^
+main.cpp:20:1: error: missing terminating ' character
+ libpqex1.c:(.text+0x198): undefined reference to `PQerrorMessage'
+ ^
+main.cpp:21:1: error: stray '`' in program
+ libpqex1.c:(.text+0x1c0): undefined reference to `PQclear'
+ ^
+main.cpp:21:58: warning: missing terminating ' character
+ libpqex1.c:(.text+0x1c0): undefined reference to `PQclear'
+                                                          ^
+main.cpp:21:1: error: missing terminating ' character
+ libpqex1.c:(.text+0x1c0): undefined reference to `PQclear'
+ ^
+main.cpp:22:1: error: stray '`' in program
+ libpqex1.c:(.text+0x1d8): undefined reference to `PQnfields'
+ ^
+main.cpp:22:60: warning: missing terminating ' character
+ libpqex1.c:(.text+0x1d8): undefined reference to `PQnfields'
+                                                            ^
+main.cpp:22:1: error: missing terminating ' character
+ libpqex1.c:(.text+0x1d8): undefined reference to `PQnfields'
+ ^
+main.cpp:23:1: error: stray '`' in program
+ libpqex1.c:(.text+0x1f5): undefined reference to `PQfname'
+ ^
+main.cpp:23:58: warning: missing terminating ' character
+ libpqex1.c:(.text+0x1f5): undefined reference to `PQfname'
+                                                          ^
+main.cpp:23:1: error: missing terminating ' character
+ libpqex1.c:(.text+0x1f5): undefined reference to `PQfname'
+ ^
+main.cpp:24:1: error: stray '`' in program
+ libpqex1.c:(.text+0x243): undefined reference to `PQgetvalue'
+ ^
+main.cpp:24:61: warning: missing terminating ' character
+ libpqex1.c:(.text+0x243): undefined reference to `PQgetvalue'
+                                                             ^
+main.cpp:24:1: error: missing terminating ' character
+ libpqex1.c:(.text+0x243): undefined reference to `PQgetvalue'
+ ^
+main.cpp:25:1: error: stray '`' in program
+ libpqex1.c:(.text+0x27b): undefined reference to `PQntuples'
+ ^
+main.cpp:25:60: warning: missing terminating ' character
+ libpqex1.c:(.text+0x27b): undefined reference to `PQntuples'
+                                                            ^
+main.cpp:25:1: error: missing terminating ' character
+ libpqex1.c:(.text+0x27b): undefined reference to `PQntuples'
+ ^
+main.cpp:26:1: error: stray '`' in program
+ libpqex1.c:(.text+0x28c): undefined reference to `PQclear'
+ ^
+main.cpp:26:58: warning: missing terminating ' character
+ libpqex1.c:(.text+0x28c): undefined reference to `PQclear'
+                                                          ^
+main.cpp:26:1: error: missing terminating ' character
+ libpqex1.c:(.text+0x28c): undefined reference to `PQclear'
+ ^
+main.cpp:27:1: error: stray '`' in program
+ libpqex1.c:(.text+0x29d): undefined reference to `PQexec'
+ ^
+main.cpp:27:57: warning: missing terminating ' character
+ libpqex1.c:(.text+0x29d): undefined reference to `PQexec'
+                                                         ^
+main.cpp:27:1: error: missing terminating ' character
+ libpqex1.c:(.text+0x29d): undefined reference to `PQexec'
+ ^
+main.cpp:28:1: error: stray '`' in program
+ libpqex1.c:(.text+0x2ad): undefined reference to `PQclear'
+ ^
+main.cpp:28:58: warning: missing terminating ' character
+ libpqex1.c:(.text+0x2ad): undefined reference to `PQclear'
+                                                          ^
+main.cpp:28:1: error: missing terminating ' character
+ libpqex1.c:(.text+0x2ad): undefined reference to `PQclear'
+ ^
+main.cpp:29:1: error: stray '`' in program
+ libpqex1.c:(.text+0x2be): undefined reference to `PQexec'
+ ^
+main.cpp:29:57: warning: missing terminating ' character
+ libpqex1.c:(.text+0x2be): undefined reference to `PQexec'
+                                                         ^
+main.cpp:29:1: error: missing terminating ' character
+ libpqex1.c:(.text+0x2be): undefined reference to `PQexec'
+ ^
+main.cpp:30:1: error: stray '`' in program
+ libpqex1.c:(.text+0x2ce): undefined reference to `PQclear'
+ ^
+main.cpp:30:58: warning: missing terminating ' character
+ libpqex1.c:(.text+0x2ce): undefined reference to `PQclear'
+                                                          ^
+main.cpp:30:1: error: missing terminating ' character
+ libpqex1.c:(.text+0x2ce): undefined reference to `PQclear'
+ ^
+main.cpp:31:1: error: stray '`' in program
+ libpqex1.c:(.text+0x2da): undefined reference to `PQfinish'
+ ^
+main.cpp:31:59: warning: missing terminating ' character
+ libpqex1.c:(.text+0x2da): undefined reference to `PQfinish'
+                                                           ^
+main.cpp:31:1: error: missing terminating ' character
+ libpqex1.c:(.text+0x2da): undefined reference to `PQfinish'
+ ^
+main.cpp:1:1: error: '$' does not name a type
+ $ gcc -I/usr/include/postgresql/ -o libpqex1 libpqex1.c
+ ^
