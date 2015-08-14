@@ -1,0 +1,21 @@
+starting up
+file loaded
+
+isLocal: 1
+manufacturer: wheel wells
+modelName: super wheel
+IPAddress: 123.45.67
+modelNo: 52
+modelUrl: wheelwells.com
+serialNo: 98dfgaijfw
+
+isLocal: 0
+manufacturer: joe bob's machines
+modelName: modelname
+IPAddress: 980.123.912.5
+modelNo: 05348437
+modelUrl: mysite.com
+serialNo: 12387ifj2837418
+
+
+closing down
