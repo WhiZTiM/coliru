@@ -1,0 +1,4 @@
+main.cpp:23:12: error: invalid universal character
+  print( U"\U001F1800" );  // non-BMP left arrow "<--"
+           ^~~~~~~~~~
+1 error generated.
