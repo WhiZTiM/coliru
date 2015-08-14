@@ -1,0 +1,1 @@
+clang++ --std=c++11 -fsanitize=undefined main.cpp -o num_get -O3 && ./num_get -1
