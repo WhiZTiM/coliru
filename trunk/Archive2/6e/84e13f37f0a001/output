@@ -1,0 +1,5 @@
+main.cpp: In function 'void _del_int(int*)':
+main.cpp:14:54: warning: format '%p' expects argument of type 'void*', but argument 2 has type 'int*' [-Wformat=]
+     printf("deleting pointer %p to value %d\n", p, *p);
+                                                      ^
+deleting pointer 0x1968c20 to value 42
