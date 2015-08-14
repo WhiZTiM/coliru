@@ -1,0 +1,8 @@
+main.cpp: In function 'int main()':
+main.cpp:28:29: warning: integer overflow in expression [-Woverflow]
+     int blah[1024*1024*1024 * 10];
+                             ^
+main.cpp:28:33: error: overflow in constant expression
+     int blah[1024*1024*1024 * 10];
+                                 ^
+main.cpp:28:33: error: size of array 'blah' is negative
