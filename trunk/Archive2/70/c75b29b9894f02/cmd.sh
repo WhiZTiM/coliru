@@ -1,0 +1,2 @@
+clang++ --version | grep clang && clang++ -std=c++14 -stdlib=libc++ -Wall -Wextra -pedantic-errors  -pthread main.cpp -otest && ./test && cat new_file.txt
+echo -e '\n========\n' && g++ --version | grep GCC && g++ -std=c++14 -Wall -Wextra -pedantic-errors -pthread main.cpp -otest && ./test && cat new_file.txt
