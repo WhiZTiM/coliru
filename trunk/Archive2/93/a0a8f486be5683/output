@@ -1,0 +1,6 @@
+main.cpp:4:12: error: too many decimal points in number
+main.cpp:7:23: warning: missing terminating ' character
+main.cpp:7:1: error: missing terminating ' character
+main.cpp:1:1: error: expected unqualified-id before '<' token
+ <isLocal>true</isLocal><manufacturer>manufacturername</manufacturer> <modelName>modelname</modelName> <IPAddress>123.45.67</IPAddress><modelNo>modelnumber</modelNo> <modelUrl>URL to model site</modelUrl> <serialNo>manufacturer's serial number</serialNo> 
+ ^
