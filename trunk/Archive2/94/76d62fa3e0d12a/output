@@ -1,0 +1,4 @@
+main.cpp:9:5: error: static_assert failed "haha isn't equal"
+    static_assert(std::is_same<decltype(std::forward<void()>(g)), void(&&)()>::value, "haha isn't equal");
+    ^             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+1 error generated.
