@@ -1,0 +1,51 @@
+clang version 3.6.0 (tags/RELEASE_360/final 235480)
+
+head: 11 03 AC 78 
+
+text: 'cplusplus is the best'
+
+tail: 0 1 2 3 4 5 6 7 8 9 
+
+----------------
+
+head: 83 G 450 A 
+
+text: 'My topics'
+
+tail: aaa bbb ccc ddd eee fff ggg hhh iii jjj 
+
+----------------
+
+head: WQ 3 11 124 
+
+text: 'UNIX/Linux Programming'
+
+tail: a0 b1 c2 d3 e4 f5 g6 h7 i8 j9 
+
+----------------
+
+g++ (GCC) 5.2.0
+
+head: 11 03 AC 78 
+
+text: 'cplusplus is the best'
+
+tail: 0 1 2 3 4 5 6 7 8 9 
+
+----------------
+
+head: 83 G 450 A 
+
+text: 'My topics'
+
+tail: aaa bbb ccc ddd eee fff ggg hhh iii jjj 
+
+----------------
+
+head: WQ 3 11 124 
+
+text: 'UNIX/Linux Programming'
+
+tail: a0 b1 c2 d3 e4 f5 g6 h7 i8 j9 
+
+----------------
