@@ -1,0 +1,22 @@
+#include <iostream>
+struct Empty {};
+struct Base { int a; };
+struct Derived : Base { int b; };
+struct Bit {unsigned bit:1; };
+int main()
+{
+    Empty e;
+    Derived d;
+    Base& b = d;
+    Bit bit;
+    std::cout << "size of empty class: "     << sizeof e        << '\n'
+              << "size of pointer : "        << sizeof &e       << '\n'
+//            << "size of function: "        << sizeof(void())  << '\n'  // compile error
+//            << "size of incomplete type: " << sizeof(int[])   << '\n'  // compile error
+//            << "size of bit field: "       << sizeof bit.bit  << '\n'  // compile error
+              << "size of array of 10 int: " << sizeof(int[10]) << '\n'
+              << "size of array of bit"      << sizeof(bit)   << '\n'
+              << "size of the Derived:     " << sizeof d << '\n'
+              << "size of the Derived through Base: " << sizeof b << '\n';
+ 
+}
