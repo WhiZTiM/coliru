@@ -1,0 +1,4 @@
++ gcc -x c -O3 -Wall -pedantic-errors main.cpp
++ ./a.out
+cbrt(8.0) = 2.000000
+cbrtf(3.375) = 1.500000
