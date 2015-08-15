@@ -1,0 +1,22 @@
+main.cpp: In function 'int main(int, char**)':
+main.cpp:4:2: error: 'boost' has not been declared
+  boost::thread_group threads;
+  ^
+main.cpp:7:3: error: 'threads' was not declared in this scope
+   threads.create_thread(boost::bind(sync_echo, *message));
+   ^
+main.cpp:7:25: error: 'boost' has not been declared
+   threads.create_thread(boost::bind(sync_echo, *message));
+                         ^
+main.cpp:7:37: error: 'sync_echo' was not declared in this scope
+   threads.create_thread(boost::bind(sync_echo, *message));
+                                     ^
+main.cpp:8:3: error: 'boost' has not been declared
+   boost::this_thread::sleep(boost::posix_time::millisec(100));
+   ^
+main.cpp:8:29: error: 'boost' has not been declared
+   boost::this_thread::sleep(boost::posix_time::millisec(100));
+                             ^
+main.cpp:10:2: error: 'threads' was not declared in this scope
+  threads.join_all();
+  ^
