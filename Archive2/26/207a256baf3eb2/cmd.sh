@@ -1,0 +1,1 @@
+gcc -O3 -msse2 -mfpmath=sse main.cpp && ./a.out
