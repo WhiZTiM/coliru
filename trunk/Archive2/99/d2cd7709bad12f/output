@@ -1,0 +1,4 @@
+main.cpp: In function 'int main()':
+main.cpp:13:16: error: incompatible types in assignment of 'int (*)[12]' to 'int* [4]'
+     Move[0][0] = &FrontStep;
+                ^
