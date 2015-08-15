@@ -1,0 +1,9 @@
+sdk_client::call_smth: calling callback (CbBase)
+called user_callback (CbBase)
+
+sdk_client::call_smth: calling callback (CbChannel)
+called user_callback (CbChannel)
+
+sdk_client::call_smth: calling callback (CbAuth)
+called user_callback (CbBase)
+
