@@ -1,0 +1,4 @@
+main.cpp: In function 'void Shareify(Func)':
+main.cpp:16:18: error: expected unqualified-id before '(' token
+     shared_func->("hello");
+                  ^
