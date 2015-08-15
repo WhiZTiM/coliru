@@ -1,0 +1,10 @@
+main.cpp: In function 'int main()':
+main.cpp:15:50: error: call of overloaded 'f(A<int>, std::tuple<char*, int*, float*>)' is ambiguous
+     f(A<int>{}, std::tuple<char*, int*, float*>{});
+                                                  ^
+main.cpp:8:6: note: candidate: void f(A<I>, std::tuple<T* ...>) [with I = int; T = {char, int, float}]
+ void f(A<I>, std::tuple<T*...>) { std::cout << "0\n"; }
+      ^
+main.cpp:11:6: note: candidate: void f(A<int>, std::tuple<T* ...>) [with T = {char, int, float}]
+ void f(A<int>, std::tuple<T*...>) { std::cout << "1\n"; }
+      ^
