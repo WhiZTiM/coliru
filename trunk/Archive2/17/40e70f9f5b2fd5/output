@@ -1,0 +1,7 @@
+In file included from /usr/local/include/c++/5.2.0/queue:64:0,
+                 from main.cpp:2:
+/usr/local/include/c++/5.2.0/bits/stl_queue.h: In instantiation of 'void std::queue<_Tp, _Sequence>::pop() [with _Tp = int; _Sequence = std::vector<int>]':
+main.cpp:15:11:   required from here
+/usr/local/include/c++/5.2.0/bits/stl_queue.h:244:2: error: 'class std::vector<int>' has no member named 'pop_front'
+  c.pop_front();
+  ^
