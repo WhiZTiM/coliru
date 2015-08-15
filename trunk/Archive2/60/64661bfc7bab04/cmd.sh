@@ -1,0 +1,1 @@
+set -x ; gcc -x c -O3 -Wall -pedantic-errors main.cpp && ./a.out
