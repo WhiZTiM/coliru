@@ -1,0 +1,6 @@
+THREAD 0:
+thid: 0 local is @0x7fffe997852c
+thid: 0 static is @0x603810
+THREAD 1:
+thid: 1 local is @0x7f9fa610bc6c
+thid: 1 static is @0x603810
