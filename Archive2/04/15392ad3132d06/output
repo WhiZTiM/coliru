@@ -1,0 +1,8 @@
+Parsing: '   cmd0' ok: true
+Entries parsed: 0
+Parsing: '   cmd0  -23.0 value0  value1  value2' ok: true
+Entries parsed: 1
+Parsing: '   cmd0  -arg0  -arg1  -arg2' ok: true
+Entries parsed: 3
+Parsing: '   cmd0  -arg0  value0  -arg1  value0  value1  -arg2  value0  value1  value2' ok: true
+Entries parsed: 3
