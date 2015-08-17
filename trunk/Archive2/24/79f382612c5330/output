@@ -1,0 +1,8 @@
+main.cpp: In function 'int main()':
+main.cpp:17:32: error: 'tableauAleatoire' was not declared in this scope
+     cout << tableauAleatoire (9) << endl;
+                                ^
+main.cpp: In function 'int* tableauAleatoire(int)':
+main.cpp:41:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
