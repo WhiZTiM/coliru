@@ -1,0 +1,7 @@
+main.cpp: In function 'int main()':
+main.cpp:44:16: warning: 'd' is used uninitialized in this function [-Wuninitialized]
+     test_parser("1e310", double_, d);
+                ^
+ok
+ok
+d:0
