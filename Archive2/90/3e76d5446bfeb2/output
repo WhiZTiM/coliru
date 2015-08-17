@@ -1,0 +1,13 @@
+main.cpp: In instantiation of 'main()::<lambda(auto:3&& ...)>::<lambda(auto:4&& ...)> [with auto:4 = {int}; auto:3 = {int}]':
+main.cpp:15:14:   required from 'decltype(auto) operator<<(F1&&, F2&&) [with F1 = main()::<lambda(auto:3&& ...)> [with auto:3 = {int}]::<lambda(auto:4&& ...)>; F2 = int]'
+main.cpp:44:41:   required from here
+main.cpp:22:49: internal compiler error: Segmentation fault
+         [&](auto&& ...args2){return __VA_ARGS__ (std::forward<decltype(args1)>(args1)..., args2...);} ;   /* <-- ICE HERE!*/  \
+                                                 ^
+main.cpp:44:28: note: in expansion of macro 'f'
+     auto res = sum(a,b) >> f(divide) << 5;
+                            ^
+libbacktrace could not find executable to open
+Please submit a full bug report,
+with preprocessed source if appropriate.
+See <http://gcc.gnu.org/bugs.html> for instructions.
