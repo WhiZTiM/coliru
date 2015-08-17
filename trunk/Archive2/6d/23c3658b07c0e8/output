@@ -1,0 +1,11 @@
+main.cpp: In function 'int main()':
+main.cpp:14:41: error: no matching function for call to 'map_contains(std::map<int, std::__cxx11::basic_string<char> >&, const char [6])'
+     std::cout << map_contains(M, "hello");
+                                         ^
+main.cpp:6:46: note: candidate: template<class A, class B> bool map_contains(std::map<A, B>, const A&)
+ template<typename A, typename B> inline bool map_contains(const std::map< A, B > m, const A& str)
+                                              ^
+main.cpp:6:46: note:   template argument deduction/substitution failed:
+main.cpp:14:41: note:   deduced conflicting types for parameter 'const A' ('int' and 'char [6]')
+     std::cout << map_contains(M, "hello");
+                                         ^
