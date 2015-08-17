@@ -1,0 +1,6 @@
+main.cpp:1:1: error: 'size_t' does not name a type
+ size_t checksum = 0;
+ ^
+main.cpp:2:1: error: 'boost' does not name a type
+ boost::system::error_code compute_file_checksum(std::string file_name)
+ ^
