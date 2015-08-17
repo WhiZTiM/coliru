@@ -1,0 +1,7 @@
+main.cpp:5:13: error: 'utility' has not been declared
+ const char* utility::read_file(char* file_name) {
+             ^
+main.cpp: In function 'const char* read_file(char*)':
+main.cpp:6:33: error: variable 'std::ifstream file' has initializer but incomplete type
+     std::ifstream file(file_name);
+                                 ^
