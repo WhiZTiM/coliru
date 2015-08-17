@@ -1,0 +1,14 @@
+create compare
+move construct compare
+move construct compare
+Save construct A
+copy construct compare
+Save construct compare
+save A
+----
+Load construct A
+Load construct compare
+create compare
+move construct compare
+move construct compare
+load A
