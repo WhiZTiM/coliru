@@ -1,0 +1,12 @@
+~~~~~~G++~~~~~~
+main.cpp: In function 'int main()':
+main.cpp:5:24: warning: unknown escape sequence: '\.'
+     std::regex pattern("src/(.*)\.cpp");
+                        ^
+no match
+~~~~CLANG++~~~~
+main.cpp:5:33: warning: unknown escape sequence '\.' [-Wunknown-escape-sequence]
+    std::regex pattern("src/(.*)\.cpp");
+                                ^~
+1 warning generated.
+no match
