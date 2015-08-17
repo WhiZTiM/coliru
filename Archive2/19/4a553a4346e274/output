@@ -1,0 +1,8 @@
+main.cpp: In function 'int main()':
+main.cpp:8:19: warning: format '%d' expects argument of type 'int*', but argument 2 has type 'int' [-Wformat=]
+     scanf("%d\n",i);
+                   ^
+main.cpp:8:20: warning: 'i' is used uninitialized in this function [-Wuninitialized]
+     scanf("%d\n",i);
+                    ^
+hello
