@@ -1,0 +1,3 @@
+SomeThing() FooBar() 
+Destructing the vector...
+~SomeThing() ~FooBar() 
