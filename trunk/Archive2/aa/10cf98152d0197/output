@@ -1,0 +1,8 @@
+main.cpp:15:12: warning: expression with side effects will be evaluated despite being used as an operand to 'typeid' [-Wpotentially-evaluated-expression]
+    typeid(f());   
+           ^
+main.cpp:15:5: warning: expression result unused [-Wunused-value]
+    typeid(f());   
+    ^~~~~~~~~~~
+2 warnings generated.
+foo
