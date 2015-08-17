@@ -1,0 +1,6 @@
+main.cpp: In instantiation of 'struct bar<bax>':
+main.cpp:11:10:   required from here
+main.cpp:4:6: error: non-constant condition for static assertion
+      static_assert(f!=nullptr,"f == null!");
+      ^
+main.cpp:4:6: error: '(bax != 0u)' is not a constant expression
