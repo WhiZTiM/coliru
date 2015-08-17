@@ -1,0 +1,4 @@
+terminate called after throwing an instance of 'int'
+bash: line 7: 28500 Aborted                 (core dumped) ./a.out
+terminate called after throwing an instance of 'int'
+bash: line 8: 28528 Aborted                 (core dumped) ./a.out
