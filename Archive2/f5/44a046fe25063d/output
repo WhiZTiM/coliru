@@ -1,0 +1,10 @@
+Test:ptr_1 constructed
+Test:ptr_2 constructed
+Test:ptr_3 constructed
+Test:ptr_4 constructed
+Test:ptr_5 constructed
+delTest -> Test:ptr_5 destroyed
+delTest -> Test:ptr_4 destroyed
+delTest -> Test:ptr_3 destroyed
+lambda -> Test:ptr_2 destroyed
+Test:ptr_1 destroyed
