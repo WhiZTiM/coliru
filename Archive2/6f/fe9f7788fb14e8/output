@@ -1,0 +1,7 @@
+main.cpp: In function 'main':
+main.cpp:17:5: error: implicit declaration of function 'at_quick_exit' [-Wimplicit-function-declaration]
+     at_quick_exit(f1);
+     ^
+main.cpp:19:5: error: implicit declaration of function 'quick_exit' [-Wimplicit-function-declaration]
+     quick_exit(0);
+     ^
