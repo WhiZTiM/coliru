@@ -1,0 +1,3 @@
+SomeThing() SomeThing(&&) ~SomeThing() FooBar() FooBar(&&) ~FooBar() 
+Destructing the vector...
+~SomeThing() ~FooBar() 
