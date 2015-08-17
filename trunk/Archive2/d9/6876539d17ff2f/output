@@ -1,0 +1,10 @@
+clang version 3.6.0 (tags/RELEASE_360/final 235480)
+main.cpp:31:61: error: redefinition of 'svar4' with a different type: 'typename stype<A<T> >::type' vs 'svar_type' (aka 'const typename std::decay<T>::type')
+main.cpp:34:95: error: redefinition of 'svar5' with a different type: 'typename std::remove_reference<decltype(A<T>::svar5)>::type' vs 'svar_type' (aka 'const typename std::decay<T>::type')
+2 errors generated.
+
+g++ (GCC) 5.2.0
+main.cpp:31:61: error: conflicting declaration 'typename stype<A<T> >::type A<T>::svar4'
+main.cpp:31:61: error: declaration of 'A<T>::svar_type A<T>::svar4' outside of class is not definition [-fpermissive]
+main.cpp:34:95: error: conflicting declaration 'typename std::remove_reference<decltype (A<T>::svar5)>::type A<T>::svar5'
+main.cpp:34:95: error: declaration of 'A<T>::svar_type A<T>::svar5' outside of class is not definition [-fpermissive]

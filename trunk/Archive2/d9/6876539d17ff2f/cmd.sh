@@ -1,0 +1,2 @@
+clang++ --version | grep clang && clang++ -std=c++14 -stdlib=libc++ -O3 -Wall -Wextra -pedantic-errors -c main.cpp 2>&1 >/dev/null | grep error
+echo && g++ --version | grep GCC && g++ -std=c++14 -O3 -Wall -Wextra -pedantic-errors -c main.cpp 2>&1 >/dev/null | grep error
