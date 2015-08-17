@@ -1,0 +1,17 @@
+main.cpp:5:13: error: 'utility' has not been declared
+ std::string utility::read_file(const char* file_name) {
+             ^
+main.cpp: In function 'std::__cxx11::string read_file(const char*)':
+main.cpp:6:33: error: variable 'std::ifstream file' has initializer but incomplete type
+     std::ifstream file(file_name);
+                                 ^
+main.cpp: At global scope:
+main.cpp:12:36: error: 'utility' has not been declared
+ const char* vertex_shader_source = utility::read_file("vertex_shader.txt").c_str();
+                                    ^
+main.cpp:13:7: error: expected constructor, destructor, or type conversion before '(' token
+ printf(vertex_shader_source); // memory is freed?
+       ^
+main.cpp:14:7: error: expected constructor, destructor, or type conversion before '(' token
+ printf(utility::read_file("vertex_shader.txt").c_str()); // prints out what I want
+       ^
