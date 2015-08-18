@@ -1,0 +1,10 @@
+main.cpp:8:19: error: constexpr variable 'i' must be initialized by a constant expression
+    constexpr int i = sp->f(); // error: sp not a constant expression
+                  ^   ~~~~~~~
+main.cpp:8:23: note: read of non-constexpr variable 'sp' is not allowed in a constant expression
+    constexpr int i = sp->f(); // error: sp not a constant expression
+                      ^
+main.cpp:7:21: note: declared here
+    const S * const sp = &s;
+                    ^
+1 error generated.
