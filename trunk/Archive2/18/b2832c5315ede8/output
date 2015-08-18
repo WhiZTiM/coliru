@@ -1,0 +1,10 @@
+main.cpp:8:7: error: 'auto' type specifier is a C++11 extension [-Werror,-Wc++11-extensions]
+  for(auto s:words){
+      ^
+main.cpp:8:13: error: range-based for loop is a C++11 extension [-Werror,-Wc++11-extensions]
+  for(auto s:words){
+            ^
+main.cpp:11:2: error: no newline at end of file [-Werror,-Wnewline-eof]
+}
+ ^
+3 errors generated.
