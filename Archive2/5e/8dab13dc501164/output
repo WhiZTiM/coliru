@@ -1,0 +1,4 @@
+main.cpp:3:26: error: constexpr variable 'ip2' must be initialized by a constant expression
+    constexpr int *ip2 = new int;
+                         ^~~~~~~
+1 error generated.
