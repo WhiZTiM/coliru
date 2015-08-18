@@ -1,0 +1,10 @@
+main.cpp: In function 'int main()':
+main.cpp:3:27: error: the value of 'ip' is not usable in a constant expression
+     constexpr int * ip2 = ip;
+                           ^
+main.cpp:2:16: note: 'ip' was not declared 'constexpr'
+     int *const ip = nullptr;
+                ^
+main.cpp:3:21: warning: unused variable 'ip2' [-Wunused-variable]
+     constexpr int * ip2 = ip;
+                     ^
