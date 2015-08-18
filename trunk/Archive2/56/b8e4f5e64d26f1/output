@@ -1,0 +1,7 @@
+main.cpp:23:52: error: cannot refer to class template 'ostream_iterator' without a template argument list
+    std::copy(begin(integers), end(integers), std::ostream_iterator(std::cout, "\n"));
+                                              ~~~~~^
+/usr/include/c++/v1/iterator:789:29: note: template is declared here
+class _LIBCPP_TYPE_VIS_ONLY ostream_iterator
+                            ^
+1 error generated.
