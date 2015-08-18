@@ -1,0 +1,14 @@
+g++
+Test beings:
+hello #3
+hello "world"
+hello #2
+#2 says hello
+#1 says hello
+clang
+Test beings:
+hello #3
+hello "world"
+hello #2
+#2 says hello
+#1 says hello
