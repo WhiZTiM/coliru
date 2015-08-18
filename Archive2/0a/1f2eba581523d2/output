@@ -1,0 +1,10 @@
+main.cpp:5:19: error: constexpr variable 'i' must be initialized by a constant expression
+    constexpr int i = f(ip);
+                  ^   ~~~~~
+main.cpp:5:25: note: read of non-constexpr variable 'ip' is not allowed in a constant expression
+    constexpr int i = f(ip);
+                        ^
+main.cpp:4:30: note: declared here
+    /*constexpr*/ int *const ip = nullptr;
+                             ^
+1 error generated.
