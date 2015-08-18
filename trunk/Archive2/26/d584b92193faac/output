@@ -1,0 +1,30 @@
+g++
+SubClass
++=1
+SubClass const&
++=2
+~SubClass
+SubClass const&
++=3
+~SubClass
+~SubClass
+SubClass
+SubClass&&
++=4
+~SubClass
+~SubClass
+clang
+SubClass
++=1
+SubClass const&
++=2
+~SubClass
+SubClass const&
++=3
+~SubClass
+~SubClass
+SubClass
+SubClass&&
++=4
+~SubClass
+~SubClass
