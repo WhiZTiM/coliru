@@ -1,0 +1,7 @@
++ clang++ -std=c++14 -stdlib=libc++ -O3 -Wall -pedantic-errors main.cpp
+main.cpp:9:37: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+    sample* plants = new sample[10]{"could also", "do this", 3.14f};
+                                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                                    {                             }
+1 warning generated.
++ ./a.out
