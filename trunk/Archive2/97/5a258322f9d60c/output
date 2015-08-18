@@ -1,0 +1,8 @@
+main.cpp:54:13: warning: unused variable 'e' [-Wunused-variable]
+      auto& e = *up;      
+            ^
+1 warning generated.
+D move ctor 
+Checking for a null pointer..
+null pointer exception detected
+D is deleting a Foo
