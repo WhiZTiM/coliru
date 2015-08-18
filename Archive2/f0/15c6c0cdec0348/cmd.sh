@@ -1,0 +1,1 @@
+set -x; clang++ -std=c++14 -stdlib=libc++ -O3 -Wall -pedantic-errors main.cpp && ./a.out
