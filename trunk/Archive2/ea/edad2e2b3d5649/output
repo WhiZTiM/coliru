@@ -1,0 +1,19 @@
++ @ g++ -std=c++11 -O3 -Wall -pedantic -pthread main.cpp
+bash: line 7: @: command not found
++ clang++ -std=c++11 -O3 -stdlib=libc++ -Wall -pedantic -pthread main.cpp
+main.cpp:8:5: error: call to function 'f' that is neither visible in the template definition nor found by argument-dependent lookup
+    f<N - 1>();
+    ^
+main.cpp:8:5: note: in instantiation of function template specialization 'f<2>' requested here
+    f<N - 1>();
+    ^
+main.cpp:8:5: note: in instantiation of function template specialization 'f<3>' requested here
+    f<N - 1>();
+    ^
+main.cpp:15:5: note: in instantiation of function template specialization 'f<4>' requested here
+    f<4>();
+    ^
+main.cpp:11:41: note: 'f' should be declared prior to the call site
+typename enable_if<N == 1, void> ::type f() {
+                                        ^
+1 error generated.
