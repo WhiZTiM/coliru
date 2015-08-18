@@ -1,0 +1,6 @@
+void test() [with Map = boost::icl::interval_map<int, int>]:
+{([2,10)->3)}
+{([2,12)->3)}
+void test() [with Map = boost::icl::split_interval_map<int, int>]:
+{([2,10)->3)}
+{([2,10)->3)([10,12)->3)}
