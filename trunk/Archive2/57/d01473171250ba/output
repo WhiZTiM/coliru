@@ -1,0 +1,4 @@
+cc after lambda creation = 1
+cc after func creation = 1
+cc after func move = 1
+cc after func copy ctor = 2
