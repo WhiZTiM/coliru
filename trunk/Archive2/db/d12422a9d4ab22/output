@@ -1,0 +1,75 @@
+Breadth first search:
+About to expand: 0
+Adding 1 to frontier.
+Adding 2 to frontier.
+About to expand: 1
+Adding 3 to frontier.
+Adding 4 to frontier.
+About to expand: 2
+Adding 5 to frontier.
+Adding 6 to frontier.
+Adding 7 to frontier.
+About to expand: 3
+Adding 8 to frontier.
+Adding 9 to frontier.
+About to expand: 4
+Adding 10 to frontier.
+Found goal, node: 11.
+
+Depth first search:
+About to expand: 0
+Adding 1 to frontier.
+Adding 2 to frontier.
+About to expand: 2
+Adding 5 to frontier.
+Adding 6 to frontier.
+Adding 7 to frontier.
+About to expand: 7
+Adding 13 to frontier.
+Found goal, node: 14.
+
+Uniform cost search:
+About to expand: 0 with a distance of: 0
+Adding 1 to frontier.
+Adding 2 to frontier.
+About to expand: 1 with a distance of: 2
+Adding 3 to frontier.
+Adding 4 to frontier.
+About to expand: 2 with a distance of: 3
+Adding 5 to frontier.
+Adding 6 to frontier.
+Adding 7 to frontier.
+About to expand: 3 with a distance of: 4
+Adding 8 to frontier.
+Adding 9 to frontier.
+About to expand: 5 with a distance of: 5
+Adding 12 to frontier.
+About to expand: 4 with a distance of: 6
+Adding 10 to frontier.
+Adding 11 to frontier.
+About to expand: 6 with a distance of: 8
+About to expand: 8 with a distance of: 9
+About to expand: 12 with a distance of: 9
+Adding 17 to frontier.
+About to expand: 7 with a distance of: 10
+Adding 13 to frontier.
+Adding 14 to frontier.
+About to expand: 9 with a distance of: 11
+Adding 15 to frontier.
+Found goal, node: 11.
+
+A* search:
+About to expand: 0 with a distance of: 0
+Adding 1 to frontier.
+Adding 2 to frontier.
+About to expand: 1 with a distance of: 10
+Adding 3 to frontier.
+Adding 4 to frontier.
+About to expand: 4 with a distance of: 11
+Adding 10 to frontier.
+Adding 11 to frontier.
+About to expand: 2 with a distance of: 12
+Adding 5 to frontier.
+Adding 6 to frontier.
+Adding 7 to frontier.
+Found goal, node: 11.
