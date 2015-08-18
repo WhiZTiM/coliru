@@ -1,0 +1,4 @@
+clang++: 
+char is signed
+g++: 
+char is signed
