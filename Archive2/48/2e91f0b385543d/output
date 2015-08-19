@@ -1,0 +1,9 @@
+In file included from main.cpp:2:0:
+/usr/local/include/c++/5.2.0/functional: In constructor 'std::function<_Res(_ArgTypes ...)>::function(_Functor) [with _Functor = X::X()::<lambda(auto:1)>; <template-parameter-2-2> = void; _Res = void; _ArgTypes = {int}]':
+/usr/local/include/c++/5.2.0/functional:2250:7: internal compiler error: Segmentation fault
+       function<_Res(_ArgTypes...)>::
+       ^
+libbacktrace could not find executable to open
+Please submit a full bug report,
+with preprocessed source if appropriate.
+See <http://gcc.gnu.org/bugs.html> for instructions.
