@@ -1,0 +1,33 @@
+main.cpp:12:12: error: 'auto' not allowed in lambda parameter
+        [](auto lhs, auto rhs){ return std::toupper(lhs) == std::toupper(rhs); }) 
+           ^~~~
+main.cpp:12:22: error: 'auto' not allowed in lambda parameter
+        [](auto lhs, auto rhs){ return std::toupper(lhs) == std::toupper(rhs); }) 
+                     ^~~~
+main.cpp:12:17: warning: unused parameter 'lhs' [-Wunused-parameter]
+        [](auto lhs, auto rhs){ return std::toupper(lhs) == std::toupper(rhs); }) 
+                ^
+main.cpp:12:27: warning: unused parameter 'rhs' [-Wunused-parameter]
+        [](auto lhs, auto rhs){ return std::toupper(lhs) == std::toupper(rhs); }) 
+                          ^
+main.cpp:11:18: error: no matching function for call to 'equal'
+    std::cout << std::equal(begin(s1), end(s1), begin(s2), end(s2),
+                 ^~~~~~~~~~
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../include/c++/5.2.0/bits/algorithmfwd.h:632:5: note: candidate function template not viable: requires 3 arguments, but 5 were provided
+    equal(_IIter1, _IIter1, _IIter2);
+    ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../include/c++/5.2.0/bits/algorithmfwd.h:636:5: note: candidate function template not viable: requires 4 arguments, but 5 were provided
+    equal(_IIter1, _IIter1, _IIter2, _BinaryPredicate);
+    ^
+In file included from main.cpp:1:
+In file included from /usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../include/c++/5.2.0/iostream:39:
+In file included from /usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../include/c++/5.2.0/ostream:38:
+In file included from /usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../include/c++/5.2.0/ios:40:
+In file included from /usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../include/c++/5.2.0/bits/char_traits.h:39:
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../include/c++/5.2.0/bits/stl_algobase.h:1094:12: error: type '__gnu_cxx::__normal_iterator<const char *, std::__cxx11::basic_string<char> >' does not provide a call operator
+        if (!bool(__binary_pred(*__first1, *__first2)))
+                  ^~~~~~~~~~~~~
+main.cpp:10:23: note: in instantiation of function template specialization 'std::equal<__gnu_cxx::__normal_iterator<const char *, std::__cxx11::basic_string<char> >, __gnu_cxx::__normal_iterator<const char *, std::__cxx11::basic_string<char> >, __gnu_cxx::__normal_iterator<const char *, std::__cxx11::basic_string<char> > >' requested here
+    std::cout << std::equal(begin(s1), end(s1), begin(s2), end(s2)) << std::endl;
+                      ^
+2 warnings and 4 errors generated.
