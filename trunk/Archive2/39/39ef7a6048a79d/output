@@ -1,0 +1,17 @@
+main.cpp:1:65: error: 'ks' has not been declared
+     class EventLoopException_CalledFromNonActiveThread : public ks::Exception
+                                                                 ^
+main.cpp:1:69: error: expected '{' before 'Exception'
+     class EventLoopException_CalledFromNonActiveThread : public ks::Exception
+                                                                     ^
+main.cpp:3:9: error: expected primary-expression before 'static'
+         static ErrorLevel lvl = ErrorLevel::FATAL;
+         ^
+main.cpp:3:9: error: expected '}' before 'static'
+main.cpp:3:9: error: expected ',' or ';' before 'static'
+main.cpp:5:21: error: 'string' in namespace 'std' does not name a type
+         static std::string msg = "EventLoop: ProcessEvents/Run should only "
+                     ^
+main.cpp:7:5: error: expected declaration before '}' token
+     };
+     ^
