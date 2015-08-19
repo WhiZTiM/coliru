@@ -1,0 +1,4 @@
+main.cpp: In function 'int main()':
+main.cpp:7:41: error: conversion from 'std::__success_type<std::chrono::duration<long int> >::type {aka std::chrono::duration<long int>}' to non-scalar type 'std::chrono::minutes {aka std::chrono::duration<long int, std::ratio<60l> >}' requested
+      std::chrono::minutes lesson = 1min + 61s;
+                                         ^
