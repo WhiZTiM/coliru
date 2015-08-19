@@ -1,0 +1,12 @@
+main.cpp: In function 'float AngleBetweenClockHands(int, int)':
+main.cpp:520:11: warning: unused variable 'h' [-Wunused-variable]
+     float h = 360.f * static_cast<float>(hour) / 12.f;
+           ^
+main.cpp:522:11: warning: unused variable 'm' [-Wunused-variable]
+     float m = 360.f * static_cast<float>(minute) / 60.f;
+           ^
+Hierarchy tests failed!  I/O error.
+Clock tests not yet implemented!
+
+
+Press enter to quit...
