@@ -1,0 +1,2 @@
+void TD() [T = void (my::detail::call_operator<my::detail::function<void (int), true, true, false> >::*)(int &&) const]
+void TD() [T = void (my::detail::call_operator<my::detail::function<void (int), true, true, true> >::*)(int &&) const volatile]
