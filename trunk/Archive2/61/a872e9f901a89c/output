@@ -1,0 +1,41 @@
+main.cpp: In function 'auto async_call(int)':
+main.cpp:4:12: error: 'rxcpp' has not been declared
+     return rxcpp::observable<>::create<int>([i](auto s)
+            ^
+main.cpp:4:30: error: expected primary-expression before '>' token
+     return rxcpp::observable<>::create<int>([i](auto s)
+                              ^
+main.cpp:4:31: error: '::create' has not been declared
+     return rxcpp::observable<>::create<int>([i](auto s)
+                               ^
+main.cpp:4:40: error: expected primary-expression before 'int'
+     return rxcpp::observable<>::create<int>([i](auto s)
+                                        ^
+main.cpp:4:40: error: expected ';' before 'int'
+main.cpp:4:43: error: expected unqualified-id before '>' token
+     return rxcpp::observable<>::create<int>([i](auto s)
+                                           ^
+main.cpp:11:6: error: expected primary-expression before ')' token
+     });
+      ^
+main.cpp: In function 'int main(int, char**)':
+main.cpp:17:5: error: 'rxcpp' has not been declared
+     rxcpp::sources::range(0,10)
+     ^
+main.cpp: In lambda function:
+main.cpp:24:16: error: 'make_tuple' is not a member of 'std'
+         return std::make_tuple(l,r);
+                ^
+main.cpp: In lambda function:
+main.cpp:28:9: error: 'cout' is not a member of 'std'
+         std::cout << std::get<0>(x) << ":" << std::get<1>(x) << std::endl;
+         ^
+main.cpp:28:22: error: 'get' is not a member of 'std'
+         std::cout << std::get<0>(x) << ":" << std::get<1>(x) << std::endl;
+                      ^
+main.cpp:28:47: error: 'get' is not a member of 'std'
+         std::cout << std::get<0>(x) << ":" << std::get<1>(x) << std::endl;
+                                               ^
+main.cpp:28:65: error: 'endl' is not a member of 'std'
+         std::cout << std::get<0>(x) << ":" << std::get<1>(x) << std::endl;
+                                                                 ^
