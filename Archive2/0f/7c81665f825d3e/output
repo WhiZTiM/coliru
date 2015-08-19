@@ -1,0 +1,2 @@
+add(Just 2, Just 5) = Just 7
+add(Nothing, Just 5) = Nothing
