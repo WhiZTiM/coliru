@@ -1,0 +1,27 @@
+clang version 3.6.0 (tags/RELEASE_360/final 235480)
+------  pass by value ------
+0 1 2 3 4 5 
+0 1 2 3 4 5 
+
+------  pass by reference ------
+0 1 2 3 4 5 
+99 99 99 99 99 99 
+
+------  pass by pass by value, return_modified_object------
+0 1 2 3 4 5 
+ignore the result: 0 1 2 3 4 5 
+update object with the result: 99 99 99 99 99 99 
+
+g++ (GCC) 5.2.0
+------  pass by value ------
+0 1 2 3 4 5 
+0 1 2 3 4 5 
+
+------  pass by reference ------
+0 1 2 3 4 5 
+99 99 99 99 99 99 
+
+------  pass by pass by value, return_modified_object------
+0 1 2 3 4 5 
+ignore the result: 0 1 2 3 4 5 
+update object with the result: 99 99 99 99 99 99 
