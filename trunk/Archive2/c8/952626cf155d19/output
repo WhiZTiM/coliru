@@ -1,0 +1,23 @@
+serialised:
+{
+    "objects": [
+        {
+            "id": "a",
+            "flag": "false"
+        },
+        {
+            "id": "b",
+            "flag": "false"
+        },
+        {
+            "id": "c",
+            "flag": "true"
+        }
+    ]
+}
+
+
+parsed:
+{info_t{id:'',flag:true},info_t{id:'',flag:true},info_t{id:'',flag:true},}
+
+It works
