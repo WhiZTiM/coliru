@@ -1,0 +1,25 @@
+main.cpp:18:42: error: use of undeclared identifier 'SPS'
+   else if (fsw_cnt > 0 && fsw_cnt < 3 * SPS) {
+                                         ^
+main.cpp:22:15: error: use of undeclared identifier 'getSwitches'
+   if ((sw = (getSwitches() & (RFON_BUTTON | FOOTSWITCH))) != 0 && sw == swold) { //error is hit on this line
+              ^
+main.cpp:22:32: error: use of undeclared identifier 'RFON_BUTTON'
+   if ((sw = (getSwitches() & (RFON_BUTTON | FOOTSWITCH))) != 0 && sw == swold) { //error is hit on this line
+                               ^
+main.cpp:22:46: error: use of undeclared identifier 'FOOTSWITCH'
+   if ((sw = (getSwitches() & (RFON_BUTTON | FOOTSWITCH))) != 0 && sw == swold) { //error is hit on this line
+                                             ^
+main.cpp:23:40: error: use of undeclared identifier 'SPS'
+      if (sw_rep != 255 && ++sw_rep == SPS / 5) {       // got a debounced and delayed hit; adjust number to increase delay
+                                       ^
+main.cpp:27:24: error: use of undeclared identifier 'FOOTSWITCH'
+         else if (sw & FOOTSWITCH) {                    // TOOR here
+                       ^
+main.cpp:28:48: error: use of undeclared identifier 'SPS'
+            if (fsw_cnt == 0 || fsw_cnt >= 3 * SPS) {   // first time or after 3 seconds, start over
+                                               ^
+main.cpp:33:23: error: use of undeclared identifier 'FOOTSWITCH'
+               return FOOTSWITCH;                       // twice within 3 seconds at TOOR
+                      ^
+8 errors generated.
