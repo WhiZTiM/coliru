@@ -1,0 +1,2 @@
+echo ~~~~~~G++~~~~~~ && g++ -std=c++14 -Wall -O2 -pedantic -pthread main.cpp && ./a.out 12 23 1 0xffffffffffffffff 0x8000000000000000
+echo ~~~~CLANG++~~~~ && clang++ -std=c++14 -Wall -O2 -pedantic -pthread main.cpp && ./a.out 34 346 76
