@@ -1,0 +1,12 @@
+main.cpp:14:8: warning: empty parentheses interpreted as a function declaration [-Wvexing-parse]
+    B b(); //Declares function
+       ^~
+main.cpp:14:8: note: remove parentheses to declare a variable
+    B b(); //Declares function
+       ^~
+1 warning generated.
+Hello
+B Created
+Hi!
+In function
+Parametrised constructor
