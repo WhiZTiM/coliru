@@ -1,0 +1,26 @@
+<section_>
+  <try>[section]\nkey1=val1\n</try>
+  <key_>
+    <try>section]\nkey1=val1\nk</try>
+    <success>]\nkey1=val1\nkey2=val</success>
+    <attributes>[[s, e, c, t, i, o, n]]</attributes>
+  </key_>
+  <pair_>
+    <try>key1=val1\nkey2=val2\n</try>
+    <key_>
+      <try>key1=val1\nkey2=val2\n</try>
+      <success>=val1\nkey2=val2\n</success>
+      <attributes>[[k, e, y, 1]]</attributes>
+    </key_>
+    <success></success>
+    <attributes>[[[k, e, y, 1], [v, a, l, 1, 
+, k, e, y, 2, =, v, a, l, 2, 
+]]]</attributes>
+  </pair_>
+  <success>key1=val1\nkey2=val2\n</success>
+  <attributes>[[[s, e, c, t, i, o, n], []]]</attributes>
+</section_>
+Parse success
+Remaining unparsed: 'key1=val1
+key2=val2
+'
