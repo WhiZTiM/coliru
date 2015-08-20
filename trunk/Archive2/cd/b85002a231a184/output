@@ -1,0 +1,55 @@
+clang version 3.6.0 (tags/RELEASE_360/final 235480)
+ 1. ///////////////////////
+ 2. // concatenate files //
+ 3. ///////////////////////
+ 4. 
+ 5. #include <iostream>
+ 6. #include <fstream>
+ 7. #include <string>
+ 8. #include <iomanip>
+ 9. 
+10. bool cat( std::string file_one, std::string file_two )
+11. { return bool( std::ofstream( file_one, std::ios_base::app ) << std::ifstream(file_two).rdbuf() ) ; }
+12. 
+13. int main()
+14. {
+15.     const std::string my_file_name = "myfile.txt" ;
+16. 
+17.     { std::ofstream(my_file_name) << "///////////////////////\n// concatenate files //\n///////////////////////\n\n" ; }
+18. 
+19.     if( cat( my_file_name, __FILE__ )  )
+20.     {
+21.         std::ifstream myfile(my_file_name) ;
+22.         int line_number = 0 ;
+23.         std::string line ;
+24.         while( std::getline( myfile, line ) ) std::cout << std::setw(2) << ++line_number << ". " << line << '\n' ;
+25.     }
+26. }
+
+g++ (GCC) 5.2.0
+ 1. ///////////////////////
+ 2. // concatenate files //
+ 3. ///////////////////////
+ 4. 
+ 5. #include <iostream>
+ 6. #include <fstream>
+ 7. #include <string>
+ 8. #include <iomanip>
+ 9. 
+10. bool cat( std::string file_one, std::string file_two )
+11. { return bool( std::ofstream( file_one, std::ios_base::app ) << std::ifstream(file_two).rdbuf() ) ; }
+12. 
+13. int main()
+14. {
+15.     const std::string my_file_name = "myfile.txt" ;
+16. 
+17.     { std::ofstream(my_file_name) << "///////////////////////\n// concatenate files //\n///////////////////////\n\n" ; }
+18. 
+19.     if( cat( my_file_name, __FILE__ )  )
+20.     {
+21.         std::ifstream myfile(my_file_name) ;
+22.         int line_number = 0 ;
+23.         std::string line ;
+24.         while( std::getline( myfile, line ) ) std::cout << std::setw(2) << ++line_number << ". " << line << '\n' ;
+25.     }
+26. }
