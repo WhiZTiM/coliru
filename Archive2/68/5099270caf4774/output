@@ -1,0 +1,70 @@
+./main.cpp: In function 'int main()':
+./main.cpp:31:17: error: 'system' was not declared in this scope
+     system("cls");
+                 ^
+./main.cpp: In function 'void programmePrincipal()':
+./main.cpp:62:48: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+         case 1: affichierFichier("fichier1.gwe");
+                                                ^
+./main.cpp:64:48: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+         case 2: affichierFichier("fichier2.gwe");
+                                                ^
+./main.cpp:66:75: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+         case 3: tab = copieFichierDansTableau("fichier1.gwe", tab, &taille);
+                                                                           ^
+./main.cpp:68:76: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+         case 4:  tab = copieFichierDansTableau("fichier2.gwe", tab, &taille);
+                                                                            ^
+./main.cpp:70:72: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+         case 5:  tab = remplacercontenuTab(tab, &taille, "fichier1.gwe");
+                                                                        ^
+./main.cpp:72:72: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+         case 6:  tab = remplacercontenuTab(tab, &taille, "fichier2.gwe");
+                                                                        ^
+./main.cpp: In function 'int afficherMenu()':
+./main.cpp:86:17: error: 'system' was not declared in this scope
+     system("cls");
+                 ^
+./main.cpp: In function 'void affichierFichier(char*)':
+./main.cpp:115:17: error: 'system' was not declared in this scope
+     system("cls");
+                 ^
+./main.cpp:117:37: error: 'fopen' was not declared in this scope
+     fichier = fopen(nomFichier, "rb");
+                                     ^
+./main.cpp:125:65: error: 'fread' was not declared in this scope
+     while (fread(&etudiant, sizeof(s_enregistrement), 1, fichier) != 0){
+                                                                 ^
+./main.cpp:133:22: error: 'feof' was not declared in this scope
+     if (!feof(fichier)){
+                      ^
+./main.cpp:137:19: error: 'fclose' was not declared in this scope
+     fclose(fichier);
+                   ^
+./main.cpp: In function 's_enregistrement* copieFichierDansTableau(char*, s_enregistrement*, int*)':
+./main.cpp:147:17: error: 'system' was not declared in this scope
+     system("cls");
+                 ^
+./main.cpp:149:37: error: 'fopen' was not declared in this scope
+     fichier = fopen(nomFichier, "rb");
+                                     ^
+./main.cpp:157:72: error: 'fread' was not declared in this scope
+     while (fread(&etudiantFichier, sizeof(s_enregistrement), 1, fichier) != 0){
+                                                                        ^
+./main.cpp:159:86: error: 'malloc' was not declared in this scope
+             tabStruct = (s_enregistrement*)malloc(*tailleTab*sizeof(s_enregistrement));
+                                                                                      ^
+./main.cpp:162:104: error: 'realloc' was not declared in this scope
+             tabStruct = (s_enregistrement*)realloc(tabStruct, (*tailleTab + 1)*sizeof(s_enregistrement));
+                                                                                                        ^
+./main.cpp:165:59: error: 'strcpy' was not declared in this scope
+         strcpy((*tabStruct).pseudo, etudiantFichier.pseudo);// copie d'une chaine de caractère
+                                                           ^
+./main.cpp: In function 'void affichageTab(s_enregistrement*, int)':
+./main.cpp:187:17: error: 'system' was not declared in this scope
+     system("cls");
+                 ^
+./main.cpp: In function 's_enregistrement* remplacercontenuTab(s_enregistrement*, int*, char*)':
+./main.cpp:206:17: error: 'system' was not declared in this scope
+     system("cls");
+                 ^
