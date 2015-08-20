@@ -1,0 +1,10 @@
+main.cpp: In function 'int main()':
+main.cpp:14:12: error: call of overloaded 'foo(A)' is ambiguous
+     foo(A{});
+            ^
+main.cpp:6:6: note: candidate: void foo(T&&) [with T = A]
+ void foo(T&&){}
+      ^
+main.cpp:9:58: note: candidate: std::enable_if_t<std::is_same<typename std::decay<_Tp>::type, A>::value> foo(T) [with T = A; std::enable_if_t<std::is_same<typename std::decay<_Tp>::type, A>::value> = void]
+ std::enable_if_t<std::is_same<std::decay_t<T>,A>::value> foo(T){}
+                                                          ^
