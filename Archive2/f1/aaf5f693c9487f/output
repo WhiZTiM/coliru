@@ -1,0 +1,4 @@
+main.cpp: In function 'int main()':
+main.cpp:6:7: error: 'class std::map<int, int>' has no member named 'emplace'
+     m.emplace(1, 5);
+       ^
