@@ -1,0 +1,14 @@
+clang version 3.6.0 (tags/RELEASE_360/final 235480)
+
+main.cpp:12:9: error: member reference type 'Class *' is a pointer; maybe you meant to use '->'?
+    this.a = num;
+    ~~~~^
+        ->
+1 error generated.
+
+g++ (GCC) 5.2.0
+
+main.cpp: In constructor 'Class::Class(int)':
+main.cpp:12:10: error: request for member 'a' in '(Class*)this', which is of pointer type 'Class*' (maybe you meant to use '->' ?)
+     this.a = num;
+          ^
