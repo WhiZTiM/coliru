@@ -1,0 +1,10 @@
+main.cpp:12:9: error: member 'foo' found in multiple base classes of different types
+    C().foo(3);
+        ^
+main.cpp:2:10: note: member found by ambiguous name lookup
+    void foo(int) {}
+         ^
+main.cpp:6:10: note: member found by ambiguous name lookup
+    void foo(const char*) {}
+         ^
+1 error generated.
