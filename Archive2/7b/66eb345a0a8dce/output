@@ -1,0 +1,7 @@
+main.cpp: In function 'int main()':
+main.cpp:13:20: error: 'mem_fun1_ref' is not a member of 'std'
+                    std::mem_fun1_ref(&std::vector<float>::reserve(10)));
+                    ^
+main.cpp:13:69: error: cannot call member function 'void std::vector<_Tp, _Alloc>::reserve(std::vector<_Tp, _Alloc>::size_type) [with _Tp = float; _Alloc = std::allocator<float>; std::vector<_Tp, _Alloc>::size_type = long unsigned int]' without object
+                    std::mem_fun1_ref(&std::vector<float>::reserve(10)));
+                                                                     ^
