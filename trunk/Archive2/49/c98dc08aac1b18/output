@@ -1,0 +1,7 @@
+main.cpp:4:9: warning: private field 'x' is not used [-Wunused-private-field]
+    int x, y;
+        ^
+main.cpp:4:12: warning: private field 'y' is not used [-Wunused-private-field]
+    int x, y;
+           ^
+2 warnings generated.
