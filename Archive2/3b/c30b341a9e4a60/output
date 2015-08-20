@@ -1,0 +1,10 @@
+main.cpp:18:7: error: member 'foo' found in multiple base classes of different types
+    c.foo(std::random_access_iterator_tag{});
+      ^
+main.cpp:5:10: note: member found by ambiguous name lookup
+    void foo(std::bidirectional_iterator_tag) {}
+         ^
+main.cpp:10:10: note: member found by ambiguous name lookup
+    void foo(std::random_access_iterator_tag) {}
+         ^
+1 error generated.
