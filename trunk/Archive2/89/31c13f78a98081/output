@@ -1,0 +1,5 @@
+main.cpp:25:33: warning: ISO C++11 requires at least one argument for the "..." in a variadic macro
+     UT_ASSERT("!point.invalid()");
+                                 ^
+Assertion Failure: a < bExplanation: When the clock strikes 12, a should be less than b
+Assertion Failure: !point.invalid()
