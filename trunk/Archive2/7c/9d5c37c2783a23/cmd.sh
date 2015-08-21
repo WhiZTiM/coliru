@@ -1,0 +1,1 @@
+g++ main.cpp && echo hello | ./a.out
