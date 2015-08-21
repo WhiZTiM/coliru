@@ -1,0 +1,8 @@
+main.cpp: In instantiation of 'void C<T>::f(C<U>) [with U = float; T = int]':
+main.cpp:20:12:   required from here
+main.cpp:4:9: error: 'int C<float>::i' is private
+     int i;
+         ^
+main.cpp:11:11: error: within this context
+         i = static_cast<T>(other.i);
+           ^
