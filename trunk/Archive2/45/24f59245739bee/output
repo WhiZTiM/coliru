@@ -1,0 +1,15 @@
+Clang:
+Allocated: 0x743c20
+B2 address: 0x743c28
+Derived address: 0x743c20
+B1: 0x743c20
+Deallocated: 0x743c20
+GCC:
+main.cpp:26:6: warning: the program should also define 'void operator delete(void*, long unsigned int)' [-Wsized-deallocation]
+ void operator delete(void *ptr) noexcept {
+      ^
+Allocated: 0x199bc20
+B2 address: 0x199bc28
+Derived address: 0x199bc20
+B1: 0x199bc20
+Deallocated: 0x199bc20
