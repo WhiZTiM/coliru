@@ -1,0 +1,12 @@
+	 A is trivially constructible: true
+	 A is trivially destructible: true
+	 A is trivially copyable: true
+	 B is trivially constructible: false
+	 B is trivially destructible: true
+	 B is trivially copyable: true
+	 C is trivially constructible: false
+	 C is trivially destructible: true
+	 C is trivially copyable: false
+	 D is trivially constructible: false
+	 D is trivially destructible: false
+	 D is trivially copyable: false
