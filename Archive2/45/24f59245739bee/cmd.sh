@@ -1,0 +1,2 @@
+echo Clang: && clang++ -std=c++1z -stdlib=libc++ -Weverything -Wno-c++98-compat -Wno-c++98-compat-pedantic -Wno-newline-eof -Wno-weak-vtables main.cpp -O3 -lsupc++ && ./a.out
+echo GCC: && g++ -std=c++1z -Wall -Wextra -pedantic main.cpp -O3 && ./a.out
