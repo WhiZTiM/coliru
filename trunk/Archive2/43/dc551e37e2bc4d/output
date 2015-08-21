@@ -1,0 +1,3 @@
+pointA: (1,2)
+pointB: (3,4)
+pointA + pointB: (4,6)
