@@ -1,0 +1,5 @@
+/tmp/ccGkH5pa.o: In function `_GLOBAL__sub_I_main':
+main.cpp:(.text.startup+0x33): undefined reference to `boost::system::generic_category()'
+main.cpp:(.text.startup+0x38): undefined reference to `boost::system::generic_category()'
+main.cpp:(.text.startup+0x41): undefined reference to `boost::system::system_category()'
+collect2: error: ld returned 1 exit status
