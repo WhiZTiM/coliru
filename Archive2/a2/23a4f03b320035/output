@@ -1,0 +1,6 @@
+main.cpp: In function 'int main()':
+main.cpp:24:24: warning: 'ab.AB::<anonymous>.B::a' is used uninitialized in this function [-Wuninitialized]
+     std::cout << ab.B::a << std::endl;
+                        ^
+1
+0
