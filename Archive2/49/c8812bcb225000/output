@@ -1,0 +1,17 @@
+main.cpp:12:9: error: 'string' in namespace 'std' does not name a type
+    std::string name;
+         ^
+main.cpp:19:9: error: 'string' in namespace 'std' does not name a type
+    std::string name;
+         ^
+main.cpp: In member function 'C MakeC::operator()(const A&) const':
+main.cpp:25:76: error: could not convert '{a.A::id, "", TA, a.A::smth}' from '<brace-enclosed initializer list>' to 'C'
+     C operator()(A const& a) const { return { a.id, "",     TA,     a.smth }; }
+                                                                            ^
+main.cpp: In member function 'C MakeC::operator()(const B&) const':
+main.cpp:26:55: error: 'const struct B' has no member named 'name'
+     C operator()(B const& b) const { return { b.id, b.name, b.type, 0.0    }; }
+                                                       ^
+main.cpp:26:76: error: could not convert '{b.B::id, <expression error>, b.B::type, 0.0}' from '<brace-enclosed initializer list>' to 'C'
+     C operator()(B const& b) const { return { b.id, b.name, b.type, 0.0    }; }
+                                                                            ^
