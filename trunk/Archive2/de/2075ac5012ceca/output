@@ -1,0 +1,13 @@
+main.cpp: In function 'main':
+main.cpp:4:99: warning: 'sizeof' on array function parameter 'argv' will return size of 'char **' [-Wsizeof-array-argument]
+     printf("sizeof(char*)=%i, argc=%i, sizeof argv=%i\n\n", (int)sizeof(char*), argc, (int)sizeof argv);
+                                                                                                   ^
+main.cpp:3:26: note: declared here
+ int main(int argc, char* argv[]) {
+                          ^
+sizeof(char*)=8, argc=1, sizeof argv=8
+
+sizeof(char*)=8, argc=2, sizeof argv=8
+
+sizeof(char*)=8, argc=3, sizeof argv=8
+
