@@ -1,0 +1,6 @@
+main.cpp: In instantiation of 'T Future<T>::get() [with T = int]':
+main.cpp:85:26:   required from here
+main.cpp:34:25: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+         return std::move(*static_cast<T*>(static_cast<void*>(&mSharedState->result_storage_)));
+                         ^
+42
