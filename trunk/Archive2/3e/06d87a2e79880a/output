@@ -1,0 +1,18 @@
+SumCharsAndDigits("123") returns "6" : PASS
+SumCharsAndDigits("1234") returns "1" : PASS
+SumCharsAndDigits("ab") returns "3" : PASS
+SumCharsAndDigits("CD") returns "7" : PASS
+SumCharsAndDigits("12+aB$ ") returns "6" : PASS
+SumCharsAndDigits("") returns "0" : PASS
+
+0: !
+6: Mon
+8: est
+9: cool
+9: code
+
+
+0: !
+5: That's
+7: all
+9: Folks
