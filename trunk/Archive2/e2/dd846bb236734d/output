@@ -1,0 +1,297 @@
+clang version 3.6.0 (tags/RELEASE_360/final 235480)
+
+     1		.text
+     2		.file	"main.cpp"
+     3		.globl	_Z35pass_by_reference_to_const_and_copyv
+     4		.align	16, 0x90
+     5		.type	_Z35pass_by_reference_to_const_and_copyv,@function
+     6	_Z35pass_by_reference_to_const_and_copyv: # @_Z35pass_by_reference_to_const_and_copyv
+     7		.cfi_startproc
+     8		.cfi_personality 3, __gxx_personality_v0
+     9	.Leh_func_begin0:
+    10		.cfi_lsda 3, .Lexception0
+    11	# BB#0:
+    12		pushq	%r15
+    13	.Ltmp5:
+    14		.cfi_def_cfa_offset 16
+    15		pushq	%r14
+    16	.Ltmp6:
+    17		.cfi_def_cfa_offset 24
+    18		pushq	%r12
+    19	.Ltmp7:
+    20		.cfi_def_cfa_offset 32
+    21		pushq	%rbx
+    22	.Ltmp8:
+    23		.cfi_def_cfa_offset 40
+    24		subq	$56, %rsp
+    25	.Ltmp9:
+    26		.cfi_def_cfa_offset 96
+    27	.Ltmp10:
+    28		.cfi_offset %rbx, -40
+    29	.Ltmp11:
+    30		.cfi_offset %r12, -32
+    31	.Ltmp12:
+    32		.cfi_offset %r14, -24
+    33	.Ltmp13:
+    34		.cfi_offset %r15, -16
+    35		leaq	8(%rsp), %rdi
+    36		callq	_Z11make_vectorv
+    37		xorps	%xmm0, %xmm0
+    38		movaps	%xmm0, 32(%rsp)
+    39		movq	$0, 48(%rsp)
+    40		movq	8(%rsp), %rbx
+    41		movq	16(%rsp), %r15
+    42		movq	%r15, %rdi
+    43		subq	%rbx, %rdi
+    44		xorl	%r14d, %r14d
+    45		movq	%rdi, %r12
+    46		sarq	$2, %r12
+    47		je	.LBB0_17
+    48	# BB#1:
+    49		movq	%r12, %rax
+    50		shrq	$62, %rax
+    51		jne	.LBB0_2
+    52	.LBB0_3:
+    53	.Ltmp0:
+    54		callq	_Znwm
+    55	.Ltmp1:
+    56	# BB#4:
+    57		movq	%rax, 40(%rsp)
+    58		movq	%rax, 32(%rsp)
+    59		leaq	(%rax,%r12,4), %rcx
+    60		movq	%rcx, 48(%rsp)
+    61		cmpq	%r15, %rbx
+    62		movq	%rax, %rcx
+    63		je	.LBB0_14
+    64	# BB#5:                                 # %.lr.ph.i.i
+    65		leaq	-4(%r15), %r9
+    66		subq	%rbx, %r9
+    67		movq	%r9, %rcx
+    68		shrq	$2, %rcx
+    69		leaq	1(%rcx), %r8
+    70		movabsq	$9223372036854775800, %r10 # imm = 0x7FFFFFFFFFFFFFF8
+    71		andq	%r8, %r10
+    72		je	.LBB0_6
+    73	# BB#7:                                 # %vector.memcheck
+    74		leaq	(%rbx,%rcx,4), %rdx
+    75		cmpq	%rdx, %rax
+    76		ja	.LBB0_9
+    77	# BB#8:                                 # %vector.memcheck
+    78		leaq	(%rax,%rcx,4), %rcx
+    79		cmpq	%rcx, %rbx
+    80		ja	.LBB0_9
+    81	.LBB0_6:
+    82		movq	%rax, %rsi
+    83		movq	%rbx, %rdi
+    84		xorl	%r10d, %r10d
+    85		jmp	.LBB0_11
+    86	.LBB0_9:                                # %vector.body.preheader
+    87		leaq	(%rax,%r10,4), %rsi
+    88		leaq	(%rbx,%r10,4), %rdi
+    89		leaq	16(%rax), %rcx
+    90		addq	$16, %rbx
+    91		movq	%r8, %rdx
+    92		andq	$-8, %rdx
+    93		.align	16, 0x90
+    94	.LBB0_10:                               # %vector.body
+    95	                                        # =>This Inner Loop Header: Depth=1
+    96		movups	-16(%rbx), %xmm0
+    97		movups	(%rbx), %xmm1
+    98		movups	%xmm0, -16(%rcx)
+    99		movups	%xmm1, (%rcx)
+   100		addq	$32, %rcx
+   101		addq	$32, %rbx
+   102		addq	$-8, %rdx
+   103		jne	.LBB0_10
+   104	.LBB0_11:                               # %middle.block
+   105		cmpq	%r10, %r8
+   106		je	.LBB0_13
+   107		.align	16, 0x90
+   108	.LBB0_12:                               # %_ZNSt3__116allocator_traitsINS_9allocatorIiEEE9constructIiJRiEEEvRS2_PT_DpOT0_.exit.i.i
+   109	                                        # =>This Inner Loop Header: Depth=1
+   110		movl	(%rdi), %ecx
+   111		movl	%ecx, (%rsi)
+   112		addq	$4, %rsi
+   113		addq	$4, %rdi
+   114		cmpq	%rdi, %r15
+   115		jne	.LBB0_12
+   116	.LBB0_13:                               # %._crit_edge.i.i
+   117		andq	$-4, %r9
+   118		leaq	4(%r9,%rax), %rcx
+   119		movq	%rcx, 40(%rsp)
+   120	.LBB0_14:                               # %_ZN12_GLOBAL__N_11BC2ERKNSt3__16vectorIiNS1_9allocatorIiEEEE.exit
+   121		movq	%rcx, %r14
+   122		subq	%rax, %r14
+   123		je	.LBB0_16
+   124	# BB#15:                                # %.lr.ph.i.i.i.i3
+   125		leaq	-4(%rcx), %rdx
+   126		subq	%rax, %rdx
+   127		notq	%rdx
+   128		andq	$-4, %rdx
+   129		addq	%rcx, %rdx
+   130		movq	%rdx, 40(%rsp)
+   131	.LBB0_16:                               # %_ZNSt3__113__vector_baseIiNS_9allocatorIiEEE5clearEv.exit.i.i4
+   132		sarq	$2, %r14
+   133		movq	%rax, %rdi
+   134		callq	_ZdlPv
+   135		movq	8(%rsp), %rbx
+   136	.LBB0_17:                               # %_ZN12_GLOBAL__N_11BD2Ev.exit
+   137		testq	%rbx, %rbx
+   138		je	.LBB0_21
+   139	# BB#18:
+   140		movq	16(%rsp), %rax
+   141		cmpq	%rbx, %rax
+   142		je	.LBB0_20
+   143	# BB#19:                                # %.lr.ph.i.i.i
+   144		leaq	-4(%rax), %rcx
+   145		subq	%rbx, %rcx
+   146		notq	%rcx
+   147		andq	$-4, %rcx
+   148		addq	%rax, %rcx
+   149		movq	%rcx, 16(%rsp)
+   150	.LBB0_20:                               # %_ZNSt3__113__vector_baseIiNS_9allocatorIiEEE5clearEv.exit.i
+   151		movq	%rbx, %rdi
+   152		callq	_ZdlPv
+   153	.LBB0_21:                               # %_ZNSt3__113__vector_baseIiNS_9allocatorIiEEED2Ev.exit
+   154		movq	%r14, %rax
+   155		addq	$56, %rsp
+   156		popq	%rbx
+   157		popq	%r12
+   158		popq	%r14
+   159		popq	%r15
+   160		retq
+   161	.LBB0_2:
+   162	.Ltmp2:
+   163		leaq	32(%rsp), %rdi
+   164		callq	_ZNKSt3__120__vector_base_commonILb1EE20__throw_length_errorEv
+   165	.Ltmp3:
+   166		jmp	.LBB0_3
+   167	.LBB0_22:                               # %.body
+   168	.Ltmp4:
+   169		movq	%rax, %rbx
+   170		movq	8(%rsp), %rdi
+   171		testq	%rdi, %rdi
+   172		je	.LBB0_26
+   173	# BB#23:
+   174		movq	16(%rsp), %rax
+   175		cmpq	%rdi, %rax
+   176		je	.LBB0_25
+   177	# BB#24:                                # %.lr.ph.i.i.i8
+   178		leaq	-4(%rax), %rcx
+   179		subq	%rdi, %rcx
+   180		notq	%rcx
+   181		andq	$-4, %rcx
+   182		addq	%rax, %rcx
+   183		movq	%rcx, 16(%rsp)
+   184	.LBB0_25:                               # %_ZNSt3__113__vector_baseIiNS_9allocatorIiEEE5clearEv.exit.i9
+   185		callq	_ZdlPv
+   186	.LBB0_26:                               # %_ZNSt3__113__vector_baseIiNS_9allocatorIiEEED2Ev.exit10
+   187		movq	%rbx, %rdi
+   188		callq	_Unwind_Resume
+   189	.Ltmp14:
+   190		.size	_Z35pass_by_reference_to_const_and_copyv, .Ltmp14-_Z35pass_by_reference_to_const_and_copyv
+   191		.cfi_endproc
+   192	.Leh_func_end0:
+   193		.section	.gcc_except_table,"a",@progbits
+   194		.align	4
+   195	GCC_except_table0:
+   196	.Lexception0:
+   197		.byte	255                     # @LPStart Encoding = omit
+   198		.byte	3                       # @TType Encoding = udata4
+   199		.byte	41                      # @TType base offset
+   200		.byte	3                       # Call site Encoding = udata4
+   201		.byte	39                      # Call site table length
+   202		.long	.Leh_func_begin0-.Leh_func_begin0 # >> Call Site 1 <<
+   203		.long	.Ltmp0-.Leh_func_begin0 #   Call between .Leh_func_begin0 and .Ltmp0
+   204		.long	0                       #     has no landing pad
+   205		.byte	0                       #   On action: cleanup
+   206		.long	.Ltmp0-.Leh_func_begin0 # >> Call Site 2 <<
+   207		.long	.Ltmp3-.Ltmp0           #   Call between .Ltmp0 and .Ltmp3
+   208		.long	.Ltmp4-.Leh_func_begin0 #     jumps to .Ltmp4
+   209		.byte	0                       #   On action: cleanup
+   210		.long	.Ltmp3-.Leh_func_begin0 # >> Call Site 3 <<
+   211		.long	.Leh_func_end0-.Ltmp3   #   Call between .Ltmp3 and .Leh_func_end0
+   212		.long	0                       #     has no landing pad
+   213		.byte	0                       #   On action: cleanup
+   214		.align	4
+   215	
+   216		.section	.text._ZNKSt3__120__vector_base_commonILb1EE20__throw_length_errorEv,"axG",@progbits,_ZNKSt3__120__vector_base_commonILb1EE20__throw_length_errorEv,comdat
+   217		.weak	_ZNKSt3__120__vector_base_commonILb1EE20__throw_length_errorEv
+   218		.align	16, 0x90
+   219		.type	_ZNKSt3__120__vector_base_commonILb1EE20__throw_length_errorEv,@function
+   220	_ZNKSt3__120__vector_base_commonILb1EE20__throw_length_errorEv: # @_ZNKSt3__120__vector_base_commonILb1EE20__throw_length_errorEv
+   221		.cfi_startproc
+   222		.cfi_personality 3, __gxx_personality_v0
+   223	.Leh_func_begin1:
+   224		.cfi_lsda 3, .Lexception1
+   225	# BB#0:
+   226		pushq	%r14
+   227	.Ltmp18:
+   228		.cfi_def_cfa_offset 16
+   229		pushq	%rbx
+   230	.Ltmp19:
+   231		.cfi_def_cfa_offset 24
+   232		pushq	%rax
+   233	.Ltmp20:
+   234		.cfi_def_cfa_offset 32
+   235	.Ltmp21:
+   236		.cfi_offset %rbx, -24
+   237	.Ltmp22:
+   238		.cfi_offset %r14, -16
+   239		movl	$16, %edi
+   240		callq	__cxa_allocate_exception
+   241		movq	%rax, %rbx
+   242	.Ltmp15:
+   243		movl	$.L.str, %esi
+   244		movq	%rbx, %rdi
+   245		callq	_ZNSt11logic_errorC2EPKc
+   246	.Ltmp16:
+   247	# BB#1:
+   248		movq	$_ZTVSt12length_error+16, (%rbx)
+   249		movl	$_ZTISt12length_error, %esi
+   250		movl	$_ZNSt12length_errorD1Ev, %edx
+   251		movq	%rbx, %rdi
+   252		callq	__cxa_throw
+   253	.LBB1_2:
+   254	.Ltmp17:
+   255		movq	%rax, %r14
+   256		movq	%rbx, %rdi
+   257		callq	__cxa_free_exception
+   258		movq	%r14, %rdi
+   259		callq	_Unwind_Resume
+   260	.Ltmp23:
+   261		.size	_ZNKSt3__120__vector_base_commonILb1EE20__throw_length_errorEv, .Ltmp23-_ZNKSt3__120__vector_base_commonILb1EE20__throw_length_errorEv
+   262		.cfi_endproc
+   263	.Leh_func_end1:
+   264		.section	.gcc_except_table,"a",@progbits
+   265		.align	4
+   266	GCC_except_table1:
+   267	.Lexception1:
+   268		.byte	255                     # @LPStart Encoding = omit
+   269		.byte	3                       # @TType Encoding = udata4
+   270		.byte	41                      # @TType base offset
+   271		.byte	3                       # Call site Encoding = udata4
+   272		.byte	39                      # Call site table length
+   273		.long	.Leh_func_begin1-.Leh_func_begin1 # >> Call Site 1 <<
+   274		.long	.Ltmp15-.Leh_func_begin1 #   Call between .Leh_func_begin1 and .Ltmp15
+   275		.long	0                       #     has no landing pad
+   276		.byte	0                       #   On action: cleanup
+   277		.long	.Ltmp15-.Leh_func_begin1 # >> Call Site 2 <<
+   278		.long	.Ltmp16-.Ltmp15         #   Call between .Ltmp15 and .Ltmp16
+   279		.long	.Ltmp17-.Leh_func_begin1 #     jumps to .Ltmp17
+   280		.byte	0                       #   On action: cleanup
+   281		.long	.Ltmp16-.Leh_func_begin1 # >> Call Site 3 <<
+   282		.long	.Leh_func_end1-.Ltmp16  #   Call between .Ltmp16 and .Leh_func_end1
+   283		.long	0                       #     has no landing pad
+   284		.byte	0                       #   On action: cleanup
+   285		.align	4
+   286	
+   287		.type	.L.str,@object          # @.str
+   288		.section	.rodata.str1.1,"aMS",@progbits,1
+   289	.L.str:
+   290		.asciz	"vector"
+   291		.size	.L.str, 7
+   292	
+   293	
+   294		.ident	"clang version 3.6.0 (tags/RELEASE_360/final 235480)"
+   295		.section	".note.GNU-stack","",@progbits
