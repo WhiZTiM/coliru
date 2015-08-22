@@ -1,0 +1,3 @@
+main.cpp:1:1: error: 'blabla' does not name a type
+ blabla
+ ^
