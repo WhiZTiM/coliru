@@ -1,0 +1,59 @@
+clang version 3.6.0 (tags/RELEASE_360/final 235480)
+
+	.text
+	.file	"main.cpp"
+	.globl	_Z22pass_by_value_and_movev
+	.align	16, 0x90
+	.type	_Z22pass_by_value_and_movev,@function
+_Z22pass_by_value_and_movev:            # @_Z22pass_by_value_and_movev
+	.cfi_startproc
+# BB#0:
+	pushq	%rbx
+.Ltmp0:
+	.cfi_def_cfa_offset 16
+	subq	$32, %rsp
+.Ltmp1:
+	.cfi_def_cfa_offset 48
+.Ltmp2:
+	.cfi_offset %rbx, -16
+	leaq	(%rsp), %rdi
+	callq	_Z11make_vectorv
+	movq	(%rsp), %rdi
+	movq	8(%rsp), %rbx
+	xorps	%xmm0, %xmm0
+	movaps	%xmm0, (%rsp)
+	movq	$0, 16(%rsp)
+	subq	%rdi, %rbx
+	sarq	$2, %rbx
+	testq	%rdi, %rdi
+	je	.LBB0_5
+# BB#1:                                 # %_ZN12_GLOBAL__N_11AD2Ev.exit
+	callq	_ZdlPv
+	movq	(%rsp), %rdi
+	testq	%rdi, %rdi
+	je	.LBB0_5
+# BB#2:
+	movq	8(%rsp), %rax
+	cmpq	%rdi, %rax
+	je	.LBB0_4
+# BB#3:                                 # %.lr.ph.i.i.i
+	leaq	-4(%rax), %rcx
+	subq	%rdi, %rcx
+	notq	%rcx
+	andq	$-4, %rcx
+	addq	%rax, %rcx
+	movq	%rcx, 8(%rsp)
+.LBB0_4:                                # %_ZNSt3__113__vector_baseIiNS_9allocatorIiEEE5clearEv.exit.i
+	callq	_ZdlPv
+.LBB0_5:                                # %_ZNSt3__113__vector_baseIiNS_9allocatorIiEEED2Ev.exit
+	movq	%rbx, %rax
+	addq	$32, %rsp
+	popq	%rbx
+	retq
+.Ltmp3:
+	.size	_Z22pass_by_value_and_movev, .Ltmp3-_Z22pass_by_value_and_movev
+	.cfi_endproc
+
+
+	.ident	"clang version 3.6.0 (tags/RELEASE_360/final 235480)"
+	.section	".note.GNU-stack","",@progbits
