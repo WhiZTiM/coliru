@@ -1,0 +1,18 @@
+
+clang version 3.6.0 (tags/RELEASE_360/final 235480)
+-----------
+f( a ): copy constructor
+f( A{} ): 
+f( foo() ): 
+f( bar() ): copy constructor
+f( std::move(a) ): move constructor
+f( baz() ): move constructor
+
+g++ (GCC) 5.2.0
+----------
+f( a ): copy constructor
+f( A{} ): 
+f( foo() ): 
+f( bar() ): copy constructor
+f( std::move(a) ): move constructor
+f( baz() ): move constructor
