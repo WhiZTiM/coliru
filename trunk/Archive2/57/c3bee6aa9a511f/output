@@ -1,0 +1,226 @@
+// key = 1, val = 1
+// key = 2, val = 2
+// key = 3, val = 3
+// key = 4, val = 4
+// key = 5, val = 5
+// key = 6, val = 6
+// key = 7, val = 7
+// key = 8, val = 8
+// key = 9, val = 9
+// key = 10, val = 10
+// key = 11, val = 11
+// key = 12, val = 12
+// key = 13, val = 13
+// key = 14, val = 14
+// key = 15, val = 15
+// key = 16, val = 16
+// key = 17, val = 17
+// key = 18, val = 18
+// key = 19, val = 19
+// key = 20, val = 20
+// key = 21, val = 21
+// key = 22, val = 22
+// key = 23, val = 23
+// key = 24, val = 24
+// key = 25, val = 25
+// key = 26, val = 26
+// key = 27, val = 27
+// key = 28, val = 28
+// key = 29, val = 29
+// key = 30, val = 30
+// key = 31, val = 31
+// key = 32, val = 32
+// key = 33, val = 33
+// key = 34, val = 34
+// key = 35, val = 35
+// key = 36, val = 36
+// key = 37, val = 37
+// key = 38, val = 38
+// key = 39, val = 39
+// key = 40, val = 40
+// key = 41, val = 41
+// key = 42, val = 42
+// key = 43, val = 43
+// key = 44, val = 44
+// key = 45, val = 45
+// key = 46, val = 46
+// key = 47, val = 47
+// key = 48, val = 48
+// key = 49, val = 49
+// key = 50, val = 50
+// key = 51, val = 51
+// key = 52, val = 52
+// key = 53, val = 53
+// key = 54, val = 54
+// key = 55, val = 55
+// key = 56, val = 56
+// key = 57, val = 57
+// key = 58, val = 58
+// key = 59, val = 59
+// key = 60, val = 60
+// key = 61, val = 61
+// key = 62, val = 62
+// key = 63, val = 63
+// key = 64, val = 64
+// key = 65, val = 65
+// key = 66, val = 66
+// key = 67, val = 67
+// key = 68, val = 68
+// key = 69, val = 69
+// key = 70, val = 70
+// key = 71, val = 71
+// key = 72, val = 72
+// key = 73, val = 73
+// key = 74, val = 74
+// key = 75, val = 75
+// key = 76, val = 76
+// key = 77, val = 77
+// key = 78, val = 78
+// key = 79, val = 79
+// key = 80, val = 80
+// key = 81, val = 81
+// key = 82, val = 82
+// key = 83, val = 83
+// key = 84, val = 84
+// key = 85, val = 85
+// key = 86, val = 86
+// key = 87, val = 87
+// key = 88, val = 88
+// key = 89, val = 89
+// key = 90, val = 90
+// key = 91, val = 91
+// key = 92, val = 92
+// key = 93, val = 93
+// key = 94, val = 94
+// key = 95, val = 95
+// key = 96, val = 96
+// key = 97, val = 97
+// key = 98, val = 98
+// key = 99, val = 99
+digraph RBT {
+72 -> 64 [label = LEFT];
+64 -> 56 [label = LEFT];
+56 -> 52 [label = LEFT];
+52 -> 50 [label = LEFT];
+50 -> 51 [label = RIGHT];
+51 [style=filled, shape=circle, fillcolor=RED];
+50 [style=filled, shape=circle, fillcolor=GRAY];
+52 -> 54 [label = RIGHT];
+54 -> 53 [label = LEFT];
+53 [style=filled, shape=circle, fillcolor=GRAY];
+54 -> 55 [label = RIGHT];
+55 [style=filled, shape=circle, fillcolor=GRAY];
+54 [style=filled, shape=circle, fillcolor=RED];
+52 [style=filled, shape=circle, fillcolor=GRAY];
+56 -> 60 [label = RIGHT];
+60 -> 58 [label = LEFT];
+58 -> 57 [label = LEFT];
+57 [style=filled, shape=circle, fillcolor=GRAY];
+58 -> 59 [label = RIGHT];
+59 [style=filled, shape=circle, fillcolor=GRAY];
+58 [style=filled, shape=circle, fillcolor=GRAY];
+60 -> 62 [label = RIGHT];
+62 -> 61 [label = LEFT];
+61 [style=filled, shape=circle, fillcolor=GRAY];
+62 -> 63 [label = RIGHT];
+63 [style=filled, shape=circle, fillcolor=GRAY];
+62 [style=filled, shape=circle, fillcolor=GRAY];
+60 [style=filled, shape=circle, fillcolor=RED];
+56 [style=filled, shape=circle, fillcolor=GRAY];
+64 -> 68 [label = RIGHT];
+68 -> 66 [label = LEFT];
+66 -> 65 [label = LEFT];
+65 [style=filled, shape=circle, fillcolor=GRAY];
+66 -> 67 [label = RIGHT];
+67 [style=filled, shape=circle, fillcolor=GRAY];
+66 [style=filled, shape=circle, fillcolor=GRAY];
+68 -> 70 [label = RIGHT];
+70 -> 69 [label = LEFT];
+69 [style=filled, shape=circle, fillcolor=GRAY];
+70 -> 71 [label = RIGHT];
+71 [style=filled, shape=circle, fillcolor=GRAY];
+70 [style=filled, shape=circle, fillcolor=GRAY];
+68 [style=filled, shape=circle, fillcolor=GRAY];
+64 [style=filled, shape=circle, fillcolor=GRAY];
+72 -> 80 [label = RIGHT];
+80 -> 76 [label = LEFT];
+76 -> 74 [label = LEFT];
+74 -> 73 [label = LEFT];
+73 [style=filled, shape=circle, fillcolor=GRAY];
+74 -> 75 [label = RIGHT];
+75 [style=filled, shape=circle, fillcolor=GRAY];
+74 [style=filled, shape=circle, fillcolor=GRAY];
+76 -> 78 [label = RIGHT];
+78 -> 77 [label = LEFT];
+77 [style=filled, shape=circle, fillcolor=GRAY];
+78 -> 79 [label = RIGHT];
+79 [style=filled, shape=circle, fillcolor=GRAY];
+78 [style=filled, shape=circle, fillcolor=GRAY];
+76 [style=filled, shape=circle, fillcolor=GRAY];
+80 -> 88 [label = RIGHT];
+88 -> 84 [label = LEFT];
+84 -> 82 [label = LEFT];
+82 -> 81 [label = LEFT];
+81 [style=filled, shape=circle, fillcolor=GRAY];
+82 -> 83 [label = RIGHT];
+83 [style=filled, shape=circle, fillcolor=GRAY];
+82 [style=filled, shape=circle, fillcolor=GRAY];
+84 -> 86 [label = RIGHT];
+86 -> 85 [label = LEFT];
+85 [style=filled, shape=circle, fillcolor=GRAY];
+86 -> 87 [label = RIGHT];
+87 [style=filled, shape=circle, fillcolor=GRAY];
+86 [style=filled, shape=circle, fillcolor=GRAY];
+84 [style=filled, shape=circle, fillcolor=RED];
+88 -> 92 [label = RIGHT];
+92 -> 90 [label = LEFT];
+90 -> 89 [label = LEFT];
+89 [style=filled, shape=circle, fillcolor=GRAY];
+90 -> 91 [label = RIGHT];
+91 [style=filled, shape=circle, fillcolor=GRAY];
+90 [style=filled, shape=circle, fillcolor=GRAY];
+92 -> 94 [label = RIGHT];
+94 -> 93 [label = LEFT];
+93 [style=filled, shape=circle, fillcolor=GRAY];
+94 -> 96 [label = RIGHT];
+96 -> 95 [label = LEFT];
+95 [style=filled, shape=circle, fillcolor=GRAY];
+96 -> 98 [label = RIGHT];
+98 -> 97 [label = LEFT];
+97 [style=filled, shape=circle, fillcolor=RED];
+98 -> 99 [label = RIGHT];
+99 [style=filled, shape=circle, fillcolor=RED];
+98 [style=filled, shape=circle, fillcolor=GRAY];
+96 [style=filled, shape=circle, fillcolor=RED];
+94 [style=filled, shape=circle, fillcolor=GRAY];
+92 [style=filled, shape=circle, fillcolor=RED];
+88 [style=filled, shape=circle, fillcolor=GRAY];
+80 [style=filled, shape=circle, fillcolor=GRAY];
+72 [style=filled, shape=circle, fillcolor=GRAY];
+}
+//Inorder: 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 
+//Height at 51 = 5
+//Height at 53 = 5
+//Height at 55 = 5
+//Height at 57 = 5
+//Height at 59 = 5
+//Height at 61 = 5
+//Height at 63 = 5
+//Height at 65 = 5
+//Height at 67 = 5
+//Height at 69 = 5
+//Height at 71 = 5
+//Height at 73 = 5
+//Height at 75 = 5
+//Height at 77 = 5
+//Height at 79 = 5
+//Height at 81 = 5
+//Height at 83 = 5
+//Height at 85 = 5
+//Height at 87 = 5
+//Height at 89 = 5
+//Height at 91 = 5
+//Height at 93 = 5
+//Height at 95 = 5
+//Height at 97 = 5
+//Height at 99 = 5
