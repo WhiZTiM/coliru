@@ -1,0 +1,7 @@
+main.cpp:99:6: error: expected ')'
+    );
+     ^
+main.cpp:97:9: note: to match this '('
+    test(
+        ^
+1 error generated.
