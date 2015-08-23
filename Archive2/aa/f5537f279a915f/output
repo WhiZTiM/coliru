@@ -1,0 +1,33 @@
+Preprocess results:
+
+    #define	FOO	// effective: EXTERNAL FOO 
+    led_zeppelin=9
+    the_shins=9
+    dead_mau5=6
+    portishead=10
+    #ifdef FOO // true
+    	foo_fighters=7
+    	#define	ZOO	// effective: EXTERNAL FOO ZOO 
+    #else  // ifdef FOO
+    	// the_who=6
+    	// #define	QUX	// effective: EXTERNAL FOO QUX 
+    #endif  // ifdef FOO
+    #ifdef EXTERNAL // true
+    	#ifdef ZOO // true
+    		zoowasdefined=yes
+    	#else  // ifdef ZOO
+    		// zoowasdefined=no
+    	#endif  // ifdef ZOO
+    	#ifdef QUX // false
+    		// quxwasdefined=yes
+    	#else  // ifdef QUX
+    		quxwasdefined=no
+    	#endif  // ifdef QUX
+    #else  // ifdef EXTERNAL
+    #endif  // ifdef EXTERNAL
+    kanye_west=4
+    #undef	FOO	// effective: EXTERNAL ZOO 
+    #define	BAR	// effective: BAR EXTERNAL ZOO 
+
+
+Defines still in effect: BAR EXTERNAL ZOO 
