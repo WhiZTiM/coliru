@@ -1,0 +1,1 @@
+clang++ -std=c++14 -stdlib=libc++ -Wall -Wextra -pedantic-errors -O3 main.cpp && ./a.out <<< '2/18/2003'
