@@ -1,0 +1,4 @@
+void func(T, Args ...) [with T = int; Args = {double, char, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >}]1
+void func(T, Args ...) [with T = double; Args = {char, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >}]2.5
+void func(T, Args ...) [with T = char; Args = {std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >}]a
+func(T t)void func(T) [with T = std::__cxx11::basic_string<char>]Hello
