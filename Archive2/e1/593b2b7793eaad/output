@@ -1,0 +1,604 @@
+<start>
+  <try>#define FOO\nled_zepp</try>
+  <blocks>
+    <try>#define FOO\nled_zepp</try>
+    <block>
+      <try>#define FOO\nled_zepp</try>
+      <define>
+        <try>#define FOO\nled_zepp</try>
+        <pp_symbol>
+          <try>FOO\nled_zeppelin=9\nt</try>
+          <success>\nled_zeppelin=9\nthe_</success>
+          <attributes>[[F, O, O]]</attributes>
+        </pp_symbol>
+        <success>led_zeppelin=9\nthe_s</success>
+        <attributes>[[[F, O, O]]]</attributes>
+      </define>
+      <success>led_zeppelin=9\nthe_s</success>
+      <attributes>[[[F, O, O]]]</attributes>
+    </block>
+    <block>
+      <try>led_zeppelin=9\nthe_s</try>
+      <define>
+        <try>led_zeppelin=9\nthe_s</try>
+        <fail/>
+      </define>
+      <undef>
+        <try>led_zeppelin=9\nthe_s</try>
+        <fail/>
+      </undef>
+      <conditional_block>
+        <try>led_zeppelin=9\nthe_s</try>
+        <fail/>
+      </conditional_block>
+      <pair>
+        <try>led_zeppelin=9\nthe_s</try>
+        <success>the_shins=9\ndead_mau</success>
+        <attributes>[[[l, e, d, _, z, e, p, p, e, l, i, n], [9]]]</attributes>
+      </pair>
+      <pair>
+        <try>the_shins=9\ndead_mau</try>
+        <success>dead_mau5=6\nportishe</success>
+        <attributes>[[[t, h, e, _, s, h, i, n, s], [9]]]</attributes>
+      </pair>
+      <pair>
+        <try>dead_mau5=6\nportishe</try>
+        <success>portishead=10\n#ifdef</success>
+        <attributes>[[[d, e, a, d, _, m, a, u, 5], [6]]]</attributes>
+      </pair>
+      <pair>
+        <try>portishead=10\n#ifdef</try>
+        <success>#ifdef FOO\nfoo_fight</success>
+        <attributes>[[[p, o, r, t, i, s, h, e, a, d], [1, 0]]]</attributes>
+      </pair>
+      <pair>
+        <try>#ifdef FOO\nfoo_fight</try>
+        <fail/>
+      </pair>
+      <success>#ifdef FOO\nfoo_fight</success>
+      <attributes>[[[[l, e, d, _, z, e, p, p, e, l, i, n], [9]], [[t, h, e, _, s, h, i, n, s], [9]], [[d, e, a, d, _, m, a, u, 5], [6]], [[p, o, r, t, i, s, h, e, a, d], [1, 0]]]]</attributes>
+    </block>
+    <block>
+      <try>#ifdef FOO\nfoo_fight</try>
+      <define>
+        <try>#ifdef FOO\nfoo_fight</try>
+        <fail/>
+      </define>
+      <undef>
+        <try>#ifdef FOO\nfoo_fight</try>
+        <fail/>
+      </undef>
+      <conditional_block>
+        <try>#ifdef FOO\nfoo_fight</try>
+        <pp_symbol>
+          <try>FOO\nfoo_fighters=7\n#</try>
+          <success>\nfoo_fighters=7\n#def</success>
+          <attributes>[[F, O, O]]</attributes>
+        </pp_symbol>
+        <else_>
+          <try>foo_fighters=7\n#defi</try>
+          <fail/>
+        </else_>
+        <endif>
+          <try>foo_fighters=7\n#defi</try>
+          <fail/>
+        </endif>
+        <block>
+          <try>foo_fighters=7\n#defi</try>
+          <define>
+            <try>foo_fighters=7\n#defi</try>
+            <fail/>
+          </define>
+          <undef>
+            <try>foo_fighters=7\n#defi</try>
+            <fail/>
+          </undef>
+          <conditional_block>
+            <try>foo_fighters=7\n#defi</try>
+            <fail/>
+          </conditional_block>
+          <pair>
+            <try>foo_fighters=7\n#defi</try>
+            <success>#define ZOO\n#else\nth</success>
+            <attributes>[[[f, o, o, _, f, i, g, h, t, e, r, s], [7]]]</attributes>
+          </pair>
+          <pair>
+            <try>#define ZOO\n#else\nth</try>
+            <fail/>
+          </pair>
+          <success>#define ZOO\n#else\nth</success>
+          <attributes>[[[[f, o, o, _, f, i, g, h, t, e, r, s], [7]]]]</attributes>
+        </block>
+        <else_>
+          <try>#define ZOO\n#else\nth</try>
+          <fail/>
+        </else_>
+        <endif>
+          <try>#define ZOO\n#else\nth</try>
+          <fail/>
+        </endif>
+        <block>
+          <try>#define ZOO\n#else\nth</try>
+          <define>
+            <try>#define ZOO\n#else\nth</try>
+            <pp_symbol>
+              <try>ZOO\n#else\nthe_who=6\n</try>
+              <success>\n#else\nthe_who=6\n#de</success>
+              <attributes>[[Z, O, O]]</attributes>
+            </pp_symbol>
+            <success>#else\nthe_who=6\n#def</success>
+            <attributes>[[[Z, O, O]]]</attributes>
+          </define>
+          <success>#else\nthe_who=6\n#def</success>
+          <attributes>[[[Z, O, O]]]</attributes>
+        </block>
+        <else_>
+          <try>#else\nthe_who=6\n#def</try>
+          <success>the_who=6\n#define QU</success>
+          <attributes>[]</attributes>
+        </else_>
+        <else_>
+          <try>#else\nthe_who=6\n#def</try>
+          <success>the_who=6\n#define QU</success>
+          <attributes>[]</attributes>
+        </else_>
+        <endif>
+          <try>the_who=6\n#define QU</try>
+          <fail/>
+        </endif>
+        <block>
+          <try>the_who=6\n#define QU</try>
+          <define>
+            <try>the_who=6\n#define QU</try>
+            <fail/>
+          </define>
+          <undef>
+            <try>the_who=6\n#define QU</try>
+            <fail/>
+          </undef>
+          <conditional_block>
+            <try>the_who=6\n#define QU</try>
+            <fail/>
+          </conditional_block>
+          <pair>
+            <try>the_who=6\n#define QU</try>
+            <success>#define QUX\n#endif\n\n</success>
+            <attributes>[[[t, h, e, _, w, h, o], [6]]]</attributes>
+          </pair>
+          <pair>
+            <try>#define QUX\n#endif\n\n</try>
+            <fail/>
+          </pair>
+          <success>#define QUX\n#endif\n\n</success>
+          <attributes>[[[[t, h, e, _, w, h, o], [6]]]]</attributes>
+        </block>
+        <endif>
+          <try>#define QUX\n#endif\n\n</try>
+          <fail/>
+        </endif>
+        <block>
+          <try>#define QUX\n#endif\n\n</try>
+          <define>
+            <try>#define QUX\n#endif\n\n</try>
+            <pp_symbol>
+              <try>QUX\n#endif\n\n#ifdef E</try>
+              <success>\n#endif\n\n#ifdef EXTE</success>
+              <attributes>[[Q, U, X]]</attributes>
+            </pp_symbol>
+            <success>#endif\n\n#ifdef EXTER</success>
+            <attributes>[[[Q, U, X]]]</attributes>
+          </define>
+          <success>#endif\n\n#ifdef EXTER</success>
+          <attributes>[[[Q, U, X]]]</attributes>
+        </block>
+        <endif>
+          <try>#endif\n\n#ifdef EXTER</try>
+          <success>#ifdef EXTERNAL\n\n#if</success>
+          <attributes>[]</attributes>
+        </endif>
+        <endif>
+          <try>#endif\n\n#ifdef EXTER</try>
+          <success>#ifdef EXTERNAL\n\n#if</success>
+          <attributes>[]</attributes>
+        </endif>
+        <success>#ifdef EXTERNAL\n\n#if</success>
+        <attributes>[[[F, O, O], [[[[f, o, o, _, f, i, g, h, t, e, r, s], [7]]], [[Z, O, O]]], [[[[t, h, e, _, w, h, o], [6]]], [[Q, U, X]]]]]</attributes>
+      </conditional_block>
+      <success>#ifdef EXTERNAL\n\n#if</success>
+      <attributes>[[[F, O, O], [[[[f, o, o, _, f, i, g, h, t, e, r, s], [7]]], [[Z, O, O]]], [[[[t, h, e, _, w, h, o], [6]]], [[Q, U, X]]]]]</attributes>
+    </block>
+    <block>
+      <try>#ifdef EXTERNAL\n\n#if</try>
+      <define>
+        <try>#ifdef EXTERNAL\n\n#if</try>
+        <fail/>
+      </define>
+      <undef>
+        <try>#ifdef EXTERNAL\n\n#if</try>
+        <fail/>
+      </undef>
+      <conditional_block>
+        <try>#ifdef EXTERNAL\n\n#if</try>
+        <pp_symbol>
+          <try>EXTERNAL\n\n#ifdef ZOO</try>
+          <success>\n\n#ifdef ZOO\nzoowasd</success>
+          <attributes>[[E, X, T, E, R, N, A, L]]</attributes>
+        </pp_symbol>
+        <else_>
+          <try>#ifdef ZOO\nzoowasdef</try>
+          <fail/>
+        </else_>
+        <endif>
+          <try>#ifdef ZOO\nzoowasdef</try>
+          <fail/>
+        </endif>
+        <block>
+          <try>#ifdef ZOO\nzoowasdef</try>
+          <define>
+            <try>#ifdef ZOO\nzoowasdef</try>
+            <fail/>
+          </define>
+          <undef>
+            <try>#ifdef ZOO\nzoowasdef</try>
+            <fail/>
+          </undef>
+          <conditional_block>
+            <try>#ifdef ZOO\nzoowasdef</try>
+            <pp_symbol>
+              <try>ZOO\nzoowasdefined=ye</try>
+              <success>\nzoowasdefined=yes\n#</success>
+              <attributes>[[Z, O, O]]</attributes>
+            </pp_symbol>
+            <else_>
+              <try>zoowasdefined=yes\n#e</try>
+              <fail/>
+            </else_>
+            <endif>
+              <try>zoowasdefined=yes\n#e</try>
+              <fail/>
+            </endif>
+            <block>
+              <try>zoowasdefined=yes\n#e</try>
+              <define>
+                <try>zoowasdefined=yes\n#e</try>
+                <fail/>
+              </define>
+              <undef>
+                <try>zoowasdefined=yes\n#e</try>
+                <fail/>
+              </undef>
+              <conditional_block>
+                <try>zoowasdefined=yes\n#e</try>
+                <fail/>
+              </conditional_block>
+              <pair>
+                <try>zoowasdefined=yes\n#e</try>
+                <success>#else\nzoowasdefined=</success>
+                <attributes>[[[z, o, o, w, a, s, d, e, f, i, n, e, d], [y, e, s]]]</attributes>
+              </pair>
+              <pair>
+                <try>#else\nzoowasdefined=</try>
+                <fail/>
+              </pair>
+              <success>#else\nzoowasdefined=</success>
+              <attributes>[[[[z, o, o, w, a, s, d, e, f, i, n, e, d], [y, e, s]]]]</attributes>
+            </block>
+            <else_>
+              <try>#else\nzoowasdefined=</try>
+              <success>zoowasdefined=no\n#en</success>
+              <attributes>[]</attributes>
+            </else_>
+            <else_>
+              <try>#else\nzoowasdefined=</try>
+              <success>zoowasdefined=no\n#en</success>
+              <attributes>[]</attributes>
+            </else_>
+            <endif>
+              <try>zoowasdefined=no\n#en</try>
+              <fail/>
+            </endif>
+            <block>
+              <try>zoowasdefined=no\n#en</try>
+              <define>
+                <try>zoowasdefined=no\n#en</try>
+                <fail/>
+              </define>
+              <undef>
+                <try>zoowasdefined=no\n#en</try>
+                <fail/>
+              </undef>
+              <conditional_block>
+                <try>zoowasdefined=no\n#en</try>
+                <fail/>
+              </conditional_block>
+              <pair>
+                <try>zoowasdefined=no\n#en</try>
+                <success>#endif\n\n#ifdef QUX\nq</success>
+                <attributes>[[[z, o, o, w, a, s, d, e, f, i, n, e, d], [n, o]]]</attributes>
+              </pair>
+              <pair>
+                <try>#endif\n\n#ifdef QUX\nq</try>
+                <fail/>
+              </pair>
+              <success>#endif\n\n#ifdef QUX\nq</success>
+              <attributes>[[[[z, o, o, w, a, s, d, e, f, i, n, e, d], [n, o]]]]</attributes>
+            </block>
+            <endif>
+              <try>#endif\n\n#ifdef QUX\nq</try>
+              <success>#ifdef QUX\nquxwasdef</success>
+              <attributes>[]</attributes>
+            </endif>
+            <endif>
+              <try>#endif\n\n#ifdef QUX\nq</try>
+              <success>#ifdef QUX\nquxwasdef</success>
+              <attributes>[]</attributes>
+            </endif>
+            <success>#ifdef QUX\nquxwasdef</success>
+            <attributes>[[[Z, O, O], [[[[z, o, o, w, a, s, d, e, f, i, n, e, d], [y, e, s]]]], [[[[z, o, o, w, a, s, d, e, f, i, n, e, d], [n, o]]]]]]</attributes>
+          </conditional_block>
+          <success>#ifdef QUX\nquxwasdef</success>
+          <attributes>[[[Z, O, O], [[[[z, o, o, w, a, s, d, e, f, i, n, e, d], [y, e, s]]]], [[[[z, o, o, w, a, s, d, e, f, i, n, e, d], [n, o]]]]]]</attributes>
+        </block>
+        <else_>
+          <try>#ifdef QUX\nquxwasdef</try>
+          <fail/>
+        </else_>
+        <endif>
+          <try>#ifdef QUX\nquxwasdef</try>
+          <fail/>
+        </endif>
+        <block>
+          <try>#ifdef QUX\nquxwasdef</try>
+          <define>
+            <try>#ifdef QUX\nquxwasdef</try>
+            <fail/>
+          </define>
+          <undef>
+            <try>#ifdef QUX\nquxwasdef</try>
+            <fail/>
+          </undef>
+          <conditional_block>
+            <try>#ifdef QUX\nquxwasdef</try>
+            <pp_symbol>
+              <try>QUX\nquxwasdefined=ye</try>
+              <success>\nquxwasdefined=yes\n#</success>
+              <attributes>[[Q, U, X]]</attributes>
+            </pp_symbol>
+            <else_>
+              <try>quxwasdefined=yes\n#e</try>
+              <fail/>
+            </else_>
+            <endif>
+              <try>quxwasdefined=yes\n#e</try>
+              <fail/>
+            </endif>
+            <block>
+              <try>quxwasdefined=yes\n#e</try>
+              <define>
+                <try>quxwasdefined=yes\n#e</try>
+                <fail/>
+              </define>
+              <undef>
+                <try>quxwasdefined=yes\n#e</try>
+                <fail/>
+              </undef>
+              <conditional_block>
+                <try>quxwasdefined=yes\n#e</try>
+                <fail/>
+              </conditional_block>
+              <pair>
+                <try>quxwasdefined=yes\n#e</try>
+                <success>#else\nquxwasdefined=</success>
+                <attributes>[[[q, u, x, w, a, s, d, e, f, i, n, e, d], [y, e, s]]]</attributes>
+              </pair>
+              <pair>
+                <try>#else\nquxwasdefined=</try>
+                <fail/>
+              </pair>
+              <success>#else\nquxwasdefined=</success>
+              <attributes>[[[[q, u, x, w, a, s, d, e, f, i, n, e, d], [y, e, s]]]]</attributes>
+            </block>
+            <else_>
+              <try>#else\nquxwasdefined=</try>
+              <success>quxwasdefined=no\n#en</success>
+              <attributes>[]</attributes>
+            </else_>
+            <else_>
+              <try>#else\nquxwasdefined=</try>
+              <success>quxwasdefined=no\n#en</success>
+              <attributes>[]</attributes>
+            </else_>
+            <endif>
+              <try>quxwasdefined=no\n#en</try>
+              <fail/>
+            </endif>
+            <block>
+              <try>quxwasdefined=no\n#en</try>
+              <define>
+                <try>quxwasdefined=no\n#en</try>
+                <fail/>
+              </define>
+              <undef>
+                <try>quxwasdefined=no\n#en</try>
+                <fail/>
+              </undef>
+              <conditional_block>
+                <try>quxwasdefined=no\n#en</try>
+                <fail/>
+              </conditional_block>
+              <pair>
+                <try>quxwasdefined=no\n#en</try>
+                <success>#endif\n#endif\n\nkanye</success>
+                <attributes>[[[q, u, x, w, a, s, d, e, f, i, n, e, d], [n, o]]]</attributes>
+              </pair>
+              <pair>
+                <try>#endif\n#endif\n\nkanye</try>
+                <fail/>
+              </pair>
+              <success>#endif\n#endif\n\nkanye</success>
+              <attributes>[[[[q, u, x, w, a, s, d, e, f, i, n, e, d], [n, o]]]]</attributes>
+            </block>
+            <endif>
+              <try>#endif\n#endif\n\nkanye</try>
+              <success>#endif\n\nkanye_west=4</success>
+              <attributes>[]</attributes>
+            </endif>
+            <endif>
+              <try>#endif\n#endif\n\nkanye</try>
+              <success>#endif\n\nkanye_west=4</success>
+              <attributes>[]</attributes>
+            </endif>
+            <success>#endif\n\nkanye_west=4</success>
+            <attributes>[[[Q, U, X], [[[[q, u, x, w, a, s, d, e, f, i, n, e, d], [y, e, s]]]], [[[[q, u, x, w, a, s, d, e, f, i, n, e, d], [n, o]]]]]]</attributes>
+          </conditional_block>
+          <success>#endif\n\nkanye_west=4</success>
+          <attributes>[[[Q, U, X], [[[[q, u, x, w, a, s, d, e, f, i, n, e, d], [y, e, s]]]], [[[[q, u, x, w, a, s, d, e, f, i, n, e, d], [n, o]]]]]]</attributes>
+        </block>
+        <else_>
+          <try>#endif\n\nkanye_west=4</try>
+          <fail/>
+        </else_>
+        <endif>
+          <try>#endif\n\nkanye_west=4</try>
+          <success>kanye_west=4\n#undef </success>
+          <attributes>[]</attributes>
+        </endif>
+        <else_>
+          <try>#endif\n\nkanye_west=4</try>
+          <fail/>
+        </else_>
+        <endif>
+          <try>#endif\n\nkanye_west=4</try>
+          <success>kanye_west=4\n#undef </success>
+          <attributes>[]</attributes>
+        </endif>
+        <endif>
+          <try>#endif\n\nkanye_west=4</try>
+          <success>kanye_west=4\n#undef </success>
+          <attributes>[]</attributes>
+        </endif>
+        <success>kanye_west=4\n#undef </success>
+        <attributes>[[[E, X, T, E, R, N, A, L], [[[Z, O, O], [[[[z, o, o, w, a, s, d, e, f, i, n, e, d], [y, e, s]]]], [[[[z, o, o, w, a, s, d, e, f, i, n, e, d], [n, o]]]]], [[Q, U, X], [[[[q, u, x, w, a, s, d, e, f, i, n, e, d], [y, e, s]]]], [[[[q, u, x, w, a, s, d, e, f, i, n, e, d], [n, o]]]]]], []]]</attributes>
+      </conditional_block>
+      <success>kanye_west=4\n#undef </success>
+      <attributes>[[[E, X, T, E, R, N, A, L], [[[Z, O, O], [[[[z, o, o, w, a, s, d, e, f, i, n, e, d], [y, e, s]]]], [[[[z, o, o, w, a, s, d, e, f, i, n, e, d], [n, o]]]]], [[Q, U, X], [[[[q, u, x, w, a, s, d, e, f, i, n, e, d], [y, e, s]]]], [[[[q, u, x, w, a, s, d, e, f, i, n, e, d], [n, o]]]]]], []]]</attributes>
+    </block>
+    <block>
+      <try>kanye_west=4\n#undef </try>
+      <define>
+        <try>kanye_west=4\n#undef </try>
+        <fail/>
+      </define>
+      <undef>
+        <try>kanye_west=4\n#undef </try>
+        <fail/>
+      </undef>
+      <conditional_block>
+        <try>kanye_west=4\n#undef </try>
+        <fail/>
+      </conditional_block>
+      <pair>
+        <try>kanye_west=4\n#undef </try>
+        <success>#undef FOO\n#define B</success>
+        <attributes>[[[k, a, n, y, e, _, w, e, s, t], [4]]]</attributes>
+      </pair>
+      <pair>
+        <try>#undef FOO\n#define B</try>
+        <fail/>
+      </pair>
+      <success>#undef FOO\n#define B</success>
+      <attributes>[[[[k, a, n, y, e, _, w, e, s, t], [4]]]]</attributes>
+    </block>
+    <block>
+      <try>#undef FOO\n#define B</try>
+      <define>
+        <try>#undef FOO\n#define B</try>
+        <fail/>
+      </define>
+      <undef>
+        <try>#undef FOO\n#define B</try>
+        <pp_symbol>
+          <try>FOO\n#define BAR\n</try>
+          <success>\n#define BAR\n</success>
+          <attributes>[[F, O, O]]</attributes>
+        </pp_symbol>
+        <success>#define BAR\n</success>
+        <attributes>[[[F, O, O]]]</attributes>
+      </undef>
+      <success>#define BAR\n</success>
+      <attributes>[[[F, O, O]]]</attributes>
+    </block>
+    <block>
+      <try>#define BAR\n</try>
+      <define>
+        <try>#define BAR\n</try>
+        <pp_symbol>
+          <try>BAR\n</try>
+          <success>\n</success>
+          <attributes>[[B, A, R]]</attributes>
+        </pp_symbol>
+        <success></success>
+        <attributes>[[[B, A, R]]]</attributes>
+      </define>
+      <success></success>
+      <attributes>[[[B, A, R]]]</attributes>
+    </block>
+    <block>
+      <try></try>
+      <define>
+        <try></try>
+        <fail/>
+      </define>
+      <undef>
+        <try></try>
+        <fail/>
+      </undef>
+      <conditional_block>
+        <try></try>
+        <fail/>
+      </conditional_block>
+      <pair>
+        <try></try>
+        <fail/>
+      </pair>
+      <fail/>
+    </block>
+    <success></success>
+    <attributes>[[[[F, O, O]], [[[l, e, d, _, z, e, p, p, e, l, i, n], [9]], [[t, h, e, _, s, h, i, n, s], [9]], [[d, e, a, d, _, m, a, u, 5], [6]], [[p, o, r, t, i, s, h, e, a, d], [1, 0]]], [[F, O, O], [[[[f, o, o, _, f, i, g, h, t, e, r, s], [7]]], [[Z, O, O]]], [[[[t, h, e, _, w, h, o], [6]]], [[Q, U, X]]]], [[E, X, T, E, R, N, A, L], [[[Z, O, O], [[[[z, o, o, w, a, s, d, e, f, i, n, e, d], [y, e, s]]]], [[[[z, o, o, w, a, s, d, e, f, i, n, e, d], [n, o]]]]], [[Q, U, X], [[[[q, u, x, w, a, s, d, e, f, i, n, e, d], [y, e, s]]]], [[[[q, u, x, w, a, s, d, e, f, i, n, e, d], [n, o]]]]]], []], [[[k, a, n, y, e, _, w, e, s, t], [4]]], [[F, O, O]], [[B, A, R]]]]</attributes>
+  </blocks>
+  <success></success>
+  <attributes>[[[[F, O, O]], [[[l, e, d, _, z, e, p, p, e, l, i, n], [9]], [[t, h, e, _, s, h, i, n, s], [9]], [[d, e, a, d, _, m, a, u, 5], [6]], [[p, o, r, t, i, s, h, e, a, d], [1, 0]]], [[F, O, O], [[[[f, o, o, _, f, i, g, h, t, e, r, s], [7]]], [[Z, O, O]]], [[[[t, h, e, _, w, h, o], [6]]], [[Q, U, X]]]], [[E, X, T, E, R, N, A, L], [[[Z, O, O], [[[[z, o, o, w, a, s, d, e, f, i, n, e, d], [y, e, s]]]], [[[[z, o, o, w, a, s, d, e, f, i, n, e, d], [n, o]]]]], [[Q, U, X], [[[[q, u, x, w, a, s, d, e, f, i, n, e, d], [y, e, s]]]], [[[[q, u, x, w, a, s, d, e, f, i, n, e, d], [n, o]]]]]], []], [[[k, a, n, y, e, _, w, e, s, t], [4]]], [[F, O, O]], [[B, A, R]]]]</attributes>
+</start>
+Preprocess results:
+
+    #define	FOO	// effective: EXTERNAL FOO 
+    led_zeppelin=9
+    the_shins=9
+    dead_mau5=6
+    portishead=10
+    #ifdef FOO // true
+    	foo_fighters=7
+    	#define	ZOO	// effective: EXTERNAL FOO ZOO 
+    #else  // ifdef FOO
+    	// the_who=6
+    	// #define	QUX	// effective: EXTERNAL FOO QUX 
+    #endif  // ifdef FOO
+    #ifdef EXTERNAL // true
+    	#ifdef ZOO // true
+    		zoowasdefined=yes
+    	#else  // ifdef ZOO
+    		// zoowasdefined=no
+    	#endif  // ifdef ZOO
+    	#ifdef QUX // false
+    		// quxwasdefined=yes
+    	#else  // ifdef QUX
+    		quxwasdefined=no
+    	#endif  // ifdef QUX
+    #else  // ifdef EXTERNAL
+    #endif  // ifdef EXTERNAL
+    kanye_west=4
+    #undef	FOO	// effective: EXTERNAL ZOO 
+    #define	BAR	// effective: BAR EXTERNAL ZOO 
+
+
+Defines still in effect: BAR EXTERNAL ZOO 
