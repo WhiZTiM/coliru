@@ -1,0 +1,4 @@
+Noisy()
+Noisy(const Noisy&)
+~Noisy()
+~Noisy()
