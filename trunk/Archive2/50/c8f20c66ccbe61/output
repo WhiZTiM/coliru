@@ -1,0 +1,16 @@
+main.cpp: In member function 'void child<T>::method(void*) const':
+main.cpp:40:13: error: need 'typename' before 'std::vector<T>::iterator' because 'std::vector<T>' is a dependent scope
+        for( std::vector<T>::iterator it = _arg.begin(); it != _arg.end(); ++ it)
+             ^
+main.cpp:40:38: error: expected ';' before 'it'
+        for( std::vector<T>::iterator it = _arg.begin(); it != _arg.end(); ++ it)
+                                      ^
+main.cpp:40:57: error: 'it' was not declared in this scope
+        for( std::vector<T>::iterator it = _arg.begin(); it != _arg.end(); ++ it)
+                                                         ^
+main.cpp: In instantiation of 'void child<T>::method(void*) const [with T = int]':
+main.cpp:56:1:   required from here
+main.cpp:40:55: error: dependent-name 'std::vector<T>::iterator' is parsed as a non-type, but instantiation yields a type
+        for( std::vector<T>::iterator it = _arg.begin(); it != _arg.end(); ++ it)
+                                                       ^
+main.cpp:40:55: note: say 'typename std::vector<T>::iterator' if a type is meant
