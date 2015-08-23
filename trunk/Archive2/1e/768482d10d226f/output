@@ -1,0 +1,13 @@
+Noisy()
+Noisy()
+Noisy(Noisy&&)
+~Noisy()
+----
+Noisy(const Noisy&)
+----
+Noisy(Noisy&&)
+----
+~Noisy()
+~Noisy()
+~Noisy()
+~Noisy()
