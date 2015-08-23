@@ -1,0 +1,7 @@
+main.cpp:7:5: error: stray '\303' in program
+     mem; pública: 
+     ^
+main.cpp:7:5: error: stray '\272' in program
+main.cpp:5:1: error: 'classe' does not name a type
+ classe T2
+ ^
