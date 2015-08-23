@@ -1,0 +1,7 @@
+main.cpp:6:16: internal compiler error: Segmentation fault
+ constexpr bool any = Head || any<Tail...>;
+                ^
+libbacktrace could not find executable to open
+Please submit a full bug report,
+with preprocessed source if appropriate.
+See <http://gcc.gnu.org/bugs.html> for instructions.
