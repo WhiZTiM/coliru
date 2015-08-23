@@ -1,0 +1,1 @@
+gcc -Wall -Wextra -o main -xc main.cpp && ./main
