@@ -1,0 +1,16 @@
+main.cpp:322:13: error: type 'hSDK::Extension::ExtMF<hSDK::ACE::Action>::caller<TestExtension, void>' does not provide a call operator
+                                        return f(*static_cast<ExtT *>(&ext), args...);
+                                               ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../include/c++/5.2.0/functional:1856:9: note: in instantiation of member function 'hSDK::Extension::ExtMF<hSDK::ACE::Action>::translator<TestExtension, hSDK::Extension::ExtMF<hSDK::ACE::Action>::caller<TestExtension, void>, int, int>::operator()' requested here
+        return (*_Base::_M_get_pointer(__functor))(
+               ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../include/c++/5.2.0/functional:2259:33: note: in instantiation of member function 'std::_Function_handler<int (hSDK::Extension &, int, int), hSDK::Extension::ExtMF<hSDK::ACE::Action>::translator<TestExtension, hSDK::Extension::ExtMF<hSDK::ACE::Action>::caller<TestExtension, void>, int, int> >::_M_invoke' requested here
+            _M_invoker = &_My_handler::_M_invoke;
+                                       ^
+main.cpp:284:6: note: in instantiation of function template specialization 'std::function<int (hSDK::Extension &, int, int)>::function<hSDK::Extension::ExtMF<hSDK::ACE::Action>::translator<TestExtension, hSDK::Extension::ExtMF<hSDK::ACE::Action>::caller<TestExtension, void>, int, int>, void>' requested here
+                        : Forwarder_t<CallT>
+                          ^
+/usr/local/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../include/c++/5.2.0/bits/stl_pair.h:145:35: note: in instantiation of function template specialization 'hSDK::Extension::ExtMF<hSDK::ACE::Action>::ExtMF<TestExtension, void>' requested here
+        : first(std::forward<_U1>(__x)), second(std::forward<_U2>(__y)) { }
+                                         ^
+1 error generated.
