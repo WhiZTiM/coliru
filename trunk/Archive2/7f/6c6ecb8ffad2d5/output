@@ -1,0 +1,29 @@
+In file included from main.cpp:3:0:
+/usr/local/include/c++/5.2.0/tuple: In instantiation of 'constexpr std::_Head_base<_Idx, _Head, false>::_Head_base() [with long unsigned int _Idx = 0ul; _Head = Noisy&]':
+/usr/local/include/c++/5.2.0/tuple:353:15:   required from 'constexpr std::_Tuple_impl<_Idx, _Head>::_Tuple_impl() [with long unsigned int _Idx = 0ul; _Head = Noisy&]'
+/usr/local/include/c++/5.2.0/tuple:469:20:   required from 'constexpr std::tuple< <template-parameter-1-1> >::tuple() [with _Elements = {Noisy&}]'
+/usr/local/include/c++/5.2.0/tuple:105:22:   required from 'constexpr std::_Head_base<_Idx, _Head, false>::_Head_base() [with long unsigned int _Idx = 0ul; _Head = std::tuple<Noisy&>]'
+/usr/local/include/c++/5.2.0/tuple:353:15:   required from 'constexpr std::_Tuple_impl<_Idx, _Head>::_Tuple_impl() [with long unsigned int _Idx = 0ul; _Head = std::tuple<Noisy&>]'
+/usr/local/include/c++/5.2.0/tuple:469:20:   required from 'constexpr std::tuple< <template-parameter-1-1> >::tuple() [with _Elements = {std::tuple<Noisy&>}]'
+/usr/local/include/c++/5.2.0/tuple:105:22:   required from 'constexpr std::_Head_base<_Idx, _Head, false>::_Head_base() [with long unsigned int _Idx = 1ul; _Head = std::tuple<std::tuple<Noisy&> >]'
+/usr/local/include/c++/5.2.0/tuple:353:15:   required from 'constexpr std::_Tuple_impl<_Idx, _Head>::_Tuple_impl() [with long unsigned int _Idx = 1ul; _Head = std::tuple<std::tuple<Noisy&> >]'
+/usr/local/include/c++/5.2.0/tuple:202:29:   required from 'constexpr std::_Tuple_impl<_Idx, _Head, _Tail ...>::_Tuple_impl() [with long unsigned int _Idx = 0ul; _Head = std::tuple<std::tuple<std::tuple<Noisy&, Noisy&> > >; _Tail = {std::tuple<std::tuple<Noisy&> >}]'
+/usr/local/include/c++/5.2.0/tuple:602:20:   required from 'constexpr std::tuple<_T1, _T2>::tuple() [with _T1 = std::tuple<std::tuple<std::tuple<Noisy&, Noisy&> > >; _T2 = std::tuple<std::tuple<Noisy&> >]'
+main.cpp:100:100:   required from here
+/usr/local/include/c++/5.2.0/tuple:105:22: error: value-initialization of reference type 'Noisy&'
+       : _M_head_impl() { }
+                      ^
+/usr/local/include/c++/5.2.0/tuple: In instantiation of 'constexpr std::_Head_base<_Idx, _Head, false>::_Head_base() [with long unsigned int _Idx = 1ul; _Head = Noisy&]':
+/usr/local/include/c++/5.2.0/tuple:353:15:   required from 'constexpr std::_Tuple_impl<_Idx, _Head>::_Tuple_impl() [with long unsigned int _Idx = 1ul; _Head = Noisy&]'
+/usr/local/include/c++/5.2.0/tuple:202:29:   required from 'constexpr std::_Tuple_impl<_Idx, _Head, _Tail ...>::_Tuple_impl() [with long unsigned int _Idx = 0ul; _Head = Noisy&; _Tail = {Noisy&}]'
+/usr/local/include/c++/5.2.0/tuple:602:20:   required from 'constexpr std::tuple<_T1, _T2>::tuple() [with _T1 = Noisy&; _T2 = Noisy&]'
+/usr/local/include/c++/5.2.0/tuple:105:22:   required from 'constexpr std::_Head_base<_Idx, _Head, false>::_Head_base() [with long unsigned int _Idx = 0ul; _Head = std::tuple<Noisy&, Noisy&>]'
+/usr/local/include/c++/5.2.0/tuple:353:15:   required from 'constexpr std::_Tuple_impl<_Idx, _Head>::_Tuple_impl() [with long unsigned int _Idx = 0ul; _Head = std::tuple<Noisy&, Noisy&>]'
+/usr/local/include/c++/5.2.0/tuple:469:20:   [ skipping 2 instantiation contexts, use -ftemplate-backtrace-limit=0 to disable ]
+/usr/local/include/c++/5.2.0/tuple:353:15:   required from 'constexpr std::_Tuple_impl<_Idx, _Head>::_Tuple_impl() [with long unsigned int _Idx = 0ul; _Head = std::tuple<std::tuple<Noisy&, Noisy&> >]'
+/usr/local/include/c++/5.2.0/tuple:469:20:   required from 'constexpr std::tuple< <template-parameter-1-1> >::tuple() [with _Elements = {std::tuple<std::tuple<Noisy&, Noisy&> >}]'
+/usr/local/include/c++/5.2.0/tuple:105:22:   required from 'constexpr std::_Head_base<_Idx, _Head, false>::_Head_base() [with long unsigned int _Idx = 0ul; _Head = std::tuple<std::tuple<std::tuple<Noisy&, Noisy&> > >]'
+/usr/local/include/c++/5.2.0/tuple:202:29:   required from 'constexpr std::_Tuple_impl<_Idx, _Head, _Tail ...>::_Tuple_impl() [with long unsigned int _Idx = 0ul; _Head = std::tuple<std::tuple<std::tuple<Noisy&, Noisy&> > >; _Tail = {std::tuple<std::tuple<Noisy&> >}]'
+/usr/local/include/c++/5.2.0/tuple:602:20:   required from 'constexpr std::tuple<_T1, _T2>::tuple() [with _T1 = std::tuple<std::tuple<std::tuple<Noisy&, Noisy&> > >; _T2 = std::tuple<std::tuple<Noisy&> >]'
+main.cpp:100:100:   required from here
+/usr/local/include/c++/5.2.0/tuple:105:22: error: value-initialization of reference type 'Noisy&'
