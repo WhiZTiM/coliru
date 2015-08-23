@@ -1,0 +1,27 @@
+4
+node: 3, neighbor size: 1
+Checking sortNode: 3
+Accepted sortNode: 3
+Checking sortNode: 1
+Accepted sortNode: 1
+nodeList size: 4
+node: 2, neighbor size: 1
+Checking sortNode: 2
+Accepted sortNode: 2
+Checking sortNode: 3
+nodeList size: 4
+node: 4, neighbor size: 2
+Checking sortNode: 4
+Accepted sortNode: 4
+Checking sortNode: 1
+Checking sortNode: 0
+Accepted sortNode: 0
+nodeList size: 4
+node: 5, neighbor size: 2
+Checking sortNode: 5
+Accepted sortNode: 5
+Checking sortNode: 0
+Checking sortNode: 2
+nodeList size: 4
+6
+ result is 5 4 0 2 3 1 
