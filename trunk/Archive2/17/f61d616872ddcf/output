@@ -1,0 +1,12 @@
+How many array elements you want?
+Array data:
+( 0,  4,  4)
+( 5,  9, 10)
+( 6,  8,  8)
+( 7, 10,  0)
+
+Array data after erase:
+( 0,  4,  4)
+( 5,  9, 10)
+( 7, 10,  0)
+
