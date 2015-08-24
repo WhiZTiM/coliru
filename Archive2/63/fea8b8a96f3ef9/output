@@ -1,0 +1,8 @@
+main.cpp: In function 'int main()':
+main.cpp:12:75: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+     printf("Processed string is: %s \n", safe_string_concat("pavan", "raj"));
+                                                                           ^
+main.cpp:12:75: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+Processed string is: ~pavan~raj~ 
+Newdate is: 201502
+Newdate is: 201310
