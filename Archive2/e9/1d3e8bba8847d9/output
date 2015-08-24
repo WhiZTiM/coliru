@@ -1,0 +1,18 @@
+g++
+main.cpp:5:74: error: 'r' was not declared in this scope
+ template<class R,class Test, class T = std::decay_t<decltype(*std::begin(r))>>
+                                                                          ^
+main.cpp:5:53: error: template argument 1 is invalid
+ template<class R,class Test, class T = std::decay_t<decltype(*std::begin(r))>>
+                                                     ^
+clang++
+main.cpp:5:74: error: use of undeclared identifier 'r'
+template<class R,class Test, class T = std::decay_t<decltype(*std::begin(r))>>
+                                                                         ^
+main.cpp:8:1: error: expected ',' or '>' in template-parameter-list
+{
+^
+main.cpp:17:2: error: expected unqualified-id
+}
+ ^
+3 errors generated.
