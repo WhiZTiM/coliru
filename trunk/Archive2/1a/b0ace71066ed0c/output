@@ -1,0 +1,4 @@
+main.cpp: In function 'void hi(Foo&&)':
+main.cpp:43:12: error: no match for 'operator*=' (operand types are 'std::__cxx11::string {aka std::__cxx11::basic_string<char>}' and 'const char [15]')
+     f.name *= " modified hehe";
+            ^
