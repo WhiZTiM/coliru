@@ -1,0 +1,32 @@
+Linux stacked-crooked 3.2.0-74-virtual #109-Ubuntu SMP Tue Dec 9 17:04:48 UTC 2014 x86_64 x86_64 x86_64 GNU/Linux
+
+clang version 3.6.0 (tags/RELEASE_360/final 235480)
+
+int: +2147483647   int=>float: +2147483648.00   int=>float=>int: +4201984
+int: +2147483647  int=>double: +2147483647.00  int=>double=>int: +2147483647
+
+int: -2147483648   int=>float: -2147483648.00   int=>float=>int: -2147483648
+int: -2147483648  int=>double: -2147483648.00  int=>double=>int: -2147483648
+
+long long: +9223372036854775807   long long=>float: +9223372036854775808.00    long long=>float=>long long: +4201984
+long long: +9223372036854775807  long long=>double: +9223372036854775808.00   long long=>double=>long long: +4201984
+
+long long: -9223372036854775808   long long=>float: -9223372036854775808.00    long long=>float=>long long: -9223372036854775808
+long long: -9223372036854775808  long long=>double: -9223372036854775808.00   long long=>double=>long long: -9223372036854775808
+
+
+
+g++ (GCC) 5.2.0
+
+int: +2147483647   int=>float: +2147483648.00   int=>float=>int: +2147483647
+int: +2147483647  int=>double: +2147483647.00  int=>double=>int: +2147483647
+
+int: -2147483648   int=>float: -2147483648.00   int=>float=>int: -2147483648
+int: -2147483648  int=>double: -2147483648.00  int=>double=>int: -2147483648
+
+long long: +9223372036854775807   long long=>float: +9223372036854775808.00    long long=>float=>long long: +9223372036854775807
+long long: +9223372036854775807  long long=>double: +9223372036854775808.00   long long=>double=>long long: +9223372036854775807
+
+long long: -9223372036854775808   long long=>float: -9223372036854775808.00    long long=>float=>long long: -9223372036854775808
+long long: -9223372036854775808  long long=>double: -9223372036854775808.00   long long=>double=>long long: -9223372036854775808
+
