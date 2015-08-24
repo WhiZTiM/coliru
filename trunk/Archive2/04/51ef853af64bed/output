@@ -1,0 +1,2 @@
+distance(first, last) = 3
+distance(last, first) = -3
