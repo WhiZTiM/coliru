@@ -1,0 +1,2 @@
+virtual void Derived::foo()
+virtual void Derived::bar()
