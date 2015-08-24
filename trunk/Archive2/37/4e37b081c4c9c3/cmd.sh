@@ -1,0 +1,1 @@
+clang++ -std=c++11 -Os -Wall -lboost_filesystem -lboost_system -Wno-unused-variable main.cpp && ./a.out
