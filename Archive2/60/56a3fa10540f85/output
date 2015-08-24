@@ -1,0 +1,6 @@
+main.cpp: In function 'int main()':
+main.cpp:11:62: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+     printf("Hello world: %s \n", string_concat("pavan", "raj"));
+                                                              ^
+main.cpp:11:62: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+Hello world: ~pavan~raj~ 
