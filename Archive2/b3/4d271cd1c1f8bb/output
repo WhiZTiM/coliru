@@ -1,0 +1,13 @@
+parse_collection([[],[],[[{"hola":[FALSE,TRUE,FALSE]}]]])
+parse_collection([],[],[[{"hola":[FALSE,TRUE,FALSE]}]]])
+parse_collection([],[[{"hola":[FALSE,TRUE,FALSE]}]]])
+parse_collection([[{"hola":[FALSE,TRUE,FALSE]}]]])
+parse_collection([{"hola":[FALSE,TRUE,FALSE]}]]])
+parse_collection({"hola":[FALSE,TRUE,FALSE]}]]])
+parse_pair      ("hola":[FALSE,TRUE,FALSE]}]]])
+parse_string    ("hola":[FALSE,TRUE,FALSE]}]]])
+parse_collection([FALSE,TRUE,FALSE]}]]])
+parse_bool      (FALSE,TRUE,FALSE]}]]])
+parse_bool      (TRUE,FALSE]}]]])
+parse_bool      (FALSE]}]]])
+1
