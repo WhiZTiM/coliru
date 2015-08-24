@@ -1,0 +1,11 @@
+main.cpp:9:27: error: 'constexpr' is not allowed in declaration of friend template specialization 'A<T> f<T>()'
+   friend constexpr A f<T>();
+                           ^
+main.cpp: In instantiation of 'constexpr A<T> f() [with T = void]':
+main.cpp:18:31:   required from here
+main.cpp:11:13: error: 'constexpr A<T>::A() [with T = void]' is private
+   constexpr A(){}
+             ^
+main.cpp:15:30: error: within this context
+ constexpr A<T> f() { return {}; }
+                              ^
