@@ -1,0 +1,4 @@
+main.cpp: In function 'int main()':
+main.cpp:58:32: error: cannot convert 'int*' to 'Cat*' for argument '1' to 'Animal* Cat_AsAnimal(Cat*)'
+     Animal_Jump(Cat_AsAnimal(&x));
+                                ^
