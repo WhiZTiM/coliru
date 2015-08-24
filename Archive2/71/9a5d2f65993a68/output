@@ -1,0 +1,43 @@
+*** glibc detected *** ./a.out: double free or corruption (fasttop): 0x000000000207b030 ***
+======= Backtrace: =========
+/lib/x86_64-linux-gnu/libc.so.6(+0x7e846)[0x7fe02c3d8846]
+./a.out[0x40071b]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xed)[0x7fe02c37b76d]
+./a.out[0x4004c9]
+======= Memory map: ========
+
+Vania = 0x7fffcdbc35d0
+
+
+0x7fffcdbc35d0
+
+0x207b010
+
+12
+
+Katya = 0x7fffcdbc35c0
+
+
+0x7fffcdbc35c0
+
+0x207b030
+
+22
+
+0x7fffcdbc35d0
+
+0x207b030
+
+22
+
+*********************************
+
+Vania = 0x7fffcdbc35a0
+
+
+0x7fffcdbc35a0
+
+0x207b030
+
+22
+bash: line 7: 28682 Aborted                 (core dumped) ./a.out
