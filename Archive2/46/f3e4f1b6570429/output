@@ -1,0 +1,4 @@
+main.cpp:1:10: fatal error: 'libswscale/swscale.h' file not found
+#include <libswscale/swscale.h>
+         ^
+1 error generated.
