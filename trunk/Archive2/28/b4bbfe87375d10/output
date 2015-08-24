@@ -1,0 +1,10 @@
+main.cpp:18:18: error: constexpr variable 'a' must be initialized by a constant expression
+  constexpr auto a  = f<void>();
+                 ^    ~~~~~~~~~
+main.cpp:18:23: note: non-constexpr function 'f<void>' cannot be used in a constant expression
+  constexpr auto a  = f<void>();
+                      ^
+main.cpp:9:12: note: declared here
+  friend A f<T>();
+           ^
+1 error generated.
