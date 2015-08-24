@@ -1,0 +1,10 @@
+~~~~~~G++~~~~~~
+2 is in character set 1234567890
+e is not in character set 1234567890
+! is not in character set 1234567890
+c is not in character set 1234567890
+~~~~CLANG++~~~~
+2 is in character set 1234567890
+e is not in character set 1234567890
+! is not in character set 1234567890
+c is not in character set 1234567890
